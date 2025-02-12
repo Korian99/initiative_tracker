@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Lobby Page{% endblock %}
+
+{% block content %}
+<div class="container full-height">
+  <div class="row h-100">
+    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+      
+      <!-- Form for creating a lobby -->
+      <form class="mb-4 w-100" style="max-width: 400px;" action="create_lobby" method="post">
+        <!-- If using Django, include the CSRF token -->
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="jugador" class="form-label">Jugador</label>
+          <input type="text" class="form-control" id="jugador" name="jugador" placeholder="Ingrese su nombre" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Crear un Lobby</button>
+      </form>
+
+      <!-- Form for joining a lobby -->
+      <form class="w-100" style="max-width: 400px;" action="/join_lobby" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="codigo" class="form-label">Código del Lobby</label>
+          <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Ingrese el código del lobby" required>
+        </div>
+        <div class="mb-3">
+          <label for="personaje" class="form-label">Personaje</label>
+          <input type="text" class="form-control" id="personaje" name="personaje" placeholder="Ingrese su personaje" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Unirse a un Lobby</button>
+      </form>
+      
+    </div>
+  </div>
+</div>
+{% endblock content %}
