@@ -1,58 +1,67 @@
 {% extends "base.html" %}
-
-{% block title %}Lobby Page{% endblock %}
-
-{% block content %}
-<div class="container full-height">
-  <div class="row h-100">
-    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-      
-      <!-- Character List Container -->
-      <h2 class="mb-3">Player: {{player.name}}</h2>
-      <h2 class="mb-3">Characters in Lobby {{player.lobby.code}}</h2>
-      <ul id="character-list" class="list-group w-100" style="max-width: 400px;"
-          hx-get="{% url 'character_list_partial' player.lobby.code %}"
-          hx-trigger="sse:character_update from:#sse-connection"
-          hx-swap="innerHTML">
-        {% include "players/partials/character_list.html" %}
-      </ul>
-      
-      <!-- SSE/WebSocket Connection (hidden) -->
-      <div id="sse-connection" 
-           hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/">
-      </div>
-
-      <!-- Dropdown form to add a character (shown only for DM or PA) -->
+{% block title %}
+  Lobby Page
+{% endblock title %}
+{% block player %}
+  <h2>{{ player.name }}</h2>
+{% endblock player %}
+{% block navbar %}
+  <div class="container">
+    <!-- Navigation Pills -->
+    <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link {% if characters|length > 0 %}active{% endif %}"
+           id="characters-tab"
+           data-bs-toggle="pill"
+           href="#characters"
+           role="tab"
+           aria-controls="characters"
+           aria-selected="true">Characters</a>
+      </li>
       {% if player.role == "DM" or player.role == "PA" %}
-      <div class="mt-4 w-100" style="max-width: 400px;">
-        <form hx-post="{% url 'add_character' %}" 
-              hx-target="#character-list" 
-              hx-swap="innerHTML"
-              method="post">
-          {% csrf_token %}
-          <input type="hidden" name="player" value="{{ player.id }}">
-          <div class="mb-3">
-            <label for="initiative" class="form-label">Initiative</label>
-            <input type="text" class="form-control" id="initiative" name="initiative" required>
-          </div>
-          <div class="mb-3">
-            <label for="character" class="form-label">Character's Name</label>
-            <input type="text" class="form-control" id="character" name="character" required>
-          </div>
-          <button type="submit" class="btn btn-success w-100">Add Character</button>
-        </form>
-      </div>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link {% if characters|length == 0 %}active{% endif %}"
+             id="add-character-tab"
+             data-bs-toggle="pill"
+             href="#add-character"
+             role="tab"
+             aria-controls="add-character"
+             aria-selected="false">Add characters</a>
+        </li>
       {% endif %}
-      
+    </ul>
+  </div>
+{% endblock navbar %}
+{% block content %}
+  <div class="container mt-4 ">
+    <div id="sse-connection"
+         hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div>
+    <!-- Tab Content -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade {% if characters|length > 0 %}show active{% endif %}"
+           id="characters"
+           role="tabpanel"
+           aria-labelledby="characters-tab">
+        <h2 class="mb-3">Characters in Lobby {{ player.lobby.code }}</h2>
+        <ul id="character-list"
+            class="list-group"
+            style="max-width: 400px"
+            hx-get="{% url 'character_list_partial' player.lobby.code %}"
+            hx-trigger="character_update from:#sse-connection"
+            hx-swap="innerHTML">
+          {% include "players/partials/character_list.html" %}
+        </ul>
+      </div>
+      <div class="tab-pane fade {% if characters|length == 0 %}show active{% endif %}"
+           id="add-characters"
+           role="tabpanel"
+           aria-labelledby="add-characters-tab">{% include "players/partials/add_character.html" %}</div>
     </div>
   </div>
-</div>
-
-<!-- Simple HTML5 Drag & Drop for reordering -->
-<script>
-
+  <!-- Simple HTML5 Drag & Drop for reordering -->
+  <script>
   document.getElementById('sse-connection').addEventListener('character_update', function(evt) {
     console.log("Received character_update event", evt);
   });
-</script>
+  </script>
 {% endblock content %}

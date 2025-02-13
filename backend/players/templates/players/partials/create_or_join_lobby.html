@@ -1,25 +1,47 @@
- <form id="create-lobby-form" class="mb-4 w-100" style="max-width: 400px;" action="{% url 'create_lobby' %}" method="post">
-  {% csrf_token %}
-  <input type="hidden" id="player-hidden" name="player" value={{player.name}}>
-  <button type="submit" class="btn btn-primary w-100">Create Lobby</button>
-</form>
-
-<form id="join-lobby-form" class="w-100" style="max-width: 400px;" action="{% url 'join_lobby' %}" method="get">
-  {% csrf_token %}
-  <input type="hidden" id="player-hidden" name="player" value={{player.name}}>
-  <div class="mb-3">
-    <label for="character" class="form-label">Character's Name</label>
-    <input type="text" class="form-control" id="character" name="character" required>
-  </div>
-  <div class="row mb-3">
-    <div class="col-6 mb-3">
-      <label for="code" class="form-label">Lobby's Code</label>
-      <input type="text" class="form-control" id="code" name="code" required>
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <form id="create-lobby-form"
+        class="mb-4 w-100"
+        style="max-width: 400px"
+        action="{% url 'create_lobby' %}"
+        method="post">
+    {% csrf_token %}
+    <input type="hidden"
+           id="player-hidden"
+           name="player"
+           value="{{ player.name }}">
+    <button type="submit" class="btn btn-primary w-100">Create Lobby</button>
+  </form>
+  <form id="join-lobby-form"
+        class="w-100"
+        style="max-width: 400px"
+        action="{% url 'join_lobby' %}"
+        method="get">
+    <input type="hidden"
+           id="player-hidden"
+           name="player"
+           value="{{ player.name }}">
+    <div class="mb-3">
+      <label for="character" class="form-label">Character's Name</label>
+      <input type="text"
+             class="form-control"
+             id="character"
+             name="character"
+             required>
     </div>
-    <div class="col-6 mb-3">
-      <label for="initiative" class="form-label">Initiative</label>
-      <input type="number" class="form-control" id="initiative" name="initiative" required>
+    <div class="row mb-3">
+      <div class="col-6 mb-3">
+        <label for="code" class="form-label">Lobby's Code</label>
+        <input type="text" class="form-control" id="code" name="code" required>
+      </div>
+      <div class="col-6 mb-3">
+        <label for="initiative" class="form-label">Initiative</label>
+        <input type="number"
+               class="form-control"
+               id="initiative"
+               name="initiative"
+               required>
+      </div>
     </div>
-  </div>
-  <button type="submit" class="btn btn-success w-100">Join Lobby</button>
-</form>
+    <button type="submit" class="btn btn-success w-100">Join Lobby</button>
+  </form>
+</div>

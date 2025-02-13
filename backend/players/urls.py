@@ -3,10 +3,11 @@ from django.urls import path
 from players import views
 
 urlpatterns = [
-    path('', views.login, name='login'),
-    path('player_connect', views.player_connect, name='player_connect'),
-    path('join_lobby', views.join_lobby, name='join_lobby'),
-    path('create_lobby', views.create_lobby, name='create_lobby'),
-    path('lobby/<str:lobby_code>/characters/', views.character_list_partial, name='character_list_partial'),
-    path('add_character', views.add_character, name='add_character'),
+    path('', views.LoginView.as_view(), name='login'),
+    path('', views.LoginView.as_view(), name='player_connect'),
+    path('join_lobby', views.LobbyView.as_view(), name='join_lobby'),
+    path('create_lobby', views.LobbyView.as_view(), name='create_lobby'),
+    path('leave_lobby', views.PlayerLobbyView.as_view(), name='leave_lobby'),
+    path('lobby/<str:lobby_code>/characters/', views.CharacterView.as_view(), name='character_list_partial'),
+    path('add_character', views.CharacterView.as_view(), name='add_character'),
 ]

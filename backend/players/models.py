@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Lobby(models.Model):
     code = models.CharField(max_length=6, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
-
+    #TODO ADD NAME 
 class Player(models.Model):
     name = models.CharField(max_length=100)
 

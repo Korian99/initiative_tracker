@@ -1,27 +1,21 @@
 {% extends "base.html" %}
-
-{% block title %}Lobby Page{% endblock %}
-
+{% block title %}Lobby Page{% endblock title%}
 {% block content %}
-<div class="container full-height">
-  <div class="row h-100">
-    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-      <form id="player_connect" class="mb-4 w-100" style="max-width: 400px;" action="{% url 'player_connect' %}" method="post">
-        {% csrf_token %}
-        <div class="mb-3">
-          <label for="player" class="form-label">Player's Name</label>
-          <input type="text" class="form-control" id="player" name="player" placeholder="Enter your name" required>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Login</button>
-      </form>
+  <form id="player_connect"
+        class="mb-4 w-100"
+        style="max-width: 400px"
+        action="{% url 'player_connect' %}"
+        method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="player" class="form-label">Player's Name</label>
+      <input type="text"
+             class="form-control"
+             id="player"
+             name="player"
+             placeholder="Enter your name"
+             required>
     </div>
-  </div>
-</div>
-
-<script>
-// When the player types in the create lobby form, copy the value to the join lobby form's hidden field.
-document.getElementById('player').addEventListener('input', function() {
-    document.getElementById('player-hidden').value = this.value;
-});
-</script>
+    <button type="submit" class="btn btn-primary w-100">Login</button>
+  </form>
 {% endblock content %}
