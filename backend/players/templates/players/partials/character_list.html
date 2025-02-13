@@ -1,0 +1,10 @@
+{% comment %} TODO - MOVE CHARACTERS ORDER {% endcomment %}
+{% comment %} TODO - MOVE CHANGE INITIATIVE {% endcomment %}
+{% comment %} TODO - REMOVE CHARACTER FROM INITIATIVE {% endcomment %}
+{% comment %} TODO - ASSIGN PLAYER TO CHARACTER {% endcomment %}
+
+{% for character in characters %}
+  <li class="list-group-item" draggable="true" data-id="{{ character.id }}">
+    {{ character.name }} - {{character.player.name}}- Initiative: {{ character.initiative }}
+  </li>
+{% endfor %}

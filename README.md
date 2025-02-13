@@ -75,3 +75,6 @@ pre-commit install
 npm install
 npm install eslint-plugin-react --save-dev
 ```
+
+To run
+daphne players.asgi:application

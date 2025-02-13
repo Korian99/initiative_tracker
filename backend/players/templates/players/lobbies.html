@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Lobby Page{% endblock %}
+
+{% block content %}
+<div class="container full-height">
+  <div class="row h-100">
+    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+      <h2>
+        {{player.name}}
+      </h2>
+    {% comment %} TODO - CREATE TWO CARDS {% endcomment %}
+      <div id="my_lobbies">
+        {% include "players/partials/lobby_list.html" %}
+      </div>
+      <div id="other_lobbies">
+        {% include "players/partials/create_or_join_lobby.html" %}
+      </div>      
+    </div>
+  </div>
+</div>
+{% endblock content %}

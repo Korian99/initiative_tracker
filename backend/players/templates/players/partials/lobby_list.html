@@ -1,0 +1,30 @@
+
+
+{% if player.get_my_lobbies|length > 0%}
+{% comment %} TODO - DELETE LOBBIES {% endcomment %}
+<h2 class="mb-3">Lobbies I DM:</h2>
+<ul>
+  {% for lobby in player.get_my_lobbies %}
+  <form id="join-lobby-{{lobby.code}}-form" class="w-100" style="max-width: 400px;" action="{% url 'join_lobby' %}" method="get">
+    <input type="hidden" id="player-hidden" name="player" value={{player.name}}>
+    <input type="hidden" id="code-hidden" name="code" value={{lobby.code}}>
+    <li class="list-group-item" draggable="true" data-id="{{ lobby.id }}">
+      <button type="submit" class="btn btn-success w-100">Lobby n°{{ lobby.code }}</button>
+    </li>
+  </form>
+  
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if player.get_playing_lobbies|length > 0%}
+{% comment %} TODO - EXIT LOBBIES {% endcomment %}
+<h2 class="mb-3">Lobbies I Play in:</h2>
+<ul>
+  {% for lobby in player.get_playing_lobbies %}
+  <li class="list-group-item" draggable="true" data-id="{{ lobby.id }}">
+    Lobby n°{{ lobby.code }}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
