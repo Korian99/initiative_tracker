@@ -113,10 +113,10 @@ class PlayerLobbyView(TemplateView):
 class CharacterView(TemplateView):
         #add_character
 
-    def get(self, request, lobby_code):
-        lobby = get_object_or_404(Lobby, code=lobby_code)
-        characters = Character.objects.filter(player__lobby=lobby)
-        return render(request, "players/partials/character_list.html", {'characters': characters})
+    def get(self, request, player_lobby_id):
+        player = PlayerInLobby.objects.get(id=player_lobby_id)
+        characters = Character.objects.filter(player__lobby=player.lobby)
+        return render(request, "players/partials/character_list.html", {'player':player, 'characters': characters})
 
     #add_character
     def post(self, request):

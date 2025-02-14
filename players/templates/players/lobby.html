@@ -34,8 +34,8 @@
 {% endblock navbar %}
 {% block content %}
   <div class="container mt-4">
-    <div id="sse-connection"
-         hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div>
+    {% comment %} <div id="sse-connection"
+         hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->
     <div class="tab-content" id="tabs-content">
       <div class="tab-pane fade {% if characters|length > 0 %}show active{% endif %}"
@@ -46,8 +46,8 @@
         <ul id="character-list"
             class="list-group"
             style="max-width: 400px"
-            hx-get="{% url 'character_list_partial' player.lobby.code %}"
-            hx-trigger="character_update from:#sse-connection"
+            hx-get="{% url 'character_list_partial' player.id %}"
+            hx-trigger="every 10s"
             hx-swap="innerHTML">
           {% include "players/partials/character_list.html" %}
         </ul>
@@ -59,9 +59,9 @@
     </div>
   </div>
   <!-- Simple HTML5 Drag & Drop for reordering -->
-  <script>
+  {% comment %} <script>
     document.getElementById('sse-connection').addEventListener('character_update', function(evt) {
       console.log("Received character_update event", evt);
     });
-  </script>
+  </script> {% endcomment %}
 {% endblock content %}

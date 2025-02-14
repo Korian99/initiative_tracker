@@ -59,7 +59,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'tracker.urls'
 
-print(BASE_DIR)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -76,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION  = 'tracker.asgi.application'
+WSGI_APPLICATION  = 'tracker.wsgi.application'
 
 
 # Database
