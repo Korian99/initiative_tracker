@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=)rsh@eia^ep9z+3*#gwcd4_ubocp_ny0yw1q62o7jc2)=e4-u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['initiative-tracker-gksz.onrender.com']
 
 
 # Application definition
