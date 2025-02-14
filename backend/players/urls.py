@@ -4,10 +4,15 @@ from players import views
 
 urlpatterns = [
     path('', views.LoginView.as_view(), name='login'),
-    path('', views.LoginView.as_view(), name='player_connect'),
+    path('player_connect', views.LoginView.as_view(), name='player_connect'),
     path('join_lobby', views.LobbyView.as_view(), name='join_lobby'),
+    path('join_lobby_first_time', views.join_lobby_first_time, name='join_lobby_first_time'),
     path('create_lobby', views.LobbyView.as_view(), name='create_lobby'),
     path('leave_lobby', views.PlayerLobbyView.as_view(), name='leave_lobby'),
     path('lobby/<str:lobby_code>/characters/', views.CharacterView.as_view(), name='character_list_partial'),
     path('add_character', views.CharacterView.as_view(), name='add_character'),
+    path('move_character', views.move_character, name='move_character'),
+    path('load_edit_modal/<int:player_lobby_id>/<int:character_id>/', views.EditCharacterView.as_view(), name='load_edit_modal'),
+    path('edit_character/', views.EditCharacterView.as_view(), name='edit_character'),
+    path('delete_character/<int:player_lobby_id>/<int:character_id>/', views.EditCharacterView.as_view(), name='delete_character'),
 ]

@@ -8,7 +8,7 @@
         <input type="hidden" name="player" value="{{ player.id }}">
         <div class="mb-3">
           <label for="initiative" class="form-label">Initiative</label>
-          <input type="text"
+          <input type="number"
                  class="form-control"
                  id="initiative"
                  name="initiative"
@@ -22,7 +22,15 @@
                  name="character"
                  required>
         </div>
-        <button type="submit" class="btn btn-success w-100">Add Character</button>
+        <button type="submit" class="btn btn-success w-100" onclick="activateTab('characters-tab');">Add Character</button>
       </form>
     </div>
+    <script>
+      // Function to activate a tab
+      function activateTab(tabId) {
+        var tabElement = document.getElementById(tabId);
+        var tab = new bootstrap.Tab(tabElement);
+        tab.show();
+      }
+        </script>
   {% endif %}

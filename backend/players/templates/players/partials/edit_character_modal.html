@@ -1,0 +1,71 @@
+<div class="modal fade"
+     id="editCharacterModal"
+     tabindex="-1"
+     aria-labelledby="editCharacterModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editCharacterModalLabel">Edit Character</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <form hx-post="{% url 'edit_character' %}"
+                  hx-target="#character-list"
+                  hx-swap="innerHTML">
+                  {% csrf_token %}
+
+                <div class="modal-body">
+                    <!-- Hidden input for character id -->
+                    <input type="hidden" name="player_lobby_id" value="{{ player_lobby.id }}">
+                    <input type="hidden" name="character_id" value="{{ character.id }}">
+                    <div class="mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
+                        <label for="initiative" class="form-label">Initiative</label>
+                        <input type="text"
+                               class="form-control"
+                               id="initiative"
+                               name="initiative"
+                               value="{{ character.initiative }}"
+                               >
+                    </div>
+                    <div class="mb-3 {% if not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
+                        <label for="new_player" class="form-label">Assign to Player</label>
+                        <select name="new_player" id="new_player" class="form-select">
+                            {% for p in playersInLobby %}
+                                <option value="{{ p.id }}"
+                                        {% if p.id == character.player.id %}selected{% endif %}>
+                                    {{ p.player.name }} ({{ p.role }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-danger"
+                            hx-delete="{% url 'delete_character' player_lobby.id character.id %}"
+                            hx-target="#character-list"
+                            hx-swap="innerHTML"
+                            onclick="deleteChar(event)">Delete Character</button>
+                    <button type="submit" class="btn btn-primary" onclick="myModal.hide()">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('editCharacterModal'));
+    myModal.show();
+    document.body.addEventListener("htmx:configRequest", (event) => {
+        var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
+        event.detail.headers["X-CSRFToken"] = token;
+    });
+    function deleteChar(e){
+        if(!confirm('Are you sure?')) {
+            myModal.hide();
+            e.preventDefault();
+        }
+    }
+</script>

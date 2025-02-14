@@ -5,10 +5,17 @@ from django.contrib.auth.models import User
 class Lobby(models.Model):
     code = models.CharField(max_length=6, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    #TODO ADD NAME 
+    name = models.CharField(max_length=100, blank=True, null=True)
+
+    def __str__(self):
+        if self.name is not None and len(self.name)>0:
+            return self.name
+        return "N°"+self.code            
 class Player(models.Model):
     name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.name  
     def get_my_lobbies(self):
         lobbies_id = PlayerInLobby.objects.filter(player=self, role='DM').values_list("lobby_id",flat=True)
         lobbies = Lobby.objects.filter(id__in=lobbies_id)
@@ -28,7 +35,8 @@ class PlayerInLobby(models.Model):
     role = models.CharField(max_length=2, choices=ROLE_CHOICES)
     player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='player')
     lobby = models.ForeignKey(Lobby, on_delete=models.CASCADE, related_name='lobby')
-
+    def __str__(self):
+        return "Player: "+str(self.player) + "in Lobby " + str(self.lobby)   
 
 class Character(models.Model):
     player = models.ForeignKey(PlayerInLobby, on_delete=models.CASCADE)
@@ -36,8 +44,10 @@ class Character(models.Model):
     initiative = models.IntegerField()
     order = models.PositiveIntegerField(default=0)
 
+    def __str__(self):
+        return self.name + " - " + str(self.player.player)  
     class Meta:
-        ordering = ['order', '-initiative']  # auto-order by initiative but allow manual reordering
+        ordering = ['-order']  # auto-order by initiative but allow manual reordering
 
 class ConditionType(models.Model):
     name = models.CharField(max_length=100)
