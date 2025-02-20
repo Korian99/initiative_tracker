@@ -1,0 +1,60 @@
+<div class="modal fade"
+     id="editLobbyModal"
+     tabindex="-1"
+     aria-labelledby="editLobbyModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editLobbyModalLabel">Edit {{ lobby }}</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <form hx-post="{% url 'edit_lobby' %}"
+                  hx-swap="innerHTML"
+                  hx-target="#character-list">
+                <div class="modal-body">
+                    <!-- Hidden input for players_in_lobby id -->
+                    {% csrf_token %}
+                    <input type="hidden" name="player_lobby_id" value="{{ player_lobby.id }}">
+                    <div class="mb-3 {% if not player_lobby.role == 'DM' %}d-none{% endif %}">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text"
+                               class="form-control"
+                               id="name"
+                               name="name"
+                               value="{{ lobby.name }}">
+                    </div>
+                    <div class="mb-3 {% if not player_lobby.role == 'DM' %}d-none{% endif %}">
+                        <label for="players" class="form-label">Assign Players as Admin</label>
+                        <select name="players"
+                                id="players"
+                                class="form-select"
+                                multiple
+                                aria-label="multiple select example">
+                            {% for p in players_in_lobby %}
+                                <option value="{{ p.id }}"
+                                        {% if p.id in admin_players_ids %}selected{% endif %}>
+                                    {{ p.player.name }} ({{ p.role }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" onclick="myModal.hide()">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('editLobbyModal'));
+    myModal.show();
+    document.body.addEventListener("htmx:configRequest", (event) => {
+        var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
+        event.detail.headers["X-CSRFToken"] = token;
+    });
+</script>

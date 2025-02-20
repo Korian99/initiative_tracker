@@ -4,15 +4,16 @@ from random import randint
 from datetime import datetime
 from django.urls import reverse
 from django.views.generic import TemplateView
-from django.http import HttpResponse
+import json
+from django.http import JsonResponse
 
 
 class LoginView(TemplateView):
-    #login
+    # login
     def get(self, request):
         return render(request, "players/login.html")
 
-    #player_connect
+    # player_connect
     def post(self, request):
         player_name = request.POST.get("player")
         player, _ = Player.objects.get_or_create(name=player_name)
@@ -55,42 +56,80 @@ class LobbyView(TemplateView):
         url = reverse('join_lobby')
         query_string = f"?code={lobby.code}&player={player.name}"
         return redirect(url + query_string)
+    
+class EditLobbyView(TemplateView):
+    # load_lobby_edit_modal
+    def get(self, request, player_lobby_id):
+        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+        players_in_lobby = PlayerInLobby.objects.filter(
+            lobby=player_lobby.lobby).exclude(role="DM")
+        admin_players_ids = players_in_lobby.filter(
+            role='PA').values_list("id", flat=True)
+        return render(request, "players/partials/edit_lobby_modal.html", {
+            'player_lobby': player_lobby, "players_in_lobby": players_in_lobby, "admin_players_ids": admin_players_ids, "lobby": player_lobby.lobby
+        })
+
+    #edit_lobby
+    def post(self, request):
+           
+        player_in_lobby_id = request.POST.get("player_lobby_id")
+        new_name = request.POST.get("name")
+        new_pas = request.POST.getlist("players")
+
+        player_in_lobby = PlayerInLobby.objects.get(id=player_in_lobby_id)
+
+        lobby = player_in_lobby.lobby
+        lobby.name = new_name
+        lobby.save()
+        
+        notDMPlayers = PlayerInLobby.objects.filter(lobby=lobby).exclude(role="DM")
+        notDMPlayers.update(role="P")
+        notDMPlayers.filter(id__in=new_pas).update(role="PA")
+
+        characters = Character.objects.filter(player__lobby=player_in_lobby.lobby)
+
+        return render(request, "players/partials/character_list.html", {'player': player_in_lobby, 'characters': characters})
+
 
 def join_lobby_first_time(request):
-        lobby = get_object_or_404(Lobby, code=request.GET.get("code"))
-        player_name = request.GET.get("player")
-        player, _ = Player.objects.get_or_create(name=player_name)
-        if PlayerInLobby.objects.filter(player=player, lobby = lobby).exists():
-            player_in_lobby = PlayerInLobby.objects.get(player=player, lobby = lobby)
-        else:
-            player_in_lobby = PlayerInLobby.objects.create(player=player, lobby = lobby, role='P')
-        character_name = request.GET.get("character")
-        initiative = request.GET.get("initiative")
+    lobby = get_object_or_404(Lobby, code=request.GET.get("code"))
+    player_name = request.GET.get("player")
+    player, _ = Player.objects.get_or_create(name=player_name)
+    if PlayerInLobby.objects.filter(player=player, lobby=lobby).exists():
+        player_in_lobby = PlayerInLobby.objects.get(player=player, lobby=lobby)
+    else:
+        player_in_lobby = PlayerInLobby.objects.create(
+            player=player, lobby=lobby, role='P')
+    character_name = request.GET.get("character")
+    initiative = request.GET.get("initiative")
 
-        was_created =Character.objects.filter(
-            player = player_in_lobby,
-            name = character_name,
-            initiative = initiative
-        ).exists()
+    was_created = Character.objects.filter(
+        player=player_in_lobby,
+        name=character_name,
+        initiative=initiative
+    ).exists()
 
-        Character.objects.update_or_create(
-            player=player_in_lobby,
-            name=character_name,
-            defaults={'initiative': initiative}
-        )
-        characters = Character.objects.filter(player__lobby=lobby)
+    Character.objects.update_or_create(
+        player=player_in_lobby,
+        name=character_name,
+        defaults={'initiative': initiative}
+    )
+    characters = Character.objects.filter(player__lobby=lobby)
 
-        if not was_created:
-            characters = characters.order_by("-initiative")
-            i=len(characters)
-            for c in characters:
-                c.order= i
-                i-=1
-                c.save()
+    if not was_created:
+        characters = characters.order_by("-initiative")
+        i = len(characters)
+        for c in characters:
+            c.order = i
+            i -= 1
+            c.save()
 
-        url = reverse('join_lobby')
-        query_string = f"?code={lobby.code}&player={player.name}"
-        return redirect(url + query_string)
+    url = reverse('join_lobby')
+    query_string = f"?code={lobby.code}&player={player.name}"
+    return redirect(url + query_string)
+
+
+
 
 class PlayerLobbyView(TemplateView):
     def post(self, request):
@@ -111,14 +150,14 @@ class PlayerLobbyView(TemplateView):
 
 
 class CharacterView(TemplateView):
-        #add_character
+    # add_character
 
     def get(self, request, player_lobby_id):
         player = PlayerInLobby.objects.get(id=player_lobby_id)
         characters = Character.objects.filter(player__lobby=player.lobby)
-        return render(request, "players/partials/character_list.html", {'player':player, 'characters': characters})
+        return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
 
-    #add_character
+    # add_character
     def post(self, request):
         player_in_lobby = get_object_or_404(
             PlayerInLobby, id=request.POST.get("player"))
@@ -130,7 +169,7 @@ class CharacterView(TemplateView):
         if Character.objects.filter(name=character_name, player=player_in_lobby).exists():
             existing_characters = Character.objects.filter(
                 name__icontains=character_name, player=player_in_lobby)
-            
+
             Character.objects.create(
                 player=player_in_lobby,
                 name=f"{character_name} ({len(existing_characters) + 1})",
@@ -140,85 +179,98 @@ class CharacterView(TemplateView):
             Character.objects.create(
                 player=player_in_lobby, name=character_name, initiative=initiative)
 
-        characters = Character.objects.filter(player__lobby=lobby).order_by("-initiative","-order")
-        i=len(characters)
+        characters = Character.objects.filter(
+            player__lobby=lobby).order_by("-initiative", "-order")
+        i = len(characters)
         for c in characters:
-            c.order= i
-            i-=1
+            c.order = i
+            i -= 1
             c.save()
         if request.headers.get("HX-Request"):
             return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
         return render(request, "players/lobby.html", {'characters': characters, 'player': player_in_lobby})
 
+
 class EditCharacterView(TemplateView):
+    # load_char_edit_modal
     def get(self, request, player_lobby_id, character_id):
 
         character = get_object_or_404(Character, id=character_id)
         player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
-        playersInLobby = PlayerInLobby.objects.filter(lobby=character.player.lobby)
-        
+        playersInLobby = PlayerInLobby.objects.filter(
+            lobby=character.player.lobby)
+
         return render(request, "players/partials/edit_character_modal.html", {
             'character': character,
             'player_lobby': player_lobby,
             'playersInLobby': playersInLobby
         })
-    
+
+    # edit_character
     def post(self, request):
         char_id = request.POST.get("character_id")
         new_player_id = request.POST.get("new_player")
         new_initiative = request.POST.get("initiative")
+        new_name = request.POST.get("name")
         character = get_object_or_404(Character, id=char_id)
         new_player = get_object_or_404(PlayerInLobby, id=new_player_id)
         character.player = new_player
         is_diff = int(character.initiative) != int(new_initiative)
         character.initiative = new_initiative
+        character.name = new_name
         character.save()
-        
+
         lobby = character.player.lobby
-        
+
         characters = Character.objects.filter(player__lobby=lobby)
         if is_diff:
             characters = characters.order_by("-initiative")
-            i=len(characters)
+            i = len(characters)
             for c in characters:
-                c.order= i
-                i-=1
+                c.order = i
+                i -= 1
                 c.save()
 
         player_lobby_id = request.POST.get("player_lobby_id")
         player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
 
         return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
-    
+
+    # delete_character
     def delete(self, request, player_lobby_id, character_id):
         character = get_object_or_404(Character, id=character_id)
-        lobby = character.player.lobby 
+        lobby = character.player.lobby
         character.delete()
         characters = Character.objects.filter(player__lobby=lobby)
         player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
         return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
-    
+
+# move_character
+
+
 def move_character(request):
     char_id = request.POST.get("character_id")
     player_id = request.POST.get("player_lobby_id")
     direction = request.POST.get("direction")
-    
+
     character = get_object_or_404(Character, id=char_id)
-    player = get_object_or_404(PlayerInLobby,id=player_id)
+    player = get_object_or_404(PlayerInLobby, id=player_id)
 
     try:
         if direction == "up":
-            other_char = Character.objects.get(player__lobby=character.player.lobby, order=character.order+1)
-            other_char.order -=1
-            character.order +=1
+            other_char = Character.objects.get(
+                player__lobby=character.player.lobby, order=character.order+1)
+            other_char.order -= 1
+            character.order += 1
         elif direction == "down":
-            other_char = Character.objects.get(player__lobby=character.player.lobby, order=character.order-1)
-            other_char.order +=1
-            character.order -=1
+            other_char = Character.objects.get(
+                player__lobby=character.player.lobby, order=character.order-1)
+            other_char.order += 1
+            character.order -= 1
         character.save()
         other_char.save()
     except:
         None
     characters = Character.objects.filter(player__lobby=character.player.lobby)
 
-    return render(request, "players/partials/character_list.html", {'player':player, 'characters': characters})
+    return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})

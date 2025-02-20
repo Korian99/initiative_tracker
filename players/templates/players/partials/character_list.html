@@ -1,52 +1,63 @@
-{% for character in characters %}
-  <li class="list-group-item d-flex justify-content-between align-items-center gap-3"
-      data-id="{{ character.id }}">
-    <span class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
-    {% if player.role == "DM" or player.role == "PA" %}
-      <form hx-post="{% url 'move_character' %}"
-            hx-swap="innerHTML"
-            hx-target="#character-list">
-        {% csrf_token %}
-        <input type="hidden"
-               name="player_lobby_id"
-               id="player_lobby_id"
-               value="{{ player.id }}">
-        <input type="hidden"
-               name="character_id"
-               id="character_id"
-               value="{{ character.id }}">
-        <input type="hidden" name="direction" id="direction" value="up">
-        <button type="submit" class="btn border">
-          <i class="bi bi-arrow-up"></i>
+<div class="mb-3">
+  <h2>Characters in Lobby {{ player.lobby }}</h2>
+  {% if player.role == "DM" %}
+    <button class="btn btn-sm btn-info edit-character"
+            hx-get="{% url 'load_lobby_edit_modal' player.id %}"
+            hx-target="#lobby-modal-container"
+            hx-swap="innerHTML">
+      <i class="bi bi-pencil"></i>
+    </button>
+  {% endif %}
+</div>
+<ul id="characters" class="list-group" style="max-width: 400px">
+  {% for character in characters %}
+    <li class="list-group-item d-flex justify-content-between align-items-center gap-3"
+        data-id="{{ character.id }}">
+      <span class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
+      {% if player.role == "DM" or player.role == "PA" %}
+        <form hx-post="{% url 'move_character' %}"
+              hx-swap="innerHTML"
+              hx-target="#character-list">
+          {% csrf_token %}
+          <input type="hidden"
+                 name="player_lobby_id"
+                 id="player_lobby_id"
+                 value="{{ player.id }}">
+          <input type="hidden"
+                 name="character_id"
+                 id="character_id"
+                 value="{{ character.id }}">
+          <input type="hidden" name="direction" id="direction" value="up">
+          <button type="submit" class="btn border">
+            <i class="bi bi-arrow-up"></i>
+          </button>
+        </form>
+        <form hx-post="{% url 'move_character' %}"
+              hx-swap="innerHTML"
+              hx-target="#character-list">
+          {% csrf_token %}
+          <input type="hidden"
+                 name="player_lobby_id"
+                 id="player_lobby_id"
+                 value="{{ player.id }}">
+          <input type="hidden"
+                 name="character_id"
+                 id="character_id"
+                 value="{{ character.id }}">
+          <input type="hidden" name="direction" id="direction" value="down">
+          <button type="submit" class="btn border">
+            <i class="bi bi-arrow-down"></i>
+          </button>
+        </form>
+      {% endif %}
+      {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
+        <button class="btn btn-sm btn-info edit-character"
+                hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
+                hx-target="#char-modal-container"
+                hx-swap="innerHTML">
+          <i class="bi bi-pencil"></i>
         </button>
-      </form>
-      <form hx-post="{% url 'move_character' %}"
-            hx-swap="innerHTML"
-            hx-target="#character-list">
-        {% csrf_token %}
-        <input type="hidden"
-               name="player_lobby_id"
-               id="player_lobby_id"
-               value="{{ player.id }}">
-        <input type="hidden"
-               name="character_id"
-               id="character_id"
-               value="{{ character.id }}">
-        <input type="hidden" name="direction" id="direction" value="down">
-        <button type="submit" class="btn border">
-          <i class="bi bi-arrow-down"></i>
-        </button>
-      </form>
-    {% endif %}
-    {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
-      <button class="btn btn-sm btn-info edit-character"
-              hx-get="{% url 'load_edit_modal' player.id character.id %}"
-              hx-target="#modal-container"
-              hx-swap="innerHTML">
-        <i class="bi bi-pencil"></i>
-      </button>
-    {% endif %}
-  </li>
-{% endfor %}
-<!-- Modal container -->
-<div id="modal-container"></div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

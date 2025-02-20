@@ -34,24 +34,16 @@
 {% endblock navbar %}
 {% block content %}
   <div class="container mt-4">
-    {% comment %} <div id="sse-connection"
-         hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
+    {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->
     <div class="tab-content" id="tabs-content">
       <div class="tab-pane fade {% if characters|length > 0 %}show active{% endif %}"
-           id="characters"
+           id="character-list"
            role="tabpanel"
-           aria-labelledby="characters-tab">
-        <h2 class="mb-3">Characters in Lobby {{ player.lobby }}</h2>
-        <ul id="character-list"
-            class="list-group"
-            style="max-width: 400px"
-            hx-get="{% url 'character_list_partial' player.id %}"
-            hx-trigger="every 10s"
-            hx-swap="innerHTML">
-          {% include "players/partials/character_list.html" %}
-        </ul>
-      </div>
+           aria-labelledby="characters-tab"
+           hx-get="{% url 'character_list_partial' player.id %}"
+           hx-trigger="every 10s"
+           hx-swap="innerHTML">{% include "players/partials/character_list.html" %}</div>
       <div class="tab-pane fade {% if characters|length == 0 %}show active{% endif %}"
            id="add-characters"
            role="tabpanel"
@@ -62,6 +54,8 @@
   {% comment %} <script>
     document.getElementById('sse-connection').addEventListener('character_update', function(evt) {
       console.log("Received character_update event", evt);
-    });
+      });
   </script> {% endcomment %}
+  <div id="char-modal-container"></div>
+  <div id="lobby-modal-container"></div>
 {% endblock content %}
