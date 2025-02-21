@@ -5,7 +5,7 @@
       {% for lobby in player.get_my_lobbies %}
         <li class="list-group-item justify-content-between align-items-center d-flex"
             data-id="{{ lobby.id }}">
-          <div class="flex-grow-1">Lobby {{ lobby }}</div>
+          <div class="flex-grow-1">Lobby: {{ lobby }}</div>
           <form id="join-lobby-{{ lobby.code }}-form"
                 action="{% url 'join_lobby' %}"
                 method="get">
@@ -43,7 +43,7 @@
       {% for lobby in player.get_playing_lobbies %}
         <li class="list-group-item justify-content-between align-items-center d-flex"
             data-id="{{ lobby.id }}">
-          <div class="flex-grow-1">Lobby {{ lobby }}</div>
+          <div class="flex-grow-1">Lobby: {{ lobby }}</div>
           <form id="join-lobby-{{ lobby.code }}-form"
                 action="{% url 'join_lobby' %}"
                 method="get">

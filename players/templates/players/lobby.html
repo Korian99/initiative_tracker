@@ -13,9 +13,9 @@
         <a class="nav-link {% if characters|length > 0 %}active{% endif %}"
            id="characters-tab"
            data-bs-toggle="tab"
-           href="#characters"
+           href="#character-list"
            role="tab"
-           aria-controls="characters"
+           aria-controls="character-list"
            aria-selected="true">Characters</a>
       </li>
       {% if player.role == "DM" or player.role == "PA" %}
@@ -37,6 +37,7 @@
     {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->
     <div class="tab-content" id="tabs-content">
+      
       <div class="tab-pane fade {% if characters|length > 0 %}show active{% endif %}"
            id="character-list"
            role="tabpanel"

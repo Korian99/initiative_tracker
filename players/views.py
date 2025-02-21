@@ -8,6 +8,18 @@ import json
 from django.http import JsonResponse
 
 
+def reorder_characters(characters, change_turn=True):
+    i = len(characters)
+    for c in characters:
+        c.current_turn = False
+        if i == len(characters) and change_turn:
+            c.current_turn = True
+        c.order = i
+        i -= 1
+        c.save()
+    return characters.order_by("-order")
+
+
 class LoginView(TemplateView):
     # login
     def get(self, request):
@@ -56,7 +68,8 @@ class LobbyView(TemplateView):
         url = reverse('join_lobby')
         query_string = f"?code={lobby.code}&player={player.name}"
         return redirect(url + query_string)
-    
+
+
 class EditLobbyView(TemplateView):
     # load_lobby_edit_modal
     def get(self, request, player_lobby_id):
@@ -69,9 +82,9 @@ class EditLobbyView(TemplateView):
             'player_lobby': player_lobby, "players_in_lobby": players_in_lobby, "admin_players_ids": admin_players_ids, "lobby": player_lobby.lobby
         })
 
-    #edit_lobby
+    # edit_lobby
     def post(self, request):
-           
+
         player_in_lobby_id = request.POST.get("player_lobby_id")
         new_name = request.POST.get("name")
         new_pas = request.POST.getlist("players")
@@ -81,12 +94,14 @@ class EditLobbyView(TemplateView):
         lobby = player_in_lobby.lobby
         lobby.name = new_name
         lobby.save()
-        
-        notDMPlayers = PlayerInLobby.objects.filter(lobby=lobby).exclude(role="DM")
+
+        notDMPlayers = PlayerInLobby.objects.filter(
+            lobby=lobby).exclude(role="DM")
         notDMPlayers.update(role="P")
         notDMPlayers.filter(id__in=new_pas).update(role="PA")
 
-        characters = Character.objects.filter(player__lobby=player_in_lobby.lobby)
+        characters = Character.objects.filter(
+            player__lobby=player_in_lobby.lobby)
 
         return render(request, "players/partials/character_list.html", {'player': player_in_lobby, 'characters': characters})
 
@@ -118,17 +133,10 @@ def join_lobby_first_time(request):
 
     if not was_created:
         characters = characters.order_by("-initiative")
-        i = len(characters)
-        for c in characters:
-            c.order = i
-            i -= 1
-            c.save()
-
+        reorder_characters(characters)
     url = reverse('join_lobby')
     query_string = f"?code={lobby.code}&player={player.name}"
     return redirect(url + query_string)
-
-
 
 
 class PlayerLobbyView(TemplateView):
@@ -150,8 +158,8 @@ class PlayerLobbyView(TemplateView):
 
 
 class CharacterView(TemplateView):
-    # add_character
 
+    # character_list_partial
     def get(self, request, player_lobby_id):
         player = PlayerInLobby.objects.get(id=player_lobby_id)
         characters = Character.objects.filter(player__lobby=player.lobby)
@@ -180,12 +188,8 @@ class CharacterView(TemplateView):
                 player=player_in_lobby, name=character_name, initiative=initiative)
 
         characters = Character.objects.filter(
-            player__lobby=lobby).order_by("-initiative", "-order")
-        i = len(characters)
-        for c in characters:
-            c.order = i
-            i -= 1
-            c.save()
+            player__lobby=lobby).order_by("-order")
+        reorder_characters(characters)
         if request.headers.get("HX-Request"):
             return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
         return render(request, "players/lobby.html", {'characters': characters, 'player': player_in_lobby})
@@ -224,13 +228,7 @@ class EditCharacterView(TemplateView):
 
         characters = Character.objects.filter(player__lobby=lobby)
         if is_diff:
-            characters = characters.order_by("-initiative")
-            i = len(characters)
-            for c in characters:
-                c.order = i
-                i -= 1
-                c.save()
-
+            reorder_characters(characters)
         player_lobby_id = request.POST.get("player_lobby_id")
         player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
 
@@ -245,9 +243,34 @@ class EditCharacterView(TemplateView):
         player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
         return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
 
+
+class TurnView(TemplateView):
+    # reload_current_turn
+    def get(self, request, player_lobby_id):
+
+        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+        characters = Character.objects.filter(
+            player__lobby=player_lobby.lobby).order_by("-initiative")
+        characters = reorder_characters(characters)
+
+        return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_lobby})
+
+    # pass_turn
+    def post(self, request):
+        player_lobby_id = request.POST.get("player_lobby_id")
+        player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+        characters = Character.objects.filter(
+            player__lobby=player_in_lobby.lobby)
+
+        next_char = characters.first().next_turn()
+        characters.filter(current_turn=True).update(current_turn=False)
+        next_char.current_turn = True
+        next_char.save()
+
+        return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
+
+
 # move_character
-
-
 def move_character(request):
     char_id = request.POST.get("character_id")
     player_id = request.POST.get("player_lobby_id")
@@ -269,8 +292,7 @@ def move_character(request):
             character.order -= 1
         character.save()
         other_char.save()
-    except:
-        None
-    characters = Character.objects.filter(player__lobby=character.player.lobby)
-
+    except Exception as e:
+        print(e)
+    characters = Character.objects.filter(player__lobby=character.player.lobby).order_by("-order")
     return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})

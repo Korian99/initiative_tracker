@@ -17,4 +17,6 @@ urlpatterns = [
     path('delete_character/<int:player_lobby_id>/<int:character_id>/', views.EditCharacterView.as_view(), name='delete_character'),
     path('load_lobby_edit_modal/<int:player_lobby_id>/', views.EditLobbyView.as_view(), name='load_lobby_edit_modal'),
     path('edit_lobby', views.EditLobbyView.as_view(), name='edit_lobby'),
+    path('reload_current_turn/<int:player_lobby_id>/', views.TurnView.as_view(), name='reload_current_turn'),
+    path('pass_turn', views.TurnView.as_view(), name='pass_turn'),
 ]
