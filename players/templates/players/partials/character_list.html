@@ -18,13 +18,18 @@
         <i class="bi bi-arrow-clockwise"></i>
       </button>
     </form>
+  {% endif %}
+  {% if player.role == "DM" or player.role == "PA" %}
     <form class="btn btn-info edit-character"
           hx-post="{% url 'pass_turn' %}"
           hx-target="#character-list"
           hx-swap="innerHTML"
           onclick="confirmClick(event)">
-          {% csrf_token %}
-      <input type="hidden" name="player_lobby_id" id="player_lobby_id" value="{{ player.id }}">
+      {% csrf_token %}
+      <input type="hidden"
+             name="player_lobby_id"
+             id="player_lobby_id"
+             value="{{ player.id }}">
     </input>
     <button type="submit" class="btn btn-info edit-character">
       <i class="bi bi-check-lg"></i>
@@ -32,17 +37,17 @@
   </form>
 {% endif %}
 </div>
-<ul id="characters" class="list-group" style="max-width: 400px">
-  <style>
-    .current_turn{
-      background-color:limegreen;
-    }
-    .next_turn{
-      background-color:lightblue;
-    }
-  </style>
+<style>
+  .current_turn{
+    background-color:limegreen;
+  }
+  .next_turn{
+    background-color:lightblue;
+  }
+</style>
+<ul id="characters" class="list-group">
   {% for character in characters %}
-    <li class="list-group-item d-flex justify-content-between align-items-center gap-3 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
+    <li class="list-group-item d-flex justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
         data-id="{{ character.id }}">
       <span class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
       {% if player.role == "DM" or player.role == "PA" %}
