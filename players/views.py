@@ -133,7 +133,7 @@ def join_lobby_first_time(request):
 
     if not was_created:
         characters = characters.order_by("-initiative")
-        reorder_characters(characters)
+        characters = reorder_characters(characters)    
     url = reverse('join_lobby')
     query_string = f"?code={lobby.code}&player={player.name}"
     return redirect(url + query_string)
@@ -189,7 +189,7 @@ class CharacterView(TemplateView):
 
         characters = Character.objects.filter(
             player__lobby=lobby).order_by("-order")
-        reorder_characters(characters)
+        characters = reorder_characters(characters)
         if request.headers.get("HX-Request"):
             return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
         return render(request, "players/lobby.html", {'characters': characters, 'player': player_in_lobby})
@@ -228,7 +228,7 @@ class EditCharacterView(TemplateView):
 
         characters = Character.objects.filter(player__lobby=lobby)
         if is_diff:
-            reorder_characters(characters)
+            characters = reorder_characters(characters)
         player_lobby_id = request.POST.get("player_lobby_id")
         player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
 
