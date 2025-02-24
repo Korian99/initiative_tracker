@@ -3,7 +3,7 @@
   Lobby Page
 {% endblock title %}
 {% block player %}
-  <h2>{{ player }}</h2>
+  <div id="player-container">{% include "players/partials/player_container.html" %}</div>
 {% endblock player %}
 {% block navbar %}
   <div class="container">
@@ -46,4 +46,6 @@
            aria-labelledby="other-lobbies-tab">{% include "players/partials/create_or_join_lobby.html" %}</div>
     </div>
   </div>
+  <div id="player-modal-container"></div>
+
 {% endblock content %}

@@ -1,0 +1,45 @@
+<div class="modal fade"
+     id="editPlayerModal"
+     tabindex="-1"
+     aria-labelledby="editPlayerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editPlayerModalLabel">Edit Player</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            {% if lobby_id == 0 %}
+                <form hx-post="{% url 'edit_player' %}"
+                    hx-target="#player-container"
+                    hx-swap="innerHTML">
+            {% else %}
+                <form action="{% url 'edit_player' %}" method="post">
+            {% endif %}
+                    {% csrf_token %}
+                    <div class="modal-body">
+                        <input type="hidden" name="lobby_id" value="{{ lobby_id }}">
+                        <input type="hidden" name="player_id" value="{{ player.id }}">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="name"
+                                   name="name"
+                                   value="{{ player.name }}">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" onclick="myModal.hide()">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    var myModal = new bootstrap.Modal(document.getElementById('editPlayerModal'));
+    myModal.show();
+    </script>
