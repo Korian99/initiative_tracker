@@ -197,23 +197,22 @@ class CharacterView(TemplateView):
 
         character_name = request.POST.get("character")
         initiative = request.POST.get("initiative")
-
+        max_order = Character.objects.filter(player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
         if Character.objects.filter(name=character_name, player=player_in_lobby).exists():
             existing_characters = Character.objects.filter(
                 name__icontains=character_name, player=player_in_lobby)
-
             Character.objects.create(
                 player=player_in_lobby,
                 name=f"{character_name} ({len(existing_characters) + 1})",
-                initiative=initiative
+                initiative=initiative,
+                order = max_order
             )
         else:
             Character.objects.create(
-                player=player_in_lobby, name=character_name, initiative=initiative)
+                player=player_in_lobby, name=character_name, initiative=initiative, order = max_order)
 
         characters = Character.objects.filter(
             player__lobby=lobby).order_by("-order")
-        
         if request.headers.get("HX-Request"):
             return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
         return render(request, "players/lobby.html", {'characters': characters, 'player': player_in_lobby})
@@ -303,17 +302,35 @@ def move_character(request):
 
     try:
         if direction == "up":
-            other_char = Character.objects.get(
+            other_char = Character.objects.filter(
                 player__lobby=character.player.lobby, order=character.order+1)
-            other_char.order -= 1
-            character.order += 1
+            if other_char.exists():
+                character.order += 1
+                other_char=other_char.first()
+                other_char.order -= 1
+                other_char.save()
+            else:
+                character.order = 1
+                for c in Character.objects.filter(
+                    player__lobby=character.player.lobby).exclude(id=character.id):
+                    c.order += 1
+                    c.save()
         elif direction == "down":
-            other_char = Character.objects.get(
+            other_char = Character.objects.filter(
                 player__lobby=character.player.lobby, order=character.order-1)
-            other_char.order += 1
-            character.order -= 1
+            if other_char.exists():
+                character.order -= 1
+                other_char=other_char.first()
+                other_char.order += 1
+                other_char.save()
+            else:
+                max_order = Character.objects.filter(player__lobby=character.player.lobby).order_by("-order").first().order
+                character.order = max_order
+                for c in Character.objects.filter(
+                    player__lobby=character.player.lobby).exclude(id=character.id):
+                    c.order -= 1
+                    c.save()
         character.save()
-        other_char.save()
     except Exception as e:
         print(e)
     characters = Character.objects.filter(
