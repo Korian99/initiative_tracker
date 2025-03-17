@@ -4,9 +4,6 @@ from random import randint
 from datetime import datetime
 from django.urls import reverse
 from django.views.generic import TemplateView
-import json
-from django.http import JsonResponse
-
 
 def reorder_characters(characters, change_turn=True):
     i = len(characters)
@@ -19,6 +16,8 @@ def reorder_characters(characters, change_turn=True):
         c.save()
     return characters.order_by("-order")
 
+def custom_404_view(request, exception):
+        return redirect(reverse('login'))
 
 class LoginView(TemplateView):
     # login
@@ -27,8 +26,11 @@ class LoginView(TemplateView):
 
     # player_connect
     def post(self, request):
-        player_name = request.POST.get("player")
-        player, _ = Player.objects.get_or_create(name=player_name)
+        player_name = request.POST.get("player").strip()
+        if Player.objects.filter(name__iexact=player_name).exists():
+            player = Player.objects.get(name__iexact=player_name)
+        else:
+            player = Player.objects.create(name=player_name)
 
         lobbies_id = PlayerInLobby.objects.filter(
             player=player).values_list("lobby_id", flat=True)
