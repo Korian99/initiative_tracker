@@ -12,6 +12,7 @@ urlpatterns = [
     path('lobby/<str:player_lobby_id>/characters/', views.CharacterView.as_view(), name='character_list_partial'),
     path('add_character', views.CharacterView.as_view(), name='add_character'),
     path('move_character', views.move_character, name='move_character'),
+    path('debuff_character', views.debuff_character, name='debuff_character'),
     path('edit_character/', views.EditCharacterView.as_view(), name='edit_character'),
     path('load_char_edit_modal/<int:player_lobby_id>/<int:character_id>/', views.EditCharacterView.as_view(), name='load_char_edit_modal'),
     path('delete_character/<int:player_lobby_id>/<int:character_id>/', views.EditCharacterView.as_view(), name='delete_character'),

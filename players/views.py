@@ -338,3 +338,18 @@ def move_character(request):
     characters = Character.objects.filter(
         player__lobby=character.player.lobby).order_by("-order")
     return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+
+# debuff_character
+def debuff_character(request):
+    char_id = request.POST.get("character_id")
+    player_id = request.POST.get("player_lobby_id")
+
+    character = get_object_or_404(Character, id=char_id)
+    player = get_object_or_404(PlayerInLobby, id=player_id)
+
+    character.debuffed = not character.debuffed
+    character.save()
+
+    characters = Character.objects.filter(
+        player__lobby=character.player.lobby).order_by("-order")
+    return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})

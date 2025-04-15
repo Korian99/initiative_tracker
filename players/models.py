@@ -53,6 +53,7 @@ class Character(models.Model):
     name = models.CharField(max_length=100)
     initiative = models.IntegerField()
     order = models.PositiveIntegerField(default=0)
+    debuffed = models.BooleanField(default=False)
     current_turn = models.BooleanField(default=False)
 
     def __str__(self):
