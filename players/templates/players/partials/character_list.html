@@ -64,24 +64,6 @@
   .next_turn{
     background-color:lightblue;
   }
-  .list-group-item{
-    touch-action: none;  /* Disables browser touch gestures */
-    user-select: none;   /* Prevents text selection while dragging */
-  }
-  .drag-handle {
-    cursor: move;
-    transition: background-color 0.2s;
-  }
-
-  .drag-handle:active {
-    background-color: rgba(0,0,0,0.1);
-  }
-
-  @media (hover: hover) {
-    .drag-handle:hover {
-        background-color: rgba(0,0,0,0.05);
-    }
-}
 </style>
 <ul id="characters" class="list-group">
   {% for character in characters %}
@@ -138,47 +120,106 @@
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <script>
   (function() { 
-    window.sortableManager = {
-      init: function() {
-          const container = document.getElementById('characters');
-          if (container) {
-              if (window.sortableManager.instance) {
-                  window.sortableManager.instance.destroy();
-              }
-              window.sortableManager.instance = new Sortable(container, {
-                  animation: 150,
-                  ghostClass: 'bg-secondary',
-                  //handle: '.drag-handle',  // Add this line
-                  filter: '.btn',  // Add this to ignore button elements
-                  preventOnFilter: false,
-                  onEnd: function(evt) {
-                      const characterIds = Array.from(container.children).map(li => li.dataset.id);
-                      htmx.ajax('POST', '{% url "move_character" %}', {
-                          values: {
-                              player_lobby_id: {{ player.id }},
-                              order: characterIds,
-                              csrfmiddlewaretoken: '{{ csrf_token }}'
-                          },
-                          swap: "innerHTML",
-                          target: "#character-list"
-                      });
+      window.sortableManager = {
+          init: function() {
+              const container = document.getElementById('characters');
+              if (container) {
+                  if (window.sortableManager.instance) {
+                      window.sortableManager.instance.destroy();
                   }
-              });
+                  
+                  window.sortableManager.instance = new Sortable(container, {
+                      animation: 150,
+                      ghostClass: 'bg-secondary',
+                      handle: '.drag-handle',
+                      filter: '.btn',
+                      preventOnFilter: false,
+                      forceFallback: true,  // Important for mobile
+                      fallbackTolerance: 3,  // Pixel tolerance for drag start
+                      onStart: function() {
+                          // Add temporary class during drag
+                          document.body.classList.add('dragging-active');
+                      },
+                      onEnd: function(evt) {
+                          // Remove temporary class
+                          document.body.classList.remove('dragging-active');
+                          if(!confirm('Are you sure?')) {
+                              htmx.ajax('GET', '{% url "character_list_partial" player.id %}', {
+                                  values: {
+                                      player_id: {{ player.id }},
+                                      csrfmiddlewaretoken: '{{ csrf_token }}'
+                                  },
+                                  swap: "innerHTML",
+                                  target: "#character-list"
+                              });
+                          }else{
+                            const characterIds = Array.from(container.children).map(li => li.dataset.id);
+                            htmx.ajax('POST', '{% url "move_character" %}', {
+                                values: {
+                                    player_lobby_id: {{ player.id }},
+                                    order: characterIds,
+                                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                                },
+                                swap: "innerHTML",
+                                target: "#character-list"
+                            });
+                          }
+                      }
+                  });
+              }
           }
-      }
-    };
+      };
   
-    // Initial initialization
-    document.addEventListener('DOMContentLoaded', function() {
-        window.sortableManager.init();
-    });
-
-    // Reinitialize after HTMX updates
-    document.addEventListener('htmx:afterSwap', function(event) {
-        if (event.detail.target.id === 'character-list') {
-            window.sortableManager.init();
-        }
-    });
+      // Initial initialization
+      document.addEventListener('DOMContentLoaded', function() {
+          window.sortableManager.init();
+      });
+  
+      // Reinitialize after HTMX updates
+      document.addEventListener('htmx:afterSwap', function(event) {
+          if (event.detail.target.id === 'character-list') {
+              window.sortableManager.init();
+          }
+      });
   })();
   </script>
+  <style>
+  /* Improved drag handle styling for mobile */
+  .drag-handle {
+      cursor: move;
+      -webkit-tap-highlight-color: transparent;
+      padding: 12px 0; /* Larger touch target */
+      flex-grow: 1;
+  }
+  
+  /* Visual feedback during drag */
+  .dragging-active {
+      overflow: hidden; /* Prevent page scrolling during drag */
+  }
+  .dragging-active .list-group-item {
+      transition: transform 0.1s;
+  }
+  
+  /* Better ghost element visibility */
+  .sortable-ghost {
+      opacity: 0.8;
+      background: #f8f9fa !important;
+  }
+  
+  /* Prevent text selection during drag */
+  .list-group-item {
+      user-select: none;
+      -webkit-user-select: none;
+  }
+  
+  /* Mobile-specific optimizations */
+  @media (max-width: 768px) {
+      .drag-handle {
+          padding: 15px 0; /* Even larger touch target on mobile */
+      }
+      .list-group-item {
+          touch-action: none;
+      }
+  }
+  </style>
 {% endif %}
