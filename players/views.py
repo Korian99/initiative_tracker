@@ -295,48 +295,21 @@ class TurnView(TemplateView):
 
 # move_character
 def move_character(request):
-    char_id = request.POST.get("character_id")
     player_id = request.POST.get("player_lobby_id")
-    direction = request.POST.get("direction")
-
-    character = get_object_or_404(Character, id=char_id)
     player = get_object_or_404(PlayerInLobby, id=player_id)
-
+    characters = Character.objects.filter(
+        player__lobby=player.lobby).order_by("-order")
     try:
-        if direction == "up":
-            other_char = Character.objects.filter(
-                player__lobby=character.player.lobby, order=character.order+1)
-            if other_char.exists():
-                character.order += 1
-                other_char=other_char.first()
-                other_char.order -= 1
-                other_char.save()
-            else:
-                character.order = 1
-                for c in Character.objects.filter(
-                    player__lobby=character.player.lobby).exclude(id=character.id):
-                    c.order += 1
-                    c.save()
-        elif direction == "down":
-            other_char = Character.objects.filter(
-                player__lobby=character.player.lobby, order=character.order-1)
-            if other_char.exists():
-                character.order -= 1
-                other_char=other_char.first()
-                other_char.order += 1
-                other_char.save()
-            else:
-                max_order = Character.objects.filter(player__lobby=character.player.lobby).order_by("-order").first().order
-                character.order = max_order
-                for c in Character.objects.filter(
-                    player__lobby=character.player.lobby).exclude(id=character.id):
-                    c.order -= 1
-                    c.save()
-        character.save()
+        round_len = len(characters)
+        order = request.POST.getlist('order')       
+        for index, character_id in enumerate(order):
+            character = Character.objects.get(id=character_id)
+            character.order = round_len - index  # Ensures descending order
+            character.save()
     except Exception as e:
         print(e)
     characters = Character.objects.filter(
-        player__lobby=character.player.lobby).order_by("-order")
+        player__lobby=player.lobby).order_by("-order")
     return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
 
 # debuff_character
