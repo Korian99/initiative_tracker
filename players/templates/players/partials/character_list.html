@@ -68,18 +68,31 @@
     touch-action: none;  /* Disables browser touch gestures */
     user-select: none;   /* Prevents text selection while dragging */
   }
+  .drag-handle {
+    cursor: move;
+    transition: background-color 0.2s;
+  }
+
+  .drag-handle:active {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  @media (hover: hover) {
+    .drag-handle:hover {
+        background-color: rgba(0,0,0,0.05);
+    }
+}
 </style>
 <ul id="characters" class="list-group">
   {% for character in characters %}
     <li class="list-group-item d-flex justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
         data-id="{{ character.id }}">
-      <span style="pointer-events:none" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
+      <span style="pointer-events: auto" class="flex-grow-1 drag-handle">{{ character }} - Initiative: {{ character.initiative }}</span>
       {% if player.role == "DM" or player.role == "PA" %}
         <form hx-post="{% url 'debuff_character' %}"
               hx-swap="innerHTML"
               hx-target="#character-list"
               onclick="confirmClick(event)">
-              
           {% csrf_token %}
           <input type="hidden"
                  name="player_lobby_id"
@@ -89,27 +102,27 @@
                  name="character_id"
                  id="character_id"
                  value="{{ character.id }}">
-                 {% if character.debuffed %}
-                <button type="submit" class="btn danger">
-                  <i class="bi bi-droplet"></i>
-                </button>
-                {% else %}
-                <button type="submit" class="btn btn-success">
-                  <i class="bi bi-droplet-fill"></i>
-                </button>
-            {% endif %}
-          </form>
+          {% if character.debuffed %}
+            <button type="submit" class="btn danger">
+              <i class="bi bi-droplet"></i>
+            </button>
           {% else %}
-            {% if character.debuffed %}
-              <button class="btn danger">
-                <i class="bi bi-droplet"></i>
-              </button>
-              {% else %}
-              <button class="btn btn-success">
-                <i class="bi bi-droplet-fill"></i>
-              </button>
-            {% endif %}
+            <button type="submit" class="btn btn-success">
+              <i class="bi bi-droplet-fill"></i>
+            </button>
           {% endif %}
+        </form>
+      {% else %}
+        {% if character.debuffed %}
+          <button class="btn danger">
+            <i class="bi bi-droplet"></i>
+          </button>
+        {% else %}
+          <button class="btn btn-success">
+            <i class="bi bi-droplet-fill"></i>
+          </button>
+        {% endif %}
+      {% endif %}
       {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
         <button class="btn btn-sm btn-info edit-character"
                 hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
@@ -121,49 +134,51 @@
     </li>
   {% endfor %}
 </ul>
-
 {% if player.role == "DM" or player.role == "PA" %}
-<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
-<script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <script>
   (function() { 
-      window.sortableManager = {
-          init: function() {
-              const container = document.getElementById('characters');
-              if (container) {
-                  if (window.sortableManager.instance) {
-                      window.sortableManager.instance.destroy();
-                  }
-                  window.sortableManager.instance = new Sortable(container, {
-                      animation: 150,
-                      ghostClass: 'bg-secondary',
-                      onEnd: function(evt) {
-                          const characterIds = Array.from(container.children).map(li => li.dataset.id);
-                          htmx.ajax('POST', '{% url "move_character" %}', {
-                              values: {
-                                  player_lobby_id: {{ player.id }},
-                                  order: characterIds,
-                                  csrfmiddlewaretoken: '{{ csrf_token }}'
-                              },
-                              swap: "innerHTML",
-                              target: "#character-list"
-                          });
-                      }
-                  });
+    window.sortableManager = {
+      init: function() {
+          const container = document.getElementById('characters');
+          if (container) {
+              if (window.sortableManager.instance) {
+                  window.sortableManager.instance.destroy();
               }
+              window.sortableManager.instance = new Sortable(container, {
+                  animation: 150,
+                  ghostClass: 'bg-secondary',
+                  //handle: '.drag-handle',  // Add this line
+                  filter: '.btn',  // Add this to ignore button elements
+                  preventOnFilter: false,
+                  onEnd: function(evt) {
+                      const characterIds = Array.from(container.children).map(li => li.dataset.id);
+                      htmx.ajax('POST', '{% url "move_character" %}', {
+                          values: {
+                              player_lobby_id: {{ player.id }},
+                              order: characterIds,
+                              csrfmiddlewaretoken: '{{ csrf_token }}'
+                          },
+                          swap: "innerHTML",
+                          target: "#character-list"
+                      });
+                  }
+              });
           }
-      };
+      }
+    };
   
-      // Initial initialization
-      document.addEventListener('DOMContentLoaded', function() {
-          window.sortableManager.init();
-      });
-  
-      // Reinitialize after HTMX updates
-      document.addEventListener('htmx:afterSwap', function(event) {
-          if (event.detail.target.id === 'character-list') {
-              window.sortableManager.init();
-          }
-      });
+    // Initial initialization
+    document.addEventListener('DOMContentLoaded', function() {
+        window.sortableManager.init();
+    });
+
+    // Reinitialize after HTMX updates
+    document.addEventListener('htmx:afterSwap', function(event) {
+        if (event.detail.target.id === 'character-list') {
+            window.sortableManager.init();
+        }
+    });
   })();
   </script>
-  {% endif %}
+{% endif %}
