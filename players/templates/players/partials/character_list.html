@@ -64,12 +64,16 @@
   .next_turn{
     background-color:lightblue;
   }
+  .list-group-item{
+    touch-action: none;  /* Disables browser touch gestures */
+    user-select: none;   /* Prevents text selection while dragging */
+  }
 </style>
 <ul id="characters" class="list-group">
   {% for character in characters %}
     <li class="list-group-item d-flex justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
         data-id="{{ character.id }}">
-      <span class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
+      <span style="pointer-events:none" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
       {% if player.role == "DM" or player.role == "PA" %}
         <form hx-post="{% url 'debuff_character' %}"
               hx-swap="innerHTML"
@@ -106,42 +110,6 @@
               </button>
             {% endif %}
           {% endif %}
-      {% if player.role == "DM" or player.role == "PA" %}
-        <form hx-post="{% url 'move_character' %}"
-              hx-swap="innerHTML"
-              hx-target="#character-list">
-          {% csrf_token %}
-          <input type="hidden"
-                 name="player_lobby_id"
-                 id="player_lobby_id"
-                 value="{{ player.id }}">
-          <input type="hidden"
-                 name="character_id"
-                 id="character_id"
-                 value="{{ character.id }}">
-          <input type="hidden" name="direction" id="direction" value="up">
-          <button type="submit" class="btn border">
-            <i class="bi bi-arrow-up"></i>
-          </button>
-        </form>
-        <form hx-post="{% url 'move_character' %}"
-              hx-swap="innerHTML"
-              hx-target="#character-list">
-          {% csrf_token %}
-          <input type="hidden"
-                 name="player_lobby_id"
-                 id="player_lobby_id"
-                 value="{{ player.id }}">
-          <input type="hidden"
-                 name="character_id"
-                 id="character_id"
-                 value="{{ character.id }}">
-          <input type="hidden" name="direction" id="direction" value="down">
-          <button type="submit" class="btn border">
-            <i class="bi bi-arrow-down"></i>
-          </button>
-        </form>
-      {% endif %}
       {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
         <button class="btn btn-sm btn-info edit-character"
                 hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
@@ -153,3 +121,49 @@
     </li>
   {% endfor %}
 </ul>
+
+{% if player.role == "DM" or player.role == "PA" %}
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+<script>
+  (function() { 
+      window.sortableManager = {
+          init: function() {
+              const container = document.getElementById('characters');
+              if (container) {
+                  if (window.sortableManager.instance) {
+                      window.sortableManager.instance.destroy();
+                  }
+                  window.sortableManager.instance = new Sortable(container, {
+                      animation: 150,
+                      ghostClass: 'bg-secondary',
+                      onEnd: function(evt) {
+                          const characterIds = Array.from(container.children).map(li => li.dataset.id);
+                          htmx.ajax('POST', '{% url "move_character" %}', {
+                              values: {
+                                  player_lobby_id: {{ player.id }},
+                                  order: characterIds,
+                                  csrfmiddlewaretoken: '{{ csrf_token }}'
+                              },
+                              swap: "innerHTML",
+                              target: "#character-list"
+                          });
+                      }
+                  });
+              }
+          }
+      };
+  
+      // Initial initialization
+      document.addEventListener('DOMContentLoaded', function() {
+          window.sortableManager.init();
+      });
+  
+      // Reinitialize after HTMX updates
+      document.addEventListener('htmx:afterSwap', function(event) {
+          if (event.detail.target.id === 'character-list') {
+              window.sortableManager.init();
+          }
+      });
+  })();
+  </script>
+  {% endif %}
