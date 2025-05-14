@@ -199,6 +199,7 @@ class CharacterView(TemplateView):
 
         character_name = request.POST.get("character")
         initiative = request.POST.get("initiative")
+        reminder = request.POST.get("reminder")
         max_order = Character.objects.filter(player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
         if Character.objects.filter(name=character_name, player=player_in_lobby).exists():
             existing_characters = Character.objects.filter(
@@ -207,11 +208,12 @@ class CharacterView(TemplateView):
                 player=player_in_lobby,
                 name=f"{character_name} ({len(existing_characters) + 1})",
                 initiative=initiative,
+                reminder=reminder,
                 order = max_order
             )
         else:
             Character.objects.create(
-                player=player_in_lobby, name=character_name, initiative=initiative, order = max_order)
+                player=player_in_lobby, name=character_name, initiative=initiative, reminder=reminder, order = max_order)
 
         characters = Character.objects.filter(
             player__lobby=lobby).order_by("-order")
@@ -241,11 +243,13 @@ class EditCharacterView(TemplateView):
         new_player_id = request.POST.get("new_player")
         new_initiative = request.POST.get("initiative")
         new_name = request.POST.get("name")
+        new_reminder = request.POST.get("reminder")
         character = get_object_or_404(Character, id=char_id)
         new_player = get_object_or_404(PlayerInLobby, id=new_player_id)
         character.player = new_player
         character.initiative = new_initiative
         character.name = new_name
+        character.reminder = new_reminder
         character.save()
 
         lobby = character.player.lobby

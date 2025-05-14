@@ -72,7 +72,10 @@
       <div class="flex-grow-1 drag-handle d-flex flex-column">
         <span style="pointer-events: auto" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
         {% if character.debuff %}
-          <span style="pointer-events: auto; color:red; font-weight:bold" class="flex-grow-1">{{ character.debuff }}</span>
+          <span style="pointer-events: auto;
+                       color:red;
+                       font-weight:bold"
+                class="flex-grow-1">{{ character.debuff }}</span>
         {% endif %}
       </div>
       {% if player.role == "DM" or player.role == "PA" %}
@@ -93,6 +96,10 @@
                  name="debuff"
                  id="debuff"
                  value="{{ character.debuff }}">
+          <input type="hidden"
+                 name="reminder"
+                 id="reminder"
+                 value="{{ character.reminder }}">
           {% if character.debuff %}
             <button type="submit" class="btn danger">
               <i class="bi bi-droplet"></i>
@@ -196,16 +203,52 @@
               }
           }
       };
+
+      function showToast(){
+        const reminderChar = document.querySelector('li.current_turn');
+        if (reminderChar) {
+          const reminder = reminderChar.querySelector('input[name="reminder"]'); // 3rd span is reminder
+          if (reminder && reminder.value.trim()) {
+            const toast = document.createElement('div');
+            toast.innerText = reminder.value.trim();
+            toast.style.position = 'fixed';
+            toast.style.width = '50%';
+            toast.style.textAlign = 'center';
+            toast.style.bottom = '20px';
+            toast.style.left = '50%';
+            toast.style.transform = 'translateX(-50%)';
+            toast.style.backgroundColor = '#343a40';
+            toast.style.color = '#fff';
+            toast.style.padding = '10px 20px';
+            toast.style.borderRadius = '8px';
+            toast.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+            toast.style.zIndex = 9999;
+            toast.style.opacity = '0';
+            toast.style.transition = 'opacity 0.5s';
+  
+            document.body.appendChild(toast);
+  
+            setTimeout(() => toast.style.opacity = '1', 100);
+            setTimeout(() => {
+              toast.style.opacity = '0';
+              setTimeout(() => toast.remove(), 500);
+            }, 5000);
+          }
+        }
+      };
+      
   
       // Initial initialization
       document.addEventListener('DOMContentLoaded', function() {
           window.sortableManager.init();
+          showToast()
       });
   
       // Reinitialize after HTMX updates
       document.addEventListener('htmx:afterSwap', function(event) {
           if (event.detail.target.id === 'character-list') {
               window.sortableManager.init();
+              showToast()
           }
       });
   })();

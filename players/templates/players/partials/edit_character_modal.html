@@ -39,6 +39,15 @@
                                value="{{ character.name }}"
                                >
                     </div>
+                    <div class="mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
+                        <label for="reminder" class="form-label">Reminder</label>
+                        <input type="text"
+                               class="form-control"
+                               id="reminder"
+                               name="reminder"
+                               value="{{ character.reminder|default:"" }}"
+                               >
+                    </div>
                     <div class="mb-3 {% if not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
                         <label for="new_player" class="form-label">Assign to Player</label>
                         <select name="new_player" id="new_player" class="form-select">

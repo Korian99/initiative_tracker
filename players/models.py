@@ -54,6 +54,7 @@ class Character(models.Model):
     initiative = models.IntegerField()
     order = models.PositiveIntegerField(default=0)
     debuff = models.CharField(max_length=100, null= True, blank=False)
+    reminder = models.CharField(max_length=100, default=None, null= True, blank=True)
     current_turn = models.BooleanField(default=False)
 
     def __str__(self):
