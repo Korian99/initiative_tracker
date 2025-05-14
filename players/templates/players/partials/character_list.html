@@ -72,7 +72,7 @@
       <div class="flex-grow-1 drag-handle d-flex flex-column">
         <span style="pointer-events: auto" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
         {% if character.debuff %}
-          <span style="pointer-events: auto" class="flex-grow-1">{{ character.debuff }}</span>
+          <span style="pointer-events: auto; color:red; font-weight:bold" class="flex-grow-1">{{ character.debuff }}</span>
         {% endif %}
       </div>
       {% if player.role == "DM" or player.role == "PA" %}
