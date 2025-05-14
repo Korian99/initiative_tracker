@@ -69,12 +69,17 @@
   {% for character in characters %}
     <li class="list-group-item d-flex justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
         data-id="{{ character.id }}">
-      <span style="pointer-events: auto" class="flex-grow-1 drag-handle">{{ character }} - Initiative: {{ character.initiative }}</span>
+      <div class="flex-grow-1 drag-handle d-flex flex-column">
+        <span style="pointer-events: auto" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
+        {% if character.debuff %}
+          <span style="pointer-events: auto" class="flex-grow-1">{{ character.debuff }}</span>
+        {% endif %}
+      </div>
       {% if player.role == "DM" or player.role == "PA" %}
         <form hx-post="{% url 'debuff_character' %}"
               hx-swap="innerHTML"
               hx-target="#character-list"
-              onclick="confirmClick(event)">
+              onclick="confirmDebuff(event)">
           {% csrf_token %}
           <input type="hidden"
                  name="player_lobby_id"
@@ -84,7 +89,11 @@
                  name="character_id"
                  id="character_id"
                  value="{{ character.id }}">
-          {% if character.debuffed %}
+          <input type="hidden"
+                 name="debuff"
+                 id="debuff"
+                 value="{{ character.debuff }}">
+          {% if character.debuff %}
             <button type="submit" class="btn danger">
               <i class="bi bi-droplet"></i>
             </button>
@@ -119,6 +128,24 @@
 {% if player.role == "DM" or player.role == "PA" %}
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <script>
+    function confirmDebuff(e)
+    {
+        const form = e.target.closest('form');
+        const messageInput = form.querySelector('input[name="debuff"]');
+          if(messageInput && messageInput.value != 'None'){
+            if(!confirm('¿Do you wish to end the following conditions? '+messageInput.value)) {
+                e.preventDefault();
+            }
+          }else{
+            const userMessage = prompt('Enter the debuff (optional):');
+            if (userMessage !== null) {
+              messageInput.value = userMessage;
+            }else{
+              e.preventDefault();
+            }
+          }
+    }
+
   (function() { 
       window.sortableManager = {
           init: function() {

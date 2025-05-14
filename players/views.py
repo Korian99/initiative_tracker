@@ -316,11 +316,15 @@ def move_character(request):
 def debuff_character(request):
     char_id = request.POST.get("character_id")
     player_id = request.POST.get("player_lobby_id")
-
+    debuff = request.POST.get("debuff")
+    if debuff is None or debuff == 'None' or debuff == '':
+        debuff = 'Debuffed'
     character = get_object_or_404(Character, id=char_id)
     player = get_object_or_404(PlayerInLobby, id=player_id)
-
-    character.debuffed = not character.debuffed
+    if character.debuff:
+        character.debuff = None
+    else:
+        character.debuff = debuff
     character.save()
 
     characters = Character.objects.filter(

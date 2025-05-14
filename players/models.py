@@ -53,20 +53,20 @@ class Character(models.Model):
     name = models.CharField(max_length=100)
     initiative = models.IntegerField()
     order = models.PositiveIntegerField(default=0)
-    debuffed = models.BooleanField(default=False)
+    debuff = models.CharField(max_length=100, null= True, blank=False)
     current_turn = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name + " - " + str(self.player.player)
 
     def next_turn(self):
-        characters = Character.objects.filter(player__lobby=self.player.lobby)
+        characters = Character.objects.filter(player__lobby=self.player.lobby).order_by("-order")
         current_char = characters.get(current_turn=True)
-        if current_char.order == 1:
-            next_char = characters.get(order=len(characters))
+        next_chars = characters.filter(order__lt=current_char.order)
+        if next_chars.exists():
+            return next_chars.first()
         else:
-            next_char = characters.get(order=current_char.order-1)
-        return next_char
+            return characters.first()
 
     class Meta:
         ordering = ['-order']
