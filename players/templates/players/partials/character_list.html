@@ -99,7 +99,7 @@
           <input type="hidden"
                  name="reminder"
                  id="reminder"
-                 value="{{ character.reminder }}">
+                 value="{{ character.reminder|default:"" }}">
           {% if character.debuff %}
             <button type="submit" class="btn danger">
               <i class="bi bi-droplet"></i>
@@ -214,7 +214,7 @@
             toast.style.position = 'fixed';
             toast.style.width = '50%';
             toast.style.textAlign = 'center';
-            toast.style.bottom = '20px';
+            toast.style.top = '100px';
             toast.style.left = '50%';
             toast.style.transform = 'translateX(-50%)';
             toast.style.backgroundColor = '#343a40';
