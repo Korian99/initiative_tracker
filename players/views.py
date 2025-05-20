@@ -316,21 +316,32 @@ def move_character(request):
         player__lobby=player.lobby).order_by("-order")
     return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
 
-# debuff_character
-def debuff_character(request):
-    char_id = request.POST.get("character_id")
-    player_id = request.POST.get("player_lobby_id")
-    debuff = request.POST.get("debuff")
-    if debuff is None or debuff == 'None' or debuff == '':
-        debuff = 'Debuffed'
-    character = get_object_or_404(Character, id=char_id)
-    player = get_object_or_404(PlayerInLobby, id=player_id)
-    if character.debuff:
-        character.debuff = None
-    else:
-        character.debuff = debuff
-    character.save()
+class DebuffView(TemplateView):
+    # load_debuff_modal
+    def get(self, request, player_lobby_id, character_id):
 
-    characters = Character.objects.filter(
-        player__lobby=character.player.lobby).order_by("-order")
-    return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+        character = Character.objects.get(
+            id=character_id)
+
+        return render(request, "players/partials/debuff_modal.html", {'character': character, 'player': player_lobby})
+
+    # debuff
+    def post(self, request):
+        char_id = request.POST.get("character_id")
+        player_id = request.POST.get("player_lobby_id")
+        debuff = request.POST.get("debuff")
+        action = request.POST.get("action")
+
+        character = get_object_or_404(Character, id=char_id)
+        player = get_object_or_404(PlayerInLobby, id=player_id)
+
+        if action == 'delete':
+            character.debuff = None
+        elif action == 'add_edit':
+            character.debuff = debuff
+        character.save()
+
+        characters = Character.objects.filter(
+            player__lobby=character.player.lobby).order_by("-order")
+        return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})

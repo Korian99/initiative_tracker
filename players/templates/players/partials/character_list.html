@@ -78,28 +78,16 @@
                 class="flex-grow-1">{{ character.debuff }}</span>
         {% endif %}
       </div>
+      <input type="hidden"
+      name="reminder"
+      id="reminder"
+      value="{{ character.reminder|default:"" }}">
       {% if player.role == "DM" or player.role == "PA" %}
-        <form hx-post="{% url 'debuff_character' %}"
-              hx-swap="innerHTML"
-              hx-target="#character-list"
-              onclick="confirmDebuff(event)">
+      <form class="debuff-character"
+          hx-get="{% url 'load_debuff_modal' player.id character.id %}"
+          hx-target="#char-modal-container"
+          hx-swap="innerHTML">
           {% csrf_token %}
-          <input type="hidden"
-                 name="player_lobby_id"
-                 id="player_lobby_id"
-                 value="{{ player.id }}">
-          <input type="hidden"
-                 name="character_id"
-                 id="character_id"
-                 value="{{ character.id }}">
-          <input type="hidden"
-                 name="debuff"
-                 id="debuff"
-                 value="{{ character.debuff }}">
-          <input type="hidden"
-                 name="reminder"
-                 id="reminder"
-                 value="{{ character.reminder|default:"" }}">
           {% if character.debuff %}
             <button type="submit" class="btn danger">
               <i class="bi bi-droplet"></i>
@@ -135,23 +123,6 @@
 {% if player.role == "DM" or player.role == "PA" %}
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <script>
-    function confirmDebuff(e)
-    {
-        const form = e.target.closest('form');
-        const messageInput = form.querySelector('input[name="debuff"]');
-          if(messageInput && messageInput.value != 'None'){
-            if(!confirm('¿Do you wish to end the following conditions? '+messageInput.value)) {
-                e.preventDefault();
-            }
-          }else{
-            const userMessage = prompt('Enter the debuff (optional):');
-            if (userMessage !== null) {
-              messageInput.value = userMessage;
-            }else{
-              e.preventDefault();
-            }
-          }
-    }
 
   (function() { 
       window.sortableManager = {
@@ -222,7 +193,7 @@
             toast.style.padding = '10px 20px';
             toast.style.borderRadius = '8px';
             toast.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            toast.style.zIndex = 9999;
+            toast.style.zIndex = 1054;
             toast.style.opacity = '0';
             toast.style.transition = 'opacity 0.5s';
   
