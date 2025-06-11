@@ -1,5 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import User
+from requests import get
+from bs4 import BeautifulSoup
+from requests import get
+from players.helpers import *
 
 
 class Lobby(models.Model):
@@ -100,3 +103,44 @@ class CharacterCondition(models.Model):
         elif self.condition.durationType in {'RD', 'AD'}:
             self.duration = -1
         self.save()
+
+class Creature(models.Model):
+    name = models.CharField(max_length=100)
+    hp = models.IntegerField(default=0)
+    speed = models.PositiveIntegerField(default=25)
+    data = models.TextField(null= True, blank=False)
+    immunities = models.TextField(null= True, blank=False)
+    traits = models.TextField(null= True, blank=False)
+    resistances = models.TextField(null= True, blank=False)
+    weaknesses = models.TextField(null= True, blank=False)
+    actions = models.TextField(null= True, blank=False)
+    passives = models.TextField(null= True, blank=False)
+    url = models.TextField(null= True, blank=False)
+
+    def scrape(self):
+        """ Visits the URL of the Ancestry record and scrapes its data """       
+        response = get(self.url)
+        ancestral_soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # scrape traits
+        trait_spans = ancestral_soup.find_all("span", class_="trait")
+        trait_list = [t.a.contents[0] for t in trait_spans]
+        self.traits = trait_list
+    
+        return True
+
+    def get_all():
+        """ Returns a list of all ancestries currently on AoN """
+        scraped = []
+        response = get('https://2e.aonprd.com/Creatures.aspx?sort=name-asc&display=full')
+        ancestral_soup = BeautifulSoup(response.text, 'html.parser')
+        titles = ancestral_soup.find_all("h1", class_="title")
+        for t in titles:
+            print(t)
+        links = [t.find_all("a")[1] for t in titles]
+        ancestries_list = [[l.contents[0], 'http://2e.aonprd.com/' + l['href']] for l in links]
+        for a in ancestries_list:
+            name = a[0]
+            url = a[1]
+            scraped.append(name, url)
+        return scraped

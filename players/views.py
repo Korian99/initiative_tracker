@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from players.models import Player, Lobby, Character, PlayerInLobby
+from players.models import Creature, Player, Lobby, Character, PlayerInLobby
 from random import randint
 from datetime import datetime
 from django.urls import reverse
@@ -22,6 +22,7 @@ def custom_404_view(request, exception):
 class LoginView(TemplateView):
     # login
     def get(self, request):
+        print(Creature.get_all())
         return render(request, "players/login.html")
 
     # player_connect
@@ -345,3 +346,33 @@ class DebuffView(TemplateView):
         characters = Character.objects.filter(
             player__lobby=character.player.lobby).order_by("-order")
         return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+
+def ancestries_router(self, request):
+    import json
+    name = request.GET.get('name')
+    json(get_creatures(name=name))
+
+def get_creatures(self, name='Human'):
+    # check for new entries every 20 minutes
+    all_ancestries = Creature.get_all()
+    for a in all_ancestries:
+        if a.name not in [x.name for x in all_ancestries]:
+            all_ancestries.append(a)
+    for anc in all_ancestries:
+        print(anc.name)
+
+    # check for a matching name
+    if name is not None:
+        for a in all_ancestries:
+            if a.name.upper() == name.upper():
+                a.scrape()
+                return a.to_jsonify()
+        # if no matches are found, report
+        return f'Ancestry "{name}" not found'
+
+    # convert to json, append, and return
+    json_list = []
+    for a in all_ancestries:
+        a.scrape()
+        json_list.append(a.to_jsonify())
+    return json_list
