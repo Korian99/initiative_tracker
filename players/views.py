@@ -235,12 +235,14 @@ class EditCharacterView(TemplateView):
         new_initiative = request.POST.get("initiative")
         new_name = request.POST.get("name")
         new_reminder = request.POST.get("reminder")
+        new_stat_block = request.POST.get("stat_block")
         character = get_object_or_404(Character, id=char_id)
         new_player = get_object_or_404(PlayerInLobby, id=new_player_id)
         character.player = new_player
         character.initiative = new_initiative
         character.name = new_name
         character.reminder = new_reminder
+        character.stat_block = new_stat_block
         character.save()
 
         lobby = character.player.lobby
@@ -340,9 +342,15 @@ class DebuffView(TemplateView):
 class StatBlocksView(TemplateView):
     # select_creature
     def get(self, request):
+        select_id = 'stat_block_add'
+        default_value = ''
+        character_id = request.GET.get('character_id', None)
+        if character_id:
+            select_id = 'stat_block_edit'
+            default_value = Character.objects.get(id=character_id).stat_block
         with open("tracker\database_index.json", encoding="utf-8") as f:
             creatures = json.load(f)  # a list of dicts
-        return render(request, "players/partials/stat_block_select.html", {"creatures": creatures})
+        return render(request, "players/partials/stat_block_select.html", {"creatures": creatures, "select_id": select_id, "default_value": default_value})
 class StatBlockView(TemplateView):
     # load_stat_block_modal
     def get(self, request, character_id):

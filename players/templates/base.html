@@ -44,6 +44,9 @@
     .select2-container--default .select2-selection--single {
       border: 1px solid #ced4da!important;
     }
+    .select2-dropdown {
+      z-index: 2000 !important;
+    }
 
     </style>
     <!-- HTMX library -->
@@ -89,14 +92,18 @@
     </script>
     
     <script>
-      function initCreatureSelect(ctx=document) {
-        const $el = $(ctx).find('#stat_block');
-        // avoid double-initialization
+      function initCreatureSelect(ctx=document, id) {
+        const $el = $(ctx).find(id);
+        let dropdownParent = null;
+        if (id === '#stat_block_edit'){
+          dropdownParent = $('#editCharacterModal')
+        }
         if ($el.length && !$el.data('select2')) {
           $el.select2({
             width: '100%',
             placeholder: 'Search for a Stat Block',
-            allowClear: true
+            allowClear: true,
+            dropdownParent:dropdownParent
           });
         }
       }
@@ -104,7 +111,9 @@
       document.addEventListener('DOMContentLoaded', () => initCreatureSelect());
       document.body.addEventListener('htmx:afterSwap', (e) => {
         if (e.target && e.target.id === 'select_creature') {
-          initCreatureSelect(e.target);
+          initCreatureSelect(e.target, "#stat_block_add");
+        } else if (e.target && e.target.id === 'edit_creature'){
+          initCreatureSelect(e.target, "#stat_block_edit");
         }
       });
     </script>

@@ -1,8 +1,9 @@
-<label for="stat_block">Choose a Stat Block:</label>
-<select id="stat_block" name="stat_block" class="form-select">
+<label for="{{ select_id }}">Choose a Stat Block:</label>
+<select id="{{ select_id }}" name="stat_block" class="form-select">
   <option value="">None</option>
   {% for creature in creatures %}
-    <option value="{{ creature.path }}">
+    <option value="{{ creature.path }}"
+            {% if creature.path == default_value %}selected{% endif %}>
       {{ creature.name }} (Level {{ creature.level }})
     </option>
   {% endfor %}

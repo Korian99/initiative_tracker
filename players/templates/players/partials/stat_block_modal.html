@@ -96,10 +96,7 @@
         {% include "players/partials/abilities_accordion.html" with abilities=creature.defensiveAbilities title="Defensive Abilities" show=True %}
         {% include "players/partials/strikes_accordion.html" %}
         {% include "players/partials/abilities_accordion.html" with abilities=creature.offensiveAbilities title="Offensive Abilities"  show=False%}
-        {% if creature.spellcastingEntries %}
-          <h6 class="mt-3">Spellcasting</h6>
-          <pre>{{ creature.spellcastingEntries|json_script:"spells_json" }}</pre>
-        {% endif %}
+        {% include "players/partials/spellcasting_accordion.html" with spellcastingEntries=creature.spellcastingEntries title="Offensive Abilities"  show=False%}
       </div>
     </div>
   </div>
