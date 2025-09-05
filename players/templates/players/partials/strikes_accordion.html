@@ -1,0 +1,31 @@
+{% if creature.strikes %}
+  <div class="accordion mb-3" id="accordion-strikes">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-strikes">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-strikes"
+                aria-expanded="false"
+                aria-controls="collapse-strikes">
+          Strikes
+        </button>
+      </h2>
+      <div id="collapse-strikes" class="accordion-collapse collapse"
+           aria-labelledby="heading-strikes"
+           data-bs-parent="#accordion-strikes">
+        <div class="accordion-body">
+          <ul class="list-group list-group-flush">
+             {% for strike in creature.strikes %}
+                <strong>{{ strike.name }}</strong> ({{ strike.type }}, +{{ strike.bonus }}, {{ strike.traits|join:", " }})
+                —
+                {% for dmg in strike.damageRolls %}
+                  {{ dmg.roll }} {{ dmg.type }}
+                  {% if not forloop.last %},{% endif %}
+                {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -1,31 +1,105 @@
-<div class="modal fade show" id="creatureModal" tabindex="-1" style="display:block;" aria-modal="true" role="dialog">
+<div class="modal fade show"
+     id="creatureModal"
+     tabindex="-1"
+     style="display:block"
+     aria-modal="true"
+     role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">{{ creature.name }} (Level {{ creature.level }}) - <strong>Traits:</strong> {{ creature.traits|join:", " }}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      <!-- Header -->
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">
+          {{ creature.name }}
+          <small class="text-muted">Level {{ creature.level }}</small>
+        </h5>
+        <span class="ms-2 badge bg-secondary">{{ creature.traits|join:", " }}</span>
+        <button type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        {% comment %} <p><strong>Description:</strong> {{ creature.description }}</p> {% endcomment %}
-        <p><strong>Source:</strong> {{ creature.source }}</p>
-        <p><strong>Stats:</strong> strength: {{ creature.strength.value }}, dexterity: {{ creature.dexterity.value }}, constitution: {{ creature.constitution.value }}, intelligence: {{ creature.intelligence.value }}, wisdom: {{ creature.wisdom.value }}, charisma: {{ creature.charisma.value }}</p>
-        <p><strong>Speed:</strong> {{ creature.speed }} </p>
-        <p><strong>Recall Knowledge:</strong> {{ creature.recallKnowledge }} </p>
-        <p><strong>Defenses:</strong> HP: {{ creature.hp.value }}, AC: {{ creature.ac.value }},   fortitude: {{ creature.fortitude.value }},   reflex: {{ creature.reflex.value }},   will: {{ creature.will.value }}, </p>
-        <p><strong>Notes:</strong> HP: {{ creature.hp.note }}, AC: {{ creature.ac.note }},   fortitude: {{ creature.fortitude.note }},   reflex: {{ creature.reflex.note }},   will: {{ creature.will.note }}, </p>
-        <p><strong>Immunities:</strong> {% for reduction in creature.immunities %} {{ reduction.type }} {{reduction.value}} (Exceptions:  {% for ex in reduction.exceptions %} {{ ex }} {% endfor %}), {% endfor %}</p>
-        <p><strong>Resistances:</strong> {% for reduction in creature.resistances %} {{ reduction.type }} {{reduction.value}} (Exceptions:  {% for ex in reduction.exceptions %} {{ ex }} {% endfor %}), {% endfor %}</p>
-        <p><strong>Weaknessses:</strong> {% for reduction in creature.weaknesses %} {{ reduction.type }} {{reduction.value}} (Exceptions:  {% for ex in reduction.exceptions %} {{ ex }} {% endfor %}), {% endfor %}</p>
-        <p><strong>Perception:</strong> +{{ creature.perception.value }} - <strong>Senses:</strong> {% for sense in creature.senses %} {{ sense }}, {% endfor %}</p>
-        <p><strong>Languages:</strong> {% for language in creature.languages %} {{ language }}, {% endfor %}</p>
-        <p><strong>Skills:</strong> {% for skill in creature.skills %} {{ skill.name }}: {{skill.modifier}}, {% endfor %}</p>
-        <p><strong>General Abilities:</strong> {% for ability in creature.generalAbilities %} {{ ability.name }} - Actions {{ability.actions}}: {{ability.description}} [{{ability.traits}}] {% endfor %}</p>
-        <p><strong>Defensive Abilities:</strong> {% for ability in creature.defensiveAbilities %} {{ ability.name }} - Actions {{ability.actions}}: {{ability.description}} [{{ability.traits}}] {% endfor %}</p>
-        <p><strong>Strikes:</strong> {% for strike in creature.strikes %} {{ strike.name }}( {{ strike.type}}, {{strike.bonus}}, {{strike.traits}}): {% for damage in strike.damageRolls %} {{damage.roll}} {{damage.type}}, {% endfor %}  {% for effect in strike.effects %} {{effect}}, {% endfor %} \n {% endfor %}</p>
-        <p><strong>Offensive Abilities:</strong> {% for ability in creature.offensiveAbilities %} {{ ability.name }} - Actions {{ability.actions}}: {{ability.description}} [{{ability.traits}}] {% endfor %}</p>
-        <p><strong>Spellcasting:</strong> {% for spell in creature.spellcastingEntries %} {{ spell }}{% endfor %}</p>
-        
-        <pre>{{ creature|json_script:"creature_json" }}</pre>
+        <p>
+          <em>Source: {{ creature.source }}</em>
+        </p>
+        <div class="d-flex">
+          <div class="col-md-6">
+            <p>
+              <strong>Stats</strong>
+              <br>
+              <b>STR</b>: {{ creature.strength.value }}
+              <b>DEX</b>: {{ creature.dexterity.value }}
+              <b>CON</b>: {{ creature.constitution.value }}
+              <b>INT</b>: {{ creature.intelligence.value }}
+              <b>WIS</b>: {{ creature.wisdom.value }}
+              <b>CHA</b>: {{ creature.charisma.value }}
+            </p>
+            <p>
+              <strong>Speed:</strong> {{ creature.speed }}
+            </p>
+            <p>
+              <strong>Recall Knowledge:</strong> {{ creature.recallKnowledge }}
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <strong>Defenses</strong>
+              <br>
+              <b>HP</b> {{ creature.hp.value }}
+              {% if creature.hp.note %}({{ creature.hp.note }}){% endif %}
+              
+              <b>AC</b> {{ creature.ac.value }}
+              {% if creature.ac.note %}({{ creature.ac.note }}){% endif %}
+              
+              <b>Fort</b> {{ creature.fortitude.value }}
+              <b>Ref </b>{{ creature.reflex.value }}
+              <b>Will</b> {{ creature.will.value }}
+            </p>
+            {% if creature.weaknesses %}
+              <p>
+                <strong>Weaknesses:</strong>
+                {% for w in creature.weaknesses %}
+                  {{ w.type }} {{ w.value }}
+                  {% if w.exceptions %}(except: {{ w.exceptions|join:", " }}){% endif %}
+                  {% if not forloop.last %};{% endif %}
+                {% endfor %}
+              </p>
+            {% endif %}
+            {% if creature.resistances %}
+              <p>
+                <strong>Resistances:</strong>
+                {% for r in creature.resistances %}
+                  {{ r.type }} {{ r.value }}
+                  {% if r.exceptions %}(except: {{ r.exceptions|join:", " }}){% endif %}
+                  {% if not forloop.last %};{% endif %}
+                {% endfor %}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+        <!-- Perception & Languages -->
+        <p>
+          <strong>Perception:</strong> +{{ creature.perception.value }} |
+          <strong>Senses:</strong> {{ creature.senses|join:", " }}
+        </p>
+        <p>
+          <strong>Languages:</strong> {{ creature.languages|join:", " }}
+        </p>
+        <p>
+          <strong>Skills:</strong>
+          {% for skill in creature.skills %}
+            {{ skill.name }} +{{ skill.modifier }}
+            {% if not forloop.last %},{% endif %}
+          {% endfor %}
+        </p>
+        <hr>
+        {% include "players/partials/abilities_accordion.html" with abilities=creature.generalAbilities title="General Abilities" show=True %}
+        {% include "players/partials/abilities_accordion.html" with abilities=creature.defensiveAbilities title="Defensive Abilities" show=True %}
+        {% include "players/partials/strikes_accordion.html" %}
+        {% include "players/partials/abilities_accordion.html" with abilities=creature.offensiveAbilities title="Offensive Abilities"  show=False%}
+        {% if creature.spellcastingEntries %}
+          <h6 class="mt-3">Spellcasting</h6>
+          <pre>{{ creature.spellcastingEntries|json_script:"spells_json" }}</pre>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -34,7 +108,6 @@
   var modal = new bootstrap.Modal(document.getElementById('creatureModal'));
   modal.show();
 </script>
-
 {% comment %} TODO: DEFENSE, PERCEPTOIN, STATS, SKILLS MODIFICATIONS {% endcomment %}
 {% comment %} TODO: <p> in abilities {% endcomment %}
 {% comment %} TODO: STRIKES ARE WEIRD {% endcomment %}
