@@ -6,7 +6,10 @@ from django.urls import reverse
 from django.views.generic import TemplateView
 import json
 import requests
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent  # where this file lives
+json_path = BASE_DIR /"database_index.json"
 
 def reorder_characters(characters, change_turn=True):
     i = len(characters)
@@ -354,7 +357,7 @@ class StatBlocksView(TemplateView):
         if character_id:
             select_id = 'stat_block_edit'
             default_value = Character.objects.get(id=character_id).stat_block
-        with open("tracker\database_index.json", encoding="utf-8") as f:
+        with open(json_path, encoding="utf-8") as f:
             creatures = json.load(f)  # a list of dicts
         return render(request, "players/partials/stat_block_select.html", {"creatures": creatures, "select_id": select_id, "default_value": default_value})
 
@@ -367,7 +370,7 @@ class StatBlockView(TemplateView):
             resp.raise_for_status()
             return resp.json()
         except Exception as e:
-            return None
+            return str(e)
 
     # load_stat_block_modal
     def get(self, request, character_id):
