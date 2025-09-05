@@ -41,6 +41,18 @@
     ::-webkit-scrollbar-thumb:window-inactive {
         background: gray; 
     }
+    .select2-container--default .select2-selection--single {
+      border: 1px solid #ced4da!important;
+    }
+    .select2-dropdown {
+      z-index: 2000 !important;
+    }
+    .weak-coloring{
+        color:red;
+    }
+    .elite-coloring{
+        color:green;
+    }
 
     </style>
     <!-- HTMX library -->
@@ -49,6 +61,11 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- before </body> -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </head>
   <body>
     <div class="container full-height d-flex justify-content-center align-items-center flex-column">
@@ -77,6 +94,32 @@
               e.preventDefault();
           }
       }
+    </script>
+    <script>
+      function initCreatureSelect(ctx=document, id) {
+        const $el = $(ctx).find(id);
+        let dropdownParent = null;
+        if (id === '#stat_block_edit'){
+          dropdownParent = $('#editCharacterModal')
+        }
+        if ($el.length && !$el.data('select2')) {
+          $el.select2({
+            width: '100%',
+            placeholder: 'Search for a Stat Block',
+            allowClear: true,
+            dropdownParent:dropdownParent
+          });
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => initCreatureSelect());
+      document.body.addEventListener('htmx:afterSwap', (e) => {
+        if (e.target && e.target.id === 'select_creature') {
+          initCreatureSelect(e.target, "#stat_block_add");
+        } else if (e.target && e.target.id === 'edit_creature'){
+          initCreatureSelect(e.target, "#stat_block_edit");
+        }
+      });
     </script>
   </body>
 </html>

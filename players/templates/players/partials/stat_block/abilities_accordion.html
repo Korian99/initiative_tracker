@@ -1,0 +1,46 @@
+{% if abilities %}
+  <div class="accordion mb-3" id="accordion-{{ title|slugify }}">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-{{ title|slugify }}">
+        <button class="accordion-button {% if not show %}collapsed{% endif %}"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-{{ title|slugify }}"
+                aria-expanded="{% if show %} true {% else %} false {% endif %}"
+                aria-controls="collapse-{{ title|slugify }}">{{ title }}</button>
+      </h2>
+      <div id="collapse-{{ title|slugify }}"
+           class="accordion-collapse collapse {% if show %}show{% endif %}"
+           aria-labelledby="heading-{{ title|slugify }}"
+           data-bs-parent="#accordion-{{ title|slugify }}">
+        <div class="accordion-body">
+          <ul class="list-group list-group-flush">
+            {% for ability in abilities %}
+              <li class="list-group-item">
+                <strong>{{ ability.name }} -
+                  {% if ability.actions == 1 %}
+                    ◆
+                  {% elif ability.actions == 2 %}
+                    ◆◆
+                  {% elif ability.actions == 3 %}
+                    ◆◆◆
+                  {% elif ability.actions == -1 %}
+                    ⟳
+                  {% else %}
+                    {{ ability.actions|default:"Passive or ◇" }}
+                  {% endif %}
+                </strong>
+                <div>{{ ability.description|safe }}</div>
+                {% if skill_offset > 0 %}
+                  <span class="{{template}}-coloring">Increase the damage by +2 or +4 if it has a limited use</span>
+                {% elif skill_offset < 0 %}
+                  <span class="{{template}}-coloring">Decrease the damage by -2 or -4 if it has a limited use</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

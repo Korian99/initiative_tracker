@@ -16,6 +16,14 @@
                  name="initiative"
                  required>
         </div>
+        <div class="mb-3"
+            id="select_creature"
+            hx-get="{% url 'select_creature' %}"
+            hx-trigger="load"
+            hx-target="#select_creature"
+            hx-swap="innerHTML">
+        </div>
+
         <div class="mb-3">
           <label for="character" class="form-label">Character's Name</label>
           <input type="text"

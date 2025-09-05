@@ -1,0 +1,73 @@
+{% if spells %}
+  <div class="accordion mb-2" id="accordion-{{ title|slugify }}">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-{{ title|slugify }}">
+        <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-{{ title|slugify }}"
+                aria-expanded="false"
+                aria-controls="collapse-{{ title|slugify }}">{{ title }}</button>
+      </h2>
+      <div id="collapse-{{ title|slugify }}"
+           class="accordion-collapse collapse"
+           aria-labelledby="heading-{{ title|slugify }}"
+           data-bs-parent="#accordion-{{ title|slugify }}">
+        <div class="accordion-body">
+          <ul class="list-group list-group-flush mb-3">
+            {% for spell in spells %}
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong>{{ spell.name }}</strong>  <strong>{{ spell.castingTime }} Actions</strong> <strong>Lvl {{ default_level|default:spell.level }}</strong> <span class="ms-2 badge bg-secondary">{{ spell.traits|join:", " }}</span>
+                  <button class="btn btn-sm btn-outline-secondary"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#spell-{{ spell.id }}"
+                          aria-expanded="false"
+                          aria-controls="spell-{{ spell.id }}">Show Description</button>
+                </div>
+                <div class="collapse mt-2" id="spell-{{ spell.id }}">
+                  <div class="card card-body p-2">
+                    <div class="row mb-2 text-muted small">
+                      {% if spell.duration %}
+                        <div class="col-auto">
+                          <strong>Duration:</strong> {{ spell.duration|safe }}
+                        </div>
+                      {% endif %}
+                      {% if spell.range %}
+                        <div class="col-auto">
+                          <strong>Range:</strong> {{ spell.range|safe }}
+                        </div>
+                      {% endif %}
+                      {% if spell.area %}
+                        <div class="col-auto">
+                          <strong>Area:</strong> {{ spell.area|safe }}
+                        </div>
+                      {% endif %}
+                      {% if spell.targets %}
+                        <div class="col-auto">
+                          <strong>Targets:</strong> {{ spell.targets|safe }}
+                        </div>
+                      {% endif %}
+                      {% if spell.save %}
+                        <div class="col-auto">
+                          <strong>Save:</strong> {{ spell.save|safe }}
+                        </div>
+                      {% endif %}
+                    </div>
+                    {{ spell.description|safe }}
+                    {% if skill_offset > 0 %}
+                      <span class="{{template}}-coloring">Increase the damage by +4</span>
+                    {% elif skill_offset < 0 %}
+                      <span class="{{template}}-coloring">Decrease the damage by -4</span>
+                    {% endif %}
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

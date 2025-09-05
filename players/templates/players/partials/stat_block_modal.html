@@ -1,0 +1,71 @@
+<div class="modal fade show"
+     id="creatureModal"
+     tabindex="-1"
+     style="display:block"
+     aria-modal="true"
+     role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">
+          {{ creature.name }}
+          <small class="text-muted">Level {{ creature.level }}</small>
+        </h5>
+        <span class="ms-2 badge bg-secondary">{{ creature.traits|join:", " }}</span>
+        <button type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label class="form-label me-2">Choose Template:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input"
+                 type="radio"
+                 name="stat_mode"
+                 id="mode1"
+                 value="simple"
+                 hx-get="{% url 'load_stat_block_modal' character.id %}"
+                 hx-target="#stat_block_container"
+                 hx-swap="innerHTML"
+                 hx-vals='{"template":"normal"}'
+                 checked>
+          <label class="form-check-label" for="mode1">Normal</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input"
+                 type="radio"
+                 name="stat_mode"
+                 id="mode2"
+                 value="detailed"
+                 hx-get="{% url 'load_stat_block_modal' character.id %}"
+                 hx-vals='{"template":"weak"}'
+                 hx-target="#stat_block_container"
+                 hx-swap="innerHTML">
+          <label class="form-check-label" for="mode2">Weak</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input"
+                 type="radio"
+                 name="stat_mode"
+                 id="mode2"
+                 value="detailed"
+                 hx-get="{% url 'load_stat_block_modal' character.id %}"
+                 hx-vals='{"template":"elite"}'
+                 hx-target="#stat_block_container"
+                 hx-swap="innerHTML">
+          <label class="form-check-label" for="mode2">Elite</label>
+        </div>
+        <div class="mb-3">
+          <div id="stat_block_container">
+            {% include "players/partials/stat_block/stat_block_data.html" with mode="Normal" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var modal = new bootstrap.Modal(document.getElementById('creatureModal'));
+  modal.show();
+</script>
+{% comment %} TODO: DEFENSE, PERCEPTOIN, STATS, SKILLS MODIFICATIONS {% endcomment %}

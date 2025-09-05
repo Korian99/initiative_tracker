@@ -1,0 +1,87 @@
+{% load creature_template_filter %}
+{% with lvl_offset=template|level_offset:creature.level %}
+    {% with hp_offset=template|hp_offset:creature.level %}
+        {% with skill_offset=template|skill_offset:creature.level %}
+
+            <p>
+                <em>Source: {{ creature.source }} - <small class="text-muted {{ template }}-coloring">Level {{ creature.level|add:lvl_offset }}</small></em>
+            </p>
+            <div class="d-flex">
+                <div class="col-md-6">
+                    <p>
+                        <strong>Stats</strong>
+                        <br>
+                        <b>STR</b>: {{ creature.strength.value }}
+                        <b>DEX</b>: {{ creature.dexterity.value }}
+                        <b>CON</b>: {{ creature.constitution.value }}
+                        <b>INT</b>: {{ creature.intelligence.value }}
+                        <b>WIS</b>: {{ creature.wisdom.value }}
+                        <b>CHA</b>: {{ creature.charisma.value }}
+                    </p>
+                    <p>
+                        <strong>Speed:</strong> {{ creature.speed }}
+                    </p>
+                    <p>
+                        <strong>Recall Knowledge:</strong> {{ creature.recallKnowledge }}
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <strong>Defenses</strong>
+                        <br>
+                        <b>HP</b> <span class="{{ template }}-coloring">{{ creature.hp.value|add:hp_offset }}</span>
+                        {% if creature.hp.note %}({{ creature.hp.note }}){% endif %}
+                        <b>AC</b>  <span class="{{ template }}-coloring">{{ creature.ac.value|add:skill_offset }}</span>
+                        {% if creature.ac.note %}({{ creature.ac.note }}){% endif %}
+                        <b>Fort</b> <span class="{{ template }}-coloring">{{ creature.fortitude.value|add:skill_offset }}</span>
+                        <b>Ref </b> <span class="{{ template }}-coloring">{{ creature.reflex.value|add:skill_offset }}</span>
+                        <b>Will</b> <span class="{{ template }}-coloring">{{ creature.will.value|add:skill_offset }}</span>
+                    </p>
+                    {% if creature.weaknesses %}
+                        <p>
+                            <strong>Weaknesses:</strong>
+                            {% for w in creature.weaknesses %}
+                                {{ w.type }} {{ w.value }}
+                                {% if w.exceptions %}(except: {{ w.exceptions|join:", " }}){% endif %}
+                                {% if not forloop.last %};{% endif %}
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                    {% if creature.resistances %}
+                        <p>
+                            <strong>Resistances:</strong>
+                            {% for r in creature.resistances %}
+                                {{ r.type }} {{ r.value }}
+                                {% if r.exceptions %}(except: {{ r.exceptions|join:", " }}){% endif %}
+                                {% if not forloop.last %};{% endif %}
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+            <!-- Perception & Languages -->
+            <p>
+                <strong>Perception:</strong> <span class="{{ template }}-coloring">+{{ creature.perception.value|add:skill_offset }}</span> |
+                <strong>Senses:</strong> {{ creature.senses|join:", " }}
+            </p>
+            <p>
+                <strong>Languages:</strong> {{ creature.languages|join:", " }}
+            </p>
+            <p>
+                <strong>Skills:</strong>
+                {% for skill in creature.skills %}
+                    <span class="{{ template }}-coloring">
+                        {{ skill.name }} +{{ skill.modifier|add:skill_offset }}
+                        {% if not forloop.last %},{% endif %}
+                    </span>
+                {% endfor %}
+            </p>
+            <hr>
+            {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.generalAbilities title="General Abilities" show=True %}
+            {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.defensiveAbilities title="Defensive Abilities" show=True %}
+            {% include "players/partials/stat_block/strikes_accordion.html" %}
+            {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.offensiveAbilities title="Offensive Abilities"  show=False %}
+            {% include "players/partials/stat_block/spellcasting_accordion.html" with spellcastingEntries=creature.spellcastingEntries title="Offensive Abilities"  show=False %}
+        {% endwith %}
+    {% endwith %}
+{% endwith %}
