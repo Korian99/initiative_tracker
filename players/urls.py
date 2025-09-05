@@ -23,6 +23,6 @@ urlpatterns = [
     path('edit_player', views.PlayerView.as_view(), name='edit_player'),
     path('reload_current_turn/<int:player_lobby_id>/', views.TurnView.as_view(), name='reload_current_turn'),
     path('pass_turn', views.TurnView.as_view(), name='pass_turn'),
-    path('select_creature', views.StatBlockView.as_view(), name='select_creature'),
-    path('modal_creature/<int:character_id>', views.StatBlockView.as_view(), name='modal_creature'),
+    path('select_creature', views.StatBlocksView.as_view(), name='select_creature'),
+    path('load_stat_block_modal/<int:character_id>', views.StatBlockView.as_view(), name='load_stat_block_modal'),
 ]

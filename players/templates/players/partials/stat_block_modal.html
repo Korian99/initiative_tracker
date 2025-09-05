@@ -1,0 +1,40 @@
+<div class="modal fade show" id="creatureModal" tabindex="-1" style="display:block;" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ creature.name }} (Level {{ creature.level }}) - <strong>Traits:</strong> {{ creature.traits|join:", " }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        {% comment %} <p><strong>Description:</strong> {{ creature.description }}</p> {% endcomment %}
+        <p><strong>Source:</strong> {{ creature.source }}</p>
+        <p><strong>Stats:</strong> strength: {{ creature.strength.value }}, dexterity: {{ creature.dexterity.value }}, constitution: {{ creature.constitution.value }}, intelligence: {{ creature.intelligence.value }}, wisdom: {{ creature.wisdom.value }}, charisma: {{ creature.charisma.value }}</p>
+        <p><strong>Speed:</strong> {{ creature.speed }} </p>
+        <p><strong>Recall Knowledge:</strong> {{ creature.recallKnowledge }} </p>
+        <p><strong>Defenses:</strong> HP: {{ creature.hp.value }}, AC: {{ creature.ac.value }},   fortitude: {{ creature.fortitude.value }},   reflex: {{ creature.reflex.value }},   will: {{ creature.will.value }}, </p>
+        <p><strong>Notes:</strong> HP: {{ creature.hp.note }}, AC: {{ creature.ac.note }},   fortitude: {{ creature.fortitude.note }},   reflex: {{ creature.reflex.note }},   will: {{ creature.will.note }}, </p>
+        <p><strong>Immunities:</strong> {% for reduction in creature.immunities %} {{ reduction.type }} {{reduction.value}} (Exceptions:  {% for ex in reduction.exceptions %} {{ ex }} {% endfor %}), {% endfor %}</p>
+        <p><strong>Resistances:</strong> {% for reduction in creature.resistances %} {{ reduction.type }} {{reduction.value}} (Exceptions:  {% for ex in reduction.exceptions %} {{ ex }} {% endfor %}), {% endfor %}</p>
+        <p><strong>Weaknessses:</strong> {% for reduction in creature.weaknesses %} {{ reduction.type }} {{reduction.value}} (Exceptions:  {% for ex in reduction.exceptions %} {{ ex }} {% endfor %}), {% endfor %}</p>
+        <p><strong>Perception:</strong> +{{ creature.perception.value }} - <strong>Senses:</strong> {% for sense in creature.senses %} {{ sense }}, {% endfor %}</p>
+        <p><strong>Languages:</strong> {% for language in creature.languages %} {{ language }}, {% endfor %}</p>
+        <p><strong>Skills:</strong> {% for skill in creature.skills %} {{ skill.name }}: {{skill.modifier}}, {% endfor %}</p>
+        <p><strong>General Abilities:</strong> {% for ability in creature.generalAbilities %} {{ ability.name }} - Actions {{ability.actions}}: {{ability.description}} [{{ability.traits}}] {% endfor %}</p>
+        <p><strong>Defensive Abilities:</strong> {% for ability in creature.defensiveAbilities %} {{ ability.name }} - Actions {{ability.actions}}: {{ability.description}} [{{ability.traits}}] {% endfor %}</p>
+        <p><strong>Strikes:</strong> {% for strike in creature.strikes %} {{ strike.name }}( {{ strike.type}}, {{strike.bonus}}, {{strike.traits}}): {% for damage in strike.damageRolls %} {{damage.roll}} {{damage.type}}, {% endfor %}  {% for effect in strike.effects %} {{effect}}, {% endfor %} \n {% endfor %}</p>
+        <p><strong>Offensive Abilities:</strong> {% for ability in creature.offensiveAbilities %} {{ ability.name }} - Actions {{ability.actions}}: {{ability.description}} [{{ability.traits}}] {% endfor %}</p>
+        <p><strong>Spellcasting:</strong> {% for spell in creature.spellcastingEntries %} {{ spell }}{% endfor %}</p>
+        
+        <pre>{{ creature|json_script:"creature_json" }}</pre>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var modal = new bootstrap.Modal(document.getElementById('creatureModal'));
+  modal.show();
+</script>
+
+{% comment %} TODO: DEFENSE, PERCEPTOIN, STATS, SKILLS MODIFICATIONS {% endcomment %}
+{% comment %} TODO: <p> in abilities {% endcomment %}
+{% comment %} TODO: STRIKES ARE WEIRD {% endcomment %}

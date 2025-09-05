@@ -5,6 +5,7 @@ from datetime import datetime
 from django.urls import reverse
 from django.views.generic import TemplateView
 import json
+import requests
 
 def reorder_characters(characters, change_turn=True):
     i = len(characters)
@@ -336,18 +337,22 @@ class DebuffView(TemplateView):
             player__lobby=character.player.lobby).order_by("-order")
         return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
   
-class StatBlockView(TemplateView):
+class StatBlocksView(TemplateView):
     # select_creature
     def get(self, request):
         with open("tracker\database_index.json", encoding="utf-8") as f:
             creatures = json.load(f)  # a list of dicts
-        return render(request, "players/partials/select_stat_block.html", {"creatures": creatures})
-    
-    # modal_creature
-    def post(self, request, character_id):
+        return render(request, "players/partials/stat_block_select.html", {"creatures": creatures})
+class StatBlockView(TemplateView):
+    # load_stat_block_modal
+    def get(self, request, character_id):
         character = Character.objects.get(id=character_id)
-        stat_block = None
-        if character.path:
-            fetch(character.path)
-            stat_block = json.load(f)  # a list of dicts
-        return render(request, "players/partials/modal_stat_block.html", {"stat_block": stat_block})
+        url = f"https://pathfinderdashboard.com/{character.stat_block}"
+        try:
+            resp = requests.get(url, timeout=10)
+            resp.raise_for_status()
+            creature_data = resp.json()
+        except Exception as e:
+            creature_data = None
+
+        return render(request, "players/partials/stat_block_modal.html", {"creature": creature_data})

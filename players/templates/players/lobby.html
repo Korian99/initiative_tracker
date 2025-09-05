@@ -7,7 +7,6 @@
 {% endblock player %}
 {% block navbar %}
   <div class="container">
-    <!-- Navigation Tabs -->
     <ul class="nav nav-tabs" id="tabs" role="tablist">
       <li class="nav-item" role="presentation">
         <a class="nav-link {% if characters|length > 0 %}active{% endif %}"
@@ -50,13 +49,8 @@
            aria-labelledby="add-characters-tab">{% include "players/partials/add_character.html" %}</div>
     </div>
   </div>
-  <!-- Simple HTML5 Drag & Drop for reordering -->
-  {% comment %} <script>
-    document.getElementById('sse-connection').addEventListener('character_update', function(evt) {
-      console.log("Received character_update event", evt);
-      });
-  </script> {% endcomment %}
   <div id="char-modal-container"></div>
+  <div id="statblock-modal-container"></div>
   <div id="player-modal-container"></div>
   <div id="lobby-modal-container"></div>
   <div id="debuff-modal-container"></div>
