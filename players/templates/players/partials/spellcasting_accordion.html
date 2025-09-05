@@ -19,7 +19,7 @@
              aria-labelledby="heading-{{ entry.name|slugify }}"
              data-bs-parent="#accordion-spellcasting">
           <div class="accordion-body">
-            {% include "players/partials/spells_by_level.html" with spells=entry.cantrips title="Cantrips" %}
+            {% include "players/partials/spells_by_level.html" with spells=entry.cantrips title="Cantrips" default_level=entry.autoHeightenLevel %}
             {% include "players/partials/spells_by_level.html" with spells=entry.lv1spells title="1st Level Spells" %}
             {% include "players/partials/spells_by_level.html" with spells=entry.lv2spells title="2nd Level Spells" %}
             {% include "players/partials/spells_by_level.html" with spells=entry.lv3spells title="3rd Level Spells" %}

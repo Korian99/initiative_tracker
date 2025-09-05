@@ -18,7 +18,7 @@
             {% for spell in spells %}
               <li class="list-group-item">
                 <div class="d-flex justify-content-between align-items-center">
-                  <strong>{{ spell.name }}</strong>  <strong>{{ spell.castingTime }} Actions</strong> <strong>Lvl {{ spell.level }}</strong> <span class="ms-2 badge bg-secondary">{{ spell.traits|join:", " }}</span>
+                  <strong>{{ spell.name }}</strong>  <strong>{{ spell.castingTime }} Actions</strong> <strong>Lvl {{ default_level|default:spell.level }}</strong> <span class="ms-2 badge bg-secondary">{{ spell.traits|join:", " }}</span>
                   <button class="btn btn-sm btn-outline-secondary"
                           type="button"
                           data-bs-toggle="collapse"

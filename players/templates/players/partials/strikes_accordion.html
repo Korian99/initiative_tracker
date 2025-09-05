@@ -21,6 +21,10 @@
                 {% for dmg in strike.damageRolls %}
                   {{ dmg.roll }} {{ dmg.type }}
                   {% if not forloop.last %},{% endif %}
+                  {% if strike.effects %}
+                  and
+                  {{ strike.effects|join:", " }}
+                  {% endif %}
                 {% endfor %}
             {% endfor %}
           </ul>
