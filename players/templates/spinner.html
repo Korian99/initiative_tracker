@@ -1,0 +1,34 @@
+<div id="htmx-overlay" class="d-none">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<style>
+ #htmx-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* grayish overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+</style>
+
+<script>
+  document.body.addEventListener("htmx:beforeRequest", function(evt) {
+    // Check if it's a specific request
+    console.log(evt.target)
+    if (evt.target && evt.target.matches(".show-spinner")) {
+      document.getElementById("htmx-overlay").classList.remove("d-none");
+    }
+  });
+
+  document.body.addEventListener("htmx:afterRequest", function(evt) {
+    document.getElementById("htmx-overlay").classList.add("d-none");
+  });
+</script>

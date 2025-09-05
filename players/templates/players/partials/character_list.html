@@ -119,7 +119,7 @@
       {% endif %}
       {% if character.stat_block %}
         {% if player.role == "DM" or player.id == character.player.id %}
-          <button class="btn btn-sm btn-info stat-block"
+          <button class="btn btn-sm btn-info stat-block show-spinner"
                   hx-get="{% url 'load_stat_block_modal' character.id %}"
                   hx-target="#statblock-modal-container"
                   hx-swap="innerHTML">
