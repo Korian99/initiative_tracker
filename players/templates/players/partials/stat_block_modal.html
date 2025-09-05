@@ -6,7 +6,6 @@
      role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <!-- Header -->
       <div class="modal-header bg-dark text-white">
         <h5 class="modal-title">
           {{ creature.name }}
@@ -18,85 +17,49 @@
                 data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
-        <p>
-          <em>Source: {{ creature.source }}</em>
-        </p>
-        <div class="d-flex">
-          <div class="col-md-6">
-            <p>
-              <strong>Stats</strong>
-              <br>
-              <b>STR</b>: {{ creature.strength.value }}
-              <b>DEX</b>: {{ creature.dexterity.value }}
-              <b>CON</b>: {{ creature.constitution.value }}
-              <b>INT</b>: {{ creature.intelligence.value }}
-              <b>WIS</b>: {{ creature.wisdom.value }}
-              <b>CHA</b>: {{ creature.charisma.value }}
-            </p>
-            <p>
-              <strong>Speed:</strong> {{ creature.speed }}
-            </p>
-            <p>
-              <strong>Recall Knowledge:</strong> {{ creature.recallKnowledge }}
-            </p>
-          </div>
-          <div class="col-md-6">
-            <p>
-              <strong>Defenses</strong>
-              <br>
-              <b>HP</b> {{ creature.hp.value }}
-              {% if creature.hp.note %}({{ creature.hp.note }}){% endif %}
-              
-              <b>AC</b> {{ creature.ac.value }}
-              {% if creature.ac.note %}({{ creature.ac.note }}){% endif %}
-              
-              <b>Fort</b> {{ creature.fortitude.value }}
-              <b>Ref </b>{{ creature.reflex.value }}
-              <b>Will</b> {{ creature.will.value }}
-            </p>
-            {% if creature.weaknesses %}
-              <p>
-                <strong>Weaknesses:</strong>
-                {% for w in creature.weaknesses %}
-                  {{ w.type }} {{ w.value }}
-                  {% if w.exceptions %}(except: {{ w.exceptions|join:", " }}){% endif %}
-                  {% if not forloop.last %};{% endif %}
-                {% endfor %}
-              </p>
-            {% endif %}
-            {% if creature.resistances %}
-              <p>
-                <strong>Resistances:</strong>
-                {% for r in creature.resistances %}
-                  {{ r.type }} {{ r.value }}
-                  {% if r.exceptions %}(except: {{ r.exceptions|join:", " }}){% endif %}
-                  {% if not forloop.last %};{% endif %}
-                {% endfor %}
-              </p>
-            {% endif %}
+        <label class="form-label me-2">Choose Template:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input"
+                 type="radio"
+                 name="stat_mode"
+                 id="mode1"
+                 value="simple"
+                 hx-get="{% url 'load_stat_block_modal' character.id %}"
+                 hx-target="#stat_block_container"
+                 hx-swap="innerHTML"
+                 hx-vals='{"template":"normal"}'
+                 checked>
+          <label class="form-check-label" for="mode1">Normal</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input"
+                 type="radio"
+                 name="stat_mode"
+                 id="mode2"
+                 value="detailed"
+                 hx-get="{% url 'load_stat_block_modal' character.id %}"
+                 hx-vals='{"template":"weak"}'
+                 hx-target="#stat_block_container"
+                 hx-swap="innerHTML">
+          <label class="form-check-label" for="mode2">Weak</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input"
+                 type="radio"
+                 name="stat_mode"
+                 id="mode2"
+                 value="detailed"
+                 hx-get="{% url 'load_stat_block_modal' character.id %}"
+                 hx-vals='{"template":"elite"}'
+                 hx-target="#stat_block_container"
+                 hx-swap="innerHTML">
+          <label class="form-check-label" for="mode2">Elite</label>
+        </div>
+        <div class="mb-3">
+          <div id="stat_block_container">
+            {% include "players/partials/stat_block/stat_block_data.html" with mode="Normal" %}
           </div>
         </div>
-        <!-- Perception & Languages -->
-        <p>
-          <strong>Perception:</strong> +{{ creature.perception.value }} |
-          <strong>Senses:</strong> {{ creature.senses|join:", " }}
-        </p>
-        <p>
-          <strong>Languages:</strong> {{ creature.languages|join:", " }}
-        </p>
-        <p>
-          <strong>Skills:</strong>
-          {% for skill in creature.skills %}
-            {{ skill.name }} +{{ skill.modifier }}
-            {% if not forloop.last %},{% endif %}
-          {% endfor %}
-        </p>
-        <hr>
-        {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.generalAbilities title="General Abilities" show=True %}
-        {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.defensiveAbilities title="Defensive Abilities" show=True %}
-        {% include "players/partials/stat_block/strikes_accordion.html" %}
-        {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.offensiveAbilities title="Offensive Abilities"  show=False%}
-        {% include "players/partials/stat_block/spellcasting_accordion.html" with spellcastingEntries=creature.spellcastingEntries title="Offensive Abilities"  show=False%}
       </div>
     </div>
   </div>
@@ -106,5 +69,3 @@
   modal.show();
 </script>
 {% comment %} TODO: DEFENSE, PERCEPTOIN, STATS, SKILLS MODIFICATIONS {% endcomment %}
-{% comment %} TODO: <p> in abilities {% endcomment %}
-{% comment %} TODO: STRIKES ARE WEIRD {% endcomment %}

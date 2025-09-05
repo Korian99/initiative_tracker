@@ -7,6 +7,7 @@ from django.views.generic import TemplateView
 import json
 import requests
 
+
 def reorder_characters(characters, change_turn=True):
     i = len(characters)
     for c in characters:
@@ -18,8 +19,10 @@ def reorder_characters(characters, change_turn=True):
         c.save()
     return characters.order_by("-order")
 
+
 def custom_404_view(request, exception):
-        return redirect(reverse('login'))
+    return redirect(reverse('login'))
+
 
 class LoginView(TemplateView):
     # login
@@ -198,14 +201,15 @@ class CharacterView(TemplateView):
         reminder = request.POST.get("reminder")
         stat_block = request.POST.get("stat_block")
         template = request.POST.get("template", 'N')
-        max_order = Character.objects.filter(player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
+        max_order = Character.objects.filter(
+            player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
         if Character.objects.filter(name=character_name, player=player_in_lobby).exists():
             existing_characters = Character.objects.filter(
                 name__icontains=character_name, player=player_in_lobby)
             character_name = f"{character_name} ({len(existing_characters) + 1})"
         Character.objects.create(
-            player=player_in_lobby, name=character_name, initiative=initiative, reminder=reminder, order = max_order, stat_block = stat_block,
-            template = template)
+            player=player_in_lobby, name=character_name, initiative=initiative, reminder=reminder, order=max_order, stat_block=stat_block,
+            template=template)
         characters = Character.objects.filter(
             player__lobby=lobby).order_by("-order")
         if request.headers.get("HX-Request"):
@@ -298,7 +302,7 @@ def move_character(request):
         player__lobby=player.lobby).order_by("-order")
     try:
         round_len = len(characters)
-        order = request.POST.getlist('order')       
+        order = request.POST.getlist('order')
         for index, character_id in enumerate(order):
             character = Character.objects.get(id=character_id)
             character.order = round_len - index  # Ensures descending order
@@ -308,6 +312,7 @@ def move_character(request):
     characters = Character.objects.filter(
         player__lobby=player.lobby).order_by("-order")
     return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+
 
 class DebuffView(TemplateView):
     # load_debuff_modal
@@ -338,7 +343,8 @@ class DebuffView(TemplateView):
         characters = Character.objects.filter(
             player__lobby=character.player.lobby).order_by("-order")
         return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
-  
+
+
 class StatBlocksView(TemplateView):
     # select_creature
     def get(self, request):
@@ -351,16 +357,26 @@ class StatBlocksView(TemplateView):
         with open("tracker\database_index.json", encoding="utf-8") as f:
             creatures = json.load(f)  # a list of dicts
         return render(request, "players/partials/stat_block_select.html", {"creatures": creatures, "select_id": select_id, "default_value": default_value})
+
+
 class StatBlockView(TemplateView):
-    # load_stat_block_modal
-    def get(self, request, character_id):
-        character = Character.objects.get(id=character_id)
+    def get_creature_data(self, character):
         url = f"https://pathfinderdashboard.com/{character.stat_block}"
         try:
             resp = requests.get(url, timeout=10)
             resp.raise_for_status()
-            creature_data = resp.json()
+            return resp.json()
         except Exception as e:
-            creature_data = None
+            return None
 
-        return render(request, "players/partials/stat_block_modal.html", {"creature": creature_data})
+    # load_stat_block_modal
+    def get(self, request, character_id):
+        character = Character.objects.get(id=character_id)
+        creature_data = self.get_creature_data(character)
+        template = request.GET.get("template", None)
+        if template:
+            return render(request, "players/partials/stat_block/stat_block_data.html", {
+                "creature": creature_data,
+                "template": template, "character": character
+            })
+        return render(request, "players/partials/stat_block_modal.html", {"creature": creature_data, "template": 'normal', "character": character})

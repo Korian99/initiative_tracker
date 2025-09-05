@@ -11,7 +11,7 @@
                   data-bs-target="#collapse-{{ entry.name|slugify }}"
                   aria-expanded="false"
                   aria-controls="collapse-{{ entry.name|slugify }}">
-            {{ entry.name }} (DC {{ entry.dc }}, Bonus +{{ entry.bonus }})
+            {{ entry.name }} (DC {{ entry.dc|add:skill_offset }}, Bonus +{{ entry.bonus|add:skill_offset }})
           </button>
         </h2>
         <div id="collapse-{{ entry.name|slugify }}"
