@@ -4,6 +4,7 @@ from random import randint
 from datetime import datetime
 from django.urls import reverse
 from django.views.generic import TemplateView
+import json
 
 def reorder_characters(characters, change_turn=True):
     i = len(characters)
@@ -121,12 +122,6 @@ def join_lobby_first_time(request):
     character_name = request.GET.get("character")
     initiative = request.GET.get("initiative")
 
-    was_created = Character.objects.filter(
-        player=player_in_lobby,
-        name=character_name,
-        initiative=initiative
-    ).exists()
-
     Character.objects.update_or_create(
         player=player_in_lobby,
         name=character_name,
@@ -191,7 +186,7 @@ class CharacterView(TemplateView):
         characters = Character.objects.filter(player__lobby=player.lobby)
         return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
 
-    # add_character
+    # add_character border style for ced4da
     def post(self, request):
         player_in_lobby = get_object_or_404(
             PlayerInLobby, id=request.POST.get("player"))
@@ -200,21 +195,16 @@ class CharacterView(TemplateView):
         character_name = request.POST.get("character")
         initiative = request.POST.get("initiative")
         reminder = request.POST.get("reminder")
+        stat_block = request.POST.get("stat_block")
+        template = request.POST.get("template", 'N')
         max_order = Character.objects.filter(player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
         if Character.objects.filter(name=character_name, player=player_in_lobby).exists():
             existing_characters = Character.objects.filter(
                 name__icontains=character_name, player=player_in_lobby)
-            Character.objects.create(
-                player=player_in_lobby,
-                name=f"{character_name} ({len(existing_characters) + 1})",
-                initiative=initiative,
-                reminder=reminder,
-                order = max_order
-            )
-        else:
-            Character.objects.create(
-                player=player_in_lobby, name=character_name, initiative=initiative, reminder=reminder, order = max_order)
-
+            character_name = f"{character_name} ({len(existing_characters) + 1})"
+        Character.objects.create(
+            player=player_in_lobby, name=character_name, initiative=initiative, reminder=reminder, order = max_order, stat_block = stat_block,
+            template = template)
         characters = Character.objects.filter(
             player__lobby=lobby).order_by("-order")
         if request.headers.get("HX-Request"):
@@ -345,3 +335,19 @@ class DebuffView(TemplateView):
         characters = Character.objects.filter(
             player__lobby=character.player.lobby).order_by("-order")
         return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+  
+class StatBlockView(TemplateView):
+    # select_creature
+    def get(self, request):
+        with open("tracker\database_index.json", encoding="utf-8") as f:
+            creatures = json.load(f)  # a list of dicts
+        return render(request, "players/partials/select_stat_block.html", {"creatures": creatures})
+    
+    # modal_creature
+    def post(self, request, character_id):
+        character = Character.objects.get(id=character_id)
+        stat_block = None
+        if character.path:
+            fetch(character.path)
+            stat_block = json.load(f)  # a list of dicts
+        return render(request, "players/partials/modal_stat_block.html", {"stat_block": stat_block})
