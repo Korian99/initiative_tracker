@@ -16,19 +16,22 @@
         <div class="accordion-body">
           <ul class="list-group list-group-flush">
             {% for strike in creature.strikes %}
-              <strong>{{ strike.name }}</strong> ({{ strike.type }}, +{{ strike.bonus|add:skill_offset }}, {{ strike.traits|join:", " }})
-              —
-              {% for dmg in strike.damageRolls %}
-                {{ dmg.roll }}
-                {% if skill_offset != 0 %}{{ skill_offset }}{% endif %} {{ dmg.type }}
+              <div>
+                <strong>{{ strike.name }}</strong> ({{ strike.type }}, <span class="{{template}}-coloring">+{{ strike.bonus|add:skill_offset }}</span>, {{ strike.traits|join:", " }})
+                —
+                {% for dmg in strike.damageRolls %}
+                  {{ dmg.roll }}
+                  {% if skill_offset != 0 %}<span class="{{template}}-coloring">{{ skill_offset }}</span>{% endif %}
+                  {{ dmg.type }}
                   {% if not forloop.last %},{% endif %}
                   {% if strike.effects %}and{% endif %}
                 {% endfor %}
                 {% if strike.effects %}{{ strike.effects|join:", " }}{% endif %}
-              {% endfor %}
-            </ul>
-          </div>
+               </div>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>
-  {% endif %}
+  </div>
+{% endif %}

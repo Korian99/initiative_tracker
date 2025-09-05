@@ -32,9 +32,9 @@
                 </strong>
                 <div>{{ ability.description|safe }}</div>
                 {% if skill_offset > 0 %}
-                  <div class="offset">Increase the damage by +2 or +4 if it has a limited use</div>
+                  <span class="{{template}}-coloring">Increase the damage by +2 or +4 if it has a limited use</span>
                 {% elif skill_offset < 0 %}
-                  <div class="offset">Decrease the damage by -2 or -4 if it has a limited use</div>
+                  <span class="{{template}}-coloring">Decrease the damage by -2 or -4 if it has a limited use</span>
                 {% endif %}
               </li>
             {% endfor %}

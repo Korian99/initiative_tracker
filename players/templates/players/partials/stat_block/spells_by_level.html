@@ -57,9 +57,9 @@
                     </div>
                     {{ spell.description|safe }}
                     {% if skill_offset > 0 %}
-                      Increase the damage by -4
+                      <span class="{{template}}-coloring">Increase the damage by +4</span>
                     {% elif skill_offset < 0 %}
-                      Decrease the damage by -4
+                      <span class="{{template}}-coloring">Decrease the damage by -4</span>
                     {% endif %}
                   </div>
                 </div>

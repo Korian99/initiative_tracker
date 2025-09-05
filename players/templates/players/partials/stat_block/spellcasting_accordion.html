@@ -5,7 +5,7 @@
     {% for entry in spellcastingEntries %}
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading-{{ entry.name|slugify }}">
-          <button class="accordion-button collapsed"
+          <button class="accordion-button collapsed {{template}}-coloring"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse-{{ entry.name|slugify }}"
