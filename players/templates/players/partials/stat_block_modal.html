@@ -7,16 +7,19 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header bg-dark text-white">
+        {% if creature %}
         <h5 class="modal-title">
           {{ creature.name }}
-          <small class="text-muted">Level {{ creature.level }}</small>
+          <small class="text-muted"> {{character.name}} </small>
         </h5>
+        {% endif%}
         <span class="ms-2 badge bg-secondary">{{ creature.traits|join:", " }}</span>
         <button type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="modal"></button>
+        class="btn-close btn-close-white"
+        data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
+        {% if creature %}
         <label class="form-label me-2">Choose Template:</label>
         <div class="form-check form-check-inline">
           <input class="form-check-input"
@@ -60,6 +63,8 @@
             {% include "players/partials/stat_block/stat_block_data.html" with mode="Normal" %}
           </div>
         </div>
+          {% endif %}
+
       </div>
     </div>
   </div>
