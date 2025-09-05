@@ -17,7 +17,18 @@
           <ul class="list-group list-group-flush">
             {% for ability in abilities %}
               <li class="list-group-item">
-                <strong>{{ ability.name }} - {{ability.actions}} Actions</strong>
+                <strong>{{ ability.name }} -
+              {% if ability.actions == 1 %}
+                ◆
+              {% elif ability.actions == 2 %}
+                ◆◆
+              {% elif ability.actions == 3 %}
+                ◆◆◆
+              {% elif ability.actions == -1 %}
+                ⟳
+              {% else %}
+                {{ ability.actions|default:"Passive or ◇" }}
+              {% endif %}</strong>
                 <div>{{ ability.description|safe }}</div>
               </li>
             {% endfor %}
