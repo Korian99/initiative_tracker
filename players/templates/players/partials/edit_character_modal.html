@@ -39,6 +39,7 @@
                                value="{{ character.name }}"
                                >
                     </div>
+                    {% if player_lobby.role == 'DM' or player_lobby.role == 'PA' %}
                     <div class="mb-3"
                         id="edit_creature"
                         hx-get="{% url 'select_creature'%}"
@@ -47,6 +48,7 @@
                         hx-vals='{"character_id": {{character.id}} }'
                         hx-swap="innerHTML">
                     </div>
+                    {% endif %}
                     <div class="mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
                         <label for="reminder" class="form-label">Reminder</label>
                         <input type="text"
