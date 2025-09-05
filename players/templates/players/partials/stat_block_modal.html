@@ -92,11 +92,11 @@
           {% endfor %}
         </p>
         <hr>
-        {% include "players/partials/abilities_accordion.html" with abilities=creature.generalAbilities title="General Abilities" show=True %}
-        {% include "players/partials/abilities_accordion.html" with abilities=creature.defensiveAbilities title="Defensive Abilities" show=True %}
-        {% include "players/partials/strikes_accordion.html" %}
-        {% include "players/partials/abilities_accordion.html" with abilities=creature.offensiveAbilities title="Offensive Abilities"  show=False%}
-        {% include "players/partials/spellcasting_accordion.html" with spellcastingEntries=creature.spellcastingEntries title="Offensive Abilities"  show=False%}
+        {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.generalAbilities title="General Abilities" show=True %}
+        {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.defensiveAbilities title="Defensive Abilities" show=True %}
+        {% include "players/partials/stat_block/strikes_accordion.html" %}
+        {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.offensiveAbilities title="Offensive Abilities"  show=False%}
+        {% include "players/partials/stat_block/spellcasting_accordion.html" with spellcastingEntries=creature.spellcastingEntries title="Offensive Abilities"  show=False%}
       </div>
     </div>
   </div>
