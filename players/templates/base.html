@@ -48,7 +48,13 @@
     <!-- Bootstrap JS Bundle (optional) -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+          
+    <!-- before </body> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
   </head>
   <body>
     <div class="container full-height d-flex justify-content-center align-items-center flex-column">
@@ -77,6 +83,27 @@
               e.preventDefault();
           }
       }
+    </script>
+    
+    <script>
+      function initCreatureSelect(ctx=document) {
+        const $el = $(ctx).find('#stat_block');
+        // avoid double-initialization
+        if ($el.length && !$el.data('select2')) {
+          $el.select2({
+            width: '100%',
+            placeholder: 'Search for a Stat Block',
+            allowClear: true
+          });
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => initCreatureSelect());
+      document.body.addEventListener('htmx:afterSwap', (e) => {
+        if (e.target && e.target.id === 'select_creature') {
+          initCreatureSelect(e.target);
+        }
+      });
     </script>
   </body>
 </html>

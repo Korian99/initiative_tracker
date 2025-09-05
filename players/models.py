@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
 
 
 class Lobby(models.Model):
@@ -49,6 +48,11 @@ class PlayerInLobby(models.Model):
 
 
 class Character(models.Model):
+    TEMPLATE_CHOICES = (
+        ('W', 'Weak'),
+        ('N', 'Normal'),
+        ('E', 'Elite'),
+    )
     player = models.ForeignKey(PlayerInLobby, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     initiative = models.IntegerField()
@@ -56,7 +60,8 @@ class Character(models.Model):
     debuff = models.CharField(max_length=100, null= True, blank=False)
     reminder = models.CharField(max_length=100, default=None, null= True, blank=True)
     current_turn = models.BooleanField(default=False)
-
+    stat_block = models.CharField(max_length=100, default=None, null= True, blank=True)
+    template = models.CharField(max_length=1, choices=TEMPLATE_CHOICES, default='N')
     def __str__(self):
         return self.name + " - " + str(self.player.player)
 
