@@ -1,0 +1,611 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Hero Hunter",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "perception": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 25,
+      "note": [
+        "to Track <span class=\"roll\" onclick=\"roll(this)\">29</span>"
+      ],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Greataxe",
+      "quantity": 1,
+      "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Hand Crossbow",
+      "quantity": 1,
+      "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
+      "level": 0,
+      "price": "3 gp ",
+      "traits": []
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp ",
+      "traits": []
+    },
+    {
+      "name": "Bolts",
+      "quantity": 15,
+      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Prepared Trapper",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A hero hunter carries the materials to Craft two Alarm Snares, two Grasping Snares, one Snagging Hook Snare, and one Stunning Snare. The hero hunter replenishes any used supplies each time they make their daily preparations.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 230,
+    "max": 230,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Nimble Dodge",
+      "actions": null,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The hero hunter is targeted with a melee or ranged attack by an attacker they can see</p><hr /><p><strong>Effect</strong> The hero hunter gains a +2 circumstance bonus to AC against the triggering attack.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Greataxe",
+      "bonus": 27,
+      "traits": [
+        "magical",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+13",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+13)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hand Crossbow",
+      "bonus": 26,
+      "traits": [
+        "magical",
+        "range-increment-60",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Deadly Snares",
+      "actions": 3,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p>The hero hunter Crafts a snare that would normally take 1 minute or less to Craft. The Stealth DC to locate the snare and DC to disable it with Thievery are equal to the hero hunter's Crafting DC if it's higher than the snare's DC.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Felling Shot",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The hero hunter makes a ranged Strike. If it hits and deals damage to a flying target, the target falls up to 120 feet but takes no damage from the fall. The creature can't Fly, Leap, levitate or otherwise leave the ground until the end of the hero hunter's next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hunter's Precision",
+      "actions": 1,
+      "traits": [
+        "stance"
+      ],
+      "description": "<p>The hero hunter knows how to hunt and kill any game. While in this stance, all the hero hunter's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d8</span> precision damage, and the range increment for their ranged weapon Strikes is 20 feet longer than normal. If the hunter gets a critical hit with a weapon Strike, the target also takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent plus bleed damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Some hunters grow bored of simple beasts and monsters. For them, a battle-tested warrior is the finest prey.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
+  "recallKnowledge": "Society, DC: 31",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 25,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Hero Hunter",
+    "type": "Creature",
+    "level": 13,
+    "traits": [
+      "Medium",
+      "Human",
+      "Humanoid"
+    ],
+    "source": "Pathfinder NPC Core",
+    "perception": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 23,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 26,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "crafting",
+        "modifier": 24,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 19,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 27,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 25,
+        "note": [
+          "to Track <span class=\"roll\" onclick=\"roll(this)\">29</span>"
+        ],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [
+      {
+        "name": "Greataxe",
+        "quantity": 1,
+        "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": [
+          "sweep"
+        ]
+      },
+      {
+        "name": "Hand Crossbow",
+        "quantity": 1,
+        "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
+        "level": 0,
+        "price": "3 gp ",
+        "traits": []
+      },
+      {
+        "name": "Studded Leather Armor",
+        "quantity": 1,
+        "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+        "level": 0,
+        "price": "3 gp ",
+        "traits": []
+      },
+      {
+        "name": "Bolts",
+        "quantity": 15,
+        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [
+      {
+        "name": "Prepared Trapper",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A hero hunter carries the materials to Craft two Alarm Snares, two Grasping Snares, one Snagging Hook Snare, and one Stunning Snare. The hero hunter replenishes any used supplies each time they make their daily preparations.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 33,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 230,
+      "max": 230,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Nimble Dodge",
+        "actions": null,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The hero hunter is targeted with a melee or ranged attack by an attacker they can see</p><hr /><p><strong>Effect</strong> The hero hunter gains a +2 circumstance bonus to AC against the triggering attack.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Reactive Strike",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Greataxe",
+        "bonus": 27,
+        "traits": [
+          "magical",
+          "sweep"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d12+13",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d12+13)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 26,
+        "traits": [
+          "agile",
+          "finesse",
+          "nonlethal",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+13",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+13)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Hand Crossbow",
+        "bonus": 26,
+        "traits": [
+          "magical",
+          "range-increment-60",
+          "reload-1"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+8",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+8)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Deadly Snares",
+        "actions": 3,
+        "traits": [
+          "manipulate"
+        ],
+        "description": "<p>The hero hunter Crafts a snare that would normally take 1 minute or less to Craft. The Stealth DC to locate the snare and DC to disable it with Thievery are equal to the hero hunter's Crafting DC if it's higher than the snare's DC.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Felling Shot",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The hero hunter makes a ranged Strike. If it hits and deals damage to a flying target, the target falls up to 120 feet but takes no damage from the fall. The creature can't Fly, Leap, levitate or otherwise leave the ground until the end of the hero hunter's next turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Hunter's Precision",
+        "actions": 1,
+        "traits": [
+          "stance"
+        ],
+        "description": "<p>The hero hunter knows how to hunt and kill any game. While in this stance, all the hero hunter's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d8</span> precision damage, and the range increment for their ranged weapon Strikes is 20 feet longer than normal. If the hunter gets a critical hit with a weapon Strike, the target also takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent plus bleed damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Some hunters grow bored of simple beasts and monsters. For them, a battle-tested warrior is the finest prey.</p><hr /><p>Villains pursue selfish and cruel goals, trampling over anyone in their way.</p>",
+    "recallKnowledge": "Society, DC: 31",
+    "originalCreature": {}
+  }
+}

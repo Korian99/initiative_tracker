@@ -1,4 +1,8 @@
 from django.db import models
+import json
+from pathlib import Path
+from django.conf import settings
+from django.db import models
 
 
 class Lobby(models.Model):
@@ -49,9 +53,9 @@ class PlayerInLobby(models.Model):
 
 class Character(models.Model):
     TEMPLATE_CHOICES = (
-        ('W', 'Weak'),
-        ('N', 'Normal'),
-        ('E', 'Elite'),
+        ('weak', 'Weak'),
+        ('normal', 'Normal'),
+        ('elite', 'Elite'),
     )
     player = models.ForeignKey(PlayerInLobby, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
@@ -60,8 +64,9 @@ class Character(models.Model):
     debuff = models.CharField(max_length=100, null= True, blank=False)
     reminder = models.CharField(max_length=100, default=None, null= True, blank=True)
     current_turn = models.BooleanField(default=False)
-    stat_block = models.CharField(max_length=100, default=None, null= True, blank=True)
-    template = models.CharField(max_length=1, choices=TEMPLATE_CHOICES, default='N')
+    stat_block = models.CharField(max_length=100, null= True, blank=True, default= None)
+    template = models.CharField(max_length=6, choices=TEMPLATE_CHOICES, default='normal')
+
     def __str__(self):
         return self.name + " - " + str(self.player.player)
 
@@ -73,35 +78,18 @@ class Character(models.Model):
             return next_chars.first()
         else:
             return characters.first()
-
+    @property
+    def creature(self):
+        """Load JSON content from jsons/ folder based on `path`"""
+        jsons_dir = Path(settings.BASE_DIR) / "jsons"
+        file_path = jsons_dir / self.stat_block.replace(' ', '_')
+        if file_path.exists():
+            try:
+                with open(file_path, encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception as e:
+                return {"error": str(e)}
+        return None
+    
     class Meta:
         ordering = ['-order']
-
-
-class ConditionType(models.Model):
-    name = models.CharField(max_length=100)
-
-
-class Condition(models.Model):
-    DURATION_CHOICES = (
-        ('RD', 'Round Decreasing'),  # Dura X rondas
-        # Cada ronda disminuye en 1 el efecto
-        ('AD', 'Automatically Decreases'),
-        ('MD', 'Manual Decreasing'),  # El jugador lo subira/bajara
-    )
-    durationType = models.CharField(max_length=2, choices=DURATION_CHOICES)
-    conditionType = models.ForeignKey(ConditionType, on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
-
-
-class CharacterCondition(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    condition = models.ForeignKey(Condition, on_delete=models.CASCADE)
-    duration = models.IntegerField()
-
-    def decrease_duration(self, value=None):
-        if value is not None:
-            self.duration = value
-        elif self.condition.durationType in {'RD', 'AD'}:
-            self.duration = -1
-        self.save()

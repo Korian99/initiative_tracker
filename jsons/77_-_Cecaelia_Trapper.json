@@ -1,0 +1,449 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Cecaelia Trapper",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Medium",
+    "Amphibious",
+    "Chaotic",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Bestiary 3",
+  "perception": {
+    "value": 11,
+    "note": "darkvisionwavesense 10 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "wavesense 10 ft imprecise"
+  ],
+  "languages": [
+    "Common",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 11,
+      "note": [
+        "to Grapple <span class=\"roll\" onclick=\"roll(this)\">13</span>"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Longspear",
+      "quantity": 1,
+      "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>",
+      "level": 0,
+      "price": "5 sp ",
+      "traits": [
+        "reach"
+      ]
+    },
+    {
+      "name": "Net",
+      "quantity": 2,
+      "description": "<p>You can use a net either on its own or attached to a rope. When attached to a rope, you can use the net to Grapple a Medium or smaller creature up to 10 feet away (instead of only adjacent creatures). You can continue to Grapple to keep your hold on the target so long as the target remains within 10 feet and you continue to hold the net. The grabbed creature gains a +2 circumstance bonus to Escape unless you are adjacent to them, and it can attempt a DC 16 Athletics check to Force Open the net entirely. Once the target is no longer grabbed, the net is unwieldy until refolded as a Concentrate action that requires two hands; if used without being refolded, Grapple checks made with the net take a -2 penalty.</p>\n<p>When the net is unattached, you can attempt a ranged attack roll against a Medium or smaller creature within 20 feet. On a hit, the target is off-guard and takes a -10- foot circumstance penalty to its Speeds until it Escapes, and on a critical hit, it's also immobilized until it Escapes. The Escape DC is 16. A creature adjacent to the target can Interact to remove the net.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 53,
+    "max": 53,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft,\nswim 35 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Longspear",
+      "bonus": 15,
+      "traits": [
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Cecaelia Jet",
+      "actions": 2,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The cecaelia moves up to 140 feet in a straight line through the water.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hurl Net",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The cecaelia is holding a net in two appendages.</p><hr /><p><strong>Effect</strong> The cecaelia hurls their net, attempting to hamper a foe. The cecaelia makes a ranged Strike (with a +15 modifier) against a Medium or smaller creature within 20 feet.</p>\n<p>On a hit, the target is Off-Guard and takes a -10-foot circumstance penalty to its Speeds. On a critical hit, the creature is Restrained. The DC to Escape the net is 16. A creature adjacent to the target can Interact with the net to remove it from the target.</p>\n<p>Effect: Hurl Net</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ink Cloud",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The cecaelia emits a cloud of black ink in a 10 foot emanation. This ink cloud has no effect outside of water. Creatures inside the cloud are Undetected by creatures using sight or smell, and they can't see or smell while inside the cloud. The cloud dissipates after 1 minute.</p>\n<p>The cecaelia can't use Ink Cloud again for <span class=\"roll\" onclick=\"roll(this)\">2d6</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Cecaelias resemble humans with octopus tentacles instead of legs. These oceanic hunters are agile and intelligent creatures, but proud. Their inquisitiveness often brings them into contact with strangers, where a poor turn of phrase or an unintended insult can quickly spark their legendary tempers.</p>\n<p>Cecaelias live nomadic lives, hunting and scavenging along coastlines for food and tradeable trinkets. They engage in frequent trade with terrestrial communities, offering anything from seafood to treasures retrieved from sunken vessels in exchange for goods not readily available underwater. Some take to piracy or hire themselves out as mercenaries, but their quarrelsome disposition invariably leads to them going their own way again before too long. The only non-cecaelia communities that maintain long-lasting relationships with cecaelias are those of the remarkably laid-back locathahs, who coexist with cecaelias in the city of Xidao.</p>\n<p>Cecaelias live in warm waters along verdant ocean reefs or coastlines, often near humanoid settlements. Able to adapt rapidly over a few generations, cecaelias adopt the physical features of their closest humanoid neighbors, which sages liken to an octopus's natural camouflage.</p>",
+  "recallKnowledge": "Society, DC: 20",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 11,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Cecaelia Trapper",
+    "type": "Creature",
+    "level": 5,
+    "traits": [
+      "Medium",
+      "Amphibious",
+      "Chaotic",
+      "Humanoid"
+    ],
+    "source": "Pathfinder Bestiary 3",
+    "perception": {
+      "value": 11,
+      "note": "darkvisionwavesense 10 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "wavesense 10 ft imprecise"
+    ],
+    "languages": [
+      "Common",
+      "Thalassic"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 11,
+        "note": [
+          "to Grapple <span class=\"roll\" onclick=\"roll(this)\">13</span>"
+        ],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [
+      {
+        "name": "Longspear",
+        "quantity": 1,
+        "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>",
+        "level": 0,
+        "price": "5 sp ",
+        "traits": [
+          "reach"
+        ]
+      },
+      {
+        "name": "Net",
+        "quantity": 2,
+        "description": "<p>You can use a net either on its own or attached to a rope. When attached to a rope, you can use the net to Grapple a Medium or smaller creature up to 10 feet away (instead of only adjacent creatures). You can continue to Grapple to keep your hold on the target so long as the target remains within 10 feet and you continue to hold the net. The grabbed creature gains a +2 circumstance bonus to Escape unless you are adjacent to them, and it can attempt a DC 16 Athletics check to Force Open the net entirely. Once the target is no longer grabbed, the net is unwieldy until refolded as a Concentrate action that requires two hands; if used without being refolded, Grapple checks made with the net take a -2 penalty.</p>\n<p>When the net is unattached, you can attempt a ranged attack roll against a Medium or smaller creature within 20 feet. On a hit, the target is off-guard and takes a -10- foot circumstance penalty to its Speeds until it Escapes, and on a critical hit, it's also immobilized until it Escapes. The Escape DC is 16. A creature adjacent to the target can Interact to remove the net.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 53,
+      "max": 53,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "20 ft,\nswim 35 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Longspear",
+        "bonus": 15,
+        "traits": [
+          "magical",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+7",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+7)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tentacle",
+        "bonus": 15,
+        "traits": [
+          "agile",
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+7",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+7)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Cecaelia Jet",
+        "actions": 2,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The cecaelia moves up to 140 feet in a straight line through the water.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Hurl Net",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The cecaelia is holding a net in two appendages.</p><hr /><p><strong>Effect</strong> The cecaelia hurls their net, attempting to hamper a foe. The cecaelia makes a ranged Strike (with a +15 modifier) against a Medium or smaller creature within 20 feet.</p>\n<p>On a hit, the target is Off-Guard and takes a -10-foot circumstance penalty to its Speeds. On a critical hit, the creature is Restrained. The DC to Escape the net is 16. A creature adjacent to the target can Interact with the net to remove it from the target.</p>\n<p>Effect: Hurl Net</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Ink Cloud",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The cecaelia emits a cloud of black ink in a 10 foot emanation. This ink cloud has no effect outside of water. Creatures inside the cloud are Undetected by creatures using sight or smell, and they can't see or smell while inside the cloud. The cloud dissipates after 1 minute.</p>\n<p>The cecaelia can't use Ink Cloud again for <span class=\"roll\" onclick=\"roll(this)\">2d6</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Cecaelias resemble humans with octopus tentacles instead of legs. These oceanic hunters are agile and intelligent creatures, but proud. Their inquisitiveness often brings them into contact with strangers, where a poor turn of phrase or an unintended insult can quickly spark their legendary tempers.</p>\n<p>Cecaelias live nomadic lives, hunting and scavenging along coastlines for food and tradeable trinkets. They engage in frequent trade with terrestrial communities, offering anything from seafood to treasures retrieved from sunken vessels in exchange for goods not readily available underwater. Some take to piracy or hire themselves out as mercenaries, but their quarrelsome disposition invariably leads to them going their own way again before too long. The only non-cecaelia communities that maintain long-lasting relationships with cecaelias are those of the remarkably laid-back locathahs, who coexist with cecaelias in the city of Xidao.</p>\n<p>Cecaelias live in warm waters along verdant ocean reefs or coastlines, often near humanoid settlements. Able to adapt rapidly over a few generations, cecaelias adopt the physical features of their closest humanoid neighbors, which sages liken to an octopus's natural camouflage.</p>",
+    "recallKnowledge": "Society, DC: 20",
+    "originalCreature": {}
+  }
+}

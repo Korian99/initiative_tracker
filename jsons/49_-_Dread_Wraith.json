@@ -1,0 +1,439 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Dread Wraith",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Large",
+    "Evil",
+    "Incorporeal",
+    "Lawful",
+    "Undead",
+    "Unholy",
+    "Wraith"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "perception": {
+    "value": 19,
+    "note": "darkvisionlifesense 60 ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "lifesense 60 ft precise"
+  ],
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. vitality",
+  "hp": {
+    "value": 130,
+    "max": 130,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    },
+    {
+      "name": "Draining Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "void"
+      ],
+      "description": "<p>10 feet. A creature entering the aura must succeed at a DC 26 Fortitude save or become Drained 1. It recovers after it has been out of the aura for 1 minute. This drained condition value is cumulative with the drained value caused by drain life, but not with multiple draining presence auras.</p>\n<p>A creature that succeeds at its save is temporarily immune to draining presence for 24 hours.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sunlight Powerlessness",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A dread wraith caught in sunlight is Stunned 2 and Clumsy 2.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft,\nfly 60 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Spectral Hand",
+      "bonus": 21,
+      "traits": [
+        "finesse",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "Drain-life"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Absorb Wraith",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The dread wraith extends its hand toward another wraith creature within 100 feet. The target wraith dissolves and streaks toward the dread wraith in a straight line, dealing <span class=\"roll\" onclick=\"roll(this)\">6d10</span> void damage to each creature along the line (DC 28 basic Fortitude save).</p>\n<p>The dread wraith absorbs the essence of the target wraith, becoming Quickened and gaining a +10-foot status bonus to its fly Speed for a number of rounds equal to the level of the absorbed wraith. It can use its extra action only to Fly or Strike.</p>\n<p>An unwilling target can attempt a DC 28 Will save to resist being absorbed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drain Life",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>When the dread wraith damages a living creature with its spectral hand Strike, the wraith gains 10 temporary Hit Points and the target must succeed at a DC 28 Fortitude save or become Drained 1. Further damage dealt by the wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wraith Spawn",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>A living humanoid slain by a wraith's spectral hand Strike rises as a Wraith Spawn after <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds. This wraith spawn is under the command of the dread wraith that killed it. It doesn't have drain life or wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains its free will and gains drain life and wraith spawn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>These menacing spiritual remnants of wicked warlords or bloodthirsty generals are towering specters of shadow and death. Like other wraiths, dread wraiths haunt the shadowy places of the world, but dread wraiths are more likely to travel greater distances to sow terror or amass influence, often sticking to dark glades or sinister ruins when journeying across sun-dappled lands. Dread wraiths tends to be arrogant and rarely form a pack with others of their kind, preferring instead to dominate groups of ordinary wraiths. A particularly powerful necromancer might compel packs of dread wraiths into service, however, while a particularly malevolent goal-such as to eradicate a bastion of light and life-might draw several dread wraiths together in a common purpose.</p>",
+  "recallKnowledge": "Religion, DC: 26",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 19,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Dread Wraith",
+    "type": "Creature",
+    "level": 9,
+    "traits": [
+      "Large",
+      "Evil",
+      "Incorporeal",
+      "Lawful",
+      "Undead",
+      "Unholy",
+      "Wraith"
+    ],
+    "source": "Pathfinder Bestiary 2",
+    "perception": {
+      "value": 19,
+      "note": "darkvisionlifesense 60 ft precise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "lifesense 60 ft precise"
+    ],
+    "languages": [
+      "Common",
+      "Necril"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 19,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 19,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": -5
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": 3
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "+1 status to all saves vs. vitality",
+    "hp": {
+      "value": 130,
+      "max": 130,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "precision",
+      "unconscious"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [
+          "non-magical"
+        ],
+        "exceptions": [
+          "force",
+          "ghost-touch",
+          "vitality"
+        ],
+        "type": "all-damage",
+        "value": 10
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Attack of Opportunity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      },
+      {
+        "name": "Draining Presence",
+        "actions": null,
+        "traits": [
+          "aura",
+          "void"
+        ],
+        "description": "<p>10 feet. A creature entering the aura must succeed at a DC 26 Fortitude save or become Drained 1. It recovers after it has been out of the aura for 1 minute. This drained condition value is cumulative with the drained value caused by drain life, but not with multiple draining presence auras.</p>\n<p>A creature that succeeds at its save is temporarily immune to draining presence for 24 hours.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sunlight Powerlessness",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A dread wraith caught in sunlight is Stunned 2 and Clumsy 2.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "0 ft,\nfly 60 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Spectral Hand",
+        "bonus": 21,
+        "traits": [
+          "finesse",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+7",
+            "type": "void"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+7)*2",
+            "type": "void"
+          }
+        ],
+        "effects": [
+          "Drain-life"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Absorb Wraith",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The dread wraith extends its hand toward another wraith creature within 100 feet. The target wraith dissolves and streaks toward the dread wraith in a straight line, dealing <span class=\"roll\" onclick=\"roll(this)\">6d10</span> void damage to each creature along the line (DC 28 basic Fortitude save).</p>\n<p>The dread wraith absorbs the essence of the target wraith, becoming Quickened and gaining a +10-foot status bonus to its fly Speed for a number of rounds equal to the level of the absorbed wraith. It can use its extra action only to Fly or Strike.</p>\n<p>An unwilling target can attempt a DC 28 Will save to resist being absorbed.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Drain Life",
+        "actions": null,
+        "traits": [
+          "divine"
+        ],
+        "description": "<p>When the dread wraith damages a living creature with its spectral hand Strike, the wraith gains 10 temporary Hit Points and the target must succeed at a DC 28 Fortitude save or become Drained 1. Further damage dealt by the wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Wraith Spawn",
+        "actions": null,
+        "traits": [
+          "divine"
+        ],
+        "description": "<p>A living humanoid slain by a wraith's spectral hand Strike rises as a Wraith Spawn after <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds. This wraith spawn is under the command of the dread wraith that killed it. It doesn't have drain life or wraith spawn. If the creator of the wraith spawn dies, the wraith spawn becomes a full-fledged, autonomous wraith; it regains its free will and gains drain life and wraith spawn.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>These menacing spiritual remnants of wicked warlords or bloodthirsty generals are towering specters of shadow and death. Like other wraiths, dread wraiths haunt the shadowy places of the world, but dread wraiths are more likely to travel greater distances to sow terror or amass influence, often sticking to dark glades or sinister ruins when journeying across sun-dappled lands. Dread wraiths tends to be arrogant and rarely form a pack with others of their kind, preferring instead to dominate groups of ordinary wraiths. A particularly powerful necromancer might compel packs of dread wraiths into service, however, while a particularly malevolent goal-such as to eradicate a bastion of light and life-might draw several dread wraiths together in a common purpose.</p>",
+    "recallKnowledge": "Religion, DC: 26",
+    "originalCreature": {}
+  }
+}

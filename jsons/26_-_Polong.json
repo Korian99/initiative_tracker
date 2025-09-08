@@ -1,0 +1,459 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Polong",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Evil",
+    "Incorporeal",
+    "Spirit",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Book of the Dead",
+  "perception": {
+    "value": 17,
+    "note": "darkvisionlifesense 30 ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "lifesense 30 ft precise"
+  ],
+  "languages": [
+    "Any one language known by the polong's creator"
+  ],
+  "skills": [
+    {
+      "name": "deception",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "medicine",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 100,
+    "max": 100,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Bottle Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A polong is bound to the bottle from which they spawned. They can leave the bottle only at the will of their master and must return to it once every 24 hours to feed on their creator's blood. Otherwise, the polong withers and dies.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Natural Invisibility",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A polong is naturally Invisible outside of their bottle. They become visible only when forced out of a possessed creature against their will. Shattering the polong's bottle also forces them to assume a visible form.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Regenerating Bond",
+      "actions": null,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>When a polong possesses a creature, the polong's master gains temporary Hit Points equal to the victim's level × the victim's drained value caused by the possession. These temporary Hit Points last as long as the possession lasts.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft,\nfly 35 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Scythe Claw",
+      "bonus": 20,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+9",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+9)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Polong Possession",
+      "actions": 3,
+      "traits": [
+        "incapacitation",
+        "mental",
+        "occult",
+        "possession"
+      ],
+      "description": "<p>The polong attempts to possess an adjacent corporeal creature. This has the same effect as the Possession spell (DC 26 Will save), except the duration is 24 hours and, since the polong doesn't have a physical body, they're unaffected by that restriction of the spell. If the target has critically failed its save and become fully possessed by this polong before, it gets a save result one degree of success worse than it rolled.</p>\n<p>A creature possessed by a polong becomes Drained 1 and Doomed 1. These conditions don't reduce naturally unless the polong spends an entire day without possessing the creature. For each consecutive day the polong is able to return and possess the creature, the drained and doomed values each increase by 1, to a maximum of 4. If the polong possesses a different creature, the conditions end for any creature it previously possessed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rend",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Scythe Claw</p>\n<details><summary>See rules...</summary>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Polongs exist to serve their creators as loyal familiars, spies, and assassins. Their convenience makes them popular among the wicked, as each resides within a glass bottle which normally seems to contain only a small amount of red liquid. When addressed by their owner, a polong appears within their bottle as a tiny, beautiful humanoid drenched in blood. Forcing one to manifest outside the bottle reveals their true shape: a blood-soaked spirit with a hateful visage and sickle-shaped claws.</p>\n<p>The ritual to create a polong originated in Minata and is known primarily by Tian-Sing spellcasters, but only those willing to practice such evil. The ritualist must collect the blood of a murdered humanoid in a small bottle and perform daily incantations, which can take up to 14 days. Once the polong forms, they drink the blood of their creator every day, most often taken from a finger inserted into their bottle. At the master's order, a polong will travel up to 10 miles away to locate a particular person, possess them, and either slowly whittle them down via possession until they die, or force them to attack anyone nearby until someone slays the victim in self-defense.</p>",
+  "recallKnowledge": "Occultism, Religion, DC: 26",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 17,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Polong",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Uncommon",
+      "Medium",
+      "Evil",
+      "Incorporeal",
+      "Spirit",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder Book of the Dead",
+    "perception": {
+      "value": 17,
+      "note": "darkvisionlifesense 30 ft precise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "lifesense 30 ft precise"
+    ],
+    "languages": [
+      "Any one language known by the polong's creator"
+    ],
+    "skills": [
+      {
+        "name": "deception",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "medicine",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "occultism",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": -5
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 5
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 100,
+      "max": 100,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "precision",
+      "unconscious"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [
+          "non-magical"
+        ],
+        "exceptions": [
+          "force",
+          "ghost-touch",
+          "vitality"
+        ],
+        "type": "all-damage",
+        "value": 5
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "holy",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Bottle Bound",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A polong is bound to the bottle from which they spawned. They can leave the bottle only at the will of their master and must return to it once every 24 hours to feed on their creator's blood. Otherwise, the polong withers and dies.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Natural Invisibility",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A polong is naturally Invisible outside of their bottle. They become visible only when forced out of a possessed creature against their will. Shattering the polong's bottle also forces them to assume a visible form.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Regenerating Bond",
+        "actions": null,
+        "traits": [
+          "occult"
+        ],
+        "description": "<p>When a polong possesses a creature, the polong's master gains temporary Hit Points equal to the victim's level × the victim's drained value caused by the possession. These temporary Hit Points last as long as the possession lasts.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "0 ft,\nfly 35 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Scythe Claw",
+        "bonus": 20,
+        "traits": [
+          "finesse",
+          "magical"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+9",
+            "type": "slashing"
+          },
+          {
+            "roll": "1d6",
+            "type": "void"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+9)*2",
+            "type": "slashing"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "void"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Polong Possession",
+        "actions": 3,
+        "traits": [
+          "incapacitation",
+          "mental",
+          "occult",
+          "possession"
+        ],
+        "description": "<p>The polong attempts to possess an adjacent corporeal creature. This has the same effect as the Possession spell (DC 26 Will save), except the duration is 24 hours and, since the polong doesn't have a physical body, they're unaffected by that restriction of the spell. If the target has critically failed its save and become fully possessed by this polong before, it gets a save result one degree of success worse than it rolled.</p>\n<p>A creature possessed by a polong becomes Drained 1 and Doomed 1. These conditions don't reduce naturally unless the polong spends an entire day without possessing the creature. For each consecutive day the polong is able to return and possess the creature, the drained and doomed values each increase by 1, to a maximum of 4. If the polong possesses a different creature, the conditions end for any creature it previously possessed.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Rend",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>Scythe Claw</p>\n<details><summary>See rules...</summary>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Polongs exist to serve their creators as loyal familiars, spies, and assassins. Their convenience makes them popular among the wicked, as each resides within a glass bottle which normally seems to contain only a small amount of red liquid. When addressed by their owner, a polong appears within their bottle as a tiny, beautiful humanoid drenched in blood. Forcing one to manifest outside the bottle reveals their true shape: a blood-soaked spirit with a hateful visage and sickle-shaped claws.</p>\n<p>The ritual to create a polong originated in Minata and is known primarily by Tian-Sing spellcasters, but only those willing to practice such evil. The ritualist must collect the blood of a murdered humanoid in a small bottle and perform daily incantations, which can take up to 14 days. Once the polong forms, they drink the blood of their creator every day, most often taken from a finger inserted into their bottle. At the master's order, a polong will travel up to 10 miles away to locate a particular person, possess them, and either slowly whittle them down via possession until they die, or force them to attack anyone nearby until someone slays the victim in self-defense.</p>",
+    "recallKnowledge": "Occultism, Religion, DC: 26",
+    "originalCreature": {}
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tanglebones",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Rare",
+    "Large",
+    "Chaotic",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Adventure: Malevolence",
+  "perception": {
+    "value": 17,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Ectoplasmic Filament",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the tanglebone's reach uses an action with the manipulate trait or a move action, or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> A filament of black, oily ectoplasm lashes out at the triggering creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d8+8</span> slashing damage (DC 25 basic Reflex save). If the filament deals damage, the tanglebones gains <span class=\"roll\" onclick=\"roll(this)\">2d8</span> temporary Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Eerie Flexibility",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A tanglebones can shift and adjust its mass to fit into smaller areas, allowing it to fit through tight spaces as if it were a Medium creature. While Squeezing, it can move at its full Speed.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 145,
+    "max": 145,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "unconscious",
+    "poison",
+    "death-effects",
+    "disease"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "bludgeoning",
+      "value": 7
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Hurled Bone",
+      "bonus": 17,
+      "traits": [
+        "brutal",
+        "range-increment-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Gnaw",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The tanglebones has Grabbed a foe</p>\n<hr />\n<p><strong>Effect</strong> The tanglebones gnaws and chews on the grabbed target with its many skulls, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6+8</span> piercing damage (DC 23 basic Fortitude save). On a critical failure, the creature is also Sickened 1 from the pain.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Skeletal Storm",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The tanglebones makes a single claw Strike against every creature in reach. These attacks count toward the tanglebones' multiple attack penalty, but the multiple attack penalty doesn't increase until after the tanglebones makes all its attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sprawled Bones",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time it acts, the tanglebones appears as a sprawling mass of bones. It has an automatic result of 35 on Deception checks and DCs to pass as a grisly but seemingly harmless mess.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Sometimes, when murderer buries a large number of victims in a mass grave, the vengeful spirits of the slain can become similarly tangled together. When these spirits can't untangle, they instead return to their physical remains, fusing into one horrific mass of bones and black, tar-like sludge-a tanglebones.</p>\n<p>One awful tale speaks of a bitter old dowager who learned that, through a legal loophole, ownership of her estate would revert to her estranged daughter. She murdered her 13 servants, buried their bodies in the house's basement, and then played the gracious mother in handing over the manor keys at the appointed time. One night, the tanglebones that arose from the dowager's atrocity murdered the daughter and her family. By the time the authorities learned of what happened, the dowager had fled the nation, changed her identity, and (the story goes) wasted no time rebuilding her fortunes-this time becoming a queen.</p>",
+  "recallKnowledge": "Religion, DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 17,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Tanglebones",
+    "type": "Creature",
+    "level": 7,
+    "traits": [
+      "Rare",
+      "Large",
+      "Chaotic",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder Adventure: Malevolence",
+    "perception": {
+      "value": 17,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Necril"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 6
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Ectoplasmic Filament",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature within the tanglebone's reach uses an action with the manipulate trait or a move action, or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> A filament of black, oily ectoplasm lashes out at the triggering creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d8+8</span> slashing damage (DC 25 basic Reflex save). If the filament deals damage, the tanglebones gains <span class=\"roll\" onclick=\"roll(this)\">2d8</span> temporary Hit Points.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Eerie Flexibility",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A tanglebones can shift and adjust its mass to fit into smaller areas, allowing it to fit through tight spaces as if it were a Medium creature. While Squeezing, it can move at its full Speed.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 145,
+      "max": 145,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "paralyzed",
+      "unconscious",
+      "poison",
+      "death-effects",
+      "disease"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "bludgeoning",
+        "value": 7
+      }
+    ],
+    "defensiveAbilities": [],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 17,
+        "traits": [
+          "agile",
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+8",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+8)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Hurled Bone",
+        "bonus": 17,
+        "traits": [
+          "brutal",
+          "range-increment-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+8",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+8)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Gnaw",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The tanglebones has Grabbed a foe</p>\n<hr />\n<p><strong>Effect</strong> The tanglebones gnaws and chews on the grabbed target with its many skulls, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6+8</span> piercing damage (DC 23 basic Fortitude save). On a critical failure, the creature is also Sickened 1 from the pain.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Skeletal Storm",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The tanglebones makes a single claw Strike against every creature in reach. These attacks count toward the tanglebones' multiple attack penalty, but the multiple attack penalty doesn't increase until after the tanglebones makes all its attacks.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sprawled Bones",
+        "actions": 1,
+        "traits": [
+          "concentrate"
+        ],
+        "description": "<p>Until the next time it acts, the tanglebones appears as a sprawling mass of bones. It has an automatic result of 35 on Deception checks and DCs to pass as a grisly but seemingly harmless mess.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Sometimes, when murderer buries a large number of victims in a mass grave, the vengeful spirits of the slain can become similarly tangled together. When these spirits can't untangle, they instead return to their physical remains, fusing into one horrific mass of bones and black, tar-like sludge-a tanglebones.</p>\n<p>One awful tale speaks of a bitter old dowager who learned that, through a legal loophole, ownership of her estate would revert to her estranged daughter. She murdered her 13 servants, buried their bodies in the house's basement, and then played the gracious mother in handing over the manor keys at the appointed time. One night, the tanglebones that arose from the dowager's atrocity murdered the daughter and her family. By the time the authorities learned of what happened, the dowager had fled the nation, changed her identity, and (the story goes) wasted no time rebuilding her fortunes-this time becoming a queen.</p>",
+    "recallKnowledge": "Religion, DC: 28",
+    "originalCreature": {}
+  }
+}

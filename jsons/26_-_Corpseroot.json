@@ -1,0 +1,519 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Corpseroot",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Huge",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Book of the Dead",
+  "perception": {
+    "value": 18,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Arboreal",
+    "Fey",
+    "Necril",
+    "(can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 225,
+    "max": 225,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "bludgeoning",
+      "value": 10
+    },
+    {
+      "type": "piercing",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "axe-vulnerability",
+      "value": 10
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Axe Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The corpseroot takes 10 additional damage from axes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Blight",
+      "actions": null,
+      "traits": [
+        "aura",
+        "poison",
+        "primal"
+      ],
+      "description": "<p>30 feet. A plant entering or starting its turn in the corpseroot's aura begins to wither and must succeed at a DC 27 Fortitude save or become Sickened 2 (Sickened 4 on a critical failure). A plant that succeeds is temporarily immune for 1 minute.</p>\n<p>A plant that stays in the aura for 7 consecutive days must succeed at a DC 27 Fortitude save or die. If the plant was a creature or tree, it rises as a corpseroot. The newly risen corpseroot can't create more corpseroots but has all other corpseroot abilities. Plants that are neither magical nor creatures automatically fail saves against blight.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Plant",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When it isn't in danger, the corpseroot spends 1 minute rooting to the earth, becoming planted in place. While the corpseroot is planted and immobile, creatures must actively Seek and succeed at a DC 36 Perception check (DC 40 Perception check in forests) to detect the corpseroot's true nature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Branch",
+      "bonus": 24,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Root",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "reach-20",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Rotten Fruit",
+      "bonus": 20,
+      "traits": [
+        "range-increment-20",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d4+7",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "splash poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d4+7)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "splash poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Take Root",
+      "actions": 1,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The corpseroot has a creature Grabbed or Restrained</p>\n<hr />\n<p><strong>Effect</strong> The corpseroot buries its roots into the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">1d6+11</span> piercing damage and draining the target's life force (DC 30 basic Fortitude save). On a failure, the creature is Drained 1 (or increases the value by 1 if already drained), and the corpseroot regains 10 healing HP. If this would make a creature drained 5, the creature dies.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Corpseroots are rotten, undead trees that grow bright-red poisonous fruit and spread blight to surrounding plants, transforming healthy trees into new corpseroots. These cunning killers drain the life from creatures through their root systems, posing as dead trees until their victims come within reach.</p>\n<p>Corpseroots most commonly form from rotten husks of trees that died from supernatural blights, making them common threats in the Fangwood and Fierani forests. The most powerful are ancient trees used as shrines and sacrificial altars, their roots absorbing the blood, flesh, and terror of those condemned under their boughs. Some of these ancient corpseroots still command the respect and devotion of the cults that inadvertently created them.</p>",
+  "recallKnowledge": "Religion, DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 18,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Corpseroot",
+    "type": "Creature",
+    "level": 11,
+    "traits": [
+      "Huge",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder Book of the Dead",
+    "perception": {
+      "value": 18,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Arboreal",
+      "Fey",
+      "Necril",
+      "(can't speak any language)"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 24,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 7
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 30,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 225,
+      "max": 225,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [
+      {
+        "type": "bludgeoning",
+        "value": 10
+      },
+      {
+        "type": "piercing",
+        "value": 10
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "axe-vulnerability",
+        "value": 10
+      },
+      {
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Axe Vulnerability",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The corpseroot takes 10 additional damage from axes.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Blight",
+        "actions": null,
+        "traits": [
+          "aura",
+          "poison",
+          "primal"
+        ],
+        "description": "<p>30 feet. A plant entering or starting its turn in the corpseroot's aura begins to wither and must succeed at a DC 27 Fortitude save or become Sickened 2 (Sickened 4 on a critical failure). A plant that succeeds is temporarily immune for 1 minute.</p>\n<p>A plant that stays in the aura for 7 consecutive days must succeed at a DC 27 Fortitude save or die. If the plant was a creature or tree, it rises as a corpseroot. The newly risen corpseroot can't create more corpseroots but has all other corpseroot abilities. Plants that are neither magical nor creatures automatically fail saves against blight.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Plant",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When it isn't in danger, the corpseroot spends 1 minute rooting to the earth, becoming planted in place. While the corpseroot is planted and immobile, creatures must actively Seek and succeed at a DC 36 Perception check (DC 40 Perception check in forests) to detect the corpseroot's true nature.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Branch",
+        "bonus": 24,
+        "traits": [
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d12+10",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d12+10)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Root",
+        "bonus": 24,
+        "traits": [
+          "agile",
+          "reach-20",
+          "trip"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+10",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+10)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Rotten Fruit",
+        "bonus": 20,
+        "traits": [
+          "range-increment-20",
+          "splash"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d4+7",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d6",
+            "type": "splash poison"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d4+7)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "splash poison"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Take Root",
+        "actions": 1,
+        "traits": [
+          "primal"
+        ],
+        "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The corpseroot has a creature Grabbed or Restrained</p>\n<hr />\n<p><strong>Effect</strong> The corpseroot buries its roots into the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">1d6+11</span> piercing damage and draining the target's life force (DC 30 basic Fortitude save). On a failure, the creature is Drained 1 (or increases the value by 1 if already drained), and the corpseroot regains 10 healing HP. If this would make a creature drained 5, the creature dies.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Corpseroots are rotten, undead trees that grow bright-red poisonous fruit and spread blight to surrounding plants, transforming healthy trees into new corpseroots. These cunning killers drain the life from creatures through their root systems, posing as dead trees until their victims come within reach.</p>\n<p>Corpseroots most commonly form from rotten husks of trees that died from supernatural blights, making them common threats in the Fangwood and Fierani forests. The most powerful are ancient trees used as shrines and sacrificial altars, their roots absorbing the blood, flesh, and terror of those condemned under their boughs. Some of these ancient corpseroots still command the respect and devotion of the cults that inadvertently created them.</p>",
+    "recallKnowledge": "Religion, DC: 28",
+    "originalCreature": {}
+  }
+}

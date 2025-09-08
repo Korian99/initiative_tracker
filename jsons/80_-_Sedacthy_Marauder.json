@@ -1,0 +1,561 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sedacthy Marauder",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Medium",
+    "Amphibious",
+    "Humanoid",
+    "Sedacthy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 9,
+    "note": "darkvisionwavesense 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "wavesense 30 ft imprecise"
+  ],
+  "languages": [
+    "Thalassic",
+    "Sea Speech"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Spear",
+      "quantity": 2,
+      "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": [
+        "monk",
+        "thrown-20"
+      ]
+    },
+    {
+      "name": "Breastplate",
+      "quantity": 1,
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "level": 0,
+      "price": "8 gp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Sea Speech",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A sedacthy speaking Thalassic can be understood by any animal that has a swim Speed or the amphibious or aquatic trait. By spending a week regularly interacting with such an animal, the sedacthy can make it permanently helpful.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 75,
+    "max": 75,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Vengeful Throw",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The marauder takes damage from a creature 20 feet or further away</p>\n<hr />\n<p><strong>Effect</strong> The marauder makes a ranged spear Strike against the triggering creature. This attack doesn't take a range increment penalty if the target is within the second range increment.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\nswim 40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 14,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 14,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "1d4+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(1d4+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spear",
+      "bonus": 14,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spear",
+      "bonus": 11,
+      "traits": [
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Challenging Shriek",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The marauder unleashes a terrifying battle cry. Each enemy in a 30 foot emanation must attempt a DC 21 Will save. Regardless of the results, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Immobilized for 1 round and Frightened 3.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shared Feast",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The sedacthy makes a jaws Strike. If it hits, an ally of their choice can spend a reaction to make a jaws Strike against the same target. Allies with beaks or similar attacks can use those instead of jaws.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Physically imposing sedacthies prove their status by controlling dangerous aquatic creatures like great white sharks and giant moray eels.</p>\n<hr />\n<p>Sedacthies are amphibious, fish-like humanoids who lurk in Golarion's oceans and are known for leading their animal servants ashore to devour air breathers. When an entire fishing village disappears overnight, sedacthies are the first suspects. Sedacthies pride themselves as natural leaders, with ambition limited only by their strict adherence to hierarchy. A sedacthy's station is determined by the strength of the animal servants they press into service, and the mettle they prove during hunts and in battles against outsiders.</p>",
+  "recallKnowledge": "Society, DC: 19",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Sedacthy Marauder",
+    "type": "Creature",
+    "level": 4,
+    "traits": [
+      "Medium",
+      "Amphibious",
+      "Humanoid",
+      "Sedacthy"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 9,
+      "note": "darkvisionwavesense 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "wavesense 30 ft imprecise"
+    ],
+    "languages": [
+      "Thalassic",
+      "Sea Speech"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": 3
+    },
+    "items": [
+      {
+        "name": "Spear",
+        "quantity": 2,
+        "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": [
+          "monk",
+          "thrown-20"
+        ]
+      },
+      {
+        "name": "Breastplate",
+        "quantity": 1,
+        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+        "level": 0,
+        "price": "8 gp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [
+      {
+        "name": "Sea Speech",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A sedacthy speaking Thalassic can be understood by any animal that has a swim Speed or the amphibious or aquatic trait. By spending a week regularly interacting with such an animal, the sedacthy can make it permanently helpful.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 75,
+      "max": 75,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Vengeful Throw",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The marauder takes damage from a creature 20 feet or further away</p>\n<hr />\n<p><strong>Effect</strong> The marauder makes a ranged spear Strike against the triggering creature. This attack doesn't take a range increment penalty if the target is within the second range increment.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\nswim 40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 14,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+8",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+8)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 14,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4",
+            "type": "persistent bleed"
+          },
+          {
+            "roll": "1d4+8",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4)*2",
+            "type": "persistent bleed"
+          },
+          {
+            "roll": "(1d4+8)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Spear",
+        "bonus": 14,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "1d6+10",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+10)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Spear",
+        "bonus": 11,
+        "traits": [
+          "thrown-20"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+10",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+10)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Challenging Shriek",
+        "actions": 1,
+        "traits": [
+          "auditory",
+          "emotion",
+          "fear",
+          "mental"
+        ],
+        "description": "<p>The marauder unleashes a terrifying battle cry. Each enemy in a 30 foot emanation must attempt a DC 21 Will save. Regardless of the results, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Immobilized for 1 round and Frightened 3.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Shared Feast",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The sedacthy makes a jaws Strike. If it hits, an ally of their choice can spend a reaction to make a jaws Strike against the same target. Allies with beaks or similar attacks can use those instead of jaws.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Physically imposing sedacthies prove their status by controlling dangerous aquatic creatures like great white sharks and giant moray eels.</p>\n<hr />\n<p>Sedacthies are amphibious, fish-like humanoids who lurk in Golarion's oceans and are known for leading their animal servants ashore to devour air breathers. When an entire fishing village disappears overnight, sedacthies are the first suspects. Sedacthies pride themselves as natural leaders, with ambition limited only by their strict adherence to hierarchy. A sedacthy's station is determined by the strength of the animal servants they press into service, and the mettle they prove during hunts and in battles against outsiders.</p>",
+    "recallKnowledge": "Society, DC: 19",
+    "originalCreature": {}
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "initiative": 0,
+  "initiativebonus": 31,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Terotricus",
+  "type": "Creature",
+  "level": 19,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Chaotic",
+    "Evil",
+    "Fungus",
+    "Unholy",
+    "(old-version)"
+  ],
+  "source": "Pathfinder Bestiary",
+  "perception": {
+    "value": 31,
+    "note": "darkvisiontremorsense 120 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "tremorsense 120 ft imprecise"
+  ],
+  "languages": [
+    "Chthonian",
+    "Elven",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 37,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 31,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 42,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 370,
+    "max": 370,
+    "note": "regeneration 25 (deactivated by cold)",
+    "modifications": []
+  },
+  "immunities": [
+    "controlled",
+    "disease",
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 15
+    },
+    {
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "type": "holy",
+      "value": 15
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Spore Cloud",
+      "actions": null,
+      "traits": [
+        "aura",
+        "disease"
+      ],
+      "description": "<p>30 feet. A creature entering the aura or starting its turn there is exposed to spore blight.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft,\nburrow 25 ft,\nclimb 25 ft,\nswim 35 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 37,
+      "traits": [
+        "magical",
+        "reach-20",
+        "unarmed",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+16",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "4d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+16)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(4d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "Improved-grab",
+        "Improved-push"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spores",
+      "bonus": 37,
+      "traits": [
+        "magical",
+        "range-increment-80",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+6",
+          "type": "poison"
+        },
+        {
+          "roll": "4d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+6)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(4d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "Spore-blight",
+        "Sticky-spores"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Infest Environs",
+      "actions": 2,
+      "traits": [
+        "healing",
+        "primal"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The terotricus is in a swamp or forested area.</p>\n<hr />\n<p><strong>Effect</strong> The terotricus drains nutrients from nearby trees and undergrowth while simultaneously infesting them with fungal growth. All non-magical plant life (though not plant creatures) within a 60 foot emanation withers and sprouts foul mold and slimy mushrooms, removing any cover and concealment provided by trees and undergrowth. The terotricus is healed 200 healing Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spore Blight",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>Plants and fungi are immune.</p>\n<p><strong>Saving Throw</strong> DC 40 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> Enfeebled 2 (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 4 and Slowed 1 (1 day)</p>\n<p><strong>Stage 3</strong> Controlled by the terotricus (as Dominate; <span class=\"roll\" onclick=\"roll(this)\">5d8</span> days)</p>\n<p><strong>Stage 4</strong> dead</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sticky Spores",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by a terotricus's spores must succeed at a DC 40 Reflex save or take a -10-foot status penalty to all its Speeds for 1 minute. On a critical failure, the creature is Immobilized until it Escapes (DC 40).</p>\n<p>Effect: Sticky Spores</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Push 20 feet (40 feet on a Critical Hit)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><p>The monster can use Push as a free action triggered by a hit with its initial attack.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The legendary terotricus is a massive slime-mold that hails from the Abyss. Its collective consciousness encapsulates entire regions, spreading as far as its ever-growing cloud of spores will take it. Once it has seeped onto the Material Plane from the Abyssal realm, a terotricus's agenda is to feed on all living creatures, infecting them with its spores, and its presence can spell doom for any in its way.</p>\n<p>Terotricuses move by rapidly expanding and contracting their slimy \"bodies,\" which are capable of burrowing through soil, gliding across water, and scrabbling up steep slopes. These behemoths of rot don't need to travel to see their plans come to fruition, though; their spores easily latch onto demons and other denizens of the Abyss, who in turn bring this blight to the Material Plane when the flends are summoned.</p>\n<p>When a terotricus infects a creature with its spores, web-like fungal growths start appearing on the victim's skin until they cover the entire body, at which point the victim's mind is also subdued and bent to the terotricus's will. The terotricus's favored victims include animals, elves, and fey, though it is happy to infect any creature it can catch. Cults of Treerazer occasionally attempt to make contact with a terotricus, but such acts almost always simply result in a new sect of spore-blighted slaves.</p>",
+  "recallKnowledge": "Nature, DC: 44",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 31,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Terotricus",
+    "type": "Creature",
+    "level": 19,
+    "traits": [
+      "Rare",
+      "Gargantuan",
+      "Chaotic",
+      "Evil",
+      "Fungus",
+      "Unholy",
+      "(old-version)"
+    ],
+    "source": "Pathfinder Bestiary",
+    "perception": {
+      "value": 31,
+      "note": "darkvisiontremorsense 120 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "tremorsense 120 ft imprecise"
+    ],
+    "languages": [
+      "Chthonian",
+      "Elven",
+      "Fey"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 37,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 32,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 35,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 31,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 31,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 10
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 9
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 6
+    },
+    "charisma": {
+      "value": 5
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 42,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 34,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 33,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "+1 status to all saves vs. magic",
+    "hp": {
+      "value": 370,
+      "max": 370,
+      "note": "regeneration 25 (deactivated by cold)",
+      "modifications": []
+    },
+    "immunities": [
+      "controlled",
+      "disease",
+      "paralyzed",
+      "sleep"
+    ],
+    "resistances": [
+      {
+        "type": "fire",
+        "value": 15
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "cold",
+        "value": 15
+      },
+      {
+        "type": "cold-iron",
+        "value": 15
+      },
+      {
+        "type": "holy",
+        "value": 15
+      },
+      {
+        "type": "slashing",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Spore Cloud",
+        "actions": null,
+        "traits": [
+          "aura",
+          "disease"
+        ],
+        "description": "<p>30 feet. A creature entering the aura or starting its turn there is exposed to spore blight.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "35 ft,\nburrow 25 ft,\nclimb 25 ft,\nswim 35 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Tentacle",
+        "bonus": 37,
+        "traits": [
+          "magical",
+          "reach-20",
+          "unarmed",
+          "unholy"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d10+16",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "4d6",
+            "type": "spirit"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d10+16)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(4d6)*2",
+            "type": "spirit"
+          }
+        ],
+        "effects": [
+          "Improved-grab",
+          "Improved-push"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Spores",
+        "bonus": 37,
+        "traits": [
+          "magical",
+          "range-increment-80",
+          "unholy"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d8+6",
+            "type": "poison"
+          },
+          {
+            "roll": "4d6",
+            "type": "spirit"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d8+6)*2",
+            "type": "poison"
+          },
+          {
+            "roll": "(4d6)*2",
+            "type": "spirit"
+          }
+        ],
+        "effects": [
+          "Spore-blight",
+          "Sticky-spores"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Infest Environs",
+        "actions": 2,
+        "traits": [
+          "healing",
+          "primal"
+        ],
+        "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The terotricus is in a swamp or forested area.</p>\n<hr />\n<p><strong>Effect</strong> The terotricus drains nutrients from nearby trees and undergrowth while simultaneously infesting them with fungal growth. All non-magical plant life (though not plant creatures) within a 60 foot emanation withers and sprouts foul mold and slimy mushrooms, removing any cover and concealment provided by trees and undergrowth. The terotricus is healed 200 healing Hit Points.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Spore Blight",
+        "actions": null,
+        "traits": [
+          "disease"
+        ],
+        "description": "<p>Plants and fungi are immune.</p>\n<p><strong>Saving Throw</strong> DC 40 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> Enfeebled 2 (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 4 and Slowed 1 (1 day)</p>\n<p><strong>Stage 3</strong> Controlled by the terotricus (as Dominate; <span class=\"roll\" onclick=\"roll(this)\">5d8</span> days)</p>\n<p><strong>Stage 4</strong> dead</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sticky Spores",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A creature hit by a terotricus's spores must succeed at a DC 40 Reflex save or take a -10-foot status penalty to all its Speeds for 1 minute. On a critical failure, the creature is Immobilized until it Escapes (DC 40).</p>\n<p>Effect: Sticky Spores</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Improved Push 20 feet (40 feet on a Critical Hit)",
+        "actions": null,
+        "traits": [],
+        "description": "<p><p>The monster can use Push as a free action triggered by a hit with its initial attack.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The legendary terotricus is a massive slime-mold that hails from the Abyss. Its collective consciousness encapsulates entire regions, spreading as far as its ever-growing cloud of spores will take it. Once it has seeped onto the Material Plane from the Abyssal realm, a terotricus's agenda is to feed on all living creatures, infecting them with its spores, and its presence can spell doom for any in its way.</p>\n<p>Terotricuses move by rapidly expanding and contracting their slimy \"bodies,\" which are capable of burrowing through soil, gliding across water, and scrabbling up steep slopes. These behemoths of rot don't need to travel to see their plans come to fruition, though; their spores easily latch onto demons and other denizens of the Abyss, who in turn bring this blight to the Material Plane when the flends are summoned.</p>\n<p>When a terotricus infects a creature with its spores, web-like fungal growths start appearing on the victim's skin until they cover the entire body, at which point the victim's mind is also subdued and bent to the terotricus's will. The terotricus's favored victims include animals, elves, and fey, though it is happy to infect any creature it can catch. Cults of Treerazer occasionally attempt to make contact with a terotricus, but such acts almost always simply result in a new sect of spore-blighted slaves.</p>",
+    "recallKnowledge": "Nature, DC: 44",
+    "originalCreature": {}
+  }
+}

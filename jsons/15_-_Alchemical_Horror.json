@@ -1,0 +1,429 @@
+{
+  "initiative": 0,
+  "initiativebonus": 35,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Alchemical Horror",
+  "type": "Creature",
+  "level": 21,
+  "traits": [
+    "Huge",
+    "Aberration",
+    "Evil"
+  ],
+  "source": "Pathfinder #162: Ruins of the Radiant Siege",
+  "perception": {
+    "value": 35,
+    "note": "darkvisionwavesense 60 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "wavesense 60 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 39,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Alchemical Reaction",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The alchemical horror takes damage from an alchemical bomb</p>\n<hr />\n<p><strong>Effect</strong> The volatile substances that compose the alchemical horror froth outward as they react with the bomb. The bomb's full effects affect creatures in every space within 15 feet of the alchemical horror, and splash damage affects creatures 5 feet beyond that.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 46,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 37,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 400,
+    "max": 400,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "disease",
+    "poison",
+    "sickened"
+  ],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 20
+    },
+    {
+      "type": "precision",
+      "value": 20
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft,\nswim 50 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 39,
+      "traits": [
+        "acid",
+        "magical",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d8+18",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d8+18)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 37,
+      "traits": [
+        "acid",
+        "magical",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+18",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+18)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Alchemical Torrent",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "primal"
+      ],
+      "description": "<p>The alchemical horror spews a torrent of alchemical fluids in a 30 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">20d6</span> acid damage to creatures in the area (DC 43 basic Reflex save).</p>\n<p>The alchemical horror can't use this ability again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Large, <span class=\"roll\" onclick=\"roll(this)\">4d12+18</span> bludgeoning damage, Rupture 40</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Occultism, DC: 42",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 35,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Alchemical Horror",
+    "type": "Creature",
+    "level": 21,
+    "traits": [
+      "Huge",
+      "Aberration",
+      "Evil"
+    ],
+    "source": "Pathfinder #162: Ruins of the Radiant Siege",
+    "perception": {
+      "value": 35,
+      "note": "darkvisionwavesense 60 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "wavesense 60 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 39,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 10
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 9
+    },
+    "intelligence": {
+      "value": -3
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Alchemical Reaction",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The alchemical horror takes damage from an alchemical bomb</p>\n<hr />\n<p><strong>Effect</strong> The volatile substances that compose the alchemical horror froth outward as they react with the bomb. The bomb's full effects affect creatures in every space within 15 feet of the alchemical horror, and splash damage affects creatures 5 feet beyond that.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 46,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 37,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 32,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 400,
+      "max": 400,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "disease",
+      "poison",
+      "sickened"
+    ],
+    "resistances": [
+      {
+        "type": "acid",
+        "value": 20
+      },
+      {
+        "type": "precision",
+        "value": 20
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "20 ft,\nswim 50 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 39,
+        "traits": [
+          "acid",
+          "magical",
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d8+18",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d6",
+            "type": "acid"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d8+18)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "acid"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Pseudopod",
+        "bonus": 37,
+        "traits": [
+          "acid",
+          "magical",
+          "reach-15",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d10+18",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d6",
+            "type": "acid"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d10+18)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "acid"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Alchemical Torrent",
+        "actions": 2,
+        "traits": [
+          "acid",
+          "primal"
+        ],
+        "description": "<p>The alchemical horror spews a torrent of alchemical fluids in a 30 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">20d6</span> acid damage to creatures in the area (DC 43 basic Reflex save).</p>\n<p>The alchemical horror can't use this ability again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Swallow Whole",
+        "actions": 1,
+        "traits": [
+          "attack"
+        ],
+        "description": "<p>Large, <span class=\"roll\" onclick=\"roll(this)\">4d12+18</span> bludgeoning damage, Rupture 40</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Occultism, DC: 42",
+    "originalCreature": {}
+  }
+}

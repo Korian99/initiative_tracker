@@ -1,0 +1,451 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Zombie Mammoth",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Huge",
+    "Evil",
+    "Mindless",
+    "Undead",
+    "Unholy",
+    "Zombie"
+  ],
+  "source": "Pathfinder Book of the Dead",
+  "perception": {
+    "value": 17,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 290,
+    "max": 290,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "vitality",
+      "value": 10
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Severed Trunk",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the zombie mammoth is hit by a critical hit that deals slashing damage, the mammoth's trunk is severed from its body. Any creature Grabbed or Restrained with the trunk is released, and the mammoth loses its trunk Strike and Greater Constrict.</p>\n<p>The trunk slithers across the battlefield, still animated, and acts in initiative right after the mammoth. It retains Greater Constrict and trunk Strikes but can't use tusk Strikes, foot Strikes, or Shambling Trample. It has all the stats of the mammoth, except its AC is reduced to 23, it has only 50 Hit Points, and its Speed is 10 feet. Damage dealt to the severed trunk has no effect on the zombie mammoth.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slow",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A zombie mammoth is permanently Slowed 1 and can't use reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "45 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tusk",
+      "bonus": 24,
+      "traits": [
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+13",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+13)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Trunk",
+      "bonus": 24,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Foot",
+      "bonus": 24,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Greater Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d10+7</span> bludgeoning, DC 30 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls Unconscious, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Shambling Trample",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>Large or smaller, foot, DC 30 basic Reflex save</p>\n<p>The zombie mammoth Strides up to its Speed instead of double.</p>\n<hr />\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>This monstrous creature can overrun defenses and stomp foes into the ground, making it a terror on any battlefield.</p>\n<hr />\n<p>Simple to create and varied in purpose, these shambling undead are often used for their strength and endless stamina to conduct boring, repetitive tasks.</p>",
+  "recallKnowledge": "Religion, DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 17,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Zombie Mammoth",
+    "type": "Creature",
+    "level": 11,
+    "traits": [
+      "Huge",
+      "Evil",
+      "Mindless",
+      "Undead",
+      "Unholy",
+      "Zombie"
+    ],
+    "source": "Pathfinder Book of the Dead",
+    "perception": {
+      "value": 17,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 24,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 7
+    },
+    "dexterity": {
+      "value": 0
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": -3
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 290,
+      "max": 290,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "vitality",
+        "value": 10
+      },
+      {
+        "type": "slashing",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Severed Trunk",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the zombie mammoth is hit by a critical hit that deals slashing damage, the mammoth's trunk is severed from its body. Any creature Grabbed or Restrained with the trunk is released, and the mammoth loses its trunk Strike and Greater Constrict.</p>\n<p>The trunk slithers across the battlefield, still animated, and acts in initiative right after the mammoth. It retains Greater Constrict and trunk Strikes but can't use tusk Strikes, foot Strikes, or Shambling Trample. It has all the stats of the mammoth, except its AC is reduced to 23, it has only 50 Hit Points, and its Speed is 10 feet. Damage dealt to the severed trunk has no effect on the zombie mammoth.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Slow",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A zombie mammoth is permanently Slowed 1 and can't use reactions.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "45 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Tusk",
+        "bonus": 24,
+        "traits": [
+          "reach-15",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10+13",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10+13)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Trunk",
+        "bonus": 24,
+        "traits": [
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+7",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+7)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Improved-grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Foot",
+        "bonus": 24,
+        "traits": [
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+13",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+13)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Greater Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d10+7</span> bludgeoning, DC 30 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls Unconscious, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Shambling Trample",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>Large or smaller, foot, DC 30 basic Reflex save</p>\n<p>The zombie mammoth Strides up to its Speed instead of double.</p>\n<hr />\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>This monstrous creature can overrun defenses and stomp foes into the ground, making it a terror on any battlefield.</p>\n<hr />\n<p>Simple to create and varied in purpose, these shambling undead are often used for their strength and endless stamina to conduct boring, repetitive tasks.</p>",
+    "recallKnowledge": "Religion, DC: 28",
+    "originalCreature": {}
+  }
+}

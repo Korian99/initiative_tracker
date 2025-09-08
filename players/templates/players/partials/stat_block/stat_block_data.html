@@ -31,9 +31,9 @@
                         <strong>Defenses</strong>
                         <br>
                         <b>HP</b> <span class="{{ template }}-coloring">{{ creature.hp.value|add:hp_offset }}</span>
-                        {% if creature.hp.note %}({{ creature.hp.note }}){% endif %}
+                        {% if creature.hp.note %}({{ creature.hp.note|safe }}){% endif %}
                         <b>AC</b>  <span class="{{ template }}-coloring">{{ creature.ac.value|add:skill_offset }}</span>
-                        {% if creature.ac.note %}({{ creature.ac.note }}){% endif %}
+                        {% if creature.ac.note %}({{ creature.ac.note|safe }}){% endif %}
                         <b>Fort</b> <span class="{{ template }}-coloring">{{ creature.fortitude.value|add:skill_offset }}</span>
                         <b>Ref </b> <span class="{{ template }}-coloring">{{ creature.reflex.value|add:skill_offset }}</span>
                         <b>Will</b> <span class="{{ template }}-coloring">{{ creature.will.value|add:skill_offset }}</span>

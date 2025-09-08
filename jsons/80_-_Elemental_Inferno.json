@@ -1,0 +1,441 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Elemental Inferno",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Huge",
+    "Elemental",
+    "Fire"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 20,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Pyric"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The elemental inferno ignores the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 210,
+    "max": 210,
+    "note": "explosion",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 15
+    },
+    {
+      "exceptions": [],
+      "type": "water",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Explosion",
+      "actions": null,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>When the elemental inferno dies, it explodes, dealing <span class=\"roll\" onclick=\"roll(this)\">7d6</span> fire damage to each creature in a 10 foot emanation (DC 30 basic Reflex save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Intense Heat",
+      "actions": null,
+      "traits": [
+        "aura",
+        "fire"
+      ],
+      "description": "<p>10 feet. <span class=\"roll\" onclick=\"roll(this)\">7d6</span> fire damage DC 28 basic Reflex save</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "70 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tendril",
+      "bonus": 24,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+12",
+          "type": "fire"
+        },
+        {
+          "roll": "3d8",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+12)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(3d8)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Fire Mote",
+      "bonus": 24,
+      "traits": [
+        "range-increment-60"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blue Flames",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the elemental inferno scores a critical hit, its body surges with blue flames, increasing the damage of its intense heat and Inferno Leap by <span class=\"roll\" onclick=\"roll(this)\">3d6</span> until the start of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Inferno Leap",
+      "actions": 2,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>The elemental inferno jumps horizontally and vertically with a maximum height and distance each equal to its Speed. Its intense heat is suppressed until the end of the jump. Instead, at any point during the jump, flames explode from the elemental in a 30 foot emanation, dealing <span class=\"roll\" onclick=\"roll(this)\">12d6</span> fire damage to each creature within the area (DC 30 basic Reflex save).</p>\n<p>The elemental inferno can't Inferno Leap again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Walking conflagrations of unimaginably hot fire, elemental infernos are harbingers of destruction and heedless chaos. More tactical than many elementals, the infernos will set entire cities ablaze to confuse enemies.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire. Although most fire elementals revel in the chance to experience new kinds of fires away from their home plane, even the most considerate fire elemental can be a danger to humanoids and their property.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 20,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Elemental Inferno",
+    "type": "Creature",
+    "level": 11,
+    "traits": [
+      "Huge",
+      "Elemental",
+      "Fire"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 20,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Pyric"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Smoke Vision",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The elemental inferno ignores the Concealed condition from smoke.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 31,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 210,
+      "max": 210,
+      "note": "explosion",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "fire",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "cold",
+        "value": 15
+      },
+      {
+        "exceptions": [],
+        "type": "water",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Explosion",
+        "actions": null,
+        "traits": [
+          "fire"
+        ],
+        "description": "<p>When the elemental inferno dies, it explodes, dealing <span class=\"roll\" onclick=\"roll(this)\">7d6</span> fire damage to each creature in a 10 foot emanation (DC 30 basic Reflex save).</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Intense Heat",
+        "actions": null,
+        "traits": [
+          "aura",
+          "fire"
+        ],
+        "description": "<p>10 feet. <span class=\"roll\" onclick=\"roll(this)\">7d6</span> fire damage DC 28 basic Reflex save</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "70 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Tendril",
+        "bonus": 24,
+        "traits": [
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+12",
+            "type": "fire"
+          },
+          {
+            "roll": "3d8",
+            "type": "persistent fire"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+12)*2",
+            "type": "fire"
+          },
+          {
+            "roll": "(3d8)*2",
+            "type": "persistent fire"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Fire Mote",
+        "bonus": 24,
+        "traits": [
+          "range-increment-60"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+6",
+            "type": "fire"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+6)*2",
+            "type": "fire"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Blue Flames",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the elemental inferno scores a critical hit, its body surges with blue flames, increasing the damage of its intense heat and Inferno Leap by <span class=\"roll\" onclick=\"roll(this)\">3d6</span> until the start of its next turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Inferno Leap",
+        "actions": 2,
+        "traits": [
+          "fire"
+        ],
+        "description": "<p>The elemental inferno jumps horizontally and vertically with a maximum height and distance each equal to its Speed. Its intense heat is suppressed until the end of the jump. Instead, at any point during the jump, flames explode from the elemental in a 30 foot emanation, dealing <span class=\"roll\" onclick=\"roll(this)\">12d6</span> fire damage to each creature within the area (DC 30 basic Reflex save).</p>\n<p>The elemental inferno can't Inferno Leap again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Walking conflagrations of unimaginably hot fire, elemental infernos are harbingers of destruction and heedless chaos. More tactical than many elementals, the infernos will set entire cities ablaze to confuse enemies.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire. Although most fire elementals revel in the chance to experience new kinds of fires away from their home plane, even the most considerate fire elemental can be a danger to humanoids and their property.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 28",
+    "originalCreature": {}
+  }
+}

@@ -40,7 +40,7 @@
                                >
                     </div>
                     {% if player_lobby.role == 'DM' or player_lobby.role == 'PA' %}
-                    <div class="mb-3"
+                    <div class="mb-3 show-spinner"
                         id="edit_creature"
                         hx-get="{% url 'select_creature'%}"
                         hx-trigger="load"

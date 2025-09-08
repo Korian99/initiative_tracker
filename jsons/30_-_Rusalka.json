@@ -1,0 +1,965 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rusalka",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Medium",
+    "Aquatic",
+    "Fey",
+    "Water",
+    "(caster)"
+  ],
+  "source": "Pathfinder #205: Singer, Stalker, Skinsaw Man",
+  "perception": {
+    "value": 22,
+    "note": "low light-vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision"
+  ],
+  "languages": [
+    "Common",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 23,
+      "note": [
+        "to sing <span class=\"roll\" onclick=\"roll(this)\">25</span>"
+      ],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 7
+  },
+  "items": [
+    {
+      "name": "Elixir of Life (Greater)",
+      "quantity": 3,
+      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<hr />\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">7d6+18</span> healing Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
+      "level": 13,
+      "price": "600 gp ",
+      "traits": [
+        "alchemical",
+        "consumable",
+        "elixir",
+        "healing"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 230,
+    "max": 230,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Blurred Form",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rusalka is Concealed while underwater.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\nswim 50 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tresses",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Improved-grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Beckoning Call",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "concentrate",
+        "incapacitation",
+        "mental",
+        "primal"
+      ],
+      "description": "<p>The rusalka cries out a compelling invitation. Each non-fey creature within a 300 foot emanation must attempt a DC 27 Will save. The effect lasts for 1 round, but if the rusalka uses Beckoning Call again on subsequent rounds, the duration extends by 1 round for all affected creatures. Once a creature succeeds at any save against Beckoning Call, that creature is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Fascinated and must spend each of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the creature is freed from captivation at the end of the rusalka's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the rusalka, the creature can attempt a new save only at the start of its next turn, rather than being freed at the end of the rusalka's turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d8+10</span> bludgeoning, DC 32 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Entangling Tresses",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rusalka can have up to eight creatures grabbed within their tresses at a time.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Flowing Hair",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The rusalka attempts an Athletics check against each Grabbed creature's Fortitude DC. The rusalka moves each creature they succeed against up to 10 feet and each creature they critically succeed against up to 20 feet. This movement must all be within reach of its tresses.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shameful Touch",
+      "actions": 1,
+      "traits": [
+        "emotion",
+        "mental",
+        "primal"
+      ],
+      "description": "<p>The rusalka touches a creature within 5 feet using their hand, stirring up memories of regret and shame. The target must attempt a DC 35 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 1 and Stunned 1.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 1 and Stunned 1, and it must use its first action on its next turn to Strike itself, automatically hitting.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 25,
+      "dc": 35,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 6,
+      "cantrips": [],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "X4O8mzTQLp0lBKqY",
+      "modifications": [],
+      "lv1spells": [],
+      "lv2spells": [
+        {
+          "name": "Invisibility (At Will)",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "illusion",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "pUaJ8jT9PU4nC3tw"
+        },
+        {
+          "name": "Mist (At Will)",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20 ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7jmpJLlfX85YloH6"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Control Water (At Will)",
+          "type": "spell",
+          "level": 5,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "500 feet",
+          "area": "",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Creatures that have the water trait and that are in the area when you Cast the Spell must attempt a Fortitude save, with the effects of the Slow spell.</p>\n<p><strong>Area</strong> 50 feet long by 50 feet wide</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VMTWkKGfU7oTfhH2"
+        },
+        {
+          "name": "Hydraulic Push",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature or unattended object",
+          "save": "",
+          "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ZQYrpXg81rocLpp7"
+        },
+        {
+          "name": "Hydraulic Push",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature or unattended object",
+          "save": "",
+          "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ZQYrpXg81rocLpp7"
+        },
+        {
+          "name": "Hydraulic Push",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature or unattended object",
+          "save": "",
+          "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ZQYrpXg81rocLpp7"
+        }
+      ],
+      "lv6spells": [
+        {
+          "name": "Water Walk (Constant)",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can walk on the surface of water and other liquids without falling through. It can go underwater if it wishes, but in that case it must Swim normally. This spell doesn't grant the ability to breathe underwater.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell's range increases to 30 feet, the duration increases to 1 hour, and you can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XmApAHg0OJr2pJ31"
+        }
+      ],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>These androgynous, river-dwelling fey delight in manipulating the emotions of those unfortunate enough to fall into their grasp, using humiliation to break their victims' wills. Rusalkas enjoy keeping their broken toys nearby, both for continuing entertainment and to aid in the rusalkas' defense, as the shame their captives feel often drives them to become obsessively loyal to these fey.</p>",
+  "recallKnowledge": "Nature, DC: 30",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 22,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Rusalka",
+    "type": "Creature",
+    "level": 12,
+    "traits": [
+      "Medium",
+      "Aquatic",
+      "Fey",
+      "Water",
+      "(caster)"
+    ],
+    "source": "Pathfinder #205: Singer, Stalker, Skinsaw Man",
+    "perception": {
+      "value": 22,
+      "note": "low light-vision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision"
+    ],
+    "languages": [
+      "Common",
+      "Fey"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 22,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 25,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "diplomacy",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "performance",
+        "modifier": 23,
+        "note": [
+          "to sing <span class=\"roll\" onclick=\"roll(this)\">25</span>"
+        ],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 25,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 7
+    },
+    "items": [
+      {
+        "name": "Elixir of Life (Greater)",
+        "quantity": 3,
+        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<hr />\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">7d6+18</span> healing Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
+        "level": 13,
+        "price": "600 gp ",
+        "traits": [
+          "alchemical",
+          "consumable",
+          "elixir",
+          "healing"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 33,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 230,
+      "max": 230,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [
+      {
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "cold-iron",
+        "value": 15
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Blurred Form",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A rusalka is Concealed while underwater.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\nswim 50 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Tresses",
+        "bonus": 24,
+        "traits": [
+          "agile",
+          "finesse",
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+10",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+10)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Improved-grab"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Beckoning Call",
+        "actions": 1,
+        "traits": [
+          "auditory",
+          "concentrate",
+          "incapacitation",
+          "mental",
+          "primal"
+        ],
+        "description": "<p>The rusalka cries out a compelling invitation. Each non-fey creature within a 300 foot emanation must attempt a DC 27 Will save. The effect lasts for 1 round, but if the rusalka uses Beckoning Call again on subsequent rounds, the duration extends by 1 round for all affected creatures. Once a creature succeeds at any save against Beckoning Call, that creature is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Fascinated and must spend each of its actions to move closer to the rusalka, avoiding obvious dangers. If a beckoned creature is adjacent to the rusalka, it stays still and doesn't act. If attacked by the rusalka, the creature is freed from captivation at the end of the rusalka's turn.</p>\n<p><strong>Critical Failure</strong> As failure, but if attacked by the rusalka, the creature can attempt a new save only at the start of its next turn, rather than being freed at the end of the rusalka's turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d8+10</span> bludgeoning, DC 32 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Entangling Tresses",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A rusalka can have up to eight creatures grabbed within their tresses at a time.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Flowing Hair",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The rusalka attempts an Athletics check against each Grabbed creature's Fortitude DC. The rusalka moves each creature they succeed against up to 10 feet and each creature they critically succeed against up to 20 feet. This movement must all be within reach of its tresses.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Shameful Touch",
+        "actions": 1,
+        "traits": [
+          "emotion",
+          "mental",
+          "primal"
+        ],
+        "description": "<p>The rusalka touches a creature within 5 feet using their hand, stirring up memories of regret and shame. The target must attempt a DC 35 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 1 and Stunned 1.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 1 and Stunned 1, and it must use its first action on its next turn to Strike itself, automatically hitting.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Primal Innate Spells",
+        "type": "innate",
+        "bonus": 25,
+        "dc": 35,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 6,
+        "cantrips": [],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "X4O8mzTQLp0lBKqY",
+        "modifications": [],
+        "lv1spells": [],
+        "lv2spells": [
+          {
+            "name": "Invisibility (At Will)",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "illusion",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "10 minutes",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "pUaJ8jT9PU4nC3tw"
+          },
+          {
+            "name": "Mist (At Will)",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "3",
+            "duration": "1 minute",
+            "range": "120 feet",
+            "area": "20 ft burst",
+            "targets": "",
+            "save": "",
+            "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "7jmpJLlfX85YloH6"
+          }
+        ],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [
+          {
+            "name": "Control Water (At Will)",
+            "type": "spell",
+            "level": 5,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "1 hour",
+            "range": "500 feet",
+            "area": "",
+            "targets": "",
+            "save": "fortitude",
+            "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Creatures that have the water trait and that are in the area when you Cast the Spell must attempt a Fortitude save, with the effects of the Slow spell.</p>\n<p><strong>Area</strong> 50 feet long by 50 feet wide</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "VMTWkKGfU7oTfhH2"
+          },
+          {
+            "name": "Hydraulic Push",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "attack",
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "60 feet",
+            "area": "",
+            "targets": "1 creature or unattended object",
+            "save": "",
+            "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "ZQYrpXg81rocLpp7"
+          },
+          {
+            "name": "Hydraulic Push",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "attack",
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "60 feet",
+            "area": "",
+            "targets": "1 creature or unattended object",
+            "save": "",
+            "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "ZQYrpXg81rocLpp7"
+          },
+          {
+            "name": "Hydraulic Push",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "attack",
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "60 feet",
+            "area": "",
+            "targets": "1 creature or unattended object",
+            "save": "",
+            "description": "<p>You call forth a powerful blast of pressurized water that bludgeons the target and knocks it back. Make a ranged spell attack roll.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage and is knocked back 10 feet.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage and is knocked back 5 feet.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "ZQYrpXg81rocLpp7"
+          }
+        ],
+        "lv6spells": [
+          {
+            "name": "Water Walk (Constant)",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "10 minutes",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>The target can walk on the surface of water and other liquids without falling through. It can go underwater if it wishes, but in that case it must Swim normally. This spell doesn't grant the ability to breathe underwater.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell's range increases to 30 feet, the duration increases to 1 hour, and you can target up to 10 creatures.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "XmApAHg0OJr2pJ31"
+          }
+        ],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>These androgynous, river-dwelling fey delight in manipulating the emotions of those unfortunate enough to fall into their grasp, using humiliation to break their victims' wills. Rusalkas enjoy keeping their broken toys nearby, both for continuing entertainment and to aid in the rusalkas' defense, as the shame their captives feel often drives them to become obsessively loyal to these fey.</p>",
+    "recallKnowledge": "Nature, DC: 30",
+    "originalCreature": {}
+  }
+}

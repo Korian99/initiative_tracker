@@ -1,0 +1,579 @@
+{
+  "initiative": 0,
+  "initiativebonus": 3,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Water Scamp",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Small",
+    "Amphibious",
+    "Elemental",
+    "Water",
+    "(caster)"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 3,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "fast healing 2 (while underwater)",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "acid",
+      "value": 3
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "fire",
+      "value": 3
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft,\nfly 25 ft,\nswim 25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Acid Breath",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "arcane"
+      ],
+      "description": "<p>The water scamp breathes acid in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> acid damage to each creature within the area (DC 17 basic Reflex save).</p>\n<p>The water scamp can't use Acid Breath again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drench",
+      "actions": 1,
+      "traits": [
+        "arcane",
+        "water"
+      ],
+      "description": "<p>The water scamp shakes out a seemingly endless supply of water from its fur to put out all fires in a 5 foot emanation. The scamp extinguishes all non-magical fires automatically and attempts to counteract magical fires (+7 counteract modifier).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Innate Spells",
+      "type": "innate",
+      "bonus": 9,
+      "dc": 17,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "M9wTB7jYRpM2YI26",
+      "modifications": [],
+      "lv1spells": [
+        {
+          "name": "Create Water",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "0 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>As you cup your hands, water begins to flow forth from them. You create 2 gallons of water. If no one drinks it, it evaporates after 1 day.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "WCCgcHoFrSG18GDb"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Acid Grip",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "acid",
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "basic reflex",
+          "description": "<p>An ephemeral, taloned hand grips the target, burning it with magical acid. The target takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> acid damage plus floor1d6 persistent plus acid damage depending on its Reflex save. A creature taking persistent damage from this spell takes a –10-foot status penalty to its Speeds. </p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage, and the claw moves it up to 5 feet in a direction of your choice.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage, and the claw moves it up to 10 feet in a direction of your choice.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and full persistent damage, and the claw moves it up to 20 feet in a direction of your choice.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d8</span>, and the persistent acid damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tiGeQ5w8vm3kfRnH"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>Water scamps are marked apart from other scamps by sleek fur that traps a layer of water next to their skin. Although they can fly like their kin and conjure enough water to never dry out, water scamps leave the water only when they must. Although air-breathing scholars consider these scamps quiet and rather skittish, underwater civilizations find their exuberance and playfulness can be overwhelming.</p>\n<hr />\n<p>Elemental scamps are bat-like critters marked by elemental powers. Scamps are dispatched from the Elemental Planes by more powerful residents or called to the Universe by neophyte summoners. All scamps have a hint of magical power due to a lingering connection to their home plane, which they largely use to pull simple pranks.</p>\n<p>Scamps rapidly form a pecking order of cleverness. Humanoids often confuse scamps when meeting such creatures for the first time. These confused scamps usually resort to an escalating series of pranks and mischief, seeing what they can get away with to establish their place in the hierarchy.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 15",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 3,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Water Scamp",
+    "type": "Creature",
+    "level": 1,
+    "traits": [
+      "Small",
+      "Amphibious",
+      "Elemental",
+      "Water",
+      "(caster)"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 3,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Thalassic"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 1
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 1
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 7,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 4,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 20,
+      "max": 20,
+      "note": "fast healing 2 (while underwater)",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "acid",
+        "value": 3
+      },
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "fire",
+        "value": 3
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "20 ft,\nfly 25 ft,\nswim 25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 8,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+1",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+1)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Acid Breath",
+        "actions": 2,
+        "traits": [
+          "acid",
+          "arcane"
+        ],
+        "description": "<p>The water scamp breathes acid in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> acid damage to each creature within the area (DC 17 basic Reflex save).</p>\n<p>The water scamp can't use Acid Breath again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Drench",
+        "actions": 1,
+        "traits": [
+          "arcane",
+          "water"
+        ],
+        "description": "<p>The water scamp shakes out a seemingly endless supply of water from its fur to put out all fires in a 5 foot emanation. The scamp extinguishes all non-magical fires automatically and attempts to counteract magical fires (+7 counteract modifier).</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Arcane Innate Spells",
+        "type": "innate",
+        "bonus": 9,
+        "dc": 17,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 1,
+        "cantrips": [],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "M9wTB7jYRpM2YI26",
+        "modifications": [],
+        "lv1spells": [
+          {
+            "name": "Create Water",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "0 feet",
+            "area": "",
+            "targets": "",
+            "save": "",
+            "description": "<p>As you cup your hands, water begins to flow forth from them. You create 2 gallons of water. If no one drinks it, it evaporates after 1 day.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "WCCgcHoFrSG18GDb"
+          }
+        ],
+        "lv2spells": [
+          {
+            "name": "Acid Grip",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "acid",
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "120 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "basic reflex",
+            "description": "<p>An ephemeral, taloned hand grips the target, burning it with magical acid. The target takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> acid damage plus floor1d6 persistent plus acid damage depending on its Reflex save. A creature taking persistent damage from this spell takes a –10-foot status penalty to its Speeds. </p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage, and the claw moves it up to 5 feet in a direction of your choice.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage, and the claw moves it up to 10 feet in a direction of your choice.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and full persistent damage, and the claw moves it up to 20 feet in a direction of your choice.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d8</span>, and the persistent acid damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "tiGeQ5w8vm3kfRnH"
+          }
+        ],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>Water scamps are marked apart from other scamps by sleek fur that traps a layer of water next to their skin. Although they can fly like their kin and conjure enough water to never dry out, water scamps leave the water only when they must. Although air-breathing scholars consider these scamps quiet and rather skittish, underwater civilizations find their exuberance and playfulness can be overwhelming.</p>\n<hr />\n<p>Elemental scamps are bat-like critters marked by elemental powers. Scamps are dispatched from the Elemental Planes by more powerful residents or called to the Universe by neophyte summoners. All scamps have a hint of magical power due to a lingering connection to their home plane, which they largely use to pull simple pranks.</p>\n<p>Scamps rapidly form a pecking order of cleverness. Humanoids often confuse scamps when meeting such creatures for the first time. These confused scamps usually resort to an escalating series of pranks and mischief, seeing what they can get away with to establish their place in the hierarchy.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 15",
+    "originalCreature": {}
+  }
+}

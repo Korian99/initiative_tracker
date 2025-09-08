@@ -1,0 +1,537 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gholdako",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Rare",
+    "Huge",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Book of the Dead",
+  "perception": {
+    "value": 16,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Cyclops",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Soothsaying Lore",
+      "modifier": 16,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [
+    {
+      "name": "Javelin",
+      "quantity": 4,
+      "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": [
+        "thrown"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 215,
+    "max": 215,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Tumultuous Flash",
+      "actions": null,
+      "traits": [
+        "fortune",
+        "occult"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The gholdako is about to roll a d20</p>\n<hr />\n<p><strong>Effect</strong> Instead of rolling normally, the gholdako attempts a DC 11 Flat check, getting a critical success on the triggering roll if the flat check succeeds or a critical failure if it fails.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 23,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+10",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+10)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        "Infectious-visions"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Javelin",
+      "bonus": 19,
+      "traits": [
+        "thrown-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Blinding Breath",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "divine",
+        "void"
+      ],
+      "description": "<p>The gholdako exhales a 60 foot cone of noxious breath that deals <span class=\"roll\" onclick=\"roll(this)\">7d8</span> void damage (DC 29 basic Reflex save). A creature that fails its save is also Blinded until the end of its next turn (or for 1 minute on a critical failure) as a milky film coats its eyes.</p>\n<p>The gholdako can't use Blinding Breath again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Infectious Visions",
+      "actions": null,
+      "traits": [
+        "divine",
+        "mental",
+        "poison"
+      ],
+      "description": "<p>The first time each round the gholdako damages a creature with a claw Strike, the creature must attempt a DC 27 Will save, as its mind is assaulted by horrifying visions. On a failure, the creature is Confused until the end of its next turn. On a critical success, the creature is immune for 24 hours.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Cyclops necromancers created gholdakos untold ages ago by performing foul rituals over the corpses of their fellow cyclopes. Although these rituals varied through the history of Ghol-Gan, each involved the sacrifice of numerous humanoids whose blood was used to write the runes scribed upon a gholdako's linens. Rarely, a cyclops initiated their own transformation into a gholdako, scribing runes glimpsed from oracular visions and fevered dreams on their clothes or carving them into their bare flesh. Regardless of their origin, gholdakos are guardians, bound beyond death to protect a location, relic, or person—often the same thing they once defended in life.</p>\n<p>Despite their death and subsequent reanimation, gholdakos retain many of the quirks of living cyclopes, including their ceaseless hunger, volatile temper, single-mindedness, and great strength.</p>",
+  "recallKnowledge": "Religion, DC: 32",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 16,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Gholdako",
+    "type": "Creature",
+    "level": 10,
+    "traits": [
+      "Rare",
+      "Huge",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder Book of the Dead",
+    "perception": {
+      "value": 16,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Cyclops",
+      "Jotun"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 19,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "religion",
+        "modifier": 16,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "Soothsaying Lore",
+        "modifier": 16,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 7
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 7
+    },
+    "intelligence": {
+      "value": 2
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 5
+    },
+    "items": [
+      {
+        "name": "Javelin",
+        "quantity": 4,
+        "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": [
+          "thrown"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 215,
+      "max": 215,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Tumultuous Flash",
+        "actions": null,
+        "traits": [
+          "fortune",
+          "occult"
+        ],
+        "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The gholdako is about to roll a d20</p>\n<hr />\n<p><strong>Effect</strong> Instead of rolling normally, the gholdako attempts a DC 11 Flat check, getting a critical success on the triggering roll if the flat check succeeds or a critical failure if it fails.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 23,
+        "traits": [
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10+10",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10+10)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 23,
+        "traits": [
+          "agile",
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d10+10",
+            "type": "slashing"
+          },
+          {
+            "roll": "1d6",
+            "type": "mental"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d10+10)*2",
+            "type": "slashing"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "mental"
+          }
+        ],
+        "effects": [
+          "Infectious-visions"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Javelin",
+        "bonus": 19,
+        "traits": [
+          "thrown-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+10",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+10)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Blinding Breath",
+        "actions": 2,
+        "traits": [
+          "concentrate",
+          "divine",
+          "void"
+        ],
+        "description": "<p>The gholdako exhales a 60 foot cone of noxious breath that deals <span class=\"roll\" onclick=\"roll(this)\">7d8</span> void damage (DC 29 basic Reflex save). A creature that fails its save is also Blinded until the end of its next turn (or for 1 minute on a critical failure) as a milky film coats its eyes.</p>\n<p>The gholdako can't use Blinding Breath again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Infectious Visions",
+        "actions": null,
+        "traits": [
+          "divine",
+          "mental",
+          "poison"
+        ],
+        "description": "<p>The first time each round the gholdako damages a creature with a claw Strike, the creature must attempt a DC 27 Will save, as its mind is assaulted by horrifying visions. On a failure, the creature is Confused until the end of its next turn. On a critical success, the creature is immune for 24 hours.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Cyclops necromancers created gholdakos untold ages ago by performing foul rituals over the corpses of their fellow cyclopes. Although these rituals varied through the history of Ghol-Gan, each involved the sacrifice of numerous humanoids whose blood was used to write the runes scribed upon a gholdako's linens. Rarely, a cyclops initiated their own transformation into a gholdako, scribing runes glimpsed from oracular visions and fevered dreams on their clothes or carving them into their bare flesh. Regardless of their origin, gholdakos are guardians, bound beyond death to protect a location, relic, or person—often the same thing they once defended in life.</p>\n<p>Despite their death and subsequent reanimation, gholdakos retain many of the quirks of living cyclopes, including their ceaseless hunger, volatile temper, single-mindedness, and great strength.</p>",
+    "recallKnowledge": "Religion, DC: 32",
+    "originalCreature": {}
+  }
+}

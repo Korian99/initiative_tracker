@@ -1,0 +1,949 @@
+{
+  "initiative": 0,
+  "initiativebonus": 31,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Saurian Warmonger",
+  "type": "Creature",
+  "level": 16,
+  "traits": [
+    "Uncommon",
+    "Huge",
+    "Dinosaur",
+    "Evil",
+    "Humanoid",
+    "(caster)"
+  ],
+  "source": "Pathfinder #156: The Apocalypse Prophet",
+  "perception": {
+    "value": 31,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Fey",
+    "Pyric",
+    "Speak with animals"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Spear",
+      "quantity": 1,
+      "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": [
+        "thrown-20"
+      ]
+    },
+    {
+      "name": "+1 Striking Mancatcher",
+      "quantity": 1,
+      "description": "",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": [
+        "uncommon",
+        "grapple",
+        "reach"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 39,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 340,
+    "max": 340,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Spear",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+16)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Mancatcher",
+      "bonus": 31,
+      "traits": [
+        "magical",
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+16",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+16)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "Grab",
+        "Restrain"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 30,
+      "traits": [
+        "deadly-d12",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+16)*2+1d12",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "finesse",
+        "reach-10",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+16",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+16)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spear",
+      "bonus": 32,
+      "traits": [
+        "magical",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+16)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Boneshaking Roar",
+      "actions": 2,
+      "traits": [
+        "incapacitation",
+        "sonic"
+      ],
+      "description": "<p>The saurian warmonger bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within 30 feet take <span class=\"roll\" onclick=\"roll(this)\">10d6</span> sonic damage (DC 34 basic Fortitude save). On a failed save, a creature is also Slowed 2 for 1 round (Stunned <span class=\"roll\" onclick=\"roll(this)\">1d4</span> on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Primordial Balance",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A warmonger wields their <em>mancatcher</em> in one hand.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Restrain",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the warmonger makes a successful mancatcher Strike, their target must succeed at a DC 34 Reflex save or become Grabbed until the end of the warmonger's next turn.</p>\n<p>Each time the creature fails an attempt to Escape the warmonger, it takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Three-Limbed Lunge",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The saurian warmonger makes three Strikes: one Strike each with the weapons in their hands and one Strike with their tail. They can perform these attacks in any order, though each counts toward their multiple attack penalty as normal.</p>\n<p>After making a Three-Limbed Lunge, the warmonger is Off-Guard until the beginning of their next turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 29,
+      "dc": 37,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "h9wGVkU8tCqqBBXU",
+      "modifications": [],
+      "lv1spells": [],
+      "lv2spells": [
+        {
+          "name": "Speak with Animals (Constant)",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn't make them more friendly than normal. Cunning animals are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "D6Xun7rk5Brir0IF"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Animal Vision (At Will) (Dinosaurs Only)",
+          "type": "spell",
+          "level": 3,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "1 hour",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 animal",
+          "save": "",
+          "description": "<p>You tap into the target's senses, allowing you to see, hear, and otherwise sense whatever it senses for the spell's duration. If the target wishes to prevent you from doing so, it can attempt a Will save, negating the spell on a success, but most animals don't bother to do so. While tapping into the target's senses, you can't use your own body's senses, but you can change back and forth from your body's senses to the target's senses using a single action, which has the concentrate trait.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UOtcq8C7cvf4ZBlr"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Air Walk",
+          "type": "spell",
+          "level": 4,
+          "traits": [
+            "air",
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "m1ss1RzIj36k6Qae"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>These saurians adopt warfare as their primary role and greatest calling. They particularly excel at taking slaves.</p>\n<hr />\n<p>Enormous tyrannosaurus-humanoids, saurians are ancient beings who predate the rise of humans and dwell in the world's primeval jungles. While the saurians presented here are evil, saurians of all alignments exist.</p>",
+  "recallKnowledge": "Society, DC: 37",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 31,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Saurian Warmonger",
+    "type": "Creature",
+    "level": 16,
+    "traits": [
+      "Uncommon",
+      "Huge",
+      "Dinosaur",
+      "Evil",
+      "Humanoid",
+      "(caster)"
+    ],
+    "source": "Pathfinder #156: The Apocalypse Prophet",
+    "perception": {
+      "value": 31,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Fey",
+      "Pyric",
+      "Speak with animals"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 32,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "crafting",
+        "modifier": 28,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 28,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 30,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 30,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 8
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 6
+    },
+    "intelligence": {
+      "value": 4
+    },
+    "wisdom": {
+      "value": 6
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [
+      {
+        "name": "Spear",
+        "quantity": 1,
+        "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": [
+          "thrown-20"
+        ]
+      },
+      {
+        "name": "+1 Striking Mancatcher",
+        "quantity": 1,
+        "description": "",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": [
+          "uncommon",
+          "grapple",
+          "reach"
+        ]
+      },
+      {
+        "name": "Leather Armor",
+        "quantity": 1,
+        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 39,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 26,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 340,
+      "max": 340,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [
+      {
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Spear",
+        "bonus": 32,
+        "traits": [
+          "magical",
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+16",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+16)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Mancatcher",
+        "bonus": 31,
+        "traits": [
+          "magical",
+          "reach-20"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+16",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+16)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [
+          "Grab",
+          "Restrain"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 30,
+        "traits": [
+          "deadly-d12",
+          "reach-15",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10+16",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10+16)*2+1d12",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tail",
+        "bonus": 30,
+        "traits": [
+          "agile",
+          "finesse",
+          "reach-10",
+          "trip"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+16",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+16)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Spear",
+        "bonus": 32,
+        "traits": [
+          "magical",
+          "thrown-20"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+16",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+16)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Boneshaking Roar",
+        "actions": 2,
+        "traits": [
+          "incapacitation",
+          "sonic"
+        ],
+        "description": "<p>The saurian warmonger bellows, evoking the power of the primordial world.</p>\n<p>Non-dinosaur creatures within 30 feet take <span class=\"roll\" onclick=\"roll(this)\">10d6</span> sonic damage (DC 34 basic Fortitude save). On a failed save, a creature is also Slowed 2 for 1 round (Stunned <span class=\"roll\" onclick=\"roll(this)\">1d4</span> on a critical failure).</p>\n<p>The saurian can't use Boneshaking Roar again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Primordial Balance",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A warmonger wields their <em>mancatcher</em> in one hand.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Restrain",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the warmonger makes a successful mancatcher Strike, their target must succeed at a DC 34 Reflex save or become Grabbed until the end of the warmonger's next turn.</p>\n<p>Each time the creature fails an attempt to Escape the warmonger, it takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Three-Limbed Lunge",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The saurian warmonger makes three Strikes: one Strike each with the weapons in their hands and one Strike with their tail. They can perform these attacks in any order, though each counts toward their multiple attack penalty as normal.</p>\n<p>After making a Three-Limbed Lunge, the warmonger is Off-Guard until the beginning of their next turn.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Primal Innate Spells",
+        "type": "innate",
+        "bonus": 29,
+        "dc": 37,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 8,
+        "cantrips": [],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "h9wGVkU8tCqqBBXU",
+        "modifications": [],
+        "lv1spells": [],
+        "lv2spells": [
+          {
+            "name": "Speak with Animals (Constant)",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "10 minutes",
+            "range": "",
+            "area": "",
+            "targets": "",
+            "save": "",
+            "description": "<p>You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn't make them more friendly than normal. Cunning animals are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "D6Xun7rk5Brir0IF"
+          }
+        ],
+        "lv3spells": [
+          {
+            "name": "Animal Vision (At Will) (Dinosaurs Only)",
+            "type": "spell",
+            "level": 3,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "1 minute",
+            "duration": "1 hour",
+            "range": "120 feet",
+            "area": "",
+            "targets": "1 animal",
+            "save": "",
+            "description": "<p>You tap into the target's senses, allowing you to see, hear, and otherwise sense whatever it senses for the spell's duration. If the target wishes to prevent you from doing so, it can attempt a Will save, negating the spell on a success, but most animals don't bother to do so. While tapping into the target's senses, you can't use your own body's senses, but you can change back and forth from your body's senses to the target's senses using a single action, which has the concentrate trait.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "UOtcq8C7cvf4ZBlr"
+          }
+        ],
+        "lv4spells": [
+          {
+            "name": "Air Walk",
+            "type": "spell",
+            "level": 4,
+            "traits": [
+              "air",
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "5 minutes",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "m1ss1RzIj36k6Qae"
+          }
+        ],
+        "lv5spells": [],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>These saurians adopt warfare as their primary role and greatest calling. They particularly excel at taking slaves.</p>\n<hr />\n<p>Enormous tyrannosaurus-humanoids, saurians are ancient beings who predate the rise of humans and dwell in the world's primeval jungles. While the saurians presented here are evil, saurians of all alignments exist.</p>",
+    "recallKnowledge": "Society, DC: 37",
+    "originalCreature": {}
+  }
+}

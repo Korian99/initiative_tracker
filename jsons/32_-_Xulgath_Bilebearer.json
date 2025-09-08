@@ -1,0 +1,581 @@
+{
+  "initiative": 0,
+  "initiativebonus": 6,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Xulgath Bilebearer",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Humanoid",
+    "Xulgath"
+  ],
+  "source": "Pathfinder #151: The Show Must Go On",
+  "perception": {
+    "value": 6,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Draconic",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [
+    {
+      "name": "Dagger",
+      "quantity": 2,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp ",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>30 feet. A creature entering the aura must attempt a DC 16 Fortitude save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>A xulgath bilebearer can activate or deactivate its stench aura as a free action.</p>\n<p>Effect: Xulgath Stench</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 10,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Xulgath-bile"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Xulgath-bile"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Dagger",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Xulgath-bile"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Putrid Blast",
+      "actions": 2,
+      "traits": [
+        "olfactory",
+        "poison"
+      ],
+      "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> All adjacent creatures must attempt a DC 18 Fortitude save. On a failure, the creature is Slowed 1 (Slowed 2 on a critical failure) until the end of its next turn and takes a -2 circumstance penalty to Fortitude saves against xulgath bile for 1 minute.</p>\n<p>Effect: Putrid Blast</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Xulgath Bile",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 16 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Fatigued (1 minute).</p>\n<p><strong>Stage 2</strong> Fatigued and Unconscious (1 minute).</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>While many xulgaths impose their will by strength or sheer numbers, some resort to more nefarious-and grotesque-means to take care of matters. The bilebearer takes its name from its eponymous bile, a putrid substance that oozes from gill-like folds in its colorful, bulging neck. Bilebearers coat their weapons with the viscous substance or secrete a concentrated dose that suffuses the air around them and disables foes.</p>\n<p>A bilebearer's neck bulges with folds of scaled flesh that extend almost to the creature's shoulders, containing its namesake bile productions glands inside. These folds expand and contract with each breath, and each fold has a vertical line of muscled pores that gradually exudes the thick substance, providing a perpetual supply for coating weapons. Bilebearers' necks also contain inflatable bladders, which they can quickly pressurize to expel a blast of vaporized bile in a noxious, overwhelming cloud.</p>\n<p>Bilebearers serve their clutches by kidnapping or slaying specific enemies. They frequently accompany their kin, particularly xulgath skulkers, to raid rival clutches or intercept foes. A bilebearer's mode of attack typically involves sneaking in, overwhelming any guards with a noxious blast of bile, and then turning their attention to the primary target. The xulgath either shreds the rapidly weakening victim on the spot or drags them away for future violence.</p>",
+  "recallKnowledge": "Society, DC: 16",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 6,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Xulgath Bilebearer",
+    "type": "Creature",
+    "level": 2,
+    "traits": [
+      "Medium",
+      "Chaotic",
+      "Evil",
+      "Humanoid",
+      "Xulgath"
+    ],
+    "source": "Pathfinder #151: The Show Must Go On",
+    "perception": {
+      "value": 6,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Draconic",
+      "Sakvroth"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 5,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 2
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": -1
+    },
+    "items": [
+      {
+        "name": "Dagger",
+        "quantity": 2,
+        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+        "level": 0,
+        "price": "2 sp ",
+        "traits": [
+          "agile",
+          "finesse",
+          "thrown-10",
+          "versatile-s"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 4,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 30,
+      "max": 30,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Stench",
+        "actions": null,
+        "traits": [
+          "aura",
+          "olfactory"
+        ],
+        "description": "<p>30 feet. A creature entering the aura must attempt a DC 16 Fortitude save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>A xulgath bilebearer can activate or deactivate its stench aura as a free action.</p>\n<p>Effect: Xulgath Stench</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 10,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Xulgath-bile"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 10,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+4",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+4)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Dagger",
+        "bonus": 12,
+        "traits": [
+          "agile",
+          "finesse",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Xulgath-bile"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Dagger",
+        "bonus": 12,
+        "traits": [
+          "agile",
+          "finesse",
+          "thrown-10",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Xulgath-bile"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Putrid Blast",
+        "actions": 2,
+        "traits": [
+          "olfactory",
+          "poison"
+        ],
+        "description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> All adjacent creatures must attempt a DC 18 Fortitude save. On a failure, the creature is Slowed 1 (Slowed 2 on a critical failure) until the end of its next turn and takes a -2 circumstance penalty to Fortitude saves against xulgath bile for 1 minute.</p>\n<p>Effect: Putrid Blast</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Xulgath Bile",
+        "actions": null,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 16 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Fatigued (1 minute).</p>\n<p><strong>Stage 2</strong> Fatigued and Unconscious (1 minute).</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>While many xulgaths impose their will by strength or sheer numbers, some resort to more nefarious-and grotesque-means to take care of matters. The bilebearer takes its name from its eponymous bile, a putrid substance that oozes from gill-like folds in its colorful, bulging neck. Bilebearers coat their weapons with the viscous substance or secrete a concentrated dose that suffuses the air around them and disables foes.</p>\n<p>A bilebearer's neck bulges with folds of scaled flesh that extend almost to the creature's shoulders, containing its namesake bile productions glands inside. These folds expand and contract with each breath, and each fold has a vertical line of muscled pores that gradually exudes the thick substance, providing a perpetual supply for coating weapons. Bilebearers' necks also contain inflatable bladders, which they can quickly pressurize to expel a blast of vaporized bile in a noxious, overwhelming cloud.</p>\n<p>Bilebearers serve their clutches by kidnapping or slaying specific enemies. They frequently accompany their kin, particularly xulgath skulkers, to raid rival clutches or intercept foes. A bilebearer's mode of attack typically involves sneaking in, overwhelming any guards with a noxious blast of bile, and then turning their attention to the primary target. The xulgath either shreds the rapidly weakening victim on the spot or drags them away for future violence.</p>",
+    "recallKnowledge": "Society, DC: 16",
+    "originalCreature": {}
+  }
+}

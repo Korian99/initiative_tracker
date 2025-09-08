@@ -1,0 +1,713 @@
+{
+  "initiative": 0,
+  "initiativebonus": 28,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Spiritbound Aluum",
+  "type": "Creature",
+  "level": 16,
+  "traits": [
+    "Rare",
+    "Large",
+    "Construct",
+    "Mindless",
+    "Soulbound",
+    "(caster)"
+  ],
+  "source": "Pathfinder #149: Against the Scarlet Triad",
+  "perception": {
+    "value": 28,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 39,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 255,
+    "max": 255,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "magic"
+  ],
+  "resistances": [
+    {
+      "exceptions": [
+        "adamantine"
+      ],
+      "type": "physical",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\nfly 25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 33,
+      "traits": [
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+17)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Paralyzing-force"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Aluum Antimagic",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Spiritbound aluums are immune to spells and magical abilities, with two exceptions. A void spell or magical ability grants a spiritbound aluum the Quickened condition until the end of its next turn instead of its normal effects. A vitality spell or ability makes a spiritbound aluum Slowed 1 until the end of its next turn instead of its normal effects.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Obliteration Beam",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "force"
+      ],
+      "description": "<p><strong>Requirements</strong> The spiritbound aluum has bound a soul using its Seize Soul innate spell</p>\n<hr />\n<p><strong>Effect</strong> The spiritbound aluum transforms the captured soul's essence into raw magical energy, channeling the spirit into a beam that deals <span class=\"roll\" onclick=\"roll(this)\">20d6</span> force damage in a 30 foot line (DC 38 basic Reflex save). The remaining fragments of the captured soul are released to the Great Beyond.</p>\n<p>The spiritbound aluum can't use Obliteration Beam again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Paralyzing Force",
+      "actions": null,
+      "traits": [
+        "arcane",
+        "incapacitation"
+      ],
+      "description": "<p>A creature damaged by the Spiritbound Aluum's fist Strike must succeed at a DC 35 Fortitude save or become Paralyzed for 1 round. On a critical failure, the creature is Paralyzed for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> minutes and falls Prone.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Soul Binder",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a spiritbound aluum uses its Seize Soul innate spell, it binds the soul into its central crystal instead of the normal material component. The crystal can hold up to 60 souls.</p>\n<p>When encountered, a spiritbound aluum's crystal typically contains <span class=\"roll\" onclick=\"roll(this)\">1d6</span> souls.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Soul Shriek",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "auditory",
+        "mental",
+        "sonic"
+      ],
+      "description": "<p>The aluum enforcer emits a keening wail in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">16d6</span> sonic damage (DC 27 basic Fortitude save). A creature that fails its save is Stunned 1, or Stunned 3 on a critical failure.</p>\n<p>The aluum can't use Soul Shriek again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Innate Spells",
+      "type": "innate",
+      "bonus": 28,
+      "dc": 38,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 8,
+      "cantrips": [],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "LePEQxJOrm3uEIPP",
+      "modifications": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Locate",
+          "type": "spell",
+          "level": 3,
+          "traits": [
+            "uncommon",
+            "concentrate",
+            "detection"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 specific object or type of object",
+          "save": "",
+          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "zso7CjnZUXfpILVh"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [
+        {
+          "name": "Bind Soul",
+          "type": "spell",
+          "level": 9,
+          "traits": [
+            "uncommon",
+            "concentrate",
+            "evil"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature that died within the last minute",
+          "save": "",
+          "description": "<p>You wrench the target's soul away before it can pass on to the afterlife and imprison it in a black sapphire. While the soul is in the gem, the target can't be returned to life through any means, even powerful magic such as wish. If the gem is destroyed or bind soul is counteracted on the gem, the soul is freed. The gem has AC 16 and Hardness 10. A gem can't hold more than one soul, and any attempt wastes the spell.</p>",
+          "cast": false,
+          "cost": "black sapphire with a gp value of at least the target's level × 100",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aHEndRI9e6s1b3U7"
+        },
+        {
+          "name": "Bind Soul",
+          "type": "spell",
+          "level": 9,
+          "traits": [
+            "uncommon",
+            "concentrate",
+            "evil"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature that died within the last minute",
+          "save": "",
+          "description": "<p>You wrench the target's soul away before it can pass on to the afterlife and imprison it in a black sapphire. While the soul is in the gem, the target can't be returned to life through any means, even powerful magic such as wish. If the gem is destroyed or bind soul is counteracted on the gem, the soul is freed. The gem has AC 16 and Hardness 10. A gem can't hold more than one soul, and any attempt wastes the spell.</p>",
+          "cast": false,
+          "cost": "black sapphire with a gp value of at least the target's level × 100",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aHEndRI9e6s1b3U7"
+        },
+        {
+          "name": "Bind Soul",
+          "type": "spell",
+          "level": 9,
+          "traits": [
+            "uncommon",
+            "concentrate",
+            "evil"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature that died within the last minute",
+          "save": "",
+          "description": "<p>You wrench the target's soul away before it can pass on to the afterlife and imprison it in a black sapphire. While the soul is in the gem, the target can't be returned to life through any means, even powerful magic such as wish. If the gem is destroyed or bind soul is counteracted on the gem, the soul is freed. The gem has AC 16 and Hardness 10. A gem can't hold more than one soul, and any attempt wastes the spell.</p>",
+          "cast": false,
+          "cost": "black sapphire with a gp value of at least the target's level × 100",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aHEndRI9e6s1b3U7"
+        }
+      ],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>Whereas most aluums are animated by the souls of volunteers loyal to Katapesh, the Pactmasters created a handful of more capable (and deadly) aluums powered by the souls of a dozen or more dangerous criminals. These spiritbound aluums are rarely used as peacekeepers, instead serving as assassins, elite bodyguards, or riot control during times of martial law.</p>\n<p>A spiritbound aluum has a dull blue crystalline focus that stores constituent souls, surrounded by a host of smaller gems used for trapping souls the Pactmasters wish to deny from entering the Great Beyond. Spiritbound aluums rarely use this soul-binding ability except when instructed by their masters. However, the murderous or embittered souls within the aluum sometimes exert control and willfully consume a departing soul either out of malice or to incorporate it into the construct's core. If not relieved of its trapped souls in a timely manner, a spiritbound aluum can develop enough will to overcome its masters' orders and even awaken to full sentience. These rogue aluums typically lose the mindless trait, are evil, have an Intelligence modifier of -2 or higher, and gain several skills with bonuses ranging from +25 to +32.</p>\n<hr />\n<p>Aluums are powerful metal and stone constructs originally created by the Pactmasters to maintain order in Katapesh. The construction of each aluum includes the creation of an <em>@UUID[Compendium.pf2e.equipment-srd.Item.Aluum Charm]</em>, a brass pendant set with a blue crystal designed to control that particular construct. The charm constructed at the same time as an aluum is called its linked charm.</p>",
+  "recallKnowledge": "Arcana, Crafting, DC: 40",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 28,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Spiritbound Aluum",
+    "type": "Creature",
+    "level": 16,
+    "traits": [
+      "Rare",
+      "Large",
+      "Construct",
+      "Mindless",
+      "Soulbound",
+      "(caster)"
+    ],
+    "source": "Pathfinder #149: Against the Scarlet Triad",
+    "perception": {
+      "value": 28,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 33,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 9
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 6
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": -2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 39,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 30,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 255,
+      "max": 255,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "magic"
+    ],
+    "resistances": [
+      {
+        "exceptions": [
+          "adamantine"
+        ],
+        "type": "physical",
+        "value": 15
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Attack of Opportunity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\nfly 25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 33,
+        "traits": [
+          "magical",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10+17",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10+17)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Paralyzing-force"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Aluum Antimagic",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Spiritbound aluums are immune to spells and magical abilities, with two exceptions. A void spell or magical ability grants a spiritbound aluum the Quickened condition until the end of its next turn instead of its normal effects. A vitality spell or ability makes a spiritbound aluum Slowed 1 until the end of its next turn instead of its normal effects.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Obliteration Beam",
+        "actions": 2,
+        "traits": [
+          "arcane",
+          "force"
+        ],
+        "description": "<p><strong>Requirements</strong> The spiritbound aluum has bound a soul using its Seize Soul innate spell</p>\n<hr />\n<p><strong>Effect</strong> The spiritbound aluum transforms the captured soul's essence into raw magical energy, channeling the spirit into a beam that deals <span class=\"roll\" onclick=\"roll(this)\">20d6</span> force damage in a 30 foot line (DC 38 basic Reflex save). The remaining fragments of the captured soul are released to the Great Beyond.</p>\n<p>The spiritbound aluum can't use Obliteration Beam again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Paralyzing Force",
+        "actions": null,
+        "traits": [
+          "arcane",
+          "incapacitation"
+        ],
+        "description": "<p>A creature damaged by the Spiritbound Aluum's fist Strike must succeed at a DC 35 Fortitude save or become Paralyzed for 1 round. On a critical failure, the creature is Paralyzed for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> minutes and falls Prone.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Soul Binder",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When a spiritbound aluum uses its Seize Soul innate spell, it binds the soul into its central crystal instead of the normal material component. The crystal can hold up to 60 souls.</p>\n<p>When encountered, a spiritbound aluum's crystal typically contains <span class=\"roll\" onclick=\"roll(this)\">1d6</span> souls.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Soul Shriek",
+        "actions": 2,
+        "traits": [
+          "arcane",
+          "auditory",
+          "mental",
+          "sonic"
+        ],
+        "description": "<p>The aluum enforcer emits a keening wail in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">16d6</span> sonic damage (DC 27 basic Fortitude save). A creature that fails its save is Stunned 1, or Stunned 3 on a critical failure.</p>\n<p>The aluum can't use Soul Shriek again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Arcane Innate Spells",
+        "type": "innate",
+        "bonus": 28,
+        "dc": 38,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 8,
+        "cantrips": [],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "LePEQxJOrm3uEIPP",
+        "modifications": [],
+        "lv1spells": [],
+        "lv2spells": [],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [
+          {
+            "name": "Locate",
+            "type": "spell",
+            "level": 3,
+            "traits": [
+              "uncommon",
+              "concentrate",
+              "detection"
+            ],
+            "castingTime": "10 minutes",
+            "duration": "",
+            "range": "500 feet",
+            "area": "",
+            "targets": "1 specific object or type of object",
+            "save": "",
+            "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "zso7CjnZUXfpILVh"
+          }
+        ],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [
+          {
+            "name": "Bind Soul",
+            "type": "spell",
+            "level": 9,
+            "traits": [
+              "uncommon",
+              "concentrate",
+              "evil"
+            ],
+            "castingTime": "2",
+            "duration": "unlimited",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature that died within the last minute",
+            "save": "",
+            "description": "<p>You wrench the target's soul away before it can pass on to the afterlife and imprison it in a black sapphire. While the soul is in the gem, the target can't be returned to life through any means, even powerful magic such as wish. If the gem is destroyed or bind soul is counteracted on the gem, the soul is freed. The gem has AC 16 and Hardness 10. A gem can't hold more than one soul, and any attempt wastes the spell.</p>",
+            "cast": false,
+            "cost": "black sapphire with a gp value of at least the target's level × 100",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "aHEndRI9e6s1b3U7"
+          },
+          {
+            "name": "Bind Soul",
+            "type": "spell",
+            "level": 9,
+            "traits": [
+              "uncommon",
+              "concentrate",
+              "evil"
+            ],
+            "castingTime": "2",
+            "duration": "unlimited",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature that died within the last minute",
+            "save": "",
+            "description": "<p>You wrench the target's soul away before it can pass on to the afterlife and imprison it in a black sapphire. While the soul is in the gem, the target can't be returned to life through any means, even powerful magic such as wish. If the gem is destroyed or bind soul is counteracted on the gem, the soul is freed. The gem has AC 16 and Hardness 10. A gem can't hold more than one soul, and any attempt wastes the spell.</p>",
+            "cast": false,
+            "cost": "black sapphire with a gp value of at least the target's level × 100",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "aHEndRI9e6s1b3U7"
+          },
+          {
+            "name": "Bind Soul",
+            "type": "spell",
+            "level": 9,
+            "traits": [
+              "uncommon",
+              "concentrate",
+              "evil"
+            ],
+            "castingTime": "2",
+            "duration": "unlimited",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature that died within the last minute",
+            "save": "",
+            "description": "<p>You wrench the target's soul away before it can pass on to the afterlife and imprison it in a black sapphire. While the soul is in the gem, the target can't be returned to life through any means, even powerful magic such as wish. If the gem is destroyed or bind soul is counteracted on the gem, the soul is freed. The gem has AC 16 and Hardness 10. A gem can't hold more than one soul, and any attempt wastes the spell.</p>",
+            "cast": false,
+            "cost": "black sapphire with a gp value of at least the target's level × 100",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "aHEndRI9e6s1b3U7"
+          }
+        ],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>Whereas most aluums are animated by the souls of volunteers loyal to Katapesh, the Pactmasters created a handful of more capable (and deadly) aluums powered by the souls of a dozen or more dangerous criminals. These spiritbound aluums are rarely used as peacekeepers, instead serving as assassins, elite bodyguards, or riot control during times of martial law.</p>\n<p>A spiritbound aluum has a dull blue crystalline focus that stores constituent souls, surrounded by a host of smaller gems used for trapping souls the Pactmasters wish to deny from entering the Great Beyond. Spiritbound aluums rarely use this soul-binding ability except when instructed by their masters. However, the murderous or embittered souls within the aluum sometimes exert control and willfully consume a departing soul either out of malice or to incorporate it into the construct's core. If not relieved of its trapped souls in a timely manner, a spiritbound aluum can develop enough will to overcome its masters' orders and even awaken to full sentience. These rogue aluums typically lose the mindless trait, are evil, have an Intelligence modifier of -2 or higher, and gain several skills with bonuses ranging from +25 to +32.</p>\n<hr />\n<p>Aluums are powerful metal and stone constructs originally created by the Pactmasters to maintain order in Katapesh. The construction of each aluum includes the creation of an <em>@UUID[Compendium.pf2e.equipment-srd.Item.Aluum Charm]</em>, a brass pendant set with a blue crystal designed to control that particular construct. The charm constructed at the same time as an aluum is called its linked charm.</p>",
+    "recallKnowledge": "Arcana, Crafting, DC: 40",
+    "originalCreature": {}
+  }
+}

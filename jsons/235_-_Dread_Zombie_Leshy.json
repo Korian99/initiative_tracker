@@ -1,0 +1,429 @@
+{
+  "initiative": 0,
+  "initiativebonus": 5,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Dread Zombie Leshy",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Leshy",
+    "Mindless",
+    "Plant",
+    "Undead",
+    "Unholy",
+    "Zombie"
+  ],
+  "source": "Pathfinder Society Scenario #6-06: Rotten Apples",
+  "perception": {
+    "value": 5,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": -2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Slow",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A zombie leshy is permanently Slowed 1 and can't use reactions</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 90,
+    "max": 90,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious",
+    "bleed"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "vitality",
+      "value": 10
+    },
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Rotten Burst",
+      "actions": null,
+      "traits": [
+        "healing",
+        "void"
+      ],
+      "description": "<p>When a zombie leshy dies, a burst of twisted primal void energy explodes from its body, restoring <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points to each undead fungi or plant creature in a 30 foot emanation and killing all natural plants, though merely causing discomfort to creatures with the plant trait. This area is filled with rotten vegetation, becoming difficult terrain.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 12,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d12+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab",
+        "Zombie-rot"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 12,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Zombie-rot"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Glide",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The zombie leshy glides gently through the air, moving 5 feet toward the ground and up to 25 feet forward. As long as the leshy spends at least 1 action gliding each round, it remains in the air at the end of each turn. For the purpose of determining damage from falls, a leaf leshy always treats falls as if they were 20 feet shorter.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Zombie Rot",
+      "actions": null,
+      "traits": [
+        "disease",
+        "divine",
+        "void"
+      ],
+      "description": "<p>An infected creature can't heal damage it takes form zombie rot until it has been cured of the disease</p>\n<p><strong>Saving Throw</strong> DC 21 Fortitude save</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (1 day)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (1 day)</p>\n<p><strong>Stage 4</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as a plague zombie immediately, or a zombie leshy if the creature had the leshy trait.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Plague zombies are infested with horrible contagions.</p>\n<hr />\n<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed.</p>",
+  "recallKnowledge": "Nature, Religion, DC: 20",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 5,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Dread Zombie Leshy",
+    "type": "Creature",
+    "level": 3,
+    "traits": [
+      "Uncommon",
+      "Small",
+      "Leshy",
+      "Mindless",
+      "Plant",
+      "Undead",
+      "Unholy",
+      "Zombie"
+    ],
+    "source": "Pathfinder Society Scenario #6-06: Rotten Apples",
+    "perception": {
+      "value": 5,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 12,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": -2
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": -2
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Slow",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A zombie leshy is permanently Slowed 1 and can't use reactions</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 90,
+      "max": 90,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious",
+      "bleed"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "vitality",
+        "value": 10
+      },
+      {
+        "type": "slashing",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Rotten Burst",
+        "actions": null,
+        "traits": [
+          "healing",
+          "void"
+        ],
+        "description": "<p>When a zombie leshy dies, a burst of twisted primal void energy explodes from its body, restoring <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points to each undead fungi or plant creature in a 30 foot emanation and killing all natural plants, though merely causing discomfort to creatures with the plant trait. This area is filled with rotten vegetation, becoming difficult terrain.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 12,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d12+8",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d12+8)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab",
+          "Zombie-rot"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 12,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d12+8",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d12+8)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Zombie-rot"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Glide",
+        "actions": 1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The zombie leshy glides gently through the air, moving 5 feet toward the ground and up to 25 feet forward. As long as the leshy spends at least 1 action gliding each round, it remains in the air at the end of each turn. For the purpose of determining damage from falls, a leaf leshy always treats falls as if they were 20 feet shorter.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Zombie Rot",
+        "actions": null,
+        "traits": [
+          "disease",
+          "divine",
+          "void"
+        ],
+        "description": "<p>An infected creature can't heal damage it takes form zombie rot until it has been cured of the disease</p>\n<p><strong>Saving Throw</strong> DC 21 Fortitude save</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (1 day)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (1 day)</p>\n<p><strong>Stage 4</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as a plague zombie immediately, or a zombie leshy if the creature had the leshy trait.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Plague zombies are infested with horrible contagions.</p>\n<hr />\n<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed.</p>",
+    "recallKnowledge": "Nature, Religion, DC: 20",
+    "originalCreature": {}
+  }
+}

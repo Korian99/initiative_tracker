@@ -1,0 +1,471 @@
+{
+  "initiative": 0,
+  "initiativebonus": 26,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sparkeater",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Unique",
+    "Large",
+    "Chaotic",
+    "Dragon",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #173: Doorway to the Red Star",
+  "perception": {
+    "value": 26,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Failed Ravener",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Sparkeater has the same statistics as a normal Ravener Husk but is Large instead of Gargantuan. His melee Strikes have a reach of only 5 feet, and he lacks the Ravenous Repast ability, as he was never a ravener in the first place.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Soulsense 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Sparkeater senses the spiritual essence of living and undead creatures within the listed range. Creatures whose material bodies are one unit with their souls, like celestials and fiends, appear brighter to this sense.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 325,
+    "max": 325,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Boneshatter",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> Sparkeater takes any amount of bludgeoning damage</p>\n<hr />\n<p><strong>Effect</strong> Sparkeater's brittle bones shatter, spraying bone shards everywhere. Every creature within a 10-foot emanation of Sparkeater takes <span class=\"roll\" onclick=\"roll(this)\">7d6</span> piercing damage (DC 31 basic Reflex save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>90 feet. DC 31 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
+      "collapsed": false
+    }
+  ],
+  "speed": "60 ft,\nfly 180 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 30,
+      "traits": [
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+16",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+16)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d4+16",
+          "type": "slashing"
+        },
+        {
+          "roll": "2d6",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d4+16)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "void"
+      ],
+      "description": "<p>Sparkeater breathes a torrent of void energy that deals <span class=\"roll\" onclick=\"roll(this)\">16d6</span> void damage in a 40 foot cone (DC 34 basic Reflex save).</p>\n<p>He can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Raveners require a steady diet of souls, and a ravener that's unable to feed for too long eventually cannibalizes their own soul. Should a ravener's soul ward ever be reduced to 0 Hit Points by hunger while the ravener has more than 1 Hit Point (see Soul Ward), they lose all traces of their former identity and descend into a feral, nearly mindless state. Even if a ravener husk later consumes soul energy, the transformation can be reversed only via Ravenous Repast.</p>\n<hr />\n<p>Though their lifespans can measure in millennia, all dragons must eventually perish. While many do so on the blades or under the spells of dragonslayers, some manage to outlast their enemies and must, in time, face the truth that awaits all living creatures at the end of their natural lifespan. As with many other creatures, some dragons respond to such looming reminders of their own mortality poorly, and the particularly prideful or wrathful of their kind often lash out in anger when confronted by this grim truth. Peace and acceptance may find some dragons, but the most stubborn of their ilk (and invariably the most wicked) may pursue a different answer to the problem. These dragons seek out sinister rites that can transform them into undead creatures known as raveners.</p>\n<p>A ravener's flesh is stripped away as part of the transformation, leaving only their skeleton. What they lose in flesh, however, the dragon gains in soul-rending power, as their raw spiritual energy forms a protective barrier around their skeleton, keeping it intact and allowing flight with now-skeletal wings. This new existence is not so easy to maintain as other forms of undeath, however, and the ravener must feed regularly on the souls of living creatures to power their profane metabolism. This hunger is much greater than that of a living dragon, so raveners are forced to relocate regularly, traveling to fresh hunting grounds each time they strip their current home of prey. A ravener may depopulate whole regions at a time in order to sate their endless hunger for souls, lest they lose much of their power and become a ravener husk.</p>",
+  "recallKnowledge": "Arcana, Religion, DC: 32",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 26,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Sparkeater",
+    "type": "Creature",
+    "level": 14,
+    "traits": [
+      "Unique",
+      "Large",
+      "Chaotic",
+      "Dragon",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder #173: Doorway to the Red Star",
+    "perception": {
+      "value": 26,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 22,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 28,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 8
+    },
+    "dexterity": {
+      "value": 0
+    },
+    "constitution": {
+      "value": 6
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Failed Ravener",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Sparkeater has the same statistics as a normal Ravener Husk but is Large instead of Gargantuan. His melee Strikes have a reach of only 5 feet, and he lacks the Ravenous Repast ability, as he was never a ravener in the first place.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Soulsense 60 feet",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Sparkeater senses the spiritual essence of living and undead creatures within the listed range. Creatures whose material bodies are one unit with their souls, like celestials and fiends, appear brighter to this sense.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 35,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 26,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 325,
+      "max": 325,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "holy",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Boneshatter",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> Sparkeater takes any amount of bludgeoning damage</p>\n<hr />\n<p><strong>Effect</strong> Sparkeater's brittle bones shatter, spraying bone shards everywhere. Every creature within a 10-foot emanation of Sparkeater takes <span class=\"roll\" onclick=\"roll(this)\">7d6</span> piercing damage (DC 31 basic Reflex save).</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Frightful Presence",
+        "actions": null,
+        "traits": [
+          "aura",
+          "emotion",
+          "fear",
+          "mental"
+        ],
+        "description": "<p>90 feet. DC 31 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
+        "collapsed": false
+      }
+    ],
+    "speed": "60 ft,\nfly 180 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 30,
+        "traits": [
+          "magical",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+16",
+            "type": "piercing"
+          },
+          {
+            "roll": "2d6",
+            "type": "void"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+16)*2",
+            "type": "piercing"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "void"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 30,
+        "traits": [
+          "agile",
+          "magical",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d4+16",
+            "type": "slashing"
+          },
+          {
+            "roll": "2d6",
+            "type": "void"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d4+16)*2",
+            "type": "slashing"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "void"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Breath Weapon",
+        "actions": 2,
+        "traits": [
+          "divine",
+          "void"
+        ],
+        "description": "<p>Sparkeater breathes a torrent of void energy that deals <span class=\"roll\" onclick=\"roll(this)\">16d6</span> void damage in a 40 foot cone (DC 34 basic Reflex save).</p>\n<p>He can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Raveners require a steady diet of souls, and a ravener that's unable to feed for too long eventually cannibalizes their own soul. Should a ravener's soul ward ever be reduced to 0 Hit Points by hunger while the ravener has more than 1 Hit Point (see Soul Ward), they lose all traces of their former identity and descend into a feral, nearly mindless state. Even if a ravener husk later consumes soul energy, the transformation can be reversed only via Ravenous Repast.</p>\n<hr />\n<p>Though their lifespans can measure in millennia, all dragons must eventually perish. While many do so on the blades or under the spells of dragonslayers, some manage to outlast their enemies and must, in time, face the truth that awaits all living creatures at the end of their natural lifespan. As with many other creatures, some dragons respond to such looming reminders of their own mortality poorly, and the particularly prideful or wrathful of their kind often lash out in anger when confronted by this grim truth. Peace and acceptance may find some dragons, but the most stubborn of their ilk (and invariably the most wicked) may pursue a different answer to the problem. These dragons seek out sinister rites that can transform them into undead creatures known as raveners.</p>\n<p>A ravener's flesh is stripped away as part of the transformation, leaving only their skeleton. What they lose in flesh, however, the dragon gains in soul-rending power, as their raw spiritual energy forms a protective barrier around their skeleton, keeping it intact and allowing flight with now-skeletal wings. This new existence is not so easy to maintain as other forms of undeath, however, and the ravener must feed regularly on the souls of living creatures to power their profane metabolism. This hunger is much greater than that of a living dragon, so raveners are forced to relocate regularly, traveling to fresh hunting grounds each time they strip their current home of prey. A ravener may depopulate whole regions at a time in order to sate their endless hunger for souls, lest they lose much of their power and become a ravener husk.</p>",
+    "recallKnowledge": "Arcana, Religion, DC: 32",
+    "originalCreature": {}
+  }
+}

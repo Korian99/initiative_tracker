@@ -1,0 +1,489 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Taldan Cave Squirrel",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Medium",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "perception": {
+    "value": 15,
+    "note": "low light-visionscent 60 ft imprecisetremorsense 40 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision",
+    "scent 60 ft imprecise",
+    "tremorsense 40 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Studded Cheeks",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The cave squirrel can store up to six gems in its cheeks. It typically begins combat with all six, and it loses a gem each time it uses gem spit.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 95,
+    "max": 95,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Defensive Scream",
+      "actions": -1,
+      "traits": [
+        "auditory"
+      ],
+      "description": "<p><strong>Trigger</strong> The cave squirrel rolls initiative or has taken damage before initiative</p>\n<hr />\n<p><strong>Effect</strong> The cave squirrel lets out an ear-piercing shriek, alerting any other cave squirrels in the area to its plight. It uses Screaming Force.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\nburrow 40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Gem Spit",
+      "bonus": 15,
+      "traits": [
+        "range-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Concussive-gem"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Concussive Gem",
+      "actions": null,
+      "traits": [],
+      "description": "<p>On a critical hit on a gem spit Strike, the target must succeed at a DC 22 Fortitude save or become Stunned 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Forage for Gems",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The cave squirrel dives underground in search of gems. The cave squirrel Burrows up to its Speed. It must end its movement back on the surface. During its burrow, it happens upon <span class=\"roll\" onclick=\"roll(this)\">1d4</span> cheap gems (such as salt or quartz), which it stuffs in its cheeks, up to its maximum of 6.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Natural Speed",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A cave squirrel isn't affected by difficult terrain from earth or stone.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Screaming Force",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "sonic"
+      ],
+      "description": "<p>The cave squirrel lets out a terrible scream. Non–cave squirrel creatures within 30 feet must succeed at a DC 22 Fortitude save or take <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage. On a critical failure, a creature is Deafened for 1 minute. The cave squirrel can't use Screaming Force again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Nature, DC: 20",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 15,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Taldan Cave Squirrel",
+    "type": "Creature",
+    "level": 5,
+    "traits": [
+      "Medium",
+      "Animal"
+    ],
+    "source": "Pathfinder Howl of the Wild",
+    "perception": {
+      "value": 15,
+      "note": "low light-visionscent 60 ft imprecisetremorsense 40 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision",
+      "scent 60 ft imprecise",
+      "tremorsense 40 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 12,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": -4
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Studded Cheeks",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The cave squirrel can store up to six gems in its cheeks. It typically begins combat with all six, and it loses a gem each time it uses gem spit.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 95,
+      "max": 95,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Defensive Scream",
+        "actions": -1,
+        "traits": [
+          "auditory"
+        ],
+        "description": "<p><strong>Trigger</strong> The cave squirrel rolls initiative or has taken damage before initiative</p>\n<hr />\n<p><strong>Effect</strong> The cave squirrel lets out an ear-piercing shriek, alerting any other cave squirrels in the area to its plight. It uses Screaming Force.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\nburrow 40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 15,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 13,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+4",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+4)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Gem Spit",
+        "bonus": 15,
+        "traits": [
+          "range-20"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+6",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+6)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Concussive-gem"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Concussive Gem",
+        "actions": null,
+        "traits": [],
+        "description": "<p>On a critical hit on a gem spit Strike, the target must succeed at a DC 22 Fortitude save or become Stunned 1.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Forage for Gems",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The cave squirrel dives underground in search of gems. The cave squirrel Burrows up to its Speed. It must end its movement back on the surface. During its burrow, it happens upon <span class=\"roll\" onclick=\"roll(this)\">1d4</span> cheap gems (such as salt or quartz), which it stuffs in its cheeks, up to its maximum of 6.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Natural Speed",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A cave squirrel isn't affected by difficult terrain from earth or stone.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Screaming Force",
+        "actions": 1,
+        "traits": [
+          "auditory",
+          "sonic"
+        ],
+        "description": "<p>The cave squirrel lets out a terrible scream. Non–cave squirrel creatures within 30 feet must succeed at a DC 22 Fortitude save or take <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage. On a critical failure, a creature is Deafened for 1 minute. The cave squirrel can't use Screaming Force again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Nature, DC: 20",
+    "originalCreature": {}
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "initiative": 0,
+  "initiativebonus": 6,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Bandit",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "perception": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [],
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Forest Lore",
+      "modifier": 4,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Sling",
+      "quantity": 1,
+      "description": "<p>Little more than a leather cup attached to a pair of straps, a sling can be used to fling smooth stones or sling bullets at a range.</p>",
+      "level": 0,
+      "price": "",
+      "traits": [
+        "propulsive"
+      ]
+    },
+    {
+      "name": "Machete",
+      "quantity": 1,
+      "description": "<p>This medium-length sword has a wide blade and long grip. Though it is typically used to hack through heavy foliage, the machete can also be used as a deadly weapon.</p>",
+      "level": 0,
+      "price": "7 sp ",
+      "traits": [
+        "deadly-d8",
+        "sweep"
+      ]
+    },
+    {
+      "name": "Dagger",
+      "quantity": 1,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp ",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp ",
+      "traits": []
+    },
+    {
+      "name": "Sling Bullets",
+      "quantity": 10,
+      "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>",
+      "level": 0,
+      "price": "1 cp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Bandit's Ambush",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the bandit rolls initiative using Deception or Stealth, they can attempt to Demoralize one creature as a free action.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Machete",
+      "bonus": 9,
+      "traits": [
+        "deadly-d8",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+5)*2+1d8",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Sling",
+      "bonus": 9,
+      "traits": [
+        "propulsive",
+        "range-increment-50",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Dread Striker",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Frightened creatures are Off-Guard to the bandit.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Forest Passage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The bandit ignores any difficult terrain caused by plants, such as bushes, vines, and undergrowth.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Bandits waylay travelers and plunder their valuables before disappearing back to their wilderness hideouts. Many bandits seek only to steal and release their victims alive, though a few prefer to leave no witnesses.</p><hr /><p>In the underbelly of society, the lawless reign supreme.</p>",
+  "recallKnowledge": "Society, DC: 16",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 6,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Bandit",
+    "type": "Creature",
+    "level": 2,
+    "traits": [
+      "Medium",
+      "Human",
+      "Humanoid"
+    ],
+    "source": "Pathfinder NPC Core",
+    "perception": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [],
+    "languages": [
+      "Common"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 5,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "Forest Lore",
+        "modifier": 4,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 1
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [
+      {
+        "name": "Sling",
+        "quantity": 1,
+        "description": "<p>Little more than a leather cup attached to a pair of straps, a sling can be used to fling smooth stones or sling bullets at a range.</p>",
+        "level": 0,
+        "price": "",
+        "traits": [
+          "propulsive"
+        ]
+      },
+      {
+        "name": "Machete",
+        "quantity": 1,
+        "description": "<p>This medium-length sword has a wide blade and long grip. Though it is typically used to hack through heavy foliage, the machete can also be used as a deadly weapon.</p>",
+        "level": 0,
+        "price": "7 sp ",
+        "traits": [
+          "deadly-d8",
+          "sweep"
+        ]
+      },
+      {
+        "name": "Dagger",
+        "quantity": 1,
+        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+        "level": 0,
+        "price": "2 sp ",
+        "traits": [
+          "agile",
+          "finesse",
+          "thrown-10",
+          "versatile-s"
+        ]
+      },
+      {
+        "name": "Studded Leather Armor",
+        "quantity": 1,
+        "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+        "level": 0,
+        "price": "3 gp ",
+        "traits": []
+      },
+      {
+        "name": "Sling Bullets",
+        "quantity": 10,
+        "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>",
+        "level": 0,
+        "price": "1 cp",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [
+      {
+        "name": "Bandit's Ambush",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the bandit rolls initiative using Deception or Stealth, they can attempt to Demoralize one creature as a free action.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 7,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 30,
+      "max": 30,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Machete",
+        "bonus": 9,
+        "traits": [
+          "deadly-d8",
+          "sweep"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+5",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+5)*2+1d8",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Dagger",
+        "bonus": 9,
+        "traits": [
+          "agile",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+5",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+5)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Dagger",
+        "bonus": 9,
+        "traits": [
+          "agile",
+          "thrown-10",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+5",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+5)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 9,
+        "traits": [
+          "agile",
+          "nonlethal",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+5",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+5)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Sling",
+        "bonus": 9,
+        "traits": [
+          "propulsive",
+          "range-increment-50",
+          "reload-1"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+3",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+3)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Dread Striker",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Frightened creatures are Off-Guard to the bandit.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Forest Passage",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The bandit ignores any difficult terrain caused by plants, such as bushes, vines, and undergrowth.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Bandits waylay travelers and plunder their valuables before disappearing back to their wilderness hideouts. Many bandits seek only to steal and release their victims alive, though a few prefer to leave no witnesses.</p><hr /><p>In the underbelly of society, the lawless reign supreme.</p>",
+    "recallKnowledge": "Society, DC: 16",
+    "originalCreature": {}
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ogre Bully",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Large",
+    "Giant",
+    "Humanoid"
+  ],
+  "source": "Pathfinder #202: Severed at the Root",
+  "perception": {
+    "value": 12,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Jotun",
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Ogre Hook",
+      "quantity": 1,
+      "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "uncommon",
+        "deadly-d10",
+        "trip"
+      ]
+    },
+    {
+      "name": "Hatchet",
+      "quantity": 3,
+      "description": "<p>This small axe can be used in close combat or thrown.</p>",
+      "level": 0,
+      "price": "4 sp ",
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown-10"
+      ]
+    },
+    {
+      "name": "Chain Shirt",
+      "quantity": 1,
+      "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>",
+      "level": 0,
+      "price": "5 gp ",
+      "traits": [
+        "flexible",
+        "noisy"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 140,
+    "max": 140,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Ogre Hook",
+      "bonus": 18,
+      "traits": [
+        "deadly-d10",
+        "reach-10",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+13",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+13)*2+1d10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Hatchet",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+13",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+13)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Hatchet",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+13",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+13)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hooking Hurl",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The ogre's last action was a successful ogre hook Strike</p>\n<hr />\n<p><strong>Effect</strong> The ogre latches the hook into the target and attempts to Reposition the target with a sudden flick, even if the ogre doesn't have a free hand. This attempt doesn't apply the ogre's multiple attack penalty. If the target ends its movement adjacent to an obstacle or adjacent to a creature of equal or greater size, the target also takes <span class=\"roll\" onclick=\"roll(this)\">1d10</span> bludgeoning damage and is Off-Guard for 1 round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stomp the Small",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The ogre's melee and ranged Strikes deal an additional 2 damage to Medium creatures. This additional damage increases to <span class=\"roll\" onclick=\"roll(this)\">1d6+2</span> damage to Small or smaller creatures.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The simplest of ogres are slabs of muscle with hateful eyes, misshapen visages, and malformed bodies. Always eager for mayhem and murder, ogre warriors are quick to turn on their kin when there's a shortage of smaller folk to torment, so those who lead ogres do their best to keep them constantly distracted with new opportunities for raids and ruin.</p>\n<hr />\n<p>For many societies, ogres embody brutish, amoral violence and greedy cruelty. Standing 10 feet tall and densely muscled, ogres are usually as strong as they are vicious. The worst ogres are sadists, enjoying remorseless murder, torture, and violence in all of its forms. Although they prefer to vent their violent urges on other humanoids—the smaller the better—ogre captivity can end in a horrifying fate for anyone unlucky enough to fall within their meaty grasp: becoming dinner. But for all their creativity in inflicting pain, ogres often forget that their playthings lack their own robust fortitude and high pain tolerance, and many of their captives die sooner than the ogres might prefer. Meanwhile, those who manage to survive captivity in an ogre's larder often emerge with lasting mental scars. A captive able to keep their wits about them, however, can sometimes trick the brutes by promising treasure, more plentiful food sources, or other crude amusements, taking advantage of an ogre's often-limited intellect to engineer opportunities to escape or gain revenge.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. The most powerful ogre in any family is the \"boss\"—usually the family's patriarch or matriarch—whom the other ogres in the family learn to quickly obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. Their lairs are filthy and frequently contain all-too-recognizable evidence of their depravity, along with assorted treasures stolen from past captives.</p>",
+  "recallKnowledge": "Society, DC: 23",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 12,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Ogre Bully",
+    "type": "Creature",
+    "level": 7,
+    "traits": [
+      "Large",
+      "Giant",
+      "Humanoid"
+    ],
+    "source": "Pathfinder #202: Severed at the Root",
+    "perception": {
+      "value": 12,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Jotun",
+      "Common"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [
+      {
+        "name": "Ogre Hook",
+        "quantity": 1,
+        "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "uncommon",
+          "deadly-d10",
+          "trip"
+        ]
+      },
+      {
+        "name": "Hatchet",
+        "quantity": 3,
+        "description": "<p>This small axe can be used in close combat or thrown.</p>",
+        "level": 0,
+        "price": "4 sp ",
+        "traits": [
+          "agile",
+          "sweep",
+          "thrown-10"
+        ]
+      },
+      {
+        "name": "Chain Shirt",
+        "quantity": 1,
+        "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chainmail. However, it is much lighter than chainmail and protects only the torso, upper arms, and upper legs of its wearer.</p>",
+        "level": 0,
+        "price": "5 gp ",
+        "traits": [
+          "flexible",
+          "noisy"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 140,
+      "max": 140,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "bludgeoning",
+        "value": 5
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Reactive Strike",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Ogre Hook",
+        "bonus": 18,
+        "traits": [
+          "deadly-d10",
+          "reach-10",
+          "trip"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d10+13",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d10+13)*2+1d10",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Hatchet",
+        "bonus": 16,
+        "traits": [
+          "agile",
+          "sweep"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+13",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+13)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Hatchet",
+        "bonus": 16,
+        "traits": [
+          "agile",
+          "sweep",
+          "thrown-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+13",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+13)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Hooking Hurl",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The ogre's last action was a successful ogre hook Strike</p>\n<hr />\n<p><strong>Effect</strong> The ogre latches the hook into the target and attempts to Reposition the target with a sudden flick, even if the ogre doesn't have a free hand. This attempt doesn't apply the ogre's multiple attack penalty. If the target ends its movement adjacent to an obstacle or adjacent to a creature of equal or greater size, the target also takes <span class=\"roll\" onclick=\"roll(this)\">1d10</span> bludgeoning damage and is Off-Guard for 1 round.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Stomp the Small",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The ogre's melee and ranged Strikes deal an additional 2 damage to Medium creatures. This additional damage increases to <span class=\"roll\" onclick=\"roll(this)\">1d6+2</span> damage to Small or smaller creatures.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The simplest of ogres are slabs of muscle with hateful eyes, misshapen visages, and malformed bodies. Always eager for mayhem and murder, ogre warriors are quick to turn on their kin when there's a shortage of smaller folk to torment, so those who lead ogres do their best to keep them constantly distracted with new opportunities for raids and ruin.</p>\n<hr />\n<p>For many societies, ogres embody brutish, amoral violence and greedy cruelty. Standing 10 feet tall and densely muscled, ogres are usually as strong as they are vicious. The worst ogres are sadists, enjoying remorseless murder, torture, and violence in all of its forms. Although they prefer to vent their violent urges on other humanoids—the smaller the better—ogre captivity can end in a horrifying fate for anyone unlucky enough to fall within their meaty grasp: becoming dinner. But for all their creativity in inflicting pain, ogres often forget that their playthings lack their own robust fortitude and high pain tolerance, and many of their captives die sooner than the ogres might prefer. Meanwhile, those who manage to survive captivity in an ogre's larder often emerge with lasting mental scars. A captive able to keep their wits about them, however, can sometimes trick the brutes by promising treasure, more plentiful food sources, or other crude amusements, taking advantage of an ogre's often-limited intellect to engineer opportunities to escape or gain revenge.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. The most powerful ogre in any family is the \"boss\"—usually the family's patriarch or matriarch—whom the other ogres in the family learn to quickly obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. Their lairs are filthy and frequently contain all-too-recognizable evidence of their depravity, along with assorted treasures stolen from past captives.</p>",
+    "recallKnowledge": "Society, DC: 23",
+    "originalCreature": {}
+  }
+}

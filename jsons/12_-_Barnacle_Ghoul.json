@@ -1,0 +1,505 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Barnacle Ghoul",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Evil",
+    "Ghoul",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #159: All or Nothing",
+  "perception": {
+    "value": 17,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Necril",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [
+        "to Grapple <span class=\"roll\" onclick=\"roll(this)\">21</span>"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 155,
+    "max": 155,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Tear Flesh",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature grabbed by the barnacle ghoul critically fails a skill check to Escape</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul makes a claw Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\nclimb 10 ft,\nswim 40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 21,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Fill-lungs",
+        "Paralysis"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "Grab",
+        "Paralysis"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "[Two Actions] Water Jet",
+      "bonus": 21,
+      "traits": [
+        "range-increment-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+10",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+10)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "Fill-lungs"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Consume Flesh",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The barnacle ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul devours a chunk of the corpse and regains <span class=\"roll\" onclick=\"roll(this)\">5d6</span> healing Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fill Lungs",
+      "actions": null,
+      "traits": [
+        "curse"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<p><strong>Stage 1</strong> Sickened 1 (1 round)</p>\n<p><strong>Stage 2</strong> Sickened 2 (1 round)</p>\n<p><strong>Stage 3</strong> Sickened 3 (1 round)</p>\n<p><strong>Stage 4</strong> drowning and cannot reduce below stage 4 until the water is purged; purging the water requires a successful DC 26 Medicine check to Administer First Aid (which stops the creature from drowning and returns the creature to stage 3; stage 2 on a critical success) or a magical effect that removes curses or the sickened condition (which stops the creature from drowning and ends the curse).</p>\n<p>If the creature dies from drowning, it rises as a barnacle ghoul the next midnight.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nimble Swim",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The barnacle ghoul Swims up to 20 feet. This movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Paralysis",
+      "actions": null,
+      "traits": [
+        "incapacitation",
+        "occult"
+      ],
+      "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a DC 26 Fortitude save or become Paralyzed.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Religion, DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 17,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Barnacle Ghoul",
+    "type": "Creature",
+    "level": 9,
+    "traits": [
+      "Uncommon",
+      "Medium",
+      "Evil",
+      "Ghoul",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder #159: All or Nothing",
+    "perception": {
+      "value": 17,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Necril",
+      "Thalassic"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 19,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 19,
+        "note": [
+          "to Grapple <span class=\"roll\" onclick=\"roll(this)\">21</span>"
+        ],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 155,
+      "max": 155,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Tear Flesh",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature grabbed by the barnacle ghoul critically fails a skill check to Escape</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul makes a claw Strike against the triggering creature.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\nclimb 10 ft,\nswim 40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 21,
+        "traits": [
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+10",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+10)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Fill-lungs",
+          "Paralysis"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 21,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+10",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+10)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [
+          "Grab",
+          "Paralysis"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "[Two Actions] Water Jet",
+        "bonus": 21,
+        "traits": [
+          "range-increment-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+10",
+            "type": "acid"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+10)*2",
+            "type": "acid"
+          }
+        ],
+        "effects": [
+          "Fill-lungs"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Consume Flesh",
+        "actions": 1,
+        "traits": [
+          "manipulate"
+        ],
+        "description": "<p><strong>Requirements</strong> The barnacle ghoul is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The barnacle ghoul devours a chunk of the corpse and regains <span class=\"roll\" onclick=\"roll(this)\">5d6</span> healing Hit Points.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Fill Lungs",
+        "actions": null,
+        "traits": [
+          "curse"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<p><strong>Stage 1</strong> Sickened 1 (1 round)</p>\n<p><strong>Stage 2</strong> Sickened 2 (1 round)</p>\n<p><strong>Stage 3</strong> Sickened 3 (1 round)</p>\n<p><strong>Stage 4</strong> drowning and cannot reduce below stage 4 until the water is purged; purging the water requires a successful DC 26 Medicine check to Administer First Aid (which stops the creature from drowning and returns the creature to stage 3; stage 2 on a critical success) or a magical effect that removes curses or the sickened condition (which stops the creature from drowning and ends the curse).</p>\n<p>If the creature dies from drowning, it rises as a barnacle ghoul the next midnight.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Nimble Swim",
+        "actions": 1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The barnacle ghoul Swims up to 20 feet. This movement doesn't trigger reactions.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Paralysis",
+        "actions": null,
+        "traits": [
+          "incapacitation",
+          "occult"
+        ],
+        "description": "<p>Any living, non-elf creature hit by a ghoul's attack must succeed at a DC 26 Fortitude save or become Paralyzed.</p>\n<p>It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Religion, DC: 28",
+    "originalCreature": {}
+  }
+}

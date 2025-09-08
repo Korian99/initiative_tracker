@@ -1,0 +1,449 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Stelemora",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Fey",
+    "Plant"
+  ],
+  "source": "Pathfinder Claws of the Tyrant",
+  "perception": {
+    "value": 17,
+    "note": "low light-vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision"
+  ],
+  "languages": [
+    "Common",
+    "Fey"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [
+        "in forests <span class=\"roll\" onclick=\"roll(this)\">18</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 188,
+    "max": 188,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Vine",
+      "bonus": 17,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Seed Pod",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">1d8+8</span> bludgeoning, DC 25 basic Fortitude save</p><details><summary>See rules...</summary><p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Flurry of Vines",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The stelemora makes two vine Strikes at a –2 penalty, each against a different target. These attacks count toward the stelemora's multiple attack penalty, but the multiple attack penalty doesn't increase until after they make all their attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slithering Vine",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The stelemora increases the reach of their vine Strike by 10 feet until the end of their turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sow and Sprout",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The stelemora implants a seed inside a creature they're grappling. The target must attempt a DC 25 Fortitude save.</p>\n<p><strong>Success</strong> The stelemora fails to implant a seed, and the target is unaffected.</p>\n<p><strong>Failure</strong> The target is Sickened 1. While sickened, the target also takes <span class=\"roll\" onclick=\"roll(this)\">4d6</span> persistent plus piercing damage as flowering vines sprout through its flesh. The target can't end the persistent damage until it recovers from the sickened condition.</p>\n<p><strong>Critical Failure</strong> As failure, except the target is Sickened 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tangle of Vines",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time they act, the stelemora appears to be a normal tangle of flowering vines. They have an automatic result of 35 (38 in forests) on Deception checks and DCs to pass as a non-creature plant.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Stelemoras are nature-loving fey dedicated to beautifying the natural world by ensnaring unsuspecting creatures and transforming their bodies into elaborate topiaries from the inside out. Aside from their bulbous, spiked seed pods, stelemoras are composed entirely of vines, which they can grow, retract, and shed at will. Stelemoras regrow damaged vines at an alarming rate, allowing them to recover from nearly any injury over time.</p>\n<p>Young stelemoras travel the world looking for a piece of wilderness to call their own. Once they select a proper spot, they use their vines to snare passing creatures, holding their target still as they forcibly implant their seeds inside the victim. The implanted seeds then take root, using the creature itself as fertilizer and slowly transforming its body into a mass of vines and leaves. Once they complete their work, the stelemora sheds their vines and regrows in a new location to begin their next masterpiece.</p>\n<p>While stelemoras prefer to fill their gardens with once-living creatures, they entomb inanimate objects in vines if they can't capture their preferred subjects. Stelemoras have also been known to transform statues, treasure chests, and even entire buildings into topiaries in order to lure in their favored prey.</p>",
+  "recallKnowledge": "Nature, DC: 25",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 17,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Stelemora",
+    "type": "Creature",
+    "level": 7,
+    "traits": [
+      "Uncommon",
+      "Large",
+      "Fey",
+      "Plant"
+    ],
+    "source": "Pathfinder Claws of the Tyrant",
+    "perception": {
+      "value": 17,
+      "note": "low light-vision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision"
+    ],
+    "languages": [
+      "Common",
+      "Fey"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 15,
+        "note": [
+          "in forests <span class=\"roll\" onclick=\"roll(this)\">18</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 16,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 2
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 6
+    },
+    "charisma": {
+      "value": 3
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 188,
+      "max": 188,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "cold-iron",
+        "value": 10
+      },
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Vine",
+        "bonus": 17,
+        "traits": [
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+8",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+8)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Seed Pod",
+        "bonus": 17,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "2d10+8",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+8)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">1d8+8</span> bludgeoning, DC 25 basic Fortitude save</p><details><summary>See rules...</summary><p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Flurry of Vines",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The stelemora makes two vine Strikes at a –2 penalty, each against a different target. These attacks count toward the stelemora's multiple attack penalty, but the multiple attack penalty doesn't increase until after they make all their attacks.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Slithering Vine",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The stelemora increases the reach of their vine Strike by 10 feet until the end of their turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sow and Sprout",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The stelemora implants a seed inside a creature they're grappling. The target must attempt a DC 25 Fortitude save.</p>\n<p><strong>Success</strong> The stelemora fails to implant a seed, and the target is unaffected.</p>\n<p><strong>Failure</strong> The target is Sickened 1. While sickened, the target also takes <span class=\"roll\" onclick=\"roll(this)\">4d6</span> persistent plus piercing damage as flowering vines sprout through its flesh. The target can't end the persistent damage until it recovers from the sickened condition.</p>\n<p><strong>Critical Failure</strong> As failure, except the target is Sickened 2.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Tangle of Vines",
+        "actions": 1,
+        "traits": [
+          "concentrate"
+        ],
+        "description": "<p>Until the next time they act, the stelemora appears to be a normal tangle of flowering vines. They have an automatic result of 35 (38 in forests) on Deception checks and DCs to pass as a non-creature plant.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Stelemoras are nature-loving fey dedicated to beautifying the natural world by ensnaring unsuspecting creatures and transforming their bodies into elaborate topiaries from the inside out. Aside from their bulbous, spiked seed pods, stelemoras are composed entirely of vines, which they can grow, retract, and shed at will. Stelemoras regrow damaged vines at an alarming rate, allowing them to recover from nearly any injury over time.</p>\n<p>Young stelemoras travel the world looking for a piece of wilderness to call their own. Once they select a proper spot, they use their vines to snare passing creatures, holding their target still as they forcibly implant their seeds inside the victim. The implanted seeds then take root, using the creature itself as fertilizer and slowly transforming its body into a mass of vines and leaves. Once they complete their work, the stelemora sheds their vines and regrows in a new location to begin their next masterpiece.</p>\n<p>While stelemoras prefer to fill their gardens with once-living creatures, they entomb inanimate objects in vines if they can't capture their preferred subjects. Stelemoras have also been known to transform statues, treasure chests, and even entire buildings into topiaries in order to lure in their favored prey.</p>",
+    "recallKnowledge": "Nature, DC: 25",
+    "originalCreature": {}
+  }
+}

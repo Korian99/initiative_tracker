@@ -1,0 +1,541 @@
+{
+  "initiative": 0,
+  "initiativebonus": 4,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Scalding Mephit",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Rare",
+    "Small",
+    "Elemental",
+    "Fire",
+    "Water",
+    "(caster)"
+  ],
+  "source": "Pathfinder Society Scenario #3-12: Fury's Toll",
+  "perception": {
+    "value": 4,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Pyric",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Steam Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The steam mephit ignores the Concealed condition from mist and steam.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 28,
+    "max": 28,
+    "note": "(fast healing 2 (in boiling water or steam))",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "20 ft,\nfly 25 ft,\nswim 25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Boiling Rain",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "fire",
+        "water"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The scalding mephit calls down a rain boiling water that surrounds them in a 10 foot emanation. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">2d8+3</span> fire damage (DC 18 basic Reflex save), and small unattended flames (such as torches) are extinguished.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "fire"
+      ],
+      "description": "<p>The scalding mephit spits a cloud of steam in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage to each creature within the area (DC 18 basic Reflex save).</p>\n<p>The scalding mephit can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Innate Spells",
+      "type": "innate",
+      "bonus": 10,
+      "dc": 18,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "Lc0XTAOFODosmzys",
+      "modifications": [],
+      "lv1spells": [],
+      "lv2spells": [
+        {
+          "name": "Obscuring Mist",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20 ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "LQ6KEeXVOelad40y"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>These brash and arrogant creatures are among the more energetic mephits. They are quick to nominate themselves the leaders of any group, barking out orders in shrill, high-pitched voices and insisting on having everything done their way. Even when they aren't bossing others around, the constant hiss of steam escaping from their pores ensures that there is never a quiet moment.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 21",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 4,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Scalding Mephit",
+    "type": "Creature",
+    "level": 2,
+    "traits": [
+      "Rare",
+      "Small",
+      "Elemental",
+      "Fire",
+      "Water",
+      "(caster)"
+    ],
+    "source": "Pathfinder Society Scenario #3-12: Fury's Toll",
+    "perception": {
+      "value": 4,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Pyric",
+      "Thalassic"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 1
+    },
+    "dexterity": {
+      "value": 2
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Steam Vision",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The steam mephit ignores the Concealed condition from mist and steam.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 28,
+      "max": 28,
+      "note": "(fast healing 2 (in boiling water or steam))",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "fire",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "cold",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [],
+    "speed": "20 ft,\nfly 25 ft,\nswim 25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 9,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+3",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+3)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Boiling Rain",
+        "actions": 2,
+        "traits": [
+          "arcane",
+          "fire",
+          "water"
+        ],
+        "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The scalding mephit calls down a rain boiling water that surrounds them in a 10 foot emanation. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">2d8+3</span> fire damage (DC 18 basic Reflex save), and small unattended flames (such as torches) are extinguished.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Breath Weapon",
+        "actions": 2,
+        "traits": [
+          "arcane",
+          "fire"
+        ],
+        "description": "<p>The scalding mephit spits a cloud of steam in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage to each creature within the area (DC 18 basic Reflex save).</p>\n<p>The scalding mephit can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Arcane Innate Spells",
+        "type": "innate",
+        "bonus": 10,
+        "dc": 18,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 1,
+        "cantrips": [],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "Lc0XTAOFODosmzys",
+        "modifications": [],
+        "lv1spells": [],
+        "lv2spells": [
+          {
+            "name": "Obscuring Mist",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "3",
+            "duration": "1 minute",
+            "range": "120 feet",
+            "area": "20 ft burst",
+            "targets": "",
+            "save": "",
+            "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "LQ6KEeXVOelad40y"
+          }
+        ],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>These brash and arrogant creatures are among the more energetic mephits. They are quick to nominate themselves the leaders of any group, barking out orders in shrill, high-pitched voices and insisting on having everything done their way. Even when they aren't bossing others around, the constant hiss of steam escaping from their pores ensures that there is never a quiet moment.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 21",
+    "originalCreature": {}
+  }
+}

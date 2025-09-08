@@ -1,0 +1,595 @@
+{
+  "initiative": 0,
+  "initiativebonus": 28,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Falrok",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Ghoul",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #148: Fires of the Haunted City",
+  "perception": {
+    "value": 28,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Draconic",
+    "Dwarven",
+    "Necril",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Saggorak Lore",
+      "modifier": 24,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Lazurite-Infused Flesh",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Falrok's flesh is infused with lazurite, and he gains the benefits undead creatures gain from this mineral at all times. When in an area infused with lazurite, such as the Sanctum of the Starved, these benefits increase to a +3 circumstance bonus to saving throws against vitality effects. This infusion also grants Falrok his resistance to vitality damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 37,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "lazurite-infused flesh",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "type": "vitality",
+      "value": 15
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Opportune Backstab",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within Falrok's melee reach is hit by a melee attack from one of his allies.</p>\n<hr />\n<p><strong>Effect</strong> When Falrok's enemy is hit by one of his allies, he capitalizes upon the distraction, making a Strike against the triggering creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a DC 34 Fortitude save or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>Effect: Stench</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\nburrow 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 30,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Ghast-ghast-fever",
+        "Ghast-paralysis"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 30,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+12",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+12)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "Ghast-paralysis"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Consume Flesh",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> Falrok is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Effect</strong> Falrok devours a chunk of the corpse and regains <span class=\"roll\" onclick=\"roll(this)\">8d6</span> healing Hit Points.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ghast Fever",
+      "actions": null,
+      "traits": [
+        "disease",
+        "virulent"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a Ghast the next midnight</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Paralysis",
+      "actions": null,
+      "traits": [
+        "incapacitation",
+        "occult"
+      ],
+      "description": "<p>Any living creature hit by a ghast's attack must succeed at a DC 34 Fortitude save or become Paralyzed. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Scoundrel",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When Falrok successfully Feints, the target is Off-Guard against melee attacks he attempts against it until the end of his next turn. On a critical success, the target is off-guard against all melee attacks until the end of their next turn, not just Falrok's.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Falrok deal <span class=\"roll\" onclick=\"roll(this)\">4d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Swift Leap",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>Falrok jumps up to half his Speed. This movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Religion, DC: 32",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 28,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Falrok",
+    "type": "Creature",
+    "level": 14,
+    "traits": [
+      "Unique",
+      "Medium",
+      "Chaotic",
+      "Evil",
+      "Ghoul",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder #148: Fires of the Haunted City",
+    "perception": {
+      "value": 28,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Draconic",
+      "Dwarven",
+      "Necril",
+      "Sakvroth"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 29,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "crafting",
+        "modifier": 24,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 27,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "diplomacy",
+        "modifier": 27,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "society",
+        "modifier": 24,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 29,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "Saggorak Lore",
+        "modifier": 24,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 8
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": 3
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Lazurite-Infused Flesh",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Falrok's flesh is infused with lazurite, and he gains the benefits undead creatures gain from this mineral at all times. When in an area infused with lazurite, such as the Sanctum of the Starved, these benefits increase to a +3 circumstance bonus to saving throws against vitality effects. This infusion also grants Falrok his resistance to vitality damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 37,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 26,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 29,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "lazurite-infused flesh",
+    "hp": {
+      "value": 250,
+      "max": 250,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [
+      {
+        "type": "vitality",
+        "value": 15
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Opportune Backstab",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature within Falrok's melee reach is hit by a melee attack from one of his allies.</p>\n<hr />\n<p><strong>Effect</strong> When Falrok's enemy is hit by one of his allies, he capitalizes upon the distraction, making a Strike against the triggering creature.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Stench",
+        "actions": null,
+        "traits": [
+          "aura",
+          "olfactory"
+        ],
+        "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a DC 34 Fortitude save or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure).</p>\n<p>While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>Effect: Stench</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\nburrow 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 30,
+        "traits": [
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+12",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+12)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Ghast-ghast-fever",
+          "Ghast-paralysis"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 30,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+12",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+12)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [
+          "Ghast-paralysis"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Consume Flesh",
+        "actions": 1,
+        "traits": [
+          "manipulate"
+        ],
+        "description": "<p><strong>Requirements</strong> Falrok is adjacent to the corpse of a creature that died within the last hour.</p><hr /><p><strong>Effect</strong> Falrok devours a chunk of the corpse and regains <span class=\"roll\" onclick=\"roll(this)\">8d6</span> healing Hit Points.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Ghast Fever",
+        "actions": null,
+        "traits": [
+          "disease",
+          "virulent"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a Ghast the next midnight</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Paralysis",
+        "actions": null,
+        "traits": [
+          "incapacitation",
+          "occult"
+        ],
+        "description": "<p>Any living creature hit by a ghast's attack must succeed at a DC 34 Fortitude save or become Paralyzed. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Scoundrel",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When Falrok successfully Feints, the target is Off-Guard against melee attacks he attempts against it until the end of his next turn. On a critical success, the target is off-guard against all melee attacks until the end of their next turn, not just Falrok's.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sneak Attack",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Falrok deal <span class=\"roll\" onclick=\"roll(this)\">4d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Swift Leap",
+        "actions": 1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>Falrok jumps up to half his Speed. This movement doesn't trigger reactions.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Religion, DC: 32",
+    "originalCreature": {}
+  }
+}

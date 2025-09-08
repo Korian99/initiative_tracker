@@ -1,0 +1,575 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Kuworsys",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Unique",
+    "Large",
+    "Aberration",
+    "Evil",
+    "Lawful"
+  ],
+  "source": "Pathfinder Lost Omens Monsters of Myth",
+  "perception": {
+    "value": 22,
+    "note": "scent 60 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "scent 60 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 7
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Sling",
+      "quantity": 1,
+      "description": "<p>Little more than a leather cup attached to a pair of straps, a sling can be used to fling smooth stones or sling bullets at a range.</p>",
+      "level": 0,
+      "price": "",
+      "traits": [
+        "propulsive"
+      ]
+    },
+    {
+      "name": "Sling Bullets",
+      "quantity": 10,
+      "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>",
+      "level": 0,
+      "price": "1 cp",
+      "traits": []
+    },
+    {
+      "name": "Explosive Ammunition",
+      "quantity": 3,
+      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a 10 foot burst, dealing <span class=\"roll\" onclick=\"roll(this)\">6d6</span> fire damage to each creature in the area (including the target). Each creature must attempt a DC 25 basic Reflex save.</p>",
+      "level": 9,
+      "price": "130 gp ",
+      "traits": [
+        "consumable",
+        "fire",
+        "magical"
+      ]
+    },
+    {
+      "name": "Freezing Ammunition",
+      "quantity": 3,
+      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>This chilly ammunition is dark blue and cold to the touch. When activated freezing ammunition hits a target, the target must succeed at a DC 19 Fortitude save or be slowed 1 for 1 round by the intense cold (slowed 1 for 1 minute on a critical failure).</p>",
+      "level": 5,
+      "price": "25 gp ",
+      "traits": [
+        "cold",
+        "consumable",
+        "magical"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 213,
+    "max": 213,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed"
+  ],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "acid",
+      "value": 10
+    },
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Pinion",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within 10 feet of Kuworsys uses an action to Fly</p>\n<strong>Requirements</strong> Kuworsys is Reared Back\n<hr />\n<p><strong>Effect</strong> Kuworsys lashes out at the triggering creature, attempting to swat it to the ground. Kuworsys attempts a melee Strike against the creature. If the Strike hits, the creature's movement is interrupted. The creature is knocked to the ground; on a critical hit, they also can't Fly again for 1 minute.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft,\nclimb 35 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Limb",
+      "bonus": 27,
+      "traits": [
+        "finesse",
+        "reach-15",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Sling",
+      "bonus": 28,
+      "traits": [
+        "propulsive",
+        "range-increment-50",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Addictive Exhaustion",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude save</p>\n<p>Creatures with addictive exhaustion can't reduce their sickened condition from addictive exhaustion while they have the disease</p>\n<p><strong>Stage 1</strong> The creature is Sickened 1. One skill of the creature's choice doesn't suffer the status penalty from this sickened condition to its skill checks (1 day)</p>\n<p><strong>Stage 2</strong> As Stage 1, but the creature is Sickened 2 and is Fatigued (5 days)</p>\n<p><strong>Stage 3</strong> As Stage 2, but the creature is Sickened 3 and has incurable hunger and thirst, in addition to being fatigued (1 day)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Gauge Potential",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Kuworsys studies a creature it can see, attempting to predict its actions. The creature attempts a DC 32 Will save. On a failed save, Kuworsys predicts the creature's moves, gaining a +2 circumstance bonus to attack rolls and AC against the target creature for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Infectious Spores",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>Kuworsys releases a choking field of spores within a 30-foot radius, continuing to release them until the end of its next turn. Creatures who begin their turns within the area of the spores, or who enter the area, must attempt a DC 32 Fortitude save. On a failure, the creature becomes afflicted with addictive exhaustion.</p>\n<p>Kuworsys then can't use its Infectious Spores again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rear Back",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Kuworsys stands on its two hind limbs, bringing its other four limbs to bear on its foes. Kuworsys stays Reared Back until it uses a single action to return to its normal stance. While Kuworsys is Reared Back, it is Clumsy 1 but can use its Pinion and Yank abilities.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Yank",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> Kuworsys is Reared Back</p>\n<hr />\n<p><strong>Effect</strong> Kuworsys makes a melee limb Strike against a creature and, on a success, attempts to steal the creature's weapon from its hands. Kuworsys attempts a Thievery check against the target's Reflex DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature's weapon falls to the floor in the creature's space.</p>\n<p><strong>Success</strong> Until the start of that creature's turn, attempts to Disarm the creature of its weapon gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the weapon or other checks requiring a firm grasp on the weapon.</p>\n<p><strong>Failure</strong> The creature is unaffected.</p>\n<p><strong>Critical Failure</strong> The creature can use a reaction to attempt a melee Strike against Kuworsys with the weapon Kuworsys attempted to grab.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>At a distance, the creature known as Kuworsys might be mistaken for a crawling undead hand, possessed of two thumbs instead of one. These \"thumbs\" are actually the being's hind limbs, which it can clumsily stand upon should it choose. Each of its fingerlike limbs bears a smaller hand on the end, giving Kuworsys an eerie gait possessed of too many moving joints. Wedged within the wrist-shaped tissue that makes up the creature's head are three bloodshot eyes, glaring balefully from lids twisted into shape from ropes of flesh.</p>\n<p>Whether part of its base nature or due to its long imprisonment, Kuworsys appears to be skinned and rotting, its body riddled with ragged holes held together by raw sinew. Despite its glistening and putrid appearance, it isn't undead, nor does it leave any trace of blood or gristle in its wake. Those who believe its condition might slow it down are often shocked by the creature's jittering speed, and those who believe they might be able to track it by the scent of rotting flesh find themselves inhaling the beast's deadly, exhausting spores instead.</p>\n<p>When encountering another creature, Kuworsys doesn't approach initially, instead observing the stranger while hidden or at a distance. While it might grow bolder and approach to examine or provoke another being, it prefers to avoid direct confrontation and is intelligent and stealthy enough to deftly avoid discovery. Its presence proves deadly enough, even without any further aggression, as those who Kuworsys stalks eventually succumb to a lethal lethargy.</p>",
+  "recallKnowledge": "Occultism, DC: 30",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 22,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Kuworsys",
+    "type": "Creature",
+    "level": 12,
+    "traits": [
+      "Unique",
+      "Large",
+      "Aberration",
+      "Evil",
+      "Lawful"
+    ],
+    "source": "Pathfinder Lost Omens Monsters of Myth",
+    "perception": {
+      "value": 22,
+      "note": "scent 60 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "scent 60 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 25,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 22,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "crafting",
+        "modifier": 25,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 28,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 28,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 7
+    },
+    "dexterity": {
+      "value": 8
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": 7
+    },
+    "wisdom": {
+      "value": 5
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [
+      {
+        "name": "Sling",
+        "quantity": 1,
+        "description": "<p>Little more than a leather cup attached to a pair of straps, a sling can be used to fling smooth stones or sling bullets at a range.</p>",
+        "level": 0,
+        "price": "",
+        "traits": [
+          "propulsive"
+        ]
+      },
+      {
+        "name": "Sling Bullets",
+        "quantity": 10,
+        "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>",
+        "level": 0,
+        "price": "1 cp",
+        "traits": []
+      },
+      {
+        "name": "Explosive Ammunition",
+        "quantity": 3,
+        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a 10 foot burst, dealing <span class=\"roll\" onclick=\"roll(this)\">6d6</span> fire damage to each creature in the area (including the target). Each creature must attempt a DC 25 basic Reflex save.</p>",
+        "level": 9,
+        "price": "130 gp ",
+        "traits": [
+          "consumable",
+          "fire",
+          "magical"
+        ]
+      },
+      {
+        "name": "Freezing Ammunition",
+        "quantity": 3,
+        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>This chilly ammunition is dark blue and cold to the touch. When activated freezing ammunition hits a target, the target must succeed at a DC 19 Fortitude save or be slowed 1 for 1 round by the intense cold (slowed 1 for 1 minute on a critical failure).</p>",
+        "level": 5,
+        "price": "25 gp ",
+        "traits": [
+          "cold",
+          "consumable",
+          "magical"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 34,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 213,
+      "max": 213,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed"
+    ],
+    "resistances": [
+      {
+        "type": "poison",
+        "value": 15
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "acid",
+        "value": 10
+      },
+      {
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Pinion",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature within 10 feet of Kuworsys uses an action to Fly</p>\n<strong>Requirements</strong> Kuworsys is Reared Back\n<hr />\n<p><strong>Effect</strong> Kuworsys lashes out at the triggering creature, attempting to swat it to the ground. Kuworsys attempts a melee Strike against the creature. If the Strike hits, the creature's movement is interrupted. The creature is knocked to the ground; on a critical hit, they also can't Fly again for 1 minute.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "35 ft,\nclimb 35 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Limb",
+        "bonus": 27,
+        "traits": [
+          "finesse",
+          "reach-15",
+          "shove"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d12+7",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d12+7)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Sling",
+        "bonus": 28,
+        "traits": [
+          "propulsive",
+          "range-increment-50",
+          "reload-1"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+13",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+13)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Addictive Exhaustion",
+        "actions": null,
+        "traits": [
+          "disease"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude save</p>\n<p>Creatures with addictive exhaustion can't reduce their sickened condition from addictive exhaustion while they have the disease</p>\n<p><strong>Stage 1</strong> The creature is Sickened 1. One skill of the creature's choice doesn't suffer the status penalty from this sickened condition to its skill checks (1 day)</p>\n<p><strong>Stage 2</strong> As Stage 1, but the creature is Sickened 2 and is Fatigued (5 days)</p>\n<p><strong>Stage 3</strong> As Stage 2, but the creature is Sickened 3 and has incurable hunger and thirst, in addition to being fatigued (1 day)</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Gauge Potential",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>Kuworsys studies a creature it can see, attempting to predict its actions. The creature attempts a DC 32 Will save. On a failed save, Kuworsys predicts the creature's moves, gaining a +2 circumstance bonus to attack rolls and AC against the target creature for 1 minute.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Infectious Spores",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>Kuworsys releases a choking field of spores within a 30-foot radius, continuing to release them until the end of its next turn. Creatures who begin their turns within the area of the spores, or who enter the area, must attempt a DC 32 Fortitude save. On a failure, the creature becomes afflicted with addictive exhaustion.</p>\n<p>Kuworsys then can't use its Infectious Spores again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Rear Back",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>Kuworsys stands on its two hind limbs, bringing its other four limbs to bear on its foes. Kuworsys stays Reared Back until it uses a single action to return to its normal stance. While Kuworsys is Reared Back, it is Clumsy 1 but can use its Pinion and Yank abilities.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Yank",
+        "actions": 2,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> Kuworsys is Reared Back</p>\n<hr />\n<p><strong>Effect</strong> Kuworsys makes a melee limb Strike against a creature and, on a success, attempts to steal the creature's weapon from its hands. Kuworsys attempts a Thievery check against the target's Reflex DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature's weapon falls to the floor in the creature's space.</p>\n<p><strong>Success</strong> Until the start of that creature's turn, attempts to Disarm the creature of its weapon gain a +2 circumstance bonus, and the target takes a -2 circumstance penalty to attacks with the weapon or other checks requiring a firm grasp on the weapon.</p>\n<p><strong>Failure</strong> The creature is unaffected.</p>\n<p><strong>Critical Failure</strong> The creature can use a reaction to attempt a melee Strike against Kuworsys with the weapon Kuworsys attempted to grab.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>At a distance, the creature known as Kuworsys might be mistaken for a crawling undead hand, possessed of two thumbs instead of one. These \"thumbs\" are actually the being's hind limbs, which it can clumsily stand upon should it choose. Each of its fingerlike limbs bears a smaller hand on the end, giving Kuworsys an eerie gait possessed of too many moving joints. Wedged within the wrist-shaped tissue that makes up the creature's head are three bloodshot eyes, glaring balefully from lids twisted into shape from ropes of flesh.</p>\n<p>Whether part of its base nature or due to its long imprisonment, Kuworsys appears to be skinned and rotting, its body riddled with ragged holes held together by raw sinew. Despite its glistening and putrid appearance, it isn't undead, nor does it leave any trace of blood or gristle in its wake. Those who believe its condition might slow it down are often shocked by the creature's jittering speed, and those who believe they might be able to track it by the scent of rotting flesh find themselves inhaling the beast's deadly, exhausting spores instead.</p>\n<p>When encountering another creature, Kuworsys doesn't approach initially, instead observing the stranger while hidden or at a distance. While it might grow bolder and approach to examine or provoke another being, it prefers to avoid direct confrontation and is intelligent and stealthy enough to deftly avoid discovery. Its presence proves deadly enough, even without any further aggression, as those who Kuworsys stalks eventually succumb to a lethal lethargy.</p>",
+    "recallKnowledge": "Occultism, DC: 30",
+    "originalCreature": {}
+  }
+}

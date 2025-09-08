@@ -1,0 +1,421 @@
+{
+  "initiative": 0,
+  "initiativebonus": 33,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Last Guard",
+  "type": "Creature",
+  "level": 20,
+  "traits": [
+    "Uncommon",
+    "Gargantuan",
+    "Incorporeal",
+    "Lawful",
+    "Spirit",
+    "Troop",
+    "Undead"
+  ],
+  "source": "Pathfinder Book of the Dead",
+  "perception": {
+    "value": 33,
+    "note": "darkvisionlifesense 60 ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "lifesense 60 ft precise"
+  ],
+  "languages": [
+    "Common",
+    "Elven",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 38,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 38,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Warfare Lore",
+      "modifier": 35,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 10
+  },
+  "constitution": {
+    "value": 10
+  },
+  "intelligence": {
+    "value": 7
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Battlefield Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Without a call to war, a last guard can stray only a short distance from the location they failed to defend, typically 120 feet. Some last guards are instead bound to a province, kingdom, or nation, rather than a specific location.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Form Up",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><p>The troop chooses one of the squares it currently occupies and redistributes its squares to any configuration in which all squares are contiguous and within 15 feet of the chosen square. The troop can't share its space with other creatures.</p></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 45,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 34,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 330,
+    "max": 330,
+    "note": "void healing, rejuvenation, troop defenses",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "area-damage",
+      "value": 20
+    },
+    {
+      "type": "splash-damage",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Rejuvenation",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>When a last guard is destroyed, they re-form after <span class=\"roll\" onclick=\"roll(this)\">2d4</span> days within the location they're bound to, fully healed. A last guard can be permanently destroyed and move on to the afterlife only if they successfully defend the location they're bound to from large-scale attack, or fulfill a call to war.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft,\nfly 40 ft,\n",
+  "strikes": [],
+  "offensiveAbilities": [
+    {
+      "name": "Frightful Battle Cry",
+      "actions": 2,
+      "traits": [
+        "auditory",
+        "divine",
+        "emotion",
+        "fear",
+        "mental",
+        "sonic"
+      ],
+      "description": "<p>The last guards unleash a soul-shaking bellow in unison. All creatures in a 60 foot cone take <span class=\"roll\" onclick=\"roll(this)\">7d6</span> sonic damage (DC 42 basic Will save). Any creature that fails its save is also Frightened 3 (or Frightened 4 on a critical failure).</p>\n<p>If the troop occupies 8 or fewer squares, this area decreases to a 30 foot cone.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ghostly Blades",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> to <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The last guards engage in a coordinated attack with their spectral curve blades against each enemy in a 5 foot emanation (DC 40 basic Reflex save). The damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <span class=\"roll\" onclick=\"roll(this)\">1d8+2</span> slashing and <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <span class=\"roll\" onclick=\"roll(this)\">2d8+14</span> slashing and <span class=\"roll\" onclick=\"roll(this)\">2d8</span> void damage</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <span class=\"roll\" onclick=\"roll(this)\">3d8+14</span> slashing and <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spectral Charge",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The last guards charge, swarming through their foes. The troop Flies up to double its Speed, dealing <span class=\"roll\" onclick=\"roll(this)\">4d8</span> void damage to each creature whose space it moves through (DC 40 basic Reflex save). Any creature that fails its save is also Drained 1 (or Drained 2 on a critical failure). The troop can affect each creature only once in a single use of Spectral Charge.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Troop Movement",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever the troop Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Occultism, Religion, DC: 42",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 33,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Last Guard",
+    "type": "Creature",
+    "level": 20,
+    "traits": [
+      "Uncommon",
+      "Gargantuan",
+      "Incorporeal",
+      "Lawful",
+      "Spirit",
+      "Troop",
+      "Undead"
+    ],
+    "source": "Pathfinder Book of the Dead",
+    "perception": {
+      "value": 33,
+      "note": "darkvisionlifesense 60 ft precise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "lifesense 60 ft precise"
+    ],
+    "languages": [
+      "Common",
+      "Elven",
+      "Necril"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 38,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 38,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "Warfare Lore",
+        "modifier": 35,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": -5
+    },
+    "dexterity": {
+      "value": 10
+    },
+    "constitution": {
+      "value": 10
+    },
+    "intelligence": {
+      "value": 7
+    },
+    "wisdom": {
+      "value": 7
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Battlefield Bound",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Without a call to war, a last guard can stray only a short distance from the location they failed to defend, typically 120 feet. Some last guards are instead bound to a province, kingdom, or nation, rather than a specific location.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Form Up",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><p>The troop chooses one of the squares it currently occupies and redistributes its squares to any configuration in which all squares are contiguous and within 15 feet of the chosen square. The troop can't share its space with other creatures.</p></p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 45,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 34,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 36,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 31,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 330,
+      "max": 330,
+      "note": "void healing, rejuvenation, troop defenses",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "precision",
+      "unconscious"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [
+          "non-magical"
+        ],
+        "exceptions": [
+          "force",
+          "ghost-touch",
+          "vitality"
+        ],
+        "type": "all-damage",
+        "value": 10
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "area-damage",
+        "value": 20
+      },
+      {
+        "type": "splash-damage",
+        "value": 20
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Rejuvenation",
+        "actions": null,
+        "traits": [
+          "divine"
+        ],
+        "description": "<p>When a last guard is destroyed, they re-form after <span class=\"roll\" onclick=\"roll(this)\">2d4</span> days within the location they're bound to, fully healed. A last guard can be permanently destroyed and move on to the afterlife only if they successfully defend the location they're bound to from large-scale attack, or fulfill a call to war.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "0 ft,\nfly 40 ft,\n",
+    "strikes": [],
+    "offensiveAbilities": [
+      {
+        "name": "Frightful Battle Cry",
+        "actions": 2,
+        "traits": [
+          "auditory",
+          "divine",
+          "emotion",
+          "fear",
+          "mental",
+          "sonic"
+        ],
+        "description": "<p>The last guards unleash a soul-shaking bellow in unison. All creatures in a 60 foot cone take <span class=\"roll\" onclick=\"roll(this)\">7d6</span> sonic damage (DC 42 basic Will save). Any creature that fails its save is also Frightened 3 (or Frightened 4 on a critical failure).</p>\n<p>If the troop occupies 8 or fewer squares, this area decreases to a 30 foot cone.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Ghostly Blades",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> to <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The last guards engage in a coordinated attack with their spectral curve blades against each enemy in a 5 foot emanation (DC 40 basic Reflex save). The damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <span class=\"roll\" onclick=\"roll(this)\">1d8+2</span> slashing and <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <span class=\"roll\" onclick=\"roll(this)\">2d8+14</span> slashing and <span class=\"roll\" onclick=\"roll(this)\">2d8</span> void damage</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <span class=\"roll\" onclick=\"roll(this)\">3d8+14</span> slashing and <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Spectral Charge",
+        "actions": 3,
+        "traits": [],
+        "description": "<p>The last guards charge, swarming through their foes. The troop Flies up to double its Speed, dealing <span class=\"roll\" onclick=\"roll(this)\">4d8</span> void damage to each creature whose space it moves through (DC 40 basic Reflex save). Any creature that fails its save is also Drained 1 (or Drained 2 on a critical failure). The troop can affect each creature only once in a single use of Spectral Charge.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Troop Movement",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Whenever the troop Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Occultism, Religion, DC: 42",
+    "originalCreature": {}
+  }
+}

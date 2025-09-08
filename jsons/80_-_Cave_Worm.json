@@ -1,0 +1,523 @@
+{
+  "initiative": 0,
+  "initiativebonus": 20,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Cave Worm",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Gargantuan",
+    "Animal"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 20,
+    "note": "darkvisiontremorsense 100 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "tremorsense 100 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": -1
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": -1
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 270,
+    "max": 270,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Inexorable",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The cave worm recovers from the Paralyzed, Slowed, and Stunned conditions at the end of its turn. It's also immune to penalties to its Speeds and the Immobilized condition, and it ignores difficult terrain and greater difficult terrain.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slough Skin",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The cave worm would be affected by a condition or adverse effect (such as Cursed Metamorphosis)</p>\n<hr />\n<p><strong>Effect</strong> The cave worm negates the triggering condition or effect by sloughing an outer layer of its skin. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft,\nburrow 40 ft,\nswim 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 28,
+      "traits": [
+        "deadly-2d10",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+15",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+15)*2+12d10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 28,
+      "traits": [
+        "agile",
+        "poison",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+15",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+15)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Purple-worm-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Body",
+      "bonus": 26,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+13",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+13)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Regurgitate",
+      "bonus": 26,
+      "traits": [
+        "brutal",
+        "range-increment-60"
+      ],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "Regurgitate"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Cave Worm Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage, and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and enfeebled 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fast Swallow",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The cave worm Grabs a creature.</p>\n<hr />\n<p><strong>Effect</strong> The worm uses Swallow Whole.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Regurgitate",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The purple worm can violently regurgitate a creature or boulder it has swallowed to make a ranged Strike. The Strike deals bludgeoning damage depending on the size of the projectile:</p>\n<ul>\n<li>Tiny <span class=\"roll\" onclick=\"roll(this)\">2d6+13</span></li>\n<li>Small <span class=\"roll\" onclick=\"roll(this)\">3d6+13</span></li>\n<li>Medium <span class=\"roll\" onclick=\"roll(this)\">4d6+13</span></li>\n<li>Large <span class=\"roll\" onclick=\"roll(this)\">5d6+13</span></li>\n<li>Huge <span class=\"roll\" onclick=\"roll(this)\">6d6+13</span></li>\n</ul>\n<p>A regurgitated creature takes falling damage from the height of the target or from 20 feet, whichever is greater.</p>\n<p>Boulders occupy space in the worm's stomach as a creature of equivalent size, and purple worms often have several boulders swallowed. A purple worm can use a single action to swallow a new boulder.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rock Tunneler",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A cave worm can burrow through solid stone at a Speed of 20 feet. It can leave a tunnel if it desires, and it usually does.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Huge, <span class=\"roll\" onclick=\"roll(this)\">3d6+9</span> bludgeoning, Rupture 24</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Thrash",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The worm makes a Strike once against each creature in its reach. It can Strike up to once with its jaws, up to once with its stinger, and any number of times with its body. Each attack counts toward the worm's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all the attacks.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The most common and infamous of the cave worms gives its name to the entire family—a much-feared monster wandering the twisting tunnels of the Darklands that is capable of carving out entire cave systems. Tunnels bored by a cave worm don't always last long after these creature's passage, and areas where they nest are maddening mazes of passageways that lead nowhere, yet navigating the labyrinth to find the worm's central nest often yields amazing treasures left behind by the worm's prior victims.</p>\n<hr />\n<p>Cave worms are gigantic scavengers that bore through the depths of the world, eating whatever material they find. Named for their distinctive habitats, these worms are ravenous and display overwhelming destructive capabilities. Cave worms of different types and abilities lurk in the more remote corners of the world—tales speak of arctic worms that dwell within immense glaciers or icebergs and grave worms that burrow through the boneyards of long-forgotten ruins, to name a few.</p>",
+  "recallKnowledge": "Nature, DC: 31",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 20,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Cave Worm",
+    "type": "Creature",
+    "level": 13,
+    "traits": [
+      "Gargantuan",
+      "Animal"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 20,
+      "note": "darkvisiontremorsense 100 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "tremorsense 100 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 30,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 9
+    },
+    "dexterity": {
+      "value": -1
+    },
+    "constitution": {
+      "value": 7
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": -1
+    },
+    "charisma": {
+      "value": -1
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 32,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 270,
+      "max": 270,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Inexorable",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The cave worm recovers from the Paralyzed, Slowed, and Stunned conditions at the end of its turn. It's also immune to penalties to its Speeds and the Immobilized condition, and it ignores difficult terrain and greater difficult terrain.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Slough Skin",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The cave worm would be affected by a condition or adverse effect (such as Cursed Metamorphosis)</p>\n<hr />\n<p><strong>Effect</strong> The cave worm negates the triggering condition or effect by sloughing an outer layer of its skin. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "40 ft,\nburrow 40 ft,\nswim 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 28,
+        "traits": [
+          "deadly-2d10",
+          "reach-15",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10+15",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10+15)*2+12d10",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Improved-grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Stinger",
+        "bonus": 28,
+        "traits": [
+          "agile",
+          "poison",
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d12+15",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d12+15)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Purple-worm-venom"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Body",
+        "bonus": 26,
+        "traits": [
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d10+13",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d10+13)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Regurgitate",
+        "bonus": 26,
+        "traits": [
+          "brutal",
+          "range-increment-60"
+        ],
+        "damageRolls": [],
+        "critRolls": [],
+        "effects": [
+          "Regurgitate"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Cave Worm Venom",
+        "actions": null,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage, and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and enfeebled 2 (1 round)</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Fast Swallow",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The cave worm Grabs a creature.</p>\n<hr />\n<p><strong>Effect</strong> The worm uses Swallow Whole.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Regurgitate",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The purple worm can violently regurgitate a creature or boulder it has swallowed to make a ranged Strike. The Strike deals bludgeoning damage depending on the size of the projectile:</p>\n<ul>\n<li>Tiny <span class=\"roll\" onclick=\"roll(this)\">2d6+13</span></li>\n<li>Small <span class=\"roll\" onclick=\"roll(this)\">3d6+13</span></li>\n<li>Medium <span class=\"roll\" onclick=\"roll(this)\">4d6+13</span></li>\n<li>Large <span class=\"roll\" onclick=\"roll(this)\">5d6+13</span></li>\n<li>Huge <span class=\"roll\" onclick=\"roll(this)\">6d6+13</span></li>\n</ul>\n<p>A regurgitated creature takes falling damage from the height of the target or from 20 feet, whichever is greater.</p>\n<p>Boulders occupy space in the worm's stomach as a creature of equivalent size, and purple worms often have several boulders swallowed. A purple worm can use a single action to swallow a new boulder.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Rock Tunneler",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A cave worm can burrow through solid stone at a Speed of 20 feet. It can leave a tunnel if it desires, and it usually does.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Swallow Whole",
+        "actions": 1,
+        "traits": [
+          "attack"
+        ],
+        "description": "<p>Huge, <span class=\"roll\" onclick=\"roll(this)\">3d6+9</span> bludgeoning, Rupture 24</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Thrash",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The worm makes a Strike once against each creature in its reach. It can Strike up to once with its jaws, up to once with its stinger, and any number of times with its body. Each attack counts toward the worm's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all the attacks.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The most common and infamous of the cave worms gives its name to the entire family—a much-feared monster wandering the twisting tunnels of the Darklands that is capable of carving out entire cave systems. Tunnels bored by a cave worm don't always last long after these creature's passage, and areas where they nest are maddening mazes of passageways that lead nowhere, yet navigating the labyrinth to find the worm's central nest often yields amazing treasures left behind by the worm's prior victims.</p>\n<hr />\n<p>Cave worms are gigantic scavengers that bore through the depths of the world, eating whatever material they find. Named for their distinctive habitats, these worms are ravenous and display overwhelming destructive capabilities. Cave worms of different types and abilities lurk in the more remote corners of the world—tales speak of arctic worms that dwell within immense glaciers or icebergs and grave worms that burrow through the boneyards of long-forgotten ruins, to name a few.</p>",
+    "recallKnowledge": "Nature, DC: 31",
+    "originalCreature": {}
+  }
+}

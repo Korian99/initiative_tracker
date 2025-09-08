@@ -1,0 +1,427 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gogiteth",
+  "type": "Creature",
+  "level": 12,
+  "traits": [
+    "Large",
+    "Aberration"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 21,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Sakvroth",
+    "(Can't Speak)"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 17,
+      "note": [
+        "to Track <span class=\"roll\" onclick=\"roll(this)\">24</span>"
+      ],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "all-around vision",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Skittering Reposition",
+      "actions": -1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature that starts its move outside the gogiteth's reach moves into its reach.</p>\n<hr />\n<p><strong>Effect</strong> The gogiteth moves 10 feet. This does not trigger reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft,\nclimb 30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 26,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Leg",
+      "bonus": 26,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Carry Off Prey",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The gogiteth can move at its full Speed while it has a creature Grabbed in its jaws, bringing the grabbed creature along.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d6+12</span> bludgeoning, DC 32 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Skittering Assault",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The gogiteth Strides three times. Once per Stride, it can attempt a leg Strike against a creature in its reach at any point during the Stride; it must make each attack against a different creature, but it doesn't apply its multiple attack penalty until after making all its Strikes. If any of the Strikes result in a critical failure, Skittering Assault ends.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>A gogiteth is a slavering nightmare of teeth, eyes, and hairy spiderlike legs, and its appearance is invariably seared into the minds of any who witness it. Hives of these skittering monsters haunt the lowest reaches of the Darklands, competing with cave worms and other subterranean horrors for food and resources. A gogiteth is rarely alone, as they learned that the best means of survival is sticking with others of their own kind. Even the hardiest Darklands residents seek cover when a gogiteth is spotted, for where there's one, a swarm is sure to follow.</p>\n<p>Gogiteths make a clacking sound as they skitter. The joints in their many legs pop and crack with each movement, though they can suppress this voluntarily and hunt silently without alerting prey. The odd creatures can also make a high-pitched whistling sound that echoes throughout the caverns where they live. Some Darklands natives report that groups of gogiteths sometimes join together in eerie, discordant songs.</p>\n<p>Gogiteth anatomy have inspired no shortage of speculation as to their origins. Some believe they are the result of a fleshwarping experiment gone horribly wrong. Others think they may be related in some way to the Dominion of the Black—possibly the distant cousins or some strange exiles of those alien entities. According to this mythos, once they made their way to Golarion, the gogiteths crawled into the depths of the earth, shying away from the blazing sun above.</p>\n<p>Gogiteths are a menace to every other denizen of the Darklands. Those who live in gogiteth-infested regions of Sekamina or Orv frequently call for temporary truces when a gogiteth swarm has been spotted. Since even an average gogiteth hive can host up to two dozen of the horrors, calls to eradicate them are dangerous quests indeed.</p>",
+  "recallKnowledge": "Occultism, DC: 30",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 21,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Gogiteth",
+    "type": "Creature",
+    "level": 12,
+    "traits": [
+      "Large",
+      "Aberration"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 21,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Sakvroth",
+      "(Can't Speak)"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 19,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 24,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 17,
+        "note": [
+          "to Track <span class=\"roll\" onclick=\"roll(this)\">24</span>"
+        ],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 31,
+      "note": "all-around vision",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 20,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 250,
+      "max": 250,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [
+      {
+        "type": "poison",
+        "value": 10
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Skittering Reposition",
+        "actions": -1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p><strong>Trigger</strong> A creature that starts its move outside the gogiteth's reach moves into its reach.</p>\n<hr />\n<p><strong>Effect</strong> The gogiteth moves 10 feet. This does not trigger reactions.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "40 ft,\nclimb 30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 26,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10+12",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10+12)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Improved-grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Leg",
+        "bonus": 26,
+        "traits": [
+          "agile",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+12",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+12)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Carry Off Prey",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The gogiteth can move at its full Speed while it has a creature Grabbed in its jaws, bringing the grabbed creature along.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d6+12</span> bludgeoning, DC 32 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Skittering Assault",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The gogiteth Strides three times. Once per Stride, it can attempt a leg Strike against a creature in its reach at any point during the Stride; it must make each attack against a different creature, but it doesn't apply its multiple attack penalty until after making all its Strikes. If any of the Strikes result in a critical failure, Skittering Assault ends.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>A gogiteth is a slavering nightmare of teeth, eyes, and hairy spiderlike legs, and its appearance is invariably seared into the minds of any who witness it. Hives of these skittering monsters haunt the lowest reaches of the Darklands, competing with cave worms and other subterranean horrors for food and resources. A gogiteth is rarely alone, as they learned that the best means of survival is sticking with others of their own kind. Even the hardiest Darklands residents seek cover when a gogiteth is spotted, for where there's one, a swarm is sure to follow.</p>\n<p>Gogiteths make a clacking sound as they skitter. The joints in their many legs pop and crack with each movement, though they can suppress this voluntarily and hunt silently without alerting prey. The odd creatures can also make a high-pitched whistling sound that echoes throughout the caverns where they live. Some Darklands natives report that groups of gogiteths sometimes join together in eerie, discordant songs.</p>\n<p>Gogiteth anatomy have inspired no shortage of speculation as to their origins. Some believe they are the result of a fleshwarping experiment gone horribly wrong. Others think they may be related in some way to the Dominion of the Black—possibly the distant cousins or some strange exiles of those alien entities. According to this mythos, once they made their way to Golarion, the gogiteths crawled into the depths of the earth, shying away from the blazing sun above.</p>\n<p>Gogiteths are a menace to every other denizen of the Darklands. Those who live in gogiteth-infested regions of Sekamina or Orv frequently call for temporary truces when a gogiteth swarm has been spotted. Since even an average gogiteth hive can host up to two dozen of the horrors, calls to eradicate them are dangerous quests indeed.</p>",
+    "recallKnowledge": "Occultism, DC: 30",
+    "originalCreature": {}
+  }
+}

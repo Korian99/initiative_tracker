@@ -1,0 +1,687 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "\"Lucky\" Lanks",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Unique",
+    "Small",
+    "Evil",
+    "Halfling",
+    "Humanoid",
+    "Lawful"
+  ],
+  "source": "Pathfinder #179: Cradle of Quartz",
+  "perception": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [],
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [
+    {
+      "name": "Coat Pistol",
+      "quantity": 1,
+      "description": "<p>This small pistol is easily concealed inside a jacket or some other article of clothing. Rarely kept as a primary weapon, coat pistols are equally favored by clever assassins and traveling Alkenstar aristocrats.</p>",
+      "level": 0,
+      "price": "6 gp ",
+      "traits": [
+        "uncommon",
+        "concealable",
+        "concussive",
+        "fatal-d8"
+      ]
+    },
+    {
+      "name": "Dagger",
+      "quantity": 4,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp ",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Shortsword",
+      "quantity": 1,
+      "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
+      "level": 0,
+      "price": "9 sp ",
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Thieves' Tools",
+      "quantity": 1,
+      "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with Replacement Picks appropriate to your tools; this doesn't require using the Repair action.</p>",
+      "level": 0,
+      "price": "3 gp ",
+      "traits": []
+    },
+    {
+      "name": "Feather Token (Chest)",
+      "quantity": 1,
+      "description": "<p>Each feather token appears to be a simple feather from some exotic bird. The feather's shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>When you use this token, a small wooden chest appears and immediately opens. This chest can hold up to 10 Bulk worth of items. Once the chest is closed, it transforms again-this time into a key-taking all of the stored items with it. You can activate this key by spending an Interact action to turn it in an imaginary lock, which causes it to transform back into a chest with all of the items still inside. Once it has turned into a chest a second time, it forever remains a wooden chest.</p>",
+      "level": 3,
+      "price": "10 gp ",
+      "traits": [
+        "consumable",
+        "magical"
+      ]
+    },
+    {
+      "name": "Rounds (Coat Pistol)",
+      "quantity": 20,
+      "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": [
+        "alchemical"
+      ]
+    },
+    {
+      "name": "Hunting Spider Venom",
+      "quantity": 3,
+      "description": "<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 21 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> poison damage, Clumsy 1, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, clumsy 2, and off-guard (1 round)</p>",
+      "level": 5,
+      "price": "25 gp ",
+      "traits": [
+        "alchemical",
+        "consumable",
+        "injury",
+        "poison"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 70,
+    "max": 70,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shortsword",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Dagger",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Coat Pistol",
+      "bonus": 15,
+      "traits": [
+        "concealable",
+        "concussive",
+        "fatal-d8",
+        "range-increment-30",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Scoundrel's Feint",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When Lanks successfully Feints, his target is Off-Guard against his attacks until the end of his next turn. On a critical success, the target is off-guard against all attacks until the end of Lanks's next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Lanks deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Society, DC: 20",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 11,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "\"Lucky\" Lanks",
+    "type": "Creature",
+    "level": 5,
+    "traits": [
+      "Unique",
+      "Small",
+      "Evil",
+      "Halfling",
+      "Humanoid",
+      "Lawful"
+    ],
+    "source": "Pathfinder #179: Cradle of Quartz",
+    "perception": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [],
+    "languages": [
+      "Common"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "diplomacy",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 2
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 0
+    },
+    "intelligence": {
+      "value": 2
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [
+      {
+        "name": "Coat Pistol",
+        "quantity": 1,
+        "description": "<p>This small pistol is easily concealed inside a jacket or some other article of clothing. Rarely kept as a primary weapon, coat pistols are equally favored by clever assassins and traveling Alkenstar aristocrats.</p>",
+        "level": 0,
+        "price": "6 gp ",
+        "traits": [
+          "uncommon",
+          "concealable",
+          "concussive",
+          "fatal-d8"
+        ]
+      },
+      {
+        "name": "Dagger",
+        "quantity": 4,
+        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+        "level": 0,
+        "price": "2 sp ",
+        "traits": [
+          "agile",
+          "finesse",
+          "thrown-10",
+          "versatile-s"
+        ]
+      },
+      {
+        "name": "Shortsword",
+        "quantity": 1,
+        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
+        "level": 0,
+        "price": "9 sp ",
+        "traits": [
+          "agile",
+          "finesse",
+          "versatile-s"
+        ]
+      },
+      {
+        "name": "Thieves' Tools",
+        "quantity": 1,
+        "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with Replacement Picks appropriate to your tools; this doesn't require using the Repair action.</p>",
+        "level": 0,
+        "price": "3 gp ",
+        "traits": []
+      },
+      {
+        "name": "Feather Token (Chest)",
+        "quantity": 1,
+        "description": "<p>Each feather token appears to be a simple feather from some exotic bird. The feather's shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>When you use this token, a small wooden chest appears and immediately opens. This chest can hold up to 10 Bulk worth of items. Once the chest is closed, it transforms again-this time into a key-taking all of the stored items with it. You can activate this key by spending an Interact action to turn it in an imaginary lock, which causes it to transform back into a chest with all of the items still inside. Once it has turned into a chest a second time, it forever remains a wooden chest.</p>",
+        "level": 3,
+        "price": "10 gp ",
+        "traits": [
+          "consumable",
+          "magical"
+        ]
+      },
+      {
+        "name": "Rounds (Coat Pistol)",
+        "quantity": 20,
+        "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": [
+          "alchemical"
+        ]
+      },
+      {
+        "name": "Hunting Spider Venom",
+        "quantity": 3,
+        "description": "<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 21 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> poison damage, Clumsy 1, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, clumsy 2, and off-guard (1 round)</p>",
+        "level": 5,
+        "price": "25 gp ",
+        "traits": [
+          "alchemical",
+          "consumable",
+          "injury",
+          "poison"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 20,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 70,
+      "max": 70,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Shortsword",
+        "bonus": 16,
+        "traits": [
+          "agile",
+          "finesse",
+          "magical",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Dagger",
+        "bonus": 15,
+        "traits": [
+          "agile",
+          "finesse",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Dagger",
+        "bonus": 15,
+        "traits": [
+          "agile",
+          "thrown-10",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Coat Pistol",
+        "bonus": 15,
+        "traits": [
+          "concealable",
+          "concussive",
+          "fatal-d8",
+          "range-increment-30",
+          "reload-1"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Scoundrel's Feint",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When Lanks successfully Feints, his target is Off-Guard against his attacks until the end of his next turn. On a critical success, the target is off-guard against all attacks until the end of Lanks's next turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sneak Attack",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Lanks deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Off-Guard creatures.</p></details>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Society, DC: 20",
+    "originalCreature": {}
+  }
+}

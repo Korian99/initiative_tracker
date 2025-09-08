@@ -1,0 +1,443 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Lagofir",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Animal"
+  ],
+  "source": "Pathfinder #176: Lost Mammoth Valley",
+  "perception": {
+    "value": 11,
+    "note": "low light-visionscent 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision",
+    "scent 30 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [
+        "to Swim <span class=\"roll\" onclick=\"roll(this)\">10</span>"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 55,
+    "max": 55,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Cold Adaptation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The lagofir reduces the effects it suffers from cold environments by one step.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Consuming Fumes",
+      "actions": null,
+      "traits": [
+        "aura",
+        "fire"
+      ],
+      "description": "<p>15 feet. The lagofir is surrounded by fumes from the flammable oil it exudes. Each nonmagical open flame the size of a torch or larger within the emanation explodes, dealing <span class=\"roll\" onclick=\"roll(this)\">4d4</span> fire damage to all creatures and objects adjacent to the flame (DC 17 basic Reflex save). After exploding, the fire source is extinguished.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Deep Breath",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A lagofir can hold its breath for 1 hour.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\nswim 30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Feet",
+      "bonus": 11,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Push"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Flammable",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Lagofirs excrete a warm, flammable oil. Any creature that Grapples a lagofir or is Grabbed or Restrained by a lagofir becomes coated in lagofir oil for 10 minutes or until the oil is washed off, which takes 1 minute of vigorous scrubbing. Any time a lagofir or a creature coated in lagofir oil is dealt fire damage, it catches flame, taking <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus fire damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Gnaw",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The lagofir's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The lagofir gnaws on the target, driving its teeth deeper into its prey. The target takes <span class=\"roll\" onclick=\"roll(this)\">1d8+3</span> piercing damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nimble Rush",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The lagofir attacks while darting around its foes. The lagofir Strides twice and Strikes at any point during its movement. It can substitute a Swim action in place of any Stride.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Lagofirs are semiaquatic omnivores that resemble a rabbit the size of a large dog. They're social creatures, playful but territorial and protective of their kin. Lagofirs live in family units and gather in larger groups as often as their environment allows. They're commonly found in northern Avistan, congregating along rivers, lakes, and coasts, where they subsist on fish, crustaceans, marine plants, and small mammals.</p>\n<p>Lagofirs have a stout body, rounded back, large hind legs, long ears, and a short, fluffy tail. Their powerful incisors are capable of cracking through clam shells, chitin, and bone. Both their front and back paws are webbed, and their front paws are highly dexterous, enabling them to grasp objects and perform simple manual tasks.</p>\n<p>Lagofirs secrete a thick, sweet-smelling, flammable oil that coats their fur. Warm to the touch, this oil keeps them insulated and comfortable in frigid water and cold climates. Lagofirs mark their territory by brushing against solid surfaces, coating them in oil that, to other lagofirs, identifies an individual. This makes their lairs, known as burrows or forms, incredibly hazardous. A single spark in a lagofir form can cause an explosion.</p>",
+  "recallKnowledge": "Nature, DC: 20",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 11,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Lagofir",
+    "type": "Creature",
+    "level": 3,
+    "traits": [
+      "Uncommon",
+      "Large",
+      "Animal"
+    ],
+    "source": "Pathfinder #176: Lost Mammoth Valley",
+    "perception": {
+      "value": 11,
+      "note": "low light-visionscent 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision",
+      "scent 30 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 8,
+        "note": [
+          "to Swim <span class=\"roll\" onclick=\"roll(this)\">10</span>"
+        ],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -4
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 55,
+      "max": 55,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Cold Adaptation",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The lagofir reduces the effects it suffers from cold environments by one step.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Consuming Fumes",
+        "actions": null,
+        "traits": [
+          "aura",
+          "fire"
+        ],
+        "description": "<p>15 feet. The lagofir is surrounded by fumes from the flammable oil it exudes. Each nonmagical open flame the size of a torch or larger within the emanation explodes, dealing <span class=\"roll\" onclick=\"roll(this)\">4d4</span> fire damage to all creatures and objects adjacent to the flame (DC 17 basic Reflex save). After exploding, the fire source is extinguished.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Deep Breath",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A lagofir can hold its breath for 1 hour.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\nswim 30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 12,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d8+3",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d8+3)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Feet",
+        "bonus": 11,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "2d8+3",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+3)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Push"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Flammable",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Lagofirs excrete a warm, flammable oil. Any creature that Grapples a lagofir or is Grabbed or Restrained by a lagofir becomes coated in lagofir oil for 10 minutes or until the oil is washed off, which takes 1 minute of vigorous scrubbing. Any time a lagofir or a creature coated in lagofir oil is dealt fire damage, it catches flame, taking <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus fire damage.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Gnaw",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The lagofir's last action was a successful jaws Strike</p><hr /><p><strong>Effect</strong> The lagofir gnaws on the target, driving its teeth deeper into its prey. The target takes <span class=\"roll\" onclick=\"roll(this)\">1d8+3</span> piercing damage.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Nimble Rush",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The lagofir attacks while darting around its foes. The lagofir Strides twice and Strikes at any point during its movement. It can substitute a Swim action in place of any Stride.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Lagofirs are semiaquatic omnivores that resemble a rabbit the size of a large dog. They're social creatures, playful but territorial and protective of their kin. Lagofirs live in family units and gather in larger groups as often as their environment allows. They're commonly found in northern Avistan, congregating along rivers, lakes, and coasts, where they subsist on fish, crustaceans, marine plants, and small mammals.</p>\n<p>Lagofirs have a stout body, rounded back, large hind legs, long ears, and a short, fluffy tail. Their powerful incisors are capable of cracking through clam shells, chitin, and bone. Both their front and back paws are webbed, and their front paws are highly dexterous, enabling them to grasp objects and perform simple manual tasks.</p>\n<p>Lagofirs secrete a thick, sweet-smelling, flammable oil that coats their fur. Warm to the touch, this oil keeps them insulated and comfortable in frigid water and cold climates. Lagofirs mark their territory by brushing against solid surfaces, coating them in oil that, to other lagofirs, identifies an individual. This makes their lairs, known as burrows or forms, incredibly hazardous. A single spark in a lagofir form can cause an explosion.</p>",
+    "recallKnowledge": "Nature, DC: 20",
+    "originalCreature": {}
+  }
+}

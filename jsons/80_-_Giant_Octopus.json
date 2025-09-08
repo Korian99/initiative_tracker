@@ -1,0 +1,439 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Giant Octopus",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Huge",
+    "Animal",
+    "Aquatic"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 15,
+    "note": "low light-vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 135,
+    "max": 135,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "15 ft,\nswim 40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Arm",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+9)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 20,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Giant-octopus-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Compression",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A giant octopus can move through a gap at least 2 feet wide without Squeezing, and can Squeeze through a gap at least 1 foot wide.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">1d8+9</span> bludgeoning, DC 26 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Giant Octopus Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Clumsy 1, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Clumsy 2, and off-guard (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ink Cloud",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The octopus emits a cloud of black ink in a 30 foot emanation. This cloud has no effect outside of water. Creatures inside the cloud are Undetected and can't use their sense of smell. The cloud dissipates after 1 minute.</p>\n<p>The octopus can't use Ink Cloud again for <span class=\"roll\" onclick=\"roll(this)\">2d6</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jet",
+      "actions": 2,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The octopus moves up to 200 feet in a straight line through the water without triggering reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Writhing Arms",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The giant octopus makes up to four Strikes with different arms, each against a different target. Each attack counts separately for the octopus's multiple attack penalty, but the penalty doesn't increase the until the octopus has made all the attacks.</p>\n<p>If the octopus subsequently uses the Grab action, it can Grab any number of creatures it hit with Writhing Arms.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Giant octopuses are found in the heart of deep, dark oceans. Clever and adaptable, they hunt and devour all manner of animals. Despite growing up to 16 feet long, a giant octopus can compress its body to squeeze through small gaps as long as there's room for its beak.</p>\n<p>Giant octopuses favor shipwrecks, coral reefs, or underwater caverns as lairs, where they can take advantage of narrow confines for protection. Like their smaller kin, they're fond of adorning and decorating their lairs with found objects—many of which, in the giant octopus's case, are also magical weapons, shields, or works of art salvaged from sunken ships or fallen adventurers.</p>",
+  "recallKnowledge": "Nature, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 15,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Giant Octopus",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Huge",
+      "Animal",
+      "Aquatic"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 15,
+      "note": "low light-vision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 20,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": -4
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": -2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 135,
+      "max": 135,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [
+      {
+        "type": "cold",
+        "value": 10
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "15 ft,\nswim 40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Arm",
+        "bonus": 20,
+        "traits": [
+          "agile",
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+9",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+9)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Beak",
+        "bonus": 20,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+9",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+9)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Giant-octopus-venom"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Compression",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A giant octopus can move through a gap at least 2 feet wide without Squeezing, and can Squeeze through a gap at least 1 foot wide.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">1d8+9</span> bludgeoning, DC 26 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Giant Octopus Venom",
+        "actions": null,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Clumsy 1, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Clumsy 2, and off-guard (1 round)</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Ink Cloud",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The octopus emits a cloud of black ink in a 30 foot emanation. This cloud has no effect outside of water. Creatures inside the cloud are Undetected and can't use their sense of smell. The cloud dissipates after 1 minute.</p>\n<p>The octopus can't use Ink Cloud again for <span class=\"roll\" onclick=\"roll(this)\">2d6</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Jet",
+        "actions": 2,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The octopus moves up to 200 feet in a straight line through the water without triggering reactions.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Writhing Arms",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The giant octopus makes up to four Strikes with different arms, each against a different target. Each attack counts separately for the octopus's multiple attack penalty, but the penalty doesn't increase the until the octopus has made all the attacks.</p>\n<p>If the octopus subsequently uses the Grab action, it can Grab any number of creatures it hit with Writhing Arms.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Giant octopuses are found in the heart of deep, dark oceans. Clever and adaptable, they hunt and devour all manner of animals. Despite growing up to 16 feet long, a giant octopus can compress its body to squeeze through small gaps as long as there's room for its beak.</p>\n<p>Giant octopuses favor shipwrecks, coral reefs, or underwater caverns as lairs, where they can take advantage of narrow confines for protection. Like their smaller kin, they're fond of adorning and decorating their lairs with found objects—many of which, in the giant octopus's case, are also magical weapons, shields, or works of art salvaged from sunken ships or fallen adventurers.</p>",
+    "recallKnowledge": "Nature, DC: 24",
+    "originalCreature": {}
+  }
+}

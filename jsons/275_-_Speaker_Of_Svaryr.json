@@ -1,0 +1,1491 @@
+{
+  "initiative": 0,
+  "initiativebonus": 34,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Speaker Of Svaryr",
+  "type": "Creature",
+  "level": 20,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Chaotic",
+    "Fey",
+    "(caster)"
+  ],
+  "source": "Pathfinder #192: Worst of All Possible Worlds",
+  "perception": {
+    "value": 34,
+    "note": "darkvisionscent 60 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "scent 60 ft imprecise"
+  ],
+  "languages": [
+    "Common",
+    "Fey",
+    "Speak with plants, tongues"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 36,
+      "note": [
+        "to Impersonate a human version of themselves <span class=\"roll\" onclick=\"roll(this)\">40</span>"
+      ],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 38,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 36,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 34,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 4
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 8
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 44,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 380,
+    "max": 380,
+    "note": "regeneration 30 (deactivated by acid or fire)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 20
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 36,
+      "traits": [
+        "magical",
+        "unarmed",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d10+14",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d8",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d10+14)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d8)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 36,
+      "traits": [
+        "agile",
+        "backswing",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6+14",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d10",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6+14)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d10)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        "Befuddling-lash"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Befuddling Lash",
+      "actions": null,
+      "traits": [
+        "curse",
+        "mental"
+      ],
+      "description": "<p>When the Speaker damages a creature with her tail, a wave of befuddlement clouds the target's thoughts. The creature must succeed at a DC 42 Will save or become Stupefied 1 (Stupefied 2 on a critical failure) for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Manipulate Luck",
+      "actions": 1,
+      "traits": [
+        "curse",
+        "primal"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The huldra touches another creature to manipulate the creature's luck. The creature must attempt a DC 42 Will save. On a failure, the huldra chooses good luck or bad luck. If the huldra chooses good luck, the affected creature can roll twice on one d20 roll within the next minute and use the higher result; this is a fortune effect. If the huldra chooses bad luck, the creature must roll twice and use the lower result on its next d20 roll; this is a misfortune effect.</p>\n<p>Effect: Manipulate Luck (Good)</p>\n<p>Effect: Manipulate Luck (Bad)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 34,
+      "dc": 42,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 10,
+      "cantrips": [
+        {
+          "name": "Guidance",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "1",
+          "duration": "until the start of your next turn",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Bm1xltOjyPrL8plJ"
+        },
+        {
+          "name": "Light",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "until the next time you make your daily preparations",
+          "range": "touch",
+          "area": "",
+          "targets": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally",
+          "save": "",
+          "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fYG2rHqgIEKgg2Ip"
+        },
+        {
+          "name": "Produce Flame",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal <span class=\"roll\" onclick=\"roll(this)\">2d4</span> fire damage. On a critical success, the target takes double damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the persistent damage on a critical hit by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fKM4GJAPeqTFsAUF"
+        },
+        {
+          "name": "Tanglefoot",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "plant"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the Immobilized condition.</p>\n<p><strong>Success</strong> The target takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "csroQR3dELuXC86X"
+        }
+      ],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "VfUecgqYJC9OenbD",
+      "modifications": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [
+        {
+          "name": "Chain Lightning",
+          "type": "spell",
+          "level": 6,
+          "traits": [
+            "concentrate",
+            "electricity"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 creature, plus any number of additional creatures",
+          "save": "basic reflex",
+          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Nua3YRfYNsxkAFNb"
+        },
+        {
+          "name": "Chain Lightning",
+          "type": "spell",
+          "level": 6,
+          "traits": [
+            "concentrate",
+            "electricity"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 creature, plus any number of additional creatures",
+          "save": "basic reflex",
+          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Nua3YRfYNsxkAFNb"
+        },
+        {
+          "name": "Chain Lightning",
+          "type": "spell",
+          "level": 6,
+          "traits": [
+            "concentrate",
+            "electricity"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 creature, plus any number of additional creatures",
+          "save": "basic reflex",
+          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Nua3YRfYNsxkAFNb"
+        },
+        {
+          "name": "Slow",
+          "type": "spell",
+          "level": 3,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QJcmpsPGR9q9kkwm"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Cloudkill",
+          "type": "spell",
+          "level": 5,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20 ft burst",
+          "targets": "",
+          "save": "basic fortitude",
+          "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal <span class=\"roll\" onclick=\"roll(this)\">6d8</span> poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "FohF5cwXgqmOMLvN"
+        },
+        {
+          "name": "Fly",
+          "type": "spell",
+          "level": 4,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "zdsjIXXse1QFddHG"
+        },
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3e3icT25FUApbKQg"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Mask of Terror",
+          "type": "spell",
+          "level": 7,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "illusion",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>The target appears to be a gruesome and terrifying creature. The effect is unique to each observer, so a human viewing the target might see a demon with bloody fangs, but a demon observing the target might see a glowing angelic visage. When any creature attempts a hostile action against the target, the creature must attempt a Will save. It is then temporarily immune until the end of its next turn.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature becomes Frightened 2 before using its action.</p>\n<p><strong>Critical Failure</strong> The creature becomes Frightened 2, and its action fails and is wasted.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 5 creatures. If a creature uses a hostile action or reaction that affects multiple targets simultaneously, it needs to attempt only one save against mask of terror.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3PQcK5UDfuC5dfSr"
+        },
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DDUSj03mn3nQ32VM"
+        }
+      ],
+      "lv9spells": [
+        {
+          "name": "Disjunction",
+          "type": "spell",
+          "level": 9,
+          "traits": [
+            "uncommon",
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 magic item",
+          "save": "",
+          "description": "<p>Crackling energy disjoins the target. You attempt to counteract it. If you succeed, it's deactivated for 1 week. On a critical success, it's destroyed. If it's an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "SWtwVARfxt515DnY"
+        },
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ezQA5TfaCROQLDrU"
+        }
+      ],
+      "lv10spells": [
+        {
+          "name": "Chain Lightning",
+          "type": "spell",
+          "level": 6,
+          "traits": [
+            "concentrate",
+            "electricity"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 creature, plus any number of additional creatures",
+          "save": "basic reflex",
+          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1KLJQAWwhWwZptQb"
+        },
+        {
+          "name": "Tongues (Constant)",
+          "type": "spell",
+          "level": 5,
+          "traits": [
+            "uncommon",
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "PjPiZnVkmrFK209a"
+        },
+        {
+          "name": "Speak with Plants (Constant)",
+          "type": "spell",
+          "level": 4,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You can ask questions of and receive answers from plants and fungi, but the spell doesn't make them more friendly or intelligent than normal. Most normal plants and fungi have a distinctive view of the world around them, so they don't recognize details about creatures or know anything about the world beyond their immediate vicinity. Cunning plant or fungus monsters are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "gFJRyAsl9TySe5eV"
+        },
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "healing",
+            "manipulate"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "YL1cwW2c5AJEbSbz"
+        }
+      ],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>At first glance, a huldra seems a simple creature-a human in plain robes or peasant dress, sporting long, unbound hair. These tresses and full skirts in fact disguise the huldra's supernatural features: a hollow wooden back, a long bovine tail, and incredible strength.</p>\n<p>Folk legends from the lands of the north describe huldras as the creations of troll witches, intended to lure potential meals to the slaughter. Indeed, a huldra's regeneration is so similar to a troll's that a link between the two creatures seems entirely possible, but huldras despise trolls and resent tales suggesting any connection between them. Rather, huldras are wardens of the woodlands they occupy. Grown from saplings by powerful forest-dwelling fey as a response to humanoid encroachment, huldras protect and parley for the forest itself. Woodland creatures adore huldras, and sometimes approach humans or elves thinking they're huldras. This illusion is shattered if the animal sees the humanoid's back is made of flesh or that they're lacking a tail, at which point the animal recoils and runs away.</p>\n<p>Huldras respond well to travelers who show respect and deference for the forest, bestowing those they favor with supernatural luck and fortune. Those who scorn or attack a huldra, or those who mock their distinctive, bovine tails, find themselves plagued by poor decisions and even worse luck. Huldras commonly carry a bad reputation as sirens of the deep forest-cunning monsters who seek to lure woodcutters and unwary adventurers to uncertain ends. These stories largely come from miscreants foolish enough to have treated a huldra rudely and later complain about how they were unjustly persecuted. Even woodcutters and hunters can stay in the good graces of huldras provided they plant few trees to replace what they've taken and don't kill any creatures they don't eat.</p>\n<p>Though huldras choose to appear unassuming, the attention they put into disguising the supernatural parts of their bodies is sometimes lacking when it comes to their strength. They often perform feats of strength, like bending horseshoes straight or lifting heavy objects, without realizing they're breaking their carefully crafted facade.</p>",
+  "recallKnowledge": "Nature, DC: 40",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 34,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Speaker Of Svaryr",
+    "type": "Creature",
+    "level": 20,
+    "traits": [
+      "Unique",
+      "Medium",
+      "Chaotic",
+      "Fey",
+      "(caster)"
+    ],
+    "source": "Pathfinder #192: Worst of All Possible Worlds",
+    "perception": {
+      "value": 34,
+      "note": "darkvisionscent 60 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "scent 60 ft imprecise"
+    ],
+    "languages": [
+      "Common",
+      "Fey",
+      "Speak with plants, tongues"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 34,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 34,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 36,
+        "note": [
+          "to Impersonate a human version of themselves <span class=\"roll\" onclick=\"roll(this)\">40</span>"
+        ],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "diplomacy",
+        "modifier": 38,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 36,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 34,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": 4
+    },
+    "wisdom": {
+      "value": 6
+    },
+    "charisma": {
+      "value": 8
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 44,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 31,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 36,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 33,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 380,
+      "max": 380,
+      "note": "regeneration 30 (deactivated by acid or fire)",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "cold-iron",
+        "value": 20
+      },
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 20
+      }
+    ],
+    "defensiveAbilities": [],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 36,
+        "traits": [
+          "magical",
+          "unarmed",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d10+14",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d8",
+            "type": "mental"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d10+14)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d8)*2",
+            "type": "mental"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tail",
+        "bonus": 36,
+        "traits": [
+          "agile",
+          "backswing",
+          "magical"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d6+14",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d10",
+            "type": "mental"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d6+14)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d10)*2",
+            "type": "mental"
+          }
+        ],
+        "effects": [
+          "Befuddling-lash"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Befuddling Lash",
+        "actions": null,
+        "traits": [
+          "curse",
+          "mental"
+        ],
+        "description": "<p>When the Speaker damages a creature with her tail, a wave of befuddlement clouds the target's thoughts. The creature must succeed at a DC 42 Will save or become Stupefied 1 (Stupefied 2 on a critical failure) for 1 minute.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Manipulate Luck",
+        "actions": 1,
+        "traits": [
+          "curse",
+          "primal"
+        ],
+        "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The huldra touches another creature to manipulate the creature's luck. The creature must attempt a DC 42 Will save. On a failure, the huldra chooses good luck or bad luck. If the huldra chooses good luck, the affected creature can roll twice on one d20 roll within the next minute and use the higher result; this is a fortune effect. If the huldra chooses bad luck, the creature must roll twice and use the lower result on its next d20 roll; this is a misfortune effect.</p>\n<p>Effect: Manipulate Luck (Good)</p>\n<p>Effect: Manipulate Luck (Bad)</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Primal Innate Spells",
+        "type": "innate",
+        "bonus": 34,
+        "dc": 42,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 10,
+        "cantrips": [
+          {
+            "name": "Guidance",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "concentrate"
+            ],
+            "castingTime": "1",
+            "duration": "until the start of your next turn",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "Bm1xltOjyPrL8plJ"
+          },
+          {
+            "name": "Light",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "light",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "until the next time you make your daily preparations",
+            "range": "touch",
+            "area": "",
+            "targets": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally",
+            "save": "",
+            "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "fYG2rHqgIEKgg2Ip"
+          },
+          {
+            "name": "Produce Flame",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "attack",
+              "concentrate",
+              "fire",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal <span class=\"roll\" onclick=\"roll(this)\">2d4</span> fire damage. On a critical success, the target takes double damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the persistent damage on a critical hit by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "fKM4GJAPeqTFsAUF"
+          },
+          {
+            "name": "Tanglefoot",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "attack",
+              "concentrate",
+              "manipulate",
+              "plant"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the Immobilized condition.</p>\n<p><strong>Success</strong> The target takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "csroQR3dELuXC86X"
+          }
+        ],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "VfUecgqYJC9OenbD",
+        "modifications": [],
+        "lv1spells": [],
+        "lv2spells": [],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [],
+        "lv6spells": [
+          {
+            "name": "Chain Lightning",
+            "type": "spell",
+            "level": 6,
+            "traits": [
+              "concentrate",
+              "electricity"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "500 feet",
+            "area": "",
+            "targets": "1 creature, plus any number of additional creatures",
+            "save": "basic reflex",
+            "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "Nua3YRfYNsxkAFNb"
+          },
+          {
+            "name": "Chain Lightning",
+            "type": "spell",
+            "level": 6,
+            "traits": [
+              "concentrate",
+              "electricity"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "500 feet",
+            "area": "",
+            "targets": "1 creature, plus any number of additional creatures",
+            "save": "basic reflex",
+            "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "Nua3YRfYNsxkAFNb"
+          },
+          {
+            "name": "Chain Lightning",
+            "type": "spell",
+            "level": 6,
+            "traits": [
+              "concentrate",
+              "electricity"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "500 feet",
+            "area": "",
+            "targets": "1 creature, plus any number of additional creatures",
+            "save": "basic reflex",
+            "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "Nua3YRfYNsxkAFNb"
+          },
+          {
+            "name": "Slow",
+            "type": "spell",
+            "level": 3,
+            "traits": [
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "fortitude",
+            "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "QJcmpsPGR9q9kkwm"
+          }
+        ],
+        "lv7spells": [
+          {
+            "name": "Cloudkill",
+            "type": "spell",
+            "level": 5,
+            "traits": [
+              "concentrate",
+              "death",
+              "manipulate"
+            ],
+            "castingTime": "3",
+            "duration": "1 minute",
+            "range": "120 feet",
+            "area": "20 ft burst",
+            "targets": "",
+            "save": "basic fortitude",
+            "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal <span class=\"roll\" onclick=\"roll(this)\">6d8</span> poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "FohF5cwXgqmOMLvN"
+          },
+          {
+            "name": "Fly",
+            "type": "spell",
+            "level": 4,
+            "traits": [
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "5 minutes",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>The target can soar through the air, gaining a fly Speed equal to its Speed or 20 feet, whichever is greater.</p>\n\n<hr />\n<p><strong>Heightened (7th)</strong> The duration increases to 1 hour.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "zdsjIXXse1QFddHG"
+          },
+          {
+            "name": "Heal",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "healing",
+              "manipulate"
+            ],
+            "castingTime": "1 to 3",
+            "duration": "",
+            "range": "varies",
+            "area": "",
+            "targets": "1 willing living creature or 1 undead",
+            "save": "basic fortitude",
+            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "3e3icT25FUApbKQg"
+          }
+        ],
+        "lv8spells": [
+          {
+            "name": "Mask of Terror",
+            "type": "spell",
+            "level": 7,
+            "traits": [
+              "concentrate",
+              "emotion",
+              "fear",
+              "illusion",
+              "manipulate",
+              "mental"
+            ],
+            "castingTime": "2",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "will",
+            "description": "<p>The target appears to be a gruesome and terrifying creature. The effect is unique to each observer, so a human viewing the target might see a demon with bloody fangs, but a demon observing the target might see a glowing angelic visage. When any creature attempts a hostile action against the target, the creature must attempt a Will save. It is then temporarily immune until the end of its next turn.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature becomes Frightened 2 before using its action.</p>\n<p><strong>Critical Failure</strong> The creature becomes Frightened 2, and its action fails and is wasted.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 5 creatures. If a creature uses a hostile action or reaction that affects multiple targets simultaneously, it needs to attempt only one save against mask of terror.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "3PQcK5UDfuC5dfSr"
+          },
+          {
+            "name": "Heal",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "healing",
+              "manipulate"
+            ],
+            "castingTime": "1 to 3",
+            "duration": "",
+            "range": "varies",
+            "area": "",
+            "targets": "1 willing living creature or 1 undead",
+            "save": "basic fortitude",
+            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "DDUSj03mn3nQ32VM"
+          }
+        ],
+        "lv9spells": [
+          {
+            "name": "Disjunction",
+            "type": "spell",
+            "level": 9,
+            "traits": [
+              "uncommon",
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "120 feet",
+            "area": "",
+            "targets": "1 magic item",
+            "save": "",
+            "description": "<p>Crackling energy disjoins the target. You attempt to counteract it. If you succeed, it's deactivated for 1 week. On a critical success, it's destroyed. If it's an artifact or similar item, you automatically fail.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "SWtwVARfxt515DnY"
+          },
+          {
+            "name": "Heal",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "healing",
+              "manipulate"
+            ],
+            "castingTime": "1 to 3",
+            "duration": "",
+            "range": "varies",
+            "area": "",
+            "targets": "1 willing living creature or 1 undead",
+            "save": "basic fortitude",
+            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "ezQA5TfaCROQLDrU"
+          }
+        ],
+        "lv10spells": [
+          {
+            "name": "Chain Lightning",
+            "type": "spell",
+            "level": 6,
+            "traits": [
+              "concentrate",
+              "electricity"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "500 feet",
+            "area": "",
+            "targets": "1 creature, plus any number of additional creatures",
+            "save": "basic reflex",
+            "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "1KLJQAWwhWwZptQb"
+          },
+          {
+            "name": "Tongues (Constant)",
+            "type": "spell",
+            "level": 5,
+            "traits": [
+              "uncommon",
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "1 hour",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "PjPiZnVkmrFK209a"
+          },
+          {
+            "name": "Speak with Plants (Constant)",
+            "type": "spell",
+            "level": 4,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "10 minutes",
+            "range": "",
+            "area": "",
+            "targets": "",
+            "save": "",
+            "description": "<p>You can ask questions of and receive answers from plants and fungi, but the spell doesn't make them more friendly or intelligent than normal. Most normal plants and fungi have a distinctive view of the world around them, so they don't recognize details about creatures or know anything about the world beyond their immediate vicinity. Cunning plant or fungus monsters are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "gFJRyAsl9TySe5eV"
+          },
+          {
+            "name": "Heal",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "healing",
+              "manipulate"
+            ],
+            "castingTime": "1 to 3",
+            "duration": "",
+            "range": "varies",
+            "area": "",
+            "targets": "1 willing living creature or 1 undead",
+            "save": "basic fortitude",
+            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "YL1cwW2c5AJEbSbz"
+          }
+        ],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>At first glance, a huldra seems a simple creature-a human in plain robes or peasant dress, sporting long, unbound hair. These tresses and full skirts in fact disguise the huldra's supernatural features: a hollow wooden back, a long bovine tail, and incredible strength.</p>\n<p>Folk legends from the lands of the north describe huldras as the creations of troll witches, intended to lure potential meals to the slaughter. Indeed, a huldra's regeneration is so similar to a troll's that a link between the two creatures seems entirely possible, but huldras despise trolls and resent tales suggesting any connection between them. Rather, huldras are wardens of the woodlands they occupy. Grown from saplings by powerful forest-dwelling fey as a response to humanoid encroachment, huldras protect and parley for the forest itself. Woodland creatures adore huldras, and sometimes approach humans or elves thinking they're huldras. This illusion is shattered if the animal sees the humanoid's back is made of flesh or that they're lacking a tail, at which point the animal recoils and runs away.</p>\n<p>Huldras respond well to travelers who show respect and deference for the forest, bestowing those they favor with supernatural luck and fortune. Those who scorn or attack a huldra, or those who mock their distinctive, bovine tails, find themselves plagued by poor decisions and even worse luck. Huldras commonly carry a bad reputation as sirens of the deep forest-cunning monsters who seek to lure woodcutters and unwary adventurers to uncertain ends. These stories largely come from miscreants foolish enough to have treated a huldra rudely and later complain about how they were unjustly persecuted. Even woodcutters and hunters can stay in the good graces of huldras provided they plant few trees to replace what they've taken and don't kill any creatures they don't eat.</p>\n<p>Though huldras choose to appear unassuming, the attention they put into disguising the supernatural parts of their bodies is sometimes lacking when it comes to their strength. They often perform feats of strength, like bending horseshoes straight or lifting heavy objects, without realizing they're breaking their carefully crafted facade.</p>",
+    "recallKnowledge": "Nature, DC: 40",
+    "originalCreature": {}
+  }
+}

@@ -1,0 +1,861 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ijda",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Rare",
+    "Large",
+    "Chaotic",
+    "Evil",
+    "Fiend",
+    "Nindoru",
+    "Unholy",
+    "(caster)"
+  ],
+  "source": "Pathfinder #197: Let the Leaves Fall",
+  "perception": {
+    "value": 15,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Aklo",
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Broken Katana",
+      "quantity": 1,
+      "description": "<p>A katana is a curved, single-edged sword known for its wickedly sharped blade.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": [
+        "uncommon",
+        "deadly-d8",
+        "two-hand-d10",
+        "versatile-p"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 100,
+    "max": 100,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "emotion",
+    "fatigued",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "void",
+      "value": 5
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "mental",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "silver",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Aura of Forgetfulness",
+      "actions": null,
+      "traits": [
+        "aura",
+        "mental",
+        "occult"
+      ],
+      "description": "<p>30 feet. A creature who begins its turn in the aura must attempt a DC 21 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Aura of Forgetfulness for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Slowed 1 until the end of its next turn, as it has trouble remembering what it intended to do.</p>\n<p><strong>Critical Failure</strong> As failure, but Slowed 2.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Soul Shred",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Creatures killed by a idja are difficult to bring back to life or animate as undead. The idja automatically attempts to counteract any attempt to resurrect or animate any creature that it has killed (counteract modifier +14, counteract rank 3). If the idja who slew the creature is itself slain, the creature can be brought back from death or become undead normally.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Broken Katana",
+      "bonus": 17,
+      "traits": [
+        "deadly-d8",
+        "magical",
+        "reach-15",
+        "two-hand-d10",
+        "unholy",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2+1d8",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Manifest False Memories",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "emotion",
+        "mental",
+        "occult"
+      ],
+      "description": "<p>The ijda releases a cloud of red butterflies from its body, each of which carries a false memory that infects those they brush against. All non-nindoru creatures within 10 feet of the ijda must attempt a DC 21 Will save. The ijda can't Manifest False Memories for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stupefied 1 until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 and Confused until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is stupefied 1 and confused for 1 minute. It can attempt a new save at the end of each of its turns to end the effects.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ruin Wielder",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a ijda wields a broken non-magical weapon, they do not take any of the disadvantages of the weapon being broken. While the ijda wields it, the weapon becomes a +1 striking weapon that deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage on a successful hit.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 16,
+      "dc": 24,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 3,
+      "cantrips": [
+        {
+          "name": "Daze",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "FbnBv7G45cVozFJ3"
+        }
+      ],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "C87slniCJsgBKjT2",
+      "modifications": [],
+      "lv1spells": [
+        {
+          "name": "True Strike",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "1",
+          "duration": "until the end of your turn",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "YE56ElUY1stNCZBV"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Touch of Idiocy",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "will",
+          "description": "<p>You dull the target's mind, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stupefied 1 until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is Stupefied 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Stupefied 3 for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "jw3tCtJXK4hgGtBk"
+        },
+        {
+          "name": "Item Facade",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 object no more than 10 feet by 10 feet by 10 feet",
+          "save": "",
+          "description": "<p>You make the target object look and feel as though it were in much better or worse physical condition. When you cast this spell, decide whether you want to make the object look decrepit or perfect. An item made to look decrepit appears Broken and shoddy. An intact item made to look better appears as though it's brand new and highly polished or well maintained. A Broken item appears to be intact and functional. Destroyed items can't be affected by this spell. A creature that Interacts with the item can attempt to disbelieve the illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration is 24 hours.</p>\n<p><strong>Heightened (3rd)</strong> The duration is unlimited.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "CLnLRkJjMvRS8w09"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Shatter",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object",
+          "save": "",
+          "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>, and the Hardness the spell ignores increases by 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KYZe9BEXSKUkgU9T"
+        },
+        {
+          "name": "Phantom Pain",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Illusory pain wracks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> mental damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span> and the persistent damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Sq10Mu6yPcxLefDd"
+        }
+      ],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>Ijdas are creatures of forgetfulness. Born from souls who were once enlightened but then renounced it and their role in the cycle of reincarnation, they curse the futility of their existence and find pleasure in leading others to the same fate.</p>\n<p>Ijdas appear as towering humanoids, their bodies bloated and constantly bursting with small red butterflies that flitter away before melting into mist. Their arms are overly long and so broken as to writhe more like tentacles, affording them an unsettling combat style with greater reach than most large creatures enjoy. They wear clothing and capes made of moldy straw and wield broken swords whose shattered blades still float roughly in place. Their most unsettling features are their complete lack of heads; instead, where a head should be sits a wicker cage filled with a writhing cloud of butterflies. Yet still, they see, hear, and speak without issue, as if their heads remained in place.</p>\n<p>Formed without heads or even brains, an idja's mind is shared among the flocks of butterflies in their head cages or bursting from their bodies, and as each of these insects escapes and fades away, these forgetful fiends lose another potential thought. Unable to learn new things, any actions they take stem from memories etched into their souls or directives they blindly follow from other nindorus or creatures they've come to accept as superiors. Their movements, words, and reactions are all conducted via a type of muscle memory based on how their souls believe they should respond to their external stimuli. As a result, most now serve as brutal guardians, since their forgetfulness also prevents them from being able to sleep.</p>\n<hr />\n<p>When an evil mortal soul that has been reincarnated multiple times is wrenched from the cycle of souls and corrupted, it can undergo a horrific transformation into a fiend known as a nindoru. A force for entropy and the breaking of cycles, nindorus are hideous creatures whose bodies often appear distorted, who wield weapons that have been shattered yet still function, and whose true face is often hidden from view. They display traits one might expect to see in an undead creature, such as decaying flesh or exposed bones, yet a nindoru is very much still alive.</p>\n<p>Each nindoru epitomizes the fracture of a specific cycle, be it one from the natural world or from societal traditions. To the nindoru, nothing is more delicious than the consumption of a creature who has reincarnated multiple times, with those who are theoretically about to ascend to true enlightenment presenting the tastiest meal. Those slain by a nindoru are themselves torn from the cycle—the lucky ones move on to the Boneyard for judgment, but many are instead corrupted to form more of these horrific fiends.</p>\n<p>Followers of Sangpotshi find nindoru to be particularly abhorrent and count them among the greatest threats imaginable. Most commonly found in regions of the world where the reincarnation cycle is strongest, nindorus are, like rakshasas and oni, associated most strongly with the Material Plane.</p>\n<h2>Reincarnated Souls</h2>\n<p>In some cases, you'll know if a creature a nindoru attacks has a reincarnated soul. Ancestries like samsarans are always reincarnated souls, and a PC's backstory or even their background can often indicate the presence of a previous life. All of the PCs in Season of Ghosts qualify as reincarnated souls, as they've relived their lives over and over for decades. If you ever need to determine if a creature's soul is reincarnated for the purpose of adjudicating a nindoru's ability, attempt a @Check[flat|dc:11]—on a success, it has a reincarnated soul.</p>\n<h2>Nindoru Demigods</h2>\n<p>The most powerful nindorus are demigods, although their cults are quite rare. Prone to reincarnation after death, nindoru demigods like Kugaptee are more properly known as \"nindoru ascetics.\"</p>\n<h2>Nindoru Traitors</h2>\n<p>While most nindorus are purely chaotic evil in nature, legends tell of exceptionally rare nindorus who manage to escape their own nature and ascend, reincarnating after death into kami or other more benevolent spirits and shedding the nindoru trait as they do so. Of course, these \"traitors\" are regarded as the most delicious meals imaginable by the nindorus left behind.</p>\n<h2>Nindoru Butterflies</h2>\n<p>One of the strangest shared traits of the various types of nindoru are the blood-red butterflies that seem to follow them around, nest on their bodies, or periodically emerge from their wounds. These unnerving insects are physical manifestations of the nindorus' thoughts and symbolize the countless past lives they once lived but turned their backs on. Nindoru butterflies never last long once they flutter more than a few feet from their source, fading away into smoke that quickly dissipates into the air.</p>\n<h2>Other Nindorus</h2>\n<p>Many other types of nindorus exist beyond the four presented on these pages. Others include the corpse-copying akashtis (sobbing nindorus), infiltrators of society known as kagekumas (lurking nindorus), the dead defiling shisagishins (crooked nindorus), and the powerful and brutal argyrzeis (headless nindorus).</p>",
+  "recallKnowledge": "Religion, DC: 27",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 15,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Ijda",
+    "type": "Creature",
+    "level": 6,
+    "traits": [
+      "Rare",
+      "Large",
+      "Chaotic",
+      "Evil",
+      "Fiend",
+      "Nindoru",
+      "Unholy",
+      "(caster)"
+    ],
+    "source": "Pathfinder #197: Let the Leaves Fall",
+    "perception": {
+      "value": 15,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Aklo",
+      "Common",
+      "Necril"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 16,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 1
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 3
+    },
+    "items": [
+      {
+        "name": "Broken Katana",
+        "quantity": 1,
+        "description": "<p>A katana is a curved, single-edged sword known for its wickedly sharped blade.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": [
+          "uncommon",
+          "deadly-d8",
+          "two-hand-d10",
+          "versatile-p"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 100,
+      "max": 100,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "emotion",
+      "fatigued",
+      "sleep"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "void",
+        "value": 5
+      },
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "mental",
+        "value": 5
+      }
+    ],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "silver",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Aura of Forgetfulness",
+        "actions": null,
+        "traits": [
+          "aura",
+          "mental",
+          "occult"
+        ],
+        "description": "<p>30 feet. A creature who begins its turn in the aura must attempt a DC 21 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Aura of Forgetfulness for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Slowed 1 until the end of its next turn, as it has trouble remembering what it intended to do.</p>\n<p><strong>Critical Failure</strong> As failure, but Slowed 2.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Soul Shred",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Creatures killed by a idja are difficult to bring back to life or animate as undead. The idja automatically attempts to counteract any attempt to resurrect or animate any creature that it has killed (counteract modifier +14, counteract rank 3). If the idja who slew the creature is itself slain, the creature can be brought back from death or become undead normally.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Broken Katana",
+        "bonus": 17,
+        "traits": [
+          "deadly-d8",
+          "magical",
+          "reach-15",
+          "two-hand-d10",
+          "unholy",
+          "versatile-p"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+8",
+            "type": "slashing"
+          },
+          {
+            "roll": "1d6",
+            "type": "mental"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+8)*2+1d8",
+            "type": "slashing"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "mental"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Manifest False Memories",
+        "actions": 2,
+        "traits": [
+          "concentrate",
+          "emotion",
+          "mental",
+          "occult"
+        ],
+        "description": "<p>The ijda releases a cloud of red butterflies from its body, each of which carries a false memory that infects those they brush against. All non-nindoru creatures within 10 feet of the ijda must attempt a DC 21 Will save. The ijda can't Manifest False Memories for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stupefied 1 until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 and Confused until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is stupefied 1 and confused for 1 minute. It can attempt a new save at the end of each of its turns to end the effects.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Ruin Wielder",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When a ijda wields a broken non-magical weapon, they do not take any of the disadvantages of the weapon being broken. While the ijda wields it, the weapon becomes a +1 striking weapon that deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage on a successful hit.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Occult Innate Spells",
+        "type": "innate",
+        "bonus": 16,
+        "dc": 24,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 3,
+        "cantrips": [
+          {
+            "name": "Daze",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "manipulate",
+              "mental",
+              "nonlethal"
+            ],
+            "castingTime": "2",
+            "duration": "1 round",
+            "range": "60 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "basic will",
+            "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "FbnBv7G45cVozFJ3"
+          }
+        ],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "C87slniCJsgBKjT2",
+        "modifications": [],
+        "lv1spells": [
+          {
+            "name": "True Strike",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate"
+            ],
+            "castingTime": "1",
+            "duration": "until the end of your turn",
+            "range": "",
+            "area": "",
+            "targets": "",
+            "save": "",
+            "description": "<p>A glimpse into the future ensures your next blow strikes true. The next time you make an attack roll before the end of your turn, roll the attack twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>\n",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "YE56ElUY1stNCZBV"
+          }
+        ],
+        "lv2spells": [
+          {
+            "name": "Touch of Idiocy",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 living creature",
+            "save": "will",
+            "description": "<p>You dull the target's mind, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stupefied 1 until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is Stupefied 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Stupefied 3 for 1 minute.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "jw3tCtJXK4hgGtBk"
+          },
+          {
+            "name": "Item Facade",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "illusion",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "1 hour",
+            "range": "touch",
+            "area": "",
+            "targets": "1 object no more than 10 feet by 10 feet by 10 feet",
+            "save": "",
+            "description": "<p>You make the target object look and feel as though it were in much better or worse physical condition. When you cast this spell, decide whether you want to make the object look decrepit or perfect. An item made to look decrepit appears Broken and shoddy. An intact item made to look better appears as though it's brand new and highly polished or well maintained. A Broken item appears to be intact and functional. Destroyed items can't be affected by this spell. A creature that Interacts with the item can attempt to disbelieve the illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration is 24 hours.</p>\n<p><strong>Heightened (3rd)</strong> The duration is unlimited.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "CLnLRkJjMvRS8w09"
+          }
+        ],
+        "lv3spells": [
+          {
+            "name": "Shatter",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 unattended object",
+            "save": "",
+            "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>, and the Hardness the spell ignores increases by 2.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "KYZe9BEXSKUkgU9T"
+          },
+          {
+            "name": "Phantom Pain",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "illusion",
+              "manipulate",
+              "mental"
+            ],
+            "castingTime": "2",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "will",
+            "description": "<p>Illusory pain wracks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> mental damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span> and the persistent damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "Sq10Mu6yPcxLefDd"
+          }
+        ],
+        "lv4spells": [],
+        "lv5spells": [],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>Ijdas are creatures of forgetfulness. Born from souls who were once enlightened but then renounced it and their role in the cycle of reincarnation, they curse the futility of their existence and find pleasure in leading others to the same fate.</p>\n<p>Ijdas appear as towering humanoids, their bodies bloated and constantly bursting with small red butterflies that flitter away before melting into mist. Their arms are overly long and so broken as to writhe more like tentacles, affording them an unsettling combat style with greater reach than most large creatures enjoy. They wear clothing and capes made of moldy straw and wield broken swords whose shattered blades still float roughly in place. Their most unsettling features are their complete lack of heads; instead, where a head should be sits a wicker cage filled with a writhing cloud of butterflies. Yet still, they see, hear, and speak without issue, as if their heads remained in place.</p>\n<p>Formed without heads or even brains, an idja's mind is shared among the flocks of butterflies in their head cages or bursting from their bodies, and as each of these insects escapes and fades away, these forgetful fiends lose another potential thought. Unable to learn new things, any actions they take stem from memories etched into their souls or directives they blindly follow from other nindorus or creatures they've come to accept as superiors. Their movements, words, and reactions are all conducted via a type of muscle memory based on how their souls believe they should respond to their external stimuli. As a result, most now serve as brutal guardians, since their forgetfulness also prevents them from being able to sleep.</p>\n<hr />\n<p>When an evil mortal soul that has been reincarnated multiple times is wrenched from the cycle of souls and corrupted, it can undergo a horrific transformation into a fiend known as a nindoru. A force for entropy and the breaking of cycles, nindorus are hideous creatures whose bodies often appear distorted, who wield weapons that have been shattered yet still function, and whose true face is often hidden from view. They display traits one might expect to see in an undead creature, such as decaying flesh or exposed bones, yet a nindoru is very much still alive.</p>\n<p>Each nindoru epitomizes the fracture of a specific cycle, be it one from the natural world or from societal traditions. To the nindoru, nothing is more delicious than the consumption of a creature who has reincarnated multiple times, with those who are theoretically about to ascend to true enlightenment presenting the tastiest meal. Those slain by a nindoru are themselves torn from the cycle—the lucky ones move on to the Boneyard for judgment, but many are instead corrupted to form more of these horrific fiends.</p>\n<p>Followers of Sangpotshi find nindoru to be particularly abhorrent and count them among the greatest threats imaginable. Most commonly found in regions of the world where the reincarnation cycle is strongest, nindorus are, like rakshasas and oni, associated most strongly with the Material Plane.</p>\n<h2>Reincarnated Souls</h2>\n<p>In some cases, you'll know if a creature a nindoru attacks has a reincarnated soul. Ancestries like samsarans are always reincarnated souls, and a PC's backstory or even their background can often indicate the presence of a previous life. All of the PCs in Season of Ghosts qualify as reincarnated souls, as they've relived their lives over and over for decades. If you ever need to determine if a creature's soul is reincarnated for the purpose of adjudicating a nindoru's ability, attempt a @Check[flat|dc:11]—on a success, it has a reincarnated soul.</p>\n<h2>Nindoru Demigods</h2>\n<p>The most powerful nindorus are demigods, although their cults are quite rare. Prone to reincarnation after death, nindoru demigods like Kugaptee are more properly known as \"nindoru ascetics.\"</p>\n<h2>Nindoru Traitors</h2>\n<p>While most nindorus are purely chaotic evil in nature, legends tell of exceptionally rare nindorus who manage to escape their own nature and ascend, reincarnating after death into kami or other more benevolent spirits and shedding the nindoru trait as they do so. Of course, these \"traitors\" are regarded as the most delicious meals imaginable by the nindorus left behind.</p>\n<h2>Nindoru Butterflies</h2>\n<p>One of the strangest shared traits of the various types of nindoru are the blood-red butterflies that seem to follow them around, nest on their bodies, or periodically emerge from their wounds. These unnerving insects are physical manifestations of the nindorus' thoughts and symbolize the countless past lives they once lived but turned their backs on. Nindoru butterflies never last long once they flutter more than a few feet from their source, fading away into smoke that quickly dissipates into the air.</p>\n<h2>Other Nindorus</h2>\n<p>Many other types of nindorus exist beyond the four presented on these pages. Others include the corpse-copying akashtis (sobbing nindorus), infiltrators of society known as kagekumas (lurking nindorus), the dead defiling shisagishins (crooked nindorus), and the powerful and brutal argyrzeis (headless nindorus).</p>",
+    "recallKnowledge": "Religion, DC: 27",
+    "originalCreature": {}
+  }
+}

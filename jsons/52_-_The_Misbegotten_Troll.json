@@ -1,0 +1,603 @@
+{
+  "initiative": 0,
+  "initiativebonus": 31,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "The Misbegotten Troll",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Unique",
+    "Large",
+    "Chaotic",
+    "Evil",
+    "Giant",
+    "Troll"
+  ],
+  "source": "Pathfinder Kingmaker",
+  "perception": {
+    "value": 31,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Aklo",
+    "Fey",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [
+    {
+      "name": "Glaive",
+      "quantity": 1,
+      "description": "<p>This polearm consists of a long, single-edged blade on the end of a 7-foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "deadly-d8",
+        "forceful",
+        "magical",
+        "reach"
+      ]
+    },
+    {
+      "name": "Full Plate",
+      "quantity": 1,
+      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of Padded Armor and a pair of gauntlets.</p>",
+      "level": 2,
+      "price": "30 gp ",
+      "traits": [
+        "bulwark"
+      ]
+    },
+    {
+      "name": "Chain of Lovelies",
+      "quantity": 1,
+      "description": "",
+      "level": 0,
+      "price": "500 gp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 40,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+2 status to all saves vs. fear effects",
+  "hp": {
+    "value": 430,
+    "max": 430,
+    "note": "regeneration 45 (deactivated by acid or fire)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    },
+    {
+      "name": "Vigorous Shake",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The troll king takes Persistent acid or fire damage.</p>\n<hr />\n<p><strong>Effect</strong> The troll king shakes itself to remove persistent acid or fire effects. The troll king immediately attempts a DC 15 Flat check to end the persistent damage that triggered this reaction. If the troll king succeeds at this check, it can immediately use Primordial Roar as part of this reaction.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 35,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+23",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+23)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+23",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+23)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Glaive",
+      "bonus": 35,
+      "traits": [
+        "deadly-d8",
+        "forceful",
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+17",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+17)*2+1d8",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Forced Regeneration",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p><strong>Requirements</strong> The troll king's regeneration is not currently deactivated.</p>\n<hr />\n<p><strong>Effect</strong> The troll king regains 25 healing HP.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jangle the Chain",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "manipulate",
+        "mental",
+        "primal"
+      ],
+      "description": "<p>The Misbegotten Troll shakes his chain of caged sprites, causing the supernatural cages to amplify their despair. All creatures other than the Misbegotten Troll or his smilodon pets within 30 feet must attempt a DC 40 Will save. The Misbegotten Troll can't Jangle the Chain again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Jangle the Chain for 24 hours.</p>\n<p><strong>Success</strong> The creature is Sickened 1 by despair.</p>\n<p><strong>Failure</strong> The creature is Stunned 1 by sadness, and then sickened 1 by despair once the stun effect ends.</p>\n<p><strong>Critical Failure</strong> The creature is Stunned 3 by sadness, and then Sickened 2 by despair once the stun effect ends.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Primordial Roar",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The troll king unleashes a bestial roar. Each non-troll creature within 100 feet must attempt a DC 40 Will save. The creature is then temporarily immune for 10 minutes.</p>\n<p>This ability doesn't affect his pet black smilodons.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1</p>\n<p><strong>Failure</strong> The creature is Frightened 2</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 3</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rend",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>claw</p>\n<details><summary>See rules...</summary>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Unstoppable Charge",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The troll king Strides twice in a straight line. It can make up to two claw Strikes during this movement and one jaws Strike at the end of its movement. It can't Strike the same creature more than once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vicious Ranseur",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the Misbegotten Troll attacks with his glaive, it manifests dozens of hooks and spikes along its length and blade. He deals an additional <span class=\"roll\" onclick=\"roll(this)\">3d8</span> piercing damage to any creature he strikes but inflicts <span class=\"roll\" onclick=\"roll(this)\">1d8</span> piercing damage to himself with each glaive Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Some trolls have learned the skills necessary to survive well beyond the typical life expectancy for their kind and rally others to follow their lead. These champions develop a number of talents that make them worthy leaders and potent hunters-namely their abilities to willingly boost the rate of their regeneration and to shake off the acid and fire that would hinder it, not to mention a bestial roar that can send would-be predators scurrying off. Troll kings possess a cunning far beyond their younger kin- they know to keep their allies close, and their enemies even closer. If a troll king so much as suspects that one of its followers is plotting to usurp it, retribution is swift and fatal.</p>\n<hr />\n<p>Slavering, cruel, practically invincible brutes: this is the villager's stock description for the dread monsters known as trolls. But words hardly do justice to trolls' capacity for destruction. They are as bloodthirsty as orcs but lacking the discipline, as massive as giants but capable of regenerating wounded flesh in an instant, and as reprobate as ogres but with twice the strength. The only way to really understand the wanton violence of a troll is to experience it firsthand-a fate few would wish even upon their worst enemies.</p>\n<p>The first thing that comes to mind when most think of trolls is the creatures' power of bodily regeneration. So potent is this regeneration that the only way to overcome it is to exploit the troll's vulnerability to acid and fire. It is not enough to slay the troll with caustic or flaming weapons, though-even the smallest scrap of a troll's flesh can regenerate into a full-size troll given enough time. The only sure way to eradicate a troll menace is to burn the monster's entire body until nothing remains.</p>\n<p>Trolls are solitary hunters, for their wickedness is anathema even to other giants. They occasionally roam in small gangs of two to four, but only when prey is plentiful or a particularly strong counterforce has broached their hunting grounds. In rare instances, an old and powerful troll comes to lead small tribes of trolls. Such \"troll kings\" possess enough cunning to lead their hordes in devastating raids and massacres, and their presence permanently alters the surrounding ecosystem. A wide variety of trolls exist, from the terrible monster traditionally associated with the name to the water-dwelling scrag and hybrid flood troll. Regional variations exist as well-mountain trolls among stony peaks, for instance, or moss trolls in swampy bayous-but all share the same trademark regenerative powers and insatiable thirst for blood.</p>",
+  "recallKnowledge": ", DC: 38",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 31,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "The Misbegotten Troll",
+    "type": "Creature",
+    "level": 18,
+    "traits": [
+      "Unique",
+      "Large",
+      "Chaotic",
+      "Evil",
+      "Giant",
+      "Troll"
+    ],
+    "source": "Pathfinder Kingmaker",
+    "perception": {
+      "value": 31,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Aklo",
+      "Fey",
+      "Jotun"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 35,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 35,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 9
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 8
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [
+      {
+        "name": "Glaive",
+        "quantity": 1,
+        "description": "<p>This polearm consists of a long, single-edged blade on the end of a 7-foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "deadly-d8",
+          "forceful",
+          "magical",
+          "reach"
+        ]
+      },
+      {
+        "name": "Full Plate",
+        "quantity": 1,
+        "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of Padded Armor and a pair of gauntlets.</p>",
+        "level": 2,
+        "price": "30 gp ",
+        "traits": [
+          "bulwark"
+        ]
+      },
+      {
+        "name": "Chain of Lovelies",
+        "quantity": 1,
+        "description": "",
+        "level": 0,
+        "price": "500 gp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 40,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 36,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "+2 status to all saves vs. fear effects",
+    "hp": {
+      "value": 430,
+      "max": 430,
+      "note": "regeneration 45 (deactivated by acid or fire)",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "fire",
+        "value": 20
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Attack of Opportunity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      },
+      {
+        "name": "Vigorous Shake",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The troll king takes Persistent acid or fire damage.</p>\n<hr />\n<p><strong>Effect</strong> The troll king shakes itself to remove persistent acid or fire effects. The troll king immediately attempts a DC 15 Flat check to end the persistent damage that triggered this reaction. If the troll king succeeds at this check, it can immediately use Primordial Roar as part of this reaction.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 35,
+        "traits": [
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d12+23",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d12+23)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 24,
+        "traits": [
+          "agile",
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+23",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+23)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Glaive",
+        "bonus": 35,
+        "traits": [
+          "deadly-d8",
+          "forceful",
+          "magical",
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+17",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+17)*2+1d8",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Forced Regeneration",
+        "actions": 1,
+        "traits": [
+          "concentrate"
+        ],
+        "description": "<p><strong>Requirements</strong> The troll king's regeneration is not currently deactivated.</p>\n<hr />\n<p><strong>Effect</strong> The troll king regains 25 healing HP.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Jangle the Chain",
+        "actions": 1,
+        "traits": [
+          "auditory",
+          "emotion",
+          "manipulate",
+          "mental",
+          "primal"
+        ],
+        "description": "<p>The Misbegotten Troll shakes his chain of caged sprites, causing the supernatural cages to amplify their despair. All creatures other than the Misbegotten Troll or his smilodon pets within 30 feet must attempt a DC 40 Will save. The Misbegotten Troll can't Jangle the Chain again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Jangle the Chain for 24 hours.</p>\n<p><strong>Success</strong> The creature is Sickened 1 by despair.</p>\n<p><strong>Failure</strong> The creature is Stunned 1 by sadness, and then sickened 1 by despair once the stun effect ends.</p>\n<p><strong>Critical Failure</strong> The creature is Stunned 3 by sadness, and then Sickened 2 by despair once the stun effect ends.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Primordial Roar",
+        "actions": 1,
+        "traits": [
+          "auditory",
+          "emotion",
+          "fear",
+          "mental"
+        ],
+        "description": "<p>The troll king unleashes a bestial roar. Each non-troll creature within 100 feet must attempt a DC 40 Will save. The creature is then temporarily immune for 10 minutes.</p>\n<p>This ability doesn't affect his pet black smilodons.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1</p>\n<p><strong>Failure</strong> The creature is Frightened 2</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 3</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Rend",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>claw</p>\n<details><summary>See rules...</summary>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<hr />\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Unstoppable Charge",
+        "actions": 3,
+        "traits": [],
+        "description": "<p>The troll king Strides twice in a straight line. It can make up to two claw Strikes during this movement and one jaws Strike at the end of its movement. It can't Strike the same creature more than once.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Vicious Ranseur",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the Misbegotten Troll attacks with his glaive, it manifests dozens of hooks and spikes along its length and blade. He deals an additional <span class=\"roll\" onclick=\"roll(this)\">3d8</span> piercing damage to any creature he strikes but inflicts <span class=\"roll\" onclick=\"roll(this)\">1d8</span> piercing damage to himself with each glaive Strike.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Some trolls have learned the skills necessary to survive well beyond the typical life expectancy for their kind and rally others to follow their lead. These champions develop a number of talents that make them worthy leaders and potent hunters-namely their abilities to willingly boost the rate of their regeneration and to shake off the acid and fire that would hinder it, not to mention a bestial roar that can send would-be predators scurrying off. Troll kings possess a cunning far beyond their younger kin- they know to keep their allies close, and their enemies even closer. If a troll king so much as suspects that one of its followers is plotting to usurp it, retribution is swift and fatal.</p>\n<hr />\n<p>Slavering, cruel, practically invincible brutes: this is the villager's stock description for the dread monsters known as trolls. But words hardly do justice to trolls' capacity for destruction. They are as bloodthirsty as orcs but lacking the discipline, as massive as giants but capable of regenerating wounded flesh in an instant, and as reprobate as ogres but with twice the strength. The only way to really understand the wanton violence of a troll is to experience it firsthand-a fate few would wish even upon their worst enemies.</p>\n<p>The first thing that comes to mind when most think of trolls is the creatures' power of bodily regeneration. So potent is this regeneration that the only way to overcome it is to exploit the troll's vulnerability to acid and fire. It is not enough to slay the troll with caustic or flaming weapons, though-even the smallest scrap of a troll's flesh can regenerate into a full-size troll given enough time. The only sure way to eradicate a troll menace is to burn the monster's entire body until nothing remains.</p>\n<p>Trolls are solitary hunters, for their wickedness is anathema even to other giants. They occasionally roam in small gangs of two to four, but only when prey is plentiful or a particularly strong counterforce has broached their hunting grounds. In rare instances, an old and powerful troll comes to lead small tribes of trolls. Such \"troll kings\" possess enough cunning to lead their hordes in devastating raids and massacres, and their presence permanently alters the surrounding ecosystem. A wide variety of trolls exist, from the terrible monster traditionally associated with the name to the water-dwelling scrag and hybrid flood troll. Regional variations exist as well-mountain trolls among stony peaks, for instance, or moss trolls in swampy bayous-but all share the same trademark regenerative powers and insatiable thirst for blood.</p>",
+    "recallKnowledge": ", DC: 38",
+    "originalCreature": {}
+  }
+}

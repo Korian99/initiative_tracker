@@ -1,0 +1,393 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Wood Golem",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Construct",
+    "Golem",
+    "Mindless"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "perception": {
+    "value": 12,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 95,
+    "max": 95,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "magic"
+  ],
+  "resistances": [
+    {
+      "exceptions": [
+        "adamantine"
+      ],
+      "type": "physical",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Golem Antimagic",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Harmed by fire (<span class=\"roll\" onclick=\"roll(this)\">4d8</span> untyped, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> untyped from areas or persistent damage); healed by plant (area <span class=\"roll\" onclick=\"roll(this)\">2d6</span> healing HP); slowed by earth</p><hr /><p><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><ul><li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li><li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li><li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be Slowed 1 for <span class=\"roll\" onclick=\"roll(this)\">2d6</span> rounds instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li><li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li></ul></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Splinter",
+      "actions": -1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p><strong>Trigger</strong> The wood golem takes physical damage</p>\n<hr />\n<p><strong>Effect</strong> A jagged, sizable splinter of wood lances out at the golem's attacker. The golem makes a splinter Strike against an adjacent creature without triggering reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vulnerable to Shape Wood",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A wood golem targeted by Shape Wood takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> untyped damage per spell rank, with a basic Fortitude save against the caster's spell DC.</p>\n<p>On a critical failure, the golem is also Immobilized for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 17,
+      "traits": [
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Splinter",
+      "bonus": 16,
+      "traits": [
+        "magical",
+        "range-increment-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Splinter Volley",
+      "actions": 2,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p>The wood golem makes up to four splinter Strikes, each against a different target.</p>\n<p>These attacks count toward the wood golem's multiple attack penalty, but the multiple attack penalty doesn't increase until after the wood golem makes all of its attacks.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Wood golems are often given vaguely humanoid shapes, almost as if cobbled together from scraps of firewood and discarded burls. It's less common for wood golems to have artistic embellishments such as engraved patterns, or to be carved in the shapes of different types of creatures to meet the tastes of their owners. While wealthy patrons have been known to commission wood golems to be painstakingly carved to resemble themselves or their ancestors, to serve dual purposes of protection and ego bolstering, most wood golem crafters don't bother. Druids and creatures who protect woodlands, such as arboreals, typically see wood golems as an affront or an abomination, akin to the horror humanoids often feel when facing a carrion or flesh golem. As a result, it is rare to see such creatures serving as guardians for fey or druidic holy sites, despite the thematic match between the wood golem's appearance and such locations.</p>\n<hr />\n<p>The shape and structure of a golem are limited only by the power and creativity of its crafter. Over the ages, skilled minds and hands have refined the formulas for creating specific types of golems, resulting in the development of common forms. The secrets of creating the types of golems presented here may be guarded within the halls of famous golemworks or the forgotten libraries of many worlds.</p>",
+  "recallKnowledge": "Arcana, Crafting, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 12,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Wood Golem",
+    "type": "Creature",
+    "level": 6,
+    "traits": [
+      "Uncommon",
+      "Medium",
+      "Construct",
+      "Golem",
+      "Mindless"
+    ],
+    "source": "Pathfinder Bestiary 2",
+    "perception": {
+      "value": 12,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": -5
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 95,
+      "max": 95,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "magic"
+    ],
+    "resistances": [
+      {
+        "exceptions": [
+          "adamantine"
+        ],
+        "type": "physical",
+        "value": 5
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Golem Antimagic",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Harmed by fire (<span class=\"roll\" onclick=\"roll(this)\">4d8</span> untyped, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> untyped from areas or persistent damage); healed by plant (area <span class=\"roll\" onclick=\"roll(this)\">2d6</span> healing HP); slowed by earth</p><hr /><p><p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><ul><li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li><li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li><li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be Slowed 1 for <span class=\"roll\" onclick=\"roll(this)\">2d6</span> rounds instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li><li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li></ul></p>",
+        "collapsed": false
+      },
+      {
+        "name": "Splinter",
+        "actions": -1,
+        "traits": [
+          "arcane"
+        ],
+        "description": "<p><strong>Trigger</strong> The wood golem takes physical damage</p>\n<hr />\n<p><strong>Effect</strong> A jagged, sizable splinter of wood lances out at the golem's attacker. The golem makes a splinter Strike against an adjacent creature without triggering reactions.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Vulnerable to Shape Wood",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A wood golem targeted by Shape Wood takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> untyped damage per spell rank, with a basic Fortitude save against the caster's spell DC.</p>\n<p>On a critical failure, the golem is also Immobilized for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 17,
+        "traits": [
+          "magical",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+8",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+8)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Splinter",
+        "bonus": 16,
+        "traits": [
+          "magical",
+          "range-increment-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+8",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+8)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Splinter Volley",
+        "actions": 2,
+        "traits": [
+          "arcane"
+        ],
+        "description": "<p>The wood golem makes up to four splinter Strikes, each against a different target.</p>\n<p>These attacks count toward the wood golem's multiple attack penalty, but the multiple attack penalty doesn't increase until after the wood golem makes all of its attacks.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Wood golems are often given vaguely humanoid shapes, almost as if cobbled together from scraps of firewood and discarded burls. It's less common for wood golems to have artistic embellishments such as engraved patterns, or to be carved in the shapes of different types of creatures to meet the tastes of their owners. While wealthy patrons have been known to commission wood golems to be painstakingly carved to resemble themselves or their ancestors, to serve dual purposes of protection and ego bolstering, most wood golem crafters don't bother. Druids and creatures who protect woodlands, such as arboreals, typically see wood golems as an affront or an abomination, akin to the horror humanoids often feel when facing a carrion or flesh golem. As a result, it is rare to see such creatures serving as guardians for fey or druidic holy sites, despite the thematic match between the wood golem's appearance and such locations.</p>\n<hr />\n<p>The shape and structure of a golem are limited only by the power and creativity of its crafter. Over the ages, skilled minds and hands have refined the formulas for creating specific types of golems, resulting in the development of common forms. The secrets of creating the types of golems presented here may be guarded within the halls of famous golemworks or the forgotten libraries of many worlds.</p>",
+    "recallKnowledge": "Arcana, Crafting, DC: 24",
+    "originalCreature": {}
+  }
+}

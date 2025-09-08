@@ -1,0 +1,423 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Melody On The Wind",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Huge",
+    "Air",
+    "Elemental"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "perception": {
+    "value": 21,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Sussuran"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 170,
+    "max": 170,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Hostile Duet",
+      "actions": -1,
+      "traits": [
+        "auditory"
+      ],
+      "description": "<p><strong>Trigger</strong> A hostile creature within 30 feet creates an effect with the auditory trait that provides bonuses to itself or its allies</p>\n<hr />\n<p><strong>Effect</strong> The melody on the wind recreates the auditory effect, gaining the bonuses for itself and its allies as long as the original effect persists.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Retune",
+      "actions": -1,
+      "traits": [
+        "auditory"
+      ],
+      "description": "<p><strong>Trigger</strong> The melody on the wind is targeted by a spell with the auditory trait</p>\n<hr />\n<p><strong>Effect</strong> The melody on the wind attempts to counteract the spell. If it succeeds, the spell effect is caught in a blast of wind that sweeps it back to its origin, affecting the caster. Targets of the triggering effect other than the melody on the wind are still affected normally.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft,\nfly 100 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Wind Gust",
+      "bonus": 23,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Push"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Solid Refrain",
+      "bonus": 23,
+      "traits": [
+        "range-increment-70"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+10",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+10)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Mesmerizing Melody",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "concentrate",
+        "mental",
+        "primal"
+      ],
+      "description": "<p>The melody on the wind sings in a sonorous chorus. Any creature in a 30 foot emanation must attempt a DC 30 Will save to resist becoming fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Fascinated for 1 round.</p>\n<p><strong>Failure</strong> The creature is fascinated for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swiftness",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The melody on the wind's movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>This cloud of song and sound has been caught by the wind and carried across the air. While the melody on the wind might enjoy the beauty of music, it is by nature a destructive elemental force.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 27",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 21,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Melody On The Wind",
+    "type": "Creature",
+    "level": 10,
+    "traits": [
+      "Huge",
+      "Air",
+      "Elemental"
+    ],
+    "source": "Pathfinder Bestiary 2",
+    "perception": {
+      "value": 21,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Sussuran"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 22,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "performance",
+        "modifier": 22,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 22,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 2
+    },
+    "wisdom": {
+      "value": 5
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 30,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 170,
+      "max": 170,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Hostile Duet",
+        "actions": -1,
+        "traits": [
+          "auditory"
+        ],
+        "description": "<p><strong>Trigger</strong> A hostile creature within 30 feet creates an effect with the auditory trait that provides bonuses to itself or its allies</p>\n<hr />\n<p><strong>Effect</strong> The melody on the wind recreates the auditory effect, gaining the bonuses for itself and its allies as long as the original effect persists.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Retune",
+        "actions": -1,
+        "traits": [
+          "auditory"
+        ],
+        "description": "<p><strong>Trigger</strong> The melody on the wind is targeted by a spell with the auditory trait</p>\n<hr />\n<p><strong>Effect</strong> The melody on the wind attempts to counteract the spell. If it succeeds, the spell effect is caught in a blast of wind that sweeps it back to its origin, affecting the caster. Targets of the triggering effect other than the melody on the wind are still affected normally.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "0 ft,\nfly 100 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Wind Gust",
+        "bonus": 23,
+        "traits": [
+          "agile",
+          "finesse"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+10",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+10)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Push"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Solid Refrain",
+        "bonus": 23,
+        "traits": [
+          "range-increment-70"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+10",
+            "type": "sonic"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+10)*2",
+            "type": "sonic"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Mesmerizing Melody",
+        "actions": 1,
+        "traits": [
+          "auditory",
+          "concentrate",
+          "mental",
+          "primal"
+        ],
+        "description": "<p>The melody on the wind sings in a sonorous chorus. Any creature in a 30 foot emanation must attempt a DC 30 Will save to resist becoming fascinated by the melody on the wind. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Fascinated for 1 round.</p>\n<p><strong>Failure</strong> The creature is fascinated for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Swiftness",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The melody on the wind's movement doesn't trigger reactions.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>This cloud of song and sound has been caught by the wind and carried across the air. While the melody on the wind might enjoy the beauty of music, it is by nature a destructive elemental force.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 27",
+    "originalCreature": {}
+  }
+}

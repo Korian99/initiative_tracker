@@ -1,0 +1,327 @@
+{
+  "initiative": 0,
+  "initiativebonus": 3,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "name": "Demon Launch",
+  "type": "hazard",
+  "level": 1,
+  "traits": [
+    "Hazard",
+    "Complex",
+    "Rare",
+    "Medium",
+    "Environmental",
+    "Magical",
+    "Unholy"
+  ],
+  "source": "Pathfinder Society Scenario #6-00: Salt of the Ocean",
+  "stealth": {
+    "value": 3,
+    "note": "",
+    "modifications": []
+  },
+  "description": "<p>A demonic presence animates the ship carrying demon pirates.</p>",
+  "disable": "<p>DC 17 Religion check (trained) to ward against demonic presence, Arcana check (trained) or DC 17 Occultism check (trained) to weaken the demonic possession, DC 17 Intimidation check (trained) to scare it away, or DC 14 Sailing-lore check (trained) to confuse it; two total successes are required to disable the hazard.</p>",
+  "reset": "",
+  "routine": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> The demon launch uses its actions on one of the following options (GM's choice). It loses one action from its routine if a PC succeeds at an attempt to Disable it or it reaches its Broken Threshold.</p><ul><li><strong>Broadside Blast</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The demon launch makes a Chthonian cannon Strike.</li><li><strong>Demonic List</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>Effect</strong> The ship tosses and turns. Each creature in the hazard's area must make a DC 17 Reflex save. On a failure, it is knocked Prone; on a critical failure it also takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage.</li><li><strong>Heads Will Roll</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> It makes a bowsprit Strike.</li><li><strong>Sea Chantey</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (auditory) All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects; all non-fiends within 60 feet must succeed at a DC 17 Will save or become Frightened 1 (Frightened 2 on a critical failure).</li></ul><hr><p>Effect: Sea Chantey</p>",
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 13,
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 4,
+    "note": "",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "<b>Hardness</b> 3 <b>BT</b> 15. (BT 15)",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 3
+    },
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 3
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "No Prey, No Pay",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The demon launch hits another ship and Encounter A begins</p><hr /><p><strong>Effect</strong> The demon launch fires grapples at the Snapdragon. Each PC must attempt a DC 17 Reflex save or be Grabbed (Escape); on a critical failure, they're also impaled and take <span class=\"roll\" onclick=\"roll(this)\">1d6+3</span> piercing damage. The demon launch then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bowsprit",
+      "bonus": 8,
+      "traits": [
+        "reach-20",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Chthonian Cannon",
+      "bonus": 8,
+      "traits": [
+        "range-increment-30",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d4",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sea Chantey",
+      "actions": 1,
+      "traits": [
+        "auditory"
+      ],
+      "description": "<p>All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects; all non-fiends within 60 feet must succeed at a DC 17 Will save or become Frightened 1 (Frightened 2 on a critical failure).</p><hr /><p>Effect: Sea Chantey</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Demonic List",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Effect</strong> The ship tosses and turns. Each creature in the hazard's area must make a DC 17 Reflex save. On a failure, it is knocked Prone; on a critical failure it also takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "simpleHazardXP": false,
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 3,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "name": "Demon Launch",
+    "type": "hazard",
+    "level": 1,
+    "traits": [
+      "Hazard",
+      "Complex",
+      "Rare",
+      "Medium",
+      "Environmental",
+      "Magical",
+      "Unholy"
+    ],
+    "source": "Pathfinder Society Scenario #6-00: Salt of the Ocean",
+    "stealth": {
+      "value": 3,
+      "note": "",
+      "modifications": []
+    },
+    "description": "<p>A demonic presence animates the ship carrying demon pirates.</p>",
+    "disable": "<p>DC 17 Religion check (trained) to ward against demonic presence, Arcana check (trained) or DC 17 Occultism check (trained) to weaken the demonic possession, DC 17 Intimidation check (trained) to scare it away, or DC 14 Sailing-lore check (trained) to confuse it; two total successes are required to disable the hazard.</p>",
+    "reset": "",
+    "routine": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> The demon launch uses its actions on one of the following options (GM's choice). It loses one action from its routine if a PC succeeds at an attempt to Disable it or it reaches its Broken Threshold.</p><ul><li><strong>Broadside Blast</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The demon launch makes a Chthonian cannon Strike.</li><li><strong>Demonic List</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>Effect</strong> The ship tosses and turns. Each creature in the hazard's area must make a DC 17 Reflex save. On a failure, it is knocked Prone; on a critical failure it also takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage.</li><li><strong>Heads Will Roll</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> It makes a bowsprit Strike.</li><li><strong>Sea Chantey</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (auditory) All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects; all non-fiends within 60 feet must succeed at a DC 17 Will save or become Frightened 1 (Frightened 2 on a critical failure).</li></ul><hr><p>Effect: Sea Chantey</p>",
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 13,
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 10,
+      "note": "",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 4,
+      "note": "",
+      "modifications": []
+    },
+    "will": {
+      "value": 11,
+      "note": "",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 30,
+      "max": 30,
+      "note": "<b>Hardness</b> 3 <b>BT</b> 15. (BT 15)",
+      "modifications": []
+    },
+    "immunities": [
+      "critical-hits",
+      "precision"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "cold-iron",
+        "value": 3
+      },
+      {
+        "exceptions": [],
+        "type": "holy",
+        "value": 3
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "No Prey, No Pay",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The demon launch hits another ship and Encounter A begins</p><hr /><p><strong>Effect</strong> The demon launch fires grapples at the Snapdragon. Each PC must attempt a DC 17 Reflex save or be Grabbed (Escape); on a critical failure, they're also impaled and take <span class=\"roll\" onclick=\"roll(this)\">1d6+3</span> piercing damage. The demon launch then rolls initiative.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Bowsprit",
+        "bonus": 8,
+        "traits": [
+          "reach-20",
+          "unholy"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+3",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+3)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Chthonian Cannon",
+        "bonus": 8,
+        "traits": [
+          "range-increment-30",
+          "unholy"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+1",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "1d4",
+            "type": "fire"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+1)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(1d4)*2",
+            "type": "fire"
+          }
+        ],
+        "effects": [],
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Sea Chantey",
+        "actions": 1,
+        "traits": [
+          "auditory"
+        ],
+        "description": "<p>All fiends within 60 feet gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects; all non-fiends within 60 feet must succeed at a DC 17 Will save or become Frightened 1 (Frightened 2 on a critical failure).</p><hr /><p>Effect: Sea Chantey</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Demonic List",
+        "actions": 2,
+        "traits": [],
+        "description": "<p><strong>Effect</strong> The ship tosses and turns. Each creature in the hazard's area must make a DC 17 Reflex save. On a failure, it is knocked Prone; on a critical failure it also takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "simpleHazardXP": false,
+    "originalCreature": {},
+    "recallKnowledge": ", DC: 20"
+  },
+  "recallKnowledge": ", DC: 20"
+}

@@ -1,0 +1,473 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Caligni Skulker",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Small",
+    "Caligni",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 8,
+    "note": "greater darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "Greater Darkvision"
+  ],
+  "languages": [
+    "Caligni"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Dagger",
+      "quantity": 1,
+      "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+      "level": 0,
+      "price": "2 sp ",
+      "traits": [
+        "agile",
+        "finesse",
+        "thrown-10",
+        "versatile-s"
+      ]
+    },
+    {
+      "name": "Darkening Poison",
+      "quantity": 3,
+      "description": "<p>Many calignis keep several doses of darkening poison, an uncommon injury poison made from Darklands spider venom, on hand to incapacitate foes.</p>\n<hr />\n<p><strong>Saving Throw</strong> DC 16 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<hr />\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison and creatures you can see only with darkvision are Concealed from you (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison and creatures you can see only with darkvision are Hidden from you (1 round).</p>",
+      "level": 0,
+      "price": "5 gp ",
+      "traits": [
+        "consumable"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "final night",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Final Night",
+      "actions": null,
+      "traits": [
+        "darkness",
+        "occult"
+      ],
+      "description": "<p>When the caligni skulker dies, their remains dissolve into a 20 foot emanation of inky darkness before dissipating. The darkness extinguishes non-magical light sources and attempts to counteract magical light as a 1st-rank effect with a +10 counteract modifier.</p>\n<p>The skulker's possessions are left in a pile where they died.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Light Blindness",
+      "actions": null,
+      "traits": [],
+      "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dagger",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Darkening-poison"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Dagger",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "thrown-10",
+        "versatile-s"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Darkening-poison"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The caligni skulker deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Tumble Behind",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the caligni skulker Tumbles Through a creature's space, that creature is Off-Guard against the next attack the skulker makes against it before the end of its turn.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Most often found on the surface are caligni skulkers, stealing staple goods and luxuries alike. When pressed into combat by more powerful caligni, skulkers will often be sacrificed in waves to wear down the enemy. Otherwise, skulkers are fairly cautious and prefer to flee unwinnable situations.</p>\n<hr />\n<p>Calignis lurk in subterranean cities, with each caligni growing into a specific role and form determined by supernatural influences in caligni society. Regardless of their size or role, all calignis are gaunt, with pale flesh and white eyes. Many relish the chance to creep above ground at night to steal resources, shadow their surface counterparts, or simply make mischief.</p>",
+  "recallKnowledge": "Society, DC: 16",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 8,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Caligni Skulker",
+    "type": "Creature",
+    "level": 2,
+    "traits": [
+      "Small",
+      "Caligni",
+      "Humanoid"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 8,
+      "note": "greater darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "Greater Darkvision"
+    ],
+    "languages": [
+      "Caligni"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 4,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 0
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [
+      {
+        "name": "Dagger",
+        "quantity": 1,
+        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
+        "level": 0,
+        "price": "2 sp ",
+        "traits": [
+          "agile",
+          "finesse",
+          "thrown-10",
+          "versatile-s"
+        ]
+      },
+      {
+        "name": "Darkening Poison",
+        "quantity": 3,
+        "description": "<p>Many calignis keep several doses of darkening poison, an uncommon injury poison made from Darklands spider venom, on hand to incapacitate foes.</p>\n<hr />\n<p><strong>Saving Throw</strong> DC 16 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<hr />\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison and creatures you can see only with darkvision are Concealed from you (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison and creatures you can see only with darkvision are Hidden from you (1 round).</p>",
+        "level": 0,
+        "price": "5 gp ",
+        "traits": [
+          "consumable"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 30,
+      "max": 30,
+      "note": "final night",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Final Night",
+        "actions": null,
+        "traits": [
+          "darkness",
+          "occult"
+        ],
+        "description": "<p>When the caligni skulker dies, their remains dissolve into a 20 foot emanation of inky darkness before dissipating. The darkness extinguishes non-magical light sources and attempts to counteract magical light as a 1st-rank effect with a +10 counteract modifier.</p>\n<p>The skulker's possessions are left in a pile where they died.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Light Blindness",
+        "actions": null,
+        "traits": [],
+        "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Dagger",
+        "bonus": 10,
+        "traits": [
+          "agile",
+          "finesse",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Darkening-poison"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Dagger",
+        "bonus": 10,
+        "traits": [
+          "agile",
+          "thrown-10",
+          "versatile-s"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Darkening-poison"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Sneak Attack",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The caligni skulker deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Tumble Behind",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the caligni skulker Tumbles Through a creature's space, that creature is Off-Guard against the next attack the skulker makes against it before the end of its turn.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Most often found on the surface are caligni skulkers, stealing staple goods and luxuries alike. When pressed into combat by more powerful caligni, skulkers will often be sacrificed in waves to wear down the enemy. Otherwise, skulkers are fairly cautious and prefer to flee unwinnable situations.</p>\n<hr />\n<p>Calignis lurk in subterranean cities, with each caligni growing into a specific role and form determined by supernatural influences in caligni society. Regardless of their size or role, all calignis are gaunt, with pale flesh and white eyes. Many relish the chance to creep above ground at night to steal resources, shadow their surface counterparts, or simply make mischief.</p>",
+    "recallKnowledge": "Society, DC: 16",
+    "originalCreature": {}
+  }
+}

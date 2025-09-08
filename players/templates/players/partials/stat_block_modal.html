@@ -31,7 +31,7 @@
                  hx-target="#stat_block_container"
                  hx-swap="innerHTML"
                  hx-vals='{"template":"normal"}'
-                 checked>
+                 {% if template == 'normal' %}checked {% endif %}>
           <label class="form-check-label" for="mode1">Normal</label>
         </div>
         <div class="form-check form-check-inline">
@@ -43,7 +43,8 @@
                  hx-get="{% url 'load_stat_block_modal' character.id %}"
                  hx-vals='{"template":"weak"}'
                  hx-target="#stat_block_container"
-                 hx-swap="innerHTML">
+                 hx-swap="innerHTML"
+                 {% if template == 'weak' %}checked {% endif %}>
           <label class="form-check-label" for="mode2">Weak</label>
         </div>
         <div class="form-check form-check-inline">
@@ -55,7 +56,8 @@
                  hx-get="{% url 'load_stat_block_modal' character.id %}"
                  hx-vals='{"template":"elite"}'
                  hx-target="#stat_block_container"
-                 hx-swap="innerHTML">
+                 hx-swap="innerHTML"
+                 {% if template == 'elite' %}checked {% endif %}>
           <label class="form-check-label" for="mode2">Elite</label>
         </div>
         <div class="mb-3">
