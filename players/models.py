@@ -93,33 +93,3 @@ class Character(models.Model):
     
     class Meta:
         ordering = ['-order']
-
-
-# class ConditionType(models.Model):
-#     name = models.CharField(max_length=100)
-
-
-# class Condition(models.Model):
-#     DURATION_CHOICES = (
-#         ('RD', 'Round Decreasing'),  # Dura X rondas
-#         # Cada ronda disminuye en 1 el efecto
-#         ('AD', 'Automatically Decreases'),
-#         ('MD', 'Manual Decreasing'),  # El jugador lo subira/bajara
-#     )
-#     durationType = models.CharField(max_length=2, choices=DURATION_CHOICES)
-#     conditionType = models.ForeignKey(ConditionType, on_delete=models.CASCADE)
-#     name = models.CharField(max_length=100)
-
-
-# class CharacterCondition(models.Model):
-#     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-#     condition = models.ForeignKey(Condition, on_delete=models.CASCADE)
-#     duration = models.IntegerField()
-
-#     def decrease_duration(self, value=None):
-#         if value is not None:
-#             self.duration = value
-#         elif self.condition.durationType in {'RD', 'AD'}:
-#             self.duration = -1
-#         self.save()
-

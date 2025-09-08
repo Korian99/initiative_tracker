@@ -204,7 +204,7 @@ class CharacterView(TemplateView):
         character_name = request.POST.get("character")
         initiative = request.POST.get("initiative")
         reminder = request.POST.get("reminder")
-        stat_block = request.POST.get("stat_block").replace('assets/database/',"")
+        stat_block = request.POST.get("stat_block")
         template = request.POST.get("template", 'normal')
         max_order = Character.objects.filter(
             player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
@@ -251,7 +251,7 @@ class EditCharacterView(TemplateView):
         character.initiative = new_initiative
         character.name = new_name
         character.reminder = new_reminder
-        character.stat_block = new_stat_block.replace('assets/database/',"")
+        character.stat_block = new_stat_block
         character.save()
 
         lobby = character.player.lobby
