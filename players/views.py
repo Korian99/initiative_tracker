@@ -205,7 +205,7 @@ class CharacterView(TemplateView):
         initiative = request.POST.get("initiative")
         reminder = request.POST.get("reminder")
         stat_block = request.POST.get("stat_block").replace('assets/database/',"")
-        template = request.POST.get("template", 'N')
+        template = request.POST.get("template", 'normal')
         max_order = Character.objects.filter(
             player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
         if Character.objects.filter(name=character_name, player=player_in_lobby).exists():
@@ -365,23 +365,16 @@ class StatBlocksView(TemplateView):
 
 
 class StatBlockView(TemplateView):
-    def get_creature_data(self, character):
-        url = f"https://pathfinderdashboard.com/assets/database/{character.stat_block}"
-        try:
-            resp = requests.get(url, timeout=10)
-            resp.raise_for_status()
-            return resp.json()
-        except Exception as e:
-            return str(e)
-
     # load_stat_block_modal
     def get(self, request, character_id):
         character = Character.objects.get(id=character_id)
-        creature_data = self.get_creature_data(character)
+        creature_data = character.creature
         template = request.GET.get("template", None)
         if template:
+            character.template = template
+            character.save()
             return render(request, "players/partials/stat_block/stat_block_data.html", {
                 "creature": creature_data,
                 "template": template, "character": character
             })
-        return render(request, "players/partials/stat_block_modal.html", {"creature": creature_data, "template": 'normal', "character": character})
+        return render(request, "players/partials/stat_block_modal.html", {"creature": creature_data, "template": character.template, "character": character})

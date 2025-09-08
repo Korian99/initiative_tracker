@@ -1,4 +1,8 @@
 from django.db import models
+import json
+from pathlib import Path
+from django.conf import settings
+from django.db import models
 
 
 class Lobby(models.Model):
@@ -46,16 +50,12 @@ class PlayerInLobby(models.Model):
     def __str__(self):
         return "Player: "+str(self.player) + "in Lobby " + str(self.lobby)
 
-class StatBlock(models.Model):
-    name = models.CharField(max_length=100)
-    data = models.JSONField(null=True, blank=True)
-    path = models.CharField(max_length=100)
 
 class Character(models.Model):
     TEMPLATE_CHOICES = (
-        ('W', 'Weak'),
-        ('N', 'Normal'),
-        ('E', 'Elite'),
+        ('weak', 'Weak'),
+        ('normal', 'Normal'),
+        ('elite', 'Elite'),
     )
     player = models.ForeignKey(PlayerInLobby, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
@@ -64,8 +64,8 @@ class Character(models.Model):
     debuff = models.CharField(max_length=100, null= True, blank=False)
     reminder = models.CharField(max_length=100, default=None, null= True, blank=True)
     current_turn = models.BooleanField(default=False)
-    stat_block = models.ForeignKey(StatBlock, on_delete=models.SET_NULL, null= True, blank=False)
-    template = models.CharField(max_length=1, choices=TEMPLATE_CHOICES, default='N')
+    stat_block = models.CharField(max_length=100, null= True, blank=True, default= None)
+    template = models.CharField(max_length=6, choices=TEMPLATE_CHOICES, default='normal')
 
     def __str__(self):
         return self.name + " - " + str(self.player.player)
@@ -78,7 +78,19 @@ class Character(models.Model):
             return next_chars.first()
         else:
             return characters.first()
-
+    @property
+    def creature(self):
+        """Load JSON content from jsons/ folder based on `path`"""
+        jsons_dir = Path(settings.BASE_DIR) / "jsons"
+        file_path = jsons_dir / self.stat_block.replace(' ', '_')
+        if file_path.exists():
+            try:
+                with open(file_path, encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception as e:
+                return {"error": str(e)}
+        return None
+    
     class Meta:
         ordering = ['-order']
 
