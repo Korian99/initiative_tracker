@@ -1,55 +1,54 @@
 {% if player.role == "DM" or player.role == "PA" %}
-    <div class="mt-4 w-100" style="max-width: 400px;">
-      <h2>Characters in Lobby: {{ player.lobby }}</h2>
-
-      <form hx-post="{% url 'add_character' %}"
-            hx-target="#character-list"
-            hx-swap="innerHTML"
-            method="post">
-        {% csrf_token %}
-        <input type="hidden" name="player" value="{{ player.id }}">
-        <div class="mb-3">
-          <label for="initiative" class="form-label">Initiative</label>
-          <input type="number"
-                 class="form-control"
-                 id="initiative"
-                 name="initiative"
-                 required>
-        </div>
-        <div class="mb-3 show-spinner"
-            id="select_creature"
-            
-            hx-get="{% url 'select_creature' %}"
-            hx-trigger="load"
-            hx-target="#select_creature"
-            hx-swap="innerHTML">
-        </div>
-
-        <div class="mb-3">
-          <label for="character" class="form-label">Character's Name</label>
-          <input type="text"
-                 class="form-control"
-                 id="character"
-                 name="character"
-                 required>
-        </div>
-        <div class="mb-3">
-          <label for="reminder" class="form-label">Reminder (Optional)</label>
-          <input type="text"
-                 class="form-control"
-                 id="reminder"
-                 name="reminder"
-                 >
-        </div>
-        <button type="submit" class="btn btn-success w-100" onclick="activateTab('characters-tab');">Add Character</button>
-      </form>
-    </div>
-    <script>
+  <div class="mt-2 w-100" style="max-width: 400px;">
+    <h2>Lobby: {{ player.lobby }}</h2>
+    <form hx-post="{% url 'add_character' %}"
+          hx-target="#character-list"
+          hx-swap="innerHTML"
+          method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="reminder" class="form-label">Hidden?</label>
+        <input type="checkbox" class="form-check-input"  id="invisible" name="invisible" indeterminate = "false" value=1> 
+      </div>
+      <input type="hidden" name="player" value="{{ player.id }}">
+      <div class="mb-3">
+        <label for="initiative" class="form-label">Initiative</label>
+        <input type="number"
+               class="form-control"
+               id="initiative"
+               name="initiative"
+               required>
+      </div>
+      <div class="mb-3 show-spinner"
+           id="select_creature"
+           hx-get="{% url 'select_creature' %}"
+           hx-trigger="load"
+           hx-target="#select_creature"
+           hx-swap="innerHTML"></div>
+      <div class="mb-3">
+        <label for="character" class="form-label">Character's Name</label>
+        <input type="text"
+               class="form-control"
+               id="character"
+               name="character"
+               required>
+      </div>
+      <div class="mb-3">
+        <label for="reminder" class="form-label">Reminder (Optional)</label>
+        <input type="text" class="form-control" id="reminder" name="reminder">
+      </div>
+      
+      <button type="submit"
+              class="btn btn-success w-100"
+              onclick="activateTab('characters-tab');">Add Character</button>
+    </form>
+  </div>
+  <script>
       // Function to activate a tab
       function activateTab(tabId) {
         var tabElement = document.getElementById(tabId);
         var tab = new bootstrap.Tab(tabElement);
         tab.show();
       }
-        </script>
-  {% endif %}
+  </script>
+{% endif %}

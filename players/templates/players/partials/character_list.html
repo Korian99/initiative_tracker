@@ -67,10 +67,14 @@
 </style>
 <ul id="characters" class="list-group">
   {% for character in characters %}
-    <li class="list-group-item d-flex justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
-        data-id="{{ character.id }}">
+    <li class="list-group-item 
+    {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} 
+     justify-content-center align-items-center gap-3 w-100 
+    {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
+        data-id="{{ character.id }}"
+        {% if character.invisible  %}style="background-color:#e6e6e6;" {% endif %}>
       <div class="flex-grow-1 drag-handle d-flex flex-column">
-        <span style="pointer-events: auto" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}</span>
+        <span style="pointer-events: auto;" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }} {% if character.invisible  %} (Invisible) {% endif %}</span>
         {% if character.debuff %}
           <span style="pointer-events: auto;
                        color:red;
