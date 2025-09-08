@@ -63,6 +63,7 @@ class Character(models.Model):
     order = models.PositiveIntegerField(default=0)
     debuff = models.CharField(max_length=100, null= True, blank=False)
     reminder = models.CharField(max_length=100, default=None, null= True, blank=True)
+    invisible = models.BooleanField(default=False)
     current_turn = models.BooleanField(default=False)
     stat_block = models.CharField(max_length=100, null= True, blank=True, default= None)
     template = models.CharField(max_length=6, choices=TEMPLATE_CHOICES, default='normal')

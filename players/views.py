@@ -201,6 +201,7 @@ class CharacterView(TemplateView):
             PlayerInLobby, id=request.POST.get("player"))
         lobby = player_in_lobby.lobby
 
+        invisible = request.POST.get("invisible", 0)
         character_name = request.POST.get("character")
         initiative = request.POST.get("initiative")
         reminder = request.POST.get("reminder")
@@ -214,7 +215,7 @@ class CharacterView(TemplateView):
             character_name = f"{character_name} ({len(existing_characters) + 1})"
         Character.objects.create(
             player=player_in_lobby, name=character_name, initiative=initiative, reminder=reminder, order=max_order, stat_block=stat_block,
-            template=template)
+            template=template, invisible=invisible)
         characters = Character.objects.filter(
             player__lobby=lobby).order_by("-order")
         if request.headers.get("HX-Request"):
@@ -294,6 +295,7 @@ class TurnView(TemplateView):
         next_char = characters.first().next_turn()
         characters.filter(current_turn=True).update(current_turn=False)
         next_char.current_turn = True
+        next_char.invisible = False
         next_char.save()
 
         return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
