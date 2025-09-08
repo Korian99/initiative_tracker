@@ -1,0 +1,439 @@
+{
+  "initiative": 0,
+  "initiativebonus": 29,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Waxen Effigy",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Ooze",
+    "Undead"
+  ],
+  "source": "Pathfinder #205: Singer, Stalker, Skinsaw Man",
+  "perception": {
+    "value": 29,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Necril",
+    "One language known in life (can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 32,
+      "note": [
+        "among other wax statues <span class=\"roll\" onclick=\"roll(this)\">36</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 38,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 415,
+    "max": 415,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Memento Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Waxen effigies retain an attachment to objects they had a strong tie to in life. A character who holds such a memento in a hand can use it to alter the effects of Demoralize. Doing so adds the manipulate trait to Demoralize. If the attempt to Demoralize the waxen effigy is successful, it becomes Slowed 1 (Slowed 2 on a critical success) for 1 round rather than becoming frightened. On a critical failure, the waxen effigy loses Memento Vulnerability for 24 hours.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wax Trail",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A waxen effigy leaves behind a trail of molten wax when it Strides, making any spaces it moves through difficult hazardous terrain until the beginning of its next turn, whereupon the molten wax trail vanishes. Creatures moving through the wax trail take <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage each time they do so (DC 40 basic Reflex save).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\nclimb 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 35,
+      "traits": [
+        "agile",
+        "fire",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "persistent fire"
+        },
+        {
+          "roll": "3d10+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent fire"
+        },
+        {
+          "roll": "(3d10+17)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Wax Spray",
+      "bonus": 30,
+      "traits": [
+        "fire",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+8",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+8)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Enervating Howl",
+      "actions": 2,
+      "traits": [
+        "auditory"
+      ],
+      "description": "<p>The waxen effigy emits a gurgling howl, sapping the life energy from all living creatures within 30 feet. Affected creatures must attempt a DC 40 Fortitude save. The waxen effigy can't use Enervating Howl again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> void damage and is Drained 1.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">12d6</span> void damage and is Drained 2.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">24d6</span> void damage, is drained 2, and is Doomed 1 for as long as they have the drained condition.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The undead ooze known as a waxen effigy forms under a specific set of circumstances, making such creatures quite rare. Most waxen effigies arise from botched rituals intended to migrate a powerful sapient creature's soul into a body made of wax, whether in a bid for immortality or a method of imprisonment or sacrifice. The death—especially a traumatic death—of a sapient creature in close proximity to a wax figure or while attempting to craft a construct out of wax might also result in a waxen effigy.</p>\n<p>A waxen effigy looks like a partially melted wax version of who it appeared as in life. They retain little of their former personality but recall a jumble of memories from their mortal existence that serves only to anger them. They often cling to objects that were important to them in life, such as a spouse's wedding band or a tool from a favorite hobby. Displaying such an object to a waxen effigy transfixes their attention, though they often lash out if the object is taken away before they can be laid to rest.</p><h2>Cruel Creations</h2><p>Few set out to create a waxen effigy on purpose, as their fragmented memories cause them to behave rather erratically, and as such, they make poor guardians or assassins. Any intentional creation of a waxen effigy is solely an act of spite since it condemns the soul to an undeath steeped in bewilderment and fear.</p>",
+  "recallKnowledge": "Occultism, Religion, DC: 43",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 29,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Waxen Effigy",
+    "type": "Creature",
+    "level": 18,
+    "traits": [
+      "Rare",
+      "Medium",
+      "Ooze",
+      "Undead"
+    ],
+    "source": "Pathfinder #205: Singer, Stalker, Skinsaw Man",
+    "perception": {
+      "value": 29,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Necril",
+      "One language known in life (can't speak any language)"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 35,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 32,
+        "note": [
+          "among other wax statues <span class=\"roll\" onclick=\"roll(this)\">36</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 9
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 7
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 5
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 38,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 31,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 415,
+      "max": 415,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "precision",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "cold",
+        "value": 15
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Memento Vulnerability",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Waxen effigies retain an attachment to objects they had a strong tie to in life. A character who holds such a memento in a hand can use it to alter the effects of Demoralize. Doing so adds the manipulate trait to Demoralize. If the attempt to Demoralize the waxen effigy is successful, it becomes Slowed 1 (Slowed 2 on a critical success) for 1 round rather than becoming frightened. On a critical failure, the waxen effigy loses Memento Vulnerability for 24 hours.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Wax Trail",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A waxen effigy leaves behind a trail of molten wax when it Strides, making any spaces it moves through difficult hazardous terrain until the beginning of its next turn, whereupon the molten wax trail vanishes. Creatures moving through the wax trail take <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage each time they do so (DC 40 basic Reflex save).</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\nclimb 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 35,
+        "traits": [
+          "agile",
+          "fire",
+          "magical",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6",
+            "type": "persistent fire"
+          },
+          {
+            "roll": "3d10+17",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6)*2",
+            "type": "persistent fire"
+          },
+          {
+            "roll": "(3d10+17)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Wax Spray",
+        "bonus": 30,
+        "traits": [
+          "fire",
+          "magical"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+8",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d6",
+            "type": "persistent fire"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+8)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "persistent fire"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Enervating Howl",
+        "actions": 2,
+        "traits": [
+          "auditory"
+        ],
+        "description": "<p>The waxen effigy emits a gurgling howl, sapping the life energy from all living creatures within 30 feet. Affected creatures must attempt a DC 40 Fortitude save. The waxen effigy can't use Enervating Howl again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> void damage and is Drained 1.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">12d6</span> void damage and is Drained 2.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">24d6</span> void damage, is drained 2, and is Doomed 1 for as long as they have the drained condition.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The undead ooze known as a waxen effigy forms under a specific set of circumstances, making such creatures quite rare. Most waxen effigies arise from botched rituals intended to migrate a powerful sapient creature's soul into a body made of wax, whether in a bid for immortality or a method of imprisonment or sacrifice. The death—especially a traumatic death—of a sapient creature in close proximity to a wax figure or while attempting to craft a construct out of wax might also result in a waxen effigy.</p>\n<p>A waxen effigy looks like a partially melted wax version of who it appeared as in life. They retain little of their former personality but recall a jumble of memories from their mortal existence that serves only to anger them. They often cling to objects that were important to them in life, such as a spouse's wedding band or a tool from a favorite hobby. Displaying such an object to a waxen effigy transfixes their attention, though they often lash out if the object is taken away before they can be laid to rest.</p><h2>Cruel Creations</h2><p>Few set out to create a waxen effigy on purpose, as their fragmented memories cause them to behave rather erratically, and as such, they make poor guardians or assassins. Any intentional creation of a waxen effigy is solely an act of spite since it condemns the soul to an undeath steeped in bewilderment and fear.</p>",
+    "recallKnowledge": "Occultism, Religion, DC: 43",
+    "originalCreature": {}
+  }
+}

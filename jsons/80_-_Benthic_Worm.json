@@ -1,0 +1,493 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Benthic Worm",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Gargantuan",
+    "Amphibious",
+    "Animal"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 22,
+    "note": "darkvisiontremorsense 100 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "tremorsense 100 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 33,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [
+        "in water <span class=\"roll\" onclick=\"roll(this)\">25</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": -1
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": -1
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 320,
+    "max": 320,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Inexorable",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The benthic worm recovers from the Paralyzed, Slowed, and Stunned conditions at the end of its turn. It's also immune to penalties to its Speeds and the Immobilized condition, and it ignores difficult terrain and greater difficult terrain.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slough Skin",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The benthic worm would be affected by a condition or adverse effect (such as Cursed Metamorphosis)</p>\n<hr />\n<p><strong>Effect</strong> The benthic worm negates the triggering condition or effect by sloughing an outer layer of its skin. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft,\nburrow 40 ft,\nswim 60 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 31,
+      "traits": [
+        "deadly-2d10",
+        "reach-15",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+16)*2+12d10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 31,
+      "traits": [
+        "agile",
+        "poison",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d6+16",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d6+16)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Azure-worm-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Body",
+      "bonus": 29,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Benthic Worm Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 37 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and clumsy 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Breach",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The benthic worm Swims up to its swim Speed, then Leaps vertically out of the water up to 30 feet, making a Strike against a creature at the apex of the jump (this lets it attack a creature within 45 feet of the water's surface). After the Strike, the worm splashes back down. It can use Improved Grab on this Strike and follow it up with Fast Swallow.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fast Swallow",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The worm Grabs a creature.</p>\n<hr />\n<p><strong>Effect</strong> The worm uses Swallow Whole.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Huge, <span class=\"roll\" onclick=\"roll(this)\">3d8+10</span> bludgeoning, Rupture 27</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Thrash",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The worm makes a Strike once against each creature in its reach. It can Strike up to once with its jaws, up to once with its stinger, and any number of times with its body. Each attack counts toward the worm's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all the attacks.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The benthic worm is a deep-blue creature that is more at home in flooded tunnels than dry caves. While a benthic worm is a strong swimmer, it prefers to lie in wait within the walls, floor, or even ceiling of flooded caverns, ready to spring out and ambush creatures swimming past its hiding spot. The benthic worm is particularly hated and feared by Darklands-dwelling cultures, due to the fact that a benthic worm that burrows into a tunnel often brings with it waters from the submerged river or lake it calls home. When it becomes obvious that a benthic worm is near a Darklands settlement, the inhabitants quickly establish a hunting party to deal with the menace before it can bring ruin.</p>\n<hr />\n<p>Cave worms are gigantic scavengers that bore through the depths of the world, eating whatever material they find. Named for their distinctive habitats, these worms are ravenous and display overwhelming destructive capabilities. Cave worms of different types and abilities lurk in the more remote corners of the world—tales speak of arctic worms that dwell within immense glaciers or icebergs and grave worms that burrow through the boneyards of long-forgotten ruins, to name a few.</p>",
+  "recallKnowledge": "Nature, DC: 34",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 22,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Benthic Worm",
+    "type": "Creature",
+    "level": 15,
+    "traits": [
+      "Gargantuan",
+      "Amphibious",
+      "Animal"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 22,
+      "note": "darkvisiontremorsense 100 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "tremorsense 100 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 33,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 20,
+        "note": [
+          "in water <span class=\"roll\" onclick=\"roll(this)\">25</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 10
+    },
+    "dexterity": {
+      "value": -1
+    },
+    "constitution": {
+      "value": 8
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": -1
+    },
+    "charisma": {
+      "value": -1
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 35,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 32,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 20,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 320,
+      "max": 320,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Inexorable",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The benthic worm recovers from the Paralyzed, Slowed, and Stunned conditions at the end of its turn. It's also immune to penalties to its Speeds and the Immobilized condition, and it ignores difficult terrain and greater difficult terrain.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Slough Skin",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The benthic worm would be affected by a condition or adverse effect (such as Cursed Metamorphosis)</p>\n<hr />\n<p><strong>Effect</strong> The benthic worm negates the triggering condition or effect by sloughing an outer layer of its skin. Effects from artifacts, deities, or a similarly powerful source can't be avoided in this way.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "40 ft,\nburrow 40 ft,\nswim 60 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 31,
+        "traits": [
+          "deadly-2d10",
+          "reach-15",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d12+16",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d12+16)*2+12d10",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Improved-grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Stinger",
+        "bonus": 31,
+        "traits": [
+          "agile",
+          "poison",
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d6+16",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d6+16)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Azure-worm-venom"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Body",
+        "bonus": 29,
+        "traits": [
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+14",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+14)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Benthic Worm Venom",
+        "actions": null,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 37 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and clumsy 2 (1 round)</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Breach",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The benthic worm Swims up to its swim Speed, then Leaps vertically out of the water up to 30 feet, making a Strike against a creature at the apex of the jump (this lets it attack a creature within 45 feet of the water's surface). After the Strike, the worm splashes back down. It can use Improved Grab on this Strike and follow it up with Fast Swallow.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Fast Swallow",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The worm Grabs a creature.</p>\n<hr />\n<p><strong>Effect</strong> The worm uses Swallow Whole.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Swallow Whole",
+        "actions": 1,
+        "traits": [
+          "attack"
+        ],
+        "description": "<p>Huge, <span class=\"roll\" onclick=\"roll(this)\">3d8+10</span> bludgeoning, Rupture 27</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Thrash",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The worm makes a Strike once against each creature in its reach. It can Strike up to once with its jaws, up to once with its stinger, and any number of times with its body. Each attack counts toward the worm's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all the attacks.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The benthic worm is a deep-blue creature that is more at home in flooded tunnels than dry caves. While a benthic worm is a strong swimmer, it prefers to lie in wait within the walls, floor, or even ceiling of flooded caverns, ready to spring out and ambush creatures swimming past its hiding spot. The benthic worm is particularly hated and feared by Darklands-dwelling cultures, due to the fact that a benthic worm that burrows into a tunnel often brings with it waters from the submerged river or lake it calls home. When it becomes obvious that a benthic worm is near a Darklands settlement, the inhabitants quickly establish a hunting party to deal with the menace before it can bring ruin.</p>\n<hr />\n<p>Cave worms are gigantic scavengers that bore through the depths of the world, eating whatever material they find. Named for their distinctive habitats, these worms are ravenous and display overwhelming destructive capabilities. Cave worms of different types and abilities lurk in the more remote corners of the world—tales speak of arctic worms that dwell within immense glaciers or icebergs and grave worms that burrow through the boneyards of long-forgotten ruins, to name a few.</p>",
+    "recallKnowledge": "Nature, DC: 34",
+    "originalCreature": {}
+  }
+}

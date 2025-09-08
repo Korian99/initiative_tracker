@@ -1,0 +1,427 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Calathgar",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Small",
+    "Cold",
+    "Plant"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "perception": {
+    "value": 10,
+    "note": "darkvisionscent 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "scent 30 ft imprecise"
+  ],
+  "languages": [
+    "Fey",
+    "Can't speak"
+  ],
+  "skills": [
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 75,
+    "max": 75,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Cold Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Calathgars are healed by cold. Anytime a calathgar would take cold damage, it instead regains <span class=\"roll\" onclick=\"roll(this)\">1d6</span> healing Hit Points (regardless of the amount of damage the cold effect would have caused).</p>\n<p>In severe cold or colder environments, calathgars gain fast healing 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mold Mulch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a calathgar is reduced to 0 Hit Points, it immediately decays and dies, transforming into a 5-foot patch of mold (or a 10-foot patch of mold if it was killed by fire damage). This patch of mold persists for 1 minute, during which time it deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> cold damage to any creature that begins its turn in this area, or <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold damage to any creature that begins its turn in an adjacent square. The mold patch decays away after an hour, but it can be destroyed before then (treat each 5-foot square as an object with Hardness 0, 10 Hit Points, BT 5, immunity to cold, piercing, and slashing damage; the mold deals half its regular cold damage once it's broken).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\nclimb 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Flower",
+      "bonus": 13,
+      "traits": [
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tendril",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+4",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d4",
+          "type": "cold"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+4)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "cold"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Seed Spray",
+      "actions": 2,
+      "traits": [
+        "cold",
+        "primal"
+      ],
+      "description": "<p>The calathgar expels thorny, frozen seeds in a 15 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">1d6</span> piercing and <span class=\"roll\" onclick=\"roll(this)\">4d6</span> cold damage (DC 20 basic Reflex save).</p>\n<p>In mild cold or colder environments, these seeds cling to living creatures they strike, dealing <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus cold damage.</p>\n<p>The calathgar can't use Seed Spray again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Calathgars are mysterious predatory plants that grow in the depths of the densest frozen forests, realms where icicles rarely melt from snow-cloaked trees. A calathgar's blue flowers grow from 3 to 5 feet across (with specimens as wide as 10 feet reported), while the plant itself stands just under 4 feet in height and weighs up to 50 pounds when heavy with seeds.</p>\n<p>Calathgars' psyches are alien to most sapient creatures. They have little interest in emotion, culture, or ambition, yet they have nearly flawless memories and can share experiences with other calathgars by scent (imprecise) as easily as humanoids can pass on information by speech. While calathgars themselves can't speak, they can typically be reasoned with-though like most protective parents, an incensed calathgar defending its young is rarely in a mood to listen.</p>",
+  "recallKnowledge": "Nature, DC: 19",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 10,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Calathgar",
+    "type": "Creature",
+    "level": 4,
+    "traits": [
+      "Small",
+      "Cold",
+      "Plant"
+    ],
+    "source": "Pathfinder Bestiary 2",
+    "perception": {
+      "value": 10,
+      "note": "darkvisionscent 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "scent 30 ft imprecise"
+    ],
+    "languages": [
+      "Fey",
+      "Can't speak"
+    ],
+    "skills": [
+      {
+        "name": "stealth",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 2
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 75,
+      "max": 75,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "cold"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "fire",
+        "value": 5
+      },
+      {
+        "type": "slashing",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Cold Healing",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Calathgars are healed by cold. Anytime a calathgar would take cold damage, it instead regains <span class=\"roll\" onclick=\"roll(this)\">1d6</span> healing Hit Points (regardless of the amount of damage the cold effect would have caused).</p>\n<p>In severe cold or colder environments, calathgars gain fast healing 1.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Mold Mulch",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When a calathgar is reduced to 0 Hit Points, it immediately decays and dies, transforming into a 5-foot patch of mold (or a 10-foot patch of mold if it was killed by fire damage). This patch of mold persists for 1 minute, during which time it deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> cold damage to any creature that begins its turn in this area, or <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold damage to any creature that begins its turn in an adjacent square. The mold patch decays away after an hour, but it can be destroyed before then (treat each 5-foot square as an object with Hardness 0, 10 Hit Points, BT 5, immunity to cold, piercing, and slashing damage; the mold deals half its regular cold damage once it's broken).</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\nclimb 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Flower",
+        "bonus": 13,
+        "traits": [
+          "finesse"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+4",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "1d6",
+            "type": "cold"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+4)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "cold"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tendril",
+        "bonus": 13,
+        "traits": [
+          "agile",
+          "finesse"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+4",
+            "type": "slashing"
+          },
+          {
+            "roll": "1d4",
+            "type": "cold"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+4)*2",
+            "type": "slashing"
+          },
+          {
+            "roll": "(1d4)*2",
+            "type": "cold"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Seed Spray",
+        "actions": 2,
+        "traits": [
+          "cold",
+          "primal"
+        ],
+        "description": "<p>The calathgar expels thorny, frozen seeds in a 15 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">1d6</span> piercing and <span class=\"roll\" onclick=\"roll(this)\">4d6</span> cold damage (DC 20 basic Reflex save).</p>\n<p>In mild cold or colder environments, these seeds cling to living creatures they strike, dealing <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus cold damage.</p>\n<p>The calathgar can't use Seed Spray again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Calathgars are mysterious predatory plants that grow in the depths of the densest frozen forests, realms where icicles rarely melt from snow-cloaked trees. A calathgar's blue flowers grow from 3 to 5 feet across (with specimens as wide as 10 feet reported), while the plant itself stands just under 4 feet in height and weighs up to 50 pounds when heavy with seeds.</p>\n<p>Calathgars' psyches are alien to most sapient creatures. They have little interest in emotion, culture, or ambition, yet they have nearly flawless memories and can share experiences with other calathgars by scent (imprecise) as easily as humanoids can pass on information by speech. While calathgars themselves can't speak, they can typically be reasoned with-though like most protective parents, an incensed calathgar defending its young is rarely in a mood to listen.</p>",
+    "recallKnowledge": "Nature, DC: 19",
+    "originalCreature": {}
+  }
+}

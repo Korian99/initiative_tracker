@@ -1,0 +1,411 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Holdfast",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Small",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "perception": {
+    "value": 14,
+    "note": "low light-visionscent 30 ft imprecisetremorsense 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision",
+    "scent 30 ft imprecise",
+    "tremorsense 30 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [
+        "in rocky or barren terrain <span class=\"roll\" onclick=\"roll(this)\">14</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 55,
+    "max": 55,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Hold Tight",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature Grabbed by the holdfast's jaws takes damage from another creature's Strike</p>\n<hr />\n<p><strong>Effect</strong> The holdfast Constricts the creature in its jaws.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Lithe",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A holdfast treats any tight space it can barely fit its head in or wider as difficult terrain and doesn't need to Squeeze to move through it.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\nburrow 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 13,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Talon",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Burst from Below",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The holdfast Burrows and then Strikes. If the holdfast began this movement Hidden, it remains hidden until after this ability's Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d6+2</span> piercing plus crush throat, DC 21 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Crush Throat",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a creature fails a save against the holdfast's Constrict, the creature's throat is held tight, stopping them from speaking as long as they're Grabbed. This prevents the creature from casting spells with vocal incantations, as well as from using many sonic or auditory abilities.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Nature, DC: 19",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 14,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Holdfast",
+    "type": "Creature",
+    "level": 4,
+    "traits": [
+      "Small",
+      "Animal"
+    ],
+    "source": "Pathfinder Howl of the Wild",
+    "perception": {
+      "value": 14,
+      "note": "low light-visionscent 30 ft imprecisetremorsense 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision",
+      "scent 30 ft imprecise",
+      "tremorsense 30 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 12,
+        "note": [
+          "in rocky or barren terrain <span class=\"roll\" onclick=\"roll(this)\">14</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -4
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 20,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 55,
+      "max": 55,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Hold Tight",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature Grabbed by the holdfast's jaws takes damage from another creature's Strike</p>\n<hr />\n<p><strong>Effect</strong> The holdfast Constricts the creature in its jaws.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Lithe",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A holdfast treats any tight space it can barely fit its head in or wider as difficult terrain and doesn't need to Squeeze to move through it.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\nburrow 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 13,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+5",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+5)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Talon",
+        "bonus": 13,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d4+5",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d4+5)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Burst from Below",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The holdfast Burrows and then Strikes. If the holdfast began this movement Hidden, it remains hidden until after this ability's Strike.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d6+2</span> piercing plus crush throat, DC 21 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Crush Throat",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When a creature fails a save against the holdfast's Constrict, the creature's throat is held tight, stopping them from speaking as long as they're Grabbed. This prevents the creature from casting spells with vocal incantations, as well as from using many sonic or auditory abilities.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Nature, DC: 19",
+    "originalCreature": {}
+  }
+}

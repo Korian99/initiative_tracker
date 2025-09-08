@@ -1,0 +1,389 @@
+{
+  "initiative": 0,
+  "initiativebonus": 23,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Demonic Rabble",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Chaotic",
+    "Demon",
+    "Evil",
+    "Fiend",
+    "Troop",
+    "Unholy"
+  ],
+  "source": "Pathfinder #191: The Destiny War",
+  "perception": {
+    "value": 23,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Chthonian",
+    "Draconic",
+    "Empyrean",
+    "Telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Form Up",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><p>The troop chooses one of the squares it currently occupies and redistributes its squares to any configuration in which all squares are contiguous and within 15 feet of the chosen square. The troop can't share its space with other creatures.</p></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "+1 status to all saves vs. magic",
+  "hp": {
+    "value": 260,
+    "max": 260,
+    "note": "16 squares; Thresholds 173 (3 segments), 87 (2 segments)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "area-damage",
+      "value": 15
+    },
+    {
+      "exceptions": [],
+      "type": "cold-iron",
+      "value": 15
+    },
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 15
+    },
+    {
+      "exceptions": [],
+      "type": "splash-damage",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Frightful Presence",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>30 feet. DC 30 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [],
+  "offensiveAbilities": [
+    {
+      "name": "Claws, Fangs, and Horns",
+      "actions": 1,
+      "traits": [
+        "unholy"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng rips and tears at each enemy within its squares and within 5 feet (DC 33 Reflex save). Damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Damage <span class=\"roll\" onclick=\"roll(this)\">1d10+12</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> spirit</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">2d10+12</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> spirit</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">3d10+12</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> spirit</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Demonic Tide",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A demonic rabble is less organized and more vicious than most troops. They can move into other creatures' spaces, and other creatures can move into their spaces. Their spaces are difficult terrain to non-demon creatures. The first time during a turn that a creature hostile to the throng willingly moves into their space, that creature is subjected to the one-action version of Claws, Fangs, and Horns.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hurl Debris",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng hurls debris, creating a 10 foot burst within 30 feet (DC 25 basic Reflex save). When the throng is reduced to 8 or fewer squares, this area decreases to a 5 foot burst. Damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Damage <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning damage</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">4d10</span> bludgeoning damage</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">6d10</span> bludgeoning damage</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Serenity Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A demonic rabble thrives on mayhem, and when members of the throng find themselves facing moments of calm, however brief or temporary, the throng suffers. Whenever the demonic rabble fails a saving throw against an affect that would normally Fascinate, Fatigue, Paralyze, Restrain, or Slow at least four creatures, the troop takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> mental damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Troop Movement",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever the rabble Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The typical demon throng consists of a chaotic mix of less powerful demons—typically abrikandilus, dretches, and quasits, with a few brimoraks, babaus or other, more powerful demons swept up in the mayhem. This tangled mess of different creatures makes coordinated tactics untenable but, while individual demons in the throng might not be able to fully utilize their abilities, the throng itself makes up for these deficiencies with dangerous options of its own.</p>\n<hr />\n<p>Demons are legion. Countless examples crowd the Abyss, many of which have yet to be categorized by mortal scholars. In the Abyss, might very much makes right, and so despite their chaotic nature, weaker demons often gather together to enjoy safety in numbers.</p>\n<h2>Throng Abilities</h2>\n<p>Demon throngs are troops, as defined in Pathfinder Bestiary 3. They have the Troop Defenses, Troop Movement, and Form-Up abilities. They also have the demonic tide ability, which allows them to occupy the same space as other creatures, which is unusual for troops, and Serenity Vulnerability—a result of the troop's demonic nature.</p>",
+  "recallKnowledge": "Religion, DC: 36",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 23,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Demonic Rabble",
+    "type": "Creature",
+    "level": 13,
+    "traits": [
+      "Rare",
+      "Gargantuan",
+      "Chaotic",
+      "Demon",
+      "Evil",
+      "Fiend",
+      "Troop",
+      "Unholy"
+    ],
+    "source": "Pathfinder #191: The Destiny War",
+    "perception": {
+      "value": 23,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Chthonian",
+      "Draconic",
+      "Empyrean",
+      "Telepathy 100 feet"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 25,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 25,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Form Up",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><p>The troop chooses one of the squares it currently occupies and redistributes its squares to any configuration in which all squares are contiguous and within 15 feet of the chosen square. The troop can't share its space with other creatures.</p></p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 33,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "+1 status to all saves vs. magic",
+    "hp": {
+      "value": 260,
+      "max": 260,
+      "note": "16 squares; Thresholds 173 (3 segments), 87 (2 segments)",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "area-damage",
+        "value": 15
+      },
+      {
+        "exceptions": [],
+        "type": "cold-iron",
+        "value": 15
+      },
+      {
+        "exceptions": [],
+        "type": "holy",
+        "value": 15
+      },
+      {
+        "exceptions": [],
+        "type": "splash-damage",
+        "value": 15
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Frightful Presence",
+        "actions": null,
+        "traits": [
+          "aura",
+          "emotion",
+          "fear",
+          "mental"
+        ],
+        "description": "<p>30 feet. DC 30 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [],
+    "offensiveAbilities": [
+      {
+        "name": "Claws, Fangs, and Horns",
+        "actions": 1,
+        "traits": [
+          "unholy"
+        ],
+        "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng rips and tears at each enemy within its squares and within 5 feet (DC 33 Reflex save). Damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Damage <span class=\"roll\" onclick=\"roll(this)\">1d10+12</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> spirit</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">2d10+12</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> spirit</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">3d10+12</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> spirit</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Demonic Tide",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A demonic rabble is less organized and more vicious than most troops. They can move into other creatures' spaces, and other creatures can move into their spaces. Their spaces are difficult terrain to non-demon creatures. The first time during a turn that a creature hostile to the throng willingly moves into their space, that creature is subjected to the one-action version of Claws, Fangs, and Horns.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Hurl Debris",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The throng hurls debris, creating a 10 foot burst within 30 feet (DC 25 basic Reflex save). When the throng is reduced to 8 or fewer squares, this area decreases to a 5 foot burst. Damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Damage <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning damage</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">4d10</span> bludgeoning damage</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Damage <span class=\"roll\" onclick=\"roll(this)\">6d10</span> bludgeoning damage</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Serenity Vulnerability",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A demonic rabble thrives on mayhem, and when members of the throng find themselves facing moments of calm, however brief or temporary, the throng suffers. Whenever the demonic rabble fails a saving throw against an affect that would normally Fascinate, Fatigue, Paralyze, Restrain, or Slow at least four creatures, the troop takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> mental damage.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Troop Movement",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Whenever the rabble Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to their Speed.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The typical demon throng consists of a chaotic mix of less powerful demons—typically abrikandilus, dretches, and quasits, with a few brimoraks, babaus or other, more powerful demons swept up in the mayhem. This tangled mess of different creatures makes coordinated tactics untenable but, while individual demons in the throng might not be able to fully utilize their abilities, the throng itself makes up for these deficiencies with dangerous options of its own.</p>\n<hr />\n<p>Demons are legion. Countless examples crowd the Abyss, many of which have yet to be categorized by mortal scholars. In the Abyss, might very much makes right, and so despite their chaotic nature, weaker demons often gather together to enjoy safety in numbers.</p>\n<h2>Throng Abilities</h2>\n<p>Demon throngs are troops, as defined in Pathfinder Bestiary 3. They have the Troop Defenses, Troop Movement, and Form-Up abilities. They also have the demonic tide ability, which allows them to occupy the same space as other creatures, which is unusual for troops, and Serenity Vulnerability—a result of the troop's demonic nature.</p>",
+    "recallKnowledge": "Religion, DC: 36",
+    "originalCreature": {}
+  }
+}

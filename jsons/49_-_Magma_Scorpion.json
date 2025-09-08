@@ -1,0 +1,469 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Magma Scorpion",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Large",
+    "Elemental",
+    "Fire"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "perception": {
+    "value": 18,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Smoke Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The magma scorpion ignores the Concealed condition from smoke.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 155,
+    "max": 155,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "40 ft,\nclimb 30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pincer",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+9",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+9)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail Sting",
+      "bonus": 20,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+9",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+9)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [
+        "Magma-scorpion-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Magma Spit",
+      "bonus": 17,
+      "traits": [
+        "fire",
+        "range-increment-40"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+9",
+          "type": "fire"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+9)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Magma Scorpion Venom",
+      "actions": null,
+      "traits": [
+        "fire",
+        "injury",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage and Enfeebled 2 (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Whether skittering through Abyssal wastelands or basking in the searing sand of the deepest deserts, magma scorpions have charred carapaces constantly emitting vision-warping waves of heat.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 18,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Magma Scorpion",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Large",
+      "Elemental",
+      "Fire"
+    ],
+    "source": "Pathfinder Bestiary 2",
+    "perception": {
+      "value": 18,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": -4
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Smoke Vision",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The magma scorpion ignores the Concealed condition from smoke.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 28,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 155,
+      "max": 155,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "fire",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "cold",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [],
+    "speed": "40 ft,\nclimb 30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Pincer",
+        "bonus": 20,
+        "traits": [
+          "agile",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+9",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "1d6",
+            "type": "persistent fire"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+9)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "persistent fire"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tail Sting",
+        "bonus": 20,
+        "traits": [
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d10+9",
+            "type": "piercing"
+          },
+          {
+            "roll": "1d6",
+            "type": "persistent fire"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d10+9)*2",
+            "type": "piercing"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "persistent fire"
+          }
+        ],
+        "effects": [
+          "Magma-scorpion-venom"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Magma Spit",
+        "bonus": 17,
+        "traits": [
+          "fire",
+          "range-increment-40"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+9",
+            "type": "fire"
+          },
+          {
+            "roll": "1d6",
+            "type": "persistent fire"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+9)*2",
+            "type": "fire"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "persistent fire"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Magma Scorpion Venom",
+        "actions": null,
+        "traits": [
+          "fire",
+          "injury",
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage and Enfeebled 2 (1 round)</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Whether skittering through Abyssal wastelands or basking in the searing sand of the deepest deserts, magma scorpions have charred carapaces constantly emitting vision-warping waves of heat.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 24",
+    "originalCreature": {}
+  }
+}

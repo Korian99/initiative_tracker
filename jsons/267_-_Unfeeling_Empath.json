@@ -1,0 +1,447 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Unfeeling Empath",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #193: Mantle of Gold",
+  "perception": {
+    "value": 9,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Gnomish",
+    "Necril",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Empathic Sense (Precise) 60 feet",
+      "actions": null,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>The unfeeling empath perceives all creatures affected by an emotion effect at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 36,
+    "max": 36,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "void",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "mental",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Emotional Extremes",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If a creature rolls a success at a check to affect an unfeeling empath with an emotion effect, the creature gets a critical success instead. If a creature rolls a failure to affect an unfeeling empath with an emotion effect, the creature gets a critical failure instead. Likewise, when an unfeeling empath rolls a success at a Will save against an emotion effect, it gets a critical success instead. When a unfeeling empath rolls a failure at a Will save against an emotion effect, it gets a critical failure instead.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Cathartic Howl",
+      "actions": 2,
+      "traits": [
+        "auditory",
+        "emotion",
+        "mental",
+        "sonic"
+      ],
+      "description": "<p><strong>Requirements</strong> The unfeeling empath is under an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath attempts to counteract the emotion effect, with a counteract modifier of +11. It then howls, projecting those emotions in a 15 foot cone (or a 30 foot cone if the unfeeling empath successfully counteracted the emotion effect). Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">2d8</span> mental damage (DC 18 basic Will save). A creature that critically fails this saving throw also takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> mental plus persistent damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Drink Emotions",
+      "actions": 1,
+      "traits": [
+        "emotion",
+        "healing",
+        "mental"
+      ],
+      "description": "<p><strong>Requirements</strong> An enemy is under an emotion effect within 20 feet of the unfeeling empath</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath regains <span class=\"roll\" onclick=\"roll(this)\">1d4</span> healing Hit Points and becomes emotionally excited for 3 rounds. While excited, the unfeeling empath takes a –1 penalty to AC, gains a +1 status bonus to attack rolls, and deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d4</span> mental damage with its melee Strikes.</p>\n<p>Effect: Drink Emotions</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Goad",
+      "actions": 1,
+      "traits": [
+        "emotion",
+        "mental",
+        "occult"
+      ],
+      "description": "<p>The unfeeling empath floods a creature within 30 feet with countless memories and sensations. The target must attempt a DC 18 Will save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is Stupefied 1 until the end of the unfeeling empath's next turn.</p>\n<p><strong>Critical Failure</strong> The target is Stupefied 2 for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The soul of a gnome killed by tragedy sometimes becomes so entangled in conflicting emotions that it becomes trapped and reanimates its own corpse. Known as unfeeling empaths, these undead wander in search of others' emotions. When they find thinking prey, they relentlessly goad that creature to elicit and consume their feelings. Though initially harmless, feeding drives an unfeeling empath into an expressive frenzy as they overload the victim's mind, resuming their senses only after their prey is dead.</p>\n<h2>Misery Loves Company</h2>\n<p>Unfeeling empaths appreciate any companions who can endure their outbursts. Lost souls and beings who prey on emotions sometimes adopt an unfeeling empath out of solidarity or because the undead gnomes are easy to torment. Thus, where these creatures appear, a sakhil, will-o'-wisp, or ghost is often nearby.</p>",
+  "recallKnowledge": "Religion, DC: 18",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Unfeeling Empath",
+    "type": "Creature",
+    "level": 2,
+    "traits": [
+      "Uncommon",
+      "Small",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder #193: Mantle of Gold",
+    "perception": {
+      "value": 9,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Gnomish",
+      "Necril",
+      "Sakvroth"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "performance",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 5,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 1
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Empathic Sense (Precise) 60 feet",
+        "actions": null,
+        "traits": [
+          "occult"
+        ],
+        "description": "<p>The unfeeling empath perceives all creatures affected by an emotion effect at the listed range.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 36,
+      "max": 36,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "void",
+        "value": 5
+      }
+    ],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "mental",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Emotional Extremes",
+        "actions": null,
+        "traits": [],
+        "description": "<p>If a creature rolls a success at a check to affect an unfeeling empath with an emotion effect, the creature gets a critical success instead. If a creature rolls a failure to affect an unfeeling empath with an emotion effect, the creature gets a critical failure instead. Likewise, when an unfeeling empath rolls a success at a Will save against an emotion effect, it gets a critical success instead. When a unfeeling empath rolls a failure at a Will save against an emotion effect, it gets a critical failure instead.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 11,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d8+3",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d8+3)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Cathartic Howl",
+        "actions": 2,
+        "traits": [
+          "auditory",
+          "emotion",
+          "mental",
+          "sonic"
+        ],
+        "description": "<p><strong>Requirements</strong> The unfeeling empath is under an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath attempts to counteract the emotion effect, with a counteract modifier of +11. It then howls, projecting those emotions in a 15 foot cone (or a 30 foot cone if the unfeeling empath successfully counteracted the emotion effect). Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">2d8</span> mental damage (DC 18 basic Will save). A creature that critically fails this saving throw also takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> mental plus persistent damage.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Drink Emotions",
+        "actions": 1,
+        "traits": [
+          "emotion",
+          "healing",
+          "mental"
+        ],
+        "description": "<p><strong>Requirements</strong> An enemy is under an emotion effect within 20 feet of the unfeeling empath</p>\n<hr />\n<p><strong>Effect</strong> The unfeeling empath regains <span class=\"roll\" onclick=\"roll(this)\">1d4</span> healing Hit Points and becomes emotionally excited for 3 rounds. While excited, the unfeeling empath takes a –1 penalty to AC, gains a +1 status bonus to attack rolls, and deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d4</span> mental damage with its melee Strikes.</p>\n<p>Effect: Drink Emotions</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Goad",
+        "actions": 1,
+        "traits": [
+          "emotion",
+          "mental",
+          "occult"
+        ],
+        "description": "<p>The unfeeling empath floods a creature within 30 feet with countless memories and sensations. The target must attempt a DC 18 Will save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is Stupefied 1 until the end of the unfeeling empath's next turn.</p>\n<p><strong>Critical Failure</strong> The target is Stupefied 2 for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The soul of a gnome killed by tragedy sometimes becomes so entangled in conflicting emotions that it becomes trapped and reanimates its own corpse. Known as unfeeling empaths, these undead wander in search of others' emotions. When they find thinking prey, they relentlessly goad that creature to elicit and consume their feelings. Though initially harmless, feeding drives an unfeeling empath into an expressive frenzy as they overload the victim's mind, resuming their senses only after their prey is dead.</p>\n<h2>Misery Loves Company</h2>\n<p>Unfeeling empaths appreciate any companions who can endure their outbursts. Lost souls and beings who prey on emotions sometimes adopt an unfeeling empath out of solidarity or because the undead gnomes are easy to torment. Thus, where these creatures appear, a sakhil, will-o'-wisp, or ghost is often nearby.</p>",
+    "recallKnowledge": "Religion, DC: 18",
+    "originalCreature": {}
+  }
+}

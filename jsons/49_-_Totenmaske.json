@@ -1,0 +1,443 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Totenmaske",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Medium",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Bestiary 2",
+  "perception": {
+    "value": 15,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 128,
+    "max": 128,
+    "note": "(void healing)",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 18,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+7",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+7)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drink Flesh",
+      "actions": 1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Requirements</strong> The totenmaske hit the same enemy with two claw Strikes this turn and is still adjacent to it</p>\n<hr />\n<p><strong>Effect</strong> The totenmaske drains flesh from the creature's body. The creature becomes Sickened 2 and Drained 1 unless it succeeds at a DC 25 Fortitude save (Sickened 2 and Drained 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Living Form",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "divine",
+        "polymorph"
+      ],
+      "description": "<p>The totenmaske takes the appearance of a Medium or smaller humanoid creature. This is either its form from before it became undead, or the form of the last creature it successfully hit with Drink Flesh.</p>\n<p>This doesn't change the totenmaske's Speed or the attack and damage bonuses for its Strikes, but might change the damage type its Strikes deal (typically to bludgeoning).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Shape Flesh",
+      "actions": null,
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "description": "<p>After spending 1 minute in contact with a Paralyzed, Unconscious, or willing creature, a totenmaske can reshape the target's face, causing flesh to cover vital features.</p>\n<p>The target can attempt a DC 25 Fortitude save to resist; a critical success grants temporary immunity to Shape Flesh for 24 hours.</p>\n<p>Each time the totenmaske Shapes Flesh, it chooses one feature: ears (target becomes Deafened), eyes (target becomes Blinded), mouth (target can't speak or eat), or nose (target can't smell). A creature with both its nose and mouth sealed can't breathe and begins to suffocate.</p>\n<p>Changes are permanent until reversed by removing this curse, or the sealed flesh can be surgically opened with a DC 25 Medicine check that takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds and deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> slashing damage per round.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Spawned by the same unnatural and self-destructive obsessions that drove them when they were alive, totenmaskes are the undead remnants of the most self-indulgent and sinful among us. Though unable to sate their perverse desires, these foul undead can drain the very flesh from their victims so as to wrap themselves in a perverse mockery of life that allows them to pursue their base wants. Totenmaskes' specific longings vary-one might be obsessed with food or drink, while another might be vain and desirous of an attractive form to marvel at in a mirror, while yet another could simply long for the scent of blood. Whatever the sensation the totenmaske seeks, it is always a vice taken to extreme, for this sin is what helped condemn it to unlife in the first place. A totenmaske obsessed with food, for example, might find itself assaulting bakeries or breweries, while a vain totenmaske obsessed with glamor could quickly grow bored of each new look and switch its victims out daily, or even hourly.</p>",
+  "recallKnowledge": "Religion, DC: 23",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 15,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Totenmaske",
+    "type": "Creature",
+    "level": 7,
+    "traits": [
+      "Medium",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder Bestiary 2",
+    "perception": {
+      "value": 15,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Necril"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 3
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 128,
+      "max": 128,
+      "note": "(void healing)",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 18,
+        "traits": [
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+7",
+            "type": "piercing"
+          },
+          {
+            "roll": "2d6",
+            "type": "void"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+7)*2",
+            "type": "piercing"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "void"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 18,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+7",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+7)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Drink Flesh",
+        "actions": 1,
+        "traits": [
+          "divine"
+        ],
+        "description": "<p><strong>Requirements</strong> The totenmaske hit the same enemy with two claw Strikes this turn and is still adjacent to it</p>\n<hr />\n<p><strong>Effect</strong> The totenmaske drains flesh from the creature's body. The creature becomes Sickened 2 and Drained 1 unless it succeeds at a DC 25 Fortitude save (Sickened 2 and Drained 2 on a critical failure).</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Living Form",
+        "actions": 1,
+        "traits": [
+          "concentrate",
+          "divine",
+          "polymorph"
+        ],
+        "description": "<p>The totenmaske takes the appearance of a Medium or smaller humanoid creature. This is either its form from before it became undead, or the form of the last creature it successfully hit with Drink Flesh.</p>\n<p>This doesn't change the totenmaske's Speed or the attack and damage bonuses for its Strikes, but might change the damage type its Strikes deal (typically to bludgeoning).</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Shape Flesh",
+        "actions": null,
+        "traits": [
+          "curse",
+          "divine"
+        ],
+        "description": "<p>After spending 1 minute in contact with a Paralyzed, Unconscious, or willing creature, a totenmaske can reshape the target's face, causing flesh to cover vital features.</p>\n<p>The target can attempt a DC 25 Fortitude save to resist; a critical success grants temporary immunity to Shape Flesh for 24 hours.</p>\n<p>Each time the totenmaske Shapes Flesh, it chooses one feature: ears (target becomes Deafened), eyes (target becomes Blinded), mouth (target can't speak or eat), or nose (target can't smell). A creature with both its nose and mouth sealed can't breathe and begins to suffocate.</p>\n<p>Changes are permanent until reversed by removing this curse, or the sealed flesh can be surgically opened with a DC 25 Medicine check that takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds and deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> slashing damage per round.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Spawned by the same unnatural and self-destructive obsessions that drove them when they were alive, totenmaskes are the undead remnants of the most self-indulgent and sinful among us. Though unable to sate their perverse desires, these foul undead can drain the very flesh from their victims so as to wrap themselves in a perverse mockery of life that allows them to pursue their base wants. Totenmaskes' specific longings vary-one might be obsessed with food or drink, while another might be vain and desirous of an attractive form to marvel at in a mirror, while yet another could simply long for the scent of blood. Whatever the sensation the totenmaske seeks, it is always a vice taken to extreme, for this sin is what helped condemn it to unlife in the first place. A totenmaske obsessed with food, for example, might find itself assaulting bakeries or breweries, while a vain totenmaske obsessed with glamor could quickly grow bored of each new look and switch its victims out daily, or even hourly.</p>",
+    "recallKnowledge": "Religion, DC: 23",
+    "originalCreature": {}
+  }
+}

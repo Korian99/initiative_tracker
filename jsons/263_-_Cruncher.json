@@ -1,0 +1,469 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Cruncher",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Beast"
+  ],
+  "source": "Pathfinder #200: Seven Dooms for Sandpoint",
+  "perception": {
+    "value": 10,
+    "note": "scent 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "scent 30 ft imprecise"
+  ],
+  "languages": [
+    "Common",
+    "(can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 14,
+      "note": [
+        "in forests <span class=\"roll\" onclick=\"roll(this)\">16</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Trackless",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A hodag sweeps the ground behind it with its tail as it moves, obscuring its tracks. The DCs of checks to Track a hodag are increased by 10.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 90,
+    "max": 90,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\nburrow 15 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 17,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spiked Tail",
+      "bonus": 17,
+      "traits": [
+        "reach-10",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Rip and Tear",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The hodag makes two claw Strikes and one jaws Strike in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sickly",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Cruncher is Enfeebled 1 due to his mistreatment from the goblins. In addition, his eyes are rheumy and caked with gunk, resulting in a –4 circumstance penalty to sight-based Perception checks and causing him to be Blinded beyond a range of 5 feet. If he escapes into the wild, he heals back up after a few nights' rest and a big meal. Alternatively, a PC can speed his recovery with a DC 20 Medicine check, with the results detailed below; this takes 10 minutes to perform, and as such Cruncher needs to either be helpless or willing to receive the attention.</p>\n<hr />\n<p><strong>Critical Success</strong> Cruncher's vision clears and he loses the enfeebled condition.</p>\n<p><strong>Success</strong> Cruncher's vision clears, and he'll lose the enfeebled condition after 8 hours of rest.</p>\n<p><strong>Failure</strong> The attempt provides no aid.</p>\n<p><strong>Critical Failure</strong> As failure, but Cruncher takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> points of damage as well, potentially causing him to lose his trust in the PCs and driving him to attack.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Toss",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The hodag Strides, then makes a Strike against a target in reach. If it moves at least 20 feet and succeeds at its Strike, the hodag deals damage normally and then attempts an Athletics check against the creature's Fortitude DC to toss the enemy into the air.</p>\n<p>On a success, the tossed creature is thrown 10 feet in a straight line in the direction of the hodag's choice and then lands Prone. If the creature is knocked into a solid object, it takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage as well before landing prone. The hodag can instead toss a creature straight up in the air. The creature lands in the same square where it started, takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage, and lands prone.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Because they are often described only in drunken retellings of loggers' or miners' tales, hodags are considered by many to exist only in the local folklore of remote areas. However, some individuals have actually encountered these dangerous beasts firsthand, and even fewer have lived to tell their tales.</p>\n<p>Hodags are reptilian creatures the size of bulls. These vicious predators' long claws can tear creatures apart in seconds. Their backs sport dozens of long spines that run from their snouts all the way down the length of their powerful tails. Their wide mouths are full of sharp and twisted rows of teeth not unlike those of a shark. The hodags' rough, scaly hides carry hues of green and brown, allowing them to blend into their forest surroundings where they ambush prey. Only their glowing red eyes reveal their presence, though hodags have learned to use this to their advantage by drawing attention to their eyes in one area, then closing their eyes and stealthily moving to another area to cause their prey to misconstrue their location.</p>\n<p>In the wintertime, when snow and ice blankets a region, hodags grow a foul-smelling coat of greasy, dark-brown fur that sprouts in tufts from between their scales. A typical hodag measures over 10 feet long from snout to tail and weighs upward of 700 pounds.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 10,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Cruncher",
+    "type": "Creature",
+    "level": 6,
+    "traits": [
+      "Uncommon",
+      "Large",
+      "Beast"
+    ],
+    "source": "Pathfinder #200: Seven Dooms for Sandpoint",
+    "perception": {
+      "value": 10,
+      "note": "scent 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "scent 30 ft imprecise"
+    ],
+    "languages": [
+      "Common",
+      "(can't speak any language)"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 14,
+        "note": [
+          "in forests <span class=\"roll\" onclick=\"roll(this)\">16</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 12,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Trackless",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A hodag sweeps the ground behind it with its tail as it moves, obscuring its tracks. The DCs of checks to Track a hodag are increased by 10.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 90,
+      "max": 90,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Ferocity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\nburrow 15 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 17,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+8",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+8)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 17,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+8",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+8)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Spiked Tail",
+        "bonus": 17,
+        "traits": [
+          "reach-10",
+          "versatile-p"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+8",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+8)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Knockdown"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Rip and Tear",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The hodag makes two claw Strikes and one jaws Strike in any order.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sickly",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Cruncher is Enfeebled 1 due to his mistreatment from the goblins. In addition, his eyes are rheumy and caked with gunk, resulting in a –4 circumstance penalty to sight-based Perception checks and causing him to be Blinded beyond a range of 5 feet. If he escapes into the wild, he heals back up after a few nights' rest and a big meal. Alternatively, a PC can speed his recovery with a DC 20 Medicine check, with the results detailed below; this takes 10 minutes to perform, and as such Cruncher needs to either be helpless or willing to receive the attention.</p>\n<hr />\n<p><strong>Critical Success</strong> Cruncher's vision clears and he loses the enfeebled condition.</p>\n<p><strong>Success</strong> Cruncher's vision clears, and he'll lose the enfeebled condition after 8 hours of rest.</p>\n<p><strong>Failure</strong> The attempt provides no aid.</p>\n<p><strong>Critical Failure</strong> As failure, but Cruncher takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> points of damage as well, potentially causing him to lose his trust in the PCs and driving him to attack.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Toss",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The hodag Strides, then makes a Strike against a target in reach. If it moves at least 20 feet and succeeds at its Strike, the hodag deals damage normally and then attempts an Athletics check against the creature's Fortitude DC to toss the enemy into the air.</p>\n<p>On a success, the tossed creature is thrown 10 feet in a straight line in the direction of the hodag's choice and then lands Prone. If the creature is knocked into a solid object, it takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage as well before landing prone. The hodag can instead toss a creature straight up in the air. The creature lands in the same square where it started, takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage, and lands prone.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Because they are often described only in drunken retellings of loggers' or miners' tales, hodags are considered by many to exist only in the local folklore of remote areas. However, some individuals have actually encountered these dangerous beasts firsthand, and even fewer have lived to tell their tales.</p>\n<p>Hodags are reptilian creatures the size of bulls. These vicious predators' long claws can tear creatures apart in seconds. Their backs sport dozens of long spines that run from their snouts all the way down the length of their powerful tails. Their wide mouths are full of sharp and twisted rows of teeth not unlike those of a shark. The hodags' rough, scaly hides carry hues of green and brown, allowing them to blend into their forest surroundings where they ambush prey. Only their glowing red eyes reveal their presence, though hodags have learned to use this to their advantage by drawing attention to their eyes in one area, then closing their eyes and stealthily moving to another area to cause their prey to misconstrue their location.</p>\n<p>In the wintertime, when snow and ice blankets a region, hodags grow a foul-smelling coat of greasy, dark-brown fur that sprouts in tufts from between their scales. A typical hodag measures over 10 feet long from snout to tail and weighs upward of 700 pounds.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 24",
+    "originalCreature": {}
+  }
+}

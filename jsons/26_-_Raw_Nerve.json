@@ -1,0 +1,445 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Raw Nerve",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Medium",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Book of the Dead",
+  "perception": {
+    "value": 17,
+    "note": "darkvisionthoughtsense 60 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "thoughtsense 60 ft imprecise"
+  ],
+  "languages": [
+    "Common",
+    "Necril",
+    "(can't speak any language), telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "intimidation",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "medicine",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Lore",
+      "modifier": 20,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 6
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 150,
+    "max": 150,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "electricity",
+    "mental",
+    "poison",
+    "paralyzed",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "slashing",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Thoughtsense 60 feet",
+      "actions": null,
+      "traits": [
+        "mental",
+        "occult"
+      ],
+      "description": "<p>The raw nerve senses all non-mindless creatures at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Nerve Ending",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+9",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+9)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        "Involuntary-reaction"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Accelerating Inquest",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "detection",
+        "occult"
+      ],
+      "description": "<p>The raw nerve mentally probes a creature within 100 feet, attempting an Occultism check against the creature's Will DC. On a success, the raw nerve can Step, and gains a +2 circumstance bonus to AC against that creature until the start of the raw nerve's next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Float",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A raw nerve floats a few inches from the ground. As such, it can ignore difficult terrain.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Involuntary Reaction",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature struck by a raw nerve's nerve ending strike must succeed at a DC 26 Reflex save saving throw or be unable to use reactions until the start of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Synaptic Overload",
+      "actions": 3,
+      "traits": [
+        "incapacitation",
+        "mental",
+        "occult"
+      ],
+      "description": "<p>The raw nerve releases a burst of mental energy in a 30 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">4d12</span> mental damage to each creature in the cone (DC 23 Will save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Stunned 1.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is Stunned 2</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>When a living creature is killed by massive amounts of electricity (such as by being struck by lightning or subjected to a magical attack), their dying terror sometimes causes their soul to linger on the Material Plane. Necromantic energy takes hold of their brain and nervous system, causing these organs to burst forth from the charred flesh and become a raw nerve. These horrific undead float a few inches off the ground in a macabre arrangement morbidly parodying the creature's living form, with its brain at the top and nerves dangling below, crackling with electrical energy.</p>\n<p>A raw nerve can sense the thoughts of the living, perceiving them as a chaotic jumble that evokes an uncontrollable rage. The undead seeks to destroy the sources of these thoughts, which often means killing every living creature it can sense. Once a raw nerve detects no more thoughts, it grows still, floating in an almost meditative state. However, its fury instantly reawakens should a thinking creature pass too close. Though it's not mindless, a raw nerve can't be reasoned with, and the only way to stop one is to destroy it.</p>",
+  "recallKnowledge": "Religion, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 17,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Raw Nerve",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Medium",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder Book of the Dead",
+    "perception": {
+      "value": 17,
+      "note": "darkvisionthoughtsense 60 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "thoughtsense 60 ft imprecise"
+    ],
+    "languages": [
+      "Common",
+      "Necril",
+      "(can't speak any language), telepathy 100 feet"
+    ],
+    "skills": [
+      {
+        "name": "intimidation",
+        "modifier": 16,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "medicine",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "occultism",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 16,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "Lore",
+        "modifier": 20,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 0
+    },
+    "intelligence": {
+      "value": 6
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 26,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 150,
+      "max": 150,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "electricity",
+      "mental",
+      "poison",
+      "paralyzed",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "slashing",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Thoughtsense 60 feet",
+        "actions": null,
+        "traits": [
+          "mental",
+          "occult"
+        ],
+        "description": "<p>The raw nerve senses all non-mindless creatures at the listed range.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Nerve Ending",
+        "bonus": 20,
+        "traits": [
+          "agile",
+          "finesse",
+          "magical"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+9",
+            "type": "electricity"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+9)*2",
+            "type": "electricity"
+          }
+        ],
+        "effects": [
+          "Involuntary-reaction"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Accelerating Inquest",
+        "actions": 1,
+        "traits": [
+          "concentrate",
+          "detection",
+          "occult"
+        ],
+        "description": "<p>The raw nerve mentally probes a creature within 100 feet, attempting an Occultism check against the creature's Will DC. On a success, the raw nerve can Step, and gains a +2 circumstance bonus to AC against that creature until the start of the raw nerve's next turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Float",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A raw nerve floats a few inches from the ground. As such, it can ignore difficult terrain.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Involuntary Reaction",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A creature struck by a raw nerve's nerve ending strike must succeed at a DC 26 Reflex save saving throw or be unable to use reactions until the start of its next turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Synaptic Overload",
+        "actions": 3,
+        "traits": [
+          "incapacitation",
+          "mental",
+          "occult"
+        ],
+        "description": "<p>The raw nerve releases a burst of mental energy in a 30 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">4d12</span> mental damage to each creature in the cone (DC 23 Will save).</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Stunned 1.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is Stunned 2</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>When a living creature is killed by massive amounts of electricity (such as by being struck by lightning or subjected to a magical attack), their dying terror sometimes causes their soul to linger on the Material Plane. Necromantic energy takes hold of their brain and nervous system, causing these organs to burst forth from the charred flesh and become a raw nerve. These horrific undead float a few inches off the ground in a macabre arrangement morbidly parodying the creature's living form, with its brain at the top and nerves dangling below, crackling with electrical energy.</p>\n<p>A raw nerve can sense the thoughts of the living, perceiving them as a chaotic jumble that evokes an uncontrollable rage. The undead seeks to destroy the sources of these thoughts, which often means killing every living creature it can sense. Once a raw nerve detects no more thoughts, it grows still, floating in an almost meditative state. However, its fury instantly reawakens should a thinking creature pass too close. Though it's not mindless, a raw nerve can't be reasoned with, and the only way to stop one is to destroy it.</p>",
+    "recallKnowledge": "Religion, DC: 24",
+    "originalCreature": {}
+  }
+}

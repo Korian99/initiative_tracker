@@ -1,0 +1,423 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sky Fisher",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Huge",
+    "Animal"
+  ],
+  "source": "Pathfinder Howl of the Wild",
+  "perception": {
+    "value": 18,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -3
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 30,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 200,
+    "max": 200,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "precision"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 14
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 14
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "piercing",
+      "value": 7
+    },
+    {
+      "exceptions": [],
+      "type": "slashing",
+      "value": 7
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Transparency",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Unless it has fed recently, the sky fisher is naturally Invisible. Using non-hostile actions does not cause the sky fisher to become Hidden. When it takes a hostile action of any kind, the sky fisher is hidden instead of Undetected until the start of its next turn, as the vague outline of its many tendrils temporarily becomes faintly visible.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft,\nfly 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Stinging Tentacle",
+      "bonus": 24,
+      "traits": [
+        "agile",
+        "reach-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab",
+        "Sky-fisher-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Abduct",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>The sky fisher reels in a target Grabbed by its tentacles, pulling them into an adjacent space, and then attempts to Swallow them Whole (Large, <span class=\"roll\" onclick=\"roll(this)\">3d8+12</span> acid, Rupture 25). The sky fisher can only use Swallow Whole when using Abduct.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Enzymic Vent",
+      "actions": 2,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>The sky fisher vents flesh-eating enzymes into the air, dealing <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent acid damage and <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent bleed damage in a 20 foot emanation (DC 25 basic Reflex save). It can't use Enzymic Vent again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jet",
+      "actions": 2,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The sky fisher quickly expels some of its gases to move swiftly through the air, Flying up to 100 feet in a straight line; this movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sky Fisher Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage, Clumsy 1, and can't speak above a whisper (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d8</span> poison damage, Clumsy 2, and can't speak (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> poison damage and Paralyzed (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Nature, DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 18,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Sky Fisher",
+    "type": "Creature",
+    "level": 11,
+    "traits": [
+      "Huge",
+      "Animal"
+    ],
+    "source": "Pathfinder Howl of the Wild",
+    "perception": {
+      "value": 18,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 23,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": 7
+    },
+    "constitution": {
+      "value": 7
+    },
+    "intelligence": {
+      "value": -4
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": -3
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 30,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 200,
+      "max": 200,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "precision"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "bludgeoning",
+        "value": 14
+      },
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "poison",
+        "value": 14
+      }
+    ],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "piercing",
+        "value": 7
+      },
+      {
+        "exceptions": [],
+        "type": "slashing",
+        "value": 7
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Transparency",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Unless it has fed recently, the sky fisher is naturally Invisible. Using non-hostile actions does not cause the sky fisher to become Hidden. When it takes a hostile action of any kind, the sky fisher is hidden instead of Undetected until the start of its next turn, as the vague outline of its many tendrils temporarily becomes faintly visible.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "0 ft,\nfly 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Stinging Tentacle",
+        "bonus": 24,
+        "traits": [
+          "agile",
+          "reach-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+8",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+8)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab",
+          "Sky-fisher-venom"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Abduct",
+        "actions": 1,
+        "traits": [
+          "attack"
+        ],
+        "description": "<p>The sky fisher reels in a target Grabbed by its tentacles, pulling them into an adjacent space, and then attempts to Swallow them Whole (Large, <span class=\"roll\" onclick=\"roll(this)\">3d8+12</span> acid, Rupture 25). The sky fisher can only use Swallow Whole when using Abduct.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Enzymic Vent",
+        "actions": 2,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p>The sky fisher vents flesh-eating enzymes into the air, dealing <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent acid damage and <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent bleed damage in a 20 foot emanation (DC 25 basic Reflex save). It can't use Enzymic Vent again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Jet",
+        "actions": 2,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The sky fisher quickly expels some of its gases to move swiftly through the air, Flying up to 100 feet in a straight line; this movement doesn't trigger reactions.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sky Fisher Venom",
+        "actions": null,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage, Clumsy 1, and can't speak above a whisper (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d8</span> poison damage, Clumsy 2, and can't speak (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> poison damage and Paralyzed (1 round)</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Nature, DC: 28",
+    "originalCreature": {}
+  }
+}

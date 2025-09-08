@@ -1,0 +1,495 @@
+{
+  "initiative": 0,
+  "initiativebonus": 36,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Second Spawn",
+  "type": "Creature",
+  "level": 21,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Demon",
+    "Elemental",
+    "Fiend",
+    "Unholy",
+    "Wood"
+  ],
+  "source": "Pathfinder #212: A Voice in the Blight",
+  "perception": {
+    "value": 36,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Chthonian",
+    "Muan",
+    "Telepathy 100 feet"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 39,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 36,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 35,
+      "note": [
+        "in forests <span class=\"roll\" onclick=\"roll(this)\">39</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 10
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 7
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 45,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 39,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 500,
+    "max": 500,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 20
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 20
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "axe-vulnerability",
+      "value": 20
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 20
+    },
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 20
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Spray Sap",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The second spawn takes damage</p><hr /><p><strong>Effect</strong> A spray of bloody sap spurts from the second spawn's wound, targeting a creature within 30 feet of the second spawn's choice. That creature takes <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison damage (DC 41 basic Fortitude save) and is exposed to corrupting sap.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Branch",
+      "bonus": 39,
+      "traits": [
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d12+18",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d12+18)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Improved-knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spirit Splinter",
+      "bonus": 39,
+      "traits": [
+        "brutal",
+        "propulsive",
+        "range-increment-120",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "4d4+13",
+          "type": "piercing"
+        },
+        {
+          "roll": "2d6",
+          "type": "spirit"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(4d4+13)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "spirit"
+        }
+      ],
+      "effects": [
+        "Corrupting-sap"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Corrupting Sap",
+      "actions": null,
+      "traits": [
+        "divine",
+        "incapacitation",
+        "mental"
+      ],
+      "description": "<p>The first time in a round a creature is exposed to the second spawn's corrupting sap, the creature must attempt a DC 44 Will save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune to corrupting sap for 1 minute.</p>\n<p><strong>Success</strong> Intrusive fiendish thoughts and cruel urges well up in the creature's mind, causing the creature to become Off-Guard until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is controlled by the second spawn for 1 minute.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The timber body of a second spawn cracks with each movement, as if its very frame protests its abominable mobility. Grown from arboreals native to the Plane of Wood, the greatest of the second spawn—in effect, the \"First Spawn\"—is Treerazer's mobile fortress, the Witchbole.</p><hr /><p>Cleftwood fiends blend the properties of demons and wood elementals, their timber bodies distorted by burls, rot, and fungal growths. Planar scholars have debated into which category cleftwood fiends are better categorized, but to cleftwoods themselves there is no question—they feel much more at home in the Outer Rifts than they do the Plane of Wood.</p><h2>Demonic Elementals</h2><p>Cleftwood fiends aren't true demons or elementals, but they possess both of those creature traits. Since they aren't formed from sinful souls, they lack the typical sin vulnerability most demons possess, and since they possess blood-like sap, they lack the typical immunity to bleed most elementals possess.</p><h2>Other Cleftwood Fiends</h2><p>Rift pulpers and second spawn are the only types of cleftwood fiend currently active in Tanglebriar, but others exist in the Outer Rifts, particularly in the realm of Jeharlu. Here, one might encounter the blood-drinking stump-like splintertooth, the humanoid primal-magic-wielding blighted gardener, or the enormous horror of the fell deadfall.</p>",
+  "recallKnowledge": "Arcana, Nature, Religion, DC: 47",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 36,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Second Spawn",
+    "type": "Creature",
+    "level": 21,
+    "traits": [
+      "Rare",
+      "Gargantuan",
+      "Demon",
+      "Elemental",
+      "Fiend",
+      "Unholy",
+      "Wood"
+    ],
+    "source": "Pathfinder #212: A Voice in the Blight",
+    "perception": {
+      "value": 36,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Chthonian",
+      "Muan",
+      "Telepathy 100 feet"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 39,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 35,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 36,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 35,
+        "note": [
+          "in forests <span class=\"roll\" onclick=\"roll(this)\">39</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 10
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 10
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 7
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 45,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 39,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 33,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 36,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 500,
+      "max": 500,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "bludgeoning",
+        "value": 20
+      },
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "piercing",
+        "value": 20
+      }
+    ],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "axe-vulnerability",
+        "value": 20
+      },
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 20
+      },
+      {
+        "exceptions": [],
+        "type": "holy",
+        "value": 20
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Spray Sap",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The second spawn takes damage</p><hr /><p><strong>Effect</strong> A spray of bloody sap spurts from the second spawn's wound, targeting a creature within 30 feet of the second spawn's choice. That creature takes <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison damage (DC 41 basic Fortitude save) and is exposed to corrupting sap.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Branch",
+        "bonus": 39,
+        "traits": [
+          "reach-20"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d12+18",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d12+18)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Improved-knockdown"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Spirit Splinter",
+        "bonus": 39,
+        "traits": [
+          "brutal",
+          "propulsive",
+          "range-increment-120",
+          "unholy"
+        ],
+        "damageRolls": [
+          {
+            "roll": "4d4+13",
+            "type": "piercing"
+          },
+          {
+            "roll": "2d6",
+            "type": "spirit"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(4d4+13)*2",
+            "type": "piercing"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "spirit"
+          }
+        ],
+        "effects": [
+          "Corrupting-sap"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Corrupting Sap",
+        "actions": null,
+        "traits": [
+          "divine",
+          "incapacitation",
+          "mental"
+        ],
+        "description": "<p>The first time in a round a creature is exposed to the second spawn's corrupting sap, the creature must attempt a DC 44 Will save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune to corrupting sap for 1 minute.</p>\n<p><strong>Success</strong> Intrusive fiendish thoughts and cruel urges well up in the creature's mind, causing the creature to become Off-Guard until the end of its next turn.</p>\n<p><strong>Failure</strong> The creature is Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is controlled by the second spawn for 1 minute.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The timber body of a second spawn cracks with each movement, as if its very frame protests its abominable mobility. Grown from arboreals native to the Plane of Wood, the greatest of the second spawn—in effect, the \"First Spawn\"—is Treerazer's mobile fortress, the Witchbole.</p><hr /><p>Cleftwood fiends blend the properties of demons and wood elementals, their timber bodies distorted by burls, rot, and fungal growths. Planar scholars have debated into which category cleftwood fiends are better categorized, but to cleftwoods themselves there is no question—they feel much more at home in the Outer Rifts than they do the Plane of Wood.</p><h2>Demonic Elementals</h2><p>Cleftwood fiends aren't true demons or elementals, but they possess both of those creature traits. Since they aren't formed from sinful souls, they lack the typical sin vulnerability most demons possess, and since they possess blood-like sap, they lack the typical immunity to bleed most elementals possess.</p><h2>Other Cleftwood Fiends</h2><p>Rift pulpers and second spawn are the only types of cleftwood fiend currently active in Tanglebriar, but others exist in the Outer Rifts, particularly in the realm of Jeharlu. Here, one might encounter the blood-drinking stump-like splintertooth, the humanoid primal-magic-wielding blighted gardener, or the enormous horror of the fell deadfall.</p>",
+    "recallKnowledge": "Arcana, Nature, Religion, DC: 47",
+    "originalCreature": {}
+  }
+}

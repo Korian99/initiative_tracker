@@ -1,0 +1,509 @@
+{
+  "initiative": 0,
+  "initiativebonus": 5,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Grindylow",
+  "type": "Creature",
+  "level": 0,
+  "traits": [
+    "Small",
+    "Aberration",
+    "Amphibious"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 5,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Spear",
+      "quantity": 1,
+      "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": [
+        "monk",
+        "thrown-20"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 14,
+    "max": 14,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike (Special)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>A grindylow gains 1 extra reaction at the start of each of their turns that they can use only to make a Reactive Strike with a tentacle. They can't use more than one Reactive Strike triggered by the same action or choice.</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "10 ft,\nswim 25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 7,
+      "traits": [
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 7,
+      "traits": [
+        "agile",
+        "finesse",
+        "trip",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+1",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+1)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Spear",
+      "bonus": 5,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spear",
+      "bonus": 7,
+      "traits": [
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Clinging Suckers",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a grindylow successfully Grabs a creature larger than themself, they attach to that creature. The Grabbed creature is not Immobilized, but if it moves, the grindylow moves with it.</p>\n<p>If the creature is Medium or smaller, it takes a –5-foot status penalty to its Speeds while the grindylow is attached. The grindylow is Off-Guard while attached to a creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Jet",
+      "actions": 2,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The grindylow moves up to 60 feet in a straight line through the water without triggering reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The top half of a grindylow vaguely resembles a goblin, but from the waist down, their bodies split into a tangle of suckered, wriggling tentacles. Grindylows mostly dwell in shallow waters, fresh and briny, including lakes, rivers, coastal regions, and coral reefs. They generally organize into groups called schools, which can range from a few individuals to a few hundred. Smaller schools are sometimes taken over by a powerful aquatic creature, though such alliances only last until the school faces a major setback, at which point the surviving grindylows scatter and form smaller schools of their own.</p>\n<p>Grindylows aren't territorial, but they are pragmatic. While they rarely build permanent structures, they will adopt a good hunting ground for generations until driven away by predators. They often lair in mobile shelters, such as a sargasso of seaweed or hull of an abandoned ship. They are skilled scavengers and hunters who eat anything they can sink their teeth into.</p>\n<p>Grindylows respect the power of larger sea predators but have a special hatred for squids (or anything that resembles a squid). Sailors plying grindylow-infested waters often paint the images of squids on the bottoms of their hulls in hopes of warding off potentials raids. While this can keep smaller schools at bay, it can also backfire, potentially inciting larger groups to gather for a coordinated attack; this becomes especially likely if the ship's route is predictable. Their hatred of squids does not extend to other tentacled creatures; grindylows consider octopuses to be the epitome of grace and power.</p>",
+  "recallKnowledge": "Occultism, DC: 14",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 5,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Grindylow",
+    "type": "Creature",
+    "level": 0,
+    "traits": [
+      "Small",
+      "Aberration",
+      "Amphibious"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 5,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Thalassic"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 5,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 5,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 1
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [
+      {
+        "name": "Spear",
+        "quantity": 1,
+        "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": [
+          "monk",
+          "thrown-20"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 7,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 14,
+      "max": 14,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Reactive Strike (Special)",
+        "actions": -1,
+        "traits": [],
+        "description": "<p>A grindylow gains 1 extra reaction at the start of each of their turns that they can use only to make a Reactive Strike with a tentacle. They can't use more than one Reactive Strike triggered by the same action or choice.</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "10 ft,\nswim 25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Bite",
+        "bonus": 7,
+        "traits": [
+          "finesse"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+1",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+1)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tentacle",
+        "bonus": 7,
+        "traits": [
+          "agile",
+          "finesse",
+          "trip",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+1",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+1)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Spear",
+        "bonus": 5,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "1d6+1",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+1)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Spear",
+        "bonus": 7,
+        "traits": [
+          "thrown-20"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+1",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+1)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Clinging Suckers",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When a grindylow successfully Grabs a creature larger than themself, they attach to that creature. The Grabbed creature is not Immobilized, but if it moves, the grindylow moves with it.</p>\n<p>If the creature is Medium or smaller, it takes a –5-foot status penalty to its Speeds while the grindylow is attached. The grindylow is Off-Guard while attached to a creature.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Jet",
+        "actions": 2,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The grindylow moves up to 60 feet in a straight line through the water without triggering reactions.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The top half of a grindylow vaguely resembles a goblin, but from the waist down, their bodies split into a tangle of suckered, wriggling tentacles. Grindylows mostly dwell in shallow waters, fresh and briny, including lakes, rivers, coastal regions, and coral reefs. They generally organize into groups called schools, which can range from a few individuals to a few hundred. Smaller schools are sometimes taken over by a powerful aquatic creature, though such alliances only last until the school faces a major setback, at which point the surviving grindylows scatter and form smaller schools of their own.</p>\n<p>Grindylows aren't territorial, but they are pragmatic. While they rarely build permanent structures, they will adopt a good hunting ground for generations until driven away by predators. They often lair in mobile shelters, such as a sargasso of seaweed or hull of an abandoned ship. They are skilled scavengers and hunters who eat anything they can sink their teeth into.</p>\n<p>Grindylows respect the power of larger sea predators but have a special hatred for squids (or anything that resembles a squid). Sailors plying grindylow-infested waters often paint the images of squids on the bottoms of their hulls in hopes of warding off potentials raids. While this can keep smaller schools at bay, it can also backfire, potentially inciting larger groups to gather for a coordinated attack; this becomes especially likely if the ship's route is predictable. Their hatred of squids does not extend to other tentacled creatures; grindylows consider octopuses to be the epitome of grace and power.</p>",
+    "recallKnowledge": "Occultism, DC: 14",
+    "originalCreature": {}
+  }
+}

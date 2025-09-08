@@ -1,0 +1,397 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rakkatak",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Medium",
+    "Elemental",
+    "Fire"
+  ],
+  "source": "Pathfinder Rage of Elements",
+  "perception": {
+    "value": 9,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Pyric",
+    "Can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 90,
+    "max": 90,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "fire",
+    "sleep",
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "cold",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Exploding Guts",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the rakkatak is critically hit or critically fails a Fortitude save, one of its organs bursts. Roll <span class=\"roll\" onclick=\"roll(this)\">1d4</span> to determine what effect this has.</p>\n<p><strong>1</strong> Trapped noxious gas rushes out. The rakkatak is pushed 10 feet away from the source of the triggering attack or effect.</p>\n<p><strong>2</strong> Pus showers those nearby. Each creature in a 5 foot emanation is Sickened 1.</p>\n<p><strong>3</strong> The damage is severe. The rakkatak takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus bleed damage.</p>\n<p><strong>4</strong> Gelatinous rakkatak eggs explode forth and instantly hatch. Each creature in a 5 foot emanation takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus piercing damage from the ravenous larvae.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "5 ft,\nfly 45 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Mouth",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Leg",
+      "bonus": 15,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Predator's Stare",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "emotion",
+        "mental",
+        "visual"
+      ],
+      "description": "<p>The rakkatak turns its grotesque yet mesmerizing eyes upon one creature it can see within 30 feet. That creature must succeed at a DC 22 Will save or become Fascinated with the rakkatak. While fascinated, the creature must spend at least 1 action each round moving closer to the rakkatak as expediently as possible, and can't intentionally move away from it. The fascination ends after 1 minute or when the rakkatak uses Predator's Stare again, whichever comes first.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Suck Innards",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the rakkatak's reach</p>\n<hr />\n<p><strong>Effect</strong> The rakkatak deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> untyped damage to the target (DC 22 basic Fortitude save). If the creature takes at least 12 damage, the rakkatak regains 10 healing HP.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Pulsating organs and tumors squirm loosely within a sac of skin, all forming the misshapen lump that is the body of a rakkatak. The predator's eyes scan the area, shimmering in the smoke like glowing dots. Wriggling insectoid legs—varying in number from one rakkatak to another—hang from its bulbous body. These limbs flail chaotically as a rakkatak fights, only calming when it's time to eat or rest.</p>\n<p>Most rakkataks fly alone, picking off meals in sudden swooping strikes, but they will occasionally form a flock. Despite having little faculty for communication with other creatures, rakkataks have a certain ravenous genius for hunting with kin. Typically, once one grabs prey, the others swoop in to latch on as well, ingesting their meal with leech-like mouths.</p>\n<p>Rakkataks possess insatiable appetites to help them withstand the long periods of famine between their infrequent meals as they travel the expanses of the Plane of Fire. As a result, they easily overconsume if brought somewhere with more abundant fauna, like the Universe. A single rakkatak can hold a surprising quantity of offal, even growing in size as its body expands. It becomes more unwieldy the larger it gets, which planar biologists believe to be a survival tactic to keep a rakkatak from indulging its hunger until it quite literally bursts.</p>\n<h2>Ashen Hunting Grounds</h2>\n<p>Avoiding the blazing chaos and ifrit rule that typify much of the Plane of Fire, rakkataks prefer ashen wastelands as their hunting grounds. They dig simple burrows just barely below the surface, called rakkatak hills. Within, they can doze and digest in peace or lay and tend their horrifying eggs.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 20",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Rakkatak",
+    "type": "Creature",
+    "level": 5,
+    "traits": [
+      "Medium",
+      "Elemental",
+      "Fire"
+    ],
+    "source": "Pathfinder Rage of Elements",
+    "perception": {
+      "value": 9,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Pyric",
+      "Can't speak any language"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 2
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": -3
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": -2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 90,
+      "max": 90,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "paralyzed",
+      "fire",
+      "sleep",
+      "poison"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "cold",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Exploding Guts",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the rakkatak is critically hit or critically fails a Fortitude save, one of its organs bursts. Roll <span class=\"roll\" onclick=\"roll(this)\">1d4</span> to determine what effect this has.</p>\n<p><strong>1</strong> Trapped noxious gas rushes out. The rakkatak is pushed 10 feet away from the source of the triggering attack or effect.</p>\n<p><strong>2</strong> Pus showers those nearby. Each creature in a 5 foot emanation is Sickened 1.</p>\n<p><strong>3</strong> The damage is severe. The rakkatak takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus bleed damage.</p>\n<p><strong>4</strong> Gelatinous rakkatak eggs explode forth and instantly hatch. Each creature in a 5 foot emanation takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus piercing damage from the ravenous larvae.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "5 ft,\nfly 45 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Mouth",
+        "bonus": 15,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "2d8+7",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+7)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Leg",
+        "bonus": 15,
+        "traits": [
+          "agile"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d10+7",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d10+7)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Predator's Stare",
+        "actions": 1,
+        "traits": [
+          "concentrate",
+          "emotion",
+          "mental",
+          "visual"
+        ],
+        "description": "<p>The rakkatak turns its grotesque yet mesmerizing eyes upon one creature it can see within 30 feet. That creature must succeed at a DC 22 Will save or become Fascinated with the rakkatak. While fascinated, the creature must spend at least 1 action each round moving closer to the rakkatak as expediently as possible, and can't intentionally move away from it. The fascination ends after 1 minute or when the rakkatak uses Predator's Stare again, whichever comes first.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Suck Innards",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the rakkatak's reach</p>\n<hr />\n<p><strong>Effect</strong> The rakkatak deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> untyped damage to the target (DC 22 basic Fortitude save). If the creature takes at least 12 damage, the rakkatak regains 10 healing HP.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Pulsating organs and tumors squirm loosely within a sac of skin, all forming the misshapen lump that is the body of a rakkatak. The predator's eyes scan the area, shimmering in the smoke like glowing dots. Wriggling insectoid legs—varying in number from one rakkatak to another—hang from its bulbous body. These limbs flail chaotically as a rakkatak fights, only calming when it's time to eat or rest.</p>\n<p>Most rakkataks fly alone, picking off meals in sudden swooping strikes, but they will occasionally form a flock. Despite having little faculty for communication with other creatures, rakkataks have a certain ravenous genius for hunting with kin. Typically, once one grabs prey, the others swoop in to latch on as well, ingesting their meal with leech-like mouths.</p>\n<p>Rakkataks possess insatiable appetites to help them withstand the long periods of famine between their infrequent meals as they travel the expanses of the Plane of Fire. As a result, they easily overconsume if brought somewhere with more abundant fauna, like the Universe. A single rakkatak can hold a surprising quantity of offal, even growing in size as its body expands. It becomes more unwieldy the larger it gets, which planar biologists believe to be a survival tactic to keep a rakkatak from indulging its hunger until it quite literally bursts.</p>\n<h2>Ashen Hunting Grounds</h2>\n<p>Avoiding the blazing chaos and ifrit rule that typify much of the Plane of Fire, rakkataks prefer ashen wastelands as their hunting grounds. They dig simple burrows just barely below the surface, called rakkatak hills. Within, they can doze and digest in peace or lay and tend their horrifying eggs.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 20",
+    "originalCreature": {}
+  }
+}

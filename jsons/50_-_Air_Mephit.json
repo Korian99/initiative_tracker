@@ -1,0 +1,533 @@
+{
+  "initiative": 0,
+  "initiativebonus": 3,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Air Mephit",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Small",
+    "Air",
+    "Elemental",
+    "(caster)"
+  ],
+  "source": "Pathfinder Bestiary",
+  "perception": {
+    "value": 3,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Sussuran"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 12,
+    "max": 12,
+    "note": "fast healing 2 (in open air)",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft,\nfly 40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breath Weapon",
+      "actions": 2,
+      "traits": [
+        "air",
+        "arcane"
+      ],
+      "description": "<p>The air mephit breathes sand and grit in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> slashing damage to each creature within the area (DC 17 basic Reflex save).</p>\n<p>The air mephit can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Innate Spells",
+      "type": "innate",
+      "bonus": 9,
+      "dc": 17,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "UsE3E2jD964UvWQw",
+      "modifications": [],
+      "lv1spells": [
+        {
+          "name": "Gust of Wind",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "air",
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "until the start of your next turn",
+          "range": "",
+          "area": "60 ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>A violent wind issues forth from your palm, blowing from the point where you are when you cast the spell to the line's opposite end. The wind extinguishes small non-magical fires, disperses fog and mist, blows objects of light Bulk or less around, and pushes larger objects. Large or smaller creatures in the area must attempt a Fortitude save. Large or smaller creatures that later move into the gust must attempt the save on entering.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can't move against the wind.</p>\n<p><strong>Failure</strong> The creature is knocked Prone. If it was flying, it suffers the effects of critical failure instead.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 30 feet in the wind's direction, knocked Prone, and takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "IJfc0yjvz9bWboon"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Blur",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target's form appears blurry. It becomes Concealed. As the nature of this effect still leaves the target's location obvious, the target can't use this concealment to Hide or Sneak.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4wYhc5wemRSq5zYN"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>Air mephits are capricious and flighty relative to their kin; they are as likely to fly blindly into battle as they are to whine in terror at a loud noise. They are pale blue in coloration and have thin wings that trail small puffs of vapor as they fly through the skies.</p>\n<hr />\n<p>Mephits-sometimes known as elemental scamps-are little bipedal critters with bat-like wings who serve stronger elementals on the Elemental Planes or neophyte spellcasters who summon them to the Material Plane. All mephits have an inkling of magical power as well as a breath weapon.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 15",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 3,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Air Mephit",
+    "type": "Creature",
+    "level": 1,
+    "traits": [
+      "Small",
+      "Air",
+      "Elemental",
+      "(caster)"
+    ],
+    "source": "Pathfinder Bestiary",
+    "perception": {
+      "value": 3,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Sussuran"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 1
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 0
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 3,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 7,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 12,
+      "max": 12,
+      "note": "fast healing 2 (in open air)",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "20 ft,\nfly 40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 9,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+1",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+1)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Breath Weapon",
+        "actions": 2,
+        "traits": [
+          "air",
+          "arcane"
+        ],
+        "description": "<p>The air mephit breathes sand and grit in a 15 foot cone that deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> slashing damage to each creature within the area (DC 17 basic Reflex save).</p>\n<p>The air mephit can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Arcane Innate Spells",
+        "type": "innate",
+        "bonus": 9,
+        "dc": 17,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 1,
+        "cantrips": [],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "UsE3E2jD964UvWQw",
+        "modifications": [],
+        "lv1spells": [
+          {
+            "name": "Gust of Wind",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "air",
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "until the start of your next turn",
+            "range": "",
+            "area": "60 ft line",
+            "targets": "",
+            "save": "fortitude",
+            "description": "<p>A violent wind issues forth from your palm, blowing from the point where you are when you cast the spell to the line's opposite end. The wind extinguishes small non-magical fires, disperses fog and mist, blows objects of light Bulk or less around, and pushes larger objects. Large or smaller creatures in the area must attempt a Fortitude save. Large or smaller creatures that later move into the gust must attempt the save on entering.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can't move against the wind.</p>\n<p><strong>Failure</strong> The creature is knocked Prone. If it was flying, it suffers the effects of critical failure instead.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 30 feet in the wind's direction, knocked Prone, and takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "IJfc0yjvz9bWboon"
+          }
+        ],
+        "lv2spells": [
+          {
+            "name": "Blur",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "illusion",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "1 minute",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>The target's form appears blurry. It becomes Concealed. As the nature of this effect still leaves the target's location obvious, the target can't use this concealment to Hide or Sneak.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "4wYhc5wemRSq5zYN"
+          }
+        ],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>Air mephits are capricious and flighty relative to their kin; they are as likely to fly blindly into battle as they are to whine in terror at a loud noise. They are pale blue in coloration and have thin wings that trail small puffs of vapor as they fly through the skies.</p>\n<hr />\n<p>Mephits-sometimes known as elemental scamps-are little bipedal critters with bat-like wings who serve stronger elementals on the Elemental Planes or neophyte spellcasters who summon them to the Material Plane. All mephits have an inkling of magical power as well as a breath weapon.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 15",
+    "originalCreature": {}
+  }
+}

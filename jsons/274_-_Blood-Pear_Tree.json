@@ -1,0 +1,511 @@
+{
+  "initiative": 0,
+  "initiativebonus": 29,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Blood-Pear Tree",
+  "type": "Creature",
+  "level": 17,
+  "traits": [
+    "Unique",
+    "Huge",
+    "Evil",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #191: The Destiny War",
+  "perception": {
+    "value": 29,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Arboreal",
+    "Fey",
+    "Necril",
+    "(can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 32,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 38,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 350,
+    "max": 350,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 15
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 15
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "axe-vulnerability",
+      "value": 15
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Axe Vulnerability",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The Blood-Pear Tree takes 15 additional damage from axes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Plant",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When it isn't in danger, the corpseroot spends 1 minute rooting to the earth, becoming planted in place. While the corpseroot is planted and immobile, creatures must actively Seek and succeed at a DC 36 Perception check (DC 40 Perception check in forests) to detect the corpseroot's true nature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Branch",
+      "bonus": 34,
+      "traits": [
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+17)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Root",
+      "bonus": 34,
+      "traits": [
+        "agile",
+        "reach-20",
+        "trip"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+17",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+17)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Bloody Pear",
+      "bonus": 30,
+      "traits": [
+        "range-increment-20",
+        "splash"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+12",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "splash poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+12)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "splash poison"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Take Root",
+      "actions": 1,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The Blood-Pear Tree has a creature Grabbed or Restrained</p>\n<hr />\n<p><strong>Effect</strong> The Blood-Pear Tree buries its roots into the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6+17</span> piercing damage (DC 38 basic Fortitude save). On a failure, the creature is Enfeebled 1 (or increases the value by 1 if already enfeebled), and the corpseroot regains 15 healing HP. If this would make a creature Enfeebled 5, the creature dies.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Corpseroots are rotten, undead trees that grow bright-red poisonous fruit and spread blight to surrounding plants, transforming healthy trees into new corpseroots. These cunning killers drain the life from creatures through their root systems, posing as dead trees until their victims come within reach.</p>\n<p>Corpseroots most commonly form from rotten husks of trees that died from supernatural blights, making them common threats in the Fangwood and Fierani forests. The most powerful are ancient trees used as shrines and sacrificial altars, their roots absorbing the blood, flesh, and terror of those condemned under their boughs. Some of these ancient corpseroots still command the respect and devotion of the cults that inadvertently created them.</p>",
+  "recallKnowledge": "Religion, DC: 36",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 29,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Blood-Pear Tree",
+    "type": "Creature",
+    "level": 17,
+    "traits": [
+      "Unique",
+      "Huge",
+      "Evil",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder #191: The Destiny War",
+    "perception": {
+      "value": 29,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Arboreal",
+      "Fey",
+      "Necril",
+      "(can't speak any language)"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 32,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 30,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 9
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 6
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 6
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 38,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 31,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 26,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 350,
+      "max": 350,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "bludgeoning",
+        "value": 15
+      },
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "piercing",
+        "value": 15
+      }
+    ],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "axe-vulnerability",
+        "value": 15
+      },
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 15
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Axe Vulnerability",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The Blood-Pear Tree takes 15 additional damage from axes.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Plant",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When it isn't in danger, the corpseroot spends 1 minute rooting to the earth, becoming planted in place. While the corpseroot is planted and immobile, creatures must actively Seek and succeed at a DC 36 Perception check (DC 40 Perception check in forests) to detect the corpseroot's true nature.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Branch",
+        "bonus": 34,
+        "traits": [
+          "reach-15"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d12+17",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d12+17)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Root",
+        "bonus": 34,
+        "traits": [
+          "agile",
+          "reach-20",
+          "trip"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+17",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+17)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Bloody Pear",
+        "bonus": 30,
+        "traits": [
+          "range-increment-20",
+          "splash"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+12",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d6",
+            "type": "splash poison"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+12)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "splash poison"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Take Root",
+        "actions": 1,
+        "traits": [
+          "primal"
+        ],
+        "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The Blood-Pear Tree has a creature Grabbed or Restrained</p>\n<hr />\n<p><strong>Effect</strong> The Blood-Pear Tree buries its roots into the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6+17</span> piercing damage (DC 38 basic Fortitude save). On a failure, the creature is Enfeebled 1 (or increases the value by 1 if already enfeebled), and the corpseroot regains 15 healing HP. If this would make a creature Enfeebled 5, the creature dies.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Corpseroots are rotten, undead trees that grow bright-red poisonous fruit and spread blight to surrounding plants, transforming healthy trees into new corpseroots. These cunning killers drain the life from creatures through their root systems, posing as dead trees until their victims come within reach.</p>\n<p>Corpseroots most commonly form from rotten husks of trees that died from supernatural blights, making them common threats in the Fangwood and Fierani forests. The most powerful are ancient trees used as shrines and sacrificial altars, their roots absorbing the blood, flesh, and terror of those condemned under their boughs. Some of these ancient corpseroots still command the respect and devotion of the cults that inadvertently created them.</p>",
+    "recallKnowledge": "Religion, DC: 36",
+    "originalCreature": {}
+  }
+}

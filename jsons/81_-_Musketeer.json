@@ -1,0 +1,567 @@
+{
+  "initiative": 0,
+  "initiativebonus": 10,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Musketeer",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Pathfinder NPC Core",
+  "perception": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [],
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 8,
+      "note": [
+        "to Feint <span class=\"roll\" onclick=\"roll(this)\">10</span>"
+      ],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Flintlock Musket",
+      "quantity": 1,
+      "description": "<p>The most commonly available of firearms in Alkenstar, the flintlock musket includes an external firing mechanism and an efficient and relatively compact frame. Though lacking the range and firing power of the arquebus preferred by Alkenstar and Dongun Hold's military members, the flintlock musket is popular among civilians for its ease of use.</p>",
+      "level": 0,
+      "price": "5 gp ",
+      "traits": [
+        "uncommon",
+        "concussive",
+        "fatal-d10"
+      ]
+    },
+    {
+      "name": "Rapier",
+      "quantity": 1,
+      "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": [
+        "deadly-d8",
+        "disarm",
+        "finesse"
+      ]
+    },
+    {
+      "name": "Leather Armor",
+      "quantity": 1,
+      "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": []
+    },
+    {
+      "name": "Rounds (Flintlock Musket)",
+      "quantity": 10,
+      "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": [
+        "alchemical"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 40,
+    "max": 40,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Rapier",
+      "bonus": 11,
+      "traits": [
+        "deadly-d8",
+        "disarm",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+5)*2+1d8",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Flintlock Musket",
+      "bonus": 11,
+      "traits": [
+        "concussive",
+        "fatal-d10",
+        "range-increment-70",
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Musketeer's Advance",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The musketeer is wielding a flintlock musket</p><hr /><p><strong>Effect</strong> The musketeer makes a flintlock musket Strike. If the Strike hits, the target is Off-Guard to melee attacks by the musketeer until the end of the musketeer's next turn. Regardless of whether the Strike hit, the musketeer then Interacts to swap their flintlock musket for their rapier and Strides toward the creature they attacked.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "One for All",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The musketeer is wielding a single one-handed weapon in one hand and has their other hand free</p><hr /><p><strong>Effect</strong> The musketeer grants a +1 circumstance bonus to AC to themself until the start of their next turn. Allies also gain this bonus while adjacent to the musketeer. If a creature would benefit from more than one creature's One for All ability, the bonus is +2 instead of +1.</p>\n<p>Effect: One for All</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The musketeer deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Flashy and confident, the musketeer isn't above using dirty tricks to gain the upper hand in a fight. Despite their bravado, musketeers are fiercely loyal to their allies.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
+  "recallKnowledge": "Society, DC: 18",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 10,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Musketeer",
+    "type": "Creature",
+    "level": 3,
+    "traits": [
+      "Medium",
+      "Human",
+      "Humanoid"
+    ],
+    "source": "Pathfinder NPC Core",
+    "perception": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [],
+    "languages": [
+      "Common"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 8,
+        "note": [
+          "to Feint <span class=\"roll\" onclick=\"roll(this)\">10</span>"
+        ],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 1
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 1
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": 3
+    },
+    "items": [
+      {
+        "name": "Flintlock Musket",
+        "quantity": 1,
+        "description": "<p>The most commonly available of firearms in Alkenstar, the flintlock musket includes an external firing mechanism and an efficient and relatively compact frame. Though lacking the range and firing power of the arquebus preferred by Alkenstar and Dongun Hold's military members, the flintlock musket is popular among civilians for its ease of use.</p>",
+        "level": 0,
+        "price": "5 gp ",
+        "traits": [
+          "uncommon",
+          "concussive",
+          "fatal-d10"
+        ]
+      },
+      {
+        "name": "Rapier",
+        "quantity": 1,
+        "description": "<p>The rapier is a long and thin piercing blade with a basket hilt. It is prized among many as a dueling weapon.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": [
+          "deadly-d8",
+          "disarm",
+          "finesse"
+        ]
+      },
+      {
+        "name": "Leather Armor",
+        "quantity": 1,
+        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": []
+      },
+      {
+        "name": "Rounds (Flintlock Musket)",
+        "quantity": 10,
+        "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": [
+          "alchemical"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 20,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 40,
+      "max": 40,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Rapier",
+        "bonus": 11,
+        "traits": [
+          "deadly-d8",
+          "disarm",
+          "finesse"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+5",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+5)*2+1d8",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 11,
+        "traits": [
+          "agile",
+          "finesse",
+          "nonlethal",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+5",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+5)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Flintlock Musket",
+        "bonus": 11,
+        "traits": [
+          "concussive",
+          "fatal-d10",
+          "range-increment-70",
+          "reload-1"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Musketeer's Advance",
+        "actions": 2,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The musketeer is wielding a flintlock musket</p><hr /><p><strong>Effect</strong> The musketeer makes a flintlock musket Strike. If the Strike hits, the target is Off-Guard to melee attacks by the musketeer until the end of the musketeer's next turn. Regardless of whether the Strike hit, the musketeer then Interacts to swap their flintlock musket for their rapier and Strides toward the creature they attacked.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "One for All",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The musketeer is wielding a single one-handed weapon in one hand and has their other hand free</p><hr /><p><strong>Effect</strong> The musketeer grants a +1 circumstance bonus to AC to themself until the start of their next turn. Allies also gain this bonus while adjacent to the musketeer. If a creature would benefit from more than one creature's One for All ability, the bonus is +2 instead of +1.</p>\n<p>Effect: One for All</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sneak Attack",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The musketeer deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Flashy and confident, the musketeer isn't above using dirty tricks to gain the upper hand in a fight. Despite their bravado, musketeers are fiercely loyal to their allies.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
+    "recallKnowledge": "Society, DC: 18",
+    "originalCreature": {}
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Augrael",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Chaotic",
+    "Ghoul",
+    "Undead"
+  ],
+  "source": "Pathfinder #163: Ruins of Gauntlight",
+  "perception": {
+    "value": 8,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Aklo",
+    "Common",
+    "Necril",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [
+        "to Climb <span class=\"roll\" onclick=\"roll(this)\">12</span>"
+      ],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Light Blindness",
+      "actions": null,
+      "traits": [],
+      "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 48,
+    "max": 48,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "30 ft,\nburrow 5 ft,\nclimb 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 12,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Ghoul-ghoul-fever",
+        "Ghoul-paralysis"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 12,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "Ghoul-paralysis"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Consume Flesh",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> Augrael is adjacent to the corpse of an undead creature that was destroyed within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Augrael devours a chunk of the destroyed undead creature and regains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> healing Hit Points.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ghoul Fever",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a Ghoul the next midnight.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Paralysis",
+      "actions": null,
+      "traits": [
+        "incapacitation",
+        "occult"
+      ],
+      "description": "<p>Any living, non-elf creature hit by Augrael's attack must succeed at a DC 20 Fortitude save or become Paralyzed. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Augrael deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Swift Leap",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>Augrael jumps up to half his Speed. This movement doesn't trigger reactions.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Religion, DC: 18",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 8,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Augrael",
+    "type": "Creature",
+    "level": 3,
+    "traits": [
+      "Unique",
+      "Medium",
+      "Chaotic",
+      "Ghoul",
+      "Undead"
+    ],
+    "source": "Pathfinder #163: Ruins of Gauntlight",
+    "perception": {
+      "value": 8,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Aklo",
+      "Common",
+      "Necril",
+      "Sakvroth"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 9,
+        "note": [
+          "to Climb <span class=\"roll\" onclick=\"roll(this)\">12</span>"
+        ],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "crafting",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "occultism",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 1
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Light Blindness",
+        "actions": null,
+        "traits": [],
+        "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "ac": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 48,
+      "max": 48,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "30 ft,\nburrow 5 ft,\nclimb 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 12,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d8+7",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d8+7)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Ghoul-ghoul-fever",
+          "Ghoul-paralysis"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 12,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+7",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+7)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [
+          "Ghoul-paralysis"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Consume Flesh",
+        "actions": 1,
+        "traits": [
+          "manipulate"
+        ],
+        "description": "<p><strong>Requirements</strong> Augrael is adjacent to the corpse of an undead creature that was destroyed within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Augrael devours a chunk of the destroyed undead creature and regains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> healing Hit Points.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Ghoul Fever",
+        "actions": null,
+        "traits": [
+          "disease"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a Ghoul the next midnight.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Paralysis",
+        "actions": null,
+        "traits": [
+          "incapacitation",
+          "occult"
+        ],
+        "description": "<p>Any living, non-elf creature hit by Augrael's attack must succeed at a DC 20 Fortitude save or become Paralyzed. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Sneak Attack",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Augrael deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Swift Leap",
+        "actions": 1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>Augrael jumps up to half his Speed. This movement doesn't trigger reactions.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Religion, DC: 18",
+    "originalCreature": {}
+  }
+}

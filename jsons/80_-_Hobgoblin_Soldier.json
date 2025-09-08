@@ -1,0 +1,439 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Hobgoblin Soldier",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Medium",
+    "Hobgoblin",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 7,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Goblin"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [
+    {
+      "name": "Longsword",
+      "quantity": 1,
+      "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "versatile-p"
+      ]
+    },
+    {
+      "name": "Shortbow",
+      "quantity": 1,
+      "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
+      "level": 0,
+      "price": "3 gp ",
+      "traits": [
+        "deadly-d10"
+      ]
+    },
+    {
+      "name": "Breastplate",
+      "quantity": 1,
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "level": 0,
+      "price": "8 gp ",
+      "traits": []
+    },
+    {
+      "name": "Arrows",
+      "quantity": 10,
+      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "(20 with shield raised)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Formation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When it's adjacent to at least two other allies, the hobgoblin soldier gains a +1 circumstance bonus to AC and saving throws. This bonus increases to +2 to Reflex saves against area effects.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    },
+    {
+      "name": "Shield Block",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Longsword",
+      "bonus": 8,
+      "traits": [
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+3",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+3)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Shortbow",
+      "bonus": 8,
+      "traits": [
+        "deadly-d10",
+        "range-increment-60",
+        "reload-0"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2+1d10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [],
+  "spellcastingEntries": [],
+  "description": "<p>Soldiers make up the bulk of hobgoblin society, whether that society is a village or a military unit.</p>\n<hr />\n<p>Hobgoblins may appear to outsiders to be the most civilized of goblinkind, but their civilization is hardly one of kindness and equality-instead, they revel in all that is militaristic, tyrannical, cruel, and destructive. Hobgoblins are singularly devoted to war, and their entire culture is built upon fostering and maintaining conflict while simultaneously proving their superiority in battle. Hobgoblins are highly organized, and they work efficiently and effectively in groups, whether that group is a small raiding party, a roving war band, or a fully regimented army. Hobgoblin rulers require little provocation before declaring war, and more often than not, such wars are waged to gain slaves or territory. Physically, hobgoblins stand about as tall as humans and have gray, ashen skin.</p>\n<p>Hobgoblin society is organized along military lines, and every hobgoblin is effectively a member of the army. Each hobgoblin in a community has a rank in the military hierarchy, and individuals are naturally ambitious and obsessed with advancement. Hobgoblins are constantly expected to prove that they're fearless, ruthless, cunning, and strong. Demonstrating such aptitudes is an individual hobgoblin's best hope for promotion through the ranks, but failure leads only to cruel exploitation at the hands of their superiors. Though brutal, hobgoblin society is a true meritocracy, and all hobgoblins, regardless of age, gender, or birth, wield authority and earn respect from their peers based on their skill in battle. Even those individuals who serve in non-combat roles in hobgoblin society-blacksmiths, builders, cooks, messengers, quartermasters, and the like-know that they perform vital jobs that support the larger hobgoblin army, though they rarely rise above the rank of common soldier. Everyone contributes to the larger whole, ensuring that hobgoblin society is the strongest and most efficient it can be, and anyone who fails to do so is culled from the army and this hobgoblin society as dead weight. Hobgoblins don't usually engage in trade with other races, or even with other hobgoblin tribes, preferring to take what they want by force.</p>",
+  "recallKnowledge": "Society, DC: 15",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 7,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Hobgoblin Soldier",
+    "type": "Creature",
+    "level": 1,
+    "traits": [
+      "Medium",
+      "Hobgoblin",
+      "Humanoid"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 7,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Goblin"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": -1
+    },
+    "items": [
+      {
+        "name": "Longsword",
+        "quantity": 1,
+        "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "versatile-p"
+        ]
+      },
+      {
+        "name": "Shortbow",
+        "quantity": 1,
+        "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
+        "level": 0,
+        "price": "3 gp ",
+        "traits": [
+          "deadly-d10"
+        ]
+      },
+      {
+        "name": "Breastplate",
+        "quantity": 1,
+        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+        "level": 0,
+        "price": "8 gp ",
+        "traits": []
+      },
+      {
+        "name": "Arrows",
+        "quantity": 10,
+        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 18,
+      "note": "(20 with shield raised)",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 20,
+      "max": 20,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Formation",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When it's adjacent to at least two other allies, the hobgoblin soldier gains a +1 circumstance bonus to AC and saving throws. This bonus increases to +2 to Reflex saves against area effects.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Reactive Strike",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      },
+      {
+        "name": "Shield Block",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Longsword",
+        "bonus": 8,
+        "traits": [
+          "versatile-p"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d8+3",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d8+3)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Shortbow",
+        "bonus": 8,
+        "traits": [
+          "deadly-d10",
+          "range-increment-60",
+          "reload-0"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6)*2+1d10",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [],
+    "spellcastingEntries": [],
+    "description": "<p>Soldiers make up the bulk of hobgoblin society, whether that society is a village or a military unit.</p>\n<hr />\n<p>Hobgoblins may appear to outsiders to be the most civilized of goblinkind, but their civilization is hardly one of kindness and equality-instead, they revel in all that is militaristic, tyrannical, cruel, and destructive. Hobgoblins are singularly devoted to war, and their entire culture is built upon fostering and maintaining conflict while simultaneously proving their superiority in battle. Hobgoblins are highly organized, and they work efficiently and effectively in groups, whether that group is a small raiding party, a roving war band, or a fully regimented army. Hobgoblin rulers require little provocation before declaring war, and more often than not, such wars are waged to gain slaves or territory. Physically, hobgoblins stand about as tall as humans and have gray, ashen skin.</p>\n<p>Hobgoblin society is organized along military lines, and every hobgoblin is effectively a member of the army. Each hobgoblin in a community has a rank in the military hierarchy, and individuals are naturally ambitious and obsessed with advancement. Hobgoblins are constantly expected to prove that they're fearless, ruthless, cunning, and strong. Demonstrating such aptitudes is an individual hobgoblin's best hope for promotion through the ranks, but failure leads only to cruel exploitation at the hands of their superiors. Though brutal, hobgoblin society is a true meritocracy, and all hobgoblins, regardless of age, gender, or birth, wield authority and earn respect from their peers based on their skill in battle. Even those individuals who serve in non-combat roles in hobgoblin society-blacksmiths, builders, cooks, messengers, quartermasters, and the like-know that they perform vital jobs that support the larger hobgoblin army, though they rarely rise above the rank of common soldier. Everyone contributes to the larger whole, ensuring that hobgoblin society is the strongest and most efficient it can be, and anyone who fails to do so is culled from the army and this hobgoblin society as dead weight. Hobgoblins don't usually engage in trade with other races, or even with other hobgoblin tribes, preferring to take what they want by force.</p>",
+    "recallKnowledge": "Society, DC: 15",
+    "originalCreature": {}
+  }
+}

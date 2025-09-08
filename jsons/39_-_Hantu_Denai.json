@@ -1,0 +1,473 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Hantu Denai",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Beast",
+    "Hantu",
+    "Incorporeal",
+    "Spirit"
+  ],
+  "source": "Pathfinder #166: Despair on Danger Island",
+  "perception": {
+    "value": 18,
+    "note": "darkvisionscent 60 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "scent 60 ft imprecise"
+  ],
+  "languages": [
+    "Common",
+    "(can't speak any language)"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 6
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Sound Imitation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A hantu denai that succeeds at a Deception check to Lie can mimic the sounds of any animal native to its environment. It adds a +4 circumstance bonus to this check.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 125,
+    "max": 125,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "unconscious",
+    "poison",
+    "precision",
+    "death-effects",
+    "disease"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch"
+      ],
+      "type": "all-damage",
+      "value": 8
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "0 ft,\nfly 25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 20,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A hantu denai's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Frightened and Off-Guard creatures</p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Terrifying Cry",
+      "actions": 2,
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The hantu denai unleashes a loud animal cry to scare off nearby creatures. Each creature in a 120 foot emanation must attempt a DC 27 Will save and is then immune to the hantu denai's Terrifying Cry for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Fleeing for 1 round and Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is fleeing for 1 round and Frightened 3.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Hantus are manifestations of the powerful nature spirits that inhabit all things, from animals to objects to the environment itself. As spiritual representations of whatever they inhabit, hantus follow no preordained agenda. Some hantus choose to act as guardians, defending the forest or waterway that they represent, while others simply set out into the world and experience the wonders of life in ways that their physical form-be it a boulder, bamboo stand, or tapir-would typically be unable to enjoy.</p>\n<p>Hantus are most well known in the archipelago of Minata, particularly in the southern islands of Rendah Pulu, where animists believe that hantus manifest in locations imbued with significant spiritual power. To the residents of Rendah Pulu, hantus exist as manifestations of their culture's anxieties, fears, and ills. An individual who encounters a hantu might interpret the meeting as a sign that they have dwelt for too long on their particular worries (or the opposite: they have ignored the source of their anxieties for too long).</p>\n<p>Interestingly, although hantus are incorporeal, they still retain tangible characteristics as varied as hantus themselves. Some give off a potent odor, such as the scent of durian or jasmine. Others leave corporeal droppings, such as literal animal waste or tufts of fur left on a tree trunk.</p>\n<p>When an environment such as a forest or stream is at risk of overhunting or overfishing, the land itself can manifest as a hantu denai in order to defend itself from overconsumption. Hantu denais stalk hunters and emit haunting cries of native fauna to scare off poachers, loggers, and other despoilers of nature before resorting to violence if necessary.</p>",
+  "recallKnowledge": "Arcana, Nature, Occultism, DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 18,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Hantu Denai",
+    "type": "Creature",
+    "level": 9,
+    "traits": [
+      "Uncommon",
+      "Large",
+      "Beast",
+      "Hantu",
+      "Incorporeal",
+      "Spirit"
+    ],
+    "source": "Pathfinder #166: Despair on Danger Island",
+    "perception": {
+      "value": 18,
+      "note": "darkvisionscent 60 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "scent 60 ft imprecise"
+    ],
+    "languages": [
+      "Common",
+      "(can't speak any language)"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 19,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 20,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 21,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": -5
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 6
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Sound Imitation",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A hantu denai that succeeds at a Deception check to Lie can mimic the sounds of any animal native to its environment. It adds a +4 circumstance bonus to this check.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 125,
+      "max": 125,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "paralyzed",
+      "unconscious",
+      "poison",
+      "precision",
+      "death-effects",
+      "disease"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [
+          "non-magical"
+        ],
+        "exceptions": [
+          "force",
+          "ghost-touch"
+        ],
+        "type": "all-damage",
+        "value": 8
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "0 ft,\nfly 25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 20,
+        "traits": [
+          "agile",
+          "finesse",
+          "magical",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+8",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+8)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fangs",
+        "bonus": 20,
+        "traits": [
+          "finesse",
+          "magical"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+8",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+8)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Sneak Attack",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A hantu denai's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Frightened and Off-Guard creatures</p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Terrifying Cry",
+        "actions": 2,
+        "traits": [
+          "auditory",
+          "emotion",
+          "fear",
+          "mental"
+        ],
+        "description": "<p>The hantu denai unleashes a loud animal cry to scare off nearby creatures. Each creature in a 120 foot emanation must attempt a DC 27 Will save and is then immune to the hantu denai's Terrifying Cry for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Fleeing for 1 round and Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is fleeing for 1 round and Frightened 3.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Hantus are manifestations of the powerful nature spirits that inhabit all things, from animals to objects to the environment itself. As spiritual representations of whatever they inhabit, hantus follow no preordained agenda. Some hantus choose to act as guardians, defending the forest or waterway that they represent, while others simply set out into the world and experience the wonders of life in ways that their physical form-be it a boulder, bamboo stand, or tapir-would typically be unable to enjoy.</p>\n<p>Hantus are most well known in the archipelago of Minata, particularly in the southern islands of Rendah Pulu, where animists believe that hantus manifest in locations imbued with significant spiritual power. To the residents of Rendah Pulu, hantus exist as manifestations of their culture's anxieties, fears, and ills. An individual who encounters a hantu might interpret the meeting as a sign that they have dwelt for too long on their particular worries (or the opposite: they have ignored the source of their anxieties for too long).</p>\n<p>Interestingly, although hantus are incorporeal, they still retain tangible characteristics as varied as hantus themselves. Some give off a potent odor, such as the scent of durian or jasmine. Others leave corporeal droppings, such as literal animal waste or tufts of fur left on a tree trunk.</p>\n<p>When an environment such as a forest or stream is at risk of overhunting or overfishing, the land itself can manifest as a hantu denai in order to defend itself from overconsumption. Hantu denais stalk hunters and emit haunting cries of native fauna to scare off poachers, loggers, and other despoilers of nature before resorting to violence if necessary.</p>",
+    "recallKnowledge": "Arcana, Nature, Occultism, DC: 28",
+    "originalCreature": {}
+  }
+}

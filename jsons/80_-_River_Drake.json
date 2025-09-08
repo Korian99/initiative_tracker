@@ -1,0 +1,443 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "River Drake",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Medium",
+    "Amphibious",
+    "Dragon",
+    "Water"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 9,
+    "note": "darkvisionscent 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "scent 30 ft imprecise"
+  ],
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 45,
+    "max": 45,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Tail Lash",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within reach of the river drake's tail uses an action to Strike or attempt a skill check.</p>\n<hr />\n<p><strong>Effect</strong> The river drake attempts to Strike the triggering creature with its tail. If it hits, the creature takes a -2 circumstance penalty to the triggering roll.</p>\n<p>Effect: Tail Lash</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\nfly 50 ft,\nswim 30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 12,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 12,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Caustic Mucus",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "primal"
+      ],
+      "description": "<p>The river drake spits a ball of caustic mucus up to a range of 50 feet that explodes in a 10 foot burst. Creatures within the burst take <span class=\"roll\" onclick=\"roll(this)\">4d6</span> acid damage (DC 19 basic Reflex save). Those that fail this save also take <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus acid damage and take a –5-foot status penalty to their Speed. This Speed reduction ends with the persistent acid damage.</p>\n<p>The river drake can't use Caustic Mucus again for <span class=\"roll\" onclick=\"roll(this)\">1d6</span> rounds.</p>\n<p>Effect: Caustic Mucus</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The river drake makes one Fangs Strike and two Tail Strikes in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Speed Surge",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Frequency</strong> three times per day;</p>\n<hr />\n<p><strong>Effect</strong> The river drake Strides or Flies twice.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Although the glistening scales and sleek, fin-like wings on these drakes give them an appearance reminiscent of river fish, they are actually distant relatives of the dragons that rule the oceans. While smaller than most drakes, river drakes are more than capable of plaguing river travelers and are equally at home above and below the water's surface. This flexibility allows them to catch a wide variety of prey, from fish and boggards to deer and the occasional ferry passenger.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct, drakes are draconic monsters who bear a fraction of the terrifying might of the primal dragons they share evolutionary roots with. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties—small social groups fittingly called \"rampages\"—makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them with their formidable jaws and thickscaled tails to use in close combat. Most drakes would rather avoid this, however, preferring to use their magical breath to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>\n<p>Different species of drakes rarely come into conflict. Part of this is their distinct habitats, but drakes are open to negotiating simple agreements between rampages. This courtesy does not extend to dragonets, which drakes happily take as prey. Solitary tamed drakes are also excluded from such agreements and considered free game if their tamer isn't strong enough to protect them.</p>\n<h3>Drake Eggs</h3>\n<p>While drake hides aren't any more valuable than those of similarly sized creatures, drake eggs are prized commodities. They are used as components in powerful spells as well as eaten by various cultures, but the most common use for drake eggs is hatching and rearing drakes to serve as mounts and guardians.</p>\n<p>A typical drake lays a clutch of 2d4 eggs every 5 years. Eggs hatch within 3 to 6 weeks, during which time they must be kept in conditions appropriate to their natural environment, perhaps the most difficult aspect of drake husbandry. While it is generally easy for breeders to incubate the eggs of desert or jungle drakes (which require mildly warm temperatures to hatch) or river drakes (which must be submerged in running water), the eggs of flame and frost drakes require extreme temperatures in order to hatch, which can be difficult to replicate safely.</p>\n<p>A drake egg is an object with Hardness 3, 5 HP, and no Broken Threshold. The coloration of drake eggs varies only slightly from one species to the next. A creature must succeed at a @Check[nature|dc:20] check, or a relevant DC 20 Lore check, to identify the drake species of a specific egg.</p>\n<p>Once a drake hatches, they imprint on the first creature that they see. A creature imprinted on in this way can use Nature to Train and Command that drake. The market price of a drake egg varies depending on the type of drake and the exact legal situation. Because drakes are dangerous and intelligent creatures, many societies do not condone the trade of drake eggs and criminalize those who engage in it.</p>\n<p>It takes 2 years for a drake hatchling to grow to full size. A well-trained drake can make a fearsome mount or guardian, but many careless would-be drake trainers are devoured by their charges.</p>",
+  "recallKnowledge": "Arcana, DC: 18",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "River Drake",
+    "type": "Creature",
+    "level": 3,
+    "traits": [
+      "Medium",
+      "Amphibious",
+      "Dragon",
+      "Water"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 9,
+      "note": "darkvisionscent 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "scent 30 ft imprecise"
+    ],
+    "languages": [
+      "Draconic"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": -1
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 7,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 45,
+      "max": 45,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "paralyzed",
+      "sleep"
+    ],
+    "resistances": [
+      {
+        "type": "acid",
+        "value": 10
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Tail Lash",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature within reach of the river drake's tail uses an action to Strike or attempt a skill check.</p>\n<hr />\n<p><strong>Effect</strong> The river drake attempts to Strike the triggering creature with its tail. If it hits, the creature takes a -2 circumstance penalty to the triggering roll.</p>\n<p>Effect: Tail Lash</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\nfly 50 ft,\nswim 30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fangs",
+        "bonus": 12,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "2d8+3",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+3)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tail",
+        "bonus": 12,
+        "traits": [
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+3",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+3)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Caustic Mucus",
+        "actions": 2,
+        "traits": [
+          "acid",
+          "primal"
+        ],
+        "description": "<p>The river drake spits a ball of caustic mucus up to a range of 50 feet that explodes in a 10 foot burst. Creatures within the burst take <span class=\"roll\" onclick=\"roll(this)\">4d6</span> acid damage (DC 19 basic Reflex save). Those that fail this save also take <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus acid damage and take a –5-foot status penalty to their Speed. This Speed reduction ends with the persistent acid damage.</p>\n<p>The river drake can't use Caustic Mucus again for <span class=\"roll\" onclick=\"roll(this)\">1d6</span> rounds.</p>\n<p>Effect: Caustic Mucus</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Draconic Frenzy",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The river drake makes one Fangs Strike and two Tail Strikes in any order.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Speed Surge",
+        "actions": 1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p><strong>Frequency</strong> three times per day;</p>\n<hr />\n<p><strong>Effect</strong> The river drake Strides or Flies twice.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Although the glistening scales and sleek, fin-like wings on these drakes give them an appearance reminiscent of river fish, they are actually distant relatives of the dragons that rule the oceans. While smaller than most drakes, river drakes are more than capable of plaguing river travelers and are equally at home above and below the water's surface. This flexibility allows them to catch a wide variety of prey, from fish and boggards to deer and the occasional ferry passenger.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct, drakes are draconic monsters who bear a fraction of the terrifying might of the primal dragons they share evolutionary roots with. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties—small social groups fittingly called \"rampages\"—makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them with their formidable jaws and thickscaled tails to use in close combat. Most drakes would rather avoid this, however, preferring to use their magical breath to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>\n<p>Different species of drakes rarely come into conflict. Part of this is their distinct habitats, but drakes are open to negotiating simple agreements between rampages. This courtesy does not extend to dragonets, which drakes happily take as prey. Solitary tamed drakes are also excluded from such agreements and considered free game if their tamer isn't strong enough to protect them.</p>\n<h3>Drake Eggs</h3>\n<p>While drake hides aren't any more valuable than those of similarly sized creatures, drake eggs are prized commodities. They are used as components in powerful spells as well as eaten by various cultures, but the most common use for drake eggs is hatching and rearing drakes to serve as mounts and guardians.</p>\n<p>A typical drake lays a clutch of 2d4 eggs every 5 years. Eggs hatch within 3 to 6 weeks, during which time they must be kept in conditions appropriate to their natural environment, perhaps the most difficult aspect of drake husbandry. While it is generally easy for breeders to incubate the eggs of desert or jungle drakes (which require mildly warm temperatures to hatch) or river drakes (which must be submerged in running water), the eggs of flame and frost drakes require extreme temperatures in order to hatch, which can be difficult to replicate safely.</p>\n<p>A drake egg is an object with Hardness 3, 5 HP, and no Broken Threshold. The coloration of drake eggs varies only slightly from one species to the next. A creature must succeed at a @Check[nature|dc:20] check, or a relevant DC 20 Lore check, to identify the drake species of a specific egg.</p>\n<p>Once a drake hatches, they imprint on the first creature that they see. A creature imprinted on in this way can use Nature to Train and Command that drake. The market price of a drake egg varies depending on the type of drake and the exact legal situation. Because drakes are dangerous and intelligent creatures, many societies do not condone the trade of drake eggs and criminalize those who engage in it.</p>\n<p>It takes 2 years for a drake hatchling to grow to full size. A well-trained drake can make a fearsome mount or guardian, but many careless would-be drake trainers are devoured by their charges.</p>",
+    "recallKnowledge": "Arcana, DC: 18",
+    "originalCreature": {}
+  }
+}

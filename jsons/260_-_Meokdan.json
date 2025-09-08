@@ -1,0 +1,771 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Meokdan",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Rare",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Fiend",
+    "Nindoru",
+    "Unholy",
+    "(caster)"
+  ],
+  "source": "Pathfinder #197: Let the Leaves Fall",
+  "perception": {
+    "value": 9,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Aklo",
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 3
+  },
+  "items": [
+    {
+      "name": "Bone Morningstar",
+      "quantity": 1,
+      "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "versatile-p"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 32,
+    "max": 32,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "sickened"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "void",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "silver",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Immune to Fatigued From the Effects of Starvation or Thirst",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
+      "name": "Soul Shred",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Creatures killed by a meokdan are difficult to bring back to life or animate as undead. The meokdan automatically attempts to counteract any attempt to resurrect or animate any creature that it has killed (counteract modifier +7, counteract rank 2). If the meokdan who slew the creature is itself slain, the creature can be brought back from death or become undead normally.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "unholy"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Manifest Bone Club",
+      "actions": 1,
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "description": "<p><strong>Requirements</strong> The meokdan isn't carrying a bone club</p>\n<hr />\n<p><strong>Effect</strong> The meokdan reaches down its throat into its stomach and pulls out a human femur that it can wield as a bone club. After the meokdan Strikes a creature, the bone club shatters, but its sharp fragments remain in roughly the same shape; Strikes with a shattered bone club inflict slashing and bleed damage. After the meokdan Strikes with a shattered bone club, or if the meokdan drops the bone club, the club is destroyed, and the nindoru can Manifest a new bone club.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Quick Snack",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The meokdan critically hits a living creature with its bite</p>\n<hr />\n<p><strong>Effect</strong> The meokdan Snacks on the creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Snack",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The meokdan attempts a bite Strike against an adjacent creature or chews on a handheld object they're carrying. If the creature is living or the object is food, the meokdan gurgles in delight and restores <span class=\"roll\" onclick=\"roll(this)\">1d8+8</span> healing Hit Points. If the creature is undead or a construct, or the object is inedible, the meokdan shrieks in frustration and gains a +1 status bonus to attack rolls and saving throws until the end of its next turn. The meokdan can't Snack again for 1 round.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 10,
+      "dc": 18,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [
+        {
+          "name": "Telekinetic Projectile",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to <span class=\"roll\" onclick=\"roll(this)\">1d6</span> plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "O4TFJIXAF8IkOJ0H"
+        }
+      ],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "C87slniCJsgBKjT2",
+      "modifications": [],
+      "lv1spells": [
+        {
+          "name": "Illusory Disguise",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4LV0V1SjFlT77Z7c"
+        },
+        {
+          "name": "Phantom Pain",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Illusory pain wracks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> mental damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span> and the persistent damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "0B9PNJZ6YNhRDoZD"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Item Facade",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 object no more than 10 feet by 10 feet by 10 feet",
+          "save": "",
+          "description": "<p>You make the target object look and feel as though it were in much better or worse physical condition. When you cast this spell, decide whether you want to make the object look decrepit or perfect. An item made to look decrepit appears Broken and shoddy. An intact item made to look better appears as though it's brand new and highly polished or well maintained. A Broken item appears to be intact and functional. Destroyed items can't be affected by this spell. A creature that Interacts with the item can attempt to disbelieve the illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration is 24 hours.</p>\n<p><strong>Heightened (3rd)</strong> The duration is unlimited.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "CLnLRkJjMvRS8w09"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>As the least of their kind, meokdans suffer a constant and painful hunger, for they lack the ability of more powerful nindorus to derive nourishment from a reincarnated soul. This hunger drives the meokdan to constantly seek food and often compels them to eat dirt, stones, and refuse that offer little (if any) nutritional value. Regardless of how much they eat, a meokdan always remains painfully thin in stature. Regardless of how hungry they get, they never starve to death.</p>\n<p>A meokdan's emaciated frame appears human in shape, with thick, tangled hair that grows directly from their face as well as the rest of their head, leaving only the meokdan's gaping mouth visible. Their arms appear to be broken and unnaturally long, with equally long fingers tipped with ragged nails. Small, open sores pockmark their skin.</p>\n<p>Meokdans epitomize the cycle of food, from consumption to the creature themselves being consumed in the end, be it by predators or the environment growing from their remains.</p>\n<hr />\n<p>When an evil mortal soul that has been reincarnated multiple times is wrenched from the cycle of souls and corrupted, it can undergo a horrific transformation into a fiend known as a nindoru. A force for entropy and the breaking of cycles, nindorus are hideous creatures whose bodies often appear distorted, who wield weapons that have been shattered yet still function, and whose true face is often hidden from view. They display traits one might expect to see in an undead creature, such as decaying flesh or exposed bones, yet a nindoru is very much still alive.</p>\n<p>Each nindoru epitomizes the fracture of a specific cycle, be it one from the natural world or from societal traditions. To the nindoru, nothing is more delicious than the consumption of a creature who has reincarnated multiple times, with those who are theoretically about to ascend to true enlightenment presenting the tastiest meal. Those slain by a nindoru are themselves torn from the cycle—the lucky ones move on to the Boneyard for judgment, but many are instead corrupted to form more of these horrific fiends.</p>\n<p>Followers of Sangpotshi find nindoru to be particularly abhorrent and count them among the greatest threats imaginable. Most commonly found in regions of the world where the reincarnation cycle is strongest, nindorus are, like rakshasas and oni, associated most strongly with the Material Plane.</p>\n<h2>Reincarnated Souls</h2>\n<p>In some cases, you'll know if a creature a nindoru attacks has a reincarnated soul. Ancestries like samsarans are always reincarnated souls, and a PC's backstory or even their background can often indicate the presence of a previous life. All of the PCs in Season of Ghosts qualify as reincarnated souls, as they've relived their lives over and over for decades. If you ever need to determine if a creature's soul is reincarnated for the purpose of adjudicating a nindoru's ability, attempt a @Check[flat|dc:11]—on a success, it has a reincarnated soul.</p>\n<h2>Nindoru Demigods</h2>\n<p>The most powerful nindorus are demigods, although their cults are quite rare. Prone to reincarnation after death, nindoru demigods like Kugaptee are more properly known as \"nindoru ascetics.\"</p>\n<h2>Nindoru Traitors</h2>\n<p>While most nindorus are purely chaotic evil in nature, legends tell of exceptionally rare nindorus who manage to escape their own nature and ascend, reincarnating after death into kami or other more benevolent spirits and shedding the nindoru trait as they do so. Of course, these \"traitors\" are regarded as the most delicious meals imaginable by the nindorus left behind.</p>\n<h2>Nindoru Butterflies</h2>\n<p>One of the strangest shared traits of the various types of nindoru are the blood-red butterflies that seem to follow them around, nest on their bodies, or periodically emerge from their wounds. These unnerving insects are physical manifestations of the nindorus' thoughts and symbolize the countless past lives they once lived but turned their backs on. Nindoru butterflies never last long once they flutter more than a few feet from their source, fading away into smoke that quickly dissipates into the air.</p>\n<h2>Other Nindorus</h2>\n<p>Many other types of nindorus exist beyond the four presented on these pages. Others include the corpse-copying akashtis (sobbing nindorus), infiltrators of society known as kagekumas (lurking nindorus), the dead defiling shisagishins (crooked nindorus), and the powerful and brutal argyrzeis (headless nindorus).</p>",
+  "recallKnowledge": "Religion, DC: 21",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Meokdan",
+    "type": "Creature",
+    "level": 2,
+    "traits": [
+      "Rare",
+      "Medium",
+      "Chaotic",
+      "Evil",
+      "Fiend",
+      "Nindoru",
+      "Unholy",
+      "(caster)"
+    ],
+    "source": "Pathfinder #197: Let the Leaves Fall",
+    "perception": {
+      "value": 9,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Aklo",
+      "Common",
+      "Necril"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "occultism",
+        "modifier": 6,
+        "note": [],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 1
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 3
+    },
+    "items": [
+      {
+        "name": "Bone Morningstar",
+        "quantity": 1,
+        "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "versatile-p"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 32,
+      "max": 32,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "sickened"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [],
+        "exceptions": [],
+        "type": "void",
+        "value": 5
+      }
+    ],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "silver",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Immune to Fatigued From the Effects of Starvation or Thirst",
+        "actions": null,
+        "traits": [],
+        "description": "",
+        "collapsed": false
+      },
+      {
+        "name": "Soul Shred",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Creatures killed by a meokdan are difficult to bring back to life or animate as undead. The meokdan automatically attempts to counteract any attempt to resurrect or animate any creature that it has killed (counteract modifier +7, counteract rank 2). If the meokdan who slew the creature is itself slain, the creature can be brought back from death or become undead normally.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Bite",
+        "bonus": 10,
+        "traits": [
+          "agile",
+          "unholy"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+6",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+6)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Manifest Bone Club",
+        "actions": 1,
+        "traits": [
+          "concentrate",
+          "occult"
+        ],
+        "description": "<p><strong>Requirements</strong> The meokdan isn't carrying a bone club</p>\n<hr />\n<p><strong>Effect</strong> The meokdan reaches down its throat into its stomach and pulls out a human femur that it can wield as a bone club. After the meokdan Strikes a creature, the bone club shatters, but its sharp fragments remain in roughly the same shape; Strikes with a shattered bone club inflict slashing and bleed damage. After the meokdan Strikes with a shattered bone club, or if the meokdan drops the bone club, the club is destroyed, and the nindoru can Manifest a new bone club.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Quick Snack",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The meokdan critically hits a living creature with its bite</p>\n<hr />\n<p><strong>Effect</strong> The meokdan Snacks on the creature.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Snack",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The meokdan attempts a bite Strike against an adjacent creature or chews on a handheld object they're carrying. If the creature is living or the object is food, the meokdan gurgles in delight and restores <span class=\"roll\" onclick=\"roll(this)\">1d8+8</span> healing Hit Points. If the creature is undead or a construct, or the object is inedible, the meokdan shrieks in frustration and gains a +1 status bonus to attack rolls and saving throws until the end of its next turn. The meokdan can't Snack again for 1 round.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Occult Innate Spells",
+        "type": "innate",
+        "bonus": 10,
+        "dc": 18,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 1,
+        "cantrips": [
+          {
+            "name": "Telekinetic Projectile",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "attack",
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to <span class=\"roll\" onclick=\"roll(this)\">1d6</span> plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "O4TFJIXAF8IkOJ0H"
+          }
+        ],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "C87slniCJsgBKjT2",
+        "modifications": [],
+        "lv1spells": [
+          {
+            "name": "Illusory Disguise",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "illusion",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "1 hour",
+            "range": "",
+            "area": "",
+            "targets": "",
+            "save": "",
+            "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "4LV0V1SjFlT77Z7c"
+          },
+          {
+            "name": "Phantom Pain",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "illusion",
+              "manipulate",
+              "mental"
+            ],
+            "castingTime": "2",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 creature",
+            "save": "will",
+            "description": "<p>Illusory pain wracks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> mental damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span> and the persistent damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "0B9PNJZ6YNhRDoZD"
+          }
+        ],
+        "lv2spells": [
+          {
+            "name": "Item Facade",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "illusion",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "1 hour",
+            "range": "touch",
+            "area": "",
+            "targets": "1 object no more than 10 feet by 10 feet by 10 feet",
+            "save": "",
+            "description": "<p>You make the target object look and feel as though it were in much better or worse physical condition. When you cast this spell, decide whether you want to make the object look decrepit or perfect. An item made to look decrepit appears Broken and shoddy. An intact item made to look better appears as though it's brand new and highly polished or well maintained. A Broken item appears to be intact and functional. Destroyed items can't be affected by this spell. A creature that Interacts with the item can attempt to disbelieve the illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration is 24 hours.</p>\n<p><strong>Heightened (3rd)</strong> The duration is unlimited.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "CLnLRkJjMvRS8w09"
+          }
+        ],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>As the least of their kind, meokdans suffer a constant and painful hunger, for they lack the ability of more powerful nindorus to derive nourishment from a reincarnated soul. This hunger drives the meokdan to constantly seek food and often compels them to eat dirt, stones, and refuse that offer little (if any) nutritional value. Regardless of how much they eat, a meokdan always remains painfully thin in stature. Regardless of how hungry they get, they never starve to death.</p>\n<p>A meokdan's emaciated frame appears human in shape, with thick, tangled hair that grows directly from their face as well as the rest of their head, leaving only the meokdan's gaping mouth visible. Their arms appear to be broken and unnaturally long, with equally long fingers tipped with ragged nails. Small, open sores pockmark their skin.</p>\n<p>Meokdans epitomize the cycle of food, from consumption to the creature themselves being consumed in the end, be it by predators or the environment growing from their remains.</p>\n<hr />\n<p>When an evil mortal soul that has been reincarnated multiple times is wrenched from the cycle of souls and corrupted, it can undergo a horrific transformation into a fiend known as a nindoru. A force for entropy and the breaking of cycles, nindorus are hideous creatures whose bodies often appear distorted, who wield weapons that have been shattered yet still function, and whose true face is often hidden from view. They display traits one might expect to see in an undead creature, such as decaying flesh or exposed bones, yet a nindoru is very much still alive.</p>\n<p>Each nindoru epitomizes the fracture of a specific cycle, be it one from the natural world or from societal traditions. To the nindoru, nothing is more delicious than the consumption of a creature who has reincarnated multiple times, with those who are theoretically about to ascend to true enlightenment presenting the tastiest meal. Those slain by a nindoru are themselves torn from the cycle—the lucky ones move on to the Boneyard for judgment, but many are instead corrupted to form more of these horrific fiends.</p>\n<p>Followers of Sangpotshi find nindoru to be particularly abhorrent and count them among the greatest threats imaginable. Most commonly found in regions of the world where the reincarnation cycle is strongest, nindorus are, like rakshasas and oni, associated most strongly with the Material Plane.</p>\n<h2>Reincarnated Souls</h2>\n<p>In some cases, you'll know if a creature a nindoru attacks has a reincarnated soul. Ancestries like samsarans are always reincarnated souls, and a PC's backstory or even their background can often indicate the presence of a previous life. All of the PCs in Season of Ghosts qualify as reincarnated souls, as they've relived their lives over and over for decades. If you ever need to determine if a creature's soul is reincarnated for the purpose of adjudicating a nindoru's ability, attempt a @Check[flat|dc:11]—on a success, it has a reincarnated soul.</p>\n<h2>Nindoru Demigods</h2>\n<p>The most powerful nindorus are demigods, although their cults are quite rare. Prone to reincarnation after death, nindoru demigods like Kugaptee are more properly known as \"nindoru ascetics.\"</p>\n<h2>Nindoru Traitors</h2>\n<p>While most nindorus are purely chaotic evil in nature, legends tell of exceptionally rare nindorus who manage to escape their own nature and ascend, reincarnating after death into kami or other more benevolent spirits and shedding the nindoru trait as they do so. Of course, these \"traitors\" are regarded as the most delicious meals imaginable by the nindorus left behind.</p>\n<h2>Nindoru Butterflies</h2>\n<p>One of the strangest shared traits of the various types of nindoru are the blood-red butterflies that seem to follow them around, nest on their bodies, or periodically emerge from their wounds. These unnerving insects are physical manifestations of the nindorus' thoughts and symbolize the countless past lives they once lived but turned their backs on. Nindoru butterflies never last long once they flutter more than a few feet from their source, fading away into smoke that quickly dissipates into the air.</p>\n<h2>Other Nindorus</h2>\n<p>Many other types of nindorus exist beyond the four presented on these pages. Others include the corpse-copying akashtis (sobbing nindorus), infiltrators of society known as kagekumas (lurking nindorus), the dead defiling shisagishins (crooked nindorus), and the powerful and brutal argyrzeis (headless nindorus).</p>",
+    "recallKnowledge": "Religion, DC: 21",
+    "originalCreature": {}
+  }
+}

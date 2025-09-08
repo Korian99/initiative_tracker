@@ -1,0 +1,477 @@
+{
+  "initiative": 0,
+  "initiativebonus": 30,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Desecrated Guardian",
+  "type": "Creature",
+  "level": 18,
+  "traits": [
+    "Rare",
+    "Gargantuan",
+    "Construct",
+    "Evil"
+  ],
+  "source": "Pathfinder #168: King of the Mountain",
+  "perception": {
+    "value": 30,
+    "note": "lifesense 60 ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "lifesense 60 ft precise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 31,
+      "note": [
+        "in ruins <span class=\"roll\" onclick=\"roll(this)\">35</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 10
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 42,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 36,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 360,
+    "max": 360,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold",
+    "fire",
+    "mental"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity (Tail only)",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    },
+    {
+      "name": "Desecration Aura",
+      "actions": null,
+      "traits": [
+        "aura",
+        "divine",
+        "evil"
+      ],
+      "description": "<p>40 feet. Desecrated guardians exude a palpable malice that nauseates all but the most wicked passersby. Non-evil creatures that enter the aura must attempt a DC 37 Will save. On a failure, the creature becomes Sickened 1 (Sickened 2 on a critical failure). In addition, any non-evil creatures that attempt to Cast a Spell within the aura must succeed at a DC 5 Flat check or the spell is lost.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rebuild",
+      "actions": 2,
+      "traits": [
+        "divine",
+        "earth",
+        "healing"
+      ],
+      "description": "<p>The desecrated guardian draws in rubble from the surrounding area to rebuild its damaged body. It recovers <span class=\"roll\" onclick=\"roll(this)\">8d6</span> Hit Points. It can only use this ability if it is near suitable rock or rubble.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft,\nclimb 40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 35,
+      "traits": [
+        "deadly-3d12",
+        "magical",
+        "reach-20",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+22",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+22)*2+13d12",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 35,
+      "traits": [
+        "magical",
+        "reach-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+20",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+20)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Avalanche",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The desecrated guardian thrashes its body about, causing the nearby terrain to crumble and crash down on creatures in a 60 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">12d10</span> bludgeoning damage (DC 42 basic Reflex save). It can't use Avalanche again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Coiled Rockslide",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If the desecrated guardian started its turn hidden, it can Trample and remain hidden until after its attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d8+18</span> bludgeoning damage, DC 39 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Huge, <span class=\"roll\" onclick=\"roll(this)\">3d8+20</span> bludgeoning damage, Rupture 45</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Huge or smaller, tail, DC 37 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Countless temples across Golarion, dedicated to deities both living and forgotten, have risen and fallen through the ages. Many find themselves buried under sand, snow, or vine never to be found. In such places, the spirits of the faithful can bind with their ruined temple to form a guardian construct, though with nothing left to guard, these spirits often become hollow, resentful, and filled with malice. These \"desecrated guardians\" lie in wait, sometimes for centuries, and destroy any adventurers who happen upon them. The most powerful desecrated guardians, such as the one presented here, incorporate the structures of multiple temples into their massive serpentine forms.</p>",
+  "recallKnowledge": "Arcana, Crafting, DC: 43",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 30,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Desecrated Guardian",
+    "type": "Creature",
+    "level": 18,
+    "traits": [
+      "Rare",
+      "Gargantuan",
+      "Construct",
+      "Evil"
+    ],
+    "source": "Pathfinder #168: King of the Mountain",
+    "perception": {
+      "value": 30,
+      "note": "lifesense 60 ft precise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "lifesense 60 ft precise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 35,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 31,
+        "note": [
+          "in ruins <span class=\"roll\" onclick=\"roll(this)\">35</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 10
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 9
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 5
+    },
+    "charisma": {
+      "value": -5
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 42,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 36,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 31,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 25,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 360,
+      "max": 360,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "cold",
+      "fire",
+      "mental"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Attack of Opportunity (Tail only)",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      },
+      {
+        "name": "Desecration Aura",
+        "actions": null,
+        "traits": [
+          "aura",
+          "divine",
+          "evil"
+        ],
+        "description": "<p>40 feet. Desecrated guardians exude a palpable malice that nauseates all but the most wicked passersby. Non-evil creatures that enter the aura must attempt a DC 37 Will save. On a failure, the creature becomes Sickened 1 (Sickened 2 on a critical failure). In addition, any non-evil creatures that attempt to Cast a Spell within the aura must succeed at a DC 5 Flat check or the spell is lost.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Rebuild",
+        "actions": 2,
+        "traits": [
+          "divine",
+          "earth",
+          "healing"
+        ],
+        "description": "<p>The desecrated guardian draws in rubble from the surrounding area to rebuild its damaged body. It recovers <span class=\"roll\" onclick=\"roll(this)\">8d6</span> Hit Points. It can only use this ability if it is near suitable rock or rubble.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "40 ft,\nclimb 40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 35,
+        "traits": [
+          "deadly-3d12",
+          "magical",
+          "reach-20",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10+22",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10+22)*2+13d12",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Improved-grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tail",
+        "bonus": 35,
+        "traits": [
+          "magical",
+          "reach-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d8+20",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+20)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Improved-grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Avalanche",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The desecrated guardian thrashes its body about, causing the nearby terrain to crumble and crash down on creatures in a 60 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">12d10</span> bludgeoning damage (DC 42 basic Reflex save). It can't use Avalanche again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Coiled Rockslide",
+        "actions": null,
+        "traits": [],
+        "description": "<p>If the desecrated guardian started its turn hidden, it can Trample and remain hidden until after its attacks.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d8+18</span> bludgeoning damage, DC 39 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Swallow Whole",
+        "actions": 1,
+        "traits": [
+          "attack"
+        ],
+        "description": "<p>Huge, <span class=\"roll\" onclick=\"roll(this)\">3d8+20</span> bludgeoning damage, Rupture 45</p>\n<details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Trample",
+        "actions": 3,
+        "traits": [],
+        "description": "<p>Huge or smaller, tail, DC 37 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Countless temples across Golarion, dedicated to deities both living and forgotten, have risen and fallen through the ages. Many find themselves buried under sand, snow, or vine never to be found. In such places, the spirits of the faithful can bind with their ruined temple to form a guardian construct, though with nothing left to guard, these spirits often become hollow, resentful, and filled with malice. These \"desecrated guardians\" lie in wait, sometimes for centuries, and destroy any adventurers who happen upon them. The most powerful desecrated guardians, such as the one presented here, incorporate the structures of multiple temples into their massive serpentine forms.</p>",
+    "recallKnowledge": "Arcana, Crafting, DC: 43",
+    "originalCreature": {}
+  }
+}

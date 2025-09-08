@@ -1,0 +1,505 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Stone Giant",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Large",
+    "Earth",
+    "Giant",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 16,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Jotun",
+    "Petran"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 14,
+      "note": [
+        "in rocky terrain <span class=\"roll\" onclick=\"roll(this)\">18</span>"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Greatclub",
+      "quantity": 1,
+      "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "backswing",
+        "shove"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 150,
+    "max": 150,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Swat Projectile",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The stone giant must have a free hand but can Release anything as part of this reaction</p>\n<p><strong>Trigger</strong> The giant is targeted by a physical ranged attack</p>\n<hr />\n<p><strong>Effect</strong> The stone giant gains a +4 circumstance bonus to AC against the triggering attack. If the attack misses and the projectile was made of stone, the giant can throw it back at the attacker as a rock ranged Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Greatclub",
+      "bonus": 21,
+      "traits": [
+        "backswing",
+        "magical",
+        "reach-10",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Rock",
+      "bonus": 18,
+      "traits": [
+        "brutal",
+        "range-increment-120"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Big Swing",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The stone giant makes a greatclub Strike. The target is Pushed up to 10 feet on a hit or up to 20 feet on a critical hit.</p>\n<p>If the target collides with a solid object, it takes bludgeoning damage as though it had fallen the distance it moved.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Create Boulder",
+      "actions": 1,
+      "traits": [
+        "earth",
+        "primal"
+      ],
+      "description": "<p>The stone giant molds a boulder from primal earth and throws it as a rock Strike. A creature hit by the Strike must succeed at a DC 26 Reflex save or be knocked Prone.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Stone giants are stoic, reclusive herders and artists with a rich history and collection of traditions. They dwell in caves in tall mountains and craggy ranges, where their grayish skin allows them to blend in with their surroundings and go unnoticed, despite being around 12 feet tall. Benign travelers who come across a clan of stone giants need not worry, however, for stone giants do not actively invite confrontation or strife. They are, by and large, peaceful people who seek wisdom through exploration of nature and long meditations on the elements of the natural world. Their elders are among the wisest of giants, using their charisma and druidic magic to lead their clans to prosperity and harmony with nature.</p>\n<p>A stone giant clan will usually raise a number of animals as pets, favoring cave bears, elephants, or dinosaurs depending on the environment. Many clans also accept allies, considering arboreals, elementals, and even gargoyles as kin through their shared connection with the earth.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+  "recallKnowledge": "Society, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 16,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Stone Giant",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Large",
+      "Earth",
+      "Giant",
+      "Humanoid"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 16,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Jotun",
+      "Petran"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 20,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 14,
+        "note": [
+          "in rocky terrain <span class=\"roll\" onclick=\"roll(this)\">18</span>"
+        ],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 2
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [
+      {
+        "name": "Greatclub",
+        "quantity": 1,
+        "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "backswing",
+          "shove"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 150,
+      "max": 150,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Swat Projectile",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The stone giant must have a free hand but can Release anything as part of this reaction</p>\n<p><strong>Trigger</strong> The giant is targeted by a physical ranged attack</p>\n<hr />\n<p><strong>Effect</strong> The stone giant gains a +4 circumstance bonus to AC against the triggering attack. If the attack misses and the projectile was made of stone, the giant can throw it back at the attacker as a rock ranged Strike.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "35 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Greatclub",
+        "bonus": 21,
+        "traits": [
+          "backswing",
+          "magical",
+          "reach-10",
+          "shove"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+12",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+12)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 20,
+        "traits": [
+          "agile",
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+14",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+14)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Rock",
+        "bonus": 18,
+        "traits": [
+          "brutal",
+          "range-increment-120"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+12",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+12)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Big Swing",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The stone giant makes a greatclub Strike. The target is Pushed up to 10 feet on a hit or up to 20 feet on a critical hit.</p>\n<p>If the target collides with a solid object, it takes bludgeoning damage as though it had fallen the distance it moved.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Create Boulder",
+        "actions": 1,
+        "traits": [
+          "earth",
+          "primal"
+        ],
+        "description": "<p>The stone giant molds a boulder from primal earth and throws it as a rock Strike. A creature hit by the Strike must succeed at a DC 26 Reflex save or be knocked Prone.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Stone giants are stoic, reclusive herders and artists with a rich history and collection of traditions. They dwell in caves in tall mountains and craggy ranges, where their grayish skin allows them to blend in with their surroundings and go unnoticed, despite being around 12 feet tall. Benign travelers who come across a clan of stone giants need not worry, however, for stone giants do not actively invite confrontation or strife. They are, by and large, peaceful people who seek wisdom through exploration of nature and long meditations on the elements of the natural world. Their elders are among the wisest of giants, using their charisma and druidic magic to lead their clans to prosperity and harmony with nature.</p>\n<p>A stone giant clan will usually raise a number of animals as pets, favoring cave bears, elephants, or dinosaurs depending on the environment. Many clans also accept allies, considering arboreals, elementals, and even gargoyles as kin through their shared connection with the earth.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+    "recallKnowledge": "Society, DC: 24",
+    "originalCreature": {}
+  }
+}

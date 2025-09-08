@@ -1,0 +1,593 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Mulventok",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Aberration"
+  ],
+  "source": "Pathfinder #164: Hands of the Devil",
+  "perception": {
+    "value": 15,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Aklo",
+    "Daemonic",
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Purpose Lore",
+      "modifier": 15,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 6
+  },
+  "items": [
+    {
+      "name": "Tamchal Chakram",
+      "quantity": 1,
+      "description": "<p>These circular weapons are among the many strange weapons used by urdefhans. The sharp metal circle contains numerous protruding blades, while an angled central handle provides a decent grip that spins the weapon as it's thrown.</p>",
+      "level": 0,
+      "price": "5 gp ",
+      "traits": [
+        "uncommon",
+        "agile",
+        "deadly-d6",
+        "finesse",
+        "thrown"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "War Leader",
+      "actions": null,
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "description": "<p>A mulventok's fervor inspires its allies. Allies within 30 feet that can see or hear the mulventok gain a +1 status bonus to attack rolls and skill checks as long as their actions don't impede the mulventok's imprinted purpose.</p>\n<p>Effect: War Leader</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "(26 with shield raised)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 115,
+    "max": 115,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "fear-effects"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "vitality",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Explosive Decay",
+      "actions": null,
+      "traits": [
+        "occult",
+        "void"
+      ],
+      "description": "<p>When a mulventok dies, its mirrored flesh ruptures and explodes in a 20-foot radius. Creatures caught in the blast are covered with viscera and take <span class=\"roll\" onclick=\"roll(this)\">8d6</span> void damage (DC 22 basic Reflex save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stay in the Fight",
+      "actions": -1,
+      "traits": [
+        "healing",
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> An allied creature within 30 feet reaches 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The mulventok imparts some of its own energy to keep the ally fighting. The target creature gains 1 healing Hit Point, and the mulventok takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tamchal Chakram",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "deadly-d6",
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+8",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+8)*2+1d6",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 17,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Tamchal Chakram",
+      "bonus": 13,
+      "traits": [
+        "agile",
+        "deadly-d6",
+        "magical",
+        "thrown-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+8",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d6",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+8)*2+1d6",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fervent Command",
+      "actions": 1,
+      "traits": [
+        "auditory",
+        "mental"
+      ],
+      "description": "<p>The mulventok shouts an order to one of its allies within 30 feet. That ally immediately takes a Raise a Shield or Step action. A creature can benefit from only once per round.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Psychokinetic Honing",
+      "actions": null,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>A thrown weapon gains the effects of a <em>Returning</em> rune when a mulventok throws it. Thrown weapons the mulventok uses deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage, whether used in melee or thrown.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Sinister fleshwarpers reshape captive urdefhans into these juggernauts of war. Their clear skin is hardened into a thick, mirror-like carapace, creating an intimidating exoskeleton. Mulventoks don't live long; within weeks-or, at most, months-their hyperdeveloped muscles split open their toughened skin, and they erupt in a shower of gore. A mulventok's creator shapes its mind just as much as its body, directing its aggression toward a single purpose, such as to raze a fortress or murder a specific individual.</p>\n<hr />\n<p>Although twisting victims into horrid shapes is a well-known pastime of evil drow, other subterranean monsters have stolen these practices or developed them independently. The worm-like seugathis sometimes warp other creatures whose territories abut their lightless lands; the fleshwarps below result from morlocks and urdefhans, respectively.</p>",
+  "recallKnowledge": "Occultism, DC: 25",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 15,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Mulventok",
+    "type": "Creature",
+    "level": 7,
+    "traits": [
+      "Uncommon",
+      "Medium",
+      "Aberration"
+    ],
+    "source": "Pathfinder #164: Hands of the Devil",
+    "perception": {
+      "value": 15,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Aklo",
+      "Daemonic",
+      "Sakvroth"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "Purpose Lore",
+        "modifier": 15,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 0
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": 2
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 6
+    },
+    "items": [
+      {
+        "name": "Tamchal Chakram",
+        "quantity": 1,
+        "description": "<p>These circular weapons are among the many strange weapons used by urdefhans. The sharp metal circle contains numerous protruding blades, while an angled central handle provides a decent grip that spins the weapon as it's thrown.</p>",
+        "level": 0,
+        "price": "5 gp ",
+        "traits": [
+          "uncommon",
+          "agile",
+          "deadly-d6",
+          "finesse",
+          "thrown"
+        ]
+      }
+    ],
+    "generalAbilities": [
+      {
+        "name": "War Leader",
+        "actions": null,
+        "traits": [
+          "emotion",
+          "mental"
+        ],
+        "description": "<p>A mulventok's fervor inspires its allies. Allies within 30 feet that can see or hear the mulventok gain a +1 status bonus to attack rolls and skill checks as long as their actions don't impede the mulventok's imprinted purpose.</p>\n<p>Effect: War Leader</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 24,
+      "note": "(26 with shield raised)",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 115,
+      "max": 115,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "fear-effects"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "vitality",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Explosive Decay",
+        "actions": null,
+        "traits": [
+          "occult",
+          "void"
+        ],
+        "description": "<p>When a mulventok dies, its mirrored flesh ruptures and explodes in a 20-foot radius. Creatures caught in the blast are covered with viscera and take <span class=\"roll\" onclick=\"roll(this)\">8d6</span> void damage (DC 22 basic Reflex save).</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Stay in the Fight",
+        "actions": -1,
+        "traits": [
+          "healing",
+          "occult"
+        ],
+        "description": "<p><strong>Trigger</strong> An allied creature within 30 feet reaches 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The mulventok imparts some of its own energy to keep the ally fighting. The target creature gains 1 healing Hit Point, and the mulventok takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Tamchal Chakram",
+        "bonus": 18,
+        "traits": [
+          "agile",
+          "deadly-d6",
+          "finesse",
+          "magical"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+8",
+            "type": "slashing"
+          },
+          {
+            "roll": "1d6",
+            "type": "mental"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+8)*2+1d6",
+            "type": "slashing"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "mental"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 17,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+8",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+8)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Tamchal Chakram",
+        "bonus": 13,
+        "traits": [
+          "agile",
+          "deadly-d6",
+          "magical",
+          "thrown-20"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+8",
+            "type": "slashing"
+          },
+          {
+            "roll": "1d6",
+            "type": "mental"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+8)*2+1d6",
+            "type": "slashing"
+          },
+          {
+            "roll": "(1d6)*2",
+            "type": "mental"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Fervent Command",
+        "actions": 1,
+        "traits": [
+          "auditory",
+          "mental"
+        ],
+        "description": "<p>The mulventok shouts an order to one of its allies within 30 feet. That ally immediately takes a Raise a Shield or Step action. A creature can benefit from only once per round.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Psychokinetic Honing",
+        "actions": null,
+        "traits": [
+          "occult"
+        ],
+        "description": "<p>A thrown weapon gains the effects of a <em>Returning</em> rune when a mulventok throws it. Thrown weapons the mulventok uses deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage, whether used in melee or thrown.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Sinister fleshwarpers reshape captive urdefhans into these juggernauts of war. Their clear skin is hardened into a thick, mirror-like carapace, creating an intimidating exoskeleton. Mulventoks don't live long; within weeks-or, at most, months-their hyperdeveloped muscles split open their toughened skin, and they erupt in a shower of gore. A mulventok's creator shapes its mind just as much as its body, directing its aggression toward a single purpose, such as to raze a fortress or murder a specific individual.</p>\n<hr />\n<p>Although twisting victims into horrid shapes is a well-known pastime of evil drow, other subterranean monsters have stolen these practices or developed them independently. The worm-like seugathis sometimes warp other creatures whose territories abut their lightless lands; the fleshwarps below result from morlocks and urdefhans, respectively.</p>",
+    "recallKnowledge": "Occultism, DC: 25",
+    "originalCreature": {}
+  }
+}

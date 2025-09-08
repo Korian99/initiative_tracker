@@ -1,0 +1,417 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tombstone Troll",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Chaotic",
+    "Evil",
+    "Giant",
+    "Troll"
+  ],
+  "source": "Pathfinder #181: Zombie Feast",
+  "perception": {
+    "value": 7,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 25,
+    "max": 25,
+    "note": "regeneration 5 (deactivated by acid, fire, or vitality)",
+    "modifications": []
+  },
+  "immunities": [
+    "void"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "type": "vitality",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\nburrow 5 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 9,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Death Feast",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The troll's last action was a jaws Strike that damaged a living creature or a corpse</p>\n<hr />\n<p><strong>Effect</strong> The troll deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bleed damage to the target as it swallows a mouthful of meat and converts it into void energy. Its jaws and claw Strikes deal 1 additional void damage for 1 minute or until it uses its Grave Breath, whichever comes first.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grave Breath",
+      "actions": 2,
+      "traits": [
+        "death",
+        "occult",
+        "void"
+      ],
+      "description": "<p><strong>Requirements</strong> The troll is bloated with void energy from a Death Feast</p>\n<hr />\n<p><strong>Effect</strong> The troll breathes a 15 foot cone of putrid, soul-chilling gas. Each living creature in the area takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage (DC 14 basic Fortitude save). On a failure, the creature also becomes Sickened 1. The troll can't use Grave Breath until it uses Death Feast again.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rend",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Claw</p>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<details><summary>See rules...</summary>\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Sometimes, when a troll is regenerating from life-threatening wounds inflicted by necromancy or void energy, the vile energy takes hold in the troll's supernaturally resilient regeneration. The force that should have killed the troll instead becomes a part of the troll's strange physiology. These trolls are not undead, but the force inside them eats at their bodies and souls, turning them into shrunken mockeries of their former selves. These so-called \"tombstone trolls\" resemble withered, diminutive trolls, bloated with starvation and obviously sickly. Their teeth, hair, and fingernails rot, fall out, and regenerate every few days in an endless cycle that is both painful to experience and sickening to see.</p>\n<p>Other trolls shun and despise tombstone trolls, who earn their name from their habit of digging up graves in their search for an easy meal that can't fight back. Tombstone trolls shun confrontation of any kind, especially in areas where their grave-robbing might put them at odds with powerful undead. They often lair underground, safe in their graveyard burrows for days at a time, gradually tunneling through the earth to devour nearby corpses. If the tombstone troll is clever, the surface might not bear any evidence of their presence except for a few divots or soft spots in the soil. Once a tombstone troll has run out of easy pickings in a cemetery, it moves on in the dead of night to find a new hunting ground. If their travel is lengthy or difficult, their hunger might drive them to attack the living.</p>",
+  "recallKnowledge": ", DC: 17",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 7,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Tombstone Troll",
+    "type": "Creature",
+    "level": 1,
+    "traits": [
+      "Uncommon",
+      "Small",
+      "Chaotic",
+      "Evil",
+      "Giant",
+      "Troll"
+    ],
+    "source": "Pathfinder #181: Zombie Feast",
+    "perception": {
+      "value": 7,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Jotun"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 2
+    },
+    "constitution": {
+      "value": 1
+    },
+    "intelligence": {
+      "value": -3
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": -2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 25,
+      "max": 25,
+      "note": "regeneration 5 (deactivated by acid, fire, or vitality)",
+      "modifications": []
+    },
+    "immunities": [
+      "void"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "fire",
+        "value": 5
+      },
+      {
+        "type": "vitality",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Attack of Opportunity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\nburrow 5 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 9,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+3",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+3)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 9,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+3",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+3)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Death Feast",
+        "actions": 1,
+        "traits": [
+          "manipulate"
+        ],
+        "description": "<p><strong>Requirements</strong> The troll's last action was a jaws Strike that damaged a living creature or a corpse</p>\n<hr />\n<p><strong>Effect</strong> The troll deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bleed damage to the target as it swallows a mouthful of meat and converts it into void energy. Its jaws and claw Strikes deal 1 additional void damage for 1 minute or until it uses its Grave Breath, whichever comes first.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Grave Breath",
+        "actions": 2,
+        "traits": [
+          "death",
+          "occult",
+          "void"
+        ],
+        "description": "<p><strong>Requirements</strong> The troll is bloated with void energy from a Death Feast</p>\n<hr />\n<p><strong>Effect</strong> The troll breathes a 15 foot cone of putrid, soul-chilling gas. Each living creature in the area takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage (DC 14 basic Fortitude save). On a failure, the creature also becomes Sickened 1. The troll can't use Grave Breath until it uses Death Feast again.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Rend",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>Claw</p>\n<p><p>A Rend entry lists a Strike the monster has.</p>\n<p><strong>Requirements</strong> The monster hit the same enemy with two consecutive Strikes of the listed type in the same round.</p>\n<details><summary>See rules...</summary>\n<p><strong>Effect</strong> The monster automatically deals that Strike's damage again to the enemy.</p></p></details>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Sometimes, when a troll is regenerating from life-threatening wounds inflicted by necromancy or void energy, the vile energy takes hold in the troll's supernaturally resilient regeneration. The force that should have killed the troll instead becomes a part of the troll's strange physiology. These trolls are not undead, but the force inside them eats at their bodies and souls, turning them into shrunken mockeries of their former selves. These so-called \"tombstone trolls\" resemble withered, diminutive trolls, bloated with starvation and obviously sickly. Their teeth, hair, and fingernails rot, fall out, and regenerate every few days in an endless cycle that is both painful to experience and sickening to see.</p>\n<p>Other trolls shun and despise tombstone trolls, who earn their name from their habit of digging up graves in their search for an easy meal that can't fight back. Tombstone trolls shun confrontation of any kind, especially in areas where their grave-robbing might put them at odds with powerful undead. They often lair underground, safe in their graveyard burrows for days at a time, gradually tunneling through the earth to devour nearby corpses. If the tombstone troll is clever, the surface might not bear any evidence of their presence except for a few divots or soft spots in the soil. Once a tombstone troll has run out of easy pickings in a cemetery, it moves on in the dead of night to find a new hunting ground. If their travel is lengthy or difficult, their hunger might drive them to attack the living.</p>",
+    "recallKnowledge": ", DC: 17",
+    "originalCreature": {}
+  }
+}

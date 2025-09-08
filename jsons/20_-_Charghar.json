@@ -1,0 +1,405 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Charghar",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Uncommon",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Incorporeal",
+    "Spirit",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder #181: Zombie Feast",
+  "perception": {
+    "value": 12,
+    "note": "darkvisionlifesense 60 ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "lifesense 60 ft precise"
+  ],
+  "languages": [
+    "Common",
+    "Necril"
+  ],
+  "skills": [
+    {
+      "name": "intimidation",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Cooking Lore",
+      "modifier": 9,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 35,
+    "max": 35,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Malevolent Mishaps",
+      "actions": null,
+      "traits": [
+        "aura",
+        "emotion",
+        "mental",
+        "occult"
+      ],
+      "description": "<p>10 feet. The charghar causes clumsiness and uncertainty in those nearby. Each creature that starts its turn in the aura must attempt a DC 21 Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Malevolent Mishaps for 1 minute.</p>\n<p><strong>Failure</strong> The creature becomes Clumsy 1 and Stupefied 1 until the start of its next turn. If the creature is living, the charghar Imparts Fears.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2 and Stupefied 2.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft,\nfly 25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Ghostly Cookware",
+      "bonus": 13,
+      "traits": [
+        "finesse",
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [
+        "Impart-fears"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Create Spawn",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>Any humanoid creature killed by a charghar and left unburied in the vicinity of a stove, oven, cauldron, or similar object rises as a free-willed charghar at the next dawn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Impart Fears",
+      "actions": null,
+      "traits": [
+        "curse",
+        "divine"
+      ],
+      "description": "<p>A living creature that is struck by a charghar's ghostly cookware Strike or fails a saving throw against the charghar's malevolent mishaps must attempt a DC 21 Will save. A creature affected by Impart Fears can attempt a new saving throw each day to remove the effect.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Impart Fears for 24 hours.</p>\n<p><strong>Failure</strong> The creature becomes Frightened 1 each time it ingests anything or takes an action to prepare any food or drink.</p>\n<p><strong>Critical Failure</strong> As failure, but Frightened 2, and the creature can't reduce its frightened condition below 1.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Common urban legends in Geb warn of the vengeful spirits of those who've been cooked alive, collectively called charghars. While many Gebbites eat people in ways that don't involve cooking, there are some undead who've grown bored after centuries of the same diet. There are also some living people in the nation who've resorted to cannibalism: either downtrodden folks who cook and eat their neighbors and kin out of necessity, or socialites who dine on such fare because it's fashionable. Regardless of the reason for cooking people, these efforts can create vengeful undead creatures who lurk wherever meals are being prepared, luring cooks into making careless or deadly mistakes.</p>\n<p>Charghars have spectral humanoid forms, while their physical manifestations appear much as they did after they were cooked-as charred remains, gory corpses bearing disembodied butchered chunks that float nearby, or loose assemblages of boiled bones.</p>",
+  "recallKnowledge": "Occultism, Religion, DC: 21",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 12,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Charghar",
+    "type": "Creature",
+    "level": 4,
+    "traits": [
+      "Uncommon",
+      "Medium",
+      "Chaotic",
+      "Evil",
+      "Incorporeal",
+      "Spirit",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder #181: Zombie Feast",
+    "perception": {
+      "value": 12,
+      "note": "darkvisionlifesense 60 ft precise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "lifesense 60 ft precise"
+    ],
+    "languages": [
+      "Common",
+      "Necril"
+    ],
+    "skills": [
+      {
+        "name": "intimidation",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 12,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "Cooking Lore",
+        "modifier": 9,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": -5
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 0
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 20,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 35,
+      "max": 35,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "precision",
+      "unconscious"
+    ],
+    "resistances": [
+      {
+        "doubleVs": [
+          "non-magical"
+        ],
+        "exceptions": [
+          "force",
+          "ghost-touch",
+          "vitality"
+        ],
+        "type": "all-damage",
+        "value": 5
+      }
+    ],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Malevolent Mishaps",
+        "actions": null,
+        "traits": [
+          "aura",
+          "emotion",
+          "mental",
+          "occult"
+        ],
+        "description": "<p>10 feet. The charghar causes clumsiness and uncertainty in those nearby. Each creature that starts its turn in the aura must attempt a DC 21 Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Malevolent Mishaps for 1 minute.</p>\n<p><strong>Failure</strong> The creature becomes Clumsy 1 and Stupefied 1 until the start of its next turn. If the creature is living, the charghar Imparts Fears.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2 and Stupefied 2.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "0 ft,\nfly 25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Ghostly Cookware",
+        "bonus": 13,
+        "traits": [
+          "finesse",
+          "magical"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6",
+            "type": "void"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6)*2",
+            "type": "void"
+          }
+        ],
+        "effects": [
+          "Impart-fears"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Create Spawn",
+        "actions": null,
+        "traits": [
+          "divine"
+        ],
+        "description": "<p>Any humanoid creature killed by a charghar and left unburied in the vicinity of a stove, oven, cauldron, or similar object rises as a free-willed charghar at the next dawn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Impart Fears",
+        "actions": null,
+        "traits": [
+          "curse",
+          "divine"
+        ],
+        "description": "<p>A living creature that is struck by a charghar's ghostly cookware Strike or fails a saving throw against the charghar's malevolent mishaps must attempt a DC 21 Will save. A creature affected by Impart Fears can attempt a new saving throw each day to remove the effect.</p>\n<hr />\n<p><strong>Success</strong> The creature is temporarily immune to Impart Fears for 24 hours.</p>\n<p><strong>Failure</strong> The creature becomes Frightened 1 each time it ingests anything or takes an action to prepare any food or drink.</p>\n<p><strong>Critical Failure</strong> As failure, but Frightened 2, and the creature can't reduce its frightened condition below 1.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Common urban legends in Geb warn of the vengeful spirits of those who've been cooked alive, collectively called charghars. While many Gebbites eat people in ways that don't involve cooking, there are some undead who've grown bored after centuries of the same diet. There are also some living people in the nation who've resorted to cannibalism: either downtrodden folks who cook and eat their neighbors and kin out of necessity, or socialites who dine on such fare because it's fashionable. Regardless of the reason for cooking people, these efforts can create vengeful undead creatures who lurk wherever meals are being prepared, luring cooks into making careless or deadly mistakes.</p>\n<p>Charghars have spectral humanoid forms, while their physical manifestations appear much as they did after they were cooked-as charred remains, gory corpses bearing disembodied butchered chunks that float nearby, or loose assemblages of boiled bones.</p>",
+    "recallKnowledge": "Occultism, Religion, DC: 21",
+    "originalCreature": {}
+  }
+}

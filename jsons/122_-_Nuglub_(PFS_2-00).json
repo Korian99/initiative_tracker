@@ -1,0 +1,725 @@
+{
+  "initiative": 0,
+  "initiativebonus": 5,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Nuglub (PFS 2-00)",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Small",
+    "Chaotic",
+    "Evil",
+    "Fey",
+    "Gremlin",
+    "(caster)"
+  ],
+  "source": "Pathfinder Society Scenario #2-00: The King in Thorns",
+  "perception": {
+    "value": 5,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Sakvroth"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 5,
+      "note": [
+        "traps <span class=\"roll\" onclick=\"roll(this)\">7</span>"
+      ],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": -1
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 34,
+    "max": 34,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 2
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Kneecapper",
+      "actions": -1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Trigger</strong> A Medium creature within the nuglub's reach leaves a square during its move action</p>\n<hr />\n<p><strong>Effect</strong> The nuglub lashes out at the triggering creature's knees and tries to knock them Prone. The nuglub makes an Acrobatics check against the creature's Reflex DC. On a success, the target falls and lands prone.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\nclimb 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 11,
+      "traits": [
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A nuglub's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard targets, or <span class=\"roll\" onclick=\"roll(this)\">1d10</span> precision damage if the target is Prone.</p></details>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Primal Innate Spells",
+      "type": "innate",
+      "bonus": 8,
+      "dc": 18,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 1,
+      "cantrips": [
+        {
+          "name": "Prestidigitation",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "10 feet",
+          "area": "",
+          "targets": "1 object (cook, lift, or tidy only)",
+          "save": "",
+          "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the Spell. Each time you Sustain the Spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or spell component.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p>Prestidigitation can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the Spell.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yhSxwECxI3ZqfQaI"
+        }
+      ],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "VKqHnTDh4E88cAGN",
+      "modifications": [],
+      "lv1spells": [
+        {
+          "name": "Grease",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "concentrate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 object of Bulk 1 or less",
+          "save": "reflex",
+          "description": "<p>You conjure grease, with effects based on choosing area or target.</p>\n<ul>\n<li><strong>Area</strong> <strong>(4 contiguous 5-foot squares)</strong> All solid ground in the area is covered with grease. Each creature standing on the greasy surface must succeed at a Reflex save or an Acrobatics check against your spell DC or fall Prone. Creatures using an action to move onto the greasy surface during the spell's duration must attempt either a Reflex save or an Acrobatics check to Balance. A creature that Steps or Crawls doesn't have to attempt a check or save.</li>\n<li><strong>Target</strong> <strong>(1 object of Bulk 1 or less)</strong> If you cast the spell on an unattended object, anyone trying to pick up the object must succeed at an Acrobatics check or Reflex save against your spell DC to do so. If you target an attended object, the creature that has the object must attempt an Acrobatics check or Reflex save. On a failure, the holder or wielder takes a -2 circumstance penalty to all checks that involve using the object; on a critical failure, the holder or wielder releases the item. The object lands in an adjacent square of the GM's choice. If you cast this spell on a worn object, the wearer gains a +2 circumstance bonus to Fortitude saves against attempts to grapple them.</li>\n</ul>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "GAmi14gPbcq15zxM"
+        },
+        {
+          "name": "Shocking Grasp",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "electricity"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes <span class=\"roll\" onclick=\"roll(this)\">2d12</span> electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span>+ 1)-1) persistent plus electricity damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>, and the persistent electricity damage increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XWuKKn5ujtZB8lbG"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Shatter",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 unattended object",
+          "save": "",
+          "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>, and the Hardness the spell ignores increases by 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Dk2Hi8NKJRU0f6dH"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>The \"towering\" hunchbacked nuglubs are among the largest gremlins, though they're not quite three feet tall. Nuglubs have three glowing blue eyes and black, oily hair on their head and back that covers them like a cloak. Nuglubs enjoy killing with a glee that other gremlins reserve for sabotage. Indeed, they spend long hours preparing ambushes for unwary travelers or plotting the murders of sleeping villagers. Though less technically inclined than their kin, nuglubs do enjoy building traps. They delight in stealthily constructing traps in places their victims consider familiar, such as front doors and the floors around beds. If someone else gets blamed for the mayhem the nuglub creates, all the better.</p>\n<p>In combat, nuglubs focus on targets wearing metal armor. Some attribute this to envy on the part of the nuglubs, who find it difficult to fit armor on their twisted bodies. Nuglubs are particularly talented at causing those nearby to stumble over them and fall prone. Once an enemy falls to the ground, all the nuglubs descend upon the target, biting and scratching until nothing remains.</p>\n<p>Nuglubs rarely gather in groups larger than half a dozen, as quarrels often lead to violence and cannibalism. A lone nuglub who bullies a group of smaller gremlins is more likely to get their way, and thus less likely to attack their allies.</p>",
+  "recallKnowledge": "Nature, DC: 16",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 5,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Nuglub (PFS 2-00)",
+    "type": "Creature",
+    "level": 2,
+    "traits": [
+      "Small",
+      "Chaotic",
+      "Evil",
+      "Fey",
+      "Gremlin",
+      "(caster)"
+    ],
+    "source": "Pathfinder Society Scenario #2-00: The King in Thorns",
+    "perception": {
+      "value": 5,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Sakvroth"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "crafting",
+        "modifier": 5,
+        "note": [
+          "traps <span class=\"roll\" onclick=\"roll(this)\">7</span>"
+        ],
+        "usedAttribute": "intelligence",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 1
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": -1
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 5,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 34,
+      "max": 34,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "type": "cold-iron",
+        "value": 2
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Kneecapper",
+        "actions": -1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p><strong>Trigger</strong> A Medium creature within the nuglub's reach leaves a square during its move action</p>\n<hr />\n<p><strong>Effect</strong> The nuglub lashes out at the triggering creature's knees and tries to knock them Prone. The nuglub makes an Acrobatics check against the creature's Reflex DC. On a success, the target falls and lands prone.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\nclimb 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Bite",
+        "bonus": 11,
+        "traits": [
+          "finesse"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d8+1",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d8+1)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 11,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+1",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+1)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Sneak Attack",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A nuglub's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard targets, or <span class=\"roll\" onclick=\"roll(this)\">1d10</span> precision damage if the target is Prone.</p></details>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Primal Innate Spells",
+        "type": "innate",
+        "bonus": 8,
+        "dc": 18,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 1,
+        "cantrips": [
+          {
+            "name": "Prestidigitation",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "10 feet",
+            "area": "",
+            "targets": "1 object (cook, lift, or tidy only)",
+            "save": "",
+            "description": "<p>The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the Spell. Each time you Sustain the Spell, you can choose one of four options.</p>\n<ul>\n<li><strong>Cook</strong> Cool, warm, or flavor 1 pound of nonliving material.</li>\n<li><strong>Lift</strong> Slowly lift an unattended object of light Bulk or less 1 foot off the ground.</li>\n<li><strong>Make</strong> Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile-it can't be used as a tool, weapon, or spell component.</li>\n<li><strong>Tidy</strong> Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.</li>\n</ul>\n<p>Prestidigitation can't deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the Spell.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "yhSxwECxI3ZqfQaI"
+          }
+        ],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "VKqHnTDh4E88cAGN",
+        "modifications": [],
+        "lv1spells": [
+          {
+            "name": "Grease",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "concentrate"
+            ],
+            "castingTime": "2",
+            "duration": "1 minute",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 object of Bulk 1 or less",
+            "save": "reflex",
+            "description": "<p>You conjure grease, with effects based on choosing area or target.</p>\n<ul>\n<li><strong>Area</strong> <strong>(4 contiguous 5-foot squares)</strong> All solid ground in the area is covered with grease. Each creature standing on the greasy surface must succeed at a Reflex save or an Acrobatics check against your spell DC or fall Prone. Creatures using an action to move onto the greasy surface during the spell's duration must attempt either a Reflex save or an Acrobatics check to Balance. A creature that Steps or Crawls doesn't have to attempt a check or save.</li>\n<li><strong>Target</strong> <strong>(1 object of Bulk 1 or less)</strong> If you cast the spell on an unattended object, anyone trying to pick up the object must succeed at an Acrobatics check or Reflex save against your spell DC to do so. If you target an attended object, the creature that has the object must attempt an Acrobatics check or Reflex save. On a failure, the holder or wielder takes a -2 circumstance penalty to all checks that involve using the object; on a critical failure, the holder or wielder releases the item. The object lands in an adjacent square of the GM's choice. If you cast this spell on a worn object, the wearer gains a +2 circumstance bonus to Fortitude saves against attempts to grapple them.</li>\n</ul>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "GAmi14gPbcq15zxM"
+          },
+          {
+            "name": "Shocking Grasp",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "attack",
+              "concentrate",
+              "electricity"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "",
+            "description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes <span class=\"roll\" onclick=\"roll(this)\">2d12</span> electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span>+ 1)-1) persistent plus electricity damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>, and the persistent electricity damage increases by 1.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "XWuKKn5ujtZB8lbG"
+          }
+        ],
+        "lv2spells": [
+          {
+            "name": "Shatter",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "30 feet",
+            "area": "",
+            "targets": "1 unattended object",
+            "save": "",
+            "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>, and the Hardness the spell ignores increases by 2.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "Dk2Hi8NKJRU0f6dH"
+          }
+        ],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>The \"towering\" hunchbacked nuglubs are among the largest gremlins, though they're not quite three feet tall. Nuglubs have three glowing blue eyes and black, oily hair on their head and back that covers them like a cloak. Nuglubs enjoy killing with a glee that other gremlins reserve for sabotage. Indeed, they spend long hours preparing ambushes for unwary travelers or plotting the murders of sleeping villagers. Though less technically inclined than their kin, nuglubs do enjoy building traps. They delight in stealthily constructing traps in places their victims consider familiar, such as front doors and the floors around beds. If someone else gets blamed for the mayhem the nuglub creates, all the better.</p>\n<p>In combat, nuglubs focus on targets wearing metal armor. Some attribute this to envy on the part of the nuglubs, who find it difficult to fit armor on their twisted bodies. Nuglubs are particularly talented at causing those nearby to stumble over them and fall prone. Once an enemy falls to the ground, all the nuglubs descend upon the target, biting and scratching until nothing remains.</p>\n<p>Nuglubs rarely gather in groups larger than half a dozen, as quarrels often lead to violence and cannibalism. A lone nuglub who bullies a group of smaller gremlins is more likely to get their way, and thus less likely to attack their allies.</p>",
+    "recallKnowledge": "Nature, DC: 16",
+    "originalCreature": {}
+  }
+}

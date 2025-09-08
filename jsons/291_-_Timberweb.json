@@ -1,0 +1,461 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Timberweb",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Large",
+    "Elemental",
+    "Plant",
+    "Wood"
+  ],
+  "source": "Pathfinder #203: Shepherd of Decay",
+  "perception": {
+    "value": 25,
+    "note": "low light-visiontremorsense 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision",
+    "tremorsense 30 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Vine Sense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The timberweb has imprecise tremorsense to detect the vibrations of creatures touching its spun vines.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "40 ft,\nclimb 30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 29,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d8+17",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+17)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Timberweb-toxin"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Leg",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+15",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+15)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Vine",
+      "bonus": 27,
+      "traits": [
+        "range-increment-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d6+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Tree-tether"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Rappel",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The timberweb moves straight down up to 60 feet on a spun vine. It can hang from the vine or drop off. The distance it descends doesn't count toward falling damage. A creature that successfully Strikes the vine (AC 36, Hardness 8, 30 HP) severs it, causing the timberweb to fall.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Timberweb Toxin",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and clumsy 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tree Tether",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by the timberweb's vine Strike becomes entangled by the sticky fibers, taking a –15-foot penalty to its Speeds for 1 minute or until it Escapes (DC 34) or is cut free (AC 36, Hardness 8, 30 HP). If the target is adjacent to a wooden object of its size or larger, the target is instead Immobilized and stuck to that object until it Escapes or is cut free.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>On the Plane of Wood, carnivorous plants sometimes grow so large that they can't sustain themselves on local prey. Rather than starve, parts of these plants sometimes tear themselves free and hunt for themselves. The resulting elementals adopt spiderlike forms and hunting strategies.</p>\n<p>Timberwebs extrude vines covered in tiny barbules and sticky sap. After finding a territory with sufficient prey, a timberweb often uses these vines to create shadowy canopies in which to launch ambushes.</p><hr /><p>Wood elementals are nearly as varied as plant life itself. The following are particularly powerful elementals formed when immense plants experience environmental stress.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 32",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 25,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Timberweb",
+    "type": "Creature",
+    "level": 14,
+    "traits": [
+      "Large",
+      "Elemental",
+      "Plant",
+      "Wood"
+    ],
+    "source": "Pathfinder #203: Shepherd of Decay",
+    "perception": {
+      "value": 25,
+      "note": "low light-visiontremorsense 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision",
+      "tremorsense 30 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 26,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 27,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 7
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 5
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 5
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Vine Sense",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The timberweb has imprecise tremorsense to detect the vibrations of creatures touching its spun vines.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 35,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 250,
+      "max": 250,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [],
+    "speed": "40 ft,\nclimb 30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fangs",
+        "bonus": 29,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "3d8+17",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d8+17)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Timberweb-toxin"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Leg",
+        "bonus": 29,
+        "traits": [
+          "agile",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+15",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+15)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Vine",
+        "bonus": 27,
+        "traits": [
+          "range-increment-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d6+12",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d6+12)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Tree-tether"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Rappel",
+        "actions": 1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The timberweb moves straight down up to 60 feet on a spun vine. It can hang from the vine or drop off. The distance it descends doesn't count toward falling damage. A creature that successfully Strikes the vine (AC 36, Hardness 8, 30 HP) severs it, causing the timberweb to fall.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Timberweb Toxin",
+        "actions": null,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and clumsy 2 (1 round)</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Tree Tether",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A creature hit by the timberweb's vine Strike becomes entangled by the sticky fibers, taking a –15-foot penalty to its Speeds for 1 minute or until it Escapes (DC 34) or is cut free (AC 36, Hardness 8, 30 HP). If the target is adjacent to a wooden object of its size or larger, the target is instead Immobilized and stuck to that object until it Escapes or is cut free.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>On the Plane of Wood, carnivorous plants sometimes grow so large that they can't sustain themselves on local prey. Rather than starve, parts of these plants sometimes tear themselves free and hunt for themselves. The resulting elementals adopt spiderlike forms and hunting strategies.</p>\n<p>Timberwebs extrude vines covered in tiny barbules and sticky sap. After finding a territory with sufficient prey, a timberweb often uses these vines to create shadowy canopies in which to launch ambushes.</p><hr /><p>Wood elementals are nearly as varied as plant life itself. The following are particularly powerful elementals formed when immense plants experience environmental stress.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 32",
+    "originalCreature": {}
+  }
+}

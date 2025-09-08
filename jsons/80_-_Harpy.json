@@ -1,0 +1,471 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Harpy",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Medium",
+    "Air",
+    "Beast",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 12,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Wind's Whispers"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Wind's Whispers",
+      "actions": null,
+      "traits": [
+        "air",
+        "primal"
+      ],
+      "description": "<p>When a harpy speaks, they can choose one creature within 90 feet. That creature can hear the harpy's words over any other sound, but no other creature hears the words at all.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 75,
+    "max": 75,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>30 feet, DC 21 Fortitude save</p>\n<hr />\n<p><p>A creature entering the aura or starting its turn in the area must succeed at a Fortitude save or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure). A creature that succeeds at its save or recovers from being sickened is temporarily immune to all stench auras for 1 minute.</p></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\nfly 60 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Talon",
+      "bonus": 15,
+      "traits": [
+        "agile",
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 15,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Putrid-plague"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hungry Winds",
+      "actions": 2,
+      "traits": [
+        "air",
+        "concentrate",
+        "primal"
+      ],
+      "description": "<p>The harpy uses the wind to pull its prey closer. A target within 20 feet must succeed at a DC 21 Fortitude save or be pulled adjacent to the harpy, where they make a jaws Strike against the target. If the target was pulled off the ground and can't fly, it then falls as normal.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Putrid Plague",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p>The sickened and unconscious conditions from putrid plague can't end or be reduced until the disease is cured</p>\n<p><strong>Saving Throw</strong> DC 19 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (<span class=\"roll\" onclick=\"roll(this)\">1d4</span> hours),</p>\n<p><strong>Stage 2</strong> Sickened 1 (1 day),</p>\n<p><strong>Stage 3</strong> sickened 1 and Slowed 1 (1 day),</p>\n<p><strong>Stage 4</strong> Unconscious (1 day),</p>\n<p><strong>Stage 5</strong> dead</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Harpies are amalgamations of human and bird, resembling feral humans with wings, talons, and sharp teeth. They use their ancestral control of the wind to lure prey or even directly pull in their next meal. They enjoy causing confusion and fear in their prey before they strike, believing it creates a savory flavor in the flesh. Harpies can eat most creatures but strongly prefer sapient prey—humans and elves in particular. Although harpies will eat goblins if sufficiently hungry, they dislike their flavor and avoid eating them if possible. This doesn't comfort goblins, of course, who have a particularly strong fear of harpies.</p>\n<p>Because their aeries often reek with the gore of their kills and careless spatters of guano, harpies carry a distinctly vile scent that canny travelers associate with danger. Harpies who roost close to civilization make better efforts to keep clean, though these efforts have mixed results.</p>\n<p>Somewhere among the filth, most aeries have a shrine dedicated to the demon lord Pazuzu. Harpy legends credit him with raising them up from simple air spirits to their current station, and their gratitude typically takes the shape of a sketched figure in a corner piled with offerings. More devout families build portable wooden shrines that are carried from aerie to aerie for generations.</p>\n<p>Harpies live in family groups or larger clans. Most adults stand 5 feet tall and weigh around 90 pounds. While some use relatively simple weapons, those who master the use of the bow are regarded as heroes among their kind.</p>",
+  "recallKnowledge": "Arcana, Nature, Society, DC: 20",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 12,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Harpy",
+    "type": "Creature",
+    "level": 5,
+    "traits": [
+      "Medium",
+      "Air",
+      "Beast",
+      "Humanoid"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 12,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Wind's Whispers"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "deception",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "performance",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "thievery",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 1
+    },
+    "dexterity": {
+      "value": 4
+    },
+    "constitution": {
+      "value": 0
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Wind's Whispers",
+        "actions": null,
+        "traits": [
+          "air",
+          "primal"
+        ],
+        "description": "<p>When a harpy speaks, they can choose one creature within 90 feet. That creature can hear the harpy's words over any other sound, but no other creature hears the words at all.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 15,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 75,
+      "max": 75,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Stench",
+        "actions": null,
+        "traits": [
+          "aura",
+          "olfactory"
+        ],
+        "description": "<p>30 feet, DC 21 Fortitude save</p>\n<hr />\n<p><p>A creature entering the aura or starting its turn in the area must succeed at a Fortitude save or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure). A creature that succeeds at its save or recovers from being sickened is temporarily immune to all stench auras for 1 minute.</p></p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\nfly 60 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Talon",
+        "bonus": 15,
+        "traits": [
+          "agile",
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+4",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+4)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 15,
+        "traits": [
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Putrid-plague"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Hungry Winds",
+        "actions": 2,
+        "traits": [
+          "air",
+          "concentrate",
+          "primal"
+        ],
+        "description": "<p>The harpy uses the wind to pull its prey closer. A target within 20 feet must succeed at a DC 21 Fortitude save or be pulled adjacent to the harpy, where they make a jaws Strike against the target. If the target was pulled off the ground and can't fly, it then falls as normal.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Putrid Plague",
+        "actions": null,
+        "traits": [
+          "disease"
+        ],
+        "description": "<p>The sickened and unconscious conditions from putrid plague can't end or be reduced until the disease is cured</p>\n<p><strong>Saving Throw</strong> DC 19 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (<span class=\"roll\" onclick=\"roll(this)\">1d4</span> hours),</p>\n<p><strong>Stage 2</strong> Sickened 1 (1 day),</p>\n<p><strong>Stage 3</strong> sickened 1 and Slowed 1 (1 day),</p>\n<p><strong>Stage 4</strong> Unconscious (1 day),</p>\n<p><strong>Stage 5</strong> dead</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Harpies are amalgamations of human and bird, resembling feral humans with wings, talons, and sharp teeth. They use their ancestral control of the wind to lure prey or even directly pull in their next meal. They enjoy causing confusion and fear in their prey before they strike, believing it creates a savory flavor in the flesh. Harpies can eat most creatures but strongly prefer sapient prey—humans and elves in particular. Although harpies will eat goblins if sufficiently hungry, they dislike their flavor and avoid eating them if possible. This doesn't comfort goblins, of course, who have a particularly strong fear of harpies.</p>\n<p>Because their aeries often reek with the gore of their kills and careless spatters of guano, harpies carry a distinctly vile scent that canny travelers associate with danger. Harpies who roost close to civilization make better efforts to keep clean, though these efforts have mixed results.</p>\n<p>Somewhere among the filth, most aeries have a shrine dedicated to the demon lord Pazuzu. Harpy legends credit him with raising them up from simple air spirits to their current station, and their gratitude typically takes the shape of a sketched figure in a corner piled with offerings. More devout families build portable wooden shrines that are carried from aerie to aerie for generations.</p>\n<p>Harpies live in family groups or larger clans. Most adults stand 5 feet tall and weigh around 90 pounds. While some use relatively simple weapons, those who master the use of the bow are regarded as heroes among their kind.</p>",
+    "recallKnowledge": "Arcana, Nature, Society, DC: 20",
+    "originalCreature": {}
+  }
+}

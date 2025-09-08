@@ -1,0 +1,487 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Snapdrake",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Large",
+    "Elemental",
+    "Plant",
+    "Wood"
+  ],
+  "source": "Pathfinder Rage of Elements",
+  "perception": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [],
+  "languages": [
+    "Arboreal",
+    "Common",
+    "Muan",
+    "Can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "performance",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 144,
+    "max": 144,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "axe-vulnerability",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Alluring Scent",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory",
+        "plant",
+        "primal"
+      ],
+      "description": "<p>30 feet.</p>\n<p>A creature that enters the emanation must attempt a DC 25 Will save. On a failure, the target is Fascinated by the snapdrake and must use at least 1 action on its next turn to Stride closer to the snapdrake. On a success, the target is immune to the snapdrake's alluring scent for 1 hour.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>Tail scythe only</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "20 ft,\nfly 50 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 14,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d12+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Grab",
+        "Snapdrake-pollen"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail Scythe",
+      "bonus": 16,
+      "traits": [
+        "deadly-d10",
+        "finesse",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+6)*2+1d10",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Greater Forest Passage",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The snapdrake ignores difficult terrain and greater difficult terrain from plants and fungi.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Snapdrake Pollen",
+      "actions": null,
+      "traits": [
+        "plant",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save;</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage plus Dazzled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage plus dazzled 1 and Sickened 1 (2 rounds)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage plus Confused and sickened 1 (2 rounds)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Speed Surge",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Frequency</strong> 3 times per day</p>\n<hr />\n<p><strong>Effect</strong> The snapdrake moves up to twice its Speed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spray Pollen",
+      "actions": 2,
+      "traits": [
+        "arcane",
+        "plant",
+        "poison"
+      ],
+      "description": "<p>The snapdrake breathes a blast of pollen in a 40 foot cone. Creatures caught in the blast must succeed at a DC 25 basic Reflex save or be exposed to snapdrake pollen.</p>\n<p>The snapdrake can't use Spray Pollen again for <span class=\"roll\" onclick=\"roll(this)\">1d6</span> rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Skilled kizidhar mages and gardeners handcraft these lovely creatures as much for their shuyookhs' aesthetic pleasure as for their protection. Creating a snapdrake requires first painstakingly constructing a frame of living wood in the shape of a drake before weaving thousands of colorful snapdragon flowers into intricate patterns to form its body and scales. Once complete, snapdrakes often serve kizidhars as a combination of guards, pets, and decorations for as long as they are well fed.</p>",
+  "recallKnowledge": "Arcana, Nature, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 16,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Snapdrake",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Large",
+      "Elemental",
+      "Plant",
+      "Wood"
+    ],
+    "source": "Pathfinder Rage of Elements",
+    "perception": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [],
+    "languages": [
+      "Arboreal",
+      "Common",
+      "Muan",
+      "Can't speak any language"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "performance",
+        "modifier": 16,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 6
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 4
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 26,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 19,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 144,
+      "max": 144,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "paralyzed",
+      "poison",
+      "sleep"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "axe-vulnerability",
+        "value": 10
+      },
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 10
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Alluring Scent",
+        "actions": null,
+        "traits": [
+          "aura",
+          "olfactory",
+          "plant",
+          "primal"
+        ],
+        "description": "<p>30 feet.</p>\n<p>A creature that enters the emanation must attempt a DC 25 Will save. On a failure, the target is Fascinated by the snapdrake and must use at least 1 action on its next turn to Stride closer to the snapdrake. On a success, the target is immune to the snapdrake's alluring scent for 1 hour.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Attack of Opportunity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p>Tail scythe only</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "20 ft,\nfly 50 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fangs",
+        "bonus": 14,
+        "traits": [],
+        "damageRolls": [
+          {
+            "roll": "2d12+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d12+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Grab",
+          "Snapdrake-pollen"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Tail Scythe",
+        "bonus": 16,
+        "traits": [
+          "deadly-d10",
+          "finesse",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+6",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+6)*2+1d10",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Greater Forest Passage",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The snapdrake ignores difficult terrain and greater difficult terrain from plants and fungi.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Snapdrake Pollen",
+        "actions": null,
+        "traits": [
+          "plant",
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save;</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage plus Dazzled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage plus dazzled 1 and Sickened 1 (2 rounds)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage plus Confused and sickened 1 (2 rounds)</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Speed Surge",
+        "actions": 1,
+        "traits": [
+          "move"
+        ],
+        "description": "<p><strong>Frequency</strong> 3 times per day</p>\n<hr />\n<p><strong>Effect</strong> The snapdrake moves up to twice its Speed.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Spray Pollen",
+        "actions": 2,
+        "traits": [
+          "arcane",
+          "plant",
+          "poison"
+        ],
+        "description": "<p>The snapdrake breathes a blast of pollen in a 40 foot cone. Creatures caught in the blast must succeed at a DC 25 basic Reflex save or be exposed to snapdrake pollen.</p>\n<p>The snapdrake can't use Spray Pollen again for <span class=\"roll\" onclick=\"roll(this)\">1d6</span> rounds.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Skilled kizidhar mages and gardeners handcraft these lovely creatures as much for their shuyookhs' aesthetic pleasure as for their protection. Creating a snapdrake requires first painstakingly constructing a frame of living wood in the shape of a drake before weaving thousands of colorful snapdragon flowers into intricate patterns to form its body and scales. Once complete, snapdrakes often serve kizidhars as a combination of guards, pets, and decorations for as long as they are well fed.</p>",
+    "recallKnowledge": "Arcana, Nature, DC: 24",
+    "originalCreature": {}
+  }
+}

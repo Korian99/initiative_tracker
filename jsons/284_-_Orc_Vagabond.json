@@ -1,0 +1,499 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Orc Vagabond",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Medium",
+    "Humanoid",
+    "Orc"
+  ],
+  "source": "Pathfinder #207: The Resurrection Flood",
+  "perception": {
+    "value": 9,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Orcish"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Battle Axe",
+      "quantity": 1,
+      "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Longbow",
+      "quantity": 1,
+      "description": "<p>This 5-foot-tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>",
+      "level": 0,
+      "price": "6 gp ",
+      "traits": [
+        "deadly-d10",
+        "volley-30"
+      ]
+    },
+    {
+      "name": "Studded Leather Armor",
+      "quantity": 1,
+      "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+      "level": 0,
+      "price": "3 gp ",
+      "traits": []
+    },
+    {
+      "name": "Arrows",
+      "quantity": 20,
+      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 48,
+    "max": 48,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battle Axe",
+      "bonus": 11,
+      "traits": [
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Longbow",
+      "bonus": 10,
+      "traits": [
+        "deadly-d10",
+        "range-increment-100",
+        "reload-0",
+        "volley-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+3)*2+1d10",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Surprise Shooter",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The orc vagabond's ranged attacks deal an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to targets adjacent to at least one of the vagabond's allies.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Tough and no-nonsense, orc vagabonds are just as likely to serve their own interests as they are those of a warlord. Some live as bandit leaders, assembling their own group of veterans and outcasts. Many others work as the elite guards of their hold, keeping a watchful eye out for trouble.</p><hr /><p>The orcs of Belkzen are survivors to the core. Shaped by the unforgiving landscape, they're experts at managing resources and making do with scarcity. Aside from the relative peace from late spring through early summer during the Flood Truce, Belkzen's orc holds are nearly always at odds with each other, though these conflicts rarely rise to the level of war. Instead, there are raids for supplies, skirmishes to establish borders or retake lost territory, and feuds over personal slights. Outsiders who travel in Belkzen often become embroiled in these conflicts; sometimes they even trigger the fights themselves.</p>\n<p>The members of a given hold are often quite spread out, rather than centralized, so communication and coordination is sporadic. Even the Empty Hand orcs of Urgir rarely stay in the city all year long. At the very least, they travel a few miles to the Flood Road when the aurochs arrive, and they may wander even further afield when the mood strikes.</p><h2>Orc Faith</h2><p>With so many sudden disruptions to the orc pantheon, the faithful find themselves in a confusing time of change. Fervent worshippers of Lanishra, Sezelrian, and Zagresh don't particularly like the new deities who have usurped their old gods. Some of these zealots desperately cling to their old faiths, and many still hold a sliver of their fallen deity's power, further adding to the confusion.</p><h2>Salvage</h2><p>Orcs are experts at repurposing materials for their own use. Belkzen doesn't have rich soil or abundant deposits of valuable metals and minerals. Instead, orc crafters rely on salvage from battles or trade with outsiders for their raw materials. It's common for a basic tool, such as a knife or cooking pot, to be very old yet kept in perfect working condition. Even when a tool breaks, orc crafters find ways to reuse as much of it as they can manage.</p>",
+  "recallKnowledge": "Society, DC: 18",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Orc Vagabond",
+    "type": "Creature",
+    "level": 3,
+    "traits": [
+      "Medium",
+      "Humanoid",
+      "Orc"
+    ],
+    "source": "Pathfinder #207: The Resurrection Flood",
+    "perception": {
+      "value": 9,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Orcish"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 7,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 9,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": 1
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [
+      {
+        "name": "Battle Axe",
+        "quantity": 1,
+        "description": "<p>These axes are designed explicitly as weapons, rather than tools. They typically weigh less, with a shaft reinforced with metal bands or bolts, and have a sharper blade, making them ideal for chopping limbs rather than wood.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "sweep"
+        ]
+      },
+      {
+        "name": "Longbow",
+        "quantity": 1,
+        "description": "<p>This 5-foot-tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>",
+        "level": 0,
+        "price": "6 gp ",
+        "traits": [
+          "deadly-d10",
+          "volley-30"
+        ]
+      },
+      {
+        "name": "Studded Leather Armor",
+        "quantity": 1,
+        "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
+        "level": 0,
+        "price": "3 gp ",
+        "traits": []
+      },
+      {
+        "name": "Arrows",
+        "quantity": 20,
+        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 48,
+      "max": 48,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Ferocity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Battle Axe",
+        "bonus": 11,
+        "traits": [
+          "sweep"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d8+6",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d8+6)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 11,
+        "traits": [
+          "agile",
+          "nonlethal",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+6",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+6)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Longbow",
+        "bonus": 10,
+        "traits": [
+          "deadly-d10",
+          "range-increment-100",
+          "reload-0",
+          "volley-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d8+3",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d8+3)*2+1d10",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Surprise Shooter",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The orc vagabond's ranged attacks deal an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to targets adjacent to at least one of the vagabond's allies.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Tough and no-nonsense, orc vagabonds are just as likely to serve their own interests as they are those of a warlord. Some live as bandit leaders, assembling their own group of veterans and outcasts. Many others work as the elite guards of their hold, keeping a watchful eye out for trouble.</p><hr /><p>The orcs of Belkzen are survivors to the core. Shaped by the unforgiving landscape, they're experts at managing resources and making do with scarcity. Aside from the relative peace from late spring through early summer during the Flood Truce, Belkzen's orc holds are nearly always at odds with each other, though these conflicts rarely rise to the level of war. Instead, there are raids for supplies, skirmishes to establish borders or retake lost territory, and feuds over personal slights. Outsiders who travel in Belkzen often become embroiled in these conflicts; sometimes they even trigger the fights themselves.</p>\n<p>The members of a given hold are often quite spread out, rather than centralized, so communication and coordination is sporadic. Even the Empty Hand orcs of Urgir rarely stay in the city all year long. At the very least, they travel a few miles to the Flood Road when the aurochs arrive, and they may wander even further afield when the mood strikes.</p><h2>Orc Faith</h2><p>With so many sudden disruptions to the orc pantheon, the faithful find themselves in a confusing time of change. Fervent worshippers of Lanishra, Sezelrian, and Zagresh don't particularly like the new deities who have usurped their old gods. Some of these zealots desperately cling to their old faiths, and many still hold a sliver of their fallen deity's power, further adding to the confusion.</p><h2>Salvage</h2><p>Orcs are experts at repurposing materials for their own use. Belkzen doesn't have rich soil or abundant deposits of valuable metals and minerals. Instead, orc crafters rely on salvage from battles or trade with outsiders for their raw materials. It's common for a basic tool, such as a knife or cooking pot, to be very old yet kept in perfect working condition. Even when a tool breaks, orc crafters find ways to reuse as much of it as they can manage.</p>",
+    "recallKnowledge": "Society, DC: 18",
+    "originalCreature": {}
+  }
+}

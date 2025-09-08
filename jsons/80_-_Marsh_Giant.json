@@ -1,0 +1,751 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Marsh Giant",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Large",
+    "Amphibious",
+    "Giant",
+    "Humanoid",
+    "Water",
+    "(caster)"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 16,
+    "note": "low light-vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision"
+  ],
+  "languages": [
+    "Aklo",
+    "Common",
+    "Jotun",
+    "Thalassic"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "nature",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Gaff",
+      "quantity": 1,
+      "description": "<p>Many marsh giants fight with oversized gaffs-lengths of wood with a single metal spike affixed to the tip. Used often by fisherfolk to land fish, marsh giants use their gaffs as weapons.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "trip",
+        "versatile-p"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 150,
+    "max": 150,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "35 ft,\nswim 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Gaff",
+      "bonus": 20,
+      "traits": [
+        "magical",
+        "reach-10",
+        "trip",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+14",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+14)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spit",
+      "bonus": 20,
+      "traits": [
+        "primal",
+        "range-60",
+        "water"
+      ],
+      "damageRolls": [
+        {
+          "roll": "5d6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(5d6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Drowning Hook",
+      "actions": 1,
+      "traits": [
+        "primal",
+        "water"
+      ],
+      "description": "<p><strong>Requirements</strong> A creature is Prone within the marsh giant's reach</p>\n<hr />\n<p><strong>Effect</strong> The marsh giant uses its gaff to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if they cannot breathe water. They take <span class=\"roll\" onclick=\"roll(this)\">4d6</span> bludgeoning damage (DC 23 basic Fortitude save) and lose 3 rounds worth of air if they fail the save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Twist the Hook",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The marsh giant makes a melee Strike with its gaff. If it hits, it twists and yanks the gaff to knock the target Prone and create an awful wound, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent plus bleed damage to the creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 13,
+      "dc": 23,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "SOapd5GiFsybvQAC",
+      "modifications": [],
+      "lv1spells": [],
+      "lv2spells": [
+        {
+          "name": "Augury",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat check. On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Yde51S9ffNgHJlgB"
+        },
+        {
+          "name": "Mist",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20 ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "M9OmJbde6QeKYhrF"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Mariner's Curse",
+          "type": "spell",
+          "level": 5,
+          "traits": [
+            "concentrate",
+            "curse"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You afflict the target with the curse of the roiling, unforgiving sea. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes Sickened 1. Reducing its sickened condition to 0 ends the curse.</p>\n<p><strong>Failure</strong> The target becomes sickened 1 and can't reduce its sickened condition below 1 while the curse remains. The curse can be lifted by 4th-rank Cleanse Affliction or similar magic. Whenever the target is sickened and on the water at least a mile from shore, it is also Slowed 1.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes Sickened 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "j34Fi56CTrZXtEGG"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>Dwellers of brackish coastal salt marshes and fetid bogs and swamps, marsh giants appear hideous to most airbreathers, with fishlike mouths, slimy graygreen skin, and dark, beady eyes. They prefer to eat the flesh of those they slay in battle, including other marsh giants, and guzzle stagnant water from cauldrons or directly from their swampy homes.</p>\n<p>Marsh giant clans are insular, with each clan dedicating itself to zealous worship of a sea-dwelling deity, demon lord, or stranger entity. Whatever forces call to the marsh giants sometimes ensnare boggards and ogres as well, gathering in grim worship. Rather than favor these humanoid hangerson, marsh giants lavish attention on favored pets: krooths, giant octopuses, or primeval creatures like dinosaurs and the crocodilian deinosuchuses.</p>\n<p>Barely topping 11 feet tall and 1,000 pounds, marsh giants are small for giants but make up for their stature with their zealotry.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+  "recallKnowledge": "Society, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 16,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Marsh Giant",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Large",
+      "Amphibious",
+      "Giant",
+      "Humanoid",
+      "Water",
+      "(caster)"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 16,
+      "note": "low light-vision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision"
+    ],
+    "languages": [
+      "Aklo",
+      "Common",
+      "Jotun",
+      "Thalassic"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "nature",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "religion",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [
+      {
+        "name": "Gaff",
+        "quantity": 1,
+        "description": "<p>Many marsh giants fight with oversized gaffs-lengths of wood with a single metal spike affixed to the tip. Used often by fisherfolk to land fish, marsh giants use their gaffs as weapons.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "trip",
+          "versatile-p"
+        ]
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 150,
+      "max": 150,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [],
+    "speed": "35 ft,\nswim 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Gaff",
+        "bonus": 20,
+        "traits": [
+          "magical",
+          "reach-10",
+          "trip",
+          "versatile-p"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+14",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+14)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 20,
+        "traits": [
+          "agile",
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+14",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+14)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Spit",
+        "bonus": 20,
+        "traits": [
+          "primal",
+          "range-60",
+          "water"
+        ],
+        "damageRolls": [
+          {
+            "roll": "5d6",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(5d6)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Drowning Hook",
+        "actions": 1,
+        "traits": [
+          "primal",
+          "water"
+        ],
+        "description": "<p><strong>Requirements</strong> A creature is Prone within the marsh giant's reach</p>\n<hr />\n<p><strong>Effect</strong> The marsh giant uses its gaff to push the creature down as water bubbles up below it. The target becomes submerged in water until they are no longer prone and must hold their breath if they cannot breathe water. They take <span class=\"roll\" onclick=\"roll(this)\">4d6</span> bludgeoning damage (DC 23 basic Fortitude save) and lose 3 rounds worth of air if they fail the save.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Twist the Hook",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The marsh giant makes a melee Strike with its gaff. If it hits, it twists and yanks the gaff to knock the target Prone and create an awful wound, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent plus bleed damage to the creature.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Occult Innate Spells",
+        "type": "innate",
+        "bonus": 13,
+        "dc": 23,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 4,
+        "cantrips": [],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "SOapd5GiFsybvQAC",
+        "modifications": [],
+        "lv1spells": [],
+        "lv2spells": [
+          {
+            "name": "Augury",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "10 minutes",
+            "duration": "",
+            "range": "",
+            "area": "",
+            "targets": "",
+            "save": "",
+            "description": "<p>You gain a vague glimpse of the future. During the casting of this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveal the GM's best guess among the following outcomes: good, bad, mixed (the results will be a mix of good and bad), and nothing (there won't be particularly good or bad results).</p>\n<p>The GM rolls a secret DC 6 Flat check. On a failure, the result is always \"nothing.\" This makes it impossible to tell whether a \"nothing\" result is accurate. If anyone asks about the same topic as the first casting of <em>augury</em> during an additional casting, the GM uses the secret roll result from the first casting. If circumstances change, though, it's possible to get a different result.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "Yde51S9ffNgHJlgB"
+          },
+          {
+            "name": "Mist",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "3",
+            "duration": "1 minute",
+            "range": "120 feet",
+            "area": "20 ft burst",
+            "targets": "",
+            "save": "",
+            "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it. You can Dismiss the cloud.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "M9OmJbde6QeKYhrF"
+          }
+        ],
+        "lv3spells": [],
+        "lv4spells": [],
+        "lv5spells": [
+          {
+            "name": "Mariner's Curse",
+            "type": "spell",
+            "level": 5,
+            "traits": [
+              "concentrate",
+              "curse"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "touch",
+            "area": "",
+            "targets": "1 creature",
+            "save": "will",
+            "description": "<p>You afflict the target with the curse of the roiling, unforgiving sea. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes Sickened 1. Reducing its sickened condition to 0 ends the curse.</p>\n<p><strong>Failure</strong> The target becomes sickened 1 and can't reduce its sickened condition below 1 while the curse remains. The curse can be lifted by 4th-rank Cleanse Affliction or similar magic. Whenever the target is sickened and on the water at least a mile from shore, it is also Slowed 1.</p>\n<p><strong>Critical Failure</strong> As failure, but the target becomes Sickened 2.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "j34Fi56CTrZXtEGG"
+          }
+        ],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>Dwellers of brackish coastal salt marshes and fetid bogs and swamps, marsh giants appear hideous to most airbreathers, with fishlike mouths, slimy graygreen skin, and dark, beady eyes. They prefer to eat the flesh of those they slay in battle, including other marsh giants, and guzzle stagnant water from cauldrons or directly from their swampy homes.</p>\n<p>Marsh giant clans are insular, with each clan dedicating itself to zealous worship of a sea-dwelling deity, demon lord, or stranger entity. Whatever forces call to the marsh giants sometimes ensnare boggards and ogres as well, gathering in grim worship. Rather than favor these humanoid hangerson, marsh giants lavish attention on favored pets: krooths, giant octopuses, or primeval creatures like dinosaurs and the crocodilian deinosuchuses.</p>\n<p>Barely topping 11 feet tall and 1,000 pounds, marsh giants are small for giants but make up for their stature with their zealotry.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
+    "recallKnowledge": "Society, DC: 24",
+    "originalCreature": {}
+  }
+}

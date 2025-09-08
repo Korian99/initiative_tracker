@@ -1,0 +1,407 @@
+{
+  "initiative": 0,
+  "initiativebonus": 25,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Clockwork Cannoneer",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Rare",
+    "Huge",
+    "Clockwork",
+    "Construct",
+    "Mindless"
+  ],
+  "source": "Pathfinder Lost Omens Impossible Lands",
+  "perception": {
+    "value": 25,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": 8
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Wind-Up",
+      "actions": null,
+      "traits": [],
+      "description": "<p>24 hours, DC 33 Thievery check, standby</p>\n<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p></details>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 38,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 250,
+    "max": 250,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "exceptions": [
+        "adamantine",
+        "orichalcum"
+      ],
+      "type": "physical",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 15
+    },
+    {
+      "type": "orichalcum",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "25 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bore",
+      "bonus": 28,
+      "traits": [
+        "backswing",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d12+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Cannonball",
+      "bonus": 29,
+      "traits": [
+        "range-increment-100"
+      ],
+      "damageRolls": [
+        {
+          "roll": "6d12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(6d12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bombard",
+      "actions": 2,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>The clockwork cannoneer launches an explosive shot up to a range of 200 feet that explodes in a 20 foot burst. Creatures within the burst take <span class=\"roll\" onclick=\"roll(this)\">5d10</span> bludgeoning damage (DC 36 basic Reflex save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Muzzleburn",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The heat from a discharged cannon sears those who touch its metal shell. The clockwork cannoneer's bore Strike deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage until the end of its next turn after it makes a cannonball Strike or uses its Bombard or Powder Blast abilities.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Powder Blast",
+      "actions": 2,
+      "traits": [
+        "fire"
+      ],
+      "description": "<p>The clockwork cannoneer spews flames from one of its cannons, dealing <span class=\"roll\" onclick=\"roll(this)\">8d6</span> fire damage in a 30 foot cone (DC 36 basic Reflex save). Those that fail the save also take <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent plus fire damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Clockwork cannoneers are cannon-armed constructs created to defend the Grand Duchy of Alkenstar. The people of Alkenstar typically find conventional arms sufficient for battling creatures who wander out of the Mana Wastes, but recent increases in activity from the fleshforges of Nex and the necromantic chambers of Geb have spurred the people of the city into a flurry of defensive innovations. Created by an experimental collaboration between the city's gunsmiths and clockwork inventors, the clockwork cannoneer provides exceptional mobile firepower. Two cannon-arms swing at the sides of the 15-foot-tall automaton, and its body contains a hopper of cannonballs that are replenished by engineers when the creature is wound up for duty. Triple-walled reinforcement on the cannoneer's black-powder reservoirs provides ample protection from the accidental explosions and backfires that often troubled early prototypes of the finely engineered machine. The current design combines the long-range capabilities of field artillery with the stopping power of a firedrake against engaged enemies, and its heat-tempered gear assembly minimizes warping that might cause slipping, grinding, or shaking.</p>\n<p>While reports from living artillery members serving alongside clockwork cannoneers complain of blisters, smoke inhalation, and singed eyebrows, the Grand Duchy's chief clockwork machinists have assured the city's leadership that the constructs function well within safety parameters. The clockwork cannoneer's self-sufficient construction frees crews to see to those battlefield tasks that can, for the moment, only be conducted by sentient beings.</p>\n<p>Intelligence reports from Quantium and Absalom indicate that attempts to replicate the clockwork cannoneer's design have been spectacularly unsuccessful.</p>",
+  "recallKnowledge": "Arcana, Crafting, DC: 39",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 25,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Clockwork Cannoneer",
+    "type": "Creature",
+    "level": 15,
+    "traits": [
+      "Rare",
+      "Huge",
+      "Clockwork",
+      "Construct",
+      "Mindless"
+    ],
+    "source": "Pathfinder Lost Omens Impossible Lands",
+    "perception": {
+      "value": 25,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 30,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 7
+    },
+    "dexterity": {
+      "value": 8
+    },
+    "constitution": {
+      "value": 6
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": -5
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Wind-Up",
+        "actions": null,
+        "traits": [],
+        "description": "<p>24 hours, DC 33 Thievery check, standby</p>\n<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p></details>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 38,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 29,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 250,
+      "max": 250,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [
+      {
+        "exceptions": [
+          "adamantine",
+          "orichalcum"
+        ],
+        "type": "physical",
+        "value": 10
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "electricity",
+        "value": 15
+      },
+      {
+        "type": "orichalcum",
+        "value": 15
+      }
+    ],
+    "defensiveAbilities": [],
+    "speed": "25 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Bore",
+        "bonus": 28,
+        "traits": [
+          "backswing",
+          "shove"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d12+12",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d12+12)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Cannonball",
+        "bonus": 29,
+        "traits": [
+          "range-increment-100"
+        ],
+        "damageRolls": [
+          {
+            "roll": "6d12",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(6d12)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Bombard",
+        "actions": 2,
+        "traits": [
+          "fire"
+        ],
+        "description": "<p>The clockwork cannoneer launches an explosive shot up to a range of 200 feet that explodes in a 20 foot burst. Creatures within the burst take <span class=\"roll\" onclick=\"roll(this)\">5d10</span> bludgeoning damage (DC 36 basic Reflex save).</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Muzzleburn",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The heat from a discharged cannon sears those who touch its metal shell. The clockwork cannoneer's bore Strike deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage until the end of its next turn after it makes a cannonball Strike or uses its Bombard or Powder Blast abilities.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Powder Blast",
+        "actions": 2,
+        "traits": [
+          "fire"
+        ],
+        "description": "<p>The clockwork cannoneer spews flames from one of its cannons, dealing <span class=\"roll\" onclick=\"roll(this)\">8d6</span> fire damage in a 30 foot cone (DC 36 basic Reflex save). Those that fail the save also take <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent plus fire damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Clockwork cannoneers are cannon-armed constructs created to defend the Grand Duchy of Alkenstar. The people of Alkenstar typically find conventional arms sufficient for battling creatures who wander out of the Mana Wastes, but recent increases in activity from the fleshforges of Nex and the necromantic chambers of Geb have spurred the people of the city into a flurry of defensive innovations. Created by an experimental collaboration between the city's gunsmiths and clockwork inventors, the clockwork cannoneer provides exceptional mobile firepower. Two cannon-arms swing at the sides of the 15-foot-tall automaton, and its body contains a hopper of cannonballs that are replenished by engineers when the creature is wound up for duty. Triple-walled reinforcement on the cannoneer's black-powder reservoirs provides ample protection from the accidental explosions and backfires that often troubled early prototypes of the finely engineered machine. The current design combines the long-range capabilities of field artillery with the stopping power of a firedrake against engaged enemies, and its heat-tempered gear assembly minimizes warping that might cause slipping, grinding, or shaking.</p>\n<p>While reports from living artillery members serving alongside clockwork cannoneers complain of blisters, smoke inhalation, and singed eyebrows, the Grand Duchy's chief clockwork machinists have assured the city's leadership that the constructs function well within safety parameters. The clockwork cannoneer's self-sufficient construction frees crews to see to those battlefield tasks that can, for the moment, only be conducted by sentient beings.</p>\n<p>Intelligence reports from Quantium and Absalom indicate that attempts to replicate the clockwork cannoneer's design have been spectacularly unsuccessful.</p>",
+    "recallKnowledge": "Arcana, Crafting, DC: 39",
+    "originalCreature": {}
+  }
+}

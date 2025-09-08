@@ -1,0 +1,475 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Cyclops",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Giant",
+    "Humanoid"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 12,
+    "note": "low light-vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision"
+  ],
+  "languages": [
+    "Common",
+    "Cyclops",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Fortune-Telling Lore",
+      "modifier": 13,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": -1
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [
+    {
+      "name": "Greataxe",
+      "quantity": 1,
+      "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": [
+        "sweep"
+      ]
+    },
+    {
+      "name": "Heavy Crossbow",
+      "quantity": 1,
+      "description": "<p>This large crossbow is harder to load and more substantial than a regular crossbow, but it packs a greater punch.</p>",
+      "level": 0,
+      "price": "4 gp ",
+      "traits": []
+    },
+    {
+      "name": "Hide Armor",
+      "quantity": 1,
+      "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": []
+    },
+    {
+      "name": "Bolts",
+      "quantity": 10,
+      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
+      "level": 0,
+      "price": "1 sp ",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 80,
+    "max": 80,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+      "collapsed": true
+    },
+    {
+      "name": "Flash of Insight",
+      "actions": null,
+      "traits": [
+        "fortune",
+        "occult"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day.</p>\n<p><strong>Trigger</strong> The cyclops is about to roll a d20.</p>\n<hr />\n<p><strong>Effect</strong> The cyclops peers into an occluded spectrum of possible futures. It gets a success (but not a critical success) on the roll instead of rolling.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Greataxe",
+      "bonus": 14,
+      "traits": [
+        "reach-10",
+        "sweep"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d12+9",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12+9)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Heavy Crossbow",
+      "bonus": 8,
+      "traits": [
+        "range-increment-120",
+        "reload-2"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Swipe",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The cyclops makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within their melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the cyclops's multiple attack penalty.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The kingdoms of the cyclopes date to an age before the rise of humanity, when dragons and giants and serpentfolk ruled the world. The cyclopes built enormous stone cities and prayed to ancient gods of brutality and wrath, but their power to foresee the future failed them and their civilization collapsed. Today, most cyclopes have virtually no knowledge of the former glory of their kind, even though it is not uncommon for them to dwell among the ruins of their greatness. Cyclops cities include monuments and imposing murals which depict their peoples' history, but few now among them can read or interpret these relics of the past.</p>\n<p>In addition to their single eye, cyclopes are also famous for their neverending hunger, an appetite so all-consuming that some scholars theorize it may in fact be some kind of curse. The ever-present hunger of the cyclopes seems to have some connection to the death of their civilization—though whether this voracity was the cause or a side-effect of their people's downfall is likely destined to remain a mystery.</p>\n<p>Although details of the cyclopes' gods have largely been lost to the annals of time, what little is known about these deities suggests they were vindictive and petty enough to curse their own people if they felt neglected or badly served.</p>\n<hr />\n<p>The cyclopes are violent giants with a tragic past. Although they possess only one eye, they could once see far more than most, possessing occult wisdom and divinatory magic that gave them the mystic ability of foresight. But their legendary oracular powers failed to prevent the fall of their society, and the vast kingdoms of the cyclops long ago collapsed into ruin. Today, cyclopes have forgotten much of what they once knew, and they skulk among the crumbling remains of their fallen cities like forgotten kings and queens of their own fallen kingdoms.</p>",
+  "recallKnowledge": "Society, DC: 22",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 12,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Cyclops",
+    "type": "Creature",
+    "level": 5,
+    "traits": [
+      "Uncommon",
+      "Large",
+      "Giant",
+      "Humanoid"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 12,
+      "note": "low light-vision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision"
+    ],
+    "languages": [
+      "Common",
+      "Cyclops",
+      "Jotun"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 10,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 12,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      },
+      {
+        "name": "Fortune-Telling Lore",
+        "modifier": 13,
+        "note": "",
+        "usedAttribute": "intelligence",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": -1
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": 0
+    },
+    "wisdom": {
+      "value": 3
+    },
+    "charisma": {
+      "value": -1
+    },
+    "items": [
+      {
+        "name": "Greataxe",
+        "quantity": 1,
+        "description": "<p>This large battle axe is too heavy to wield with only one hand. Many greataxes incorporate two blades, and they are often \"bearded,\" having a hook at the bottom to increase the strength of their chopping power.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": [
+          "sweep"
+        ]
+      },
+      {
+        "name": "Heavy Crossbow",
+        "quantity": 1,
+        "description": "<p>This large crossbow is harder to load and more substantial than a regular crossbow, but it packs a greater punch.</p>",
+        "level": 0,
+        "price": "4 gp ",
+        "traits": []
+      },
+      {
+        "name": "Hide Armor",
+        "quantity": 1,
+        "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": []
+      },
+      {
+        "name": "Bolts",
+        "quantity": 10,
+        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
+        "level": 0,
+        "price": "1 sp ",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 80,
+      "max": 80,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Ferocity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+        "collapsed": true
+      },
+      {
+        "name": "Flash of Insight",
+        "actions": null,
+        "traits": [
+          "fortune",
+          "occult"
+        ],
+        "description": "<p><strong>Frequency</strong> once per day.</p>\n<p><strong>Trigger</strong> The cyclops is about to roll a d20.</p>\n<hr />\n<p><strong>Effect</strong> The cyclops peers into an occluded spectrum of possible futures. It gets a success (but not a critical success) on the roll instead of rolling.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Greataxe",
+        "bonus": 14,
+        "traits": [
+          "reach-10",
+          "sweep"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d12+9",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d12+9)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Heavy Crossbow",
+        "bonus": 8,
+        "traits": [
+          "range-increment-120",
+          "reload-2"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d10+4",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d10+4)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Swipe",
+        "actions": 2,
+        "traits": [],
+        "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The cyclops makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within their melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the cyclops's multiple attack penalty.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The kingdoms of the cyclopes date to an age before the rise of humanity, when dragons and giants and serpentfolk ruled the world. The cyclopes built enormous stone cities and prayed to ancient gods of brutality and wrath, but their power to foresee the future failed them and their civilization collapsed. Today, most cyclopes have virtually no knowledge of the former glory of their kind, even though it is not uncommon for them to dwell among the ruins of their greatness. Cyclops cities include monuments and imposing murals which depict their peoples' history, but few now among them can read or interpret these relics of the past.</p>\n<p>In addition to their single eye, cyclopes are also famous for their neverending hunger, an appetite so all-consuming that some scholars theorize it may in fact be some kind of curse. The ever-present hunger of the cyclopes seems to have some connection to the death of their civilization—though whether this voracity was the cause or a side-effect of their people's downfall is likely destined to remain a mystery.</p>\n<p>Although details of the cyclopes' gods have largely been lost to the annals of time, what little is known about these deities suggests they were vindictive and petty enough to curse their own people if they felt neglected or badly served.</p>\n<hr />\n<p>The cyclopes are violent giants with a tragic past. Although they possess only one eye, they could once see far more than most, possessing occult wisdom and divinatory magic that gave them the mystic ability of foresight. But their legendary oracular powers failed to prevent the fall of their society, and the vast kingdoms of the cyclops long ago collapsed into ruin. Today, cyclopes have forgotten much of what they once knew, and they skulk among the crumbling remains of their fallen cities like forgotten kings and queens of their own fallen kingdoms.</p>",
+    "recallKnowledge": "Society, DC: 22",
+    "originalCreature": {}
+  }
+}

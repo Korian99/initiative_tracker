@@ -1,0 +1,379 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Stabilized Black Pudding",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Uncommon",
+    "Huge",
+    "Mindless",
+    "Ooze"
+  ],
+  "source": "Pathfinder Society Scenario #4-06: Signal from the Electric Laboratory",
+  "perception": {
+    "value": 9,
+    "note": "motion sense 60 ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "motion sense 60 ft precise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 7
+  },
+  "dexterity": {
+    "value": -5
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Motion Sense 60 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A black pudding can sense nearby motion through vibration and air movement.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 165,
+    "max": 165,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "critical-hits",
+    "piercing",
+    "precision",
+    "slashing",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Corrosive Mass",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature that hits the pudding with a metal or wooden weapon must succeed at a DC 22 Reflex save or the weapon takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> acid damage (after dealing damage to the black pudding as normal). Thrown weapons and ammunition take this damage automatically with no save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Splorch",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An adjacent creature hits the black pudding jelly with a Strike that would deal slashing or piercing damage</p>\n<p><strong>Effect</strong> A gout of acidic jelly shoots out at the attacker. The attacker must attempt a DC 25 Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The attacker is unaffected.</p>\n<p><strong>Success</strong> The attacker takes <span class=\"roll\" onclick=\"roll(this)\">1d8</span> acid damage.</p>\n<p><strong>Failure</strong> The attacker takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> acid damage.</p>\n<p><strong>Critical Failure</strong> The attacker takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> acid damage and 4 persistent acid damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\nclimb 20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 18,
+      "traits": [
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "2d6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(2d6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [
+        "Corrosive-touch",
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><span class=\"roll\" onclick=\"roll(this)\">1d8+7</span> bludgeoning damage plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> acid damage, DC 26 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Corrosive Touch",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the pudding hits a creature with its pseudopod, any acid damage is dealt to the creature's armor or clothing as well as the creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Suction",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The pudding can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain for it.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+  "recallKnowledge": "Occultism, DC: 25",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Stabilized Black Pudding",
+    "type": "Creature",
+    "level": 7,
+    "traits": [
+      "Uncommon",
+      "Huge",
+      "Mindless",
+      "Ooze"
+    ],
+    "source": "Pathfinder Society Scenario #4-06: Signal from the Electric Laboratory",
+    "perception": {
+      "value": 9,
+      "note": "motion sense 60 ft precise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "motion sense 60 ft precise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 7
+    },
+    "dexterity": {
+      "value": -5
+    },
+    "constitution": {
+      "value": 7
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": -5
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Motion Sense 60 feet",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A black pudding can sense nearby motion through vibration and air movement.</p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 6,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 165,
+      "max": 165,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "acid",
+      "critical-hits",
+      "piercing",
+      "precision",
+      "slashing",
+      "unconscious",
+      "visual"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Corrosive Mass",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A creature that hits the pudding with a metal or wooden weapon must succeed at a DC 22 Reflex save or the weapon takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> acid damage (after dealing damage to the black pudding as normal). Thrown weapons and ammunition take this damage automatically with no save.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Splorch",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> An adjacent creature hits the black pudding jelly with a Strike that would deal slashing or piercing damage</p>\n<p><strong>Effect</strong> A gout of acidic jelly shoots out at the attacker. The attacker must attempt a DC 25 Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The attacker is unaffected.</p>\n<p><strong>Success</strong> The attacker takes <span class=\"roll\" onclick=\"roll(this)\">1d8</span> acid damage.</p>\n<p><strong>Failure</strong> The attacker takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> acid damage.</p>\n<p><strong>Critical Failure</strong> The attacker takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> acid damage and 4 persistent acid damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\nclimb 20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Pseudopod",
+        "bonus": 18,
+        "traits": [
+          "reach-10",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+7",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "2d6",
+            "type": "acid"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+7)*2",
+            "type": "bludgeoning"
+          },
+          {
+            "roll": "(2d6)*2",
+            "type": "acid"
+          }
+        ],
+        "effects": [
+          "Corrosive-touch",
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Constrict",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><span class=\"roll\" onclick=\"roll(this)\">1d8+7</span> bludgeoning damage plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> acid damage, DC 26 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Corrosive Touch",
+        "actions": null,
+        "traits": [],
+        "description": "<p>When the pudding hits a creature with its pseudopod, any acid damage is dealt to the creature's armor or clothing as well as the creature.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Suction",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The pudding can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain for it.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+    "recallKnowledge": "Occultism, DC: 25",
+    "originalCreature": {}
+  }
+}

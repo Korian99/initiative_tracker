@@ -1,0 +1,481 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Bloom Wyvern",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Unique",
+    "Large",
+    "Dragon",
+    "Evil"
+  ],
+  "source": "Pathfinder Kingmaker",
+  "perception": {
+    "value": 16,
+    "note": "darkvisionscent 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision",
+    "scent 30 ft imprecise"
+  ],
+  "languages": [
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 135,
+    "max": 135,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "paralyzed",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Attack of Opportunity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "collapsed": true
+    },
+    {
+      "name": "Savage",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature Grabbed by the wyvern critically fails a skill check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern makes a stinger Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\nfly 60 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 20,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 20,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+9",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+9)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 18,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Wyvern-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Powerful Dive",
+      "actions": 2,
+      "traits": [
+        "move"
+      ],
+      "description": "<p>The wyvern Flies up to its fly Speed and must both move forward at least 20 feet and descend at least 10 feet. If it ends the movement within melee reach of at least one enemy its size or smaller, it can make a claw Strike against that enemy. If the claw hits, as a free action the wyvern can either automatically Grab the target or knock it Prone.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Punishing Momentum",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The wyvern Grabbed a creature this turn using Powerful Dive.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern can Fly at half Speed while holding the creature in its claws, carrying that creature along with it and dropping it at the end of its movement. Alternatively, the wyvern can Strike the creature with its stinger with a +2 circumstance bonus.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wyvern Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>A wyvern is a venomous drake with a well-earned reputation for impatience and aggression. As much as 15 feet long and weighing up to 1,000 pounds, a wyvern's resilient body allows it to crash talons-first into large prey without serious risk to itself. A wyvern uses its momentum to stun its target before injecting it with searing venom or carrying it over the side of a nearby cliff. Because a wyvern lacks the strength to haul its prey all the way to its nest intact, it is far more likely to lift and drop its victim over a gully or canyon and let gravity do its work before it descends to pick apart the carcass.</p>\n<p>Conversation is of little interest to a wyvern, as the creature typically speaks only to taunt its prey, issue territorial claims, or demand tribute. Even so, many wyverns enjoy grim humor and tales of violent acts, particularly if those acts were committed by the storyteller. A wyvern properly appeased with meat, entertainment, and treasure sometimes agrees to provide assistance ranging from giving directions to serving as a mount for a powerful humanoid. However, these arrangements rarely last more than a few weeks before the wyvern's pride, malice, or insolence inspires it to flee or even betray its allies. Only the truly cruel can cow a wyvern into servitude for an extended period, as most wyverns are so self-interested that they go out of their way to avoid helping others.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct-drakes are primitive draconic monsters who bear a fraction of the terrifying might of their larger cousins but little (if any) of the cunning. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties-small social groups fittingly called \"rampages\"-makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them only their formidable jaws and thick-scaled tails with which to attack if engaged at melee range. Most drakes would rather avoid close combat, however, preferring to use their breath weapons to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>",
+  "recallKnowledge": "Arcana, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 16,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Bloom Wyvern",
+    "type": "Creature",
+    "level": 8,
+    "traits": [
+      "Unique",
+      "Large",
+      "Dragon",
+      "Evil"
+    ],
+    "source": "Pathfinder Kingmaker",
+    "perception": {
+      "value": 16,
+      "note": "darkvisionscent 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision",
+      "scent 30 ft imprecise"
+    ],
+    "languages": [
+      "Draconic"
+    ],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 17,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 3
+    },
+    "constitution": {
+      "value": 4
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 27,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 135,
+      "max": 135,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "paralyzed",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Attack of Opportunity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+        "collapsed": true
+      },
+      {
+        "name": "Savage",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature Grabbed by the wyvern critically fails a skill check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern makes a stinger Strike against the triggering creature.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\nfly 60 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fangs",
+        "bonus": 20,
+        "traits": [
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d12+9",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d12+9)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Claw",
+        "bonus": 20,
+        "traits": [
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+9",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+9)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Stinger",
+        "bonus": 18,
+        "traits": [
+          "agile",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+5",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+5)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Wyvern-venom"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Powerful Dive",
+        "actions": 2,
+        "traits": [
+          "move"
+        ],
+        "description": "<p>The wyvern Flies up to its fly Speed and must both move forward at least 20 feet and descend at least 10 feet. If it ends the movement within melee reach of at least one enemy its size or smaller, it can make a claw Strike against that enemy. If the claw hits, as a free action the wyvern can either automatically Grab the target or knock it Prone.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Punishing Momentum",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The wyvern Grabbed a creature this turn using Powerful Dive.</p>\n<hr />\n<p><strong>Effect</strong> The wyvern can Fly at half Speed while holding the creature in its claws, carrying that creature along with it and dropping it at the end of its movement. Alternatively, the wyvern can Strike the creature with its stinger with a +2 circumstance bonus.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Wyvern Venom",
+        "actions": null,
+        "traits": [
+          "poison"
+        ],
+        "description": "<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage (1 round)</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>A wyvern is a venomous drake with a well-earned reputation for impatience and aggression. As much as 15 feet long and weighing up to 1,000 pounds, a wyvern's resilient body allows it to crash talons-first into large prey without serious risk to itself. A wyvern uses its momentum to stun its target before injecting it with searing venom or carrying it over the side of a nearby cliff. Because a wyvern lacks the strength to haul its prey all the way to its nest intact, it is far more likely to lift and drop its victim over a gully or canyon and let gravity do its work before it descends to pick apart the carcass.</p>\n<p>Conversation is of little interest to a wyvern, as the creature typically speaks only to taunt its prey, issue territorial claims, or demand tribute. Even so, many wyverns enjoy grim humor and tales of violent acts, particularly if those acts were committed by the storyteller. A wyvern properly appeased with meat, entertainment, and treasure sometimes agrees to provide assistance ranging from giving directions to serving as a mount for a powerful humanoid. However, these arrangements rarely last more than a few weeks before the wyvern's pride, malice, or insolence inspires it to flee or even betray its allies. Only the truly cruel can cow a wyvern into servitude for an extended period, as most wyverns are so self-interested that they go out of their way to avoid helping others.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct-drakes are primitive draconic monsters who bear a fraction of the terrifying might of their larger cousins but little (if any) of the cunning. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties-small social groups fittingly called \"rampages\"-makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them only their formidable jaws and thick-scaled tails with which to attack if engaged at melee range. Most drakes would rather avoid close combat, however, preferring to use their breath weapons to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>",
+    "recallKnowledge": "Arcana, DC: 24",
+    "originalCreature": {}
+  }
+}

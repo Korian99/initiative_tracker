@@ -1,0 +1,375 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Mummy Guardian",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Medium",
+    "Mummy",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Pathfinder Monster Core",
+  "perception": {
+    "value": 16,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Necril",
+    "Plus any one language they knew while alive"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 125,
+    "max": 125,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 5
+    },
+    {
+      "exceptions": [],
+      "type": "alchemical",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Alchemical Weakness",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The guardian's weakness to alchemical items not only applies to damage from alchemical items, but the guardian also takes 5 damage when splashed with non-damaging alchemical items or dosed with alchemical poisons, even if they're immune to their other effects.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Blighted Consumption",
+      "actions": -1,
+      "traits": [
+        "curse",
+        "divine",
+        "poison"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature within 30 feet eats or drinks (including an alchemical item or potion)</p>\n<hr />\n<p><strong>Effect</strong> The food or drink burns like the caustic substances fed to the mummy before its death. If the creature fails a DC 24 Fortitude save, they become Sickened 2 after they finish the consumption and can't reduce their sickened condition while within 30 feet of any mummy.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 16,
+      "traits": [
+        "agile",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "Choking-pain"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Choking Pain",
+      "actions": 1,
+      "traits": [
+        "divine",
+        "illusion",
+        "mental",
+        "void"
+      ],
+      "description": "<p><strong>Requirements</strong> The mummy's last action was a successful fist Strike</p>\n<hr />\n<p><strong>Effect</strong> The mummy shares the pain of its dying moments with the target of that Strike. That creature takes <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage with a DC 24 basic Will save. If the creature critically fails the saving throw, it can't speak for 1 round, including to Cast a Spell.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>The majority of mummy guardians were created by cruel and selfish masters to serve as guardians to protect their tombs from intruders. The traditional method of creating a mummy guardian is a laborious and sadistic process that begins well before the poor soul to be transformed is dead. The victim is ritualistically starved of nourishing food and instead fed strange spices, preservative agents, and toxins intended to quicken the desiccation of the flesh. The victim remains immobile but painfully aware during the final stages, as its now-useless entrails are extracted. The victim is then shrouded in funerary wrappings and entombed within a necromantically ensorcelled sarcophagus to await instructions in the potentially distant future. While it's certainly possible to use other methods to create a mummy guardian from an already-deceased body, those who seek to create these foul undead as their guardians in the afterlife often feel that such methods result in inferior undead—the pain and agony of death by mummification being an essential step in the process.</p>\n<p>Regardless of the method of their creation, mummy guardians are more than just physical shells of flesh and bone. They retain fragmented, distorted versions of their minds, with only enough memories of their living personality remaining to fuel their undead anger and jealousy of those who yet live. This burning rage only intensifies over the centuries of waiting within a crypt for the chance to actually act, and thus, when most mummy guardians are awoken by tomb robbers or adventurers, they stop at nothing in pursuit of spiteful slaughter.</p>\n<hr />\n<p>While many cultures practice mummification for benign reasons, undead mummies are created through grueling rituals, typically to provide eternally vigilant guardians. Much more rarely, a body mummified without those special rites can rise again due to its hatred of the living.</p>",
+  "recallKnowledge": "Religion, DC: 22",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 16,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Mummy Guardian",
+    "type": "Creature",
+    "level": 6,
+    "traits": [
+      "Medium",
+      "Mummy",
+      "Undead",
+      "Unholy"
+    ],
+    "source": "Pathfinder Monster Core",
+    "perception": {
+      "value": 16,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Necril",
+      "Plus any one language they knew while alive"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 11,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 4
+    },
+    "dexterity": {
+      "value": 0
+    },
+    "constitution": {
+      "value": 2
+    },
+    "intelligence": {
+      "value": -2
+    },
+    "wisdom": {
+      "value": 4
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 23,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 14,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 10,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 16,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 125,
+      "max": 125,
+      "note": "void healing",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "death-effects",
+      "disease",
+      "paralyzed",
+      "poison",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 5
+      },
+      {
+        "exceptions": [],
+        "type": "alchemical",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Alchemical Weakness",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The guardian's weakness to alchemical items not only applies to damage from alchemical items, but the guardian also takes 5 damage when splashed with non-damaging alchemical items or dosed with alchemical poisons, even if they're immune to their other effects.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Blighted Consumption",
+        "actions": -1,
+        "traits": [
+          "curse",
+          "divine",
+          "poison"
+        ],
+        "description": "<p><strong>Trigger</strong> A creature within 30 feet eats or drinks (including an alchemical item or potion)</p>\n<hr />\n<p><strong>Effect</strong> The food or drink burns like the caustic substances fed to the mummy before its death. If the creature fails a DC 24 Fortitude save, they become Sickened 2 after they finish the consumption and can't reduce their sickened condition while within 30 feet of any mummy.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "20 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 16,
+        "traits": [
+          "agile",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+7",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+7)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [
+          "Choking-pain"
+        ],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Choking Pain",
+        "actions": 1,
+        "traits": [
+          "divine",
+          "illusion",
+          "mental",
+          "void"
+        ],
+        "description": "<p><strong>Requirements</strong> The mummy's last action was a successful fist Strike</p>\n<hr />\n<p><strong>Effect</strong> The mummy shares the pain of its dying moments with the target of that Strike. That creature takes <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage with a DC 24 basic Will save. If the creature critically fails the saving throw, it can't speak for 1 round, including to Cast a Spell.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>The majority of mummy guardians were created by cruel and selfish masters to serve as guardians to protect their tombs from intruders. The traditional method of creating a mummy guardian is a laborious and sadistic process that begins well before the poor soul to be transformed is dead. The victim is ritualistically starved of nourishing food and instead fed strange spices, preservative agents, and toxins intended to quicken the desiccation of the flesh. The victim remains immobile but painfully aware during the final stages, as its now-useless entrails are extracted. The victim is then shrouded in funerary wrappings and entombed within a necromantically ensorcelled sarcophagus to await instructions in the potentially distant future. While it's certainly possible to use other methods to create a mummy guardian from an already-deceased body, those who seek to create these foul undead as their guardians in the afterlife often feel that such methods result in inferior undead—the pain and agony of death by mummification being an essential step in the process.</p>\n<p>Regardless of the method of their creation, mummy guardians are more than just physical shells of flesh and bone. They retain fragmented, distorted versions of their minds, with only enough memories of their living personality remaining to fuel their undead anger and jealousy of those who yet live. This burning rage only intensifies over the centuries of waiting within a crypt for the chance to actually act, and thus, when most mummy guardians are awoken by tomb robbers or adventurers, they stop at nothing in pursuit of spiteful slaughter.</p>\n<hr />\n<p>While many cultures practice mummification for benign reasons, undead mummies are created through grueling rituals, typically to provide eternally vigilant guardians. Much more rarely, a body mummified without those special rites can rise again due to its hatred of the living.</p>",
+    "recallKnowledge": "Religion, DC: 22",
+    "originalCreature": {}
+  }
+}

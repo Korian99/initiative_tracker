@@ -1,0 +1,337 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Aurochs Herd",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Gargantuan",
+    "Animal",
+    "Troop"
+  ],
+  "source": "Pathfinder #208: Hoof, Cinder, and Storm",
+  "perception": {
+    "value": 12,
+    "note": "low light-visionscent 60 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "low light-vision",
+    "scent 60 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Form Up",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><p>The troop chooses one of the squares it currently occupies and redistributes its squares to any configuration in which all squares are contiguous and within 15 feet of the chosen square. The troop can't share its space with other creatures.</p></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 150,
+    "max": 150,
+    "note": "(16 squares); Thresholds 100 (3 segments), 50 (2 segments)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "area-damage",
+      "value": 10
+    },
+    {
+      "exceptions": [],
+      "type": "splash-damage",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Stampede",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The aurochs herd's Hit Points drops below a threshold</p><hr /><p><strong>Effect</strong> The aurochs herd uses Trample but moves in a direction directly opposite of the threat; the DC increases to DC 27 basic Reflex save and the bludgeoning damage increases to <span class=\"roll\" onclick=\"roll(this)\">4d6+6</span> bludgeoning (Prone creatures take <span class=\"roll\" onclick=\"roll(this)\">5d6+6</span> bludgeoning damage instead).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft,\n",
+  "strikes": [],
+  "offensiveAbilities": [
+    {
+      "name": "Circle of Horns",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The largest males in the herd form a ring of protection around the more vulnerable members. The herd gains a +2 circumstance bonus to AC until the start of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Horn",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> to <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The aurochs herd makes a melee attack against each enemy in a 5 foot emanation (DC 22 basic Reflex save). The damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <span class=\"roll\" onclick=\"roll(this)\">2d8+8</span> piercing damage</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <span class=\"roll\" onclick=\"roll(this)\">2d8+10</span> piercing damage</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <span class=\"roll\" onclick=\"roll(this)\">2d10+9</span> piercing damage</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Puncturing Charge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The aurochs herd has formed a Circle of Horns</p><hr /><p><strong>Effect</strong> The aurochs herd Strides to an enemy and makes a Horn Strike, dealing <span class=\"roll\" onclick=\"roll(this)\">3d8+8</span> piercing damage plus Improved Knockdown.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trample",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>Huge or smaller, hoof ( <span class=\"roll\" onclick=\"roll(this)\">3d6+6</span> bludgeoning damage; Prone creatures take <span class=\"roll\" onclick=\"roll(this)\">4d6+6</span> bludgeoning damage), DC 25 basic Reflex save (any creature that fails its save is knocked prone).</p><details><summary>See rules...</summary><p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Troop Movement",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Whenever the aurochs herd Strides, it first Forms Up as a free action to condense into a 20-by-20-foot area (minus any missing squares,) and then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any of the herd's squares enter difficult terrain, the extra movement cost applies to the whole troop.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>Massive aurochs herds roam the badlands of Belkzen, grazing upon the limited grass and plant life dispersed throughout the wasteland's valleys. Having adapted to the arid mountain terrain, aurochs herds eat a much more diverse diet of scrub and brush than their domesticated counterparts as they steadily migrate down the Flood Road. The herds show little patience for predators and demonstrate a preference for charging threats with their razor-sharp horns. Bull aurochs display natural instincts to strategically protect other, weaker members of the herd, often surprising intruders with their coordinated tactics and defensive maneuvers.</p><h2>Unlikely War Beasts</h2><p>Followers of Zagresh have a history of capturing wild aurochs for use in magical experiments, taking the strongest of a herd to make the beasts even larger and more aggressive. Once the aurochs have been transformed into monstrous goliaths, their captors bard them with armored plates and magical weapons that complement their horns. In battle, these aurochs are utilized to pull siege weapons, break through enemy defenses, and trample frontline forces.</p>",
+  "recallKnowledge": "Nature, DC: 23",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 12,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Aurochs Herd",
+    "type": "Creature",
+    "level": 7,
+    "traits": [
+      "Gargantuan",
+      "Animal",
+      "Troop"
+    ],
+    "source": "Pathfinder #208: Hoof, Cinder, and Storm",
+    "perception": {
+      "value": 12,
+      "note": "low light-visionscent 60 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "low light-vision",
+      "scent 60 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 18,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 14,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 6
+    },
+    "dexterity": {
+      "value": 2
+    },
+    "constitution": {
+      "value": 6
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 2
+    },
+    "items": [],
+    "generalAbilities": [
+      {
+        "name": "Form Up",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><p>The troop chooses one of the squares it currently occupies and redistributes its squares to any configuration in which all squares are contiguous and within 15 feet of the chosen square. The troop can't share its space with other creatures.</p></p>",
+        "collapsed": false
+      }
+    ],
+    "ac": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 18,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 150,
+      "max": 150,
+      "note": "(16 squares); Thresholds 100 (3 segments), 50 (2 segments)",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "area-damage",
+        "value": 10
+      },
+      {
+        "exceptions": [],
+        "type": "splash-damage",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Stampede",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> The aurochs herd's Hit Points drops below a threshold</p><hr /><p><strong>Effect</strong> The aurochs herd uses Trample but moves in a direction directly opposite of the threat; the DC increases to DC 27 basic Reflex save and the bludgeoning damage increases to <span class=\"roll\" onclick=\"roll(this)\">4d6+6</span> bludgeoning (Prone creatures take <span class=\"roll\" onclick=\"roll(this)\">5d6+6</span> bludgeoning damage instead).</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "25 ft,\n",
+    "strikes": [],
+    "offensiveAbilities": [
+      {
+        "name": "Circle of Horns",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>The largest males in the herd form a ring of protection around the more vulnerable members. The herd gains a +2 circumstance bonus to AC until the start of its next turn.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Horn",
+        "actions": 1,
+        "traits": [],
+        "description": "<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> to <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"></p>\n<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The aurochs herd makes a melee attack against each enemy in a 5 foot emanation (DC 22 basic Reflex save). The damage depends on the number of actions.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <span class=\"roll\" onclick=\"roll(this)\">2d8+8</span> piercing damage</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <span class=\"roll\" onclick=\"roll(this)\">2d8+10</span> piercing damage</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <span class=\"roll\" onclick=\"roll(this)\">2d10+9</span> piercing damage</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Puncturing Charge",
+        "actions": 2,
+        "traits": [],
+        "description": "<p><strong>Requirements</strong> The aurochs herd has formed a Circle of Horns</p><hr /><p><strong>Effect</strong> The aurochs herd Strides to an enemy and makes a Horn Strike, dealing <span class=\"roll\" onclick=\"roll(this)\">3d8+8</span> piercing damage plus Improved Knockdown.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Trample",
+        "actions": 3,
+        "traits": [],
+        "description": "<p>Huge or smaller, hoof ( <span class=\"roll\" onclick=\"roll(this)\">3d6+6</span> bludgeoning damage; Prone creatures take <span class=\"roll\" onclick=\"roll(this)\">4d6+6</span> bludgeoning damage), DC 25 basic Reflex save (any creature that fails its save is knocked prone).</p><details><summary>See rules...</summary><p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Troop Movement",
+        "actions": null,
+        "traits": [],
+        "description": "<p>Whenever the aurochs herd Strides, it first Forms Up as a free action to condense into a 20-by-20-foot area (minus any missing squares,) and then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any of the herd's squares enter difficult terrain, the extra movement cost applies to the whole troop.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>Massive aurochs herds roam the badlands of Belkzen, grazing upon the limited grass and plant life dispersed throughout the wasteland's valleys. Having adapted to the arid mountain terrain, aurochs herds eat a much more diverse diet of scrub and brush than their domesticated counterparts as they steadily migrate down the Flood Road. The herds show little patience for predators and demonstrate a preference for charging threats with their razor-sharp horns. Bull aurochs display natural instincts to strategically protect other, weaker members of the herd, often surprising intruders with their coordinated tactics and defensive maneuvers.</p><h2>Unlikely War Beasts</h2><p>Followers of Zagresh have a history of capturing wild aurochs for use in magical experiments, taking the strongest of a herd to make the beasts even larger and more aggressive. Once the aurochs have been transformed into monstrous goliaths, their captors bard them with armored plates and magical weapons that complement their horns. In battle, these aurochs are utilized to pull siege weapons, break through enemy defenses, and trample frontline forces.</p>",
+    "recallKnowledge": "Nature, DC: 23",
+    "originalCreature": {}
+  }
+}

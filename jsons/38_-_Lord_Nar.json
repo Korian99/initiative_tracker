@@ -1,0 +1,523 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Lord Nar",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Unique",
+    "Medium",
+    "Chaotic",
+    "Evil",
+    "Humanoid",
+    "Orc"
+  ],
+  "source": "Pathfinder Adventure: The Fall of Plaguestone",
+  "perception": {
+    "value": 9,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "darkvision"
+  ],
+  "languages": [
+    "Common",
+    "Orcish"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Greatclub",
+      "quantity": 1,
+      "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>",
+      "level": 0,
+      "price": "1 gp ",
+      "traits": [
+        "backswing",
+        "shove"
+      ]
+    },
+    {
+      "name": "Hatchet",
+      "quantity": 2,
+      "description": "<p>This small axe can be used in close combat or thrown.</p>",
+      "level": 0,
+      "price": "4 sp ",
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown-10"
+      ]
+    },
+    {
+      "name": "Hide Armor",
+      "quantity": 1,
+      "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
+      "level": 0,
+      "price": "2 gp ",
+      "traits": []
+    },
+    {
+      "name": "Bronze Key",
+      "quantity": 1,
+      "description": "",
+      "level": 0,
+      "price": "",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 68,
+    "max": 68,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ferocity",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+      "collapsed": true
+    }
+  ],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "+1 Greatclub",
+      "bonus": 14,
+      "traits": [
+        "backswing",
+        "shove"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 11,
+      "traits": [
+        "agile",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Hatchet",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "sweep",
+        "thrown-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+5",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+5)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "No Escape",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An adjacent foe moves away.</p>\n<hr />\n<p><strong>Effect</strong> Lord Nar may move up to his speed but must end his move as close to the triggering creature as possible without entering the triggering creature's square.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rage",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Lord Nar flies into a rage that lasts 1 minute and grants him 8 temporary Hit Points, 4 additional damage with his listed attacks, and a -1 penalty to AC.</p>\n<p>He cannot use actions that have the concentrate trait while raging, unless they also have the rage trait.</p>\n<p>Once his rage ends, Nar cannot Rage again for 1 minute.</p>\n<p>Effect: Rage</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "",
+  "recallKnowledge": "Society, DC: 19",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 9,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Lord Nar",
+    "type": "Creature",
+    "level": 4,
+    "traits": [
+      "Unique",
+      "Medium",
+      "Chaotic",
+      "Evil",
+      "Humanoid",
+      "Orc"
+    ],
+    "source": "Pathfinder Adventure: The Fall of Plaguestone",
+    "perception": {
+      "value": 9,
+      "note": "darkvision",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "darkvision"
+    ],
+    "languages": [
+      "Common",
+      "Orcish"
+    ],
+    "skills": [
+      {
+        "name": "athletics",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "diplomacy",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      },
+      {
+        "name": "intimidation",
+        "modifier": 8,
+        "note": [],
+        "usedAttribute": "charisma",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": 2
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -1
+    },
+    "wisdom": {
+      "value": 1
+    },
+    "charisma": {
+      "value": 0
+    },
+    "items": [
+      {
+        "name": "Greatclub",
+        "quantity": 1,
+        "description": "<p>While many greatclubs are intricately carved, others are little more than a sturdy tree branch. These massive clubs are too heavy to wield with only one hand.</p>",
+        "level": 0,
+        "price": "1 gp ",
+        "traits": [
+          "backswing",
+          "shove"
+        ]
+      },
+      {
+        "name": "Hatchet",
+        "quantity": 2,
+        "description": "<p>This small axe can be used in close combat or thrown.</p>",
+        "level": 0,
+        "price": "4 sp ",
+        "traits": [
+          "agile",
+          "sweep",
+          "thrown-10"
+        ]
+      },
+      {
+        "name": "Hide Armor",
+        "quantity": 1,
+        "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
+        "level": 0,
+        "price": "2 gp ",
+        "traits": []
+      },
+      {
+        "name": "Bronze Key",
+        "quantity": 1,
+        "description": "",
+        "level": 0,
+        "price": "",
+        "traits": []
+      }
+    ],
+    "generalAbilities": [],
+    "ac": {
+      "value": 21,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 11,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 8,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 9,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 68,
+      "max": 68,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Ferocity",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
+        "collapsed": true
+      }
+    ],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "+1 Greatclub",
+        "bonus": 14,
+        "traits": [
+          "backswing",
+          "shove"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d10+5",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d10+5)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Fist",
+        "bonus": 11,
+        "traits": [
+          "agile",
+          "nonlethal",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d4+5",
+            "type": "bludgeoning"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d4+5)*2",
+            "type": "bludgeoning"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Hatchet",
+        "bonus": 10,
+        "traits": [
+          "agile",
+          "sweep",
+          "thrown-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "1d6+5",
+            "type": "slashing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(1d6+5)*2",
+            "type": "slashing"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "No Escape",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> An adjacent foe moves away.</p>\n<hr />\n<p><strong>Effect</strong> Lord Nar may move up to his speed but must end his move as close to the triggering creature as possible without entering the triggering creature's square.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Rage",
+        "actions": 1,
+        "traits": [],
+        "description": "<p>Lord Nar flies into a rage that lasts 1 minute and grants him 8 temporary Hit Points, 4 additional damage with his listed attacks, and a -1 penalty to AC.</p>\n<p>He cannot use actions that have the concentrate trait while raging, unless they also have the rage trait.</p>\n<p>Once his rage ends, Nar cannot Rage again for 1 minute.</p>\n<p>Effect: Rage</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "",
+    "recallKnowledge": "Society, DC: 19",
+    "originalCreature": {}
+  }
+}

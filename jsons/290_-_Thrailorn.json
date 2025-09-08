@@ -1,0 +1,423 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Thrailorn",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Aberration",
+    "Plant"
+  ],
+  "source": "Pathfinder #202: Severed at the Root",
+  "perception": {
+    "value": 12,
+    "note": "scent 30 ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "scent 30 ft imprecise"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 99,
+    "max": 99,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Eviscerating Thorns",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature that grabs a thrailorn or hits it with an unarmed Strike or non-reach melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The thrailorn's barbed thorns slice open their attacker's body, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage to the triggering creature. If the thrailorn is grabbing or Grabbed by the triggering creature, it deals 1 bleed damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 17,
+      "traits": [
+        "finesse",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "Grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Thorn",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+7",
+          "type": "piercing"
+        },
+        {
+          "roll": "1",
+          "type": "persistent bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+7)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1)*2",
+          "type": "persistent bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Embed Thorn",
+      "actions": null,
+      "traits": [],
+      "description": "<p>If a thrailorn successfully deals persistent bleed damage with its thorn Strike or Eviscerating Thorns reaction and that creature was already taking persistent bleed damage, increase the persistent damage by 1. Each time a creature succeeds the flat check to end this persistent bleed damage, reduce the bleed damage by 1 instead of ending the condition. A critical success on the flat check ends the condition.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pain-Fueled Flurry",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The thrailorn attacks a single foe in a wild, pain-fueled flurry. The thrailorn makes one jaws Strike and two thorn Strikes in any order. These attacks must target the same creature. These attacks count toward the thrailorn's multiple attack penalty, but the multiple attack penalty doesn't increase until after the thrailorn makes all their attacks.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "description": "<p>When a gnome, halfling, pixie, goblin, or other Small creature is transformed into a woodwarp, they become a thrailorn. Sometimes called a \"thornback\" by members of the Rootweft Lodge, thrailorns are nimble and strong with a muscular, compact body. Their torso is coiled in thorny branches and growths that sprout long, barbed thorns. These thorns cause deep puncture wounds and can become embedded in the flesh of any creature who gets too close. A thrailorn's head is obscured within their thorny hide, with only their slavering maw and needle-like teeth visible. Though they have poor vision, they have a keen sense of smell.</p>\n<hr />\n<p>Woodwarps are mutated monsters created when a sapient creature is flooded with unchecked energy from the Plane of Wood that they're unable to control. This rush of all-consuming planar energy scours the creature from the inside out, subsequently warping them into a monstrous humanoid-plant hybrid—an aberration possessing the physiological features of both, painfully reshaped into something dreadful to behold.</p>\n<p>A woodwarp's form and features are determined by the size of the creature they were before their transformation—thrailorns were Small, and durnoliths were Medium. Regardless of their appearance and form, woodwarps endure constant pain from the dense root network that grows inside of them, piercing bone, muscle, and internal organs. This agonizing, all-consuming pain drives woodwarps to violence, causing them to lash out at everything around them.</p>\n<p>In her quest for ultimate power, Ruzadoya Quickmane devised a ritual to purposefully funnel energy from the Plane of Wood into her followers, transforming them into either a woodwarped monstrosity or an elite woodblessed soldier known as Ruzadoya's Chosen. An elaborate wooden ritual focus carved from Idyllis, a tree from the Plane of Wood, serves as the focus for this ritual and the source of planar energy. During a woodwarp's transformation, this wooden ritual focus fuses to the body and becomes the origin point for the woodwarp's root network. Woodwarps created through such rituals are easier to control than woodwarps created by happenstance, as an experienced ritualist can imprint their will upon a woodwarp during their transformation. Such woodwarps serve Ruzadoya as hunters, sentries, and vicious shock troops.</p>\n<h2>Just A Name</h2>\n<p>While woodwarps have proper names, it's unlikely that members of the Rootweft Lodge will discover them. Instead, the woodwarps are referred to by monikers or nicknames. Thrailorns are dubbed \"thornbacks\" and durnoliths are dubbed \"batterfrills.\"</p>\n<h2>Other Woodwarps</h2>\n<p>Thrailorns and durnoliths are not the only types of woodwarps. Creatures of different sizes result in different woodwarps. Sprites, fey dragonets, jinkins, and other Tiny creatures become izifaines—headless woodwarps with fleshy wings and a sharp stinger shrouded in toxic flower petals. Centaurs, minotaurs, giants, and other Large creatures become rogoars—athletic woodwarps with muscular, elongated arms who wrestle their prey.</p>",
+  "recallKnowledge": "Occultism, Nature, DC: 24",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 12,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Thrailorn",
+    "type": "Creature",
+    "level": 6,
+    "traits": [
+      "Uncommon",
+      "Small",
+      "Aberration",
+      "Plant"
+    ],
+    "source": "Pathfinder #202: Severed at the Root",
+    "perception": {
+      "value": 12,
+      "note": "scent 30 ft imprecise",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "scent 30 ft imprecise"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "athletics",
+        "modifier": 13,
+        "note": [],
+        "usedAttribute": "strength",
+        "modifications": []
+      },
+      {
+        "name": "stealth",
+        "modifier": 15,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      },
+      {
+        "name": "survival",
+        "modifier": 12,
+        "note": [],
+        "usedAttribute": "wisdom",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 3
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 3
+    },
+    "intelligence": {
+      "value": -4
+    },
+    "wisdom": {
+      "value": 2
+    },
+    "charisma": {
+      "value": 1
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 13,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 12,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 99,
+      "max": 99,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "exceptions": [],
+        "type": "fire",
+        "value": 5
+      }
+    ],
+    "defensiveAbilities": [
+      {
+        "name": "Eviscerating Thorns",
+        "actions": -1,
+        "traits": [],
+        "description": "<p><strong>Trigger</strong> A creature that grabs a thrailorn or hits it with an unarmed Strike or non-reach melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The thrailorn's barbed thorns slice open their attacker's body, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage to the triggering creature. If the thrailorn is grabbing or Grabbed by the triggering creature, it deals 1 bleed damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "30 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Jaws",
+        "bonus": 17,
+        "traits": [
+          "finesse",
+          "unarmed"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d8+7",
+            "type": "piercing"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d8+7)*2",
+            "type": "piercing"
+          }
+        ],
+        "effects": [
+          "Grab"
+        ],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "melee",
+        "name": "Thorn",
+        "bonus": 17,
+        "traits": [
+          "agile",
+          "finesse"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d6+7",
+            "type": "piercing"
+          },
+          {
+            "roll": "1",
+            "type": "persistent bleed"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d6+7)*2",
+            "type": "piercing"
+          },
+          {
+            "roll": "(1)*2",
+            "type": "persistent bleed"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Embed Thorn",
+        "actions": null,
+        "traits": [],
+        "description": "<p>If a thrailorn successfully deals persistent bleed damage with its thorn Strike or Eviscerating Thorns reaction and that creature was already taking persistent bleed damage, increase the persistent damage by 1. Each time a creature succeeds the flat check to end this persistent bleed damage, reduce the bleed damage by 1 instead of ending the condition. A critical success on the flat check ends the condition.</p>",
+        "collapsed": false
+      },
+      {
+        "name": "Pain-Fueled Flurry",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>The thrailorn attacks a single foe in a wild, pain-fueled flurry. The thrailorn makes one jaws Strike and two thorn Strikes in any order. These attacks must target the same creature. These attacks count toward the thrailorn's multiple attack penalty, but the multiple attack penalty doesn't increase until after the thrailorn makes all their attacks.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [],
+    "description": "<p>When a gnome, halfling, pixie, goblin, or other Small creature is transformed into a woodwarp, they become a thrailorn. Sometimes called a \"thornback\" by members of the Rootweft Lodge, thrailorns are nimble and strong with a muscular, compact body. Their torso is coiled in thorny branches and growths that sprout long, barbed thorns. These thorns cause deep puncture wounds and can become embedded in the flesh of any creature who gets too close. A thrailorn's head is obscured within their thorny hide, with only their slavering maw and needle-like teeth visible. Though they have poor vision, they have a keen sense of smell.</p>\n<hr />\n<p>Woodwarps are mutated monsters created when a sapient creature is flooded with unchecked energy from the Plane of Wood that they're unable to control. This rush of all-consuming planar energy scours the creature from the inside out, subsequently warping them into a monstrous humanoid-plant hybrid—an aberration possessing the physiological features of both, painfully reshaped into something dreadful to behold.</p>\n<p>A woodwarp's form and features are determined by the size of the creature they were before their transformation—thrailorns were Small, and durnoliths were Medium. Regardless of their appearance and form, woodwarps endure constant pain from the dense root network that grows inside of them, piercing bone, muscle, and internal organs. This agonizing, all-consuming pain drives woodwarps to violence, causing them to lash out at everything around them.</p>\n<p>In her quest for ultimate power, Ruzadoya Quickmane devised a ritual to purposefully funnel energy from the Plane of Wood into her followers, transforming them into either a woodwarped monstrosity or an elite woodblessed soldier known as Ruzadoya's Chosen. An elaborate wooden ritual focus carved from Idyllis, a tree from the Plane of Wood, serves as the focus for this ritual and the source of planar energy. During a woodwarp's transformation, this wooden ritual focus fuses to the body and becomes the origin point for the woodwarp's root network. Woodwarps created through such rituals are easier to control than woodwarps created by happenstance, as an experienced ritualist can imprint their will upon a woodwarp during their transformation. Such woodwarps serve Ruzadoya as hunters, sentries, and vicious shock troops.</p>\n<h2>Just A Name</h2>\n<p>While woodwarps have proper names, it's unlikely that members of the Rootweft Lodge will discover them. Instead, the woodwarps are referred to by monikers or nicknames. Thrailorns are dubbed \"thornbacks\" and durnoliths are dubbed \"batterfrills.\"</p>\n<h2>Other Woodwarps</h2>\n<p>Thrailorns and durnoliths are not the only types of woodwarps. Creatures of different sizes result in different woodwarps. Sprites, fey dragonets, jinkins, and other Tiny creatures become izifaines—headless woodwarps with fleshy wings and a sharp stinger shrouded in toxic flower petals. Centaurs, minotaurs, giants, and other Large creatures become rogoars—athletic woodwarps with muscular, elongated arms who wrestle their prey.</p>",
+    "recallKnowledge": "Occultism, Nature, DC: 24",
+    "originalCreature": {}
+  }
+}

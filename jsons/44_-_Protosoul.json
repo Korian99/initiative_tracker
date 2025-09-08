@@ -1,0 +1,703 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Protosoul",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Unique",
+    "Large",
+    "Divine",
+    "Mindless",
+    "(caster)"
+  ],
+  "source": "Pathfinder #189: Dreamers of the Nameless Spires",
+  "perception": {
+    "value": 19,
+    "note": "lifesense",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "senses": [
+    "Lifesense"
+  ],
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 7
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 190,
+    "max": 190,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "void",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Absorb Necromancy",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A protosoul is made of necromantic energy. Any time it would be affected by another creature's non-cantrip necromancy spell, after applying its immunity, it also regains 10 healing Hit Points.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft,\nfly 40 ft,\n",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Necromantic Tendril",
+      "bonus": 22,
+      "traits": [
+        "divine",
+        "magical",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10 + 11",
+          "type": "force"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10 + 11)*2",
+          "type": "force"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Necromantic Bolt",
+      "bonus": 22,
+      "traits": [
+        "divine",
+        "magical",
+        "range-increment-30"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+11",
+          "type": "force"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+11)*2",
+          "type": "force"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "none",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Engulf",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>DC 30 Reflex save, <span class=\"roll\" onclick=\"roll(this)\">2d8</span> force damage plus <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage, Escape DC 30, Rupture 25</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of any creatures in its path. Any creature of the monster's size or smaller whose space the monster moves through can attempt a Reflex save with the listed DC to avoid being engulfed. A creature unable to act automatically critically fails this save. If a creature succeeds at its save, it can choose to be either pushed aside (out of the monster's path) or pushed in front of the monster to the end of the monster's movement. The monster can attempt to Engulf the same creature only once in a single use of Engulf. The monster can contain as many creatures as can fit in its space.</p>\n<p>A creature that fails its save is pulled into the monster's body. It is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The creature takes the listed amount of damage when first engulfed and at the end of each of its turns while it's engulfed. An engulfed creature can get free by Escaping against the listed escape DC. An engulfed creature can attack the monster engulfing it, but only with unarmed attacks or with weapons of light Bulk or less. The engulfing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the engulfed creature cuts itself free.\n<p>Effect: Engulf and Swallow Whole</p>\n<p>A creature that gets free by either method can immediately breathe and exits the swallowing monster's space.</p>\n<p>If the monster dies, all creatures it has engulfed are automatically released as the monster's form loses cohesion.</p></p></details>",
+      "collapsed": false
+    },
+    {
+      "name": "Unstable Magic",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The roiling protosoul can't be healed or Repaired, and is destroyed at 0 Hit Points. So long as it is not destroyed, it naturally recovers 77 healing Hit Points each day. Each time a roiling protosoul casts one of its non-cantrip spells, it drains its own magic to do so, taking 6 force damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Innate Spells",
+      "type": "innate",
+      "bonus": 22,
+      "dc": 30,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 6,
+      "cantrips": [
+        {
+          "name": "Chill Touch",
+          "type": "cantrip",
+          "level": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 living or undead creature",
+          "save": "basic fortitude",
+          "description": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to <span class=\"roll\" onclick=\"roll(this)\">1d4</span> plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also Enfeebled 1 for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is Off-Guard for 1 round on a failed Fortitude save. On a critical failure, the target is also Fleeing for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MMTGxMrwaDpuP9Bu"
+        }
+      ],
+      "rituals": [],
+      "spellLocations": [],
+      "usedAttribute": "charisma",
+      "_id": "X32xwOlsJg95uRu7",
+      "modifications": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [
+        {
+          "name": "Sudden Blight (At Will, see Unstable Magic)",
+          "type": "spell",
+          "level": 2,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20 ft burst",
+          "targets": "",
+          "save": "basic fortitude",
+          "description": "<p>You accelerate the processes of decay in the area. Each living creature in the area takes <span class=\"roll\" onclick=\"roll(this)\">2d10</span> void damage (basic Fortitude save). A creature afflicted by a disease takes a -2 circumstance penalty to this save.You can also direct the blight to rot all Small and Tiny non-creature plants in the area, eliminating non-magical undergrowth and any resulting difficult terrain, cover, and concealment. <em>Sudden blight</em> attempts to counteract any magical effect on the plants before withering them.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "hfIUM1dgQNhgi9cN"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Enervation (At Will, see Unstable Magic)",
+          "type": "spell",
+          "level": 4,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30 ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Extending a finger, you fire a beam of void energy that weakens the life force of any creature it touches. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> persistent plus void damage.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">4d8</span> persistent plus void damage and becomes Drained 1.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">4d8</span> persistent plus void damage and becomes Drained 2 and Doomed 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent void damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span> on a success, or by <span class=\"roll\" onclick=\"roll(this)\">2d8</span> on a failure or critical failure.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "TgICMsIj7ZaHvnZ5"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Harm (At Will, see Unstable Magic)",
+          "type": "spell",
+          "level": 1,
+          "traits": [
+            "manipulate"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "36mv9kdnKD9UKUux"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "description": "<p>Though many spellcasters can harness the forces of magic in a consistent manner, such power can't always be controlled, especially in the hands of reckless researchers, megalomaniacal villains, or untested novices. When magical accidents result in large-scale property damage and the loss of life, these forces sometimes take on lives of their own, forming a dangerous amalgamation of ongoing magical energy known as a roiling incant.</p>\n<p>A roiling incant's appearance depends on the type of magic it sprang forth from, though it always carries with it an echo of the destruction it has caused. A fiery evocation roiling incant might look like a storm of burning ashes echoing with the sounds of crackling timber, while a necromancy roiling incant could be mistaken for ghostly tendrils puppeteering shambling corpses. No matter what it looks like, a roiling incant roams mindlessly, attacking everything it encounters, heedless of further carnage it causes.</p>",
+  "recallKnowledge": ", DC: 28",
+  "originalCreature": {
+    "initiative": 0,
+    "initiativebonus": 19,
+    "comments": "",
+    "conditions": [],
+    "color": "#fff",
+    "duplicateIndex": 0,
+    "name": "Protosoul",
+    "type": "Creature",
+    "level": 11,
+    "traits": [
+      "Unique",
+      "Large",
+      "Divine",
+      "Mindless",
+      "(caster)"
+    ],
+    "source": "Pathfinder #189: Dreamers of the Nameless Spires",
+    "perception": {
+      "value": 19,
+      "note": "lifesense",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "senses": [
+      "Lifesense"
+    ],
+    "languages": [],
+    "skills": [
+      {
+        "name": "acrobatics",
+        "modifier": 22,
+        "note": [],
+        "usedAttribute": "dexterity",
+        "modifications": []
+      }
+    ],
+    "strength": {
+      "value": 5
+    },
+    "dexterity": {
+      "value": 5
+    },
+    "constitution": {
+      "value": 7
+    },
+    "intelligence": {
+      "value": -5
+    },
+    "wisdom": {
+      "value": 0
+    },
+    "charisma": {
+      "value": -5
+    },
+    "items": [],
+    "generalAbilities": [],
+    "ac": {
+      "value": 31,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "fortitude": {
+      "value": 24,
+      "note": "",
+      "usedAttribute": "constitution",
+      "modifications": []
+    },
+    "reflex": {
+      "value": 22,
+      "note": "",
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    "will": {
+      "value": 17,
+      "note": "",
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    "savenote": "",
+    "hp": {
+      "value": 190,
+      "max": 190,
+      "note": "",
+      "modifications": []
+    },
+    "immunities": [
+      "bleed",
+      "death-effects",
+      "disease",
+      "doomed",
+      "drained",
+      "fatigued",
+      "healing",
+      "void",
+      "nonlethal-attacks",
+      "paralyzed",
+      "poison",
+      "sickened",
+      "unconscious"
+    ],
+    "resistances": [],
+    "weaknesses": [],
+    "defensiveAbilities": [
+      {
+        "name": "Absorb Necromancy",
+        "actions": null,
+        "traits": [],
+        "description": "<p>A protosoul is made of necromantic energy. Any time it would be affected by another creature's non-cantrip necromancy spell, after applying its immunity, it also regains 10 healing Hit Points.</p>",
+        "collapsed": false
+      }
+    ],
+    "speed": "0 ft,\nfly 40 ft,\n",
+    "strikes": [
+      {
+        "type": "melee",
+        "name": "Necromantic Tendril",
+        "bonus": 22,
+        "traits": [
+          "divine",
+          "magical",
+          "reach-10"
+        ],
+        "damageRolls": [
+          {
+            "roll": "3d10 + 11",
+            "type": "force"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(3d10 + 11)*2",
+            "type": "force"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "strength",
+        "usedAttributeDamage": "strength",
+        "toHitModifications": [],
+        "damageModifications": []
+      },
+      {
+        "type": "ranged",
+        "name": "Necromantic Bolt",
+        "bonus": 22,
+        "traits": [
+          "divine",
+          "magical",
+          "range-increment-30"
+        ],
+        "damageRolls": [
+          {
+            "roll": "2d10+11",
+            "type": "force"
+          }
+        ],
+        "critRolls": [
+          {
+            "roll": "(2d10+11)*2",
+            "type": "force"
+          }
+        ],
+        "effects": [],
+        "usedAttributeToHit": "dexterity",
+        "usedAttributeDamage": "none",
+        "toHitModifications": [],
+        "damageModifications": []
+      }
+    ],
+    "offensiveAbilities": [
+      {
+        "name": "Engulf",
+        "actions": 2,
+        "traits": [],
+        "description": "<p>DC 30 Reflex save, <span class=\"roll\" onclick=\"roll(this)\">2d8</span> force damage plus <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage, Escape DC 30, Rupture 25</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of any creatures in its path. Any creature of the monster's size or smaller whose space the monster moves through can attempt a Reflex save with the listed DC to avoid being engulfed. A creature unable to act automatically critically fails this save. If a creature succeeds at its save, it can choose to be either pushed aside (out of the monster's path) or pushed in front of the monster to the end of the monster's movement. The monster can attempt to Engulf the same creature only once in a single use of Engulf. The monster can contain as many creatures as can fit in its space.</p>\n<p>A creature that fails its save is pulled into the monster's body. It is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The creature takes the listed amount of damage when first engulfed and at the end of each of its turns while it's engulfed. An engulfed creature can get free by Escaping against the listed escape DC. An engulfed creature can attack the monster engulfing it, but only with unarmed attacks or with weapons of light Bulk or less. The engulfing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the engulfed creature cuts itself free.\n<p>Effect: Engulf and Swallow Whole</p>\n<p>A creature that gets free by either method can immediately breathe and exits the swallowing monster's space.</p>\n<p>If the monster dies, all creatures it has engulfed are automatically released as the monster's form loses cohesion.</p></p></details>",
+        "collapsed": false
+      },
+      {
+        "name": "Unstable Magic",
+        "actions": null,
+        "traits": [],
+        "description": "<p>The roiling protosoul can't be healed or Repaired, and is destroyed at 0 Hit Points. So long as it is not destroyed, it naturally recovers 77 healing Hit Points each day. Each time a roiling protosoul casts one of its non-cantrip spells, it drains its own magic to do so, taking 6 force damage.</p>",
+        "collapsed": false
+      }
+    ],
+    "spellcastingEntries": [
+      {
+        "name": "Divine Innate Spells",
+        "type": "innate",
+        "bonus": 22,
+        "dc": 30,
+        "focusPoints": {
+          "current": 0,
+          "max": 0
+        },
+        "autoHeightenLevel": 6,
+        "cantrips": [
+          {
+            "name": "Chill Touch",
+            "type": "cantrip",
+            "level": 1,
+            "traits": [
+              "concentrate",
+              "manipulate",
+              "void"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "touch",
+            "area": "",
+            "targets": "1 living or undead creature",
+            "save": "basic fortitude",
+            "description": "<p>Siphoning void energy into yourself, your hand radiates a pale darkness. Your touch weakens the living and disorients undead, possibly even causing them to flee. The effect depends on whether the target is living or undead.</p>\n<ul>\n<li><strong>Living Creature</strong> The spell deals void damage equal to <span class=\"roll\" onclick=\"roll(this)\">1d4</span> plus your spellcasting modifier. The target attempts a basic Fortitude save, but is also Enfeebled 1 for 1 round on a critical failure.</li>\n<li><strong>Undead Creature</strong> The target is Off-Guard for 1 round on a failed Fortitude save. On a critical failure, the target is also Fleeing for 1 round unless it succeeds at a Will save.</li>\n</ul>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage to living creatures increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "MMTGxMrwaDpuP9Bu"
+          }
+        ],
+        "rituals": [],
+        "spellLocations": [],
+        "usedAttribute": "charisma",
+        "_id": "X32xwOlsJg95uRu7",
+        "modifications": [],
+        "lv1spells": [],
+        "lv2spells": [],
+        "lv3spells": [
+          {
+            "name": "Sudden Blight (At Will, see Unstable Magic)",
+            "type": "spell",
+            "level": 2,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "120 feet",
+            "area": "20 ft burst",
+            "targets": "",
+            "save": "basic fortitude",
+            "description": "<p>You accelerate the processes of decay in the area. Each living creature in the area takes <span class=\"roll\" onclick=\"roll(this)\">2d10</span> void damage (basic Fortitude save). A creature afflicted by a disease takes a -2 circumstance penalty to this save.You can also direct the blight to rot all Small and Tiny non-creature plants in the area, eliminating non-magical undergrowth and any resulting difficult terrain, cover, and concealment. <em>Sudden blight</em> attempts to counteract any magical effect on the plants before withering them.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "hfIUM1dgQNhgi9cN"
+          }
+        ],
+        "lv4spells": [
+          {
+            "name": "Enervation (At Will, see Unstable Magic)",
+            "type": "spell",
+            "level": 4,
+            "traits": [
+              "concentrate",
+              "manipulate"
+            ],
+            "castingTime": "2",
+            "duration": "",
+            "range": "",
+            "area": "30 ft line",
+            "targets": "",
+            "save": "fortitude",
+            "description": "<p>Extending a finger, you fire a beam of void energy that weakens the life force of any creature it touches. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> persistent plus void damage.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">4d8</span> persistent plus void damage and becomes Drained 1.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">4d8</span> persistent plus void damage and becomes Drained 2 and Doomed 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent void damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span> on a success, or by <span class=\"roll\" onclick=\"roll(this)\">2d8</span> on a failure or critical failure.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "TgICMsIj7ZaHvnZ5"
+          }
+        ],
+        "lv5spells": [
+          {
+            "name": "Harm (At Will, see Unstable Magic)",
+            "type": "spell",
+            "level": 1,
+            "traits": [
+              "manipulate"
+            ],
+            "castingTime": "1 to 3",
+            "duration": "",
+            "range": "varies",
+            "area": "",
+            "targets": "1 living creature or 1 willing undead creature",
+            "save": "basic fortitude",
+            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+            "cast": false,
+            "cost": "",
+            "primaryCheck": "",
+            "secondaryCasters": "",
+            "secondaryChecks": "",
+            "id": "36mv9kdnKD9UKUux"
+          }
+        ],
+        "lv6spells": [],
+        "lv7spells": [],
+        "lv8spells": [],
+        "lv9spells": [],
+        "lv10spells": [],
+        "lv1slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv2slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv3slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv4slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv5slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv6slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv7slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv8slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv9slots": {
+          "current": 0,
+          "max": 0
+        },
+        "lv10slots": {
+          "current": 0,
+          "max": 0
+        }
+      }
+    ],
+    "description": "<p>Though many spellcasters can harness the forces of magic in a consistent manner, such power can't always be controlled, especially in the hands of reckless researchers, megalomaniacal villains, or untested novices. When magical accidents result in large-scale property damage and the loss of life, these forces sometimes take on lives of their own, forming a dangerous amalgamation of ongoing magical energy known as a roiling incant.</p>\n<p>A roiling incant's appearance depends on the type of magic it sprang forth from, though it always carries with it an echo of the destruction it has caused. A fiery evocation roiling incant might look like a storm of burning ashes echoing with the sounds of crackling timber, while a necromancy roiling incant could be mistaken for ghostly tendrils puppeteering shambling corpses. No matter what it looks like, a roiling incant roams mindlessly, attacking everything it encounters, heedless of further carnage it causes.</p>",
+    "recallKnowledge": ", DC: 28",
+    "originalCreature": {}
+  }
+}
