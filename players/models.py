@@ -46,6 +46,10 @@ class PlayerInLobby(models.Model):
     def __str__(self):
         return "Player: "+str(self.player) + "in Lobby " + str(self.lobby)
 
+class StatBlock(models.Model):
+    name = models.CharField(max_length=100)
+    data = models.JSONField(null=True, blank=True)
+    path = models.CharField(max_length=100)
 
 class Character(models.Model):
     TEMPLATE_CHOICES = (
@@ -60,8 +64,9 @@ class Character(models.Model):
     debuff = models.CharField(max_length=100, null= True, blank=False)
     reminder = models.CharField(max_length=100, default=None, null= True, blank=True)
     current_turn = models.BooleanField(default=False)
-    stat_block = models.CharField(max_length=100, default=None, null= True, blank=True)
+    stat_block = models.ForeignKey(StatBlock, on_delete=models.SET_NULL, null= True, blank=False)
     template = models.CharField(max_length=1, choices=TEMPLATE_CHOICES, default='N')
+
     def __str__(self):
         return self.name + " - " + str(self.player.player)
 
@@ -78,30 +83,31 @@ class Character(models.Model):
         ordering = ['-order']
 
 
-class ConditionType(models.Model):
-    name = models.CharField(max_length=100)
+# class ConditionType(models.Model):
+#     name = models.CharField(max_length=100)
 
 
-class Condition(models.Model):
-    DURATION_CHOICES = (
-        ('RD', 'Round Decreasing'),  # Dura X rondas
-        # Cada ronda disminuye en 1 el efecto
-        ('AD', 'Automatically Decreases'),
-        ('MD', 'Manual Decreasing'),  # El jugador lo subira/bajara
-    )
-    durationType = models.CharField(max_length=2, choices=DURATION_CHOICES)
-    conditionType = models.ForeignKey(ConditionType, on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
+# class Condition(models.Model):
+#     DURATION_CHOICES = (
+#         ('RD', 'Round Decreasing'),  # Dura X rondas
+#         # Cada ronda disminuye en 1 el efecto
+#         ('AD', 'Automatically Decreases'),
+#         ('MD', 'Manual Decreasing'),  # El jugador lo subira/bajara
+#     )
+#     durationType = models.CharField(max_length=2, choices=DURATION_CHOICES)
+#     conditionType = models.ForeignKey(ConditionType, on_delete=models.CASCADE)
+#     name = models.CharField(max_length=100)
 
 
-class CharacterCondition(models.Model):
-    character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    condition = models.ForeignKey(Condition, on_delete=models.CASCADE)
-    duration = models.IntegerField()
+# class CharacterCondition(models.Model):
+#     character = models.ForeignKey(Character, on_delete=models.CASCADE)
+#     condition = models.ForeignKey(Condition, on_delete=models.CASCADE)
+#     duration = models.IntegerField()
 
-    def decrease_duration(self, value=None):
-        if value is not None:
-            self.duration = value
-        elif self.condition.durationType in {'RD', 'AD'}:
-            self.duration = -1
-        self.save()
+#     def decrease_duration(self, value=None):
+#         if value is not None:
+#             self.duration = value
+#         elif self.condition.durationType in {'RD', 'AD'}:
+#             self.duration = -1
+#         self.save()
+

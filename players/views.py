@@ -7,9 +7,11 @@ from django.views.generic import TemplateView
 import json
 import requests
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent  # where this file lives
 json_path = BASE_DIR /"database_index.json"
+save_dir = BASE_DIR / "downloaded_jsons"
 
 def reorder_characters(characters, change_turn=True):
     i = len(characters)
@@ -202,7 +204,7 @@ class CharacterView(TemplateView):
         character_name = request.POST.get("character")
         initiative = request.POST.get("initiative")
         reminder = request.POST.get("reminder")
-        stat_block = request.POST.get("stat_block")
+        stat_block = request.POST.get("stat_block").replace('assets/database/',"")
         template = request.POST.get("template", 'N')
         max_order = Character.objects.filter(
             player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
@@ -249,7 +251,7 @@ class EditCharacterView(TemplateView):
         character.initiative = new_initiative
         character.name = new_name
         character.reminder = new_reminder
-        character.stat_block = new_stat_block
+        character.stat_block = new_stat_block.replace('assets/database/',"")
         character.save()
 
         lobby = character.player.lobby
@@ -358,13 +360,13 @@ class StatBlocksView(TemplateView):
             select_id = 'stat_block_edit'
             default_value = Character.objects.get(id=character_id).stat_block
         with open(json_path, encoding="utf-8") as f:
-            creatures = json.load(f)  # a list of dicts
+            creatures = json.load(f)
         return render(request, "players/partials/stat_block_select.html", {"creatures": creatures, "select_id": select_id, "default_value": default_value})
 
 
 class StatBlockView(TemplateView):
     def get_creature_data(self, character):
-        url = f"https://pathfinderdashboard.com/{character.stat_block}"
+        url = f"https://pathfinderdashboard.com/assets/database/{character.stat_block}"
         try:
             resp = requests.get(url, timeout=10)
             resp.raise_for_status()
