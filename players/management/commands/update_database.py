@@ -13,13 +13,11 @@ index_file = BASE_DIR / "database_index.json"
 pattern = re.compile(r"^(\d+)\s*-\s*(.+)\.json$", re.IGNORECASE)
 def rename_files_and_update_index():
     # Step 1: Rename files
-    rename_map = {}  # old -> new
     if index_file.exists():
         with open(index_file, encoding="utf-8") as f:
             index_data = json.load(f)
-        for entry in index_data:
-            entry["path"] = entry["name"]+".json"
-            print(f"🔄 Updated path for {entry['name']} → {entry['path']}")
+        for i, entry in enumerate(index_data):
+            index_data[i] = {"name": entry["name"], "level": entry["level"]}
 
         # Save updated index
         with open(index_file, "w", encoding="utf-8") as f:

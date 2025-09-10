@@ -79,11 +79,12 @@ class Character(models.Model):
             return next_chars.first()
         else:
             return characters.first()
+        
     @property
     def creature(self):
         """Load JSON content from jsons/ folder based on `path`"""
         jsons_dir = Path(settings.BASE_DIR) / "jsons"
-        file_path = jsons_dir / self.stat_block.replace(' ', '_')
+        file_path = jsons_dir / f"{self.stat_block.replace(' ', '_')}.json"
         if file_path.exists():
             try:
                 with open(file_path, encoding="utf-8") as f:

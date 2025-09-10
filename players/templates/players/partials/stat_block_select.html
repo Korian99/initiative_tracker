@@ -2,8 +2,8 @@
 <select id="{{ select_id }}" name="stat_block" class="form-select">
   <option value="">None</option>
   {% for creature in creatures %}
-    <option value="{{ creature.path }}"
-            {% if creature.path == default_value %}selected{% endif %}>
+    <option value="{{ creature.name }}"
+            {% if creature.name == default_value %}selected{% endif %}>
       {{ creature.name }} (Level {{ creature.level }})
     </option>
   {% endfor %}
