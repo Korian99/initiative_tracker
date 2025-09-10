@@ -20,7 +20,7 @@
               <li class="list-group-item">
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                   <div class="col">
-                    <strong>{{ spell.name }}</strong> <strong>{{ spell.castingTime|replace_actions }} </strong> <strong>Lvl {{ default_level|default:spell.level }}</strong>
+                    <strong>{{ spell.name }}</strong>
                     <span class="traits">{% for trait in spell.traits %}<span class="ms-2 badge trait">{{ trait }}</span>{% endfor %}</span>
                   </div>
                   <div class="col">
@@ -35,6 +35,11 @@
                 <div class="collapse mt-2" id="spell-{{ spell.id }}">
                   <div class="card card-body p-2">
                     <div class="row mb-2 text-muted small">
+                      {% if spell.castingTime %}
+                        <div class="col-auto">
+                          <strong>Cast:</strong> {{ spell.castingTime|replace_actions }}
+                        </div>
+                      {% endif %}
                       {% if spell.duration %}
                         <div class="col-auto">
                           <strong>Duration:</strong> {{ spell.duration|safe }}
