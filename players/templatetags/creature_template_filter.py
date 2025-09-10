@@ -49,3 +49,20 @@ def skill_offset(template_type, level):
     elif template_type == "elite":
         return +2
     return 0
+@register.filter
+
+def replace_actions(actions: str) -> str:
+    """
+    Replace numeric action markers in a string with PF2e symbols.
+    """
+    mapping = {
+        "-1": "⟳",
+        "1": "◆",
+        "2": "◆◆",
+        "3": "◆◆◆",
+        "0": "◇",
+    }
+    if actions:
+        for key, symbol in mapping.items():
+            actions = str(actions).replace(key, symbol)
+    return actions or "Passive or ◇"

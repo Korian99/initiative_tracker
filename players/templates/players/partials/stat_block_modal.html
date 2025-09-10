@@ -8,65 +8,64 @@
     <div class="modal-content">
       <div class="modal-header bg-dark text-white">
         {% if creature %}
-        <h5 class="modal-title">
-          {{ creature.name }}
-          <small class="text-muted"> {{character.name}} </small>
-        </h5>
-        {% endif%}
-        <span class="ms-2 badge bg-secondary">{{ creature.traits|join:", " }}</span>
+          <h5 class="modal-title">
+            {{ creature.name }}
+            <small class="text-muted">{{ character.name }}</small>
+          </h5>
+        {% endif %}
+        <span class="traits">{% for trait in creature.traits %}<span class="ms-2 badge trait">{{ trait }}</span>{% endfor %} </span>
         <button type="button"
-        class="btn-close btn-close-white"
-        data-bs-dismiss="modal"></button>
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         {% if creature %}
-        <label class="form-label me-2">Choose Template:</label>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input show-spinner"
-                 type="radio"
-                 name="stat_mode"
-                 id="mode1"
-                 value="simple"
-                 hx-get="{% url 'load_stat_block_modal' character.id %}"
-                 hx-target="#stat_block_container"
-                 hx-swap="innerHTML"
-                 hx-vals='{"template":"normal"}'
-                 {% if template == 'normal' %}checked {% endif %}>
-          <label class="form-check-label" for="mode1">Normal</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input show-spinner"
-                 type="radio"
-                 name="stat_mode"
-                 id="mode2"
-                 value="detailed"
-                 hx-get="{% url 'load_stat_block_modal' character.id %}"
-                 hx-vals='{"template":"weak"}'
-                 hx-target="#stat_block_container"
-                 hx-swap="innerHTML"
-                 {% if template == 'weak' %}checked {% endif %}>
-          <label class="form-check-label" for="mode2">Weak</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input show-spinner"
-                 type="radio"
-                 name="stat_mode"
-                 id="mode2"
-                 value="detailed"
-                 hx-get="{% url 'load_stat_block_modal' character.id %}"
-                 hx-vals='{"template":"elite"}'
-                 hx-target="#stat_block_container"
-                 hx-swap="innerHTML"
-                 {% if template == 'elite' %}checked {% endif %}>
-          <label class="form-check-label" for="mode2">Elite</label>
-        </div>
-        <div class="mb-3">
-          <div id="stat_block_container">
-            {% include "players/partials/stat_block/stat_block_data.html" with mode="Normal" %}
+          <label class="form-label me-2">Choose Template:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input show-spinner"
+                   type="radio"
+                   name="stat_mode"
+                   id="mode1"
+                   value="simple"
+                   hx-get="{% url 'load_stat_block_modal' character.id %}"
+                   hx-target="#stat_block_container"
+                   hx-swap="innerHTML"
+                   hx-vals='{"template":"normal"}'
+                   {% if template == 'normal' %}checked{% endif %}>
+            <label class="form-check-label" for="mode1">Normal</label>
           </div>
-        </div>
-          {% endif %}
-
+          <div class="form-check form-check-inline">
+            <input class="form-check-input show-spinner"
+                   type="radio"
+                   name="stat_mode"
+                   id="mode2"
+                   value="detailed"
+                   hx-get="{% url 'load_stat_block_modal' character.id %}"
+                   hx-vals='{"template":"weak"}'
+                   hx-target="#stat_block_container"
+                   hx-swap="innerHTML"
+                   {% if template == 'weak' %}checked{% endif %}>
+            <label class="form-check-label" for="mode2">Weak</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input show-spinner"
+                   type="radio"
+                   name="stat_mode"
+                   id="mode2"
+                   value="detailed"
+                   hx-get="{% url 'load_stat_block_modal' character.id %}"
+                   hx-vals='{"template":"elite"}'
+                   hx-target="#stat_block_container"
+                   hx-swap="innerHTML"
+                   {% if template == 'elite' %}checked{% endif %}>
+            <label class="form-check-label" for="mode2">Elite</label>
+          </div>
+          <div class="mb-3">
+            <div id="stat_block_container">
+              {% include "players/partials/stat_block/stat_block_data.html" with mode="Normal" %}
+            </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
