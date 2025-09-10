@@ -65,6 +65,21 @@
                           <strong>Save:</strong> {{ spell.save|safe }}
                         </div>
                       {% endif %}
+                      {% if spell.primaryCheck %}
+                        <div class="col-auto">
+                          <strong>Primary Check:</strong> {{ spell.primaryCheck|safe }}
+                        </div>
+                      {% endif %}
+                      {% if spell.secondaryCasters %}
+                        <div class="col-auto">
+                          <strong>Secondary Casters:</strong> {{ spell.secondaryCasters|safe }}
+                        </div>
+                      {% endif %}
+                      {% if spell.secondaryChecks %}
+                        <div class="col-auto">
+                          <strong>Secondary Checks:</strong> {{ spell.secondaryChecks|safe }}
+                        </div>
+                      {% endif %}
                     </div>
                     {{ spell.description|safe }}
                     {% if skill_offset > 0 %}
