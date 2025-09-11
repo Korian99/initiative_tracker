@@ -371,13 +371,13 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 5,
+      "autoHeightenLevel": 4,
       "cantrips": [
         {
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -402,7 +402,7 @@
           "name": "Divine Lance",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -429,7 +429,7 @@
           "name": "Guidance",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate"
@@ -452,7 +452,7 @@
           "name": "Shield",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -476,7 +476,7 @@
           "name": "Stabilize",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -603,30 +603,6 @@
           "id": "4k29njWdCtJHmgAF"
         },
         {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "tx2lQN27Lj6K3BuC"
-        },
-        {
           "name": "Everlight",
           "type": "spell",
           "level": 2,
@@ -674,32 +650,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "sDo79BITjlNLKHoD"
-        },
-        {
-          "name": "Sound Body",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "healing",
-            "manipulate",
-            "vitality"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>You send a surge of healing energy to restore the target's body. Attempt to counteract an effect of your choice imposing one of these conditions on the target: Blinded, Dazzled, Deafened, Enfeebled, or Sickened. If you didn't counteract the effect, but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed.</p>\n<p>This spell can't counteract or suppress curses, diseases, or conditions that are part of the target's normal state.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained and Slowed to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add Stunned to the list of conditions.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "rE8Q0l1S0TvuZDxW"
         }
       ],
       "lv3spells": [
@@ -728,34 +678,6 @@
           "id": "uOlpbuT0thoTGVfm"
         },
         {
-          "name": "Holy Light (At Will)",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "attack",
-            "concentrate",
-            "fire",
-            "holy",
-            "light",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target has the unholy trait, you deal an extra 5d6 spirit damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, holy light attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against unholy creatures increases by 2d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "hFAMAgaBzuoDkhzV"
-        },
-        {
           "name": "Ring of Truth",
           "type": "spell",
           "level": 3,
@@ -780,9 +702,59 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "e448Exgc71rcX7aN"
+        },
+        {
+          "name": "Sound Body",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You send a surge of healing energy to restore the target's body. Attempt to counteract an effect of your choice imposing one of these conditions on the target: Blinded, Dazzled, Deafened, Enfeebled, or Sickened. If you didn't counteract the effect, but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed.</p>\n<p>This spell can't counteract or suppress curses, diseases, or conditions that are part of the target's normal state.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained and Slowed to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add Stunned to the list of conditions.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "rE8Q0l1S0TvuZDxW"
         }
       ],
       "lv4spells": [
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tx2lQN27Lj6K3BuC"
+        },
         {
           "name": "Unfettered Movement",
           "type": "spell",
@@ -834,57 +806,7 @@
           "id": "Je9Vf5cCzV7w9Qvn"
         }
       ],
-      "lv5spells": [
-        {
-          "name": "Truespeech (Constant)",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 hour",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "dZPExCkBhDp7SQj4"
-        },
-        {
-          "name": "Heal",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "healing",
-            "manipulate",
-            "vitality"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 willing living creature or 1 undead",
-          "save": "Basic fortitude",
-          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "DNFsu8UpAUYxjHO5"
-        }
-      ],
+      "lv5spells": [],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [],
@@ -947,7 +869,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -972,7 +894,7 @@
           "name": "Divine Lance",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -999,7 +921,7 @@
           "name": "Guidance",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate"
@@ -1022,7 +944,7 @@
           "name": "Shield",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1046,7 +968,7 @@
           "name": "Stabilize",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1173,30 +1095,6 @@
           "id": "4k29njWdCtJHmgAF"
         },
         {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "tx2lQN27Lj6K3BuC"
-        },
-        {
           "name": "Everlight",
           "type": "spell",
           "level": 2,
@@ -1244,12 +1142,14 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "sDo79BITjlNLKHoD"
-        },
+        }
+      ],
+      "lv3spells": [
         {
           "name": "Sound Body",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 2,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1270,9 +1170,7 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "rE8Q0l1S0TvuZDxW"
-        }
-      ],
-      "lv3spells": [
+        },
         {
           "name": "Bind Undead",
           "type": "spell",
@@ -1354,6 +1252,30 @@
       ],
       "lv4spells": [
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "tx2lQN27Lj6K3BuC"
+        },
+        {
           "name": "Unfettered Movement",
           "type": "spell",
           "level": 4,
@@ -1406,30 +1328,6 @@
       ],
       "lv5spells": [
         {
-          "name": "Truespeech (Constant)",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 hour",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "dZPExCkBhDp7SQj4"
-        },
-        {
           "name": "Heal",
           "type": "spell",
           "level": 1,
@@ -1453,6 +1351,30 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "DNFsu8UpAUYxjHO5"
+        },
+        {
+          "name": "Truespeech (Constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "dZPExCkBhDp7SQj4"
         }
       ],
       "lv6spells": [],

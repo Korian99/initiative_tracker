@@ -260,31 +260,29 @@
       "lv6spells": [],
       "lv7spells": [
         {
-          "name": "Eclipse Burst",
+          "name": "Grim Tendrils",
           "type": "spell",
-          "level": 7,
+          "level": 1,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
-            "cold",
             "concentrate",
-            "darkness",
             "manipulate",
             "void"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "500 feet",
-          "area": "60ft burst",
+          "range": "",
+          "area": "30ft line",
           "targets": "",
-          "save": "reflex",
-          "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus 8d4 additional void damage to living creatures. Each creature in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>",
+          "save": "fortitude",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "8NXZ7OuoWeARy3Vx"
+          "id": "1Z51Y9eyTyWWYsZQ"
         },
         {
           "name": "Rouse Skeletons",
@@ -311,37 +309,10 @@
           "id": "Dik8WrMFSugWtGMW"
         },
         {
-          "name": "Grim Tendrils",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "30ft line",
-          "targets": "",
-          "save": "fortitude",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "1Z51Y9eyTyWWYsZQ"
-        }
-      ],
-      "lv8spells": [
-        {
           "name": "Eclipse Burst",
           "type": "spell",
           "level": 7,
-          "heightenedLevel": 8,
+          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "cold",
@@ -362,7 +333,34 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "LXEYnNeX1u7I54tt"
+          "id": "8NXZ7OuoWeARy3Vx"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Flense",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or corpse",
+          "save": "",
+          "description": "<p>With a touch, you strip off the flesh, muscle, and internal organs off your target, leaving only bare bones. The effect depends on whether the target is a living creature, undead creature, or inanimate corpse. A creature or corpse that lacks flesh, muscle, and internal organs is immune to this spell.</p>\n<p><strong>Inanimate Corpse</strong> The flesh, muscle, viscera, and organs are stripped from the corpse and vanish, leaving only bare bones behind.</p>\n<p><strong>Living Creature</strong> Make a spell attack roll. On a hit, the target takes 2d6 slashing damage. On a critical hit, double the damage, and the target also takes 1d4 persistent bleed damage. If this spell's damage kills the target, the corpse is only bones.</p>\n<p><strong>Undead Creature</strong> Make a spell attack roll. On a hit, the target takes 2d6 slashing damage. On a critical hit, double the damage, and the target also becomes Enfeebled 1 for 1 minute. If this spell's damage destroys the target, only its bare bones remain behind.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The slashing damage to living and undead creatures increases by 2d6, and the persistent bleed damage to living creatures increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "47Azwnj9TRSsR5ef"
         },
         {
           "name": "Enervation",
@@ -390,56 +388,34 @@
           "id": "by5bbAWt8aEwKGKl"
         },
         {
-          "name": "Flense",
+          "name": "Eclipse Burst",
           "type": "spell",
-          "level": 1,
+          "level": 7,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
-            "attack",
+            "cold",
             "concentrate",
-            "manipulate"
+            "darkness",
+            "manipulate",
+            "void"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature or corpse",
-          "save": "",
-          "description": "<p>With a touch, you strip off the flesh, muscle, and internal organs off your target, leaving only bare bones. The effect depends on whether the target is a living creature, undead creature, or inanimate corpse. A creature or corpse that lacks flesh, muscle, and internal organs is immune to this spell.</p>\n<p><strong>Inanimate Corpse</strong> The flesh, muscle, viscera, and organs are stripped from the corpse and vanish, leaving only bare bones behind.</p>\n<p><strong>Living Creature</strong> Make a spell attack roll. On a hit, the target takes 2d6 slashing damage. On a critical hit, double the damage, and the target also takes 1d4 persistent bleed damage. If this spell's damage kills the target, the corpse is only bones.</p>\n<p><strong>Undead Creature</strong> Make a spell attack roll. On a hit, the target takes 2d6 slashing damage. On a critical hit, double the damage, and the target also becomes Enfeebled 1 for 1 minute. If this spell's damage destroys the target, only its bare bones remain behind.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The slashing damage to living and undead creatures increases by 2d6, and the persistent bleed damage to living creatures increases by 1d4.</p>",
+          "range": "500 feet",
+          "area": "60ft burst",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus 8d4 additional void damage to living creatures. Each creature in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "47Azwnj9TRSsR5ef"
+          "id": "LXEYnNeX1u7I54tt"
         }
       ],
       "lv9spells": [
-        {
-          "name": "Implosion",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "Sustained up to 1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 corporeal creature",
-          "save": "Basic fortitude",
-          "description": "<p>You crush the target by causing it to collapse in on itself, dealing 75 damage. The first time each round you Sustain the Spell, you must choose a new target to be subject to the same effect; the same creature can never be targeted more than once with a single casting of this spell. You also can't affect more than one creature per turn with implosion. You can't target a creature that's incorporeal, gaseous, or liquid, or otherwise lacking a solid form.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 10.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "DfqhP4jI6Nh1mPvC"
-        },
         {
           "name": "Flense",
           "type": "spell",
@@ -464,6 +440,30 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "rAg5kJZBLqtszngg"
+        },
+        {
+          "name": "Implosion",
+          "type": "spell",
+          "level": 9,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 corporeal creature",
+          "save": "Basic fortitude",
+          "description": "<p>You crush the target by causing it to collapse in on itself, dealing 75 damage. The first time each round you Sustain the Spell, you must choose a new target to be subject to the same effect; the same creature can never be targeted more than once with a single casting of this spell. You also can't affect more than one creature per turn with implosion. You can't target a creature that's incorporeal, gaseous, or liquid, or otherwise lacking a solid form.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DfqhP4jI6Nh1mPvC"
         }
       ],
       "lv10spells": [],

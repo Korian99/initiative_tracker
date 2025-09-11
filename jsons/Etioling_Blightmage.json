@@ -552,6 +552,30 @@
       ],
       "lv3spells": [
         {
+          "name": "False Life",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "8 hours",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a reservoir of vitality from necromantic energy, gaining a number of temporary Hit Points equal to 6 plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The temporary Hit Points increase by 3.</p>\n<p>{Spell Effect: False Life}</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ZlYGdaqXdMPybHm0"
+        },
+        {
           "name": "Earthbind",
           "type": "spell",
           "level": 3,
@@ -623,33 +647,58 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "eZVZ4pbTTW65HPhj"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Grim Tendrils",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p><hr /><p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "eV1dv8y57awJjNyP"
         },
         {
-          "name": "False Life",
+          "name": "Dispel Magic",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 3,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "8 hours",
-          "range": "",
+          "duration": "",
+          "range": "120 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 spell effect or unattended magic item",
           "save": "",
-          "description": "<p>You create a reservoir of vitality from necromantic energy, gaining a number of temporary Hit Points equal to 6 plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The temporary Hit Points increase by 3.</p>\n<p>{Spell Effect: False Life}</p>",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ZlYGdaqXdMPybHm0"
-        }
-      ],
-      "lv4spells": [
+          "id": "jsJh6s3k6VQGStDA"
+        },
         {
           "name": "Freedom of Movement",
           "type": "spell",
@@ -702,58 +751,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "aN6xxGjFCRcPyRy9"
-        },
+        }
+      ],
+      "lv5spells": [
         {
-          "name": "Dispel Magic",
+          "name": "Lightning Bolt",
           "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
+          "level": 3,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "electricity",
             "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "jsJh6s3k6VQGStDA"
-        },
-        {
-          "name": "Grim Tendrils",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "2",
-          "duration": "",
           "range": "",
-          "area": "30ft line",
+          "area": "120ft line",
           "targets": "",
-          "save": "fortitude",
-          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p><hr /><p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "save": "Basic reflex",
+          "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "eV1dv8y57awJjNyP"
-        }
-      ],
-      "lv5spells": [
+          "id": "N5cIxpCa1E4SqZi7"
+        },
         {
           "name": "Cloudkill",
           "type": "spell",
@@ -830,31 +855,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "9woRQZj8z3sO5mHt"
-        },
-        {
-          "name": "Lightning Bolt",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "electricity",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "120ft line",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "N5cIxpCa1E4SqZi7"
         }
       ],
       "lv6spells": [],

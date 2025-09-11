@@ -569,55 +569,6 @@
       ],
       "lv3spells": [
         {
-          "name": "Fireball",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "500 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "lU4KVLSlvzANUr1z"
-        },
-        {
-          "name": "Haste",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "qZcWHCdkInAqtQIh"
-        },
-        {
           "name": "Magic Missile",
           "type": "spell",
           "level": 1,
@@ -666,33 +617,83 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "s38jIVPqau8Lmg31"
-        }
-      ],
-      "lv4spells": [
+        },
         {
-          "name": "Dimension Door",
+          "name": "Fireball",
           "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
+          "level": 3,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate",
-            "teleportation"
+            "fire",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "120 feet",
-          "area": "",
+          "range": "500 feet",
+          "area": "20ft burst",
           "targets": "",
-          "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "save": "Basic reflex",
+          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "3IJOOLsZk90U0pGx"
+          "id": "lU4KVLSlvzANUr1z"
+        },
+        {
+          "name": "Haste",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qZcWHCdkInAqtQIh"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Acid Arrow",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus (floor(@item.rank/2))d6 Persistent,acid Damage damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "S2x1KxNXvjMF907I"
         },
         {
           "name": "Lightning Bolt",
@@ -720,30 +721,29 @@
           "id": "36MnxUxab0DYJpsf"
         },
         {
-          "name": "Acid Arrow",
+          "name": "Dimension Door",
           "type": "spell",
-          "level": 2,
+          "level": 4,
           "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
-            "acid",
-            "attack",
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "teleportation"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
+          "targets": "",
           "save": "",
-          "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus (floor(@item.rank/2))d6 Persistent,acid Damage damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
+          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "S2x1KxNXvjMF907I"
+          "id": "3IJOOLsZk90U0pGx"
         }
       ],
       "lv5spells": [],

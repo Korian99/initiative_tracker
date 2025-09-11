@@ -362,6 +362,30 @@
       "lv2spells": [],
       "lv3spells": [
         {
+          "name": "Mending",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "non-magical object of light Bulk or less",
+          "save": "",
+          "description": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the Broken condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DmFwZ4qSwlc45cwO"
+        },
+        {
           "name": "Haste",
           "type": "spell",
           "level": 3,
@@ -433,33 +457,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "YNFeqT7pXnzSdcSi"
-        },
+        }
+      ],
+      "lv4spells": [
         {
-          "name": "Mending",
+          "name": "Shatter",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
+          "level": 2,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "sonic"
           ],
-          "castingTime": "10 minutes",
+          "castingTime": "2",
           "duration": "",
-          "range": "touch",
+          "range": "30 feet",
           "area": "",
-          "targets": "non-magical object of light Bulk or less",
+          "targets": "1 unattended object",
           "save": "",
-          "description": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the Broken condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>",
+          "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal 2d10 sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the Hardness the spell ignores increases by 2.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "DmFwZ4qSwlc45cwO"
-        }
-      ],
-      "lv4spells": [
+          "id": "F4zrVJ0l4YYOLE5P"
+        },
         {
           "name": "Creation",
           "type": "spell",
@@ -508,63 +533,13 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "oX2eoPg4p3UoxhiP"
-        },
-        {
-          "name": "Shatter",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "sonic"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 unattended object",
-          "save": "",
-          "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal 2d10 sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the Hardness the spell ignores increases by 2.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "F4zrVJ0l4YYOLE5P"
         }
       ],
       "lv5spells": [
         {
-          "name": "Sending",
+          "name": "Dispel Magic",
           "type": "spell",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "3",
-          "duration": "",
-          "range": "planetary",
-          "area": "",
-          "targets": "1 creature you know well",
-          "save": "",
-          "description": "<p>You send the creature a mental message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "utFdttORsjrMYhc1"
-        },
-        {
-          "name": "Truespeech (Constant)",
-          "type": "spell",
-          "level": 5,
+          "level": 2,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
@@ -572,18 +547,18 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 hour",
-          "range": "touch",
+          "duration": "",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 spell effect or unattended magic item",
           "save": "",
-          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Wpkj3AhKzhyOjozJ"
+          "id": "YD6nNUBYPKotFfA1"
         },
         {
           "name": "Divine Wrath",
@@ -661,9 +636,34 @@
           "id": "vjlVktJZOqbt2cHt"
         },
         {
-          "name": "Dispel Magic",
+          "name": "Sending",
           "type": "spell",
-          "level": 2,
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "3",
+          "duration": "",
+          "range": "planetary",
+          "area": "",
+          "targets": "1 creature you know well",
+          "save": "",
+          "description": "<p>You send the creature a mental message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "utFdttORsjrMYhc1"
+        },
+        {
+          "name": "Truespeech (Constant)",
+          "type": "spell",
+          "level": 5,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
@@ -671,18 +671,18 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
+          "duration": "1 hour",
+          "range": "touch",
           "area": "",
-          "targets": "1 spell effect or unattended magic item",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "YD6nNUBYPKotFfA1"
+          "id": "Wpkj3AhKzhyOjozJ"
         }
       ],
       "lv6spells": [],

@@ -306,7 +306,7 @@
           "name": "Acid Splash",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "acid",
@@ -332,7 +332,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -357,7 +357,7 @@
           "name": "Mage Hand",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -381,7 +381,7 @@
           "name": "Ray of Frost",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -407,7 +407,7 @@
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -432,7 +432,7 @@
           "name": "Shield",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -480,29 +480,29 @@
           "id": "C4cmAS8XrJ1F7iTI"
         },
         {
-          "name": "Magic Missile",
+          "name": "Ray of Enfeeblement",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [
+            "attack",
             "concentrate",
-            "force",
             "manipulate"
           ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "120 feet",
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
           "area": "",
           "targets": "1 creature",
-          "save": "",
-          "description": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>",
+          "save": "fortitude",
+          "description": "<p>A ray that saps a foe's strength flashes from your hand. Attempt a ranged spell attack against the target. If you succeed, that creature attempts a Fortitude save to determine the spell's effect. If your attack roll is a critical success, use the outcome for one degree of success worse than the result of its save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes Enfeebled 1.</p>\n<p><strong>Failure</strong> The target becomes Enfeebled 2.</p>\n<p><strong>Critical Failure</strong> The target becomes Enfeebled 3.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "EoKXpHqeqwITOz0Y"
+          "id": "4os13PH2QkqDYz0u"
         },
         {
           "name": "Ray of Enfeeblement",
@@ -532,28 +532,29 @@
       ],
       "lv2spells": [
         {
-          "name": "Dispel Magic",
+          "name": "Magic Missile",
           "type": "spell",
-          "level": 2,
+          "level": 1,
           "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "force",
             "manipulate"
           ],
-          "castingTime": "2",
+          "castingTime": "1 to 3",
           "duration": "",
           "range": "120 feet",
           "area": "",
-          "targets": "1 spell effect or unattended magic item",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "description": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fs4fsBZ6VTRQX3MQ"
+          "id": "EoKXpHqeqwITOz0Y"
         },
         {
           "name": "Mirror Image",
@@ -635,56 +636,6 @@
           "id": "RcQw9Au0diq7YY9s"
         },
         {
-          "name": "Fireball",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "500 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "J8WhlXsoDNwOIDkF"
-        },
-        {
-          "name": "Lightning Bolt",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "electricity",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "120ft line",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "6e3O6MLdg90yIBZ6"
-        },
-        {
           "name": "Paralyze",
           "type": "spell",
           "level": 3,
@@ -759,6 +710,31 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "R8DP6dwE4ig2I06D"
+        },
+        {
+          "name": "Lightning Bolt",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "electricity",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "120ft line",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "6e3O6MLdg90yIBZ6"
         },
         {
           "name": "Phantasmal Killer",
@@ -843,29 +819,29 @@
           "id": "1bVPmaYC0DB3S9Zo"
         },
         {
-          "name": "Cone of Cold",
+          "name": "Fireball",
           "type": "spell",
-          "level": 5,
+          "level": 3,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
-            "cold",
             "concentrate",
+            "fire",
             "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "",
-          "area": "60ft cone",
+          "range": "500 feet",
+          "area": "20ft burst",
           "targets": "",
           "save": "Basic reflex",
-          "description": "<p>Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2z20xwfAhFKrcI61"
+          "id": "J8WhlXsoDNwOIDkF"
         }
       ],
       "lv6spells": [
@@ -895,6 +871,30 @@
           "id": "GLadRewfQvjqhyK2"
         },
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fs4fsBZ6VTRQX3MQ"
+        },
+        {
           "name": "Flesh to Stone",
           "type": "spell",
           "level": 6,
@@ -920,6 +920,31 @@
         }
       ],
       "lv7spells": [
+        {
+          "name": "Cone of Cold",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "cold",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "60ft cone",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "2z20xwfAhFKrcI61"
+        },
         {
           "name": "Eclipse Burst",
           "type": "spell",

@@ -580,6 +580,30 @@
       ],
       "lv3spells": [
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "TRzLkD0njPiaRiaO"
+        },
+        {
           "name": "Neutralize Poison",
           "type": "spell",
           "level": 3,
@@ -656,33 +680,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "cMcM4ZwTQWjxegQG"
-        },
+        }
+      ],
+      "lv4spells": [
         {
-          "name": "Dispel Magic",
+          "name": "Restoration",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 3,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "healing",
             "manipulate"
           ],
-          "castingTime": "2",
+          "castingTime": "1 minute",
           "duration": "",
-          "range": "120 feet",
+          "range": "touch",
           "area": "",
-          "targets": "1 spell effect or unattended magic item",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "description": "<p>Restorative magic counters the effects of toxins or conditions that prevent a creature from functioning at its best. When you cast restoration, choose to either reduce a condition or lessen the effect of a toxin. A creature can benefit from only one restoration spell each day, and it can't benefit from restoration more than once to reduce the stage of the same exposure to a given toxin.</p>\n<ul>\n<li><strong>Lessen a Toxin</strong> Reduce the stage of one toxin the target suffers from by one stage. This can't reduce the stage below stage 1 or cure the affliction.</li>\n<li><strong>Reduce a Condition</strong> Reduce the value of the target's Clumsy, Enfeebled, or Stupefied condition by 2. You can instead reduce two of the listed conditions by 1 each.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained to the list of conditions you can reduce. When you lessen a toxin, reduce the stage by two. You also gain a third option that allows you to reduce the target's Doomed value by 1. You can't use this to reduce a permanent Doomed condition.</p>\n<p><strong>Heightened (6th)</strong> As the 4th-rank restoration, but you can reduce a permanent Doomed condition if you add a spellcasting action and a material component while Casting the Spell, during which you provide 100 gp worth of diamond dust as a cost.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "TRzLkD0njPiaRiaO"
-        }
-      ],
-      "lv4spells": [
+          "id": "WpDnLwYYFJkJUXGh"
+        },
         {
           "name": "Air Walk",
           "type": "spell",
@@ -756,34 +781,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "lJJDjyDU2y8uwA9p"
-        },
+        }
+      ],
+      "lv5spells": [
         {
-          "name": "Restoration",
+          "name": "Heal",
           "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
+          "level": 1,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
-            "concentrate",
             "healing",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
-          "castingTime": "1 minute",
+          "castingTime": "1 to 3",
           "duration": "",
-          "range": "touch",
+          "range": "varies",
           "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>Restorative magic counters the effects of toxins or conditions that prevent a creature from functioning at its best. When you cast restoration, choose to either reduce a condition or lessen the effect of a toxin. A creature can benefit from only one restoration spell each day, and it can't benefit from restoration more than once to reduce the stage of the same exposure to a given toxin.</p>\n<ul>\n<li><strong>Lessen a Toxin</strong> Reduce the stage of one toxin the target suffers from by one stage. This can't reduce the stage below stage 1 or cure the affliction.</li>\n<li><strong>Reduce a Condition</strong> Reduce the value of the target's Clumsy, Enfeebled, or Stupefied condition by 2. You can instead reduce two of the listed conditions by 1 each.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Drained to the list of conditions you can reduce. When you lessen a toxin, reduce the stage by two. You also gain a third option that allows you to reduce the target's Doomed value by 1. You can't use this to reduce a permanent Doomed condition.</p>\n<p><strong>Heightened (6th)</strong> As the 4th-rank restoration, but you can reduce a permanent Doomed condition if you add a spellcasting action and a material component while Casting the Spell, during which you provide 100 gp worth of diamond dust as a cost.</p>",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "WpDnLwYYFJkJUXGh"
-        }
-      ],
-      "lv5spells": [
+          "id": "h66m7exPtxM7VSSj"
+        },
         {
           "name": "Breath of Life",
           "type": "spell",
@@ -857,34 +882,37 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "HJF1UyV4aCQ5Wnqp"
-        },
+        }
+      ],
+      "lv6spells": [
         {
-          "name": "Heal",
+          "name": "Holy Light",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 5,
+          "level": 3,
+          "heightenedLevel": 6,
           "timesPrepared": 1,
           "traits": [
-            "healing",
-            "manipulate",
-            "vitality"
+            "attack",
+            "concentrate",
+            "fire",
+            "holy",
+            "light",
+            "manipulate"
           ],
-          "castingTime": "1 to 3",
+          "castingTime": "2",
           "duration": "",
-          "range": "varies",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 willing living creature or 1 undead",
-          "save": "Basic fortitude",
-          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target has the unholy trait, you deal an extra 5d6 spirit damage.</p><hr /><p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>holy light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p><hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against unholy creatures increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "h66m7exPtxM7VSSj"
-        }
-      ],
-      "lv6spells": [
+          "id": "G1S0fN9A8IX5wOt4"
+        },
         {
           "name": "Repulsion",
           "type": "spell",
@@ -961,34 +989,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "Zu28kP9CoDnuQGJk"
-        },
-        {
-          "name": "Holy Light",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "attack",
-            "concentrate",
-            "fire",
-            "holy",
-            "light",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target has the unholy trait, you deal an extra 5d6 spirit damage.</p><hr /><p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>holy light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p><hr /><p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against unholy creatures increases by 2d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "G1S0fN9A8IX5wOt4"
         }
       ],
       "lv7spells": [],

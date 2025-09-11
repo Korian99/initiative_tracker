@@ -272,7 +272,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -297,7 +297,7 @@
           "name": "Electric Arc",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -322,7 +322,7 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -347,7 +347,7 @@
           "name": "Ray of Frost",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -373,7 +373,7 @@
           "name": "Stabilize",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -449,7 +449,7 @@
           "name": "Heal",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "healing",
@@ -500,7 +500,7 @@
           "name": "Dispel Magic",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 2,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -519,6 +519,30 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "MMjzLbJYQJBQfsFL"
+        },
+        {
+          "name": "Glitterdust",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p>Creatures in the area are outlined by glittering dust. Each creature must attempt a Reflex save. If a creature has its invisibility negated by this spell, it is Concealed instead of Invisible. This applies both if the creature was already Invisible and if it benefits from new invisibility effects before the end of the invisibility negation effect from this spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The target is Dazzled for 1 minute and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded for 1 round and Dazzled for 10 minutes. Its invisibility is negated for 10 minutes.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "HCYtEtOj25xv1bWr"
         },
         {
           "name": "Glitterdust",
@@ -596,6 +620,30 @@
           "id": "8MHrrj49vKW6hxOR"
         },
         {
+          "name": "Earthbind",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 flying creature",
+          "save": "fortitude",
+          "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8MHrrj49vKW6hxOR"
+        },
+        {
           "name": "Haste",
           "type": "spell",
           "level": 3,
@@ -618,9 +666,84 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "RCZXluNKklUfCUJw"
+        },
+        {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KgJS8S8hPQ7K71nz"
         }
       ],
       "lv4spells": [
+        {
+          "name": "Air Walk",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "PyRGVVsaE31MSJUk"
+        },
+        {
+          "name": "Air Walk",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "PyRGVVsaE31MSJUk"
+        },
         {
           "name": "Air Walk",
           "type": "spell",
@@ -698,6 +821,56 @@
           "id": "7jDeM3wbrtcgnTI6"
         },
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MMjzLbJYQJBQfsFL"
+        },
+        {
+          "name": "Wall of Ice",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "cold",
+            "concentrate",
+            "manipulate",
+            "water"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "msR0u1xH9gdo0joH"
+        },
+        {
           "name": "Wall of Ice",
           "type": "spell",
           "level": 5,
@@ -752,33 +925,6 @@
           "id": "DF2PYuaQ7o3ZQNrM"
         },
         {
-          "name": "Blinding Fury",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "curse",
-            "emotion",
-            "incapacitation",
-            "mental"
-          ],
-          "castingTime": "reaction",
-          "duration": "varies",
-          "range": "60 feet",
-          "area": "",
-          "targets": "The triggering creature",
-          "save": "will",
-          "description": "<p><strong>Trigger</strong> A creature damages you.</p>\n<hr />\n<p>You curse the target with your outrage at being attacked. The effect is determined by the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't Observe you until the end of its turn, and if you're currently Observed by it, you become Hidden to it.</p>\n<p><strong>Failure</strong> As success, and for 1 minute, every time the target damages you, it can't Observe you until the end of its turn.</p>\n<p><strong>Critical Failure</strong> As success, and for an unlimited duration, the first time each round the target damages a creature, it can't Observe that creature until the end of its turn. If it damages several creatures at once, the creature it can't perceive is chosen randomly among those creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "eseQ5nUnYpDCaBqO"
-        },
-        {
           "name": "Chain Lightning",
           "type": "spell",
           "level": 6,
@@ -804,31 +950,6 @@
           "id": "nBwOttIK3uyFzwfU"
         },
         {
-          "name": "Dragon Form",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "polymorph"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>Calling upon powerful magic, you gain a Large dragon battle form. When you Cast this Spell, choose one type of common dragon or another type to which your GM allows access. While in this form, you gain the dragon trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p><ul><li><p>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</p></li><li><p>10 temporary Hit Points.</p></li><li><p>Speed 40 feet, fly 100 feet. You gain any of the following Speeds the chosen dragon has, but with the listed amount: burrow 20 feet, climb 40 feet, swim 60 feet.</p></li><li><p>Resistance 10 against the damage type of your Dragon Breath (see below).</p></li><li><p>Darkvision and imprecise scent 60 feet.</p></li><li><p>The following unarmed melee attacks, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +22, and your damage bonus is +6. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead. See below for more on these attacks.</p><ul><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws, <strong>Damage</strong> 2d12 piercing plus 2d6 damage of the same damage type as your Dragon Breath (see below);</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw (agile), <strong>Damage</strong> 3d10 slashing;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> tail (reach 10 feet), <strong>Damage</strong> 3d10 bludgeoning.</p></li></ul></li><li><p>Athletics modifier of +23, unless your own is higher.</p></li><li><p><strong>Dragon Breath</strong><span class=\"action-glyph\"><strong>2</strong></span> You exhale deadly magical energy in an area, dealing 10d6 damage to each creature in the area with a basic save against your spell DC. The shape, damage type, and save type match that of your chosen dragon's breath. If the chosen dragon's breath can deal more than one type of damage, choose one when you cast <em>dragon form</em>. The shape is a 30-foot cone or a 100-foot line. Once activated, Dragon Breath can't be used again for 1d4 rounds. Dragon Breath has the tradition trait matching the type of dragon and the damage trait matching the type of damage it deals, if applicable.</p></li><li><p><strong>Tradition Resistance</strong> If the dragon's magical tradition matches that of your dragon form spell, you gain the listed ability. <strong>Arcane</strong> resistance 5 against magic; <strong>divine</strong> resistance 10 to spirit, vitality, and void; <strong>occult</strong> resistance 10 to mental; <strong>primal</strong> resistance 5 to physical damage.</p></li></ul><p></p><table border=\"1\" class=\"pf2e remaster\"><thead><tr style=\"text-align:right\"><th>Dragon</th><th>Tradition</th><th>Speeds</th><th>Dragon Breath</th><th>Saving Throw</th></tr></thead><tbody><tr><td>Adamantine</td><td>Primal</td><td>Burrow</td><td>Cone of bludgeoning</td><td>Reflex</td></tr><tr><td>Conspirator</td><td>Occult</td><td>Climb</td><td>Cone of poison</td><td>Fortitude</td></tr><tr><td>Diabolic</td><td>Divine</td><td>—</td><td>Cone of fire</td><td>Reflex</td></tr><tr><td>Empyreal</td><td>Divine</td><td>—</td><td>Cone of spirit</td><td>Reflex</td></tr><tr><td>Fortune</td><td>Arcane</td><td>—</td><td>Cone of force</td><td>Reflex</td></tr><tr><td>Horned</td><td>Primal</td><td>Swim</td><td>Cone of poison</td><td>Fortitude</td></tr><tr><td>Mirage</td><td>Arcane</td><td>Climb</td><td>Cone of mental</td><td>Will</td></tr><tr><td>Omen</td><td>Occult</td><td>—</td><td>Cone of mental</td><td>Will</td></tr></tbody></table><hr /><p><strong>Heightened (8th)</strong> Your battle form is Huge, you gain a +20-foot status bonus to your fly Speed, and your attacks have 10-foot reach (or 15-foot reach if they previously had 10-foot reach). You instead gain AC = 21 + your level, 15 temporary HP, an attack modifier of +28, a damage bonus of +12, and Athletics +28. Your Dragon Breath deals an additional 4d6 damage.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "EwIUvItOM8UEnL7g"
-        },
-        {
           "name": "True Seeing",
           "type": "spell",
           "level": 6,
@@ -852,9 +973,61 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "hiSRxfyzVOwK2Ow3"
+        },
+        {
+          "name": "Blinding Fury",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "emotion",
+            "incapacitation",
+            "mental"
+          ],
+          "castingTime": "reaction",
+          "duration": "varies",
+          "range": "60 feet",
+          "area": "",
+          "targets": "The triggering creature",
+          "save": "will",
+          "description": "<p><strong>Trigger</strong> A creature damages you.</p>\n<hr />\n<p>You curse the target with your outrage at being attacked. The effect is determined by the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't Observe you until the end of its turn, and if you're currently Observed by it, you become Hidden to it.</p>\n<p><strong>Failure</strong> As success, and for 1 minute, every time the target damages you, it can't Observe you until the end of its turn.</p>\n<p><strong>Critical Failure</strong> As success, and for an unlimited duration, the first time each round the target damages a creature, it can't Observe that creature until the end of its turn. If it damages several creatures at once, the creature it can't perceive is chosen randomly among those creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "eseQ5nUnYpDCaBqO"
         }
       ],
       "lv7spells": [
+        {
+          "name": "Dragon Form",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "polymorph"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Calling upon powerful magic, you gain a Large dragon battle form. When you Cast this Spell, choose one type of common dragon or another type to which your GM allows access. While in this form, you gain the dragon trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p><ul><li><p>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</p></li><li><p>10 temporary Hit Points.</p></li><li><p>Speed 40 feet, fly 100 feet. You gain any of the following Speeds the chosen dragon has, but with the listed amount: burrow 20 feet, climb 40 feet, swim 60 feet.</p></li><li><p>Resistance 10 against the damage type of your Dragon Breath (see below).</p></li><li><p>Darkvision and imprecise scent 60 feet.</p></li><li><p>The following unarmed melee attacks, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +22, and your damage bonus is +6. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead. See below for more on these attacks.</p><ul><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws, <strong>Damage</strong> 2d12 piercing plus 2d6 damage of the same damage type as your Dragon Breath (see below);</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw (agile), <strong>Damage</strong> 3d10 slashing;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> tail (reach 10 feet), <strong>Damage</strong> 3d10 bludgeoning.</p></li></ul></li><li><p>Athletics modifier of +23, unless your own is higher.</p></li><li><p><strong>Dragon Breath</strong><span class=\"action-glyph\"><strong>2</strong></span> You exhale deadly magical energy in an area, dealing 10d6 damage to each creature in the area with a basic save against your spell DC. The shape, damage type, and save type match that of your chosen dragon's breath. If the chosen dragon's breath can deal more than one type of damage, choose one when you cast <em>dragon form</em>. The shape is a 30-foot cone or a 100-foot line. Once activated, Dragon Breath can't be used again for 1d4 rounds. Dragon Breath has the tradition trait matching the type of dragon and the damage trait matching the type of damage it deals, if applicable.</p></li><li><p><strong>Tradition Resistance</strong> If the dragon's magical tradition matches that of your dragon form spell, you gain the listed ability. <strong>Arcane</strong> resistance 5 against magic; <strong>divine</strong> resistance 10 to spirit, vitality, and void; <strong>occult</strong> resistance 10 to mental; <strong>primal</strong> resistance 5 to physical damage.</p></li></ul><p></p><table border=\"1\" class=\"pf2e remaster\"><thead><tr style=\"text-align:right\"><th>Dragon</th><th>Tradition</th><th>Speeds</th><th>Dragon Breath</th><th>Saving Throw</th></tr></thead><tbody><tr><td>Adamantine</td><td>Primal</td><td>Burrow</td><td>Cone of bludgeoning</td><td>Reflex</td></tr><tr><td>Conspirator</td><td>Occult</td><td>Climb</td><td>Cone of poison</td><td>Fortitude</td></tr><tr><td>Diabolic</td><td>Divine</td><td>—</td><td>Cone of fire</td><td>Reflex</td></tr><tr><td>Empyreal</td><td>Divine</td><td>—</td><td>Cone of spirit</td><td>Reflex</td></tr><tr><td>Fortune</td><td>Arcane</td><td>—</td><td>Cone of force</td><td>Reflex</td></tr><tr><td>Horned</td><td>Primal</td><td>Swim</td><td>Cone of poison</td><td>Fortitude</td></tr><tr><td>Mirage</td><td>Arcane</td><td>Climb</td><td>Cone of mental</td><td>Will</td></tr><tr><td>Omen</td><td>Occult</td><td>—</td><td>Cone of mental</td><td>Will</td></tr></tbody></table><hr /><p><strong>Heightened (8th)</strong> Your battle form is Huge, you gain a +20-foot status bonus to your fly Speed, and your attacks have 10-foot reach (or 15-foot reach if they previously had 10-foot reach). You instead gain AC = 21 + your level, 15 temporary HP, an attack modifier of +28, a damage bonus of +12, and Athletics +28. Your Dragon Breath deals an additional 4d6 damage.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "EwIUvItOM8UEnL7g"
+        },
         {
           "name": "Eclipse Burst",
           "type": "spell",

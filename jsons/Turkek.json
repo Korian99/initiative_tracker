@@ -235,7 +235,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -260,7 +260,7 @@
           "name": "Ghost Sound",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "auditory",
@@ -286,7 +286,7 @@
           "name": "Mage Hand",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -310,7 +310,7 @@
           "name": "Shield",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -334,7 +334,7 @@
           "name": "Telekinetic Projectile",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -361,7 +361,7 @@
           "name": "Grim Tendrils",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -430,33 +430,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "4nYkjMXcyXAsS10F"
-        }
-      ],
-      "lv2spells": [
+        },
         {
-          "name": "Blood Vendetta",
+          "name": "Ray of Enfeeblement",
           "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
+          "level": 1,
+          "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [
+            "attack",
             "concentrate",
-            "curse"
+            "manipulate"
           ],
-          "castingTime": "reaction",
-          "duration": "varies",
+          "castingTime": "2",
+          "duration": "1 minute",
           "range": "30 feet",
           "area": "",
-          "targets": "The triggering creature",
-          "save": "will",
-          "description": "<p><strong>Requirements</strong> You can bleed.</p>\n<p><strong>Trigger</strong> A creature deals piercing, slashing, or persistent bleed damage to you.</p>\n<hr />\n<p>You curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half the persistent bleed damage.</p>\n<p><strong>Failure</strong> The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage. </p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 2d6.</p>",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>A ray that saps a foe's strength flashes from your hand. Attempt a ranged spell attack against the target. If you succeed, that creature attempts a Fortitude save to determine the spell's effect. If your attack roll is a critical success, use the outcome for one degree of success worse than the result of its save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target becomes Enfeebled 1.</p>\n<p><strong>Failure</strong> The target becomes Enfeebled 2.</p>\n<p><strong>Critical Failure</strong> The target becomes Enfeebled 3.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "WRzApGgG0NYUgsQn"
-        },
+          "id": "4nYkjMXcyXAsS10F"
+        }
+      ],
+      "lv2spells": [
         {
           "name": "Bone Spray",
           "type": "spell",
@@ -578,9 +579,108 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "rJyRTPWLDWmevpEk"
+        },
+        {
+          "name": "Grim Tendrils",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "t9XDObxpQ36qR1AI"
+        },
+        {
+          "name": "Grim Tendrils",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "t9XDObxpQ36qR1AI"
         }
       ],
       "lv4spells": [
+        {
+          "name": "Blood Vendetta",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse"
+          ],
+          "castingTime": "reaction",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "The triggering creature",
+          "save": "will",
+          "description": "<p><strong>Requirements</strong> You can bleed.</p>\n<p><strong>Trigger</strong> A creature deals piercing, slashing, or persistent bleed damage to you.</p>\n<hr />\n<p>You curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half the persistent bleed damage.</p>\n<p><strong>Failure</strong> The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage. </p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent bleed damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "WRzApGgG0NYUgsQn"
+        },
+        {
+          "name": "Grim Tendrils",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "t9XDObxpQ36qR1AI"
+        },
         {
           "name": "Sanguine Mist",
           "type": "spell",

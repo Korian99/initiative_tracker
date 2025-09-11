@@ -395,6 +395,33 @@
       ],
       "lv2spells": [
         {
+          "name": "Soothe",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "healing",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qR5bbLUfpu2I5gnq"
+        },
+        {
           "name": "Invisibility",
           "type": "spell",
           "level": 2,
@@ -441,36 +468,36 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "aRGzRsqhUx8aNTF5"
-        },
+        }
+      ],
+      "lv3spells": [
         {
-          "name": "Soothe",
+          "name": "Fear",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 2,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
-            "healing",
+            "fear",
             "manipulate",
             "mental"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "varies",
           "range": "30 feet",
           "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "qR5bbLUfpu2I5gnq"
-        }
-      ],
-      "lv3spells": [
+          "id": "rlS96iVVjUt7aSGC"
+        },
         {
           "name": "Blindness",
           "type": "spell",
@@ -545,62 +572,9 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "GBcLTPcnKodPW8ct"
-        },
-        {
-          "name": "Fear",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "emotion",
-            "fear",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "rlS96iVVjUt7aSGC"
         }
       ],
       "lv4spells": [
-        {
-          "name": "Sanguine Mist",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "death",
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "2",
-          "duration": "Sustained up to 1 minute",
-          "range": "60 feet",
-          "area": "10ft burst",
-          "targets": "",
-          "save": "Basic fortitude",
-          "description": "<p>You unleash a cloud of foul, blood-sucking fog that drains the vitality from the living to bolster your own. Each living creature in the area when you Cast the Spell, aside from you, takes 6d6 void damage with a basic Fortitude save. Creatures in the area are Concealed, and all creatures outside the cloud become concealed to creatures within it.</p>\n<p>The first time each round you Sustain this Spell on subsequent turns, living creatures in the area take an additional (@item.rank -2)d6 Void Damage damage with another basic Fortitude save. You also gain temporary Hit Points equal to half the damage a single creature took when you Sustained the spell this turn; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage increases by 2d6 and the secondary damage increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "bTJ0p2VHafJZTIn3"
-        },
         {
           "name": "Animate Dead",
           "type": "spell",
@@ -649,6 +623,32 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "b7r3whLC0DquhezB"
+        },
+        {
+          "name": "Sanguine Mist",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "60 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You unleash a cloud of foul, blood-sucking fog that drains the vitality from the living to bolster your own. Each living creature in the area when you Cast the Spell, aside from you, takes 6d6 void damage with a basic Fortitude save. Creatures in the area are Concealed, and all creatures outside the cloud become concealed to creatures within it.</p>\n<p>The first time each round you Sustain this Spell on subsequent turns, living creatures in the area take an additional (@item.rank -2)d6 Void Damage damage with another basic Fortitude save. You also gain temporary Hit Points equal to half the damage a single creature took when you Sustained the spell this turn; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage increases by 2d6 and the secondary damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bTJ0p2VHafJZTIn3"
         }
       ],
       "lv5spells": [],
@@ -911,6 +911,33 @@
       ],
       "lv2spells": [
         {
+          "name": "Soothe",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "healing",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qR5bbLUfpu2I5gnq"
+        },
+        {
           "name": "Invisibility",
           "type": "spell",
           "level": 2,
@@ -957,36 +984,36 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "aRGzRsqhUx8aNTF5"
-        },
+        }
+      ],
+      "lv3spells": [
         {
-          "name": "Soothe",
+          "name": "Fear",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 2,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
-            "healing",
+            "fear",
             "manipulate",
             "mental"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "varies",
           "range": "30 feet",
           "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "qR5bbLUfpu2I5gnq"
-        }
-      ],
-      "lv3spells": [
+          "id": "rlS96iVVjUt7aSGC"
+        },
         {
           "name": "Blindness",
           "type": "spell",
@@ -1061,62 +1088,9 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "GBcLTPcnKodPW8ct"
-        },
-        {
-          "name": "Fear",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "emotion",
-            "fear",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "rlS96iVVjUt7aSGC"
         }
       ],
       "lv4spells": [
-        {
-          "name": "Sanguine Mist",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "death",
-            "manipulate",
-            "void"
-          ],
-          "castingTime": "2",
-          "duration": "Sustained up to 1 minute",
-          "range": "60 feet",
-          "area": "10ft burst",
-          "targets": "",
-          "save": "Basic fortitude",
-          "description": "<p>You unleash a cloud of foul, blood-sucking fog that drains the vitality from the living to bolster your own. Each living creature in the area when you Cast the Spell, aside from you, takes 6d6 void damage with a basic Fortitude save. Creatures in the area are Concealed, and all creatures outside the cloud become concealed to creatures within it.</p>\n<p>The first time each round you Sustain this Spell on subsequent turns, living creatures in the area take an additional (@item.rank -2)d6 Void Damage damage with another basic Fortitude save. You also gain temporary Hit Points equal to half the damage a single creature took when you Sustained the spell this turn; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage increases by 2d6 and the secondary damage increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "bTJ0p2VHafJZTIn3"
-        },
         {
           "name": "Animate Dead",
           "type": "spell",
@@ -1165,6 +1139,32 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "b7r3whLC0DquhezB"
+        },
+        {
+          "name": "Sanguine Mist",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "60 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You unleash a cloud of foul, blood-sucking fog that drains the vitality from the living to bolster your own. Each living creature in the area when you Cast the Spell, aside from you, takes 6d6 void damage with a basic Fortitude save. Creatures in the area are Concealed, and all creatures outside the cloud become concealed to creatures within it.</p>\n<p>The first time each round you Sustain this Spell on subsequent turns, living creatures in the area take an additional (@item.rank -2)d6 Void Damage damage with another basic Fortitude save. You also gain temporary Hit Points equal to half the damage a single creature took when you Sustained the spell this turn; calculate these temporary Hit Points using the creature that took the most damage. You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage increases by 2d6 and the secondary damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bTJ0p2VHafJZTIn3"
         }
       ],
       "lv5spells": [],

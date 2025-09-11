@@ -297,30 +297,28 @@
       "lv6spells": [],
       "lv7spells": [
         {
-          "name": "Spellwrack (At Will)",
+          "name": "Dispel Magic (At Will)",
           "type": "spell",
-          "level": 6,
+          "level": 2,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "curse",
-            "force",
             "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "30 feet",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from <em>spellwrack</em>, it reduces the remaining duration of spells affecting it by 1 round. Only a successful arcana check against your spell DC can help the target recover from the persistent damage; the curse and the persistent damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and persistent damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12 Persistent,force Damage.</p>",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "kSFJ4TVs9X17XkGd"
+          "id": "7PxMc5jwJIKh7cBi"
         },
         {
           "name": "Read Omens (At Will)",
@@ -348,28 +346,30 @@
           "id": "qEWCwty6vofo5EqN"
         },
         {
-          "name": "Dispel Magic (At Will)",
+          "name": "Spellwrack (At Will)",
           "type": "spell",
-          "level": 2,
+          "level": 6,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "curse",
+            "force",
             "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "120 feet",
+          "range": "30 feet",
           "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You cause any spells cast on the target to spill out their energy in harmful surges. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Whenever the target becomes affected by a spell with a duration, the target takes 2d12 Persistent,force Damage damage. Each time it takes persistent force damage from <em>spellwrack</em>, it reduces the remaining duration of spells affecting it by 1 round. Only a successful arcana check against your spell DC can help the target recover from the persistent damage; the curse and the persistent damage end after 1 minute.</p>\n<p><strong>Failure</strong> As success, but the curse and persistent damage do not end on their own.</p>\n<p><strong>Critical Failure</strong> As failure, but the persistent force damage is 4d12 Persistent,force Damage.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "7PxMc5jwJIKh7cBi"
+          "id": "kSFJ4TVs9X17XkGd"
         }
       ],
       "lv8spells": [
@@ -427,33 +427,6 @@
       ],
       "lv9spells": [
         {
-          "name": "Phantasmagoria",
-          "type": "spell",
-          "level": 9,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "death",
-            "illusion",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "any number of creatures",
-          "save": "will",
-          "description": "<p>You fill the targets' minds with endless images, like countless dreams and lives colliding with each other. The onrushing information deals 16d6 Mental Damage damage to each target, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and can't use reactions until the start of your next turn.</p>\n<p><strong>Failure</strong> The target takes full damage and is Confused until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is confused for 1 minute.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "85uuAZj04ZQ7oQ97"
-        },
-        {
           "name": "Execute",
           "type": "spell",
           "level": 7,
@@ -502,37 +475,40 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "UGf7feqRsR1egjFZ"
-        }
-      ],
-      "lv10spells": [
+        },
         {
-          "name": "Freeze Time",
+          "name": "Phantasmagoria",
           "type": "spell",
-          "level": 10,
-          "heightenedLevel": 10,
+          "level": 9,
+          "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "death",
+            "illusion",
+            "manipulate",
+            "mental"
           ],
-          "castingTime": "3",
+          "castingTime": "2",
           "duration": "",
-          "range": "",
+          "range": "120 feet",
           "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting <em>freeze time</em>, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but for only you, effects specifically targeting or affecting you, and effects that you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond <em>freeze time</em>'s duration, such as Wall of Fire, it immediately affects others again, but it doesn't have any of the effects that happen only when you first Cast the Spell.</p>",
+          "targets": "any number of creatures",
+          "save": "will",
+          "description": "<p>You fill the targets' minds with endless images, like countless dreams and lives colliding with each other. The onrushing information deals 16d6 Mental Damage damage to each target, depending on its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and can't use reactions until the start of your next turn.</p>\n<p><strong>Failure</strong> The target takes full damage and is Confused until the start of your next turn.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is confused for 1 minute.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "cUAehEu44X5um1PK"
-        },
+          "id": "85uuAZj04ZQ7oQ97"
+        }
+      ],
+      "lv10spells": [
         {
-          "name": "Hidden Mind (Constant)",
+          "name": "Truespeech (Constant)",
           "type": "spell",
-          "level": 8,
+          "level": 5,
           "heightenedLevel": 10,
           "timesPrepared": 1,
           "traits": [
@@ -540,18 +516,18 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "until the next time you make your daily preparations",
-          "range": "30 feet",
+          "duration": "1 hour",
+          "range": "touch",
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>Powerful wards hide a creature from magic that would spy on it or affect its mind. The target gains a +4 status bonus to saves against mental effects. <em>Hidden mind</em> attempts to counteract any detection, revelation, and scrying effects as if its spell rank were 1 higher than its actual rank. On a success, the effect functions normally except that it detects nothing about the target and its possessions. For instance, <em>detect magic</em> would still detect other magic in the area, but not any magic on the target.</p>\n<p></p>",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "cNJ6P94eGJxC9AMV"
+          "id": "2y2b5V9zGAjhnvEU"
         },
         {
           "name": "Truesight (Constant)",
@@ -579,9 +555,9 @@
           "id": "GyPZjgGtDJW3IY1p"
         },
         {
-          "name": "Truespeech (Constant)",
+          "name": "Hidden Mind (Constant)",
           "type": "spell",
-          "level": 5,
+          "level": 8,
           "heightenedLevel": 10,
           "timesPrepared": 1,
           "traits": [
@@ -589,42 +565,45 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 hour",
-          "range": "touch",
+          "duration": "until the next time you make your daily preparations",
+          "range": "30 feet",
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "description": "<p>Powerful wards hide a creature from magic that would spy on it or affect its mind. The target gains a +4 status bonus to saves against mental effects. <em>Hidden mind</em> attempts to counteract any detection, revelation, and scrying effects as if its spell rank were 1 higher than its actual rank. On a success, the effect functions normally except that it detects nothing about the target and its possessions. For instance, <em>detect magic</em> would still detect other magic in the area, but not any magic on the target.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2y2b5V9zGAjhnvEU"
-        }
-      ],
-      "rituals": [
+          "id": "cNJ6P94eGJxC9AMV"
+        },
         {
-          "name": "Collective Memories",
-          "type": "ritual",
-          "level": 7,
-          "heightenedLevel": 7,
+          "name": "Freeze Time",
+          "type": "spell",
+          "level": 10,
+          "heightenedLevel": 10,
           "timesPrepared": 1,
-          "traits": [],
-          "castingTime": "1 day",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
           "duration": "",
           "range": "",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You tap into other mortals' memories, knowledge, legends, tales, and lore about a subject. The subject must be an important person, place, or thing. If the subject is present, increase the degree of success of your primary skill check by one step. If you have only vague information about the subject before attempting the ritual, decrease the degree of success of your primary skill check by one step. These modifiers cancel each other out if you have a subject present with little to no baseline information.</p>\n<hr />\n<p><strong>Critical Success</strong> For 1 hour after the ritual ends, you sort through memories that are mostly coherent, emphasizing more accurate or useful information over misremembered knowledge or exaggerated tales.</p>\n<p><strong>Success</strong> For 1 hour after the ritual ends, you learn useful information for further inquiry that remains generally incomplete or enigmatic. As is the nature of mortal memory and stories, you are likely to learn multiple contradictory versions.</p>\n<p><strong>Failure</strong> You fail to learn any useful legends.</p>\n<p><strong>Critical Failure</strong> Your mind becomes overwhelmed with the vast array of knowledge at your disposal. You can't sense or respond to anything in the present for 1 week except to perform necessities like breathing and sleeping. When you recover, however, you can retrain one of your skills into a Lore based on the knowledge of a subject you were accessing, as if you had spent 1 week retraining.</p>",
+          "description": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting <em>freeze time</em>, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but for only you, effects specifically targeting or affecting you, and effects that you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond <em>freeze time</em>'s duration, such as Wall of Fire, it immediately affects others again, but it doesn't have any of the effects that happen only when you first Cast the Spell.</p>",
           "cast": false,
-          "cost": "rare incense worth a total value of 300 gp",
-          "primaryCheck": "Occultism (master)",
-          "secondaryCasters": 2,
-          "secondaryChecks": "Performance, Society",
-          "id": "QbZTMXscxAd6CTTd"
-        },
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "cUAehEu44X5um1PK"
+        }
+      ],
+      "rituals": [
         {
           "name": "Geas",
           "type": "ritual",
@@ -648,6 +627,27 @@
           "secondaryCasters": 1,
           "secondaryChecks": "Society or Legal Lore",
           "id": "GeJ4v068jRXB4dto"
+        },
+        {
+          "name": "Collective Memories",
+          "type": "ritual",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [],
+          "castingTime": "1 day",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You tap into other mortals' memories, knowledge, legends, tales, and lore about a subject. The subject must be an important person, place, or thing. If the subject is present, increase the degree of success of your primary skill check by one step. If you have only vague information about the subject before attempting the ritual, decrease the degree of success of your primary skill check by one step. These modifiers cancel each other out if you have a subject present with little to no baseline information.</p>\n<hr />\n<p><strong>Critical Success</strong> For 1 hour after the ritual ends, you sort through memories that are mostly coherent, emphasizing more accurate or useful information over misremembered knowledge or exaggerated tales.</p>\n<p><strong>Success</strong> For 1 hour after the ritual ends, you learn useful information for further inquiry that remains generally incomplete or enigmatic. As is the nature of mortal memory and stories, you are likely to learn multiple contradictory versions.</p>\n<p><strong>Failure</strong> You fail to learn any useful legends.</p>\n<p><strong>Critical Failure</strong> Your mind becomes overwhelmed with the vast array of knowledge at your disposal. You can't sense or respond to anything in the present for 1 week except to perform necessities like breathing and sleeping. When you recover, however, you can retrain one of your skills into a Lore based on the knowledge of a subject you were accessing, as if you had spent 1 week retraining.</p>",
+          "cast": false,
+          "cost": "rare incense worth a total value of 300 gp",
+          "primaryCheck": "Occultism (master)",
+          "secondaryCasters": 2,
+          "secondaryChecks": "Performance, Society",
+          "id": "QbZTMXscxAd6CTTd"
         }
       ],
       "lv1slots": {

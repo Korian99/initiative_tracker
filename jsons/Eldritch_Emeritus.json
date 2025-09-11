@@ -293,7 +293,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -318,7 +318,7 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -343,7 +343,7 @@
           "name": "Prestidigitation",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -367,7 +367,7 @@
           "name": "Sigil",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -391,7 +391,7 @@
           "name": "Telekinetic Hand",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -413,6 +413,30 @@
         }
       ],
       "lv1spells": [
+        {
+          "name": "Fleet Step",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You gain a +30-foot status bonus to your Speed.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "syKTNAH4tecyytj3"
+        },
         {
           "name": "Fleet Step",
           "type": "spell",
@@ -463,30 +487,6 @@
         }
       ],
       "lv2spells": [
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "w4On9kxsfspE2HMB"
-        },
         {
           "name": "Gecko Grip",
           "type": "spell",
@@ -663,6 +663,30 @@
           "id": "1hnyKowEGN0M332L"
         },
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "w4On9kxsfspE2HMB"
+        },
+        {
           "name": "Fly",
           "type": "spell",
           "level": 4,
@@ -767,31 +791,6 @@
       ],
       "lv6spells": [
         {
-          "name": "Chain Lightning",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "electricity",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "500 feet",
-          "area": "",
-          "targets": "1 creature, plus any number of additional creatures",
-          "save": "Basic reflex",
-          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing 8d12 electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "wNmcfF1so3jvRlnL"
-        },
-        {
           "name": "Disintegrate",
           "type": "spell",
           "level": 6,
@@ -869,28 +868,54 @@
       ],
       "lv7spells": [
         {
-          "name": "Energy Aegis (Constant)",
+          "name": "Chain Lightning",
           "type": "spell",
-          "level": 7,
+          "level": 6,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "electricity",
             "manipulate"
           ],
-          "castingTime": "1 minute",
-          "duration": "until your next daily preparations",
-          "range": "touch",
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
+          "targets": "1 creature, plus any number of additional creatures",
+          "save": "Basic reflex",
+          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing 8d12 electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Lo2DPYR2SoThib5R"
+          "id": "wNmcfF1so3jvRlnL"
+        },
+        {
+          "name": "Chain Lightning",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "electricity",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 creature, plus any number of additional creatures",
+          "save": "Basic reflex",
+          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing 8d12 electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "wNmcfF1so3jvRlnL"
         },
         {
           "name": "Project Image",
@@ -970,6 +995,32 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "p1fMrvRDL9fpw3nZ"
+        },
+        {
+          "name": "Quandary",
+          "type": "spell",
+          "level": 8,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "extradimensional",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to ",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You transport the target into an extraplanar puzzle room of mysterious origin, locking them there. Once each turn as a single action, the target can attempt an Occultism check, Perception check, or Thievery check against your spell DC to solve the puzzle. Teleportation effects can't carry the target outside the puzzle room unless they can also traverse the planes, such as Interplanar Teleport. When the spell ends, the target returns to the space it occupied when it was banished, or to the nearest space if the original is now filled.</p>\n<hr />\n<p><strong>Critical Success</strong> The target solves the puzzle and escapes.</p>\n<p><strong>Success</strong> The target is on the right path to the solution. If it was already on the right path, it solves the puzzle and escapes.</p>\n<p><strong>Failure</strong> The target makes no progress toward a solution.</p>\n<p><strong>Critical Failure</strong> The target makes no progress and, if it was on the right path, it no longer is.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "p1fMrvRDL9fpw3nZ"
         }
       ],
       "lv9spells": [
@@ -1020,6 +1071,30 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "dbUtvIV3nXoZfRIJ"
+        },
+        {
+          "name": "Energy Aegis (Constant)",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "until your next daily preparations",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Lo2DPYR2SoThib5R"
         }
       ],
       "lv10spells": [],

@@ -304,28 +304,28 @@
       ],
       "lv5spells": [
         {
-          "name": "Tongues (Constant)",
+          "name": "Endure Elements (Constant)",
           "type": "spell",
-          "level": 5,
+          "level": 2,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
           ],
-          "castingTime": "2",
-          "duration": "1 hour",
+          "castingTime": "10 minutes",
+          "duration": "until the next time you make your daily preparations",
           "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "nr0PMLn9MREOWXYD"
+          "id": "RLNzraMr15AQohaZ"
         },
         {
           "name": "Air Walk (Constant)",
@@ -353,33 +353,84 @@
           "id": "v43kRV9YPyaSeo23"
         },
         {
-          "name": "Endure Elements (Constant)",
+          "name": "Tongues (Constant)",
           "type": "spell",
-          "level": 2,
+          "level": 5,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
           ],
-          "castingTime": "10 minutes",
-          "duration": "until the next time you make your daily preparations",
+          "castingTime": "2",
+          "duration": "1 hour",
           "range": "touch",
           "area": "",
-          "targets": "1 willing creature",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "RLNzraMr15AQohaZ"
+          "id": "nr0PMLn9MREOWXYD"
         }
       ],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [
+        {
+          "name": "Cloudkill",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "poison"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7tZyz4DJ1gx9F1e8"
+        },
+        {
+          "name": "Volcanic Eruption",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "5ft cylinder",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p><strong>Area</strong> 5-foot radius, 80-foot-tall cylinder</p>\n<hr />\n<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is Clumsy 1 and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take (@item.rank -4)d6 Fire Damage damage from the intense heat, regardless of the results of their saving throws.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yRduP2mVvaifuV4r"
+        },
         {
           "name": "Earthquake",
           "type": "spell",
@@ -429,57 +480,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "LGMOppRqrSJI4hbq"
-        },
-        {
-          "name": "Volcanic Eruption",
-          "type": "spell",
-          "level": 7,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "5ft cylinder",
-          "targets": "",
-          "save": "reflex",
-          "description": "<p><strong>Area</strong> 5-foot radius, 80-foot-tall cylinder</p>\n<hr />\n<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is Clumsy 1 and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take (@item.rank -4)d6 Fire Damage damage from the intense heat, regardless of the results of their saving throws.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "yRduP2mVvaifuV4r"
-        },
-        {
-          "name": "Cloudkill",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "death",
-            "manipulate",
-            "poison"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic fortitude",
-          "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "7tZyz4DJ1gx9F1e8"
         }
       ],
       "lv9spells": [],
@@ -618,28 +618,28 @@
       ],
       "lv5spells": [
         {
-          "name": "Tongues (Constant)",
+          "name": "Endure Elements (Constant)",
           "type": "spell",
-          "level": 5,
+          "level": 2,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
           ],
-          "castingTime": "2",
-          "duration": "1 hour",
+          "castingTime": "10 minutes",
+          "duration": "until the next time you make your daily preparations",
           "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "nr0PMLn9MREOWXYD"
+          "id": "RLNzraMr15AQohaZ"
         },
         {
           "name": "Air Walk (Constant)",
@@ -667,33 +667,84 @@
           "id": "v43kRV9YPyaSeo23"
         },
         {
-          "name": "Endure Elements (Constant)",
+          "name": "Tongues (Constant)",
           "type": "spell",
-          "level": 2,
+          "level": 5,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
           ],
-          "castingTime": "10 minutes",
-          "duration": "until the next time you make your daily preparations",
+          "castingTime": "2",
+          "duration": "1 hour",
           "range": "touch",
           "area": "",
-          "targets": "1 willing creature",
+          "targets": "1 creature",
           "save": "",
-          "description": "<p>You shield the target against dangerous temperatures. Choose severe cold or heat. The target is protected from the temperature you chose (but not extreme cold or heat).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The target is protected from severe cold and heat.</p>\n<p><strong>Heightened (5th)</strong> The target is protected from severe cold, severe heat, extreme cold, and extreme heat.</p>",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "RLNzraMr15AQohaZ"
+          "id": "nr0PMLn9MREOWXYD"
         }
       ],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [
+        {
+          "name": "Cloudkill",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "poison"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic fortitude",
+          "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "7tZyz4DJ1gx9F1e8"
+        },
+        {
+          "name": "Volcanic Eruption",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "5ft cylinder",
+          "targets": "",
+          "save": "reflex",
+          "description": "<p><strong>Area</strong> 5-foot radius, 80-foot-tall cylinder</p>\n<hr />\n<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is Clumsy 1 and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take (@item.rank -4)d6 Fire Damage damage from the intense heat, regardless of the results of their saving throws.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yRduP2mVvaifuV4r"
+        },
         {
           "name": "Earthquake",
           "type": "spell",
@@ -743,57 +794,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "LGMOppRqrSJI4hbq"
-        },
-        {
-          "name": "Volcanic Eruption",
-          "type": "spell",
-          "level": 7,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "5ft cylinder",
-          "targets": "",
-          "save": "reflex",
-          "description": "<p><strong>Area</strong> 5-foot radius, 80-foot-tall cylinder</p>\n<hr />\n<p>The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 14d6 fire damage to creatures in the area. The lava rapidly cools and encases creatures in the area. A creature encased in rock is Clumsy 1 and takes a -10-foot status penalty to its Speeds. All normal terrain is difficult terrain to a flying creature, and such creatures immediately descend 20 feet the moment they're encased, but they don't take damage from this fall. A creature encased in rock can attempt to Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock. Additionally, creatures in the area and those within 5 feet of the lava column automatically take (@item.rank -4)d6 Fire Damage damage from the intense heat, regardless of the results of their saving throws.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is encased.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is encased.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage in the area increases by 2d6, and the damage from the intense heat increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "yRduP2mVvaifuV4r"
-        },
-        {
-          "name": "Cloudkill",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "death",
-            "manipulate",
-            "poison"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic fortitude",
-          "description": "<p>You conjure a poisonous fog. This functions as Mist, except the area moves 10 feet away from you each round. You deal 6d8 poison damage to each breathing creature that starts its turn in the spell's area. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "7tZyz4DJ1gx9F1e8"
         }
       ],
       "lv9spells": [],

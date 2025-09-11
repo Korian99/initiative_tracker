@@ -512,6 +512,30 @@
       ],
       "lv3spells": [
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lLHwrg1H3ct9WX5X"
+        },
+        {
           "name": "Chilling Darkness",
           "type": "spell",
           "level": 3,
@@ -563,57 +587,32 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "b3lzb6Je3aYiS20d"
-        },
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "lLHwrg1H3ct9WX5X"
         }
       ],
       "lv4spells": [
         {
-          "name": "Air Walk",
+          "name": "Harm",
           "type": "spell",
-          "level": 4,
+          "level": 1,
           "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
-            "air",
-            "concentrate",
-            "manipulate"
+            "manipulate",
+            "void"
           ],
-          "castingTime": "2",
-          "duration": "5 minutes",
-          "range": "touch",
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
           "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "YdVxtWuqXolm8Hkm"
+          "id": "fZYdUrrLCWvojsQF"
         },
         {
           "name": "Noise Blast",
@@ -641,28 +640,29 @@
           "id": "0i9HsiKlYJcEJx5F"
         },
         {
-          "name": "Harm",
+          "name": "Air Walk",
           "type": "spell",
-          "level": 1,
+          "level": 4,
           "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
-            "manipulate",
-            "void"
+            "air",
+            "concentrate",
+            "manipulate"
           ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
           "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fZYdUrrLCWvojsQF"
+          "id": "YdVxtWuqXolm8Hkm"
         }
       ],
       "lv5spells": [],

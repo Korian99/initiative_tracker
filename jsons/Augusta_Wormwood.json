@@ -730,6 +730,31 @@
       ],
       "lv5spells": [
         {
+          "name": "Translocate",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vrpMw8k7Rc7FQJIc"
+        },
+        {
           "name": "Shadow Blast",
           "type": "spell",
           "level": 5,
@@ -777,31 +802,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "A6rIGpwTDOk3VyiD"
-        },
-        {
-          "name": "Translocate",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "teleportation"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "vrpMw8k7Rc7FQJIc"
         }
       ],
       "lv6spells": [
@@ -886,28 +886,31 @@
       ],
       "lv7spells": [
         {
-          "name": "Retrocognition",
+          "name": "Soothe",
           "type": "spell",
-          "level": 7,
+          "level": 1,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "emotion",
+            "healing",
+            "manipulate",
+            "mental"
           ],
-          "castingTime": "1 minute",
-          "duration": "Sustained up to ",
-          "range": "",
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Opening your mind to mental echoes, you gain impressions from past events that occurred in your current location. <em>Retrocognition</em> reveals psychic impressions from events that occurred over the course of the last day throughout the first minute of the duration, followed by impressions from the next day back the next minute, and so on. These echoes don't play out like a vision but instead reveal impressions of emotions and metaphors that provide cryptic clues and details of the past. If you witness a traumatic or turbulent event through an impression, the spell ends unless you succeed at a Will save with a DC of at least 30 and possibly as much as 50, depending on the severity of the event. The GM determines whether an event is traumatic and chooses the DC.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You gain impressions of events that occurred over the previous year for each minute you concentrate, instead of the previous day, though the details diminish, making it harder to distinguish impressions from all but the most major events.</p>\n<p><strong>Heightened (9th)</strong> You gain impressions of events that occurred over the previous century for each minute you concentrate, instead of the previous day, though the details diminish, making it almost impossible to distinguish impressions from all but the most major events.</p>",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "QN1SPHSFY6DYCqLM"
+          "id": "TRrI1BwwGwpAAMYg"
         },
         {
           "name": "Dispel Magic",
@@ -934,58 +937,34 @@
           "id": "GxxB9HyxKbry4XEd"
         },
         {
-          "name": "Soothe",
+          "name": "Retrocognition",
           "type": "spell",
-          "level": 1,
+          "level": 7,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "emotion",
-            "healing",
-            "manipulate",
-            "mental"
+            "manipulate"
           ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "30 feet",
+          "castingTime": "1 minute",
+          "duration": "Sustained up to ",
+          "range": "",
           "area": "",
-          "targets": "1 willing creature",
+          "targets": "",
           "save": "",
-          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "description": "<p>Opening your mind to mental echoes, you gain impressions from past events that occurred in your current location. <em>Retrocognition</em> reveals psychic impressions from events that occurred over the course of the last day throughout the first minute of the duration, followed by impressions from the next day back the next minute, and so on. These echoes don't play out like a vision but instead reveal impressions of emotions and metaphors that provide cryptic clues and details of the past. If you witness a traumatic or turbulent event through an impression, the spell ends unless you succeed at a Will save with a DC of at least 30 and possibly as much as 50, depending on the severity of the event. The GM determines whether an event is traumatic and chooses the DC.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You gain impressions of events that occurred over the previous year for each minute you concentrate, instead of the previous day, though the details diminish, making it harder to distinguish impressions from all but the most major events.</p>\n<p><strong>Heightened (9th)</strong> You gain impressions of events that occurred over the previous century for each minute you concentrate, instead of the previous day, though the details diminish, making it almost impossible to distinguish impressions from all but the most major events.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "TRrI1BwwGwpAAMYg"
+          "id": "QN1SPHSFY6DYCqLM"
         }
       ],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
       "rituals": [
-        {
-          "name": "Binding Circle",
-          "type": "ritual",
-          "level": 6,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [],
-          "castingTime": "1 day",
-          "duration": "varies",
-          "range": "interplanar",
-          "area": "",
-          "targets": "1 extraplanar creature",
-          "save": "",
-          "description": "<p>You call forth an extraplanar creature of a level no greater than double that of the <em>binding circle</em> ritual's rank and attempt to bargain with it, generally to perform a task for you in exchange for payment.</p>\n<p>You conjure the extraplanar creature within your circle and negotiate a deal with it. A creature that doesn't wish to negotiate at all can attempt a Will save to stay on its home plane. Most extraplanar creatures feel that they have something better to do than cater to the whims of mortals and require a significant gift, especially if your task poses major risks. Fiends and similarly wicked extraplanar creatures are more likely to accept a bargain for a lower cost as long as it allows them to wreak havoc on the Universe or inflict evil upon the world along the way.</p>\n<p>Monetary prices usually range from the cost of a consumable item of the creature's level for a short and simple task to a permanent magic item of the creature's level or more to persuade the creature to fight alongside you. However, some extraplanar creatures may want payments other than money, such as permission to cast a Geas on you to fulfill an unspecified later favor or obtain ownership of your soul via an infernal contract.</p>\n<p>You can add an additional secondary caster to create a warding circle that prevents the extraplanar creature from attacking or leaving the circle during the bargain. This uses the Crafting skill and has the same DC as a secondary check would. This protection ends if you use a hostile action against the extraplanar creature or the warding circle breaks.</p>\n<hr />\n<p><strong>Critical Success</strong> You call the extraplanar creature and can prevent it from returning home for up to a full day, potentially allowing you to negotiate a better deal by threatening to leave it in the wards for the duration.</p>\n<p><strong>Success</strong> You call the extraplanar creature and must make your case succinctly, after which the creature can return home at any time.</p>\n<p><strong>Failure</strong> You fail to call the extraplanar creature.</p>\n<p><strong>Critical Failure</strong> You call something vile and horrible, unbound by your wards, and it immediately attempts to destroy you.</p>",
-          "cast": false,
-          "cost": "warding circle ingredients worth a total value of 2 gp × the spell rank × the target's level",
-          "primaryCheck": "Arcana (master) or Occultism (master)",
-          "secondaryCasters": 3,
-          "secondaryChecks": "Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)",
-          "id": "zqFAZ3ih51zEpt6F"
-        },
         {
           "name": "Call Spirit",
           "type": "ritual",
@@ -1006,6 +985,27 @@
           "secondaryCasters": 1,
           "secondaryChecks": "Occultism or Religion (whichever isn't used for the primary check)",
           "id": "IUm1rQpVkpEQuseF"
+        },
+        {
+          "name": "Binding Circle",
+          "type": "ritual",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [],
+          "castingTime": "1 day",
+          "duration": "varies",
+          "range": "interplanar",
+          "area": "",
+          "targets": "1 extraplanar creature",
+          "save": "",
+          "description": "<p>You call forth an extraplanar creature of a level no greater than double that of the <em>binding circle</em> ritual's rank and attempt to bargain with it, generally to perform a task for you in exchange for payment.</p>\n<p>You conjure the extraplanar creature within your circle and negotiate a deal with it. A creature that doesn't wish to negotiate at all can attempt a Will save to stay on its home plane. Most extraplanar creatures feel that they have something better to do than cater to the whims of mortals and require a significant gift, especially if your task poses major risks. Fiends and similarly wicked extraplanar creatures are more likely to accept a bargain for a lower cost as long as it allows them to wreak havoc on the Universe or inflict evil upon the world along the way.</p>\n<p>Monetary prices usually range from the cost of a consumable item of the creature's level for a short and simple task to a permanent magic item of the creature's level or more to persuade the creature to fight alongside you. However, some extraplanar creatures may want payments other than money, such as permission to cast a Geas on you to fulfill an unspecified later favor or obtain ownership of your soul via an infernal contract.</p>\n<p>You can add an additional secondary caster to create a warding circle that prevents the extraplanar creature from attacking or leaving the circle during the bargain. This uses the Crafting skill and has the same DC as a secondary check would. This protection ends if you use a hostile action against the extraplanar creature or the warding circle breaks.</p>\n<hr />\n<p><strong>Critical Success</strong> You call the extraplanar creature and can prevent it from returning home for up to a full day, potentially allowing you to negotiate a better deal by threatening to leave it in the wards for the duration.</p>\n<p><strong>Success</strong> You call the extraplanar creature and must make your case succinctly, after which the creature can return home at any time.</p>\n<p><strong>Failure</strong> You fail to call the extraplanar creature.</p>\n<p><strong>Critical Failure</strong> You call something vile and horrible, unbound by your wards, and it immediately attempts to destroy you.</p>",
+          "cast": false,
+          "cost": "warding circle ingredients worth a total value of 2 gp × the spell rank × the target's level",
+          "primaryCheck": "Arcana (master) or Occultism (master)",
+          "secondaryCasters": 3,
+          "secondaryChecks": "Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)",
+          "id": "zqFAZ3ih51zEpt6F"
         }
       ],
       "lv1slots": {

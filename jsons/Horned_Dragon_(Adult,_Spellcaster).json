@@ -359,7 +359,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -384,7 +384,7 @@
           "name": "Know the Way",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -409,7 +409,7 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -434,7 +434,7 @@
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -459,7 +459,7 @@
           "name": "Tangle Vine",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -562,82 +562,6 @@
       ],
       "lv2spells": [
         {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "iefGSWf5chrORr5B"
-        },
-        {
-          "name": "Entangling Flora",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 2,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "plant",
-            "wood"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "reflex",
-          "description": "<p>Plants and fungi burst out or quickly grow, entangling creatures. All surfaces in the area are difficult terrain. Each round that a creature starts its turn in the area, it must attempt a Reflex save. On a failure, it takes a –10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure, it's also Immobilized for 1 round. Creatures can attempt to Escape to remove these effects.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "lgDxJmtHFjvOF0sM"
-        },
-        {
-          "name": "Entangling Flora",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
-          "timesPrepared": 2,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "plant",
-            "wood"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "reflex",
-          "description": "<p>Plants and fungi burst out or quickly grow, entangling creatures. All surfaces in the area are difficult terrain. Each round that a creature starts its turn in the area, it must attempt a Reflex save. On a failure, it takes a –10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure, it's also Immobilized for 1 round. Creatures can attempt to Escape to remove these effects.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "lgDxJmtHFjvOF0sM"
-        },
-        {
           "name": "Humanoid Form",
           "type": "spell",
           "level": 2,
@@ -714,37 +638,33 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "ys2SsbsxXcG6OHB9"
-        },
+        }
+      ],
+      "lv3spells": [
         {
-          "name": "Charm (At Will)",
+          "name": "Dispel Magic",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 2,
+          "level": 2,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "emotion",
-            "incapacitation",
-            "manipulate",
-            "mental",
-            "subtle"
+            "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 hour",
-          "range": "30 feet",
+          "duration": "",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes Friendly toward you. If it was Friendly, it becomes Helpful. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "fZbXpVIUqe3JYgab"
-        }
-      ],
-      "lv3spells": [
+          "id": "iefGSWf5chrORr5B"
+        },
         {
           "name": "Slow",
           "type": "spell",
@@ -773,7 +693,7 @@
           "name": "Veil of Privacy",
           "type": "spell",
           "level": 3,
-          "heightenedLevel": 3,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -872,34 +792,6 @@
           "id": "2JEhLvVcZzimxewJ"
         },
         {
-          "name": "Suggestion",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "incapacitation",
-            "linguistic",
-            "manipulate",
-            "mental",
-            "subtle"
-          ],
-          "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "B7a0hx6Z6c3B3OrK"
-        },
-        {
           "name": "Unfettered Movement",
           "type": "spell",
           "level": 4,
@@ -926,6 +818,30 @@
       ],
       "lv5spells": [
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iefGSWf5chrORr5B"
+        },
+        {
           "name": "Toxic Cloud",
           "type": "spell",
           "level": 5,
@@ -950,6 +866,30 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "Ej8fDWQCIwxwJlG9"
+        },
+        {
+          "name": "Veil of Privacy",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "8 hours",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or object",
+          "save": "",
+          "description": "<p>You erect protective wards that make the target difficult to detect via magic. <em>Veil of privacy</em> attempts to counteract all detection, revelation, and scrying effects used against the target or the target's gear throughout the duration, counting cantrips as 1st-rank spells for this purpose. Successfully counteracting a spell that targets an area or multiple targets negates the effects for only <em>veil of privacy's</em> target.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "A2AEr3FsvyaXV8w6"
         }
       ],
       "lv6spells": [],
@@ -1014,7 +954,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1039,7 +979,7 @@
           "name": "Know the Way",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1064,7 +1004,7 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1089,7 +1029,7 @@
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1114,7 +1054,7 @@
           "name": "Tangle Vine",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -1217,28 +1157,32 @@
       ],
       "lv2spells": [
         {
-          "name": "Dispel Magic",
+          "name": "Charm (At Will)",
           "type": "spell",
-          "level": 2,
+          "level": 1,
           "heightenedLevel": 2,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "emotion",
+            "incapacitation",
+            "manipulate",
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
+          "duration": "1 hour",
+          "range": "30 feet",
           "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes Friendly toward you. If it was Friendly, it becomes Helpful. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "iefGSWf5chrORr5B"
+          "id": "fZbXpVIUqe3JYgab"
         },
         {
           "name": "Entangling Flora",
@@ -1369,34 +1313,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "ys2SsbsxXcG6OHB9"
-        },
-        {
-          "name": "Charm (At Will)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 2,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "emotion",
-            "incapacitation",
-            "manipulate",
-            "mental",
-            "subtle"
-          ],
-          "castingTime": "2",
-          "duration": "1 hour",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes Friendly toward you. If it was Friendly, it becomes Helpful. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "fZbXpVIUqe3JYgab"
         }
       ],
       "lv3spells": [
@@ -1423,30 +1339,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "VIMqAVbIReFLfhAP"
-        },
-        {
-          "name": "Veil of Privacy",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "8 hours",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature or object",
-          "save": "",
-          "description": "<p>You erect protective wards that make the target difficult to detect via magic. <em>Veil of privacy</em> attempts to counteract all detection, revelation, and scrying effects used against the target or the target's gear throughout the duration, counting cantrips as 1st-rank spells for this purpose. Successfully counteracting a spell that targets an area or multiple targets negates the effects for only <em>veil of privacy's</em> target.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "A2AEr3FsvyaXV8w6"
         },
         {
           "name": "Wall of Thorns",
@@ -1580,6 +1472,54 @@
         }
       ],
       "lv5spells": [
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iefGSWf5chrORr5B"
+        },
+        {
+          "name": "Veil of Privacy",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "8 hours",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or object",
+          "save": "",
+          "description": "<p>You erect protective wards that make the target difficult to detect via magic. <em>Veil of privacy</em> attempts to counteract all detection, revelation, and scrying effects used against the target or the target's gear throughout the duration, counting cantrips as 1st-rank spells for this purpose. Successfully counteracting a spell that targets an area or multiple targets negates the effects for only <em>veil of privacy's</em> target.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "A2AEr3FsvyaXV8w6"
+        },
         {
           "name": "Toxic Cloud",
           "type": "spell",

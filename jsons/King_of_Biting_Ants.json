@@ -816,6 +816,33 @@
       ],
       "lv5spells": [
         {
+          "name": "Phantom Pain",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "svfaEIitntoCWbhV"
+        },
+        {
           "name": "Black Tentacles",
           "type": "spell",
           "level": 5,
@@ -893,19 +920,20 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "zsjXx4WjOLbXPFgH"
-        },
+        }
+      ],
+      "lv6spells": [
         {
-          "name": "Phantom Pain",
+          "name": "Paranoia",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 5,
+          "level": 2,
+          "heightenedLevel": 6,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "illusion",
             "manipulate",
-            "mental",
-            "nonlethal"
+            "mental"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -913,16 +941,38 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
+          "description": "<p>You cause the target to see all other creatures as dire threats. The target is stricken by intense paranoia toward all creatures around it and must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target believes everyone it sees is a potential threat. It becomes Unfriendly to all creatures to which it wasn't already hostile, even those that were previously allies. It treats no one as an ally. The spell ends after 1 round.</p>\n<p><strong>Failure</strong> As success, but the effect lasts 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, except the target believes that everyone it sees is a mortal enemy. It uses its reactions and free actions against everyone, regardless of whether they were previously its allies, as determined by the GM. It otherwise acts as rationally as it normally does and likely prefers to attack creatures that are actively attacking or hindering it over those leaving it alone.</p>\n<hr /><p><strong>Heightened (6th)</strong> You can target up to 5 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "svfaEIitntoCWbhV"
-        }
-      ],
-      "lv6spells": [
+          "id": "75weo5B5kYz1un4E"
+        },
+        {
+          "name": "Slow",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XnnoVrGiiuGH1iMA"
+        },
         {
           "name": "Dominate",
           "type": "spell",
@@ -973,59 +1023,62 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "jUxEqhzJLbXW0J0s"
-        },
+        }
+      ],
+      "lv7spells": [
         {
-          "name": "Slow",
+          "name": "Dispel Magic",
           "type": "spell",
-          "level": 3,
-          "heightenedLevel": 6,
+          "level": 2,
+          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
-          "range": "30 feet",
+          "duration": "",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "fortitude",
-          "description": "<p>You dilate the flow of time around the target, slowing its actions.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Slowed 1 for 1 round.</p>\n<p><strong>Failure</strong> The target is Slowed 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Slowed 2 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 10 creatures.</p>",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "XnnoVrGiiuGH1iMA"
+          "id": "WxQNdmh18rV7Ei0Z"
         },
         {
-          "name": "Paranoia",
+          "name": "Phantasmal Killer",
           "type": "spell",
-          "level": 2,
-          "heightenedLevel": 6,
+          "level": 4,
+          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "death",
+            "emotion",
+            "fear",
             "illusion",
             "manipulate",
             "mental"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
-          "range": "30 feet",
+          "duration": "",
+          "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 living creature",
           "save": "will",
-          "description": "<p>You cause the target to see all other creatures as dire threats. The target is stricken by intense paranoia toward all creatures around it and must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target believes everyone it sees is a potential threat. It becomes Unfriendly to all creatures to which it wasn't already hostile, even those that were previously allies. It treats no one as an ally. The spell ends after 1 round.</p>\n<p><strong>Failure</strong> As success, but the effect lasts 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, except the target believes that everyone it sees is a mortal enemy. It uses its reactions and free actions against everyone, regardless of whether they were previously its allies, as determined by the GM. It otherwise acts as rationally as it normally does and likely prefers to attack creatures that are actively attacking or hindering it over those leaving it alone.</p>\n<hr /><p><strong>Heightened (6th)</strong> You can target up to 5 creatures.</p>",
+          "description": "<p>You create a phantasmal image of the most fearsome creature imaginable to the target. Only the spell's target can see the killer, though you can see the vague shape of the illusion as it races forth to attack. The effect of the killer is based on the outcome of the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 4d6 mental damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The target takes 8d6 mental damage and is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is so afraid it might die. It must attempt a Fortitude save; if the target fails, it dies. On a successful Fortitude save, the target takes 12d6 mental damage, is Fleeing until the end of its next turn, and is Frightened 4. This effect has the incapacitation trait.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 on a failure and by 3d6 on a critical failure.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "75weo5B5kYz1un4E"
-        }
-      ],
-      "lv7spells": [
+          "id": "fYcrZmZQrNse3mv7"
+        },
         {
           "name": "Visions of Danger (Biting Ants Only)",
           "type": "spell",
@@ -1079,41 +1132,14 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "oeKtLzlBg8VeFcRy"
-        },
-        {
-          "name": "Phantasmal Killer",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "death",
-            "emotion",
-            "fear",
-            "illusion",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 living creature",
-          "save": "will",
-          "description": "<p>You create a phantasmal image of the most fearsome creature imaginable to the target. Only the spell's target can see the killer, though you can see the vague shape of the illusion as it races forth to attack. The effect of the killer is based on the outcome of the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 4d6 mental damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The target takes 8d6 mental damage and is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is so afraid it might die. It must attempt a Fortitude save; if the target fails, it dies. On a successful Fortitude save, the target takes 12d6 mental damage, is Fleeing until the end of its next turn, and is Frightened 4. This effect has the incapacitation trait.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6 on a failure and by 3d6 on a critical failure.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "fYcrZmZQrNse3mv7"
-        },
+        }
+      ],
+      "lv8spells": [
         {
           "name": "Dispel Magic",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 7,
+          "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1131,10 +1157,8 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "WxQNdmh18rV7Ei0Z"
-        }
-      ],
-      "lv8spells": [
+          "id": "EuQg04tq9uzckLbl"
+        },
         {
           "name": "Disappearance",
           "type": "spell",
@@ -1233,30 +1257,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "Qx6ogsPykN7lYTa7"
-        },
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "EuQg04tq9uzckLbl"
         }
       ],
       "lv9spells": [
@@ -1345,30 +1345,6 @@
       ],
       "lv10spells": [
         {
-          "name": "Time Stop",
-          "type": "spell",
-          "level": 10,
-          "heightenedLevel": 10,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "3",
-          "duration": "",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting time stop, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but only for you, effects specifically targeting or affecting you, and effects you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond the time stop's duration, such as wall of fire, it immediately affects others again, but it doesn't have any of the effects that happen only when you first cast the spell.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "vqs4uuIHZpamyxEk"
-        },
-        {
           "name": "Visions of Danger (Biting Ants Only)",
           "type": "spell",
           "level": 7,
@@ -1394,6 +1370,30 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "Q4MUEJ4qui5UjIko"
+        },
+        {
+          "name": "Time Stop",
+          "type": "spell",
+          "level": 10,
+          "heightenedLevel": 10,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after casting time stop, you can use up to 9 actions in 3 sets of up to 3 actions each.</p>\n<p>After each set of actions, 1 round passes, but only for you, effects specifically targeting or affecting you, and effects you create during the stoppage. All other creatures and objects are invulnerable to your attacks, and you can't target or affect them with anything.</p>\n<p>Once you have finished your actions, time begins to flow again for the rest of the world. If you created an effect with a duration that extends beyond the time stop's duration, such as wall of fire, it immediately affects others again, but it doesn't have any of the effects that happen only when you first cast the spell.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vqs4uuIHZpamyxEk"
         }
       ],
       "rituals": [],

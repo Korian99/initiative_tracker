@@ -278,6 +278,30 @@
       "lv5spells": [],
       "lv6spells": [
         {
+          "name": "Tongues (Constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Jd2DYD67ChktNYVN"
+        },
+        {
           "name": "True Seeing (Constant)",
           "type": "spell",
           "level": 6,
@@ -301,44 +325,21 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "OhLCOozHQSHlWn0N"
-        },
-        {
-          "name": "Tongues (Constant)",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 hour",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Jd2DYD67ChktNYVN"
         }
       ],
       "lv7spells": [],
       "lv8spells": [
         {
-          "name": "True Seeing",
+          "name": "Ventriloquism (At Will)",
           "type": "spell",
-          "level": 6,
+          "level": 1,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
+            "auditory",
             "concentrate",
-            "manipulate",
-            "revelation"
+            "illusion",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -346,13 +347,87 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "description": "<p>Whenever you speak or make any other sound vocally, you can make your vocalization seem to originate from somewhere else within 60 feet, and you can change that apparent location freely as you vocalize. Any creature that hears the sound can attempt to disbelieve your illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell's duration increases to 1 hour, and you can also change the tone, quality, and other aspects of your voice. Before a creature can attempt to disbelieve your illusion, it must actively attempt a Perception check or otherwise use actions to interact with the sound.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "d4e6b9vvhdjFNbTf"
+          "id": "WOmi5gJbb9PPIAM8"
+        },
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KkOxFOOm34Bw1T2t"
+        },
+        {
+          "name": "Clairaudience (At Will)",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "scrying"
+          ],
+          "castingTime": "1 minute",
+          "duration": "10 minutes",
+          "range": "500 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an Invisible floating ear at a location within range (even if it's outside your line of sight or line of effect). It can't move, but you can hear through the ear as if using your normal auditory senses.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "BWPZgNFWXwjeS6rr"
+        },
+        {
+          "name": "Locate",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "Sustained up to ",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 specific object or type of object",
+          "save": "",
+          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3H4SdkRCIfT9scNh"
         },
         {
           "name": "Clairvoyance (At Will)",
@@ -480,90 +555,15 @@
           "id": "82eOb078T13bwHGH"
         },
         {
-          "name": "Clairaudience (At Will)",
+          "name": "True Seeing",
           "type": "spell",
-          "level": 3,
+          "level": 6,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate",
-            "scrying"
-          ],
-          "castingTime": "1 minute",
-          "duration": "10 minutes",
-          "range": "500 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You create an Invisible floating ear at a location within range (even if it's outside your line of sight or line of effect). It can't move, but you can hear through the ear as if using your normal auditory senses.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "BWPZgNFWXwjeS6rr"
-        },
-        {
-          "name": "Locate",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "detection",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "Sustained up to ",
-          "range": "500 feet",
-          "area": "",
-          "targets": "1 specific object or type of object",
-          "save": "",
-          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "3H4SdkRCIfT9scNh"
-        },
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "KkOxFOOm34Bw1T2t"
-        },
-        {
-          "name": "Ventriloquism (At Will)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "auditory",
-            "concentrate",
-            "illusion",
-            "manipulate"
+            "revelation"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -571,39 +571,18 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Whenever you speak or make any other sound vocally, you can make your vocalization seem to originate from somewhere else within 60 feet, and you can change that apparent location freely as you vocalize. Any creature that hears the sound can attempt to disbelieve your illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell's duration increases to 1 hour, and you can also change the tone, quality, and other aspects of your voice. Before a creature can attempt to disbelieve your illusion, it must actively attempt a Perception check or otherwise use actions to interact with the sound.</p>",
+          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "WOmi5gJbb9PPIAM8"
+          "id": "d4e6b9vvhdjFNbTf"
         }
       ],
       "lv9spells": [],
       "lv10spells": [],
       "rituals": [
-        {
-          "name": "Legend Lore",
-          "type": "ritual",
-          "level": 7,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [],
-          "castingTime": "1 day",
-          "duration": "",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You attempt to learn useful legends about a particular subject, which must be an important person, place, or thing. If the subject is present, increase the degree of success of your primary skill check by one step. If you have only vague information about the subject before attempting the ritual, decrease the degree of success of your primary skill check by one step. These modifiers cancel each other out if you have a subject present with little to no baseline information.</p>\n<hr />\n<p><strong>Critical Success</strong> You recite legends, tales, and lore about the subject over the course of an hour after the ritual ends. The information is mostly coherent, emphasizing more accurate or useful legends over those exaggerated over time.</p>\n<p><strong>Success</strong> You recite mysterious legends, tales, and lore about the subject over the course of an hour after the ritual ends. These provide useful information for further inquiry but are generally incomplete or enigmatic. As is the nature of legends, you are likely to learn multiple contradictory versions.</p>\n<p><strong>Failure</strong> You fail to learn any useful legends.</p>\n<p><strong>Critical Failure</strong> Your mind becomes lost in the past. You can't sense or respond to anything in the present for 1 week except to perform necessities like breathing and sleeping. When you return, however, you can retrain one of your skills into a Lore based on the knowledge of the past you were uncontrollably viewing, as if you had spent 1 week retraining.</p>",
-          "cast": false,
-          "cost": "rare incense worth a total value of 300 gp",
-          "primaryCheck": "Occultism (master)",
-          "secondaryCasters": 2,
-          "secondaryChecks": "Performance, Society",
-          "id": "aOAT31hOGyxx1Z6J"
-        },
         {
           "name": "Commune",
           "type": "ritual",
@@ -626,6 +605,27 @@
           "secondaryCasters": 1,
           "secondaryChecks": "Occultism or Religion (whichever is used for the primary check)",
           "id": "YbXy2whAu3skOfKl"
+        },
+        {
+          "name": "Legend Lore",
+          "type": "ritual",
+          "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [],
+          "castingTime": "1 day",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You attempt to learn useful legends about a particular subject, which must be an important person, place, or thing. If the subject is present, increase the degree of success of your primary skill check by one step. If you have only vague information about the subject before attempting the ritual, decrease the degree of success of your primary skill check by one step. These modifiers cancel each other out if you have a subject present with little to no baseline information.</p>\n<hr />\n<p><strong>Critical Success</strong> You recite legends, tales, and lore about the subject over the course of an hour after the ritual ends. The information is mostly coherent, emphasizing more accurate or useful legends over those exaggerated over time.</p>\n<p><strong>Success</strong> You recite mysterious legends, tales, and lore about the subject over the course of an hour after the ritual ends. These provide useful information for further inquiry but are generally incomplete or enigmatic. As is the nature of legends, you are likely to learn multiple contradictory versions.</p>\n<p><strong>Failure</strong> You fail to learn any useful legends.</p>\n<p><strong>Critical Failure</strong> Your mind becomes lost in the past. You can't sense or respond to anything in the present for 1 week except to perform necessities like breathing and sleeping. When you return, however, you can retrain one of your skills into a Lore based on the knowledge of the past you were uncontrollably viewing, as if you had spent 1 week retraining.</p>",
+          "cast": false,
+          "cost": "rare incense worth a total value of 300 gp",
+          "primaryCheck": "Occultism (master)",
+          "secondaryCasters": 2,
+          "secondaryChecks": "Performance, Society",
+          "id": "aOAT31hOGyxx1Z6J"
         }
       ],
       "lv1slots": {

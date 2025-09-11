@@ -448,29 +448,28 @@
       ],
       "lv8spells": [
         {
-          "name": "Spiritual Epidemic (At Will)",
+          "name": "Dispel Magic (At Will)",
           "type": "spell",
-          "level": 8,
+          "level": 2,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "curse",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "varies",
+          "duration": "",
           "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You curse the target, sapping its spirit and leaving a contagious trap in its essence. The target must attempt a Will save. Any creature that casts a divine or occult spell on the target while it's affected is targeted by spiritual epidemic and must also attempt a Will save. The curse continues to spread in this way.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 2 and Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Enfeebled 2 and Stupefied 2 for 1 minute and Enfeebled 1 and Stupefied 1 permanently.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 2 and Stupefied 3 for 1 minute and Enfeebled 2 and Stupefied 2 permanently.</p>",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "kVLMWbSRPeQyl3Oe"
+          "id": "KHXOl15PR5DH02Gu"
         },
         {
           "name": "Suggestion (At Will)",
@@ -500,32 +499,83 @@
           "id": "CTcOXdYuenSJsDQC"
         },
         {
-          "name": "Dispel Magic (At Will)",
+          "name": "Spiritual Epidemic (At Will)",
           "type": "spell",
-          "level": 2,
+          "level": 8,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "curse",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "varies",
           "range": "120 feet",
           "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You curse the target, sapping its spirit and leaving a contagious trap in its essence. The target must attempt a Will save. Any creature that casts a divine or occult spell on the target while it's affected is targeted by spiritual epidemic and must also attempt a Will save. The curse continues to spread in this way.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 2 and Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Enfeebled 2 and Stupefied 2 for 1 minute and Enfeebled 1 and Stupefied 1 permanently.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 2 and Stupefied 3 for 1 minute and Enfeebled 2 and Stupefied 2 permanently.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "KHXOl15PR5DH02Gu"
+          "id": "kVLMWbSRPeQyl3Oe"
         }
       ],
       "lv9spells": [],
       "lv10spells": [
+        {
+          "name": "Air Walk (Constant)",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 10,
+          "timesPrepared": 1,
+          "traits": [
+            "air",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "5 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "C1CsUuSohUDsve6I"
+        },
+        {
+          "name": "True Seeing (Constant)",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 10,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VTqkprtwM4tCpoqy"
+        },
         {
           "name": "Massacre",
           "type": "spell",
@@ -576,56 +626,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "9zZhaLoCGgr36JLY"
-        },
-        {
-          "name": "True Seeing (Constant)",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 10,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "revelation"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "VTqkprtwM4tCpoqy"
-        },
-        {
-          "name": "Air Walk (Constant)",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 10,
-          "timesPrepared": 1,
-          "traits": [
-            "air",
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "5 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "C1CsUuSohUDsve6I"
         }
       ],
       "rituals": [

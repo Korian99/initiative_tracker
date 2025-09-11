@@ -239,34 +239,6 @@
       "autoHeightenLevel": 4,
       "cantrips": [
         {
-          "name": "Dirge of Doom",
-          "type": "cantrip",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "bard",
-            "composition",
-            "concentrate",
-            "emotion",
-            "fear",
-            "mental"
-          ],
-          "castingTime": "1",
-          "duration": "1 round",
-          "range": "",
-          "area": "30ft emanation",
-          "targets": "",
-          "save": "",
-          "description": "<p>Foes within the area are Frightened 1. They can't reduce their Frightened value below 1 while they remain in the area.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "V5Ixu0YbpllNsonH"
-        },
-        {
           "name": "Dancing Lights",
           "type": "cantrip",
           "level": 1,
@@ -417,6 +389,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "O16kYD0edAWoSnnh"
+        },
+        {
+          "name": "Dirge of Doom",
+          "type": "cantrip",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "bard",
+            "composition",
+            "concentrate",
+            "emotion",
+            "fear",
+            "mental"
+          ],
+          "castingTime": "1",
+          "duration": "1 round",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>Foes within the area are Frightened 1. They can't reduce their Frightened value below 1 while they remain in the area.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "V5Ixu0YbpllNsonH"
         }
       ],
       "lv1spells": [
@@ -604,6 +604,31 @@
       ],
       "lv3spells": [
         {
+          "name": "Sound Burst",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sonic"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is Deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Zu6SOxjrsxHxasmS"
+        },
+        {
           "name": "Dream Message",
           "type": "spell",
           "level": 3,
@@ -653,34 +678,33 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "2Cp1n3vJPdOqsVfS"
-        },
+        }
+      ],
+      "lv4spells": [
         {
-          "name": "Sound Burst",
+          "name": "Invisibility",
           "type": "spell",
           "level": 2,
-          "heightenedLevel": 3,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
-            "concentrate",
-            "manipulate",
-            "sonic"
+            "illusion",
+            "manipulate"
           ],
           "castingTime": "2",
-          "duration": "",
-          "range": "30 feet",
-          "area": "10ft burst",
-          "targets": "",
-          "save": "fortitude",
-          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is Deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "duration": "10 minutes",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Zu6SOxjrsxHxasmS"
-        }
-      ],
-      "lv4spells": [
+          "id": "AdgGwcfIdbDOJ9ie"
+        },
         {
           "name": "Dimension Door",
           "type": "spell",
@@ -732,30 +756,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "FXzxH6rBygvTTGii"
-        },
-        {
-          "name": "Invisibility",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "illusion",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "AdgGwcfIdbDOJ9ie"
         }
       ],
       "lv5spells": [],

@@ -331,31 +331,6 @@
       "lv6spells": [],
       "lv7spells": [
         {
-          "name": "Breath of Life",
-          "type": "spell",
-          "level": 5,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "healing",
-            "vitality"
-          ],
-          "castingTime": "reaction",
-          "duration": "",
-          "range": "60 feet",
-          "area": "",
-          "targets": "the triggering creature",
-          "save": "",
-          "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from Dying and restore Hit Points to the target equal to 4d8 plus your spellcasting ability modifier. You can't use breath of life if the triggering effect was disintegrate or a death effect.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "o9Vy2vcnvhsHzho3"
-        },
-        {
           "name": "Outcast's Curse",
           "type": "spell",
           "level": 4,
@@ -407,34 +382,61 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "fYD6NH1p2Kgaosnf"
-        }
-      ],
-      "lv8spells": [
+        },
         {
-          "name": "Regenerate",
+          "name": "Breath of Life",
           "type": "spell",
-          "level": 7,
-          "heightenedLevel": 8,
+          "level": 5,
+          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "healing",
-            "manipulate",
             "vitality"
           ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "touch",
+          "castingTime": "reaction",
+          "duration": "",
+          "range": "60 feet",
           "area": "",
-          "targets": "1 willing living creature",
+          "targets": "the triggering creature",
           "save": "",
-          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
+          "description": "<p><strong>Trigger</strong> A living creature within range would die.</p>\n<hr />\n<p>Your blessing revives a creature at the moment of its death. You prevent the target from Dying and restore Hit Points to the target equal to 4d8 plus your spellcasting ability modifier. You can't use breath of life if the triggering effect was disintegrate or a death effect.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "umKYOVgL3QeAPqyn"
+          "id": "o9Vy2vcnvhsHzho3"
+        }
+      ],
+      "lv8spells": [
+        {
+          "name": "Searing Light",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "fire",
+            "good",
+            "light",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra 5d6 spirit damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double fire damage, as well as double spirit damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against fiends and undead increases by 2d6.</p>\n<p>((@item.level*2)-1)d6 Spirit Damage{Scaling Spirit Damage}</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "p77bqcCAI5k8j5mN"
         },
         {
           "name": "Repulsion",
@@ -463,107 +465,57 @@
           "id": "Uzpcm4cC0d0vWXkF"
         },
         {
-          "name": "Searing Light",
+          "name": "Regenerate",
           "type": "spell",
-          "level": 3,
+          "level": 7,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
-            "attack",
             "concentrate",
-            "fire",
-            "good",
-            "light",
-            "manipulate"
+            "healing",
+            "manipulate",
+            "vitality"
           ],
           "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
+          "duration": "1 minute",
+          "range": "touch",
           "area": "",
-          "targets": "1 creature",
+          "targets": "1 willing living creature",
           "save": "",
-          "description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra 5d6 spirit damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double fire damage, as well as double spirit damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against fiends and undead increases by 2d6.</p>\n<p>((@item.level*2)-1)d6 Spirit Damage{Scaling Spirit Damage}</p>",
+          "description": "<p>An infusion of vitality energy grants a creature continuous healing. The target temporarily gains regeneration 15, which restores 15 Hit Points to it at the start of each of its turns. While it has regeneration, the target can't die from damage and its Dying condition can't increase to a value that would kill it (this stops most creatures from going beyond dying 3), though if its Wounded value becomes 4 or higher, it stays Unconscious until its wounds are treated. If the target takes acid or fire damage, its regeneration deactivates until after the end of its next turn. Each time the creature regains Hit Points from regeneration, it also regrows one damaged or ruined organ (if any). During the spell's duration, the creature can also reattach severed body parts by spending an Interact action to hold the body part to the area it was severed from.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The regeneration increases to 20.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "p77bqcCAI5k8j5mN"
+          "id": "umKYOVgL3QeAPqyn"
         }
       ],
       "lv9spells": [
         {
-          "name": "Energy Aegis",
+          "name": "Heal",
           "type": "spell",
-          "level": 7,
+          "level": 1,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "1 minute",
-          "duration": "24 hours",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "S2SyQuDfQP88YdUu"
-        },
-        {
-          "name": "True Seeing",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
+            "healing",
             "manipulate",
-            "revelation"
+            "vitality"
           ],
-          "castingTime": "2",
-          "duration": "10 minutes",
-          "range": "",
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
           "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "icwAbuIXOBEAuDrq"
-        },
-        {
-          "name": "Spell Immunity",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 9,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "24 hours",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You ward a creature against the effects of a single spell. Choose a spell and name it aloud as part of the verbal component. Spell immunity attempts to counteract that spell whenever spell immunity's target is the target of the named spell or in that spell's area. Successfully counteracting a spell that targets an area or multiple targets with spell immunity negates the effects only for the target affected by spell immunity.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "jH15DO7k1mUA2BSm"
+          "id": "BkgNqUtqiv9Yea41"
         },
         {
           "name": "Heroism",
@@ -591,29 +543,77 @@
           "id": "U6Bbd7KDi2DYF6qO"
         },
         {
-          "name": "Heal",
+          "name": "Spell Immunity",
           "type": "spell",
-          "level": 1,
+          "level": 4,
           "heightenedLevel": 9,
           "timesPrepared": 1,
           "traits": [
-            "healing",
-            "manipulate",
-            "vitality"
+            "concentrate",
+            "manipulate"
           ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
+          "castingTime": "2",
+          "duration": "24 hours",
+          "range": "touch",
           "area": "",
-          "targets": "1 willing living creature or 1 undead",
-          "save": "Basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You ward a creature against the effects of a single spell. Choose a spell and name it aloud as part of the verbal component. Spell immunity attempts to counteract that spell whenever spell immunity's target is the target of the named spell or in that spell's area. Successfully counteracting a spell that targets an area or multiple targets with spell immunity negates the effects only for the target affected by spell immunity.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "BkgNqUtqiv9Yea41"
+          "id": "jH15DO7k1mUA2BSm"
+        },
+        {
+          "name": "True Seeing",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "revelation"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "icwAbuIXOBEAuDrq"
+        },
+        {
+          "name": "Energy Aegis",
+          "type": "spell",
+          "level": 7,
+          "heightenedLevel": 9,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "1 minute",
+          "duration": "24 hours",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "S2SyQuDfQP88YdUu"
         }
       ],
       "lv10spells": [],

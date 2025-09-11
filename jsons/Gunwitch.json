@@ -319,7 +319,7 @@
           "name": "Daze",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -345,7 +345,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -370,7 +370,7 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -392,35 +392,10 @@
           "id": "7BMJfUVD2ZLMPU2c"
         },
         {
-          "name": "Nudge Fate",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "hex",
-            "witch"
-          ],
-          "castingTime": "1",
-          "duration": "1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The barest spin of your patron's spool is enough to alter fate. When the target fails an attack roll, skill check, or saving throw and a +1 status bonus would turn a critical failure into a failure, or failure into a success, you grant the target a +1 status bonus to the check retroactively, changing the outcome appropriately. The spell then ends.</p>\n<p>If you cast nudge fate while a previous casting of this hex is still in effect, the previous effect ends</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "EvkO4qwEVU6O4aJH"
-        },
-        {
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -445,7 +420,7 @@
           "name": "Telekinetic Projectile",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -493,31 +468,28 @@
           "id": "e6XVJgFTeTXbxfrW"
         },
         {
-          "name": "Phantom Pain",
+          "name": "Enfeeble",
           "type": "spell",
           "level": 1,
           "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "illusion",
-            "manipulate",
-            "mental",
-            "nonlethal"
+            "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "varies",
           "range": "30 feet",
           "area": "",
           "targets": "1 creature",
-          "save": "will",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and (@item.level)d4 Persistent,mental Damage damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
+          "save": "fortitude",
+          "description": "<p>You sap the target's strength, depending on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Enfeebled 1 until the start of your next turn.</p>\n<p><strong>Failure</strong> The target is Enfeebled 2 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Enfeebled 3 for 1 minute.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "x15m4P3bETaObrSH"
+          "id": "e6XVJgFTeTXbxfrW"
         },
         {
           "name": "Sure Strike",
@@ -569,6 +541,32 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "kRs7TUXTtBtzqxgA"
+        },
+        {
+          "name": "Telekinetic Maneuver",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "force",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>With a rush of telekinetic power, you move a foe or something they carry. You can attempt to Disarm, Shove, Reposition, or Trip the target using a spell attack roll instead of an Athletics check.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1wYlZTCZpBluZIu5"
         },
         {
           "name": "Telekinetic Maneuver",
@@ -724,6 +722,33 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "QpBFmT8fnD0I9ncG"
+        },
+        {
+          "name": "Phantom Pain",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and (@item.level)d4 Persistent,mental Damage damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "x15m4P3bETaObrSH"
         }
       ],
       "lv5spells": [],

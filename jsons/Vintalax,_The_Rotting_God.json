@@ -699,6 +699,33 @@
       ],
       "lv3spells": [
         {
+          "name": "Fear",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8aNubmfA3Yz1hY5s"
+        },
+        {
           "name": "Haste",
           "type": "spell",
           "level": 3,
@@ -771,36 +798,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "5SHxsafXgk2isM0F"
-        },
+        }
+      ],
+      "lv4spells": [
         {
-          "name": "Fear",
+          "name": "Lightning Bolt",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
+          "level": 3,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "emotion",
-            "fear",
-            "manipulate",
-            "mental"
+            "electricity",
+            "manipulate"
           ],
           "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "duration": "",
+          "range": "",
+          "area": "120ft line",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "8aNubmfA3Yz1hY5s"
-        }
-      ],
-      "lv4spells": [
+          "id": "Bthwe9txDtdgvkIW"
+        },
         {
           "name": "Confusion",
           "type": "spell",
@@ -882,34 +907,36 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "tcpQNwgcoyS73A7L"
-        },
+        }
+      ],
+      "lv5spells": [
         {
-          "name": "Lightning Bolt",
+          "name": "Command",
           "type": "spell",
-          "level": 3,
-          "heightenedLevel": 4,
+          "level": 1,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
+            "auditory",
             "concentrate",
-            "electricity",
-            "manipulate"
+            "linguistic",
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
-          "duration": "",
-          "range": "",
-          "area": "120ft line",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
+          "duration": "until the end of the target's next turn",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the Fleeing condition), release what it's holding, drop Prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "Bthwe9txDtdgvkIW"
-        }
-      ],
-      "lv5spells": [
+          "id": "xoYZY3JU5KHU2a6g"
+        },
         {
           "name": "Banishment",
           "type": "spell",
@@ -986,33 +1013,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "5rnm3X5sDe4JCG9P"
-        },
-        {
-          "name": "Command",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "auditory",
-            "concentrate",
-            "linguistic",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "until the end of the target's next turn",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the Fleeing condition), release what it's holding, drop Prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "xoYZY3JU5KHU2a6g"
         }
       ],
       "lv6spells": [
@@ -1121,6 +1121,31 @@
       ],
       "lv7spells": [
         {
+          "name": "Force Barrage",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "force",
+            "manipulate"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You fire a shard of solidified magic toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of shards you shoot by one, to a maximum of three shards for 3 actions. You choose the target for each shard individually. If you shoot more than one shard at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You fire one additional shard with each action you spend.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "IHhdFsIDdNFInS7C"
+        },
+        {
           "name": "Duplicate Foe",
           "type": "spell",
           "level": 7,
@@ -1199,31 +1224,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "AAIU9wR0FDs4ww3Y"
-        },
-        {
-          "name": "Force Barrage",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "force",
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You fire a shard of solidified magic toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of shards you shoot by one, to a maximum of three shards for 3 actions. You choose the target for each shard individually. If you shoot more than one shard at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You fire one additional shard with each action you spend.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "IHhdFsIDdNFInS7C"
         }
       ],
       "lv8spells": [],

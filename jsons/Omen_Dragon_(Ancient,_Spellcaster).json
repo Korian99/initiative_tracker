@@ -349,13 +349,13 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 8,
+      "autoHeightenLevel": 7,
       "cantrips": [
         {
           "name": "Daze",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -381,7 +381,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -403,33 +403,10 @@
           "id": "3LUOmDF9qyRIJFmO"
         },
         {
-          "name": "Guidance",
-          "type": "cantrip",
-          "level": 1,
-          "heightenedLevel": 1,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate"
-          ],
-          "castingTime": "1",
-          "duration": "until the start of your next turn",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "7XzLfr68NBchBK3g"
-        },
-        {
           "name": "Know the Way",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -454,7 +431,7 @@
           "name": "Message",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "auditory",
@@ -482,7 +459,7 @@
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -715,7 +692,7 @@
           "name": "Locate",
           "type": "spell",
           "level": 3,
-          "heightenedLevel": 3,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -817,29 +794,29 @@
       ],
       "lv5spells": [
         {
-          "name": "Sending",
+          "name": "Locate",
           "type": "spell",
-          "level": 5,
+          "level": 3,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate",
-            "mental"
+            "detection",
+            "manipulate"
           ],
-          "castingTime": "3",
-          "duration": "",
-          "range": "planetary",
+          "castingTime": "10 minutes",
+          "duration": "Sustained up to ",
+          "range": "500 feet",
           "area": "",
-          "targets": "1 creature you know well",
+          "targets": "1 specific object or type of object",
           "save": "",
-          "description": "<p>You send the creature a mental message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer.</p>",
+          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "FOLDTQ6VbBn3Agkr"
+          "id": "Z4x7zKw3q98wGY2i"
         },
         {
           "name": "Wave of Despair",
@@ -866,36 +843,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "Bwxo4aC7oKGQ0jys"
-        }
-      ],
-      "lv6spells": [
+        },
         {
-          "name": "Never Mind",
+          "name": "Sending",
           "type": "spell",
-          "level": 6,
-          "heightenedLevel": 6,
+          "level": 5,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "curse",
-            "incapacitation",
             "manipulate",
             "mental"
           ],
-          "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
+          "castingTime": "3",
+          "duration": "",
+          "range": "planetary",
           "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Stupefied 4 with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>",
+          "targets": "1 creature you know well",
+          "save": "",
+          "description": "<p>You send the creature a mental message of 25 words or fewer, and it can respond immediately with its own message of 25 words or fewer.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "aaHE1oMgkZW0DFFs"
-        },
+          "id": "FOLDTQ6VbBn3Agkr"
+        }
+      ],
+      "lv6spells": [
         {
           "name": "Repulsion",
           "type": "spell",
@@ -975,54 +950,31 @@
       ],
       "lv7spells": [
         {
-          "name": "True Target",
+          "name": "Never Mind",
           "type": "spell",
-          "level": 7,
+          "level": 6,
           "heightenedLevel": 7,
-          "timesPrepared": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "fortune",
-            "prediction"
+            "curse",
+            "incapacitation",
+            "manipulate",
+            "mental"
           ],
-          "castingTime": "1",
-          "duration": "until the start of your next turn",
-          "range": "60 feet",
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
           "area": "",
-          "targets": "4 creatures",
-          "save": "",
-          "description": "<p>You delve into the possible futures of the next few seconds to understand all the ways your foe might avoid harm, then cast out a vision of that future to those around you. Designate a creature. The first time each target makes an attack roll against that creature during <em>true target</em>'s duration, the attacker rolls twice and uses the better result. The attacker also ignores circumstance penalties to the attack roll and any flat check required due to the designated creature being Concealed or Hidden.</p>\n<p></p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Stupefied 4 with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "9F92yloP2T2bGaUP"
-        },
-        {
-          "name": "True Target",
-          "type": "spell",
-          "level": 7,
-          "heightenedLevel": 7,
-          "timesPrepared": 2,
-          "traits": [
-            "concentrate",
-            "fortune",
-            "prediction"
-          ],
-          "castingTime": "1",
-          "duration": "until the start of your next turn",
-          "range": "60 feet",
-          "area": "",
-          "targets": "4 creatures",
-          "save": "",
-          "description": "<p>You delve into the possible futures of the next few seconds to understand all the ways your foe might avoid harm, then cast out a vision of that future to those around you. Designate a creature. The first time each target makes an attack roll against that creature during <em>true target</em>'s duration, the attacker rolls twice and uses the better result. The attacker also ignores circumstance penalties to the attack roll and any flat check required due to the designated creature being Concealed or Hidden.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "9F92yloP2T2bGaUP"
+          "id": "aaHE1oMgkZW0DFFs"
         },
         {
           "name": "Visions of Danger",
@@ -1077,85 +1029,9 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "AfT9IGiZNZ5IYThD"
-        },
-        {
-          "name": "Ill Omen (At Will)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "curse",
-            "manipulate",
-            "misfortune"
-          ],
-          "castingTime": "2",
-          "duration": "1 round",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>The target is struck with misfortune, which throws it off balance. The target must attempt a Will save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The first time during the duration that the target attempts an attack roll or skill check, it must roll twice and use the worse result.</p>\n<p><strong>Critical Failure</strong> Every time during the duration that the target attempts an attack roll or skill check, it must roll twice and use the worse result.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "X1luRk1ntqK4kzhX"
-        },
-        {
-          "name": "Mindlink (At Will)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>You link your mind to the target's mind and mentally impart to that target an amount of information in an instant that could otherwise be communicated in 10 minutes.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "hrmtIrfszoCMEi3f"
         }
       ],
-      "lv8spells": [
-        {
-          "name": "Retrocognition",
-          "type": "spell",
-          "level": 7,
-          "heightenedLevel": 8,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "1 minute",
-          "duration": "Sustained up to ",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>Opening your mind to mental echoes, you gain impressions from past events that occurred in your current location. <em>Retrocognition</em> reveals psychic impressions from events that occurred over the course of the last day throughout the first minute of the duration, followed by impressions from the next day back the next minute, and so on. These echoes don't play out like a vision but instead reveal impressions of emotions and metaphors that provide cryptic clues and details of the past. If you witness a traumatic or turbulent event through an impression, the spell ends unless you succeed at a Will save with a DC of at least 30 and possibly as much as 50, depending on the severity of the event. The GM determines whether an event is traumatic and chooses the DC.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You gain impressions of events that occurred over the previous year for each minute you concentrate, instead of the previous day, though the details diminish, making it harder to distinguish impressions from all but the most major events.</p>\n<p><strong>Heightened (9th)</strong> You gain impressions of events that occurred over the previous century for each minute you concentrate, instead of the previous day, though the details diminish, making it almost impossible to distinguish impressions from all but the most major events.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "rYyn5DkNuX58nhLl"
-        }
-      ],
+      "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
       "rituals": [],
@@ -1215,7 +1091,7 @@
           "name": "Daze",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1241,7 +1117,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1289,7 +1165,7 @@
           "name": "Know the Way",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1314,7 +1190,7 @@
           "name": "Message",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "auditory",
@@ -1342,7 +1218,7 @@
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -1570,31 +1446,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "9gaIiw1FDvQuU1ZO"
-        },
-        {
-          "name": "Locate",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 3,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "detection",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "Sustained up to ",
-          "range": "500 feet",
-          "area": "",
-          "targets": "1 specific object or type of object",
-          "save": "",
-          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "Z4x7zKw3q98wGY2i"
         }
       ],
       "lv4spells": [
@@ -1677,6 +1528,31 @@
       ],
       "lv5spells": [
         {
+          "name": "Locate",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "Sustained up to ",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 specific object or type of object",
+          "save": "",
+          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Z4x7zKw3q98wGY2i"
+        },
+        {
           "name": "Sending",
           "type": "spell",
           "level": 5,
@@ -1729,33 +1605,6 @@
         }
       ],
       "lv6spells": [
-        {
-          "name": "Never Mind",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "curse",
-            "incapacitation",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Stupefied 4 with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "aaHE1oMgkZW0DFFs"
-        },
         {
           "name": "Repulsion",
           "type": "spell",
@@ -1834,6 +1683,84 @@
         }
       ],
       "lv7spells": [
+        {
+          "name": "Ill Omen (At Will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "manipulate",
+            "misfortune"
+          ],
+          "castingTime": "2",
+          "duration": "1 round",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>The target is struck with misfortune, which throws it off balance. The target must attempt a Will save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The first time during the duration that the target attempts an attack roll or skill check, it must roll twice and use the worse result.</p>\n<p><strong>Critical Failure</strong> Every time during the duration that the target attempts an attack roll or skill check, it must roll twice and use the worse result.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "X1luRk1ntqK4kzhX"
+        },
+        {
+          "name": "Mindlink (At Will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You link your mind to the target's mind and mentally impart to that target an amount of information in an instant that could otherwise be communicated in 10 minutes.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "hrmtIrfszoCMEi3f"
+        },
+        {
+          "name": "Never Mind",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "curse",
+            "incapacitation",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You drastically reduce the target's mental faculties. The target must attempt a Will save. The effects of this curse can be removed only through effects that target curses.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stupefied 2 for 1 round.</p>\n<p><strong>Failure</strong> The target is Stupefied 4 with an unlimited duration.</p>\n<p><strong>Critical Failure</strong> The target's intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, they become an NPC under the GM's control.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "aaHE1oMgkZW0DFFs"
+        },
         {
           "name": "True Target",
           "type": "spell",
@@ -1937,57 +1864,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "AfT9IGiZNZ5IYThD"
-        },
-        {
-          "name": "Ill Omen (At Will)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "curse",
-            "manipulate",
-            "misfortune"
-          ],
-          "castingTime": "2",
-          "duration": "1 round",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>The target is struck with misfortune, which throws it off balance. The target must attempt a Will save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The first time during the duration that the target attempts an attack roll or skill check, it must roll twice and use the worse result.</p>\n<p><strong>Critical Failure</strong> Every time during the duration that the target attempts an attack roll or skill check, it must roll twice and use the worse result.</p>\n<p></p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "X1luRk1ntqK4kzhX"
-        },
-        {
-          "name": "Mindlink (At Will)",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "mental"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>You link your mind to the target's mind and mentally impart to that target an amount of information in an instant that could otherwise be communicated in 10 minutes.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "hrmtIrfszoCMEi3f"
         }
       ],
       "lv8spells": [

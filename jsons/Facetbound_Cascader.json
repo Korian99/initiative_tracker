@@ -605,6 +605,31 @@
       ],
       "lv4spells": [
         {
+          "name": "Fireball",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "scdIyJOoJ2f6fVqN"
+        },
+        {
           "name": "Fly",
           "type": "spell",
           "level": 4,
@@ -652,34 +677,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "fMyCSnMDZsRznHBY"
-        },
+        }
+      ],
+      "lv5spells": [
         {
-          "name": "Fireball",
+          "name": "Magic Missile",
           "type": "spell",
-          "level": 3,
-          "heightenedLevel": 4,
+          "level": 1,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "fire",
+            "force",
             "manipulate"
           ],
-          "castingTime": "2",
+          "castingTime": "1 to 3",
           "duration": "",
-          "range": "500 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "scdIyJOoJ2f6fVqN"
-        }
-      ],
-      "lv5spells": [
+          "id": "0LpIcii2FUwOWS04"
+        },
         {
           "name": "Cloudkill",
           "type": "spell",
@@ -730,34 +755,35 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "jyULQAUA6tpRIgxG"
-        },
+        }
+      ],
+      "lv6spells": [
         {
-          "name": "Magic Missile",
+          "name": "Acid Arrow",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 5,
+          "level": 2,
+          "heightenedLevel": 6,
           "timesPrepared": 1,
           "traits": [
+            "acid",
+            "attack",
             "concentrate",
-            "force",
             "manipulate"
           ],
-          "castingTime": "1 to 3",
+          "castingTime": "2",
           "duration": "",
           "range": "120 feet",
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>",
+          "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus (floor(@item.rank/2))d6 Persistent,acid Damage damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "0LpIcii2FUwOWS04"
-        }
-      ],
-      "lv6spells": [
+          "id": "9BdKF0urwMXD8Xoi"
+        },
         {
           "name": "Chain Lightning",
           "type": "spell",
@@ -808,15 +834,16 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "hctBW0Iac2loNQ4u"
-        },
+        }
+      ],
+      "lv7spells": [
         {
-          "name": "Acid Arrow",
+          "name": "Disintegrate",
           "type": "spell",
-          "level": 2,
-          "heightenedLevel": 6,
+          "level": 6,
+          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
-            "acid",
             "attack",
             "concentrate",
             "manipulate"
@@ -825,18 +852,16 @@
           "duration": "",
           "range": "120 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus (floor(@item.rank/2))d6 Persistent,acid Damage damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
+          "targets": "1 creature or unattended object",
+          "save": "Basic fortitude",
+          "description": "<p>You fire a green ray at your target. Make a spell attack. On a hit, you deal 12d10 damage, and the target must attempt a basic Fortitude save. On a critical hit, treat the save result as one degree worse. A creature reduced to 0 HP is reduced to fine powder; its gear remains. An object you hit is destroyed (no save), regardless of Hardness, unless it's an artifact or similarly hard to destroy. A single casting can destroy no more than a 10-foot cube of matter. This automatically destroys any force construct, such as a wall of force.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "9BdKF0urwMXD8Xoi"
-        }
-      ],
-      "lv7spells": [
+          "id": "4HrUm7cf8fxnPQrI"
+        },
         {
           "name": "Power Word Blind",
           "type": "spell",
@@ -886,31 +911,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "HbQTwPXYXFcBq5ql"
-        },
-        {
-          "name": "Disintegrate",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "attack",
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 creature or unattended object",
-          "save": "Basic fortitude",
-          "description": "<p>You fire a green ray at your target. Make a spell attack. On a hit, you deal 12d10 damage, and the target must attempt a basic Fortitude save. On a critical hit, treat the save result as one degree worse. A creature reduced to 0 HP is reduced to fine powder; its gear remains. An object you hit is destroyed (no save), regardless of Hardness, unless it's an artifact or similarly hard to destroy. A single casting can destroy no more than a 10-foot cube of matter. This automatically destroys any force construct, such as a wall of force.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d10.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "4HrUm7cf8fxnPQrI"
         }
       ],
       "lv8spells": [

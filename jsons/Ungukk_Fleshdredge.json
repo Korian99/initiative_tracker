@@ -737,6 +737,30 @@
       ],
       "lv4spells": [
         {
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "mfGFqgisEwbu5fQd"
+        },
+        {
           "name": "Divine Wrath",
           "type": "spell",
           "level": 4,
@@ -785,33 +809,34 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "raifQOAEypzYFGJ5"
-        },
+        }
+      ],
+      "lv5spells": [
         {
-          "name": "Harm",
+          "name": "Summon Undead",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 4,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
+            "concentrate",
             "manipulate",
-            "void"
+            "summon"
           ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
+          "castingTime": "3",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
           "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "Basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "targets": "",
+          "save": "",
+          "description": "<p>You summon a creature that has the undead trait and whose level is -1 to fight for you.</p>\n<hr />\n<p><strong>Heightened</strong> As listed in the summon trait.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "mfGFqgisEwbu5fQd"
-        }
-      ],
-      "lv5spells": [
+          "id": "LAqCl2vjucXt1Rfe"
+        },
         {
           "name": "Shadow Blast",
           "type": "spell",
@@ -862,31 +887,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "n7nED9RKT5yVIUGo"
-        },
-        {
-          "name": "Summon Undead",
-          "type": "spell",
-          "level": 1,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "summon"
-          ],
-          "castingTime": "3",
-          "duration": "Sustained up to 1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You summon a creature that has the undead trait and whose level is -1 to fight for you.</p>\n<hr />\n<p><strong>Heightened</strong> As listed in the summon trait.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "LAqCl2vjucXt1Rfe"
         }
       ],
       "lv6spells": [
@@ -948,27 +948,6 @@
       "lv10spells": [],
       "rituals": [
         {
-          "name": "Call Spirit",
-          "type": "ritual",
-          "level": 5,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [],
-          "castingTime": "1 hour",
-          "duration": "up to 10 minutes",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You tear the veil to the afterlife and call a spirit from its final resting place. You must call the spirit by name, and you must provide a connection to the spirit, such as a possession, a garment, or a piece of its corpse. A spirit unwilling to heed your call can attempt a Will save to avoid it; on a critical success, a trickster spirit Impersonates the spirit you meant to call. The DC of the Will save is 2 lower if you haven't met the spirit in life. Either way, the spirit appears as a wispy form of the creature you meant to call. Each minute of the duration, you can ask the spirit a question. It can answer how it pleases or even refuse to answer. If the spirit isn't in the afterlife (such as if it's an undead), all results other than critical failures use the failure effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The spirit is particularly cooperative, and even if it has strong reasons to deceive you, it takes a -2 circumstance penalty to its Deception checks.</p>\n<p><strong>Success</strong> You call the spirit.</p>\n<p><strong>Failure</strong> You fail to call a spirit.</p>\n<p><strong>Critical Failure</strong> One or more evil spirits appear and attack.</p>",
-          "cast": false,
-          "cost": "rare candles and incense worth a total value of 50 gp",
-          "primaryCheck": "Occultism (expert) or Religion (expert)",
-          "secondaryCasters": 1,
-          "secondaryChecks": "Occultism or Religion (whichever isn't used for the primary check)",
-          "id": "VdTep32qnRaz2lPw"
-        },
-        {
           "name": "Create Undead",
           "type": "ritual",
           "level": 2,
@@ -990,6 +969,27 @@
           "secondaryCasters": 1,
           "secondaryChecks": "Religion",
           "id": "fOeVCVbC2swaLOz8"
+        },
+        {
+          "name": "Call Spirit",
+          "type": "ritual",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [],
+          "castingTime": "1 hour",
+          "duration": "up to 10 minutes",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You tear the veil to the afterlife and call a spirit from its final resting place. You must call the spirit by name, and you must provide a connection to the spirit, such as a possession, a garment, or a piece of its corpse. A spirit unwilling to heed your call can attempt a Will save to avoid it; on a critical success, a trickster spirit Impersonates the spirit you meant to call. The DC of the Will save is 2 lower if you haven't met the spirit in life. Either way, the spirit appears as a wispy form of the creature you meant to call. Each minute of the duration, you can ask the spirit a question. It can answer how it pleases or even refuse to answer. If the spirit isn't in the afterlife (such as if it's an undead), all results other than critical failures use the failure effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The spirit is particularly cooperative, and even if it has strong reasons to deceive you, it takes a -2 circumstance penalty to its Deception checks.</p>\n<p><strong>Success</strong> You call the spirit.</p>\n<p><strong>Failure</strong> You fail to call a spirit.</p>\n<p><strong>Critical Failure</strong> One or more evil spirits appear and attack.</p>",
+          "cast": false,
+          "cost": "rare candles and incense worth a total value of 50 gp",
+          "primaryCheck": "Occultism (expert) or Religion (expert)",
+          "secondaryCasters": 1,
+          "secondaryChecks": "Occultism or Religion (whichever isn't used for the primary check)",
+          "id": "VdTep32qnRaz2lPw"
         }
       ],
       "lv1slots": {

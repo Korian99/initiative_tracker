@@ -280,7 +280,7 @@
           "name": "Chill Touch",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -305,7 +305,7 @@
           "name": "Daze",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -331,7 +331,7 @@
           "name": "Electric Arc",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -356,7 +356,7 @@
           "name": "Prestidigitation",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -380,7 +380,7 @@
           "name": "Produce Flame",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -404,38 +404,40 @@
         }
       ],
       "lv1spells": [],
-      "lv2spells": [
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
         {
-          "name": "Dispel Magic",
+          "name": "Blink",
           "type": "spell",
-          "level": 2,
-          "heightenedLevel": 2,
+          "level": 4,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "teleportation"
           ],
           "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
+          "duration": "1 minute",
+          "range": "",
           "area": "",
-          "targets": "1 spell effect or unattended magic item",
+          "targets": "",
           "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "description": "<p>You blink quickly between the Material Plane and the Ethereal Plane. You gain resistance 5 to all damage (except force). You can Sustain the Spell to vanish and reappear 10 feet away in a random direction determined by the GM; the movement doesn't trigger reactions. At the end of your turn, you vanish and reappear as above.</p>\n<p>{Spell Effect: Blink}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistance increases by 3.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2AZRU4wLNEIqKwiR"
-        }
-      ],
-      "lv3spells": [
+          "id": "5jduqVA40dFhhNIy"
+        },
         {
           "name": "Slow",
           "type": "spell",
           "level": 3,
-          "heightenedLevel": 3,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -456,34 +458,6 @@
           "id": "KjPxJjIzmSI9X8QG"
         }
       ],
-      "lv4spells": [
-        {
-          "name": "Blink",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "teleportation"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You blink quickly between the Material Plane and the Ethereal Plane. You gain resistance 5 to all damage (except force). You can Sustain the Spell to vanish and reappear 10 feet away in a random direction determined by the GM; the movement doesn't trigger reactions. At the end of your turn, you vanish and reappear as above.</p>\n<p>{Spell Effect: Blink}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistance increases by 3.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "5jduqVA40dFhhNIy"
-        }
-      ],
-      "lv5spells": [],
       "lv6spells": [
         {
           "name": "Chain Lightning",
@@ -538,6 +512,30 @@
       ],
       "lv7spells": [
         {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "2AZRU4wLNEIqKwiR"
+        },
+        {
           "name": "Prismatic Spray",
           "type": "spell",
           "level": 7,
@@ -566,29 +564,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
-      "rituals": [
-        {
-          "name": "Legend Lore",
-          "type": "ritual",
-          "level": 7,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [],
-          "castingTime": "1 day",
-          "duration": "",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You attempt to learn useful legends about a particular subject, which must be an important person, place, or thing. If the subject is present, increase the degree of success of your primary skill check by one step. If you have only vague information about the subject before attempting the ritual, decrease the degree of success of your primary skill check by one step. These modifiers cancel each other out if you have a subject present with little to no baseline information.</p>\n<hr />\n<p><strong>Critical Success</strong> You recite legends, tales, and lore about the subject over the course of an hour after the ritual ends. The information is mostly coherent, emphasizing more accurate or useful legends over those exaggerated over time.</p>\n<p><strong>Success</strong> You recite mysterious legends, tales, and lore about the subject over the course of an hour after the ritual ends. These provide useful information for further inquiry but are generally incomplete or enigmatic. As is the nature of legends, you are likely to learn multiple contradictory versions.</p>\n<p><strong>Failure</strong> You fail to learn any useful legends.</p>\n<p><strong>Critical Failure</strong> Your mind becomes lost in the past. You can't sense or respond to anything in the present for 1 week except to perform necessities like breathing and sleeping. When you return, however, you can retrain one of your skills into a Lore based on the knowledge of the past you were uncontrollably viewing, as if you had spent 1 week retraining.</p>",
-          "cast": false,
-          "cost": "rare incense worth a total value of 300 gp",
-          "primaryCheck": "Occultism (master)",
-          "secondaryCasters": 2,
-          "secondaryChecks": "Performance, Society",
-          "id": "zPVB6lALA6Ou0z6q"
-        }
-      ],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0

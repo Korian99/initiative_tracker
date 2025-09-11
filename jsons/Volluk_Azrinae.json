@@ -513,6 +513,32 @@
       ],
       "lv2spells": [
         {
+          "name": "Illusory Disguise",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bgmVhjf0Jv53tUmE"
+        },
+        {
           "name": "Comprehend Language",
           "type": "spell",
           "level": 2,
@@ -635,35 +661,36 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "xDSW9L3ahNNwypcg"
-        },
+        }
+      ],
+      "lv3spells": [
         {
-          "name": "Illusory Disguise",
+          "name": "Phantom Pain",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 2,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "illusion",
             "manipulate",
-            "visual"
+            "mental",
+            "nonlethal"
           ],
           "castingTime": "2",
-          "duration": "1 hour",
-          "range": "",
+          "duration": "1 minute",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p></p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "bgmVhjf0Jv53tUmE"
-        }
-      ],
-      "lv3spells": [
+          "id": "zHtWxcnUROYZpGyo"
+        },
         {
           "name": "Bind Undead",
           "type": "spell",
@@ -739,36 +766,33 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "ISCYKD3hBYRpEzot"
-        },
+        }
+      ],
+      "lv4spells": [
         {
-          "name": "Phantom Pain",
+          "name": "Worm's Repast",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
+          "level": 2,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "illusion",
-            "manipulate",
-            "mental",
-            "nonlethal"
+            "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "see description",
           "range": "30 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
+          "targets": "1 corporeal creature",
+          "save": "fortitude",
+          "description": "<p>Gnawing worms materialize within the flesh of the target creature, dealing 4d6 piercing damage and floor(@item.level/2)d6 Persistent,piercing Damage damage. If the target is a non-skeletal corporeal undead creature, you deal an extra floor((@item.level/2)+1)d6 Persistent,piercing Damage damage. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The worms writhe away harmlessly and the target takes no damage.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage and is Off-Guard due to the pain for as long as it takes persistent damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the initial damage and is also Slowed 1 by the pain for as long as it takes persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial and persistent damage increase by 2d6 and 1d6, respectively</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "zHtWxcnUROYZpGyo"
-        }
-      ],
-      "lv4spells": [
+          "id": "OzMO2qS8ctwTcWYh"
+        },
         {
           "name": "Dimension Door",
           "type": "spell",
@@ -820,30 +844,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "BilqcjtBA6ZeAUP7"
-        },
-        {
-          "name": "Worm's Repast",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "see description",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 corporeal creature",
-          "save": "fortitude",
-          "description": "<p>Gnawing worms materialize within the flesh of the target creature, dealing 4d6 piercing damage and floor(@item.level/2)d6 Persistent,piercing Damage damage. If the target is a non-skeletal corporeal undead creature, you deal an extra floor((@item.level/2)+1)d6 Persistent,piercing Damage damage. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The worms writhe away harmlessly and the target takes no damage.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage and is Off-Guard due to the pain for as long as it takes persistent damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the initial damage and is also Slowed 1 by the pain for as long as it takes persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial and persistent damage increase by 2d6 and 1d6, respectively</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "OzMO2qS8ctwTcWYh"
         }
       ],
       "lv5spells": [],
@@ -1202,6 +1202,32 @@
       ],
       "lv2spells": [
         {
+          "name": "Illusory Disguise",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p></p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "bgmVhjf0Jv53tUmE"
+        },
+        {
           "name": "Comprehend Language",
           "type": "spell",
           "level": 2,
@@ -1324,35 +1350,36 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "xDSW9L3ahNNwypcg"
-        },
+        }
+      ],
+      "lv3spells": [
         {
-          "name": "Illusory Disguise",
+          "name": "Phantom Pain",
           "type": "spell",
           "level": 1,
-          "heightenedLevel": 2,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
             "illusion",
             "manipulate",
-            "visual"
+            "mental",
+            "nonlethal"
           ],
           "castingTime": "2",
-          "duration": "1 hour",
-          "range": "",
+          "duration": "1 minute",
+          "range": "30 feet",
           "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.</p>\n<p>Casting illusory disguise counts as setting up a disguise for the Impersonate use of Deception; it ignores any circumstance penalties you might take for disguising yourself as a dissimilar creature, it gives you a +4 status bonus to Deception checks to prevent others from seeing through your disguise, and you add your level even if you're untrained. You can Dismiss this spell.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p><strong>Heightened (3rd)</strong> You can appear as any creature of the same size, even a specific individual. You must have seen an individual to take on their appearance. The spell also disguises your voice and scent, and it gains the auditory and olfactory traits.</p>\n<p></p>",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "bgmVhjf0Jv53tUmE"
-        }
-      ],
-      "lv3spells": [
+          "id": "zHtWxcnUROYZpGyo"
+        },
         {
           "name": "Bind Undead",
           "type": "spell",
@@ -1428,36 +1455,33 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "ISCYKD3hBYRpEzot"
-        },
+        }
+      ],
+      "lv4spells": [
         {
-          "name": "Phantom Pain",
+          "name": "Worm's Repast",
           "type": "spell",
-          "level": 1,
-          "heightenedLevel": 3,
+          "level": 2,
+          "heightenedLevel": 4,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "illusion",
-            "manipulate",
-            "mental",
-            "nonlethal"
+            "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "see description",
           "range": "30 feet",
           "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
+          "targets": "1 corporeal creature",
+          "save": "fortitude",
+          "description": "<p>Gnawing worms materialize within the flesh of the target creature, dealing 4d6 piercing damage and floor(@item.level/2)d6 Persistent,piercing Damage damage. If the target is a non-skeletal corporeal undead creature, you deal an extra floor((@item.level/2)+1)d6 Persistent,piercing Damage damage. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The worms writhe away harmlessly and the target takes no damage.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage and is Off-Guard due to the pain for as long as it takes persistent damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the initial damage and is also Slowed 1 by the pain for as long as it takes persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial and persistent damage increase by 2d6 and 1d6, respectively</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "zHtWxcnUROYZpGyo"
-        }
-      ],
-      "lv4spells": [
+          "id": "OzMO2qS8ctwTcWYh"
+        },
         {
           "name": "Dimension Door",
           "type": "spell",
@@ -1509,30 +1533,6 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "BilqcjtBA6ZeAUP7"
-        },
-        {
-          "name": "Worm's Repast",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "see description",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 corporeal creature",
-          "save": "fortitude",
-          "description": "<p>Gnawing worms materialize within the flesh of the target creature, dealing 4d6 piercing damage and floor(@item.level/2)d6 Persistent,piercing Damage damage. If the target is a non-skeletal corporeal undead creature, you deal an extra floor((@item.level/2)+1)d6 Persistent,piercing Damage damage. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The worms writhe away harmlessly and the target takes no damage.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage and is Off-Guard due to the pain for as long as it takes persistent damage.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double the initial damage and is also Slowed 1 by the pain for as long as it takes persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial and persistent damage increase by 2d6 and 1d6, respectively</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "OzMO2qS8ctwTcWYh"
         }
       ],
       "lv5spells": [],

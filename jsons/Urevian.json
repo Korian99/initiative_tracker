@@ -381,6 +381,30 @@
       ],
       "lv4spells": [
         {
+          "name": "Silence",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "SefbUoIRD6AzM50K"
+        },
+        {
           "name": "Dimension Door (At Will)",
           "type": "spell",
           "level": 4,
@@ -428,57 +452,58 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "5zbYgDI5DoQQ5K9G"
-        },
-        {
-          "name": "Silence",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 4,
-          "timesPrepared": 1,
-          "traits": [
-            "illusion",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "touch",
-          "area": "",
-          "targets": "1 willing creature",
-          "save": "",
-          "description": "<p>The target makes no sound, preventing creatures from noticing it using hearing alone. The target can't use sonic attacks, nor can it use actions with the auditory trait. This prevents it from casting spells that include verbal components.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell effect emanates from the touched creature, silencing all sound in or passing through a 10- foot radius and preventing any auditory and sonic effects in the affected area. While within the radius, creatures are subject to the same effects as the target. Depending upon the position of the effect, a creature might notice the lack of sound reaching it (blocking off the noise coming from a party, for example).</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "SefbUoIRD6AzM50K"
         }
       ],
       "lv5spells": [
         {
-          "name": "Wall of Force",
+          "name": "Locate (At Will)",
           "type": "spell",
-          "level": 6,
+          "level": 3,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "force",
+            "detection",
             "manipulate"
           ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "30 feet",
+          "castingTime": "10 minutes",
+          "duration": "Sustained up to ",
+          "range": "500 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 specific object or type of object",
           "save": "",
-          "description": "<p>You form an Invisible wall of pure magical force up to 50 feet long and up to 20 feet high. The wall has no discernible thickness. You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. The wall has AC 10, Hardness 30, and 60 Hit Points, and it's immune to critical hits and precision damage. The wall blocks physical effects from passing through it, and because it's made of force, it blocks incorporeal and ethereal creatures as well. Teleportation effects can pass through the barrier, as can visual effects (since the wall is invisible). Wall of force is immune to counteracting effects of its level or lower, but the wall is automatically destroyed by a disintegrate spell of any level or by contact with a rod of cancellation or sphere of annihilation.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of the wall increases by 20.</p>",
+          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "opvOHpw9JOY0Ld1D"
+          "id": "YvcIDxmDZnqrfRBa"
+        },
+        {
+          "name": "Dimension Door",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "odLRGYeQQuTLRL7K"
         },
         {
           "name": "Flame Strike",
@@ -631,54 +656,29 @@
           "id": "okdtSA4yvXuAw47k"
         },
         {
-          "name": "Dimension Door",
+          "name": "Wall of Force",
           "type": "spell",
-          "level": 4,
+          "level": 6,
           "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate",
-            "teleportation"
+            "force",
+            "manipulate"
           ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "30 feet",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You form an Invisible wall of pure magical force up to 50 feet long and up to 20 feet high. The wall has no discernible thickness. You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. The wall has AC 10, Hardness 30, and 60 Hit Points, and it's immune to critical hits and precision damage. The wall blocks physical effects from passing through it, and because it's made of force, it blocks incorporeal and ethereal creatures as well. Teleportation effects can pass through the barrier, as can visual effects (since the wall is invisible). Wall of force is immune to counteracting effects of its level or lower, but the wall is automatically destroyed by a disintegrate spell of any level or by contact with a rod of cancellation or sphere of annihilation.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of the wall increases by 20.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "odLRGYeQQuTLRL7K"
-        },
-        {
-          "name": "Locate (At Will)",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 5,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "detection",
-            "manipulate"
-          ],
-          "castingTime": "10 minutes",
-          "duration": "Sustained up to ",
-          "range": "500 feet",
-          "area": "",
-          "targets": "1 specific object or type of object",
-          "save": "",
-          "description": "<p>You learn the direction to the target (if you picked a specific object, such as \"my mother's sword\") or the nearest target (if you picked a type of object, such as \"swords\"). If the target is a specific object, you must have observed it directly with your own senses. If it's a type of object, you still need to have an accurate mental image of the type of object. If there's lead or running water between you and the target, this spell can't locate the object. This means you might find a type of object farther away if the nearest one is behind lead or running water.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target a specific creature or ancestry instead of an object, but you must have met or seen up close the creature or ancestry you want to target.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "YvcIDxmDZnqrfRBa"
+          "id": "opvOHpw9JOY0Ld1D"
         }
       ],
       "lv6spells": [
@@ -714,25 +714,25 @@
       "lv10spells": [],
       "rituals": [
         {
-          "name": "Call Spirit",
+          "name": "Infernal Pact",
           "type": "ritual",
-          "level": 5,
-          "heightenedLevel": 5,
+          "level": 1,
+          "heightenedLevel": 1,
           "timesPrepared": 1,
           "traits": [],
-          "castingTime": "1 hour",
-          "duration": "up to 10 minutes",
+          "castingTime": "1 day",
+          "duration": "",
           "range": "",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You tear the veil to the afterlife and call a spirit from its final resting place. You must call the spirit by name, and you must provide a connection to the spirit, such as a possession, a garment, or a piece of its corpse. A spirit unwilling to heed your call can attempt a Will save to avoid it; on a critical success, a trickster spirit impersonates the spirit you meant to call. The DC of the Will save is 2 lower if you haven't met the spirit in life. Either way, the spirit appears as a wispy form of the creature you meant to call. Each minute of the duration, you can ask the spirit a question. It can answer how it pleases or even refuse to answer. If the spirit isn't in the afterlife (such as if it's an undead), all results other than critical failures use the failure effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The spirit is particularly cooperative, and even if it has strong reasons to deceive you, it takes a -2 circumstance penalty to its Deception checks.</p>\n<p><strong>Success</strong> You call the spirit.</p>\n<p><strong>Failure</strong> You fail to call a spirit.</p>\n<p><strong>Critical Failure</strong> One or more evil spirits appear and attack.</p>",
+          "description": "<p>You make an appeal to a powerful devil, asking it to bind some of its subordinates to your service. If you succeed, the devil sends you its choice of one devil whose level is no more than double <em>infernal pact's</em> rank, two devils whose levels are each at least 2 less than double the spell rank, or three devils whose levels are each at least 3 less than double the spell rank.</p>\n<hr />\n<p><strong>Critical Success</strong> The devils are sent to you and serve you for 1d4 weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for 1d4 days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p>",
           "cast": false,
-          "cost": "rare candles and incense worth a total value of 50 gp",
-          "primaryCheck": "Occultism (expert) or Religion (expert)",
-          "secondaryCasters": 1,
-          "secondaryChecks": "Occultism or Religion (whichever isn't used for the primary check)",
-          "id": "bPKZXKOHdCGueFoD"
+          "cost": "",
+          "primaryCheck": "Religion (expert; you must be a devil)",
+          "secondaryCasters": 0,
+          "secondaryChecks": "",
+          "id": "EFXVwQxhCGgQqKMX"
         },
         {
           "name": "Inveigle",
@@ -758,25 +758,25 @@
           "id": "7zWLv0sE1aN8Lu8b"
         },
         {
-          "name": "Infernal Pact",
+          "name": "Call Spirit",
           "type": "ritual",
-          "level": 1,
-          "heightenedLevel": 1,
+          "level": 5,
+          "heightenedLevel": 5,
           "timesPrepared": 1,
           "traits": [],
-          "castingTime": "1 day",
-          "duration": "",
+          "castingTime": "1 hour",
+          "duration": "up to 10 minutes",
           "range": "",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You make an appeal to a powerful devil, asking it to bind some of its subordinates to your service. If you succeed, the devil sends you its choice of one devil whose level is no more than double <em>infernal pact's</em> rank, two devils whose levels are each at least 2 less than double the spell rank, or three devils whose levels are each at least 3 less than double the spell rank.</p>\n<hr />\n<p><strong>Critical Success</strong> The devils are sent to you and serve you for 1d4 weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for 1d4 days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p>",
+          "description": "<p>You tear the veil to the afterlife and call a spirit from its final resting place. You must call the spirit by name, and you must provide a connection to the spirit, such as a possession, a garment, or a piece of its corpse. A spirit unwilling to heed your call can attempt a Will save to avoid it; on a critical success, a trickster spirit impersonates the spirit you meant to call. The DC of the Will save is 2 lower if you haven't met the spirit in life. Either way, the spirit appears as a wispy form of the creature you meant to call. Each minute of the duration, you can ask the spirit a question. It can answer how it pleases or even refuse to answer. If the spirit isn't in the afterlife (such as if it's an undead), all results other than critical failures use the failure effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The spirit is particularly cooperative, and even if it has strong reasons to deceive you, it takes a -2 circumstance penalty to its Deception checks.</p>\n<p><strong>Success</strong> You call the spirit.</p>\n<p><strong>Failure</strong> You fail to call a spirit.</p>\n<p><strong>Critical Failure</strong> One or more evil spirits appear and attack.</p>",
           "cast": false,
-          "cost": "",
-          "primaryCheck": "Religion (expert; you must be a devil)",
-          "secondaryCasters": 0,
-          "secondaryChecks": "",
-          "id": "EFXVwQxhCGgQqKMX"
+          "cost": "rare candles and incense worth a total value of 50 gp",
+          "primaryCheck": "Occultism (expert) or Religion (expert)",
+          "secondaryCasters": 1,
+          "secondaryChecks": "Occultism or Religion (whichever isn't used for the primary check)",
+          "id": "bPKZXKOHdCGueFoD"
         }
       ],
       "lv1slots": {

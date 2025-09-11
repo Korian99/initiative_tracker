@@ -854,6 +854,31 @@
       ],
       "lv5spells": [
         {
+          "name": "Dimension Door",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "teleportation"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "AjXnUnNbAq77uly9"
+        },
+        {
           "name": "Black Tentacles",
           "type": "spell",
           "level": 5,
@@ -930,34 +955,33 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "BBMcuGXraCpDqniI"
-        },
+        }
+      ],
+      "lv6spells": [
         {
-          "name": "Dimension Door",
+          "name": "Dispel Magic",
           "type": "spell",
-          "level": 4,
-          "heightenedLevel": 5,
+          "level": 2,
+          "heightenedLevel": 6,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate",
-            "teleportation"
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "120 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 spell effect or unattended magic item",
           "save": "",
-          "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "AjXnUnNbAq77uly9"
-        }
-      ],
-      "lv6spells": [
+          "id": "hQb0S53PDFM0bt0M"
+        },
         {
           "name": "Phantasmal Calamity",
           "type": "spell",
@@ -1033,58 +1057,35 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "zc6msmpKMFTc5ZBE"
-        },
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "hQb0S53PDFM0bt0M"
         }
       ],
       "lv7spells": [
         {
-          "name": "Crushing Despair",
+          "name": "Phantom Pain",
           "type": "spell",
-          "level": 5,
+          "level": 1,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "emotion",
+            "illusion",
             "manipulate",
-            "mental"
+            "mental",
+            "nonlethal"
           ],
           "castingTime": "2",
-          "duration": "1 or more rounds",
-          "range": "",
-          "area": "30ft cone",
-          "targets": "",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
           "save": "will",
-          "description": "<p>You inflict despair on creatures in the area. The effects for each creature are determined by its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the creature can't use reactions and must attempt another save at the start of its turn; on a failure, it is Slowed 1 for that turn as it sobs uncontrollably.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is automatically Slowed 1 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The area increases to a 60-foot cone.</p>",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "oe2Pus2WcEQtFgJW"
+          "id": "J1qxVDrAGfX48yGW"
         },
         {
           "name": "Paralyze",
@@ -1113,31 +1114,30 @@
           "id": "BpnGUvhPCkLXz4bR"
         },
         {
-          "name": "Phantom Pain",
+          "name": "Crushing Despair",
           "type": "spell",
-          "level": 1,
+          "level": 5,
           "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "illusion",
+            "emotion",
             "manipulate",
-            "mental",
-            "nonlethal"
+            "mental"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
+          "duration": "1 or more rounds",
+          "range": "",
+          "area": "30ft cone",
+          "targets": "",
           "save": "will",
-          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Scaling Persistent Mental Damage}</p>",
+          "description": "<p>You inflict despair on creatures in the area. The effects for each creature are determined by its Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> For 1 round, the creature can't use reactions and must attempt another save at the start of its turn; on a failure, it is Slowed 1 for that turn as it sobs uncontrollably.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, and the creature is automatically Slowed 1 for 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The area increases to a 60-foot cone.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "J1qxVDrAGfX48yGW"
+          "id": "oe2Pus2WcEQtFgJW"
         }
       ],
       "lv8spells": [],

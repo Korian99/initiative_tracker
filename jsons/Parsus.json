@@ -310,7 +310,7 @@
           "name": "Acid Splash",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "acid",
@@ -336,7 +336,7 @@
           "name": "Chill Touch",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -361,7 +361,7 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -386,7 +386,7 @@
           "name": "Message",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "auditory",
@@ -413,7 +413,7 @@
           "name": "Ray of Frost",
           "type": "cantrip",
           "level": 1,
-          "heightenedLevel": 1,
+          "heightenedLevel": 0,
           "timesPrepared": 1,
           "traits": [
             "attack",
@@ -437,6 +437,31 @@
         }
       ],
       "lv1spells": [
+        {
+          "name": "Grim Tendrils",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 void damage and (@item.level) Bleed Damage damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half the void damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double void damage and double persistent bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The void damage increases by 2d4, and the persistent bleed damage increases by 1.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "lY0xDDLlG6Ljtyc5"
+        },
         {
           "name": "Grim Tendrils",
           "type": "spell",
@@ -613,34 +638,35 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "JiSB61DwDm9byAIU"
-        }
-      ],
-      "lv4spells": [
+        },
         {
-          "name": "Enervation",
+          "name": "Vampiric Touch",
           "type": "spell",
-          "level": 4,
-          "heightenedLevel": 4,
+          "level": 3,
+          "heightenedLevel": 3,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
+            "death",
             "manipulate",
             "void"
           ],
           "castingTime": "2",
           "duration": "",
-          "range": "",
-          "area": "30ft line",
-          "targets": "",
-          "save": "fortitude",
-          "description": "<p>Extending a finger, you fire a beam of void energy that weakens the life force of any creature it touches. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes (floor(@item.rank/2))d8 Persistent,void Damage damage.</p>\n<p><strong>Failure</strong> The creature takes (floor(@item.rank/2)*2)d8 Persistent,void Damage damage and becomes Drained 1.</p>\n<p><strong>Critical Failure</strong> The creature takes (floor(@item.rank/2)*2)d8 Persistent,void Damage damage and becomes Drained 2 and Doomed 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent void damage increases by 1d8 on a success, or by 2d8 on a failure or critical failure.</p>",
+          "range": "touch",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "YzuxPjdcuUBdDAaY"
-        },
+          "id": "JiSB61DwDm9byAIU"
+        }
+      ],
+      "lv4spells": [
         {
           "name": "Fly",
           "type": "spell",
@@ -743,6 +769,56 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "XWYbsL7BiEx0iz2u"
+        },
+        {
+          "name": "Enervation",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Extending a finger, you fire a beam of void energy that weakens the life force of any creature it touches. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes (floor(@item.rank/2))d8 Persistent,void Damage damage.</p>\n<p><strong>Failure</strong> The creature takes (floor(@item.rank/2)*2)d8 Persistent,void Damage damage and becomes Drained 1.</p>\n<p><strong>Critical Failure</strong> The creature takes (floor(@item.rank/2)*2)d8 Persistent,void Damage damage and becomes Drained 2 and Doomed 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent void damage increases by 1d8 on a success, or by 2d8 on a failure or critical failure.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "YzuxPjdcuUBdDAaY"
+        },
+        {
+          "name": "Enervation",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft line",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>Extending a finger, you fire a beam of void energy that weakens the life force of any creature it touches. Each living creature in the line must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes (floor(@item.rank/2))d8 Persistent,void Damage damage.</p>\n<p><strong>Failure</strong> The creature takes (floor(@item.rank/2)*2)d8 Persistent,void Damage damage and becomes Drained 1.</p>\n<p><strong>Critical Failure</strong> The creature takes (floor(@item.rank/2)*2)d8 Persistent,void Damage damage and becomes Drained 2 and Doomed 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The persistent void damage increases by 1d8 on a success, or by 2d8 on a failure or critical failure.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "YzuxPjdcuUBdDAaY"
         }
       ],
       "lv6spells": [],
