@@ -1,0 +1,28 @@
+<button class="btn btn-primary rounded-circle position-fixed"
+        style="bottom: 20px;
+               right: 20px;
+               z-index: 1050"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#sideMenu"
+        aria-controls="sideMenu">
+    <i class="bi bi-list"></i>
+</button>
+<div class="offcanvas offcanvas-end"
+     tabindex="-1"
+     id="sideMenu"
+     aria-labelledby="sideMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sideMenuLabel">Options</h5>
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-group">
+            <li class="list-group-item">{% include "players/partials/side_menu/to_lobbies.html" %}</li>
+            <li class="list-group-item">{% include "players/partials/side_menu/dark_mode_toggle.html" %}</li>
+        </ul>
+    </div>
+</div>

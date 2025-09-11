@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,6 @@
         My Lobby App
       {% endblock title %}
     </title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
     <style>
     html, body {
       height: 100%;
@@ -23,6 +20,12 @@
       width: 5px;
       height: 5px;
     }
+    .a-button {background:none;
+                   border:none;
+                   padding:0;
+                   color:#0d6efd;
+                   text-decoration:underline;
+                   cursor:pointer}
     
     /* Track */
     ::-webkit-scrollbar-track {
@@ -74,7 +77,9 @@
     <!-- Bootstrap JS Bundle (optional) -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- before </body> -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
@@ -94,13 +99,14 @@
           {% endblock player %}
         </div>
         <div class="row m-3">
-          <div class="col d-flex flex-column justify-content-center align-items-center text-center">
+          <div id="#mainContent" class="col d-flex flex-column justify-content-center align-items-center text-center">
             {% block content %}
             {% endblock content %}
           </div>
         </div>
       </div>
     </div>
+    {% include 'spinner.html' %}
     <script>
       function confirmClick(e)
       {
@@ -108,8 +114,6 @@
               e.preventDefault();
           }
       }
-    </script>
-    <script>
       function initCreatureSelect(ctx=document, id) {
         const $el = $(ctx).find(id);
         let dropdownParent = null;
@@ -125,7 +129,7 @@
           });
         }
       }
-
+  
       document.addEventListener('DOMContentLoaded', () => initCreatureSelect());
       document.body.addEventListener('htmx:afterSwap', (e) => {
         if (e.target && e.target.id === 'select_creature') {
@@ -135,6 +139,5 @@
         }
       });
     </script>
-    {% include 'spinner.html' %}
   </body>
 </html>

@@ -1,0 +1,10 @@
+<form id="player_connect"
+      action="{% url 'player_connect' %}"
+      method="post"
+      style="display:inline;
+             margin:0;
+             padding:0">
+    {% csrf_token %}
+    <input type="hidden" name="player" value="{{ player.name }}">
+    <button type="submit" class="a-button">Go to Lobbies</button>
+</form>

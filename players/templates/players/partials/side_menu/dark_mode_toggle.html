@@ -1,0 +1,27 @@
+    <button class="a-button" id="themeToggle">
+      <i class="bi bi-moon"></i> Toggle Dark Mode
+    </button>
+    
+    <script>
+      const htmlEl = document.documentElement; // <html>
+      const btn = document.getElementById('themeToggle');
+
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        const currentTheme = htmlEl.getAttribute('data-bs-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        htmlEl.setAttribute('data-bs-theme', newTheme);
+
+        localStorage.setItem('theme', newTheme);
+        btn.innerHTML = newTheme === 'dark'
+          ? '<i class="bi bi-sun"></i> Toggle Light Mode'
+          : '<i class="bi bi-moon"></i> Toggle Dark Mode';
+      });
+
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        btn.innerHTML = savedTheme === 'dark'
+          ? '<i class="bi bi-sun"></i> Toggle Light Mode'
+          : '<i class="bi bi-moon"></i> Toggle Dark Mode';
+        htmlEl.setAttribute('data-bs-theme', savedTheme);
+      }
+    </script>
