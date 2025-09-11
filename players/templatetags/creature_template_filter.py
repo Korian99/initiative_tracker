@@ -63,7 +63,9 @@ def replace_actions(actions: str) -> str:
         "0": "◇",
     }
     actions_str = str(actions)
+    print("IN:"+ actions_str)
     if actions and not ("round" in actions_str or "minute" in actions_str):
         for key, symbol in mapping.items():
-            actions = actions_str.replace(key, symbol)
+            actions_str = actions_str.replace(key, symbol)
+        return actions_str
     return actions or "Passive or ◇"
