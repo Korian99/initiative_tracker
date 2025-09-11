@@ -14,22 +14,24 @@
            aria-labelledby="heading-strikes"
            data-bs-parent="#accordion-strikes">
         <div class="accordion-body">
-          <ul class="list-group list-group-flush">
-            {% for strike in creature.strikes %}
-              <div>
-                <strong>{{ strike.name }}</strong> ({{ strike.type }}, <span class="{{template}}-coloring">+{{ strike.bonus|add:skill_offset }}</span>, {{ strike.traits|join:", " }})
-                —
-                {% for dmg in strike.damageRolls %}
-                  {{ dmg.roll }}
-                  {% if skill_offset != 0 %}<span class="{{template}}-coloring">{{ skill_offset }}</span>{% endif %}
-                  {{ dmg.type }}
-                  {% if not forloop.last %},{% endif %}
-                  {% if strike.effects %}and{% endif %}
-                {% endfor %}
-                {% if strike.effects %}{{ strike.effects|join:", " }}{% endif %}
-               </div>
-            {% endfor %}
-          </ul>
+          <div class="scrollable-list">
+            <ul class="list-group list-group-flush">
+              {% for strike in creature.strikes %}
+                <div>
+                  <strong>{{ strike.name }}</strong> ({{ strike.type }}, <span class="{{ template }}-coloring">+{{ strike.bonus|add:skill_offset }}</span>, {{ strike.traits|join:", " }})
+                  —
+                  {% for dmg in strike.damageRolls %}
+                    {{ dmg.roll }}
+                    {% if skill_offset != 0 %}<span class="{{ template }}-coloring">{{ skill_offset }}</span>{% endif %}
+                    {{ dmg.type }}
+                    {% if not forloop.last %},{% endif %}
+                    {% if strike.effects %}and{% endif %}
+                  {% endfor %}
+                  {% if strike.effects %}{{ strike.effects|join:", " }}{% endif %}
+                </div>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -14,21 +14,22 @@
            aria-labelledby="heading-{{ title|slugify }}"
            data-bs-parent="#accordion-{{ title|slugify }}">
         <div class="accordion-body">
-          <ul class="list-group list-group-flush">
-            {% for ability in abilities %}
-              <li class="list-group-item">
-                {% load creature_template_filter %}
-                <strong>{{ ability.name }} - {{ability.actions|replace_actions}}
-                </strong>
-                <div>{{ ability.description|safe }}</div>
-                {% if skill_offset > 0 %}
-                  <span class="{{template}}-coloring">Increase the damage by +2 or +4 if it has a limited use</span>
-                {% elif skill_offset < 0 %}
-                  <span class="{{template}}-coloring">Decrease the damage by -2 or -4 if it has a limited use</span>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
+          <div class="scrollable-list">
+            <ul class="list-group list-group-flush">
+              {% for ability in abilities %}
+                <li class="list-group-item">
+                  {% load creature_template_filter %}
+                  <strong>{{ ability.name }} - {{ ability.actions|replace_actions }}</strong>
+                  <div>{{ ability.description|safe }}</div>
+                  {% if skill_offset > 0 %}
+                    <span class="{{ template }}-coloring">Increase the damage by +2 or +4 if it has a limited use</span>
+                  {% elif skill_offset < 0 %}
+                    <span class="{{ template }}-coloring">Decrease the damage by -2 or -4 if it has a limited use</span>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

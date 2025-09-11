@@ -41,6 +41,17 @@
     ::-webkit-scrollbar-thumb:window-inactive {
         background: gray; 
     }
+    .scrollable-list {
+      overflow-y: auto;
+      overscroll-behavior: contain;  /* important piece */
+      -webkit-overflow-scrolling: touch;
+    }
+    .scrollable-list .list-group, .scrollable-list .list-group .list-group-item{
+      pointer-events:none!important;
+    }
+     .scrollable-list .list-group .list-group-item summary, .scrollable-list .list-group .list-group-item button{
+      pointer-events:all!important;
+    }
     .select2-container--default .select2-selection--single {
       border: 1px solid #ced4da!important;
     }
