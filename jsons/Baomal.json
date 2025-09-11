@@ -9,22 +9,23 @@
   "type": "Creature",
   "level": 20,
   "traits": [
+    "Common",
     "Gargantuan",
     "Aberration",
     "Aquatic",
     "Chaotic"
   ],
   "source": "Pathfinder Bestiary",
+  "senses": [
+    "Darkvision",
+    "Scent 80ft imprecise"
+  ],
   "perception": {
     "value": 34,
-    "note": "darkvisionscent 80 ft imprecise",
+    "note": "Darkvision, Scent 80ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 80 ft imprecise"
-  ],
   "languages": [
     "Aklo"
   ],
@@ -112,11 +113,18 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
       "name": "Attack of Opportunity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Double Opportunity",
@@ -133,7 +141,7 @@
         "mental",
         "occult"
       ],
-      "description": "<p>120 feet. All creatures, except aberrations, that begin their turn in the area take <span class=\"roll\" onclick=\"roll(this)\">5d6</span> mental damage.</p>",
+      "description": "<p>120 feet. All creatures, except aberrations, that begin their turn in the area take 5d6 Mental Damage damage.</p>",
       "collapsed": false
     },
     {
@@ -144,7 +152,7 @@
       "collapsed": false
     }
   ],
-  "speed": "50 ft,\nswim 80 ft,\n",
+  "speed": "50 ft, swim 80ft",
   "strikes": [
     {
       "type": "melee",
@@ -167,7 +175,7 @@
         }
       ],
       "effects": [
-        "Improved-grab"
+        "improved-grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -195,9 +203,9 @@
         }
       ],
       "effects": [
-        "Push"
+        "push"
       ],
-      "usedAttributeToHit": "strength",
+      "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -210,7 +218,7 @@
       "traits": [
         "attack"
       ],
-      "description": "<p>A baomal can inhale tremendous amounts of water, drawing everything in the sea nearby closer. All creatures and objects in the water within 60 feet of the baomal (including ships) are pulled toward it. Creatures must succeed at a DC 42 Athletics check or be pulled up to 20 feet toward the baomal (40 feet on a critical failure). For ships, use the captain's Sailing Lore in place of Athletics. Unattended objects are automatically pulled.</p>",
+      "description": "<p>A baomal can inhale tremendous amounts of water, drawing everything in the sea nearby closer. All creatures and objects in the water within 60 feet of the baomal (including ships) are pulled toward it. Creatures must succeed at a DC 42 Athletics  check or be pulled up to 20 feet toward the baomal (40 feet on a critical failure). For ships, use the captain's Sailing Lore in place of Athletics. Unattended objects are automatically pulled.</p>",
       "collapsed": false
     },
     {
@@ -219,7 +227,7 @@
       "traits": [
         "move"
       ],
-      "description": "<p>The baomal Swims or Strides alongside a creature or the hull of a vessel, dealing damage with the strong spikes on its shell. Each creature or ship the baomal is adjacent to at any point during its movement takes <span class=\"roll\" onclick=\"roll(this)\">6d6+10</span> slashing and piercing damage (DC 42 basic Reflex save). Against vessels, Shell Rake ignores the first 5 Hardness and creates an explosion of splinters that deals <span class=\"roll\" onclick=\"roll(this)\">3d6+5</span> damage to every creature within 10 feet of the deck's edge (DC 42 basic Reflex save).</p>",
+      "description": "<p>The baomal Swims or Strides alongside a creature or the hull of a vessel, dealing damage with the strong spikes on its shell. Each creature or ship the baomal is adjacent to at any point during its movement takes (6d6+10) Slashing Damage]{6d6+10 slashing and piercing damage} (Basic DC 42 Reflex Saving Throw save). Against vessels, Shell Rake ignores the first 5 Hardness and creates an explosion of splinters that deals (3d6+5) Untyped Damage damage to every creature within 10 feet of the deck's edge (Basic DC 42 Reflex Saving Throw save).</p>",
       "collapsed": false
     },
     {
@@ -230,258 +238,20 @@
       "collapsed": false
     },
     {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
       "name": "Push 40 feet",
       "actions": 1,
       "traits": [],
-      "description": "<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Few sea monsters are as dreaded and feared as the two-headed baomal. These massive predatory beasts typically dwell in the deepest waters and compete with krakens and other monsters for food. They feed on whales and other large sea creatures, sometimes following them to the water's surface. Near the surface, baomals that encounter ships quickly learn that they contain a variety of tasty morsels. The creatures use their devastating spikes to rip open the ships' hulls, then leisurely feed on the helpless sailors.</p>",
-  "recallKnowledge": "Occultism, DC: 40",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 34,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Baomal",
-    "type": "Creature",
-    "level": 20,
-    "traits": [
-      "Gargantuan",
-      "Aberration",
-      "Aquatic",
-      "Chaotic"
-    ],
-    "source": "Pathfinder Bestiary",
-    "perception": {
-      "value": 34,
-      "note": "darkvisionscent 80 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 80 ft imprecise"
-    ],
-    "languages": [
-      "Aklo"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 41,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 31,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 37,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 10
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 8
-    },
-    "intelligence": {
-      "value": -3
-    },
-    "wisdom": {
-      "value": 6
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 48,
-      "note": "all-around vision",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 36,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 30,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 34,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 315,
-      "max": 315,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "physical",
-        "value": 10
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Double Opportunity",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A baomal gains an extra reaction each round that it can use only to make an Attack of Opportunity. It must use a different head for each one it attempts, and it can't make more than one Attack of Opportunity for the same triggering action.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Psychic Static Aura",
-        "actions": null,
-        "traits": [
-          "aura",
-          "mental",
-          "occult"
-        ],
-        "description": "<p>120 feet. All creatures, except aberrations, that begin their turn in the area take <span class=\"roll\" onclick=\"roll(this)\">5d6</span> mental damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Two Heads",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Any ability that would sever a baomal's head (such as a critical hit with a <em>Vorpal</em> weapon) severs one head at random. Losing one head doesn't kill a baomal, but it does prevent the baomal from making Strikes with the lost head and from using Double Opportunity or Two-Headed Strike.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "50 ft,\nswim 80 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 38,
-        "traits": [
-          "reach-20",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4d12+18",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d12+18)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Improved-grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Tsunami Jet",
-        "bonus": 38,
-        "traits": [
-          "brutal",
-          "range-500"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4d10+18",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d10+18)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Push"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Breath of the Sea",
-        "actions": 1,
-        "traits": [
-          "attack"
-        ],
-        "description": "<p>A baomal can inhale tremendous amounts of water, drawing everything in the sea nearby closer. All creatures and objects in the water within 60 feet of the baomal (including ships) are pulled toward it. Creatures must succeed at a DC 42 Athletics check or be pulled up to 20 feet toward the baomal (40 feet on a critical failure). For ships, use the captain's Sailing Lore in place of Athletics. Unattended objects are automatically pulled.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shell Rake",
-        "actions": 1,
-        "traits": [
-          "move"
-        ],
-        "description": "<p>The baomal Swims or Strides alongside a creature or the hull of a vessel, dealing damage with the strong spikes on its shell. Each creature or ship the baomal is adjacent to at any point during its movement takes <span class=\"roll\" onclick=\"roll(this)\">6d6+10</span> slashing and piercing damage (DC 42 basic Reflex save). Against vessels, Shell Rake ignores the first 5 Hardness and creates an explosion of splinters that deals <span class=\"roll\" onclick=\"roll(this)\">3d6+5</span> damage to every creature within 10 feet of the deck's edge (DC 42 basic Reflex save).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Two-Headed Strike",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The baomal makes a Strike with each set of jaws, each against a different creature. These Strikes count as one attack for the baomal's multiple attack penalty, and the penalty doesn't increase until after both attacks.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Push 40 feet",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Few sea monsters are as dreaded and feared as the two-headed baomal. These massive predatory beasts typically dwell in the deepest waters and compete with krakens and other monsters for food. They feed on whales and other large sea creatures, sometimes following them to the water's surface. Near the surface, baomals that encounter ships quickly learn that they contain a variety of tasty morsels. The creatures use their devastating spikes to rip open the ships' hulls, then leisurely feed on the helpless sailors.</p>",
-    "recallKnowledge": "Occultism, DC: 40",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism, DC 40"
 }

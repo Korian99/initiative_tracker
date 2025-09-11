@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 4,
   "traits": [
+    "Common",
     "Medium",
     "Aquatic",
     "Beast",
@@ -16,49 +17,48 @@
     "Earth",
     "Evil"
   ],
-  "source": "Pathfinder #182: Graveclaw",
+  "source": "Pathfinder Bestiary",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 10,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
-    "Petran",
-    "Thalassic"
+    "Petran"
   ],
   "skills": [
     {
       "name": "acrobatics",
-      "modifier": 9,
+      "modifier": 10,
       "note": [],
       "usedAttribute": "dexterity",
       "modifications": []
     },
     {
       "name": "athletics",
-      "modifier": 10,
+      "modifier": 9,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
     },
     {
       "name": "stealth",
-      "modifier": 11,
+      "modifier": 12,
       "note": [],
       "usedAttribute": "dexterity",
       "modifications": []
     }
   ],
   "strength": {
-    "value": 4
+    "value": 3
   },
   "dexterity": {
-    "value": 1
+    "value": 2
   },
   "constitution": {
     "value": 3
@@ -75,7 +75,7 @@
   "items": [],
   "generalAbilities": [],
   "ac": {
-    "value": 20,
+    "value": 21,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -87,7 +87,7 @@
     "modifications": []
   },
   "reflex": {
-    "value": 9,
+    "value": 10,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -118,21 +118,16 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
-      "name": "Attack of Opportunity",
+      "name": "Clawed Feet",
       "actions": -1,
-      "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
-    },
-    {
-      "name": "Wing Buffet",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> An adjacent creature attacks the kapoacinth while the kapoacinth is Swimming</p>\n<hr />\n<p><strong>Effect</strong> The kapoacinth pushes the triggering creature 5 feet away from them, and the kapoacinth moves 10 feet in the opposite direction. If the triggering creature can no longer attack the kapoacinth from its new location, the attack misses.</p>",
+      "traits": [
+        "attack"
+      ],
+      "description": "<p><strong>Trigger</strong> The gargoyle is Swimming, and a creature moves into an adjacent square below it.</p>\n<hr />\n<p><strong>Effect</strong> The gargoyle makes a claw Strike against the triggering creature.</p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\nswim 40 ft,\n",
+  "speed": "25 ft, swim 40ft",
   "strikes": [
     {
       "type": "melee",
@@ -143,13 +138,13 @@
       ],
       "damageRolls": [
         {
-          "roll": "2d8 + 6",
+          "roll": "2d8+3",
           "type": "piercing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d8 + 6)*2",
+          "roll": "(2d8+3)*2",
           "type": "piercing"
         }
       ],
@@ -161,20 +156,21 @@
     },
     {
       "type": "melee",
-      "name": "Claws",
+      "name": "Claw",
       "bonus": 13,
       "traits": [
-        "agile"
+        "agile",
+        "unarmed"
       ],
       "damageRolls": [
         {
-          "roll": "2d6 + 6",
+          "roll": "2d6+3",
           "type": "slashing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d6 + 6)*2",
+          "roll": "(2d6+3)*2",
           "type": "slashing"
         }
       ],
@@ -187,219 +183,15 @@
   ],
   "offensiveAbilities": [
     {
-      "name": "Coral Reef",
+      "name": "Statue",
       "actions": 1,
       "traits": [
         "concentrate"
       ],
-      "description": "<p>Until the next time they act, the kapoacinth appears to be a lump of coral. They have an automatic result of 31 on Deception checks and DCs to pass as coral.</p>",
+      "description": "<p>Until the next time it acts, the gargoyle appears to be a statue. It has an automatic result of 32 on Deception checks and DCs to pass as a statue.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Nature, DC: 19",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Kapoacinth",
-    "type": "Creature",
-    "level": 4,
-    "traits": [
-      "Medium",
-      "Aquatic",
-      "Beast",
-      "Chaotic",
-      "Earth",
-      "Evil"
-    ],
-    "source": "Pathfinder #182: Graveclaw",
-    "perception": {
-      "value": 10,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Petran",
-      "Thalassic"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 1
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": -2
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 40,
-      "max": 40,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "exceptions": [
-          "adamantine"
-        ],
-        "type": "physical",
-        "value": 5
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Wing Buffet",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An adjacent creature attacks the kapoacinth while the kapoacinth is Swimming</p>\n<hr />\n<p><strong>Effect</strong> The kapoacinth pushes the triggering creature 5 feet away from them, and the kapoacinth moves 10 feet in the opposite direction. If the triggering creature can no longer attack the kapoacinth from its new location, the attack misses.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\nswim 40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 13,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8 + 6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8 + 6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claws",
-        "bonus": 13,
-        "traits": [
-          "agile"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6 + 6",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6 + 6)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Coral Reef",
-        "actions": 1,
-        "traits": [
-          "concentrate"
-        ],
-        "description": "<p>Until the next time they act, the kapoacinth appears to be a lump of coral. They have an automatic result of 31 on Deception checks and DCs to pass as coral.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Nature, DC: 19",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 19"
 }

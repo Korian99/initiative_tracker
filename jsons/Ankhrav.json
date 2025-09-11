@@ -9,20 +9,22 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Large",
-    "Animal"
+    "Animal",
+    "Cold"
   ],
-  "source": "Pathfinder Monster Core",
+  "source": "Pathfinder #208: Hoof, Cinder, and Storm",
+  "senses": [
+    "Darkvision",
+    "Tremorsense 60ft imprecise"
+  ],
   "perception": {
     "value": 7,
-    "note": "darkvisiontremorsense 60 ft imprecise",
+    "note": "Darkvision, Tremorsense 60ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "tremorsense 60 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -99,10 +101,23 @@
     "modifications": []
   },
   "immunities": [],
-  "resistances": [],
-  "weaknesses": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "cold",
+      "value": 3
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "fire",
+      "value": 3
+    }
+  ],
   "defensiveAbilities": [],
-  "speed": "25 ft,\nburrow 20 ft,\n",
+  "speed": "25 ft, burrow 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -138,7 +153,7 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Acid Spit",
       "bonus": 10,
       "traits": [
@@ -158,8 +173,8 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -178,200 +193,10 @@
       "traits": [
         "acid"
       ],
-      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ankhrav spews acid in a 30 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">3d6</span> acid damage and <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent acid damage (DC 20 basic Reflex save).</p>",
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ankhrav spews acid in a 30ft Cone, dealing 3d6 Acid Damage|options:area-damage]{3d6 acid damage and 1d6 persistent acid damage} (Basic DC 20 Reflex Saving Throw save).</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>These horse-sized, burrowing monsters generally avoid heavily settled areas like cities, but ankhravs' predilection for livestock and humanoid flesh ensures that the creatures do not remain in the deep wilderness for long. Desperate farmers whose fields become infested by ankhravs often have little recourse but to seek the aid of adventurers.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
-  "recallKnowledge": "Nature, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Ankhrav",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Large",
-      "Animal"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 7,
-      "note": "darkvisiontremorsense 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "tremorsense 60 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 1
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -2
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 40,
-      "max": 40,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\nburrow 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Mandibles",
-        "bonus": 13,
-        "traits": [
-          "acid"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d6",
-            "type": "acid"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "acid"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Acid Spit",
-        "bonus": 10,
-        "traits": [
-          "acid",
-          "range-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d6",
-            "type": "acid"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d6)*2",
-            "type": "acid"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Armor-Rending Bite",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The ankhrav makes a mandibles Strike; if the Strike hits, the target's armor takes the damage and the acid damage bypasses the armor's Hardness.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Spray Acid",
-        "actions": 2,
-        "traits": [
-          "acid"
-        ],
-        "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The ankhrav spews acid in a 30 foot cone, dealing <span class=\"roll\" onclick=\"roll(this)\">3d6</span> acid damage and <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent acid damage (DC 20 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>These horse-sized, burrowing monsters generally avoid heavily settled areas like cities, but ankhravs' predilection for livestock and humanoid flesh ensures that the creatures do not remain in the deep wilderness for long. Desperate farmers whose fields become infested by ankhravs often have little recourse but to seek the aid of adventurers.</p>\n<hr />\n<p>Ankhravs are immense, burrowing, and insectile predators, considered by inhabitants of the rural areas of the world to be an all-too-common plague.</p>",
-    "recallKnowledge": "Nature, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 18"
 }

@@ -4,52 +4,67 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Toppling Shelves",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 4,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
   ],
-  "source": "Pathfinder #188: They Watched the Stars",
+  "source": "Pathfinder Adventure Path: Gatewalkers",
   "stealth": {
     "value": 8,
-    "note": "(trained) to notice the shelf's precarious instability",
-    "modifications": []
+    "note": "(trained) to notice the shelf's precarious instability"
   },
   "description": "<p>This stone bookshelf is badly compromised. It's just one push away from toppling over.</p>",
-  "disable": "<p>DC 22 Thievery check (expert) or Engineering Lore (trained) to shore up the shelf</p>",
+  "disable": "<p>DC 22 Thievery  (expert) or Engineering Lore (trained) to shore up the shelf</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Topple",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The shelf is attacked or touched forcefully (such as by a creature Shoved into it)</p>\n<p>Any attack that fails to destroy the shelf triggers its Topple reaction</p>\n<hr />\n<p><strong>Effect</strong> The shelf tumbles over in the direction opposite its triggering creature, crashing onto the ground in a 10-foot-by-10-foot area. Creatures in the area take (4d8+10) Bludgeoning Damage (Basic DC 25 Reflex Saving Throw). A creature that critically fails its save falls Prone. The affected area becomes difficult terrain.</p>\n<p>If the toppling shelf crashes into a space occupied by another toppling shelf, it triggers that shelf's Topple reaction. This can result in a chain reaction that causes multiple shelves to Topple, one after the other.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 18,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 8
   },
   "fortitude": {
     "value": 8,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 8,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 30,
     "max": 30,
-    "note": "<b>Hardness</b> 8 <b>BT</b> 15. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -61,93 +76,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Topple",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> The shelf is attacked or touched forcefully (such as by a creature Shoved into it)</p>\n<p>Any attack that fails to destroy the shelf triggers its Topple reaction</p>\n<hr />\n<p><strong>Effect</strong> The shelf tumbles over in the direction opposite its triggering creature, crashing onto the ground in a 10-foot-by-10-foot area. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">4d8+10</span> bludgeoning (DC 25 basic Reflex save). A creature that critically fails its save falls Prone. The affected area becomes difficult terrain.</p>\n<p>If the toppling shelf crashes into a space occupied by another toppling shelf, it triggers that shelf's Topple reaction. This can result in a chain reaction that causes multiple shelves to Topple, one after the other.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Toppling Shelves",
-    "type": "hazard",
-    "level": 4,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder #188: They Watched the Stars",
-    "stealth": {
-      "value": 8,
-      "note": "(trained) to notice the shelf's precarious instability",
-      "modifications": []
-    },
-    "description": "<p>This stone bookshelf is badly compromised. It's just one push away from toppling over.</p>",
-    "disable": "<p>DC 22 Thievery check (expert) or Engineering Lore (trained) to shore up the shelf</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 30,
-      "max": 30,
-      "note": "<b>Hardness</b> 8 <b>BT</b> 15. ",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "critical-hits"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Topple",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The shelf is attacked or touched forcefully (such as by a creature Shoved into it)</p>\n<p>Any attack that fails to destroy the shelf triggers its Topple reaction</p>\n<hr />\n<p><strong>Effect</strong> The shelf tumbles over in the direction opposite its triggering creature, crashing onto the ground in a 10-foot-by-10-foot area. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">4d8+10</span> bludgeoning (DC 25 basic Reflex save). A creature that critically fails its save falls Prone. The affected area becomes difficult terrain.</p>\n<p>If the toppling shelf crashes into a space occupied by another toppling shelf, it triggers that shelf's Topple reaction. This can result in a chain reaction that causes multiple shelves to Topple, one after the other.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 19"
-  },
-  "recallKnowledge": ", DC: 19"
+  "recallKnowledge": ", DC 19"
 }

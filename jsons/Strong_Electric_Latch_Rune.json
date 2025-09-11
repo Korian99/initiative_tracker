@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Strong Electric Latch Rune",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 5,
   "traits": [
-    "Hazard",
-    "Simple",
     "Uncommon",
     "Medium",
     "Electricity",
@@ -19,32 +18,47 @@
   "source": "Pathfinder Society Scenario #3-06: Struck by Shadows",
   "stealth": {
     "value": 13,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>An invisible rune imprinted on a door latch releases a powerful electric discharge.</p>",
-  "disable": "<p>DC 23 Thievery check (expert) to scratch out the rune without allowing electricity to flow, or Dispel Magic (3rd rank; counteract DC 21) to counteract the rune</p>",
+  "disable": "<p>DC 23 Thievery  (expert) to scratch out the rune without allowing electricity to flow, or Dispel Magic (3rd rank; counteract DC 21) to counteract the rune</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Electrocution",
+      "actions": -1,
+      "traits": [
+        "arcane",
+        "electricity"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature grasps the door latch directly or with a tool.</p>\n<hr />\n<p><strong>Effect</strong> The trap deals (3d12+8) Electricity Damage damage to the triggering creature (Basic DC 25 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -60,98 +74,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Electrocution",
-      "actions": -1,
-      "traits": [
-        "arcane",
-        "electricity"
-      ],
-      "description": "<p><strong>Trigger</strong> A creature grasps the door latch directly or with a tool.</p>\n<hr />\n<p><strong>Effect</strong> The trap deals <span class=\"roll\" onclick=\"roll(this)\">3d12+8</span> electricity damage to the triggering creature (DC 25 basic Reflex save).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Strong Electric Latch Rune",
-    "type": "hazard",
-    "level": 5,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Uncommon",
-      "Medium",
-      "Electricity",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Scenario #3-06: Struck by Shadows",
-    "stealth": {
-      "value": 13,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>An invisible rune imprinted on a door latch releases a powerful electric discharge.</p>",
-    "disable": "<p>DC 23 Thievery check (expert) to scratch out the rune without allowing electricity to flow, or Dispel Magic (3rd rank; counteract DC 21) to counteract the rune</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Electrocution",
-        "actions": -1,
-        "traits": [
-          "arcane",
-          "electricity"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature grasps the door latch directly or with a tool.</p>\n<hr />\n<p><strong>Effect</strong> The trap deals <span class=\"roll\" onclick=\"roll(this)\">3d12+8</span> electricity damage to the triggering creature (DC 25 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 22"
-  },
-  "recallKnowledge": ", DC: 22"
+  "recallKnowledge": ", DC 20"
 }

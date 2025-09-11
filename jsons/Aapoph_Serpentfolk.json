@@ -16,16 +16,16 @@
     "Serpentfolk"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
   "perception": {
     "value": 8,
-    "note": "darkvisionscent 30 ft imprecise",
+    "note": "Darkvision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 30 ft imprecise"
-  ],
   "languages": [
     "Aklo",
     "Sakvroth",
@@ -78,7 +78,7 @@
       "quantity": 1,
       "description": "<p>This one-handed curved blade is sharp on one side.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "forceful",
         "sweep"
@@ -130,11 +130,11 @@
       "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -180,7 +180,7 @@
         }
       ],
       "effects": [
-        "Serpentfolk-venom"
+        "serpentfolk-venom"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -207,7 +207,7 @@
         }
       ],
       "effects": [
-        "Knockdown"
+        "knockdown"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -222,7 +222,7 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d4</span> poison damage and enfeebled 1 (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 2d4 Poison Damage damage and enfeebled 1 (1 round)</p>",
       "collapsed": false
     },
     {
@@ -231,249 +231,15 @@
       "traits": [],
       "description": "<p>The aapoph serpentfolk makes one scimitar or fangs Strike and one tail Strike, each targeting a different creature. These attacks both count toward the aapoph's multiple attack penalty, but the penalty doesn't increase until after the aapoph makes both attacks.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Aapophs possess greater strength and stronger venom than their zyss kin, but they lack zyss's innate magic. Unlike their selfish superiors, aapophs are communal and group together to hunt, wrestle, and sleep curled together in pits.</p>\n<p>Aapophs often have physical mutations—horns, vestigial tails, or spines protruding from their scales—yet these have little impact on their overall combat prowess—and combat prowess is the measure by which zyss judge them.</p>\n<hr />\n<p>Before their ancient clash with humanity devastated their civilization, serpentfolk were masters of a sprawling underground empire. Their power was shattered and their god Ydersius decapitated (although not quite slain). The cunning, intelligence, and magical abilities of serpentfolk have diminished from their ancient heights, and most are born without these boons. This is partially the result of cruel genetic meddling among serpentfolk—though the ruling class, zyss, are born with an innate spellcasting ability, their blood runs thin, making them susceptible to wounds. Seen as the failures of the serpentfolk's experiments are the aapophs, who are strong but prone to mutation and lack innate spellcasting.</p>\n<p>Today, the central realm of the Darklands retains the old name of the serpentfolk empire that once dominated this region—Sekamina. This name is also the source of the serpentfolk's Aklo title, sekmin, which they are often called in ancient texts. Serpentfolk dominion had declined before ghouls, gugs, umbral gnomes, and other forces. Yet their recent ventures have brought them back to a stronger place in the Darklands. Many serpentfolk sleeping in torpor in secluded vaults have awakened.</p>\n<p>Zyss serpentfolk tend toward megalomania, with dreams of returning to their place of dominance. Many of their plans hinge on resurrecting Ydersius, their decapitated god. His headless body still thrashes about, mindless, in the Darklands, waiting to be reunited with his lost skull. Serpentfolk numbers are so small that reclaiming their dominance seems a distant dream, especially since their reproduction is slow. Though a parent can birth a dozen young at once, the gestation period lasts up to a decade, and the likelihood that even one will be zyss is low. There's no telling whether a child will be zyss or aapoph, regardless of parentage. A coveted zyss child is just as likely to arise from aapoph parents as from two zyss, and every serpentfolk colony has someone in charge of sorting the young, identifying the earliest signs of magic in them.</p>",
-  "recallKnowledge": "Society, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Aapoph Serpentfolk",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Humanoid",
-      "Mutant",
-      "Serpentfolk"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 8,
-      "note": "darkvisionscent 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 30 ft imprecise"
-    ],
-    "languages": [
-      "Aklo",
-      "Sakvroth",
-      "Telepathy 100 feet"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [
-      {
-        "name": "Scimitar",
-        "quantity": 1,
-        "description": "<p>This one-handed curved blade is sharp on one side.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "forceful",
-          "sweep"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+2 status to will saves vs. mental",
-    "hp": {
-      "value": 60,
-      "max": 60,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "poison",
-        "value": 5
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Reactive Strike",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Scimitar",
-        "bonus": 11,
-        "traits": [
-          "forceful",
-          "sweep"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+6)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fangs",
-        "bonus": 11,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "1d8+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Serpentfolk-venom"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 11,
-        "traits": [
-          "agile"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Serpentfolk Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d4</span> poison damage and enfeebled 1 (1 round)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Slithering Attack",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The aapoph serpentfolk makes one scimitar or fangs Strike and one tail Strike, each targeting a different creature. These attacks both count toward the aapoph's multiple attack penalty, but the penalty doesn't increase until after the aapoph makes both attacks.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Aapophs possess greater strength and stronger venom than their zyss kin, but they lack zyss's innate magic. Unlike their selfish superiors, aapophs are communal and group together to hunt, wrestle, and sleep curled together in pits.</p>\n<p>Aapophs often have physical mutations—horns, vestigial tails, or spines protruding from their scales—yet these have little impact on their overall combat prowess—and combat prowess is the measure by which zyss judge them.</p>\n<hr />\n<p>Before their ancient clash with humanity devastated their civilization, serpentfolk were masters of a sprawling underground empire. Their power was shattered and their god Ydersius decapitated (although not quite slain). The cunning, intelligence, and magical abilities of serpentfolk have diminished from their ancient heights, and most are born without these boons. This is partially the result of cruel genetic meddling among serpentfolk—though the ruling class, zyss, are born with an innate spellcasting ability, their blood runs thin, making them susceptible to wounds. Seen as the failures of the serpentfolk's experiments are the aapophs, who are strong but prone to mutation and lack innate spellcasting.</p>\n<p>Today, the central realm of the Darklands retains the old name of the serpentfolk empire that once dominated this region—Sekamina. This name is also the source of the serpentfolk's Aklo title, sekmin, which they are often called in ancient texts. Serpentfolk dominion had declined before ghouls, gugs, umbral gnomes, and other forces. Yet their recent ventures have brought them back to a stronger place in the Darklands. Many serpentfolk sleeping in torpor in secluded vaults have awakened.</p>\n<p>Zyss serpentfolk tend toward megalomania, with dreams of returning to their place of dominance. Many of their plans hinge on resurrecting Ydersius, their decapitated god. His headless body still thrashes about, mindless, in the Darklands, waiting to be reunited with his lost skull. Serpentfolk numbers are so small that reclaiming their dominance seems a distant dream, especially since their reproduction is slow. Though a parent can birth a dozen young at once, the gestation period lasts up to a decade, and the likelihood that even one will be zyss is low. There's no telling whether a child will be zyss or aapoph, regardless of parentage. A coveted zyss child is just as likely to arise from aapoph parents as from two zyss, and every serpentfolk colony has someone in charge of sorting the young, identifying the earliest signs of magic in them.</p>",
-    "recallKnowledge": "Society, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 18"
 }

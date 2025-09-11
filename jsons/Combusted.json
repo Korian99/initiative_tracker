@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Medium",
     "Chaotic",
     "Evil",
@@ -17,15 +18,15 @@
     "Unholy"
   ],
   "source": "Pathfinder Book of the Dead",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 6,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril",
@@ -125,7 +126,14 @@
         "aura",
         "fire"
       ],
-      "description": "<p>5 feet. <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire, DC 17 basic Reflex save</p>",
+      "description": "<p>5 feet. 2d6 Fire Damage, Basic DC 17 Reflex Saving Throw</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -136,7 +144,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -198,7 +206,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -211,233 +219,10 @@
         "fire",
         "occult"
       ],
-      "description": "<p>The combusted screams in agony, causing creatures in a 15 foot emanation to burst into flame, which deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage to each creature in the area (DC 17 basic Will save). A creature that critically fails its save is Frightened 1; this frightened condition is an emotion, fear, and mental effect.</p>\n<p>The combusted can't use Blazing Howl for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The combusted screams in agony, causing creatures in a 15ft Emanation to burst into flame, which deals 4d6 Fire Damage damage to each creature in the area (Basic DC 17 Will Saving Throw). A creature that critically fails its save is Frightened 1; this frightened condition is an emotion, fear, and mental effect.</p>\n<p>The combusted can't use Blazing Howl for 1d4 rounds.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Creatures whose lives end in flames can return as undead called combusted. Still burning even in death, they're consumed by everlasting anguish that drives them to reckless violence.</p>\n<p>Although combusted can no longer be truly harmed by fire, they endure the final moments of their death eternally, searing them with endless burning pain. Many combusted attempt to douse themselves in lakes or rivers, believing the flames that wreath their forms must be the source of their pain. However, water is more hindrance than help, and being immersed in it only amplifies their agony.</p>\n<p>No longer possessing the ability to communicate in anything other than agonized wails, combusted nonetheless retain their senses and memories. Yet they rarely seek to act on their past, for the pain drowns out thoughts of friendships, family, and vengeance. In time, combusted are driven to share their pain with others, for the instant their flames catch fire on another living being, they feel a single, fleeting moment of relief. This relief leads combusted into conflict with living creatures often, although those that attack large settlements rarely survive long.</p>\n<p>Some combusted form from those who died via spontaneous combustion, suddenly becoming so hot they burst into flames. This mysterious process isn't fully understood, though some scholars attribute it to shifts in power in the Plane of Fire causing hot spots in the Material Plane powerful enough to kill. Much more rarely, combusted arise around areas with especially intense magical flames, such as forges used to create magic weapons, when the fire sets creatures ablaze, so they burn to death and transcend into undeath in mere moments.</p>\n<p>Regardless of the source of their conflagration, the horrifying deaths that combusted suffered haunt them in the afterlife. Their charred, blackened corpses alight with flames are a constant reminder of their final moments in pain. The stench of burning flesh heralds their presence, each combusted leaving black smoke in their wake.</p>",
-  "recallKnowledge": "Religion, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Combusted",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Fire",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder Book of the Dead",
-    "perception": {
-      "value": 6,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril",
-      "(can't speak any language)"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": -1
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 65,
-      "max": 65,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "fire",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "cold",
-        "value": 5
-      },
-      {
-        "type": "water",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Intense Heat",
-        "actions": null,
-        "traits": [
-          "aura",
-          "fire"
-        ],
-        "description": "<p>5 feet. <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire, DC 17 basic Reflex save</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Water Vulnerability",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When a combusted is dealt damage by a water effect, the combusted is wracked by pain, becoming Stunned 1. Water can't douse a combusted's flames.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fire Fist",
-        "bonus": 12,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "1d6",
-            "type": "persistent fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "persistent fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Fire Mote",
-        "bonus": 11,
-        "traits": [
-          "range-increment-60"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "fire"
-          },
-          {
-            "roll": "1d6",
-            "type": "persistent fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "fire"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "persistent fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Blazing Howl",
-        "actions": 1,
-        "traits": [
-          "fire",
-          "occult"
-        ],
-        "description": "<p>The combusted screams in agony, causing creatures in a 15 foot emanation to burst into flame, which deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage to each creature in the area (DC 17 basic Will save). A creature that critically fails its save is Frightened 1; this frightened condition is an emotion, fear, and mental effect.</p>\n<p>The combusted can't use Blazing Howl for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Creatures whose lives end in flames can return as undead called combusted. Still burning even in death, they're consumed by everlasting anguish that drives them to reckless violence.</p>\n<p>Although combusted can no longer be truly harmed by fire, they endure the final moments of their death eternally, searing them with endless burning pain. Many combusted attempt to douse themselves in lakes or rivers, believing the flames that wreath their forms must be the source of their pain. However, water is more hindrance than help, and being immersed in it only amplifies their agony.</p>\n<p>No longer possessing the ability to communicate in anything other than agonized wails, combusted nonetheless retain their senses and memories. Yet they rarely seek to act on their past, for the pain drowns out thoughts of friendships, family, and vengeance. In time, combusted are driven to share their pain with others, for the instant their flames catch fire on another living being, they feel a single, fleeting moment of relief. This relief leads combusted into conflict with living creatures often, although those that attack large settlements rarely survive long.</p>\n<p>Some combusted form from those who died via spontaneous combustion, suddenly becoming so hot they burst into flames. This mysterious process isn't fully understood, though some scholars attribute it to shifts in power in the Plane of Fire causing hot spots in the Material Plane powerful enough to kill. Much more rarely, combusted arise around areas with especially intense magical flames, such as forges used to create magic weapons, when the fire sets creatures ablaze, so they burn to death and transcend into undeath in mere moments.</p>\n<p>Regardless of the source of their conflagration, the horrifying deaths that combusted suffered haunt them in the afterlife. Their charred, blackened corpses alight with flames are a constant reminder of their final moments in pain. The stench of burning flesh heralds their presence, each combusted leaving black smoke in their wake.</p>",
-    "recallKnowledge": "Religion, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 18"
 }

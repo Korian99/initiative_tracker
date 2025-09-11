@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 15,
   "traits": [
+    "Common",
     "Gargantuan",
     "Animal"
   ],
   "source": "Pathfinder Bestiary 2",
+  "senses": [
+    "Darkvision",
+    "Tremorsense 90ft imprecise"
+  ],
   "perception": {
     "value": 27,
-    "note": "darkvisiontremorsense 90 ft imprecise",
+    "note": "Darkvision, Tremorsense 90ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "tremorsense 90 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -88,7 +89,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "50 ft,\n",
+  "speed": "50 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -111,7 +112,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -138,7 +139,7 @@
         }
       ],
       "effects": [
-        "Black-scorpion-venom"
+        "black-scorpion-venom"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -153,14 +154,14 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 36 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> poison damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d12</span> poison damage, Clumsy 2, and Slowed 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">4d12</span> poison damage, Clumsy 4, and Slowed 2 (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 36 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 2d12 Poison Damage damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 2</strong> 3d12 Poison Damage damage, Clumsy 2, and Slowed 1 (1 round)</p>\n<p><strong>Stage 3</strong> 4d12 Poison Damage damage, Clumsy 4, and Slowed 2 (1 round)</p>",
       "collapsed": false
     },
     {
       "name": "Greater Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d12+12</span> bludgeoning damage, DC 36 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls Unconscious, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p></p></details>",
+      "description": "<p>(2d12+12) Bludgeoning Damage damage, Basic DC 36 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls Unconscious, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -169,187 +170,15 @@
       "traits": [],
       "description": "<p>The black scorpion makes three stinger Strikes, each against a different target. Its multiple attack penalty applies to each attack, but the penalty increases only after all the attacks have been made.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>With a carapace the color of polished obsidian and a penchant for attacking villages, this humongous scorpion is one of the desert's most frightening predators. A black scorpion measures 60 feet from tip to the base of its stinger.</p>",
-  "recallKnowledge": "Nature, DC: 34",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 27,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Black Scorpion",
-    "type": "Creature",
-    "level": 15,
-    "traits": [
-      "Gargantuan",
-      "Animal"
-    ],
-    "source": "Pathfinder Bestiary 2",
-    "perception": {
-      "value": 27,
-      "note": "darkvisiontremorsense 90 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "tremorsense 90 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 30,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 9
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 6
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 6
-    },
-    "charisma": {
-      "value": -4
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 38,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 29,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 275,
-      "max": 275,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "50 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Pincer",
-        "bonus": 30,
-        "traits": [
-          "agile",
-          "reach-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d12+15",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d12+15)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Stinger",
-        "bonus": 30,
-        "traits": [
-          "reach-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8+15",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8+15)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Black-scorpion-venom"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Black Scorpion Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 36 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> poison damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d12</span> poison damage, Clumsy 2, and Slowed 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">4d12</span> poison damage, Clumsy 4, and Slowed 2 (1 round)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Greater Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">2d12+12</span> bludgeoning damage, DC 36 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls Unconscious, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p></p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Rapid Stinging",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The black scorpion makes three stinger Strikes, each against a different target. Its multiple attack penalty applies to each attack, but the penalty increases only after all the attacks have been made.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>With a carapace the color of polished obsidian and a penchant for attacking villages, this humongous scorpion is one of the desert's most frightening predators. A black scorpion measures 60 feet from tip to the base of its stinger.</p>",
-    "recallKnowledge": "Nature, DC: 34",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 34"
 }

@@ -9,23 +9,23 @@
   "type": "Creature",
   "level": 10,
   "traits": [
+    "Common",
     "Medium",
     "Aquatic",
     "Chaotic",
     "Fey",
-    "Water",
-    "(caster)"
+    "Water"
   ],
   "source": "Pathfinder Bestiary 2",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 20,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Common",
     "Fey",
@@ -36,7 +36,7 @@
       "name": "athletics",
       "modifier": 12,
       "note": [
-        "to Swim <span class=\"roll\" onclick=\"roll(this)\">18</span>"
+        "to Swim 18"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -136,7 +136,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\nswim 50 ft,\n",
+  "speed": "25 ft, swim 50ft",
   "strikes": [
     {
       "type": "melee",
@@ -175,7 +175,7 @@
         "primal",
         "water"
       ],
-      "description": "<p>The nereid touches a creature and causes water from its own body to flow into the creature's lungs. If the creature cannot breathe water, it must attempt a DC 29 Fortitude save.</p>\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune to for 24 hours.</p>\n<p><strong>Failure</strong> The creature becomes Sickened 3 as it chokes on the water.</p>\n<p><strong>Critical Failure</strong> The creature chokes on the water and runs out of air. It falls unconscious and starts drowning. If the creature is above water, it recovers from drowning as soon as it succeeds at a saving throw against suffocation.</p>",
+      "description": "<p>The nereid touches a creature and causes water from its own body to flow into the creature's lungs. If the creature cannot breathe water, it must attempt a DC 29 Fortitude Saving Throw save.</p>\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune to for 24 hours.</p>\n<p><strong>Failure</strong> The creature becomes Sickened 3 as it chokes on the water.</p>\n<p><strong>Critical Failure</strong> The creature chokes on the water and runs out of air. It falls unconscious and starts drowning. If the creature is above water, it recovers from drowning as soon as it succeeds at a saving throw against suffocation.</p>",
       "collapsed": false
     },
     {
@@ -198,13 +198,8 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 5,
+      "autoHeightenLevel": 6,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "DEz7gcf0AumMmDO8",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -213,11 +208,14 @@
           "name": "Suggestion",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "incapacitation",
             "linguistic",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -234,18 +232,17 @@
           "id": "Ulj8sLZQJDbHJQ19"
         }
       ],
-      "lv4slots": {
-        "current": 1,
-        "max": 1
-      },
       "lv5spells": [
         {
           "name": "Control Water",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "water"
           ],
           "castingTime": "2",
           "duration": "",
@@ -265,9 +262,12 @@
           "name": "Elemental Form (Water Only)",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "polymorph"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -275,7 +275,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> gust, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> boulder, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tendril, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> blade (versatile piercing), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> wave, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> branch, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n",
+          "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> gust, <strong>Damage</strong> 1d4 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> boulder, <strong>Damage</strong> 2d10 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> tendril, <strong>Damage</strong> 1d8 fire plus 1d4 persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> blade (versatile piercing), <strong>Damage</strong> 1d8 slashing plus 1d4 electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> wave, <strong>Damage</strong> 1d12 bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> branch, <strong>Damage</strong> 2d10 bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -287,9 +287,12 @@
           "name": "Elemental Form (Water Only)",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "polymorph"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -297,7 +300,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> gust, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> boulder, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tendril, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> blade (versatile piercing), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> wave, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> branch, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n",
+          "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> gust, <strong>Damage</strong> 1d4 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> boulder, <strong>Damage</strong> 2d10 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> tendril, <strong>Damage</strong> 1d8 fire plus 1d4 persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> blade (versatile piercing), <strong>Damage</strong> 1d8 slashing plus 1d4 electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> wave, <strong>Damage</strong> 1d12 bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> branch, <strong>Damage</strong> 2d10 bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -309,9 +312,12 @@
           "name": "Elemental Form (Water Only)",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "polymorph"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -319,7 +325,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> gust, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> boulder, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tendril, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> blade (versatile piercing), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> wave, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> branch, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n",
+          "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> gust, <strong>Damage</strong> 1d4 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> boulder, <strong>Damage</strong> 2d10 bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> tendril, <strong>Damage</strong> 1d8 fire plus 1d4 persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> blade (versatile piercing), <strong>Damage</strong> 1d8 slashing plus 1d4 electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> wave, <strong>Damage</strong> 1d12 bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <span class=\"action-glyph\">1</span> branch, <strong>Damage</strong> 2d10 bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -328,20 +334,19 @@
           "id": "YtRTdI3UAqH6vZVL"
         }
       ],
-      "lv5slots": {
-        "current": 4,
-        "max": 4
-      },
       "lv6spells": [
         {
           "name": "Summon Elemental (Water Elementals only)",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "3",
-          "duration": "1 minute",
+          "duration": "Sustained up to 1 minute",
           "range": "30 feet",
           "area": "",
           "targets": "",
@@ -355,14 +360,11 @@
           "id": "VgQyT5O8X59xTXWs"
         }
       ],
-      "lv6slots": {
-        "current": 1,
-        "max": 1
-      },
       "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -374,6 +376,18 @@
       "lv3slots": {
         "current": 0,
         "max": 0
+      },
+      "lv4slots": {
+        "current": 1,
+        "max": 1
+      },
+      "lv5slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv6slots": {
+        "current": 1,
+        "max": 1
       },
       "lv7slots": {
         "current": 0,
@@ -393,405 +407,5 @@
       }
     }
   ],
-  "description": "<p>Nereids are aquatic fey with deep ties to water. They share some similarities with naiads, but they are not guardians and do not bind themselves to a specific body of water. Although they are primarily aquatic creatures, their unique ability to imbue their vitality into a supernatural shawl allows them to travel on land as well. A nereid must be careful when manifesting a shawl, however, as their life essence is bound to it, so it can be stolen or destroyed to threaten the nereid.</p>\n<p>Nereids prefer to exist in isolation. Left to their own devices, they avoid combat, but when forced to fight, their ability to transform the natural waters in their flesh into poison serves them as well as any weapon.</p>\n<p>Often, ignorant sailors lump all water-dwelling fey into a single category of \"aquatic tempters\", regardless of the fey's type or gender, using these creatures' names interchangeably to represent the concept of a beautiful figure who exists to lure mortals to a drowning death. Whereas naiads have more patience and often seek to educate the ignorant regarding the harm that stereotypes can cause, nereids and rusalkas have little patience for such methods. Rusalkas are the primary source for the legends of fey preying upon sailors, and nereids loathe them for that, as they prefer to live apart from humanity and enjoy the beauty of the natural world in peace.</p>\n<p>When a nereid learns of a rusalka's increased activity, it often seeks out the rusalka to route them-not so much out of an urge to protect humanoids (in whom nereids traditionally have little interest), but to prevent the rusalka from inadvertently riling up violent responses from humanoids who can't be bothered to note the difference between a murderous fey and one who just wants to be left alone.</p>",
-  "recallKnowledge": "Nature, DC: 27",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Nereid",
-    "type": "Creature",
-    "level": 10,
-    "traits": [
-      "Medium",
-      "Aquatic",
-      "Chaotic",
-      "Fey",
-      "Water",
-      "(caster)"
-    ],
-    "source": "Pathfinder Bestiary 2",
-    "perception": {
-      "value": 20,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Fey",
-      "Thalassic"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 12,
-        "note": [
-          "to Swim <span class=\"roll\" onclick=\"roll(this)\">18</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 7
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 3
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 7
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 30,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 175,
-      "max": 175,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "poison"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "cold-iron",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Watery Transparency",
-        "actions": null,
-        "traits": [
-          "primal",
-          "water"
-        ],
-        "description": "<p>When underwater, the nereid's body is Invisible. The nereid can dismiss or resume this transparency as an action that has the concentrate trait.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\nswim 50 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Poisonous Touch",
-        "bonus": 23,
-        "traits": [
-          "agile",
-          "finesse",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "6d6",
-            "type": "poison"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(6d6)*2",
-            "type": "poison"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Drowning Touch",
-        "actions": 2,
-        "traits": [
-          "incapacitation",
-          "primal",
-          "water"
-        ],
-        "description": "<p>The nereid touches a creature and causes water from its own body to flow into the creature's lungs. If the creature cannot breathe water, it must attempt a DC 29 Fortitude save.</p>\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune to for 24 hours.</p>\n<p><strong>Failure</strong> The creature becomes Sickened 3 as it chokes on the water.</p>\n<p><strong>Critical Failure</strong> The creature chokes on the water and runs out of air. It falls unconscious and starts drowning. If the creature is above water, it recovers from drowning as soon as it succeeds at a saving throw against suffocation.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Manifest Shawl",
-        "actions": 3,
-        "traits": [
-          "primal"
-        ],
-        "description": "<p>The nereid divests themself of part of their connection to the First World and imbues this essence into a flowing shawl that enables them to function on land. The nereid can Dismiss this effect as long as they are touching the shawl. As long as the shawl exists, the nereid gains the amphibious trait. A non-nereid who carries the shawl also gains the amphibious trait.</p>\n<p>If a nereid's shawl is destroyed rather than Dismissed, the nereid can't Manifest a Shawl for 24 hours.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Primal Innate Spells",
-        "type": "innate",
-        "bonus": 19,
-        "dc": 29,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 5,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "DEz7gcf0AumMmDO8",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Suggestion",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "incapacitation",
-              "linguistic",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "Ulj8sLZQJDbHJQ19"
-          }
-        ],
-        "lv4slots": {
-          "current": 1,
-          "max": 1
-        },
-        "lv5spells": [
-          {
-            "name": "Control Water",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "500 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>By imposing your will upon the water, you can raise or lower the level of water in the chosen area by 10 feet. Water creatures in the area are subjected to the effects of Slow.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "n6W3CJsR2E2yRSUD"
-          },
-          {
-            "name": "Elemental Form (Water Only)",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> gust, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> boulder, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tendril, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> blade (versatile piercing), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> wave, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> branch, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "YtRTdI3UAqH6vZVL"
-          },
-          {
-            "name": "Elemental Form (Water Only)",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> gust, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> boulder, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tendril, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> blade (versatile piercing), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> wave, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> branch, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "YtRTdI3UAqH6vZVL"
-          },
-          {
-            "name": "Elemental Form (Water Only)",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You call upon the power of the planes to transform into a Medium elemental battle form. When you Cast this Spell, choose a listed element. While in this form, you gain the corresponding trait and the elemental trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p>\n<ul>\n<li>AC = 19 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>10 temporary Hit Points.</li>\n<li>Darkvision.</li>\n<li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +18, and your damage bonus is +9. These are Dexterity based (air, fire, or metal) or Strength based (earth, water, or wood). If your corresponding unarmed attack modifier is higher, you can use it instead.</li>\n<li>Acrobatics (air, fire, or metal) or Athletics (earth, water, or wood) modifier of +20; ignore this change if your own modifier is higher.</li>\n</ul>\n<p>You also gain specific abilities based on the type of elemental you choose:</p>\n<ul>\n<li><strong>Air</strong>\n<ul>\n<li>fly 80 feet, movement doesn't trigger reactions;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> gust, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Earth</strong>\n<ul>\n<li>Speed 20 feet, burrow 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> boulder, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n<li><strong>Fire</strong>\n<ul>\n<li>Speed 50 feet; fire resistance 10, weakness 5 to cold and 5 to water;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tendril, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire.</li>\n</ul>\n</li>\n<li><strong>Metal</strong>\n<ul>\n<li>Speed 40 feet, fly 20 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> blade (versatile piercing), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> slashing plus <span class=\"roll\" onclick=\"roll(this)\">1d4</span> electricity.</li>\n</ul>\n</li>\n<li><strong>Water</strong>\n<ul>\n<li>Speed 20 feet, swim 60 feet; fire resistance 5;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> wave, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d12</span> bludgeoning, and you can spend an action immediately after a hit to push the target 5 feet with the effects of a successful Shove.</li>\n</ul>\n</li>\n<li><strong>Wood</strong>\n<ul>\n<li>Speed 20 feet, climb 30 feet;</li>\n<li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> branch, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> bludgeoning.</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> Your battle form is Large and your attacks have 10-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 15 temporary HP, an attack modifier of +23, a damage bonus of +13, and Acrobatics or Athletics +23.</p>\n<p><strong>Heightened (7th)</strong> Your battle form is Huge and your attacks have 15-foot reach. You must have space to expand or the spell is lost. You instead gain AC = 22 + your level, 20 temporary HP, an attack modifier of +25, a damage bonus of +11, double the number of damage dice (including persistent damage), and Acrobatics or Athletics +25.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "YtRTdI3UAqH6vZVL"
-          }
-        ],
-        "lv5slots": {
-          "current": 4,
-          "max": 4
-        },
-        "lv6spells": [
-          {
-            "name": "Summon Elemental (Water Elementals only)",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You conjure an elemental to fight for you. This works like summon animal, except you summon a common creature that has the elemental trait and whose level is 1 or lower.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Level 2</p>\n<p><strong>Heightened (4th)</strong> Level 3</p>\n<p><strong>Heightened (5th)</strong> Level 5</p>\n<p><strong>Heightened (6th)</strong> Level 7</p>\n<p><strong>Heightened (7th)</strong> Level 9</p>\n<p><strong>Heightened (8th)</strong> Level 11</p>\n<p><strong>Heightened (9th)</strong> Level 13</p>\n<p><strong>Heightened (10th)</strong> Level 15</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "VgQyT5O8X59xTXWs"
-          }
-        ],
-        "lv6slots": {
-          "current": 1,
-          "max": 1
-        },
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>Nereids are aquatic fey with deep ties to water. They share some similarities with naiads, but they are not guardians and do not bind themselves to a specific body of water. Although they are primarily aquatic creatures, their unique ability to imbue their vitality into a supernatural shawl allows them to travel on land as well. A nereid must be careful when manifesting a shawl, however, as their life essence is bound to it, so it can be stolen or destroyed to threaten the nereid.</p>\n<p>Nereids prefer to exist in isolation. Left to their own devices, they avoid combat, but when forced to fight, their ability to transform the natural waters in their flesh into poison serves them as well as any weapon.</p>\n<p>Often, ignorant sailors lump all water-dwelling fey into a single category of \"aquatic tempters\", regardless of the fey's type or gender, using these creatures' names interchangeably to represent the concept of a beautiful figure who exists to lure mortals to a drowning death. Whereas naiads have more patience and often seek to educate the ignorant regarding the harm that stereotypes can cause, nereids and rusalkas have little patience for such methods. Rusalkas are the primary source for the legends of fey preying upon sailors, and nereids loathe them for that, as they prefer to live apart from humanity and enjoy the beauty of the natural world in peace.</p>\n<p>When a nereid learns of a rusalka's increased activity, it often seeks out the rusalka to route them-not so much out of an urge to protect humanoids (in whom nereids traditionally have little interest), but to prevent the rusalka from inadvertently riling up violent responses from humanoids who can't be bothered to note the difference between a murderous fey and one who just wants to be left alone.</p>",
-    "recallKnowledge": "Nature, DC: 27",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 27"
 }

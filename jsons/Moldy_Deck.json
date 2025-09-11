@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Moldy Deck",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 0,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental",
     "Mechanical",
@@ -18,32 +18,54 @@
   "source": "Pathfinder Society Quest #3: Grehunde's Gorget",
   "stealth": {
     "value": 6,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>Gray mold covers a 10-foot by 25-foot section of the deck.</p>",
-  "disable": "<p>DC 13 Survival check to remove or neutralize the mold without disturbing it.</p>",
+  "disable": "<p>DC 13 Survival  to remove or neutralize the mold without disturbing it.</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Grey Mold Dustup",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature moves into the mold's space or damages the mold. The mold can't use this reaction if the damage was fire or acid damage</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature and all creatures within the gray mold's area are exposed to gray mold.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grey Mold",
+      "actions": null,
+      "traits": [
+        "inhaled",
+        "poison"
+      ],
+      "description": "<p>Any clumsy condition from the gray mold persists after the poison's duration ends.</p>\n<p><strong>Saving Throw</strong> DC 15 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d4 Poison Damage damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> 1d4 Poison Damage damage and Clumsy 2 (1 round)</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 15,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 9,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 1,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -62,114 +84,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Grey Mold Dustup",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature moves into the mold's space or damages the mold. The mold can't use this reaction if the damage was fire or acid damage</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature and all creatures within the gray mold's area are exposed to gray mold.</p>",
-      "collapsed": false
-    },
-    {
-      "name": "Grey Mold",
-      "actions": null,
-      "traits": [
-        "inhaled",
-        "poison"
-      ],
-      "description": "<p>Any clumsy condition from the gray mold persists after the poison's duration ends.</p>\n<p><strong>Saving Throw</strong> DC 15 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Clumsy 2 (1 round)</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Moldy Deck",
-    "type": "hazard",
-    "level": 0,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental",
-      "Mechanical",
-      "Poison"
-    ],
-    "source": "Pathfinder Society Quest #3: Grehunde's Gorget",
-    "stealth": {
-      "value": 6,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>Gray mold covers a 10-foot by 25-foot section of the deck.</p>",
-    "disable": "<p>DC 13 Survival check to remove or neutralize the mold without disturbing it.</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 15,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 1,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 16,
-      "max": 16,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Grey Mold Dustup",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature moves into the mold's space or damages the mold. The mold can't use this reaction if the damage was fire or acid damage</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature and all creatures within the gray mold's area are exposed to gray mold.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Grey Mold",
-        "actions": null,
-        "traits": [
-          "inhaled",
-          "poison"
-        ],
-        "description": "<p>Any clumsy condition from the gray mold persists after the poison's duration ends.</p>\n<p><strong>Saving Throw</strong> DC 15 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Clumsy 2 (1 round)</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 14"
-  },
-  "recallKnowledge": ", DC: 14"
+  "recallKnowledge": ", DC 14"
 }

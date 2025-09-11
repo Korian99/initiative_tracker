@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Mutated Brown Mold",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 6,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental",
     "Fungus"
@@ -17,32 +17,54 @@
   "source": "Pathfinder Society Special #3-98: Expedition Into Pallid Peril",
   "stealth": {
     "value": 18,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>This unassuming fungus leeches heat out of the air.</p>",
-  "disable": "<p>DC 25 Survival check (trained) to safely remove the mold</p>",
+  "disable": "<p>DC 25 Survival  (trained) to safely remove the mold</p>",
   "reset": "<p>After expanding, the brown mold can't grow again for 1 day.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Emit Cold",
+      "actions": null,
+      "traits": [
+        "aura",
+        "cold"
+      ],
+      "description": "<p>10 feet. Enhanced brown mold deals (2d8+7) Cold Damage damage to nearby creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Leech Warmth",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> Fire comes within 5 feet of the brown mold.</p>\n<hr />\n<p><strong>Effect</strong> The brown mold expands into every square adjacent to its space. As it grows, it pulls more heat from its surroundings, dealing (4d8+14) Cold Damage damage (Basic DC 24 Fortitude Saving Throw save) to creatures within 15 feet after it expands.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 24,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 17,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 11,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -67,119 +89,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Emit Cold",
-      "actions": null,
-      "traits": [
-        "aura",
-        "cold"
-      ],
-      "description": "<p>10 feet. Enhanced brown mold deals <span class=\"roll\" onclick=\"roll(this)\">2d8+7</span> cold damage to nearby creatures.</p>",
-      "collapsed": false
-    },
-    {
-      "name": "Leech Warmth",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> Fire comes within 5 feet of the brown mold.</p>\n<hr />\n<p><strong>Effect</strong> The brown mold expands into every square adjacent to its space. As it grows, it pulls more heat from its surroundings, dealing <span class=\"roll\" onclick=\"roll(this)\">4d8+14</span> cold damage (DC 24 basic Fortitude save) to creatures within 15 feet after it expands.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 18,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Mutated Brown Mold",
-    "type": "hazard",
-    "level": 6,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental",
-      "Fungus"
-    ],
-    "source": "Pathfinder Society Special #3-98: Expedition Into Pallid Peril",
-    "stealth": {
-      "value": 18,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>This unassuming fungus leeches heat out of the air.</p>",
-    "disable": "<p>DC 25 Survival check (trained) to safely remove the mold</p>",
-    "reset": "<p>After expanding, the brown mold can't grow again for 1 day.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 24,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 54,
-      "max": 54,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "fire",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "cold",
-        "value": 15
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Emit Cold",
-        "actions": null,
-        "traits": [
-          "aura",
-          "cold"
-        ],
-        "description": "<p>10 feet. Enhanced brown mold deals <span class=\"roll\" onclick=\"roll(this)\">2d8+7</span> cold damage to nearby creatures.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Leech Warmth",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> Fire comes within 5 feet of the brown mold.</p>\n<hr />\n<p><strong>Effect</strong> The brown mold expands into every square adjacent to its space. As it grows, it pulls more heat from its surroundings, dealing <span class=\"roll\" onclick=\"roll(this)\">4d8+14</span> cold damage (DC 24 basic Fortitude save) to creatures within 15 feet after it expands.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": "Nature, DC: 22"
-  },
-  "recallKnowledge": "Nature, DC: 22"
+  "recallKnowledge": "Nature, DC 22"
 }

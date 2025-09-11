@@ -17,13 +17,15 @@
     "Humanoid"
   ],
   "source": "Pathfinder Kingmaker",
+  "senses": [
+    "unseen sight"
+  ],
   "perception": {
     "value": 29,
-    "note": "",
+    "note": "unseen sight",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Aklo",
     "Hallit"
@@ -110,7 +112,7 @@
       "quantity": 1,
       "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
       "level": 0,
-      "price": "2 sp ",
+      "price": "2 sp",
       "traits": [
         "agile",
         "finesse",
@@ -122,9 +124,9 @@
     {
       "name": "Acid Flask (Greater) (Infused)",
       "quantity": 14,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>",
       "level": 11,
-      "price": "250 gp ",
+      "price": "250 gp",
       "traits": [
         "acid",
         "alchemical",
@@ -139,7 +141,7 @@
       "quantity": 1,
       "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -147,7 +149,7 @@
       "quantity": 1,
       "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -155,66 +157,18 @@
       "quantity": 1,
       "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": []
-    },
-    {
-      "name": "Antidote (Major)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +4 item bonus to Fortitude saving throws against poisons for 6 hours, and when you drink the antidote, you can immediately attempt a saving throw against one poison of 14th level or lower affecting you. If you succeed, the poison is neutralized.</p>\n",
-      "level": 14,
-      "price": "675 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "healing"
-      ]
-    },
-    {
-      "name": "Eagle Eye Elixir (Major) (Infused)",
-      "quantity": 2,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>After you drink this elixir, you notice subtle visual details. For the next hour, you gain a +3 item bonus to Perception checks, or +4 when attempting to find secret doors and traps.</p>\n<p>Each time you pass within 10 feet of a secret door or trap, the GM automatically rolls a secret check for you to find it.</p>\n",
-      "level": 16,
-      "price": "",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "infused"
-      ]
-    },
-    {
-      "name": "Elixir of Life (Major) (Infused)",
-      "quantity": 3,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">8d6+21</span> healing Hit Points and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-      "level": 15,
-      "price": "",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "healing",
-        "infused"
-      ]
-    },
-    {
-      "name": "Mistform Elixir (Greater) (Infused)",
-      "quantity": 2,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>A faint mist emanates from your skin, making you Concealed for 5 minutes.</p>\n<p>As usual being concealed when your position is still obvious, you can't use this concealment to Hide or Sneak.</p>",
-      "level": 10,
-      "price": "",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "illusion",
-        "infused",
-        "visual"
-      ]
     }
   ],
   "generalAbilities": [
+    {
+      "name": "Infused Items",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A Thresholder Hermeticist carries the following infused items, which last for 24 hours or until the next time the Thresholder Hermeticist makes their daily preparations: infused Acid Flask (Greater) (14), infused Eagle Eye Elixir (Major) (2), infused Elixir of Life (Major) (3), infused Mistform Elixir (Greater) (2).</p>",
+      "collapsed": false
+    },
     {
       "name": "Unseen Sight",
       "actions": null,
@@ -278,7 +232,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -303,7 +257,7 @@
         }
       ],
       "effects": [
-        "Cruel-anatomist"
+        "cruel-anatomist"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -348,7 +302,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -365,7 +319,7 @@
       "name": "Cruel Anatomist",
       "actions": null,
       "traits": [],
-      "description": "<p>The Thresholder Hermeticist deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d8</span> bleed damage with melee Strikes. A creature who bleeds for 2 rounds from this becomes Enfeebled 1 for as long as it continues bleeding.</p>",
+      "description": "<p>The Thresholder Hermeticist deals an additional 2d8 bleed damage with melee Strikes. A creature who bleeds for 2 rounds from this becomes Enfeebled 1 for as long as it continues bleeding.</p>",
       "collapsed": false
     },
     {
@@ -377,389 +331,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Society, DC: 40",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 29,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Thresholder Hermeticist",
-    "type": "Creature",
-    "level": 16,
-    "traits": [
-      "Rare",
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "perception": {
-      "value": 29,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Aklo",
-      "Hallit"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 29,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 31,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 25,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "medicine",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "occultism",
-        "modifier": 31,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Yog-Sothoth Lore",
-        "modifier": 31,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 5
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Dagger",
-        "quantity": 1,
-        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
-        "level": 0,
-        "price": "2 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "magical",
-          "thrown-10",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Acid Flask (Greater) (Infused)",
-        "quantity": 14,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>",
-        "level": 11,
-        "price": "250 gp ",
-        "traits": [
-          "acid",
-          "alchemical",
-          "bomb",
-          "consumable",
-          "infused",
-          "splash"
-        ]
-      },
-      {
-        "name": "Studded Leather Armor",
-        "quantity": 1,
-        "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Alchemist's Tools",
-        "quantity": 1,
-        "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Religious Symbol of Yog-Sothoth",
-        "quantity": 1,
-        "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      },
-      {
-        "name": "Antidote (Major)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +4 item bonus to Fortitude saving throws against poisons for 6 hours, and when you drink the antidote, you can immediately attempt a saving throw against one poison of 14th level or lower affecting you. If you succeed, the poison is neutralized.</p>\n",
-        "level": 14,
-        "price": "675 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "healing"
-        ]
-      },
-      {
-        "name": "Eagle Eye Elixir (Major) (Infused)",
-        "quantity": 2,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>After you drink this elixir, you notice subtle visual details. For the next hour, you gain a +3 item bonus to Perception checks, or +4 when attempting to find secret doors and traps.</p>\n<p>Each time you pass within 10 feet of a secret door or trap, the GM automatically rolls a secret check for you to find it.</p>\n",
-        "level": 16,
-        "price": "",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "infused"
-        ]
-      },
-      {
-        "name": "Elixir of Life (Major) (Infused)",
-        "quantity": 3,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">8d6+21</span> healing Hit Points and gain +3 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-        "level": 15,
-        "price": "",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "healing",
-          "infused"
-        ]
-      },
-      {
-        "name": "Mistform Elixir (Greater) (Infused)",
-        "quantity": 2,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>A faint mist emanates from your skin, making you Concealed for 5 minutes.</p>\n<p>As usual being concealed when your position is still obvious, you can't use this concealment to Hide or Sneak.</p>",
-        "level": 10,
-        "price": "",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "illusion",
-          "infused",
-          "visual"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Unseen Sight",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The removal of the eyes symbolized a Thresholder's abandonment of all they had seen before, and with the ritual's completion they gain something greater than mere vision: they gain the Unseen Sight. This is a precise sense that mimics darkvision yet functions even if the eye sockets themselves are covered. More importantly, the unseen sight allows a Thresholder to see the truth of the world, granting them the ability to see things as they actually are as if they were under the effects of Truesight, provided they are located within a region under the influence of Yog- Sothoth.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 39,
-      "note": "concealed",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 30,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 26,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "juggernaut",
-    "hp": {
-      "value": 290,
-      "max": 290,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "mental",
-        "value": 15
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Juggernaut",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When the Thresholder Hermeticist rolls a success on a Fortitude save, they get a critical success instead.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Outside of Time",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The Thresholder Hermeticist exists outside of time; they don't age, don't need food or drink to survive, and can't be Quickened or Slowed unless they choose to be.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Dagger",
-        "bonus": 31,
-        "traits": [
-          "agile",
-          "finesse",
-          "magical",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d4+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d4+8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Cruel-anatomist"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Greater Acid Flask",
-        "bonus": 31,
-        "traits": [
-          "range-increment-30",
-          "splash"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1",
-            "type": "acid"
-          },
-          {
-            "roll": "3d6",
-            "type": "persistent acid"
-          },
-          {
-            "roll": "3",
-            "type": "splash acid"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1)*2",
-            "type": "acid"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "persistent acid"
-          },
-          {
-            "roll": "(3)*2",
-            "type": "splash acid"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Bomber",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When throwing an alchemical bomb with the splash trait, the Thresholder Hermeticist can deal splash damage to only their primary target instead of the usual splash area.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Cruel Anatomist",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The Thresholder Hermeticist deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d8</span> bleed damage with melee Strikes. A creature who bleeds for 2 rounds from this becomes Enfeebled 1 for as long as it continues bleeding.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Quick Bomber",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The Thresholder Hermeticist Interacts to draw an alchemical bomb, then Strikes with it.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Society, DC: 40",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 35"
 }

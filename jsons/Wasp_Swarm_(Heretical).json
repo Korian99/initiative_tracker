@@ -16,15 +16,15 @@
     "Unholy"
   ],
   "source": "Pathfinder Society Scenario #3-13: Guardian's Covenant",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 10,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -118,15 +118,23 @@
       "value": 5
     }
   ],
-  "defensiveAbilities": [],
-  "speed": "20 ft,\nfly 40 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Swarm Mind",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster doesn't have a single mind (typically because it's a swarm of smaller creatures), and is immune to mental effects that target only a specific number of creatures. It is still subject to mental effects that affect all creatures in an area.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, fly 40ft",
   "strikes": [],
   "offensiveAbilities": [
     {
       "name": "Swarming Stings",
       "actions": 1,
       "traits": [],
-      "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> piercing damage (DC 21 basic Reflex save) and is exposed to wasp venom. A successful save negates the poison exposure.</p>",
+      "description": "<p>Each enemy in the swarm's space takes 2d8 Piercing Damage damage (Basic DC 21 Reflex Saving Throw save) and is exposed to wasp venom. A successful save negates the poison exposure.</p>",
       "collapsed": false
     },
     {
@@ -135,157 +143,10 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 21 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison and Clumsy 2 (2 rounds)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 21 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage (1 round)</p>\n<p><strong>Stage 2</strong> 2d6 Poison Damage and Clumsy 2 (2 rounds)</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>The monsters have a visceral hatred of good deities and their servants, particularly Arcadia's benevolent couatls.</p>\n<p>Wasp nests are made of chewed wood fibers foraged from the surrounding flora, which the wasps make into a material similar to paper. A single wasp nest can house thousands of individuals that emerge as a massive swarm. Most swarms attack only to protect their nest or if otherwise agitated, though druids and other primal enchanters can bend these venomous vermin to their will-to deadly effect.</p>\n<hr />\n<p>While the common wasp poses little threat to a hardy adventurer aside from an uncomfortable sting, a large and aggressive swarm of these territorial insects-to say nothing of their oversized kin-can lay low an entire party of heroes. The wasps represented here are of the common variety also known as yellowjackets, but many other sorts of dangerous wasps exist, such as a Garundi variant that swarms in such great numbers that it can decimate entire villages, and the dreaded extraplanar hellwasps, which build their nests within the corpses of their victims.</p>",
-  "recallKnowledge": "Nature, DC: 21",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Wasp Swarm (Heretical)",
-    "type": "Creature",
-    "level": 4,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Animal",
-      "Swarm",
-      "Unholy"
-    ],
-    "source": "Pathfinder Society Scenario #3-13: Guardian's Covenant",
-    "perception": {
-      "value": 10,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": -4
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 45,
-      "max": 45,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "swarm-mind"
-    ],
-    "resistances": [
-      {
-        "type": "bludgeoning",
-        "value": 7
-      },
-      {
-        "type": "piercing",
-        "value": 7
-      },
-      {
-        "type": "slashing",
-        "value": 3
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "area-damage",
-        "value": 5
-      },
-      {
-        "type": "holy",
-        "value": 5
-      },
-      {
-        "type": "splash-damage",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "20 ft,\nfly 40 ft,\n",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Swarming Stings",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> piercing damage (DC 21 basic Reflex save) and is exposed to wasp venom. A successful save negates the poison exposure.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Wasp Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 21 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison and Clumsy 2 (2 rounds)</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>The monsters have a visceral hatred of good deities and their servants, particularly Arcadia's benevolent couatls.</p>\n<p>Wasp nests are made of chewed wood fibers foraged from the surrounding flora, which the wasps make into a material similar to paper. A single wasp nest can house thousands of individuals that emerge as a massive swarm. Most swarms attack only to protect their nest or if otherwise agitated, though druids and other primal enchanters can bend these venomous vermin to their will-to deadly effect.</p>\n<hr />\n<p>While the common wasp poses little threat to a hardy adventurer aside from an uncomfortable sting, a large and aggressive swarm of these territorial insects-to say nothing of their oversized kin-can lay low an entire party of heroes. The wasps represented here are of the common variety also known as yellowjackets, but many other sorts of dangerous wasps exist, such as a Garundi variant that swarms in such great numbers that it can decimate entire villages, and the dreaded extraplanar hellwasps, which build their nests within the corpses of their victims.</p>",
-    "recallKnowledge": "Nature, DC: 21",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 19"
 }

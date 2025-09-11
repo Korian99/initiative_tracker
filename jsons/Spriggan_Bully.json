@@ -9,24 +9,24 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Small",
     "Chaotic",
     "Evil",
     "Gnome",
     "Humanoid",
-    "Spriggan",
-    "(caster)"
+    "Spriggan"
   ],
   "source": "Pathfinder Bestiary 2",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 10,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Aklo",
     "Common"
@@ -106,7 +106,7 @@
       "quantity": 1,
       "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -114,18 +114,10 @@
       "quantity": 1,
       "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "versatile-p"
       ]
-    },
-    {
-      "name": "Bolts",
-      "quantity": 10,
-      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
     }
   ],
   "generalAbilities": [],
@@ -171,11 +163,11 @@
         "polymorph",
         "primal"
       ],
-      "description": "<p><strong>Trigger</strong> The spriggan bully takes damage</p><hr /><p><strong>Effect</strong> The spriggan bully grows to Large size, along with their equipment (which returns to natural size if removed). The spriggan bully's reach increases by 5 feet. They regain 5 healing Hit Points and gain a +2 status bonus to melee attacks and damage rolls. This effect continues until the end of the spriggan bully's next turn, but on any turn in which the spriggan bully deals damage to another creature and is not Fatigued, the effect extends until the end of the following turn.</p>\n<p>When Enraged Growth ends, the spriggan bully is fatigued for 1 hour.</p>",
+      "description": "<p><strong>Trigger</strong> The spriggan bully takes damage</p><hr /><p><strong>Effect</strong> The spriggan bully grows to Large size, along with their equipment (which returns to natural size if removed). The spriggan bully's reach increases by 5 feet. They regain 5 Healing Damage Hit Points and gain a +2 status bonus to melee attacks and damage rolls. This effect continues until the end of the spriggan bully's next turn, but on any turn in which the spriggan bully deals damage to another creature and is not Fatigued, the effect extends until the end of the following turn.</p>\n<p>When Enraged Growth ends, the spriggan bully is fatigued for 1 hour.</p>",
       "collapsed": false
     }
   ],
-  "speed": "20 ft,\n",
+  "speed": "20 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -224,7 +216,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -243,7 +235,7 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The spriggan bully's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The spriggan bully's Strikes deal an additional 1d6 precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     }
   ],
@@ -263,13 +255,15 @@
           "name": "Dancing Lights",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "light",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "Sustained up to ",
           "range": "120 feet",
           "area": "",
           "targets": "",
@@ -283,21 +277,19 @@
           "id": "ZHbNERC3lcen4DEq"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "kM1AoSQF8Q3phCJt",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Fear",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "fear",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -319,9 +311,12 @@
           "name": "Shatter",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "sonic"
           ],
           "castingTime": "2",
           "duration": "",
@@ -329,7 +324,7 @@
           "area": "",
           "targets": "1 unattended object",
           "save": "",
-          "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>, and the Hardness the spell ignores increases by 2.</p>",
+          "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal 2d10 sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10, and the Hardness the spell ignores increases by 2.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -346,6 +341,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -388,400 +384,5 @@
       }
     }
   ],
-  "description": "<p>The typical spriggan is a bully who prefers to take live prisoners in fights, but only to ensure that they have a large stock of living victims to torment, tease, and abuse. They train to use weapons in nonlethal ways that inflict the maximum amount of pain even as they guard against accidental death. When not bullying prisoners or hunting for new victims, spriggan bullies enjoy drinking, watching others fight, and fighting among themselves.</p>",
-  "recallKnowledge": "Society, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Spriggan Bully",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Small",
-      "Chaotic",
-      "Evil",
-      "Gnome",
-      "Humanoid",
-      "Spriggan",
-      "(caster)"
-    ],
-    "source": "Pathfinder Bestiary 2",
-    "perception": {
-      "value": 10,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Aklo",
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Crossbow",
-        "quantity": 1,
-        "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Morningstar",
-        "quantity": 1,
-        "description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "versatile-p"
-        ]
-      },
-      {
-        "name": "Bolts",
-        "quantity": 10,
-        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 48,
-      "max": 48,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Enraged Growth",
-        "actions": -1,
-        "traits": [
-          "polymorph",
-          "primal"
-        ],
-        "description": "<p><strong>Trigger</strong> The spriggan bully takes damage</p><hr /><p><strong>Effect</strong> The spriggan bully grows to Large size, along with their equipment (which returns to natural size if removed). The spriggan bully's reach increases by 5 feet. They regain 5 healing Hit Points and gain a +2 status bonus to melee attacks and damage rolls. This effect continues until the end of the spriggan bully's next turn, but on any turn in which the spriggan bully deals damage to another creature and is not Fatigued, the effect extends until the end of the following turn.</p>\n<p>When Enraged Growth ends, the spriggan bully is fatigued for 1 hour.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Morningstar",
-        "bonus": 10,
-        "traits": [
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Crossbow",
-        "bonus": 11,
-        "traits": [
-          "range-increment-120",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Bully's Bludgeon",
-        "actions": 1,
-        "traits": [
-          "nonlethal"
-        ],
-        "description": "<p>The spriggan bully makes a morningstar Strike with a +2 circumstance bonus to its attack roll. This attack is nonlethal.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The spriggan bully's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Primal Innate Spells",
-        "type": "innate",
-        "bonus": 10,
-        "dc": 20,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 2,
-        "cantrips": [
-          {
-            "name": "Dancing Lights",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "light",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ZHbNERC3lcen4DEq"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "kM1AoSQF8Q3phCJt",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Fear",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "fear",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "1ytk7SFDM4cSthnF"
-          }
-        ],
-        "lv2spells": [
-          {
-            "name": "Shatter",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 unattended object",
-            "save": "",
-            "description": "<p>A high-frequency sonic attack shatters a nearby object. You deal <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage to the object, ignoring the object's Hardness if it is 4 or lower.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>, and the Hardness the spell ignores increases by 2.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "7Vb2mYee5rJnsRGM"
-          }
-        ],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The typical spriggan is a bully who prefers to take live prisoners in fights, but only to ensure that they have a large stock of living victims to torment, tease, and abuse. They train to use weapons in nonlethal ways that inflict the maximum amount of pain even as they guard against accidental death. When not bullying prisoners or hunting for new victims, spriggan bullies enjoy drinking, watching others fight, and fighting among themselves.</p>",
-    "recallKnowledge": "Society, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 18"
 }

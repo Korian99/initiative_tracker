@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Beast",
     "Evil",
@@ -17,19 +18,19 @@
     "Werecreature"
   ],
   "source": "Pathfinder Society Scenario #3-13: Guardian's Covenant",
+  "senses": [
+    "Echolocation 40ft precise",
+    "Low light vision"
+  ],
   "perception": {
     "value": 9,
-    "note": "echolocation 40 ft preciselow light-vision",
+    "note": "Echolocation 40ft precise, Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "echolocation 40 ft precise",
-    "low light-vision"
-  ],
   "languages": [
     "Common",
-    "Bat empathy"
+    "bat empathy"
   ],
   "skills": [
     {
@@ -92,7 +93,7 @@
       "quantity": 1,
       "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     }
   ],
@@ -162,62 +163,8 @@
       "collapsed": false
     }
   ],
-  "speed": "15 ft,\nfly 30 ft,\n",
-  "strikes": [
-    {
-      "type": "melee",
-      "name": "Fangs",
-      "bonus": 10,
-      "traits": [
-        "finesse"
-      ],
-      "damageRolls": [
-        {
-          "roll": "1d8+4",
-          "type": "slashing"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(1d8+4)*2",
-          "type": "slashing"
-        }
-      ],
-      "effects": [
-        "Curse-of-the-werebat"
-      ],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
-    },
-    {
-      "type": "melee",
-      "name": "Wing",
-      "bonus": 10,
-      "traits": [
-        "agile",
-        "finesse"
-      ],
-      "damageRolls": [
-        {
-          "roll": "1d6+4",
-          "type": "bludgeoning"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(1d6+4)*2",
-          "type": "bludgeoning"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
-    }
-  ],
+  "speed": "25 ft, ",
+  "strikes": [],
   "offensiveAbilities": [
     {
       "name": "Change Shape",
@@ -227,7 +174,7 @@
         "polymorph",
         "primal"
       ],
-      "description": "<p>Human with Fist attack for <span class=\"roll\" onclick=\"roll(this)\">1d4+2</span> bludgeoning damage and no fly Speed. In hybrid form, their Speed changes to 25 feet and fly 25 feet.</p></details>",
+      "description": "<p>Human with Fist attack for (1d4+2) Bludgeoning Damage damage and no fly Speed. In hybrid form, their Speed changes to 25 feet and fly 25 feet.</p>",
       "collapsed": false
     },
     {
@@ -237,7 +184,7 @@
         "curse",
         "primal"
       ],
-      "description": "<p>This curse affects only humanoids</p>\n<p><strong>Saving Throw</strong> DC 15 Fortitude save DC.</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a werebat until dawn. The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>",
+      "description": "<p>This curse affects only humanoids</p>\n<p><strong>Saving Throw</strong> DC 15 Fortitude Saving Throw DC.</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a werebat until dawn. The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>",
       "collapsed": false
     },
     {
@@ -247,269 +194,10 @@
         "polymorph",
         "primal"
       ],
-      "description": "<p>When a full moon appears in the night sky, the werebat must enter hybrid form and can't Change Shape thereafter. When the moon sets or the sun rises, the werebat returns to human form and is Fatigued for <span class=\"roll\" onclick=\"roll(this)\">2d4</span> hours.</p>",
+      "description": "<p>When a full moon appears in the night sky, the werebat must enter hybrid form and can't Change Shape thereafter. When the moon sets or the sun rises, the werebat returns to human form and is Fatigued for 2d4 hours.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Werecreatures are humanoids who transform into animals and animal-humanoid hybrids under the light of the full moon. The fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>\n<hr />\n<p>Werebats form organized colonies of opportunistic hunters. They aren't shy about transforming creatures to add to their colony, whom they initiate with elaborate social ceremonies and bloody hazing. The curse of the werebat gives them a strong urge to prey upon on weaker, lonely creatures. True werebats are often unusually tall and thin, with angular features. In combat, werebats favor their unarmed attacks because they can't fly while wielding weapons in their wings.</p>",
-  "recallKnowledge": "Arcana, Nature, Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Werebat (PFS 3-13)",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Beast",
-      "Evil",
-      "Human",
-      "Humanoid",
-      "Werecreature"
-    ],
-    "source": "Pathfinder Society Scenario #3-13: Guardian's Covenant",
-    "perception": {
-      "value": 9,
-      "note": "echolocation 40 ft preciselow light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "echolocation 40 ft precise",
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Bat empathy"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Studded Leather Armor",
-        "quantity": 1,
-        "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Bat Empathy",
-        "actions": null,
-        "traits": [
-          "primal"
-        ],
-        "description": "<p>A werebat can communicate with bats.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Echolocation (Precise) 40 feet",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A werebat can use their hearing as a precise sense at the listed range.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 35,
-      "max": 35,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "silver",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Wing Thrash",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An adjacent enemy damages the werebat</p>\n<hr />\n<p><strong>Effect</strong> The werebat makes one or two wing Strikes, each against a different adjacent creature.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "15 ft,\nfly 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fangs",
-        "bonus": 10,
-        "traits": [
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Curse-of-the-werebat"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Wing",
-        "bonus": 10,
-        "traits": [
-          "agile",
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Change Shape",
-        "actions": 1,
-        "traits": [
-          "concentrate",
-          "polymorph",
-          "primal"
-        ],
-        "description": "<p>Human with Fist attack for <span class=\"roll\" onclick=\"roll(this)\">1d4+2</span> bludgeoning damage and no fly Speed. In hybrid form, their Speed changes to 25 feet and fly 25 feet.</p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Curse of the Werebat",
-        "actions": null,
-        "traits": [
-          "curse",
-          "primal"
-        ],
-        "description": "<p>This curse affects only humanoids</p>\n<p><strong>Saving Throw</strong> DC 15 Fortitude save DC.</p>\n<p>On each full moon, the cursed creature must succeed at another Fortitude save or turn into a werebat until dawn. The creature is under the GM's control and goes on a rampage for half the night before falling unconscious until dawn.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Moon Frenzy",
-        "actions": null,
-        "traits": [
-          "polymorph",
-          "primal"
-        ],
-        "description": "<p>When a full moon appears in the night sky, the werebat must enter hybrid form and can't Change Shape thereafter. When the moon sets or the sun rises, the werebat returns to human form and is Fatigued for <span class=\"roll\" onclick=\"roll(this)\">2d4</span> hours.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Werecreatures are humanoids who transform into animals and animal-humanoid hybrids under the light of the full moon. The fate of these shapechanging creatures derives from an ancient primal curse that they can, in turn, transmit through their own bites. The stat blocks in this section reflect werecreatures in their hybrid forms.</p>\n<hr />\n<p>Werebats form organized colonies of opportunistic hunters. They aren't shy about transforming creatures to add to their colony, whom they initiate with elaborate social ceremonies and bloody hazing. The curse of the werebat gives them a strong urge to prey upon on weaker, lonely creatures. True werebats are often unusually tall and thin, with angular features. In combat, werebats favor their unarmed attacks because they can't fly while wielding weapons in their wings.</p>",
-    "recallKnowledge": "Arcana, Nature, Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature or Society, DC 16"
 }

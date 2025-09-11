@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 6,
   "traits": [
+    "Common",
     "Medium",
     "Amphibious",
     "Evil",
@@ -18,26 +19,26 @@
     "Sea-devil"
   ],
   "source": "Pathfinder Bestiary",
+  "senses": [
+    "Darkvision",
+    "Wavesense 30ft imprecise"
+  ],
   "perception": {
     "value": 13,
-    "note": "darkvisionwavesense 30 ft imprecise",
+    "note": "Darkvision, Wavesense 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "wavesense 30 ft imprecise"
-  ],
   "languages": [
     "Thalassic",
-    "Shark commune 150 feet"
+    "shark commune 150 feet"
   ],
   "skills": [
     {
       "name": "athletics",
       "modifier": 15,
       "note": [
-        "to Swim <span class=\"roll\" onclick=\"roll(this)\">18</span>"
+        "to Swim 18"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -88,7 +89,7 @@
       "quantity": 1,
       "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>",
       "level": 0,
-      "price": "5 sp ",
+      "price": "5 sp",
       "traits": [
         "reach"
       ]
@@ -98,7 +99,7 @@
       "quantity": 2,
       "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "thrown-20"
       ]
@@ -112,6 +113,13 @@
         "mental"
       ],
       "description": "<p>The sea devil can communicate telepathically with sharks within range. It can communicate only simple concepts like \"come,\" \"guard,\" or \"attack.\"</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Wavesense 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This sense allows a monster to feel vibrations caused by movement through a liquid. It's an imprecise sense with a limited range (listed in the ability). Wavesense functions only if monster and the subject are in the same body of liquid, and only if the subject is moving through the liquid.</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -150,7 +158,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\nswim 35 ft,\n",
+  "speed": "25 ft, swim 35ft",
   "strikes": [
     {
       "type": "melee",
@@ -257,7 +265,7 @@
   "offensiveAbilities": [
     {
       "name": "Blood Frenzy",
-      "actions": null,
+      "actions": 0,
       "traits": [
         "rage"
       ],
@@ -268,7 +276,7 @@
       "name": "Bloodletting",
       "actions": null,
       "traits": [],
-      "description": "<p>When the sea devil deals piercing or slashing damage, it also deals <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bleed if the target was Off-Guard or if the attack was a critical hit.</p>",
+      "description": "<p>When the sea devil deals piercing or slashing damage, it also deals 1d4 Bleed Damage if the target was Off-Guard or if the attack was a critical hit.</p>",
       "collapsed": false
     },
     {
@@ -282,294 +290,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Unlike in many cultures, the highest-ranking sea devils are expected not just to wade into battle alongside their brethren, but to actively lead the campaign.</p>\n<hr />\n<p>Sea devils are horrid, amphibious humanoids who lurk in Golarion's oceans and crawl ashore to steal away victims beneath the veil of darkness. When an entire fishing village disappears overnight, sea devils are the first suspects.</p>\n<p>Far from mindless monstrosities, sea devils are terribly intelligent, with a cunning limited only by their strict adherence to hierarchy. They call themselves \"sahuagin\" but have wholly embraced their enemies' name for their kind as their own. Their cultural militancy enables sea devils to act in concert to perform grand acts of sabotage, marauding, and pillaging, and only the strongest (and most conniving) members of the tribe make it to the top of the social ladder. For all their discipline, however, sea devils are widely known to snap into murderous frenzies at the scent of blood. Even the best-laid plans can fall apart when a sea devil breaks ranks to revel in the spilled blood of their victims, an indulgence that can quickly cause a chain reaction of bloodthirsty ecstasy throughout an entire raiding party. For this reason, sea devils typically capture landborne quarry using nets and ropes, dragging them to the depths of the sea before making even a single incision.</p>\n<p>Among sea devil society, individuals are rewarded based on their performance during hunts and shore excursions, with rebels and outliers quickly culled from the ranks. Every pup is given a fair chance, however, and even the lowest-born sea devil can strive for the rank of commander, general, or perhaps even king or queen. Sea devils in positions of leadership tend to be among the largest, most violent, and most calculating of their kind, and fully realized sea devils are skilled warriors capable of capturing entire villages on their own. The most powerful sea devils are mighty kings and queens who coordinate the activity of lesser sea devils across territories spanning leagues, foiling attempts at their positions via manufactured blood feuds and wars against their numerous enemies ashore and underwater.</p>",
-  "recallKnowledge": "Society, DC: 22",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Sea Devil Baron",
-    "type": "Creature",
-    "level": 6,
-    "traits": [
-      "Medium",
-      "Amphibious",
-      "Evil",
-      "Humanoid",
-      "Lawful",
-      "Mutant",
-      "Sea-devil"
-    ],
-    "source": "Pathfinder Bestiary",
-    "perception": {
-      "value": 13,
-      "note": "darkvisionwavesense 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "wavesense 30 ft imprecise"
-    ],
-    "languages": [
-      "Thalassic",
-      "Shark commune 150 feet"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 15,
-        "note": [
-          "to Swim <span class=\"roll\" onclick=\"roll(this)\">18</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Longspear",
-        "quantity": 1,
-        "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>",
-        "level": 0,
-        "price": "5 sp ",
-        "traits": [
-          "reach"
-        ]
-      },
-      {
-        "name": "Spear",
-        "quantity": 2,
-        "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "thrown-20"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Shark Commune 150 feet",
-        "actions": null,
-        "traits": [
-          "mental"
-        ],
-        "description": "<p>The sea devil can communicate telepathically with sharks within range. It can communicate only simple concepts like \"come,\" \"guard,\" or \"attack.\"</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 24,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 95,
-      "max": 95,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\nswim 35 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Longspear",
-        "bonus": 17,
-        "traits": [
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+11",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+11)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+8",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+8)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 17,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Spear",
-        "bonus": 17,
-        "traits": [
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+11",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+11)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Blood Frenzy",
-        "actions": null,
-        "traits": [
-          "rage"
-        ],
-        "description": "<p><strong>Requirements</strong> The sea devil is not Fatigued or already in a frenzy</p>\n<p><strong>Trigger</strong> The sea devil deals bleed damage to a living creature.</p><hr /><p><strong>Effect</strong> The sea devil flies into a frenzy that lasts 1 minute. While frenzied, the sea devil gains a +1 status bonus to attack rolls with its claws and jaws, gains a +4 status bonus to damage rolls with its claws and jaws, gains 15 temporary HP until the end of the frenzy, and takes a -2 status penalty to AC. The sea devil can't voluntarily stop its frenzy. After its frenzy, the sea devil is Fatigued.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Bloodletting",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When the sea devil deals piercing or slashing damage, it also deals <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bleed if the target was Off-Guard or if the attack was a critical hit.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Hateful Tide",
-        "actions": 2,
-        "traits": [
-          "rage"
-        ],
-        "description": "<p><strong>Requirements</strong> The sea devil baron is in a blood frenzy.</p>\n<hr />\n<p><strong>Effect</strong> The sea devil baron unleashes a whirlwind of attacks against its foes, making a single melee Strike with its claws or jaws against each opponent within reach.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Unlike in many cultures, the highest-ranking sea devils are expected not just to wade into battle alongside their brethren, but to actively lead the campaign.</p>\n<hr />\n<p>Sea devils are horrid, amphibious humanoids who lurk in Golarion's oceans and crawl ashore to steal away victims beneath the veil of darkness. When an entire fishing village disappears overnight, sea devils are the first suspects.</p>\n<p>Far from mindless monstrosities, sea devils are terribly intelligent, with a cunning limited only by their strict adherence to hierarchy. They call themselves \"sahuagin\" but have wholly embraced their enemies' name for their kind as their own. Their cultural militancy enables sea devils to act in concert to perform grand acts of sabotage, marauding, and pillaging, and only the strongest (and most conniving) members of the tribe make it to the top of the social ladder. For all their discipline, however, sea devils are widely known to snap into murderous frenzies at the scent of blood. Even the best-laid plans can fall apart when a sea devil breaks ranks to revel in the spilled blood of their victims, an indulgence that can quickly cause a chain reaction of bloodthirsty ecstasy throughout an entire raiding party. For this reason, sea devils typically capture landborne quarry using nets and ropes, dragging them to the depths of the sea before making even a single incision.</p>\n<p>Among sea devil society, individuals are rewarded based on their performance during hunts and shore excursions, with rebels and outliers quickly culled from the ranks. Every pup is given a fair chance, however, and even the lowest-born sea devil can strive for the rank of commander, general, or perhaps even king or queen. Sea devils in positions of leadership tend to be among the largest, most violent, and most calculating of their kind, and fully realized sea devils are skilled warriors capable of capturing entire villages on their own. The most powerful sea devils are mighty kings and queens who coordinate the activity of lesser sea devils across territories spanning leagues, foiling attempts at their positions via manufactured blood feuds and wars against their numerous enemies ashore and underwater.</p>",
-    "recallKnowledge": "Society, DC: 22",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 22"
 }

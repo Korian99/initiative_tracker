@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Rigged Climbing Loops",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 0,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Kingmaker",
   "stealth": {
     "value": 10,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>Loose handholds rip away from the walls to drop unsuspecting climbers into the chasm below.</p>",
-  "disable": "<p>DC 16 Crafting check (trained) or DC 16 Thievery check to anchor the climbing loops more securely</p>",
+  "disable": "<p>DC 16 Crafting  (trained) or DC 16 Thievery  to anchor the climbing loops more securely</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Tear Free",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature climbs across the chasm without knowing which of the loops are rigged</p>\n<p><strong>Effect</strong> The loops rip free, dropping the climber 20 feet into the chasm below and dealing 10 Bludgeoning Damage damage. The falling creature can use the Grab an Edge reaction to avoid falling if it succeeds at a DC 11 Flat ; failure indicates that the edge grabbed rips away as well.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,90 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Tear Free",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature climbs across the chasm without knowing which of the loops are rigged</p>\n<p><strong>Effect</strong> The loops rip free, dropping the climber 20 feet into the chasm below and dealing 10 bludgeoning damage. The falling creature can use the Grab an Edge reaction to avoid falling if it succeeds at a DC 11 Flat check; failure indicates that the edge grabbed rips away as well.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Rigged Climbing Loops",
-    "type": "hazard",
-    "level": 0,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "stealth": {
-      "value": 10,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>Loose handholds rip away from the walls to drop unsuspecting climbers into the chasm below.</p>",
-    "disable": "<p>DC 16 Crafting check (trained) or DC 16 Thievery check to anchor the climbing loops more securely</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Tear Free",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature climbs across the chasm without knowing which of the loops are rigged</p>\n<p><strong>Effect</strong> The loops rip free, dropping the climber 20 feet into the chasm below and dealing 10 bludgeoning damage. The falling creature can use the Grab an Edge reaction to avoid falling if it succeeds at a DC 11 Flat check; failure indicates that the edge grabbed rips away as well.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 14"
-  },
-  "recallKnowledge": ", DC: 14"
+  "recallKnowledge": ", DC 14"
 }

@@ -9,20 +9,20 @@
   "type": "Creature",
   "level": 1,
   "traits": [
+    "Common",
     "Medium",
     "Human",
     "Humanoid",
-    "Talos",
-    "(caster)"
+    "Talos"
   ],
   "source": "Pathfinder Rage of Elements",
+  "senses": [],
   "perception": {
     "value": 3,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common",
     "Talican"
@@ -81,7 +81,7 @@
       "quantity": 3,
       "description": "<p>This smaller version of the warhammer has a wooden or metal shaft ending in a metal head. Unlike its heavier cousin, it is light enough to throw.</p>",
       "level": 0,
-      "price": "3 sp ",
+      "price": "3 sp",
       "traits": [
         "agile",
         "thrown-20"
@@ -92,7 +92,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
@@ -100,7 +100,7 @@
       "quantity": 1,
       "description": "<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, blacksmith's tools differ from woodworker's tools. If you wear your artisan's tools, you can draw and replace them as part of the action that uses them.</p>",
       "level": 0,
-      "price": "4 gp ",
+      "price": "4 gp",
       "traits": []
     },
     {
@@ -108,47 +108,8 @@
       "quantity": 1,
       "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": []
-    },
-    {
-      "name": "Blast Boots (Lesser)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<hr />\n<p>These sets of rockets come in pairs and strap onto existing footwear (or a creature's feet). Inserting them and aligning them properly takes 1 minute. When you Activate the blast boots, you can High Jump or Long Jump, without the need to Stride first.</p>",
-      "level": 1,
-      "price": "3 gp ",
-      "traits": [
-        "uncommon",
-        "consumable",
-        "gadget",
-        "infused"
-      ]
-    },
-    {
-      "name": "Explosive Mine (Lesser)",
-      "quantity": 3,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact</p>\n<hr />\n<p>When you Activate an explosive mine, you place it on the ground in a square within your reach, priming it to explode when a creature steps on that square. If you have time in advance to prepare, you can place the mine on the ground before activating it, and you or an ally can try to use Stealth to Conceal an Object before you Activate the mine. If you don't Conceal the mine, its position is obvious at a glance. Once activated, the mine is primed to explode when enough pressure is placed on the square where it's located. Typically, this occurs when a Small or larger creature moves onto the square, though it could happen if a creature intentionally places pressure on the square from a distance to safely trigger the mine. Once triggered, the mine explodes, dealing the listed fire damage to any creatures in the area of effect with a basic Reflex save.</p>\n<hr />\n<p>The mine deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage, in a 5-foot emanation, and a DC 15 basic Reflex save.</p>",
-      "level": 1,
-      "price": "4 gp ",
-      "traits": [
-        "uncommon",
-        "consumable",
-        "gadget",
-        "infused"
-      ]
-    },
-    {
-      "name": "Ablative Armor Plating (Lesser)",
-      "quantity": 1,
-      "description": "<p>Ablative armor plating is additional plating, combined with springs, clever clockwork, and improvised padding, to absorb damage by knocking the additional pieces free. The pieces slowly come apart on their own with time and movement. The process of attaching the plating takes 10 minutes and grants the wearer of the armor the 5 Hit Points for 1 minute or until lost. Removing the plating early destroys it.</p>\n",
-      "level": 1,
-      "price": "4 gp ",
-      "traits": [
-        "uncommon",
-        "consumable",
-        "infused",
-        "gadget"
-      ]
     }
   ],
   "generalAbilities": [],
@@ -198,11 +159,11 @@
       "name": "Reflective Defense",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> A creature within 30 feet targets the talos gadgeteer, and they can see the attacker;</p>\n<p><strong>Requirements</strong> The talos is in dim or bright light</p>\n<hr />\n<p><strong>Effect</strong> The talos gadgeteer reflects light off their metallic skin and into the enemy's eyes; it must succeed at a DC 14 Reflex save or be Dazzled until the end of the talos's next turn.</p>",
+      "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> A creature within 30 feet targets the talos gadgeteer, and they can see the attacker;</p>\n<p><strong>Requirements</strong> The talos is in dim or bright light</p>\n<hr />\n<p><strong>Effect</strong> The talos gadgeteer reflects light off their metallic skin and into the enemy's eyes; it must succeed at a DC 14 Reflex Saving Throw save or be Dazzled until the end of the talos's next turn.</p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -301,6 +262,8 @@
           "name": "Detect Metal",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -310,7 +273,7 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "30 ft emanation",
+          "area": "30ft emanation",
           "targets": "",
           "save": "",
           "description": "<p>You attune yourself to magnetic fields, becoming aware of the presence or absence of metallic objects, veins, and deposits within the area. You can choose to ignore metal you're fully aware of, such as the gear you and your allies wear and carry.</p>\n<p>You detect metal Hidden by illusions (such as Invisibility) only if the illusion has a lower rank than your detect metal spell. Against deceptive illusions, detect metal always notices an absence of metal when a non-metallic object is disguised as metallic. However, if the deception involves disguising one metallic object as another, such as pretending a copper coin is made of gold, detect metal registers only the presence of metal, not its type, even if the rank of your detect metal spell exceeds that of the illusion effect.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can discern all types of metal you detected. Your spell can overcome deceptive illusory spells hiding one metal as another if the magic effect's rank is lower than that of your detect metal spell.</p>",
@@ -322,11 +285,6 @@
           "id": "rmsw6xzbn1IrkohV"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "jGrxd3BiFIgWU2CJ",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -337,6 +295,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -379,391 +338,5 @@
       }
     }
   ],
-  "description": "<p>The geniekin called taloses descend primarily from zuhra genies, metal elementals, and other denizens of the Plane of Metal. Many taloses mold their natural talent for metalwork into careers as tinkerers, miners, or smiths, although just as many leverage the luster of precious metals in a quest for fame and fortune.</p>\n<p>Taloses are among the most metropolitan of geniekin, often born in or drawn to cities of various sizes, especially those with advanced metalworking or technology trades. Metal often needs to be worked to find its form and function, which may explain why many taloses seem to enjoy living among people, if not necessarily socializing with them. They often find themselves stumbling into jobs somewhere along the production line of technology, whether it's mining the raw ore from the earth, working it into wires and gears, or constructing the devices themselves. Some taloses resent and reject the expectations that they fill such roles, but many embrace their fascination with tech, often going on to become expert inventors. Taloses are therefore far more likely than other geniekin to make use of clockwork technology in their communities.</p>\n<p>Despite having long inhabited Golarion, albeit in small numbers, taloses have only rarely been recognized as geniekin. The largest number of them, and also the largest number whose true nature is known, inhabit Tian Xia. The traditions of metal as an element have lived much longer there. Taloses often find themselves drawn to discussions and study of elemental metal the instant they hear of the concept. Historical records speak of renowned courtiers and diplomats with skin of flawless silver or bronze. In the Ivory Port of Goka, the smiths of the family-owned Dragon's Iron Forge craft their blades and firearms with magnetic techniques handed down from their zuhra sheikha ancestor.</p>\n<p>A talos gadgeteer is a clockwork tinkerer. When confronted, their preferred tactic is to lure opponents into traps using their lesser explosive mines before attempting to engage directly.</p>",
-  "recallKnowledge": "Society, DC: 15",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 3,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Talos Gadgeteer",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Medium",
-      "Human",
-      "Humanoid",
-      "Talos",
-      "(caster)"
-    ],
-    "source": "Pathfinder Rage of Elements",
-    "perception": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common",
-      "Talican"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 3
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Light Hammer",
-        "quantity": 3,
-        "description": "<p>This smaller version of the warhammer has a wooden or metal shaft ending in a metal head. Unlike its heavier cousin, it is light enough to throw.</p>",
-        "level": 0,
-        "price": "3 sp ",
-        "traits": [
-          "agile",
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Artisan's Tools",
-        "quantity": 1,
-        "description": "<p>You need these tools to create items from raw materials with the Craft skill. Different sets are needed for different work, as determined by the GM; for example, blacksmith's tools differ from woodworker's tools. If you wear your artisan's tools, you can draw and replace them as part of the action that uses them.</p>",
-        "level": 0,
-        "price": "4 gp ",
-        "traits": []
-      },
-      {
-        "name": "Formula Book (Blank)",
-        "quantity": 1,
-        "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": []
-      },
-      {
-        "name": "Blast Boots (Lesser)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<hr />\n<p>These sets of rockets come in pairs and strap onto existing footwear (or a creature's feet). Inserting them and aligning them properly takes 1 minute. When you Activate the blast boots, you can High Jump or Long Jump, without the need to Stride first.</p>",
-        "level": 1,
-        "price": "3 gp ",
-        "traits": [
-          "uncommon",
-          "consumable",
-          "gadget",
-          "infused"
-        ]
-      },
-      {
-        "name": "Explosive Mine (Lesser)",
-        "quantity": 3,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact</p>\n<hr />\n<p>When you Activate an explosive mine, you place it on the ground in a square within your reach, priming it to explode when a creature steps on that square. If you have time in advance to prepare, you can place the mine on the ground before activating it, and you or an ally can try to use Stealth to Conceal an Object before you Activate the mine. If you don't Conceal the mine, its position is obvious at a glance. Once activated, the mine is primed to explode when enough pressure is placed on the square where it's located. Typically, this occurs when a Small or larger creature moves onto the square, though it could happen if a creature intentionally places pressure on the square from a distance to safely trigger the mine. Once triggered, the mine explodes, dealing the listed fire damage to any creatures in the area of effect with a basic Reflex save.</p>\n<hr />\n<p>The mine deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage, in a 5-foot emanation, and a DC 15 basic Reflex save.</p>",
-        "level": 1,
-        "price": "4 gp ",
-        "traits": [
-          "uncommon",
-          "consumable",
-          "gadget",
-          "infused"
-        ]
-      },
-      {
-        "name": "Ablative Armor Plating (Lesser)",
-        "quantity": 1,
-        "description": "<p>Ablative armor plating is additional plating, combined with springs, clever clockwork, and improvised padding, to absorb damage by knocking the additional pieces free. The pieces slowly come apart on their own with time and movement. The process of attaching the plating takes 10 minutes and grants the wearer of the armor the 5 Hit Points for 1 minute or until lost. Removing the plating early destroys it.</p>\n",
-        "level": 1,
-        "price": "4 gp ",
-        "traits": [
-          "uncommon",
-          "consumable",
-          "infused",
-          "gadget"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 17,
-      "max": 17,
-      "note": "ablative armor plating",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "doubleVs": [],
-        "exceptions": [],
-        "type": "electricity",
-        "value": 1
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Reflective Defense",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> A creature within 30 feet targets the talos gadgeteer, and they can see the attacker;</p>\n<p><strong>Requirements</strong> The talos is in dim or bright light</p>\n<hr />\n<p><strong>Effect</strong> The talos gadgeteer reflects light off their metallic skin and into the enemy's eyes; it must succeed at a DC 14 Reflex save or be Dazzled until the end of the talos's next turn.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 8,
-        "traits": [
-          "agile",
-          "finesse",
-          "unarmed",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+1",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+1)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Light Hammer",
-        "bonus": 6,
-        "traits": [
-          "agile"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+1",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+1)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Light Hammer",
-        "bonus": 8,
-        "traits": [
-          "agile",
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+1",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+1)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [
-      {
-        "name": "Arcane Innate Spells",
-        "type": "innate",
-        "bonus": 6,
-        "dc": 14,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Detect Metal",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate",
-              "metal"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "30 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You attune yourself to magnetic fields, becoming aware of the presence or absence of metallic objects, veins, and deposits within the area. You can choose to ignore metal you're fully aware of, such as the gear you and your allies wear and carry.</p>\n<p>You detect metal Hidden by illusions (such as Invisibility) only if the illusion has a lower rank than your detect metal spell. Against deceptive illusions, detect metal always notices an absence of metal when a non-metallic object is disguised as metallic. However, if the deception involves disguising one metallic object as another, such as pretending a copper coin is made of gold, detect metal registers only the presence of metal, not its type, even if the rank of your detect metal spell exceeds that of the illusion effect.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can discern all types of metal you detected. Your spell can overcome deceptive illusory spells hiding one metal as another if the magic effect's rank is lower than that of your detect metal spell.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "rmsw6xzbn1IrkohV"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "jGrxd3BiFIgWU2CJ",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The geniekin called taloses descend primarily from zuhra genies, metal elementals, and other denizens of the Plane of Metal. Many taloses mold their natural talent for metalwork into careers as tinkerers, miners, or smiths, although just as many leverage the luster of precious metals in a quest for fame and fortune.</p>\n<p>Taloses are among the most metropolitan of geniekin, often born in or drawn to cities of various sizes, especially those with advanced metalworking or technology trades. Metal often needs to be worked to find its form and function, which may explain why many taloses seem to enjoy living among people, if not necessarily socializing with them. They often find themselves stumbling into jobs somewhere along the production line of technology, whether it's mining the raw ore from the earth, working it into wires and gears, or constructing the devices themselves. Some taloses resent and reject the expectations that they fill such roles, but many embrace their fascination with tech, often going on to become expert inventors. Taloses are therefore far more likely than other geniekin to make use of clockwork technology in their communities.</p>\n<p>Despite having long inhabited Golarion, albeit in small numbers, taloses have only rarely been recognized as geniekin. The largest number of them, and also the largest number whose true nature is known, inhabit Tian Xia. The traditions of metal as an element have lived much longer there. Taloses often find themselves drawn to discussions and study of elemental metal the instant they hear of the concept. Historical records speak of renowned courtiers and diplomats with skin of flawless silver or bronze. In the Ivory Port of Goka, the smiths of the family-owned Dragon's Iron Forge craft their blades and firearms with magnetic techniques handed down from their zuhra sheikha ancestor.</p>\n<p>A talos gadgeteer is a clockwork tinkerer. When confronted, their preferred tactic is to lure opponents into traps using their lesser explosive mines before attempting to engage directly.</p>",
-    "recallKnowledge": "Society, DC: 15",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 15"
 }

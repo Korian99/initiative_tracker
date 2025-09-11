@@ -17,15 +17,15 @@
     "Morlock"
   ],
   "source": "Pathfinder #163: Ruins of Gauntlight",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 8,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Sakvroth"
   ],
@@ -41,7 +41,7 @@
       "name": "athletics",
       "modifier": 9,
       "note": [
-        "Climbing <span class=\"roll\" onclick=\"roll(this)\">11</span>"
+        "Climbing 11"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -85,7 +85,7 @@
       "quantity": 1,
       "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "shove"
       ]
@@ -112,8 +112,8 @@
       "name": "Light Blindness",
       "actions": null,
       "traits": [],
-      "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "ac": {
@@ -151,7 +151,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "30 ft,\nclimb 20 ft,\n",
+  "speed": "30 ft, climb 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -221,13 +221,13 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d6+6)*2+1d8",
+          "roll": "(1d6+6)*2",
           "type": "bludgeoning"
         }
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -244,7 +244,7 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The morlock deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The morlock deals an extra 1d6 precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     },
     {
@@ -258,280 +258,10 @@
       "name": "Uncanny Tinker",
       "actions": 2,
       "traits": [],
-      "description": "<p>The morlock engineer tinkers with an adjacent construct or mechanical hazard. They attempt a Crafting check against the construct's or hazard's Fortitude DC. The morlock can't get an outcome better than failure if the target's level is more than double the morlock's.</p>\n<p>This ability reflects hasty battlefield repairs; once a construct or hazard regains Hit Points from this ability, it can't do so again until it's been Repaired.</p>\n<hr />\n<p><strong>Critical Success</strong> The target regains <span class=\"roll\" onclick=\"roll(this)\">8d6</span> healing Hit Points and a +1 circumstance bonus to attack rolls for 1 minute. Alternately, the morlock can deal <span class=\"roll\" onclick=\"roll(this)\">8d6</span> untyped damage (bludgeoning, piercing, or slashing, as chosen by the morlock engineer) to the construct or hazard.</p>\n<p><strong>Success</strong> As critical success, but the target regains <span class=\"roll\" onclick=\"roll(this)\">4d6</span> healing Hit Points or the morlock deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> untyped damage.</p>\n<p><strong>Critical Failure</strong> The morlock injures themself, taking <span class=\"roll\" onclick=\"roll(this)\">3d6</span> untyped damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>Effect: Uncanny Tinker</p>",
+      "description": "<p>The morlock engineer tinkers with an adjacent construct or mechanical hazard. They attempt a crafting|defense:fortitude check against the construct's or hazard's Fortitude DC. The morlock can't get an outcome better than failure if the target's level is more than double the morlock's.</p>\n<p>This ability reflects hasty battlefield repairs; once a construct or hazard regains Hit Points from this ability, it can't do so again until it's been Repaired.</p>\n<hr />\n<p><strong>Critical Success</strong> The target regains 8d6 Healing Damage Hit Points and a +1 circumstance bonus to attack rolls for 1 minute. Alternately, the morlock can deal 8d6 Untyped Damage damage (bludgeoning, piercing, or slashing, as chosen by the morlock engineer) to the construct or hazard.</p>\n<p><strong>Success</strong> As critical success, but the target regains 4d6 Healing Damage Hit Points or the morlock deals 4d6 Untyped Damage damage.</p>\n<p><strong>Critical Failure</strong> The morlock injures themself, taking 3d6 Untyped Damage damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>Effect: Uncanny Tinker</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Most morlocks have little talent for crafting, but a rare few have an uncanny knack for tinkering.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>",
-  "recallKnowledge": "Society, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Morlock Engineer",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Humanoid",
-      "Morlock"
-    ],
-    "source": "Pathfinder #163: Ruins of Gauntlight",
-    "perception": {
-      "value": 8,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Sakvroth"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 9,
-        "note": [
-          "Climbing <span class=\"roll\" onclick=\"roll(this)\">11</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Warhammer",
-        "quantity": 1,
-        "description": "<p>This weapon has a wooden shaft ending in a large, heavy metal head. The head of the hammer might be single-sided or double-sided, but it's always capable of delivering powerful bludgeoning blows.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "shove"
-        ]
-      },
-      {
-        "name": "Projectile Launcher",
-        "quantity": 1,
-        "description": "",
-        "level": 0,
-        "price": "",
-        "traits": []
-      },
-      {
-        "name": "Handful of Junk",
-        "quantity": 5,
-        "description": "",
-        "level": 0,
-        "price": "",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Light Blindness",
-        "actions": null,
-        "traits": [],
-        "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+2 status to all saves vs. disease and poison",
-    "hp": {
-      "value": 46,
-      "max": 46,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\nclimb 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Warhammer",
-        "bonus": 11,
-        "traits": [
-          "shove"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 11,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Projectile Launcher",
-        "bonus": 10,
-        "traits": [
-          "deadly-d8",
-          "range-increment-50",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+6)*2+1d8",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Improvised Projectile",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The morlock engineer quickly crafts an improvised projectile from objects it carries or that are readily accessible in adjacent squares. Where unusual materials are available, an improvised projectile might deal damage other than bludgeoning or piercing—for example, a morlock engineer by a campfire could build a projectile that deals fire damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The morlock deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Swarming Stance",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A morlock can share the same space as another morlock, but no more than two morlocks can occupy the same space. When morlocks share the same space, they gain a +1 circumstance bonus to attack rolls.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Uncanny Tinker",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The morlock engineer tinkers with an adjacent construct or mechanical hazard. They attempt a Crafting check against the construct's or hazard's Fortitude DC. The morlock can't get an outcome better than failure if the target's level is more than double the morlock's.</p>\n<p>This ability reflects hasty battlefield repairs; once a construct or hazard regains Hit Points from this ability, it can't do so again until it's been Repaired.</p>\n<hr />\n<p><strong>Critical Success</strong> The target regains <span class=\"roll\" onclick=\"roll(this)\">8d6</span> healing Hit Points and a +1 circumstance bonus to attack rolls for 1 minute. Alternately, the morlock can deal <span class=\"roll\" onclick=\"roll(this)\">8d6</span> untyped damage (bludgeoning, piercing, or slashing, as chosen by the morlock engineer) to the construct or hazard.</p>\n<p><strong>Success</strong> As critical success, but the target regains <span class=\"roll\" onclick=\"roll(this)\">4d6</span> healing Hit Points or the morlock deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> untyped damage.</p>\n<p><strong>Critical Failure</strong> The morlock injures themself, taking <span class=\"roll\" onclick=\"roll(this)\">3d6</span> untyped damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>Effect: Uncanny Tinker</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Most morlocks have little talent for crafting, but a rare few have an uncanny knack for tinkering.</p>\n<hr />\n<p>Morlocks originate from humans long lost to the surface world. They have an affinity for machinery, scavenging, and strange occult behaviors.</p>",
-    "recallKnowledge": "Society, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 18"
 }

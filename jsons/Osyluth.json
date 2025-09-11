@@ -9,29 +9,29 @@
   "type": "Creature",
   "level": 9,
   "traits": [
+    "Common",
     "Large",
     "Devil",
     "Evil",
     "Fiend",
     "Lawful",
-    "Unholy",
-    "(caster)"
+    "Unholy"
   ],
   "source": "Pathfinder Bestiary 2",
+  "senses": [
+    "Greater darkvision"
+  ],
   "perception": {
     "value": 21,
-    "note": "greater darkvision",
+    "note": "Greater darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "Greater Darkvision"
-  ],
   "languages": [
     "Diabolic",
     "Draconic",
     "Empyrean",
-    "Telepathy 100 feet"
+    "telepathy 100 feet"
   ],
   "skills": [
     {
@@ -144,7 +144,7 @@
     }
   ],
   "defensiveAbilities": [],
-  "speed": "35 ft,\nfly 30 ft,\n",
+  "speed": "35 ft, fly 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -249,7 +249,7 @@
         }
       ],
       "effects": [
-        "Osyluth-venom"
+        "osyluth-venom"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -280,7 +280,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -292,7 +292,7 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and Enfeebled 2 (1 round). Once a creature reaches stage 3, it takes a -4 status penalty to Will saves against attempts to Coerce it for 1 hour (this is a mental effect)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 2d6 Poison Damage damage, Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 3d6 Poison Damage damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> 3d6 Poison Damage damage and Enfeebled 2 (1 round). Once a creature reaches stage 3, it takes a -4 status penalty to Will saves against attempts to Coerce it for 1 hour (this is a mental effect)</p>",
       "collapsed": false
     },
     {
@@ -306,7 +306,7 @@
       "name": "Sadistic Strike",
       "actions": null,
       "traits": [],
-      "description": "<p>An osyluth deals an extra <span class=\"roll\" onclick=\"roll(this)\">2d6</span> damage whenever they Strike an Enfeebled, Frightened, or Prone creature.</p>",
+      "description": "<p>An osyluth deals an extra 2d6 damage whenever they Strike an Enfeebled, Frightened, or Prone creature.</p>",
       "collapsed": false
     },
     {
@@ -316,14 +316,14 @@
         "linguistic",
         "mental"
       ],
-      "description": "<p>The osyluth telepathically questions a creature affected by Ring of Truth. After 1 round, if the creature intentionally refuses to answer the question, it takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental damage.</p>",
+      "description": "<p>The osyluth telepathically questions a creature affected by Ring of Truth. After 1 round, if the creature intentionally refuses to answer the question, it takes 2d6 Mental Damage damage.</p>",
       "collapsed": false
     },
     {
       "name": "Tail Sweep",
       "actions": 1,
       "traits": [],
-      "description": "<p>The osyluth sweeps their tail in a 15 foot cone. Each creature in the cone must succeed at a DC 26 Reflex save or be knocked Prone.</p>",
+      "description": "<p>The osyluth sweeps their tail in a 15ft Cone. Each creature in the cone must succeed at a DC 26 Reflex Saving Throw save or be knocked Prone.</p>",
       "collapsed": false
     }
   ],
@@ -339,39 +339,17 @@
       },
       "autoHeightenLevel": 5,
       "cantrips": [],
-      "rituals": [
-        {
-          "name": "Infernal Pact",
-          "type": "ritual",
-          "level": 1,
-          "traits": [],
-          "castingTime": "1 day",
-          "duration": "",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You make an appeal to a powerful devil, asking it to bind some of its subordinates to your service. If you succeed, the devil sends you its choice of one devil whose level is no more than double <em>infernal pact's</em> rank, two devils whose levels are each at least 2 less than double the spell rank, or three devils whose levels are each at least 3 less than double the spell rank.</p>\n<hr />\n<p><strong>Critical Success</strong> The devils are sent to you and serve you for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "Religion (expert; you must be a devil)",
-          "secondaryCasters": 0,
-          "secondaryChecks": "",
-          "id": "6A2UZVSGaXDpKUhz"
-        }
-      ],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "fM7GchX13PhXHMdp",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [
         {
           "name": "Invisibility (At Will) (Self Only)",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "illusion"
+            "illusion",
+            "manipulate"
           ],
           "castingTime": "1",
           "duration": "10 minutes",
@@ -394,9 +372,12 @@
           "name": "Dimension Door (At Will)",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "teleportation"
           ],
           "castingTime": "2",
           "duration": "",
@@ -416,8 +397,11 @@
           "name": "Dimensional Anchor",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -437,8 +421,11 @@
           "name": "Dimensional Anchor",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -458,11 +445,13 @@
           "name": "Discern Lies",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "concentrate",
             "manipulate",
-            "mental"
+            "mental",
+            "revelation"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -482,15 +471,17 @@
           "name": "Zone of Truth",
           "type": "spell",
           "level": 3,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
           "range": "30 feet",
-          "area": "20 ft burst",
+          "area": "20ft burst",
           "targets": "",
           "save": "will",
           "description": "<p>You designate an area in which creatures are compelled to speak only truth. Creatures within or entering the area have difficulty lying. Each potentially affected creature must attempt a Will save when the spell is cast or when the creature first enters the area. It uses the results of this initial save if it leaves and reenters the area. Affected creatures are aware of this enchantment; therefore, they can avoid answering questions to which they would normally respond with a lie, or they can be evasive as long as they remain within the boundaries of the truth.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a -2 status penalty to Deception checks.</p>\n<p><strong>Failure</strong> The target can't speak any deliberate and intentional lies, and it takes a -2 status penalty to Deception checks.</p>\n<p><strong>Critical Failure</strong> The target can't speak any deliberate and intentional lies and takes a -4 status penalty to Deception checks.</p>",
@@ -507,9 +498,12 @@
           "name": "Dimension Door",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "teleportation"
           ],
           "castingTime": "2",
           "duration": "",
@@ -529,11 +523,14 @@
           "name": "Phantom Pain",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "illusion",
             "manipulate",
-            "mental"
+            "mental",
+            "nonlethal"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -541,7 +538,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "will",
-          "description": "<p>Illusory pain wracks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> mental damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent mental damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span> and the persistent damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>\n<p>Leveled Persistent Mental Damage</p>",
+          "description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>\n<p>(@item.level)d4 Persistent,mental Damage{Leveled Persistent Mental Damage}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -555,6 +552,29 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [
+        {
+          "name": "Infernal Pact",
+          "type": "ritual",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [],
+          "castingTime": "1 day",
+          "duration": "",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You make an appeal to a powerful devil, asking it to bind some of its subordinates to your service. If you succeed, the devil sends you its choice of one devil whose level is no more than double <em>infernal pact's</em> rank, two devils whose levels are each at least 2 less than double the spell rank, or three devils whose levels are each at least 3 less than double the spell rank.</p>\n<hr />\n<p><strong>Critical Success</strong> The devils are sent to you and serve you for 1d4 weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for 1d4 days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "Religion (expert; you must be a devil)",
+          "secondaryCasters": 0,
+          "secondaryChecks": "",
+          "id": "6A2UZVSGaXDpKUhz"
+        }
+      ],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -597,609 +617,5 @@
       }
     }
   ],
-  "description": "<p>An osyluth is an unparalleled inquisitor that revels in the sadism and torture for which Hell is so well known. These devils' charge is to seek out heresies, both among mortals and among other fiends-a commandment they uphold with unwavering fervor. They spawn within the Styx-fed swamps of Hell's fifth layer, Stygia; where heresies and the souls of heretics stagnate, osyluths eventually rise. In the remote corners of that same layer of Hell, they build massive, calcified hives where they perform their vile interrogations and perfect their torturous arts upon lesser devils and petitioners alike.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others</p>",
-  "recallKnowledge": "Religion, DC: 26",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 21,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Osyluth",
-    "type": "Creature",
-    "level": 9,
-    "traits": [
-      "Large",
-      "Devil",
-      "Evil",
-      "Fiend",
-      "Lawful",
-      "Unholy",
-      "(caster)"
-    ],
-    "source": "Pathfinder Bestiary 2",
-    "perception": {
-      "value": 21,
-      "note": "greater darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "Greater Darkvision"
-    ],
-    "languages": [
-      "Diabolic",
-      "Draconic",
-      "Empyrean",
-      "Telepathy 100 feet"
-    ],
-    "skills": [
-      {
-        "name": "arcana",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 21,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 3
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+1 status to all saves vs. magic",
-    "hp": {
-      "value": 135,
-      "max": 135,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "fire"
-    ],
-    "resistances": [
-      {
-        "exceptions": [
-          "silver"
-        ],
-        "type": "physical",
-        "value": 10
-      },
-      {
-        "type": "poison",
-        "value": 10
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "holy",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "35 ft,\nfly 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 21,
-        "traits": [
-          "magical",
-          "unarmed",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+11",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d6",
-            "type": "spirit"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+11)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "spirit"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 21,
-        "traits": [
-          "agile",
-          "magical",
-          "reach-10",
-          "unarmed",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+11",
-            "type": "slashing"
-          },
-          {
-            "roll": "1d6",
-            "type": "spirit"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+11)*2",
-            "type": "slashing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "spirit"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Stinger",
-        "bonus": 21,
-        "traits": [
-          "evil",
-          "magical",
-          "reach-15",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+11",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d6",
-            "type": "spirit"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+11)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "spirit"
-          }
-        ],
-        "effects": [
-          "Osyluth-venom"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Bone Shard",
-        "bonus": 21,
-        "traits": [
-          "evil",
-          "magical",
-          "range-increment-30",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Osyluth Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and Enfeebled 2 (1 round). Once a creature reaches stage 3, it takes a -4 status penalty to Will saves against attempts to Coerce it for 1 hour (this is a mental effect)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Quick Invisibility",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The osyluth can cast innate Invisibility using only 1 action.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sadistic Strike",
-        "actions": null,
-        "traits": [],
-        "description": "<p>An osyluth deals an extra <span class=\"roll\" onclick=\"roll(this)\">2d6</span> damage whenever they Strike an Enfeebled, Frightened, or Prone creature.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Stygian Inquisitor",
-        "actions": 1,
-        "traits": [
-          "linguistic",
-          "mental"
-        ],
-        "description": "<p>The osyluth telepathically questions a creature affected by Ring of Truth. After 1 round, if the creature intentionally refuses to answer the question, it takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Tail Sweep",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The osyluth sweeps their tail in a 15 foot cone. Each creature in the cone must succeed at a DC 26 Reflex save or be knocked Prone.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 17,
-        "dc": 25,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 5,
-        "cantrips": [],
-        "rituals": [
-          {
-            "name": "Infernal Pact",
-            "type": "ritual",
-            "level": 1,
-            "traits": [],
-            "castingTime": "1 day",
-            "duration": "",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You make an appeal to a powerful devil, asking it to bind some of its subordinates to your service. If you succeed, the devil sends you its choice of one devil whose level is no more than double <em>infernal pact's</em> rank, two devils whose levels are each at least 2 less than double the spell rank, or three devils whose levels are each at least 3 less than double the spell rank.</p>\n<hr />\n<p><strong>Critical Success</strong> The devils are sent to you and serve you for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> weeks.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> days.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "Religion (expert; you must be a devil)",
-            "secondaryCasters": 0,
-            "secondaryChecks": "",
-            "id": "6A2UZVSGaXDpKUhz"
-          }
-        ],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "fM7GchX13PhXHMdp",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [
-          {
-            "name": "Invisibility (At Will) (Self Only)",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "illusion"
-            ],
-            "castingTime": "1",
-            "duration": "10 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "self",
-            "save": "",
-            "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ivWNCekJdUWL913h"
-          }
-        ],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Dimension Door (At Will)",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "RojqXvZ5IxWWuBv7"
-          },
-          {
-            "name": "Dimensional Anchor",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You interfere with the target's ability to teleport and travel between dimensions. Dimensional anchor attempts to counteract any teleportation effect, or any effect that would move the target to a different plane. The duration is determined by the target's Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The effect's duration is 1 minute.</p>\n<p><strong>Failure</strong> The effect's duration is 10 minutes.</p>\n<p><strong>Critical Failure</strong> The effect's duration is 1 hour.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "T3OPyXZSTa6MS80L"
-          },
-          {
-            "name": "Dimensional Anchor",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You interfere with the target's ability to teleport and travel between dimensions. Dimensional anchor attempts to counteract any teleportation effect, or any effect that would move the target to a different plane. The duration is determined by the target's Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The effect's duration is 1 minute.</p>\n<p><strong>Failure</strong> The effect's duration is 10 minutes.</p>\n<p><strong>Critical Failure</strong> The effect's duration is 1 hour.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "0b6CYffDLemOqLFx"
-          },
-          {
-            "name": "Discern Lies",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "uncommon",
-              "concentrate",
-              "manipulate",
-              "mental"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Falsehoods ring in your ears like discordant notes. You gain a +4 status bonus to Perception checks when someone Lies.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "eOWYWx1jQYqZc5ls"
-          },
-          {
-            "name": "Zone of Truth",
-            "type": "spell",
-            "level": 3,
-            "traits": [
-              "uncommon",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "30 feet",
-            "area": "20 ft burst",
-            "targets": "",
-            "save": "will",
-            "description": "<p>You designate an area in which creatures are compelled to speak only truth. Creatures within or entering the area have difficulty lying. Each potentially affected creature must attempt a Will save when the spell is cast or when the creature first enters the area. It uses the results of this initial save if it leaves and reenters the area. Affected creatures are aware of this enchantment; therefore, they can avoid answering questions to which they would normally respond with a lie, or they can be evasive as long as they remain within the boundaries of the truth.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a -2 status penalty to Deception checks.</p>\n<p><strong>Failure</strong> The target can't speak any deliberate and intentional lies, and it takes a -2 status penalty to Deception checks.</p>\n<p><strong>Critical Failure</strong> The target can't speak any deliberate and intentional lies and takes a -4 status penalty to Deception checks.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "U89RBRaUiOYFrtWc"
-          }
-        ],
-        "lv5spells": [
-          {
-            "name": "Dimension Door",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "rwx3wkACrXjNy2oR"
-          },
-          {
-            "name": "Phantom Pain",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "illusion",
-              "manipulate",
-              "mental"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>Illusory pain wracks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> mental damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent mental damage. The target must attempt a Will save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is Sickened 1. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span> and the persistent damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>\n<p>Leveled Persistent Mental Damage</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "jxKOce8sxtaWcQz8"
-          }
-        ],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>An osyluth is an unparalleled inquisitor that revels in the sadism and torture for which Hell is so well known. These devils' charge is to seek out heresies, both among mortals and among other fiends-a commandment they uphold with unwavering fervor. They spawn within the Styx-fed swamps of Hell's fifth layer, Stygia; where heresies and the souls of heretics stagnate, osyluths eventually rise. In the remote corners of that same layer of Hell, they build massive, calcified hives where they perform their vile interrogations and perfect their torturous arts upon lesser devils and petitioners alike.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others</p>",
-    "recallKnowledge": "Religion, DC: 26",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 26"
 }

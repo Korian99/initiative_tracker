@@ -9,24 +9,24 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Medium",
     "Duergar",
     "Dwarf",
     "Evil",
     "Humanoid",
-    "Lawful",
-    "(caster)"
+    "Lawful"
   ],
   "source": "Pathfinder Society Special #3-98: Expedition Into Pallid Peril",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 14,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Dwarven",
@@ -79,7 +79,7 @@
       "quantity": 1,
       "description": "<p>This large flail has a long shaft connected to a shorter piece of stout wood or metal that's sometimes inlaid with spikes.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
         "disarm",
         "sweep",
@@ -91,22 +91,8 @@
       "quantity": 1,
       "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>",
       "level": 1,
-      "price": "18 gp ",
+      "price": "18 gp",
       "traits": []
-    },
-    {
-      "name": "Healing Potion (Moderate)",
-      "quantity": 1,
-      "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain <span class=\"roll\" onclick=\"roll(this)\">3d8+10</span> healing Hit Points.</p>",
-      "level": 6,
-      "price": "50 gp ",
-      "traits": [
-        "consumable",
-        "healing",
-        "magical",
-        "potion",
-        "vitality"
-      ]
     }
   ],
   "generalAbilities": [],
@@ -161,11 +147,11 @@
       "name": "Light Blindness",
       "actions": null,
       "traits": [],
-      "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "20 ft,\n",
+  "speed": "20 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -190,7 +176,7 @@
         }
       ],
       "effects": [
-        "Knockdown"
+        "knockdown"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -203,7 +189,14 @@
       "name": "Kick 'Em While They're Down!",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> An adjacent creature is prone</p>\n<hr />\n<p><strong>Effect</strong> The duergar crusher stomps down on the prone creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d8+5</span> bludgeoning damage (DC 22 basic Reflex save).</p>",
+      "description": "<p><strong>Requirements</strong> An adjacent creature is prone</p>\n<hr />\n<p><strong>Effect</strong> The duergar crusher stomps down on the prone creature, dealing (2d8+5) Bludgeoning Damage damage (Basic DC 22 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -223,6 +216,8 @@
           "name": "Telekinetic Projectile",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
@@ -234,7 +229,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to <span class=\"roll\" onclick=\"roll(this)\">1d6</span> plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -243,11 +238,6 @@
           "id": "O6yWLeMGIk6SXf8H"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "GpF7MRIldG6kiEBK",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [
@@ -255,9 +245,12 @@
           "name": "Enlarge (Self Only)",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "polymorph"
           ],
           "castingTime": "2",
           "duration": "5 minutes",
@@ -265,7 +258,7 @@
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Bolstered by magical power, the target grows to size Large. Its equipment grows with it but returns to natural size if removed. The creature is Clumsy 1. Its reach increases by 5 feet (or by 10 feet if it started out Tiny), and it gains a +2 status bonus to melee damage. This spell has no effect on a Large or larger creature.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The creature instead grows to size Huge. The status bonus to melee damage is +4 and the creature's reach increases by 10 feet (or 15 feet if the creature started out Tiny). The spell has no effect on a Huge or larger creature.</p>\n<p><strong>Heightened (6th)</strong> Choose either the 2nd-rank or 4th-rank version of this spell and apply its effects to up to 10 willing creatures.</p>",
+          "description": "<p>Bolstered by magical power, the target grows to size Large. Its equipment grows with it but returns to natural size if removed. The creature is Clumsy 1. Its reach increases by 5 feet (or by 10 feet if it started out Tiny), and it gains a +2 status bonus to melee damage. This spell has no effect on a Large or larger creature.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The creature instead grows to size Huge. The status bonus to melee damage is +4 and the creature's reach increases by 10 feet (or 15 feet if the creature started out Tiny). The spell has no effect on a Huge or larger creature.</p>\n<p><strong>Heightened (6th)</strong> Choose either the 2nd-rank or 4th-rank version of this spell and apply its effects to up to 10 willing creatures.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -277,8 +270,11 @@
           "name": "Invisibility (Self Only)",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
           "traits": [
-            "illusion"
+            "illusion",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -302,6 +298,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -344,356 +341,5 @@
       }
     }
   ],
-  "description": "<p>Duergar priests of the taskmaster god Droskar often assume leadership roles within their communities, advancing the goals of their deity through coercion and displays of force. Often referred to as duergar taskmasters, these leaders often issue commands to duergar subordinates and slaves in the same breath, treating the two almost as if they were interchangeable. As a result, duergar taskmasters are loathed by both slave and slaver alike.</p>\n<hr />\n<p>Deep beneath the surface, duergars stubbornly claim the ancestral subterranean homelands of the dwarves as their own, having refused to venture to the surface along with their modern dwarven cousins. An exiled dwarven deity named Droskar offered duergars salvation from the horrors of the Darklands, and in exchange duergars endlessly toil in his honor within their subterranean empire. Notorious slavers, duergars regularly raid other Darklands settlements as well as surface communities in constant search of living beings to task with endless amounts of work in their harsh and exhausting settlements.</p>\n<p>Duergars are gray-skinned creatures, often referred to as 'ashen' by those surface dwarves willing to speak of them. These subterranean dwarves have a strong natural connection with cave-dwelling vermin, and it's common to see duergar caravans drawn by teams of immense beetles. Most duergars devote themselves to the worship of Droskar, a taskmaster of a god who demands back-breaking toil in addition to regular prayer. Duergar leadership often consists of powerful divine servants of Droskar, along with incredibly stout warriors whose martial prowess ensures they can overcome any direct threat to their rule. Almost every aspect of duergar society is controlled by a strict hierarchy of leadership, with taskmasters directing subordinates across all walks of life.</p>",
-  "recallKnowledge": "Society, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 14,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Duergar Crusher",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Medium",
-      "Duergar",
-      "Dwarf",
-      "Evil",
-      "Humanoid",
-      "Lawful",
-      "(caster)"
-    ],
-    "source": "Pathfinder Society Special #3-98: Expedition Into Pallid Peril",
-    "perception": {
-      "value": 14,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Dwarven",
-      "Sakvroth"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 1
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [
-      {
-        "name": "War Flail",
-        "quantity": 1,
-        "description": "<p>This large flail has a long shaft connected to a shorter piece of stout wood or metal that's sometimes inlaid with spikes.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "disarm",
-          "sweep",
-          "trip"
-        ]
-      },
-      {
-        "name": "Half Plate",
-        "quantity": 1,
-        "description": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>",
-        "level": 1,
-        "price": "18 gp ",
-        "traits": []
-      },
-      {
-        "name": "Healing Potion (Moderate)",
-        "quantity": 1,
-        "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain <span class=\"roll\" onclick=\"roll(this)\">3d8+10</span> healing Hit Points.</p>",
-        "level": 6,
-        "price": "50 gp ",
-        "traits": [
-          "consumable",
-          "healing",
-          "magical",
-          "potion",
-          "vitality"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+2 status to all saves vs. magic, iron mind",
-    "hp": {
-      "value": 77,
-      "max": 77,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "poison",
-        "value": 5
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Iron Mind",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Duergar crushers automatically disbelieve all illusions of 2nd level or lower.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Light Blindness",
-        "actions": null,
-        "traits": [],
-        "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "War Flail",
-        "bonus": 15,
-        "traits": [
-          "disarm",
-          "magical",
-          "sweep",
-          "trip"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10 + 5",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10 + 5)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Kick 'Em While They're Down!",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> An adjacent creature is prone</p>\n<hr />\n<p><strong>Effect</strong> The duergar crusher stomps down on the prone creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d8+5</span> bludgeoning damage (DC 22 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Occult Innate Spells",
-        "type": "innate",
-        "bonus": 10,
-        "dc": 18,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 3,
-        "cantrips": [
-          {
-            "name": "Telekinetic Projectile",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to <span class=\"roll\" onclick=\"roll(this)\">1d6</span> plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "O6yWLeMGIk6SXf8H"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "GpF7MRIldG6kiEBK",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [
-          {
-            "name": "Enlarge (Self Only)",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "5 minutes",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 willing creature",
-            "save": "",
-            "description": "<p>Bolstered by magical power, the target grows to size Large. Its equipment grows with it but returns to natural size if removed. The creature is Clumsy 1. Its reach increases by 5 feet (or by 10 feet if it started out Tiny), and it gains a +2 status bonus to melee damage. This spell has no effect on a Large or larger creature.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The creature instead grows to size Huge. The status bonus to melee damage is +4 and the creature's reach increases by 10 feet (or 15 feet if the creature started out Tiny). The spell has no effect on a Huge or larger creature.</p>\n<p><strong>Heightened (6th)</strong> Choose either the 2nd-rank or 4th-rank version of this spell and apply its effects to up to 10 willing creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "Hf8TaBvmNOD8vMvG"
-          },
-          {
-            "name": "Invisibility (Self Only)",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "illusion"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "self",
-            "save": "",
-            "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "HZYAj7VYAUuppbJG"
-          }
-        ],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>Duergar priests of the taskmaster god Droskar often assume leadership roles within their communities, advancing the goals of their deity through coercion and displays of force. Often referred to as duergar taskmasters, these leaders often issue commands to duergar subordinates and slaves in the same breath, treating the two almost as if they were interchangeable. As a result, duergar taskmasters are loathed by both slave and slaver alike.</p>\n<hr />\n<p>Deep beneath the surface, duergars stubbornly claim the ancestral subterranean homelands of the dwarves as their own, having refused to venture to the surface along with their modern dwarven cousins. An exiled dwarven deity named Droskar offered duergars salvation from the horrors of the Darklands, and in exchange duergars endlessly toil in his honor within their subterranean empire. Notorious slavers, duergars regularly raid other Darklands settlements as well as surface communities in constant search of living beings to task with endless amounts of work in their harsh and exhausting settlements.</p>\n<p>Duergars are gray-skinned creatures, often referred to as 'ashen' by those surface dwarves willing to speak of them. These subterranean dwarves have a strong natural connection with cave-dwelling vermin, and it's common to see duergar caravans drawn by teams of immense beetles. Most duergars devote themselves to the worship of Droskar, a taskmaster of a god who demands back-breaking toil in addition to regular prayer. Duergar leadership often consists of powerful divine servants of Droskar, along with incredibly stout warriors whose martial prowess ensures they can overcome any direct threat to their rule. Almost every aspect of duergar society is controlled by a strict hierarchy of leadership, with taskmasters directing subordinates across all walks of life.</p>",
-    "recallKnowledge": "Society, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 20"
 }

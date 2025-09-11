@@ -16,15 +16,15 @@
     "Ratfolk"
   ],
   "source": "Pathfinder #166: Despair on Danger Island",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 28,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Goblin",
     "Taldane",
@@ -99,7 +99,7 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -109,9 +109,9 @@
     {
       "name": "Acid Flask (Greater) (Infused)",
       "quantity": 2,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 3d6 persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>",
       "level": 11,
-      "price": "250 gp ",
+      "price": "250 gp",
       "traits": [
         "acid",
         "alchemical",
@@ -124,9 +124,9 @@
     {
       "name": "Alchemist's Fire (Greater) (Infused)",
       "quantity": 4,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals <span class=\"roll\" onclick=\"roll(this)\">3d8</span> fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>",
       "level": 11,
-      "price": "250 gp ",
+      "price": "250 gp",
       "traits": [
         "alchemical",
         "bomb",
@@ -139,9 +139,9 @@
     {
       "name": "Bottled Lightning (Greater) (Infused)",
       "quantity": 4,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> electricity damage and 3 electricity splash damage. On a hit, the target becomes Off-Guard until the start of your next turn. You gain a +2 item bonus to attack rolls.</p>",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 3d6 electricity damage and 3 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of your next turn. You gain a +2 item bonus to attack rolls.</p>",
       "level": 11,
-      "price": "250 gp ",
+      "price": "250 gp",
       "traits": [
         "alchemical",
         "bomb",
@@ -154,9 +154,9 @@
     {
       "name": "Frost Vial (Greater) (Infused)",
       "quantity": 2,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> cold damage and 3 cold splash damage, and the target takes a -10-foot penalty.</p>\n",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals 3d6 cold damage and 3 cold splash damage, and the target takes a -10-foot penalty.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Frost Vial]</p>",
       "level": 11,
-      "price": "250 gp ",
+      "price": "250 gp",
       "traits": [
         "alchemical",
         "bomb",
@@ -171,125 +171,21 @@
       "quantity": 1,
       "description": "<p>Adventurers who don't wear armor travel in durable clothing. Though it's not armor and uses your unarmored defense proficiency, it still has a Dex Cap and can grant an item bonus to AC if etched with potency runes.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "comfort"
       ]
-    },
-    {
-      "name": "Dragon Bile (Applied to Body)",
-      "quantity": 1,
-      "description": "<p>A mix of digestive juices and green dragon poison glands nauseates the victim as its flesh is digested from within.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 37 Fortitude</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and Sickened 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">7d6</span> poison damage and sickened 3 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">9d6</span> poison damage and sickened 4 (1 round)</p>",
-      "level": 15,
-      "price": "925 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "contact",
-        "poison"
-      ]
-    },
-    {
-      "name": "Blightburn Resin (Infused)",
-      "quantity": 6,
-      "description": "<p>This tacky, hardened sap is harvested from trees infected by fungal blights and exposed to open flames.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison damage (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">15d6</span> poison damage (1 round)</p>",
-      "level": 11,
-      "price": "225 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "contact",
-        "infused",
-        "poison"
-      ]
-    },
-    {
-      "name": "Deathcap Powder (Infused)",
-      "quantity": 3,
-      "description": "<p>The toxic deathcap mushroom can be dried, ground, and treated to form a flavorless powder with accelerated effects.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">13d6</span> poison damage (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">17d6</span> poison damage and Sickened 2 (1 minute)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">20d6</span> poison damage and sickened 3 (1 minute)</p>",
-      "level": 13,
-      "price": "450 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "infused",
-        "ingested",
-        "poison"
-      ]
-    },
-    {
-      "name": "Elixir of Life (Greater) (Infused)",
-      "quantity": 4,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">7d6+18</span> healing Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-      "level": 13,
-      "price": "600 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "healing",
-        "infused"
-      ]
-    },
-    {
-      "name": "Malyass Root Paste (Infused)",
-      "quantity": 3,
-      "description": "<p>Malyass root paste sees use to impede opponents in athletic competitions, in addition to espionage and tracking.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> Clumsy 1 and -10-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 2</strong> clumsy 2 and -20-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 3</strong> clumsy 3, Off-Guard, and -30-foot status penalty to all Speeds</p>",
-      "level": 7,
-      "price": "55 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "contact",
-        "infused",
-        "poison"
-      ]
-    },
-    {
-      "name": "Purple Worm Venom (Infused)",
-      "quantity": 9,
-      "description": "<p>Venom from enormous purple worms leaves a victim weakened.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and enfeebled 2 (1 round)</p>",
-      "level": 13,
-      "price": "500 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "infused",
-        "injury",
-        "poison"
-      ]
-    },
-    {
-      "name": "Shadow Essence (Infused)",
-      "quantity": 6,
-      "description": "<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage and <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, and enfeebled 2 (1 round)</p>",
-      "level": 10,
-      "price": "160 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "infused",
-        "injury",
-        "poison",
-        "void"
-      ]
-    },
-    {
-      "name": "Spider Root (Infused)",
-      "quantity": 3,
-      "description": "<p>A paste made by mashing the fine, threadlike roots of a certain creeper vine, spider root renders a victim clumsy and maladroit.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and Clumsy 1 (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">9d6</span> poison damage and clumsy 2 (1 minute)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison damage and clumsy 3 (1 minute)</p>",
-      "level": 9,
-      "price": "110 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "contact",
-        "infused",
-        "poison"
-      ]
     }
   ],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Infused Items",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Blue Viper carries the following infused items: 2 Acid Flask (Greater), 4 Alchemist's Fire (Greater), 6 Blightburn Resin, 4 Bottled Lightning (Greater), 3 Deathcap Powder, 4 Elixir of Life (Greater), 2 Frost Vial (Greater), 3 Malyass Root Paste, 9 Purple Worm Venom, 6 Shadow Essence, and 3 Spider Root. These items last for 24 hours, or until the next time Blue Viper makes his daily preparations.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 34,
     "note": "",
@@ -333,7 +229,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -405,7 +301,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
@@ -451,7 +347,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
@@ -489,7 +385,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
@@ -527,7 +423,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -544,7 +440,7 @@
       "name": "Poison Spray",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> Blue Viper is holding a contact or injury poison.</p>\n<hr />\n<p><strong>Effect</strong> Blue Viper swigs the poison and sprays it out of his mouth, affecting a 15 foot cone. Blue Viper isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison and each creature must attempt a Fortitude save against the poison.</p>",
+      "description": "<p><strong>Requirements</strong> Blue Viper is holding a contact or injury poison.</p>\n<hr />\n<p><strong>Effect</strong> Blue Viper swigs the poison and sprays it out of his mouth, affecting a 15ft Cone. Blue Viper isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison and each creature must attempt a Fortitude save against the poison.</p>",
       "collapsed": false
     },
     {
@@ -563,575 +459,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Society, DC: 32",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 28,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Blue Viper (Level 14)",
-    "type": "Creature",
-    "level": 14,
-    "traits": [
-      "Unique",
-      "Small",
-      "Evil",
-      "Humanoid",
-      "Ratfolk"
-    ],
-    "source": "Pathfinder #166: Despair on Danger Island",
-    "perception": {
-      "value": 28,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Goblin",
-      "Taldane",
-      "Tien",
-      "Ysoki"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 21,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 25,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 5
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Acid Flask (Greater) (Infused)",
-        "quantity": 2,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, <span class=\"roll\" onclick=\"roll(this)\">3d6</span> persistent acid damage, and 3 acid splash damage. You gain a +2 item bonus to attack rolls.</p>",
-        "level": 11,
-        "price": "250 gp ",
-        "traits": [
-          "acid",
-          "alchemical",
-          "bomb",
-          "consumable",
-          "infused",
-          "splash"
-        ]
-      },
-      {
-        "name": "Alchemist's Fire (Greater) (Infused)",
-        "quantity": 4,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals <span class=\"roll\" onclick=\"roll(this)\">3d8</span> fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>",
-        "level": 11,
-        "price": "250 gp ",
-        "traits": [
-          "alchemical",
-          "bomb",
-          "consumable",
-          "fire",
-          "infused",
-          "splash"
-        ]
-      },
-      {
-        "name": "Bottled Lightning (Greater) (Infused)",
-        "quantity": 4,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> electricity damage and 3 electricity splash damage. On a hit, the target becomes Off-Guard until the start of your next turn. You gain a +2 item bonus to attack rolls.</p>",
-        "level": 11,
-        "price": "250 gp ",
-        "traits": [
-          "alchemical",
-          "bomb",
-          "consumable",
-          "electricity",
-          "infused",
-          "splash"
-        ]
-      },
-      {
-        "name": "Frost Vial (Greater) (Infused)",
-        "quantity": 2,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<hr />\n<p>The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next turn. Many types of frost vial also grant an item bonus to attack rolls.</p>\n<p>You gain a +2 item bonus to attack rolls, the bomb deals <span class=\"roll\" onclick=\"roll(this)\">3d6</span> cold damage and 3 cold splash damage, and the target takes a -10-foot penalty.</p>\n",
-        "level": 11,
-        "price": "250 gp ",
-        "traits": [
-          "alchemical",
-          "bomb",
-          "cold",
-          "consumable",
-          "infused",
-          "splash"
-        ]
-      },
-      {
-        "name": "Explorer's Clothing",
-        "quantity": 1,
-        "description": "<p>Adventurers who don't wear armor travel in durable clothing. Though it's not armor and uses your unarmored defense proficiency, it still has a Dex Cap and can grant an item bonus to AC if etched with potency runes.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "comfort"
-        ]
-      },
-      {
-        "name": "Dragon Bile (Applied to Body)",
-        "quantity": 1,
-        "description": "<p>A mix of digestive juices and green dragon poison glands nauseates the victim as its flesh is digested from within.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 37 Fortitude</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and Sickened 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">7d6</span> poison damage and sickened 3 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">9d6</span> poison damage and sickened 4 (1 round)</p>",
-        "level": 15,
-        "price": "925 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "contact",
-          "poison"
-        ]
-      },
-      {
-        "name": "Blightburn Resin (Infused)",
-        "quantity": 6,
-        "description": "<p>This tacky, hardened sap is harvested from trees infected by fungal blights and exposed to open flames.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison damage (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">15d6</span> poison damage (1 round)</p>",
-        "level": 11,
-        "price": "225 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "contact",
-          "infused",
-          "poison"
-        ]
-      },
-      {
-        "name": "Deathcap Powder (Infused)",
-        "quantity": 3,
-        "description": "<p>The toxic deathcap mushroom can be dried, ground, and treated to form a flavorless powder with accelerated effects.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">13d6</span> poison damage (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">17d6</span> poison damage and Sickened 2 (1 minute)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">20d6</span> poison damage and sickened 3 (1 minute)</p>",
-        "level": 13,
-        "price": "450 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "infused",
-          "ingested",
-          "poison"
-        ]
-      },
-      {
-        "name": "Elixir of Life (Greater) (Infused)",
-        "quantity": 4,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creature''s natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">7d6+18</span> healing Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-        "level": 13,
-        "price": "600 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "healing",
-          "infused"
-        ]
-      },
-      {
-        "name": "Malyass Root Paste (Infused)",
-        "quantity": 3,
-        "description": "<p>Malyass root paste sees use to impede opponents in athletic competitions, in addition to espionage and tracking.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> Clumsy 1 and -10-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 2</strong> clumsy 2 and -20-foot status penalty to all Speeds (1 minute)</p>\n<p><strong>Stage 3</strong> clumsy 3, Off-Guard, and -30-foot status penalty to all Speeds</p>",
-        "level": 7,
-        "price": "55 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "contact",
-          "infused",
-          "poison"
-        ]
-      },
-      {
-        "name": "Purple Worm Venom (Infused)",
-        "quantity": 9,
-        "description": "<p>Venom from enormous purple worms leaves a victim weakened.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">5d6</span> poison damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage and enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and enfeebled 2 (1 round)</p>",
-        "level": 13,
-        "price": "500 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "infused",
-          "injury",
-          "poison"
-        ]
-      },
-      {
-        "name": "Shadow Essence (Infused)",
-        "quantity": 6,
-        "description": "<p>Distilled from the Plane of Shadow, this oily substance imposes tenebrous effects. The enfeebled condition from shadow essence lasts for 24 hours.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage and <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, and enfeebled 2 (1 round)</p>",
-        "level": 10,
-        "price": "160 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "infused",
-          "injury",
-          "poison",
-          "void"
-        ]
-      },
-      {
-        "name": "Spider Root (Infused)",
-        "quantity": 3,
-        "description": "<p>A paste made by mashing the fine, threadlike roots of a certain creeper vine, spider root renders a victim clumsy and maladroit.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> DC 34 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 minutes</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> poison damage and Clumsy 1 (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">9d6</span> poison damage and clumsy 2 (1 minute)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison damage and clumsy 3 (1 minute)</p>",
-        "level": 9,
-        "price": "110 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "contact",
-          "infused",
-          "poison"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 34,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 260,
-      "max": 260,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Poisoned Coat",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature adjacent to Blue Viper hits him with a melee unarmed Strike.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature is exposed to Dragon Bile. This consumes the poison, and Blue Viper can't use Poisoned Coat again until he spends 10 minutes applying one dose of contact or injury poison to his clothing.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 27,
-        "traits": [
-          "agile",
-          "finesse",
-          "magical",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Greater Acid Flask",
-        "bonus": 29,
-        "traits": [
-          "acid",
-          "alchemical",
-          "bomb",
-          "consumable",
-          "range-increment-20",
-          "splash"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1",
-            "type": "acid"
-          },
-          {
-            "roll": "3d6",
-            "type": "persistent acid"
-          },
-          {
-            "roll": "3",
-            "type": "splash acid"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1)*2",
-            "type": "acid"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "persistent acid"
-          },
-          {
-            "roll": "(3)*2",
-            "type": "splash acid"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Greater Alchemist's Fire",
-        "bonus": 29,
-        "traits": [
-          "alchemical",
-          "bomb",
-          "consumable",
-          "fire",
-          "range-increment-20",
-          "splash"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8",
-            "type": "fire"
-          },
-          {
-            "roll": "3",
-            "type": "persistent fire"
-          },
-          {
-            "roll": "3",
-            "type": "splash fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8)*2",
-            "type": "fire"
-          },
-          {
-            "roll": "(3)*2",
-            "type": "persistent fire"
-          },
-          {
-            "roll": "(3)*2",
-            "type": "splash fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Greater Bottled Lightning",
-        "bonus": 29,
-        "traits": [
-          "alchemical",
-          "bomb",
-          "consumable",
-          "electricity",
-          "range-increment-20",
-          "splash"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d6",
-            "type": "electricity"
-          },
-          {
-            "roll": "3",
-            "type": "splash electricity"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d6)*2",
-            "type": "electricity"
-          },
-          {
-            "roll": "(3)*2",
-            "type": "splash electricity"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Greater Frost Vial",
-        "bonus": 29,
-        "traits": [
-          "alchemical",
-          "bomb",
-          "cold",
-          "consumable",
-          "range-increment-20",
-          "splash"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d6",
-            "type": "cold"
-          },
-          {
-            "roll": "3",
-            "type": "splash cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d6)*2",
-            "type": "cold"
-          },
-          {
-            "roll": "(3)*2",
-            "type": "splash cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Pinpoint Poisoner",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When Blue Viper successfully Strikes an Off-Guard creature with a poisoned weapon or exposes an off-guard creature to an inhaled poison, the creature takes a -2 circumstance penalty to its initial save against that poison.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Poison Spray",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> Blue Viper is holding a contact or injury poison.</p>\n<hr />\n<p><strong>Effect</strong> Blue Viper swigs the poison and sprays it out of his mouth, affecting a 15 foot cone. Blue Viper isn't exposed to the poison. All creatures in the cone are immediately exposed to the poison and each creature must attempt a Fortitude save against the poison.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Potent Poisoner",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Blue Viper's infused poisons have a DC of 34.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Quick Application",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>Blue Viper Interacts to draw an injury poison and applies it to a weapon he is holding.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Society, DC: 32",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 32"
 }

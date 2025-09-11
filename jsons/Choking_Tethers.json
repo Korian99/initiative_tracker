@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Choking Tethers",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 20,
   "traits": [
-    "Hazard",
-    "Complex",
     "Uncommon",
     "Medium",
     "Magical",
@@ -18,39 +17,63 @@
   "source": "Pathfinder #186: Ghost King's Rage",
   "stealth": {
     "value": 38,
-    "note": "(legendary)",
-    "modifications": []
+    "note": "(legendary)"
   },
   "description": "<p>Three shadow tethers form when a creature reaches the hall's midpoint; each lashes, grabs, and crushes creatures in the hall.</p>",
-  "disable": "<p>DC 48 Thievery check (legendary) to disable each tether or Dispel Magic (10th rank, counteract DC 48) to counteract each tether</p>",
+  "disable": "<p>DC 48 Thievery  (legendary) to disable each tether or Dispel Magic (10th rank, counteract DC 48) to counteract each tether</p>",
   "reset": "",
   "routine": "<p>(six actions) This trap loses 2 actions each turn for each disabled shadow tether. Each shadow tether has 2 actions it can use to either Strike a creature or Constrict a Grabbed creature, in any combination.</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(4d10+22) Bludgeoning Damage, Basic DC 47 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Seize",
+      "actions": -1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature reaches the hall's midpoint</p>\n<hr />\n<p><strong>Effect</strong> The trap attempts a shadow tether Strike against the triggering creature. On a hit, the triggering creature is automatically Grabbed. The trap then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 45,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 33
   },
   "fortitude": {
     "value": 36,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 30,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 132,
     "max": 132,
-    "note": "<b>Hardness</b> 33 <b>BT</b> 66. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -80,138 +103,13 @@
         }
       ],
       "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
   ],
-  "offensiveAbilities": [
-    {
-      "name": "Constrict",
-      "actions": 1,
-      "traits": [],
-      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">4d10+22</span> bludgeoning, DC 47 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-      "collapsed": false
-    },
-    {
-      "name": "Seize",
-      "actions": -1,
-      "traits": [
-        "attack"
-      ],
-      "description": "<p><strong>Trigger</strong> A creature reaches the hall's midpoint</p>\n<hr />\n<p><strong>Effect</strong> The trap attempts a shadow tether Strike against the triggering creature. On a hit, the triggering creature is automatically Grabbed. The trap then rolls initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 38,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Choking Tethers",
-    "type": "hazard",
-    "level": 20,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Uncommon",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder #186: Ghost King's Rage",
-    "stealth": {
-      "value": 38,
-      "note": "(legendary)",
-      "modifications": []
-    },
-    "description": "<p>Three shadow tethers form when a creature reaches the hall's midpoint; each lashes, grabs, and crushes creatures in the hall.</p>",
-    "disable": "<p>DC 48 Thievery check (legendary) to disable each tether or Dispel Magic (10th rank, counteract DC 48) to counteract each tether</p>",
-    "reset": "",
-    "routine": "<p>(six actions) This trap loses 2 actions each turn for each disabled shadow tether. Each shadow tether has 2 actions it can use to either Strike a creature or Constrict a Grabbed creature, in any combination.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 45,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 36,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 30,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 132,
-      "max": 132,
-      "note": "<b>Hardness</b> 33 <b>BT</b> 66. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shadow Tether",
-        "bonus": 38,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "4d10+22",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d10+22)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">4d10+22</span> bludgeoning, DC 47 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Seize",
-        "actions": -1,
-        "traits": [
-          "attack"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature reaches the hall's midpoint</p>\n<hr />\n<p><strong>Effect</strong> The trap attempts a shadow tether Strike against the triggering creature. On a hit, the triggering creature is automatically Grabbed. The trap then rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 42"
-  },
-  "recallKnowledge": ", DC: 42"
+  "recallKnowledge": ", DC 40"
 }

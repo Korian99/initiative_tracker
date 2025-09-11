@@ -12,24 +12,23 @@
     "Unique",
     "Small",
     "Leshy",
-    "Plant",
-    "(caster)"
+    "Plant"
   ],
   "source": "Pathfinder Adventure: A Fistful of Flowers",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 8,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Common",
     "Fey",
     "Wildsong",
-    "Speak with plants (minkaian honeysuckle only)"
+    "speak with plants (minkaian honeysuckle only)"
   ],
   "skills": [
     {
@@ -127,11 +126,11 @@
       "traits": [
         "healing"
       ],
-      "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring <span class=\"roll\" onclick=\"roll(this)\">2d8</span> healing Hit Points to each plant creature within a 30 foot emanation. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
+      "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring 2d8 Healing Damage Hit Points to each plant creature within a 30ft Emanation. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -170,7 +169,7 @@
         "polymorph",
         "primal"
       ],
-      "description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of One with Plants.</p></details>",
+      "description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of One with Plants.</p>",
       "collapsed": false
     }
   ],
@@ -184,13 +183,8 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 1,
+      "autoHeightenLevel": 4,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "VtOvwAguc0r46tbG",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -199,9 +193,12 @@
           "name": "Speak with Plants",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "plant"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -224,6 +221,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -266,278 +264,5 @@
       }
     }
   ],
-  "description": "",
-  "recallKnowledge": "Nature, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Meliosa's Leshy (Minkaian Honeysuckle Leshy)",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Unique",
-      "Small",
-      "Leshy",
-      "Plant",
-      "(caster)"
-    ],
-    "source": "Pathfinder Adventure: A Fistful of Flowers",
-    "perception": {
-      "value": 8,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Fey",
-      "Wildsong",
-      "Speak with plants (minkaian honeysuckle only)"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 30,
-      "max": 30,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "physical",
-        "value": 3
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Agile Leshy",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The honeysuckle leshy gains a +1 status bonus to Reflex and Fortitude saves and DCs against trip and forced movement.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Verdant Burst",
-        "actions": null,
-        "traits": [
-          "healing"
-        ],
-        "description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring <span class=\"roll\" onclick=\"roll(this)\">2d8</span> healing Hit Points to each plant creature within a 30 foot emanation. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 10,
-        "traits": [
-          "agile",
-          "finesse",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Change Shape",
-        "actions": 1,
-        "traits": [
-          "concentrate",
-          "polymorph",
-          "primal"
-        ],
-        "description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of One with Plants.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Primal Innate Spells",
-        "type": "innate",
-        "bonus": 8,
-        "dc": 16,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "VtOvwAguc0r46tbG",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Speak with Plants",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You can ask questions of and receive answers from plants, but the spell doesn't make them more friendly or intelligent than normal. Most normal plants have a distinctive view of the world around them, so they don't recognize details about creatures or know anything about the world beyond their immediate vicinity. Cunning plant monsters are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "XhCvQ4lV1fV9xDZV"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "",
-    "recallKnowledge": "Nature, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 16"
 }

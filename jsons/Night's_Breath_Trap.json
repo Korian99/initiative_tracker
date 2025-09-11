@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Night's Breath Trap",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 14,
   "traits": [
-    "Hazard",
-    "Simple",
     "Rare",
     "Medium",
     "Magical",
@@ -18,39 +17,60 @@
   "source": "Pathfinder #184: The Ghouls Hunger",
   "stealth": {
     "value": 28,
-    "note": "(master)",
-    "modifications": []
+    "note": "(master)"
   },
   "description": "<p>The night giant mummy unfolds its arms and leans forward to exhale a blast of gray mist and shrieking spirits into the room.</p>",
-  "disable": "<p>DC 33 Thievery check to \"blind\" the statue so that it cannot notice any who approach, DC 35 Occultism check to redirect and expend the trap's occult energies harmlessly, or Dispel Magic (7th rank, counteract DC 32) to counteract the trap.</p>",
+  "disable": "<p>DC 33 Thievery  to \"blind\" the statue so that it cannot notice any who approach, DC 35 Occultism  to redirect and expend the trap's occult energies harmlessly, or Dispel Magic (7th rank, counteract DC 32) to counteract the trap.</p>",
   "reset": "<p>The trap resets during the following round, after which it can be triggered again.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Night's Breath",
+      "actions": -1,
+      "traits": [
+        "emotion",
+        "fear",
+        "illusion",
+        "mental",
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> A Small or larger creature in area <strong>A2</strong> moves within 15 feet of the secret door to the north or the double door to area <strong>A5</strong></p>\n<hr />\n<p><strong>Effect</strong> The mummy exhales a blast of gray mist into the room that imparts an overwhelming sense that night itself is consuming all thought. The trap deals 12d6 Mental Damage damage to all creatures in area <strong>A2</strong>, who each must attempt a DC 36 Will Saving Throw saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The creature takes full damage, is Frightened 2, and is Fleeing for as long as they remain frightened.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is Frightened 3, and is fleeing for as long as they remain frightened.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 33,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 22
   },
   "fortitude": {
     "value": 28,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 22,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 90,
     "max": 90,
-    "note": "<b>Hardness</b> 22 <b>BT</b> 45. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -62,106 +82,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Night's Breath",
-      "actions": -1,
-      "traits": [
-        "emotion",
-        "fear",
-        "illusion",
-        "mental",
-        "occult"
-      ],
-      "description": "<p><strong>Trigger</strong> A Small or larger creature in area <strong>A2</strong> moves within 15 feet of the secret door to the north or the double door to area <strong>A5</strong></p>\n<hr />\n<p><strong>Effect</strong> The mummy exhales a blast of gray mist into the room that imparts an overwhelming sense that night itself is consuming all thought. The trap deals <span class=\"roll\" onclick=\"roll(this)\">12d6</span> mental damage to all creatures in area <strong>A2</strong>, who each must attempt a DC 36 Will save saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The creature takes full damage, is Frightened 2, and is Fleeing for as long as they remain frightened.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is Frightened 3, and is fleeing for as long as they remain frightened.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 28,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Night's Breath Trap",
-    "type": "hazard",
-    "level": 14,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Rare",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder #184: The Ghouls Hunger",
-    "stealth": {
-      "value": 28,
-      "note": "(master)",
-      "modifications": []
-    },
-    "description": "<p>The night giant mummy unfolds its arms and leans forward to exhale a blast of gray mist and shrieking spirits into the room.</p>",
-    "disable": "<p>DC 33 Thievery check to \"blind\" the statue so that it cannot notice any who approach, DC 35 Occultism check to redirect and expend the trap's occult energies harmlessly, or Dispel Magic (7th rank, counteract DC 32) to counteract the trap.</p>",
-    "reset": "<p>The trap resets during the following round, after which it can be triggered again.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 33,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 28,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 22,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 90,
-      "max": 90,
-      "note": "<b>Hardness</b> 22 <b>BT</b> 45. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Night's Breath",
-        "actions": -1,
-        "traits": [
-          "emotion",
-          "fear",
-          "illusion",
-          "mental",
-          "occult"
-        ],
-        "description": "<p><strong>Trigger</strong> A Small or larger creature in area <strong>A2</strong> moves within 15 feet of the secret door to the north or the double door to area <strong>A5</strong></p>\n<hr />\n<p><strong>Effect</strong> The mummy exhales a blast of gray mist into the room that imparts an overwhelming sense that night itself is consuming all thought. The trap deals <span class=\"roll\" onclick=\"roll(this)\">12d6</span> mental damage to all creatures in area <strong>A2</strong>, who each must attempt a DC 36 Will save saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and is Frightened 1.</p>\n<p><strong>Failure</strong> The creature takes full damage, is Frightened 2, and is Fleeing for as long as they remain frightened.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is Frightened 3, and is fleeing for as long as they remain frightened.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 37"
-  },
-  "recallKnowledge": ", DC: 37"
+  "recallKnowledge": ", DC 32"
 }

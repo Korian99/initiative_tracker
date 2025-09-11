@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Sickle Blade",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 3,
   "traits": [
-    "Hazard",
-    "Simple",
     "Uncommon",
     "Medium",
     "Mechanical",
@@ -18,39 +17,54 @@
   "source": "Pathfinder #181: Zombie Feast",
   "stealth": {
     "value": 10,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>A skeletal arm holding a sickle is concealed in the ceiling and connected to a mechanism in the sliding door below it.</p>",
-  "disable": "<p>DC 20 Thievery check (trained) on the door frame or ceiling groove, or Interact to operate a lever on the opposite side of the door (in areas <strong>D2</strong> and <strong>D4</strong>, respectively)</p>",
+  "disable": "<p>DC 20 Thievery  (trained) on the door frame or ceiling groove, or Interact to operate a lever on the opposite side of the door (in areas <strong>D2</strong> and <strong>D4</strong>, respectively)</p>",
   "reset": "<p>The trap resets after 15 minutes. Additionally, a creature can manually Interact with the lever on the opposite side of the door to reset the trap.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Sickle",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature attempts to open the door</p>\n<hr />\n<p><strong>Effect</strong> A skeletal arm swings a sickle from the ceiling, making a Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 19,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 11
   },
   "fortitude": {
     "value": 12,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 4,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 44,
     "max": 44,
-    "note": "<b>Hardness</b> 11 <b>BT</b> 22. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -80,120 +94,13 @@
         }
       ],
       "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
   ],
-  "offensiveAbilities": [
-    {
-      "name": "Sickle",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature attempts to open the door</p>\n<hr />\n<p><strong>Effect</strong> A skeletal arm swings a sickle from the ceiling, making a Strike against the triggering creature.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Sickle Blade",
-    "type": "hazard",
-    "level": 3,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Uncommon",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder #181: Zombie Feast",
-    "stealth": {
-      "value": 10,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>A skeletal arm holding a sickle is concealed in the ceiling and connected to a mechanism in the sliding door below it.</p>",
-    "disable": "<p>DC 20 Thievery check (trained) on the door frame or ceiling groove, or Interact to operate a lever on the opposite side of the door (in areas <strong>D2</strong> and <strong>D4</strong>, respectively)</p>",
-    "reset": "<p>The trap resets after 15 minutes. Additionally, a creature can manually Interact with the lever on the opposite side of the door to reset the trap.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 19,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 4,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 44,
-      "max": 44,
-      "note": "<b>Hardness</b> 11 <b>BT</b> 22. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Sickle",
-        "bonus": 16,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "2d12+11",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d12+11)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Sickle",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature attempts to open the door</p>\n<hr />\n<p><strong>Effect</strong> A skeletal arm swings a sickle from the ceiling, making a Strike against the triggering creature.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 20"
-  },
-  "recallKnowledge": ", DC: 20"
+  "recallKnowledge": ", DC 18"
 }

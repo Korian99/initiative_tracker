@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Eternal Hall (7-8)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 7,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,32 +17,46 @@
   "source": "Pathfinder Society Special #3-99: Fate in the Future",
   "stealth": {
     "value": 20,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>Time distorts along this hallway, making the air feel like sludge.</p>",
-  "disable": "<p>DC 27 Thievery check (trained) to disrupt the temporal distortions, or Dispel Magic (4th rank; counteract DC 25) to disperse the temporal energy</p>",
+  "disable": "<p>DC 27 Thievery  (trained) to disrupt the temporal distortions, or Dispel Magic (4th rank; counteract DC 25) to disperse the temporal energy</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Time Press",
+      "actions": -1,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature enters the hall</p>\n<hr />\n<p><strong>Effect</strong> Time weighs upon the creature, dealing (4d10+18) Bludgeoning Damage damage (Basic DC 25 Fortitude Saving Throw save). On a critical failure, the creature is Slowed 1 for 4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,94 +72,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Time Press",
-      "actions": -1,
-      "traits": [
-        "occult"
-      ],
-      "description": "<p><strong>Trigger</strong> A creature enters the hall</p>\n<hr />\n<p><strong>Effect</strong> Time weighs upon the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">4d10+18</span> bludgeoning damage (DC 25 basic Fortitude save). On a critical failure, the creature is Slowed 1 for 4 rounds.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Eternal Hall (7-8)",
-    "type": "hazard",
-    "level": 7,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Special #3-99: Fate in the Future",
-    "stealth": {
-      "value": 20,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>Time distorts along this hallway, making the air feel like sludge.</p>",
-    "disable": "<p>DC 27 Thievery check (trained) to disrupt the temporal distortions, or Dispel Magic (4th rank; counteract DC 25) to disperse the temporal energy</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Time Press",
-        "actions": -1,
-        "traits": [
-          "occult"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature enters the hall</p>\n<hr />\n<p><strong>Effect</strong> Time weighs upon the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">4d10+18</span> bludgeoning damage (DC 25 basic Fortitude save). On a critical failure, the creature is Slowed 1 for 4 rounds.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 23"
-  },
-  "recallKnowledge": ", DC: 23"
+  "recallKnowledge": ", DC 23"
 }

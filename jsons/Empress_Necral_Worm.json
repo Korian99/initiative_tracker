@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 7,
   "traits": [
-    "Huge",
+    "Common",
+    "huge",
     "Animal",
     "Undead"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Tremorsense 60ft imprecise"
+  ],
   "perception": {
     "value": 13,
-    "note": "tremorsense 60 ft imprecise",
+    "note": "Tremorsense 60ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "tremorsense 60 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -106,11 +107,18 @@
       "name": "Viviparous Birth",
       "actions": null,
       "traits": [],
-      "description": "<p>When killed, an empress necral worm violently expels the young it carries. These young erupt as a Necral Worm Swarm in the empress necral worm's space.</p>\n<p>In addition, every creature within 20 feet takes <span class=\"roll\" onclick=\"roll(this)\">5d10</span> void damage (DC 25 basic Reflex save) from the splatter of undead viscera.</p>",
+      "description": "<p>When killed, an empress necral worm violently expels the young it carries. These young erupt as a Necral Worm Swarm in the empress necral worm's space.</p>\n<p>In addition, every creature within 20 feet takes 5d10 Void Damage damage (Basic DC 25 Reflex Saving Throw save) from the splatter of undead viscera.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\nburrow 40 ft,\n",
+  "speed": "25 ft, burrow 40ft",
   "strikes": [
     {
       "type": "melee",
@@ -140,7 +148,7 @@
         }
       ],
       "effects": [
-        "Painful-bite"
+        "painful-bite"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -160,196 +168,17 @@
       "name": "Painful Bite",
       "actions": null,
       "traits": [],
-      "description": "<p>The bite of an empress necral worm causes excruciating pain. The target must succeed at a DC 25 Fortitude save or become Sickened 1 from the pain (Sickened 2 on a critical failure).</p>",
+      "description": "<p>The bite of an empress necral worm causes excruciating pain. The target must succeed at a DC 25 Fortitude Saving Throw save or become Sickened 1 from the pain (Sickened 2 on a critical failure).</p>",
       "collapsed": false
     },
     {
       "name": "Undead Wake",
       "actions": 1,
       "traits": [],
-      "description": "<p>The empress necral worm Strides, leaving behind dribbles of void energy in every square that it passes through.</p>\n<p>A creature that enters or begins its turn in such a square takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage (DC 22 basic Fortitude save). The void energy becomes inert after 1 minute.</p>",
+      "description": "<p>The empress necral worm Strides, leaving behind dribbles of void energy in every square that it passes through.</p>\n<p>A creature that enters or begins its turn in such a square takes 3d6 Void Damage damage (Basic DC 22 Fortitude Saving Throw save). The void energy becomes inert after 1 minute.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>When an area lacks sufficient food, the bore worms in a swarm become increasingly agitated and desperate. Eventually, at some chemical signal, the worms begin to cannibalize each other, devouring one other in a frenzy too gruesome to behold. A single worm emerges from this melee victorious; it rapidly grows larger and more voracious until it reaches an absolutely elephantine size.</p>\n<p>This empress bore worm lives only briefly, as it sets out in search of a new feeding ground and eats everything in its path in an attempt to sustain itself. However, the empress bore worm's ravenous metabolism demands more from its body than what it can physically sustain, as it exists only as a vessel for the next generation. Most live only a few days, or weeks at best, traveling and eating nonstop before dying-and in so doing, giving birth to new swarms of bore worms.</p>\n<hr />\n<p>These Darklands vermin produce corrosive, noxious slime and deliver agonizing bites, whether as a revolting, wriggling swarm of finger-length worms or a single massive, lurching beast. Among Darklands communities, most inhabitants regard bore worms much in the same way surface cultures speak of maggots or cockroaches-with general disdain and revulsion. Children consider catching a single bore worm and using it to torment others a rite of passage, albeit a dangerous one.</p>\n<p>An undead sorcerer in the ghoul-run Darklands city of Nemret Noktoria developed necral worms about 60 years ago by filling an empress bore worm's abandoned exoskeleton with a unique alchemical paste. These undead bore worms radiate the very energies of death, making them surprisingly sophisticated magical batteries. Less pleasant entities often use them as magical tools.</p>",
-  "recallKnowledge": "Nature, Religion, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Empress Necral Worm",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Huge",
-      "Animal",
-      "Undead"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 13,
-      "note": "tremorsense 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "tremorsense 60 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": -4
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 23,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 140,
-      "max": 140,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "acid"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "vitality",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Viviparous Birth",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When killed, an empress necral worm violently expels the young it carries. These young erupt as a Necral Worm Swarm in the empress necral worm's space.</p>\n<p>In addition, every creature within 20 feet takes <span class=\"roll\" onclick=\"roll(this)\">5d10</span> void damage (DC 25 basic Reflex save) from the splatter of undead viscera.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\nburrow 40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Bite",
-        "bonus": 17,
-        "traits": [
-          "reach-15"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+9",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d6",
-            "type": "void"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+9)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "void"
-          }
-        ],
-        "effects": [
-          "Painful-bite"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Borer",
-        "actions": null,
-        "traits": [],
-        "description": "<p>An empress necral worm can leave a tunnel behind itself when it burrows, and it usually does.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Painful Bite",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The bite of an empress necral worm causes excruciating pain. The target must succeed at a DC 25 Fortitude save or become Sickened 1 from the pain (Sickened 2 on a critical failure).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Undead Wake",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The empress necral worm Strides, leaving behind dribbles of void energy in every square that it passes through.</p>\n<p>A creature that enters or begins its turn in such a square takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage (DC 22 basic Fortitude save). The void energy becomes inert after 1 minute.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>When an area lacks sufficient food, the bore worms in a swarm become increasingly agitated and desperate. Eventually, at some chemical signal, the worms begin to cannibalize each other, devouring one other in a frenzy too gruesome to behold. A single worm emerges from this melee victorious; it rapidly grows larger and more voracious until it reaches an absolutely elephantine size.</p>\n<p>This empress bore worm lives only briefly, as it sets out in search of a new feeding ground and eats everything in its path in an attempt to sustain itself. However, the empress bore worm's ravenous metabolism demands more from its body than what it can physically sustain, as it exists only as a vessel for the next generation. Most live only a few days, or weeks at best, traveling and eating nonstop before dying-and in so doing, giving birth to new swarms of bore worms.</p>\n<hr />\n<p>These Darklands vermin produce corrosive, noxious slime and deliver agonizing bites, whether as a revolting, wriggling swarm of finger-length worms or a single massive, lurching beast. Among Darklands communities, most inhabitants regard bore worms much in the same way surface cultures speak of maggots or cockroaches-with general disdain and revulsion. Children consider catching a single bore worm and using it to torment others a rite of passage, albeit a dangerous one.</p>\n<p>An undead sorcerer in the ghoul-run Darklands city of Nemret Noktoria developed necral worms about 60 years ago by filling an empress bore worm's abandoned exoskeleton with a unique alchemical paste. These undead bore worms radiate the very energies of death, making them surprisingly sophisticated magical batteries. Less pleasant entities often use them as magical tools.</p>",
-    "recallKnowledge": "Nature, Religion, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature or Religion, DC 23"
 }

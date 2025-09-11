@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Large",
     "Amphibious",
     "Animal"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Darkvision",
+    "Wavesense 30ft imprecise"
+  ],
   "perception": {
     "value": 10,
-    "note": "darkvisionwavesense 30 ft imprecise",
+    "note": "Darkvision, Wavesense 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "wavesense 30 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -60,7 +61,15 @@
     "value": -3
   },
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Wavesense (Imprecise) 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This sense allows a monster to feel vibrations caused by movement through a liquid. It's an imprecise sense with a limited range (listed in the ability). Wavesense functions only if monster and the subject are in the same body of liquid, and only if the subject is moving through the liquid.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 22,
     "note": "",
@@ -100,11 +109,11 @@
       "name": "Attack of Opportunity (Stinger Only)",
       "actions": -1,
       "traits": [],
-      "description": "<p>Stinger only</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p>Stinger only</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "40 ft,\nswim 40 ft,\n",
+  "speed": "40 ft, swim 40ft",
   "strikes": [
     {
       "type": "melee",
@@ -124,7 +133,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -149,7 +158,7 @@
         }
       ],
       "effects": [
-        "Spiny-eurypterid-venom"
+        "spiny-eurypterid-venom"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -162,7 +171,7 @@
       "name": "Chitinous Spines",
       "actions": null,
       "traits": [],
-      "description": "<p>A creature Grabbed by the spiny eurypterid takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage at the start of that creature's turn.</p>",
+      "description": "<p>A creature Grabbed by the spiny eurypterid takes 2d6 Piercing Damage damage at the start of that creature's turn.</p>",
       "collapsed": false
     },
     {
@@ -171,193 +180,17 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 22 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> poison damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d8</span> poison damage and Enfeebled 3 (1 round).</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 22 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d8 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d8 Poison Damage damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> 2d8 Poison Damage damage and Enfeebled 3 (1 round).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Spiny eurypterids are aggressive, tenacious, and utterly unwilling to stop chasing prey, even to their own detriment. These creatures are covered with countless needle-like spikes and can grow to rival the size of ocean mammals like orcas. Sailors often find them clinging to the hulls of ships, as spinyeurypterids mistake them for prey and are too stubborn to let go.</p>\n<hr />\n<p>Fearsome predators and durable pests, eurypterids are hard-carapaced arthropods sometimes referred to as sea scorpions. Though aquatic creatures, they have robust respiratory systems that allow them to survive indefinitely on land. All eurypterids possess claws as well as stingers that can inject venom.</p>",
-  "recallKnowledge": "Nature, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Spiny Eurypterid",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Large",
-      "Amphibious",
-      "Animal"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 10,
-      "note": "darkvisionwavesense 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "wavesense 30 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": -3
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 70,
-      "max": 70,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity (Stinger Only)",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>Stinger only</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "40 ft,\nswim 40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Pincer",
-        "bonus": 15,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "2d8+4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+4)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Stinger",
-        "bonus": 15,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "2d6+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Spiny-eurypterid-venom"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Chitinous Spines",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A creature Grabbed by the spiny eurypterid takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage at the start of that creature's turn.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Spiny Eurypterid Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 22 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> poison damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d8</span> poison damage and Enfeebled 3 (1 round).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Spiny eurypterids are aggressive, tenacious, and utterly unwilling to stop chasing prey, even to their own detriment. These creatures are covered with countless needle-like spikes and can grow to rival the size of ocean mammals like orcas. Sailors often find them clinging to the hulls of ships, as spinyeurypterids mistake them for prey and are too stubborn to let go.</p>\n<hr />\n<p>Fearsome predators and durable pests, eurypterids are hard-carapaced arthropods sometimes referred to as sea scorpions. Though aquatic creatures, they have robust respiratory systems that allow them to survive indefinitely on land. All eurypterids possess claws as well as stingers that can inject venom.</p>",
-    "recallKnowledge": "Nature, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 20"
 }

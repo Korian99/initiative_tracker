@@ -9,22 +9,22 @@
   "type": "Creature",
   "level": 7,
   "traits": [
+    "Common",
     "Large",
     "Azata",
     "Celestial",
-    "Holy",
-    "(caster)"
+    "Holy"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 16,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Diabolic",
     "Draconic",
@@ -113,7 +113,7 @@
       "quantity": 1,
       "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "versatile-p"
       ]
@@ -123,7 +123,7 @@
       "quantity": 1,
       "description": "<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played.</p>\n<p>A virtuoso instrument is more finely made and gives a +1 item bonus to Performance checks using that instrument.</p>",
       "level": 3,
-      "price": "50 gp ",
+      "price": "50 gp",
       "traits": []
     }
   ],
@@ -180,7 +180,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\nfly 45 ft,\n",
+  "speed": "25 ft, fly 45ft",
   "strikes": [
     {
       "type": "melee",
@@ -240,7 +240,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -255,6 +255,13 @@
       "traits": [],
       "description": "<p>Any Courageous Anthem the kanya casts grants a +2 status bonus instead of +1.</p>\n<hr />\n<p>Spell Effect: Courageous Anthem (Kanya)</p>",
       "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [
@@ -267,14 +274,15 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 4,
+      "autoHeightenLevel": 5,
       "cantrips": [
         {
           "name": "Courageous Anthem",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "bard",
             "composition",
             "concentrate",
@@ -284,10 +292,10 @@
           "castingTime": "1",
           "duration": "1 round",
           "range": "",
-          "area": "60 ft emanation",
+          "area": "60ft emanation",
           "targets": "",
           "save": "",
-          "description": "<p>You inspire yourself and your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>\n",
+          "description": "<p>You inspire yourself and your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -299,6 +307,8 @@
           "name": "Daze",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate",
@@ -310,8 +320,8 @@
           "range": "60 feet",
           "area": "",
           "targets": "1 creature",
-          "save": "basic will",
-          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "save": "Basic will",
+          "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals 1d6 mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -323,6 +333,8 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -331,7 +343,7 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "30 ft emanation",
+          "area": "30ft emanation",
           "targets": "",
           "save": "",
           "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
@@ -346,6 +358,8 @@
           "name": "Figment",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "illusion",
@@ -353,12 +367,12 @@
             "subtle"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "Sustained up to ",
           "range": "30 feet",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n",
+          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -370,6 +384,8 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "light",
@@ -381,7 +397,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -393,6 +409,8 @@
           "name": "Summon Instrument",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
@@ -415,8 +433,9 @@
           "name": "Uplifting Overture",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "bard",
             "composition",
             "concentrate",
@@ -438,20 +457,18 @@
           "id": "0tNjAITf1ADylFdw"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "e7Rk8yVGVqEP62yA",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [
         {
           "name": "Invisibility",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "illusion",
-            "manipulate"
+            "manipulate",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -474,12 +491,15 @@
           "name": "Suggestion",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "incapacitation",
             "linguistic",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -499,10 +519,13 @@
           "name": "Clear Mind",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "healing",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "",
@@ -522,17 +545,20 @@
           "name": "Noise Blast",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "sonic"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "30 feet",
-          "area": "10 ft burst",
+          "area": "10ft burst",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>A cacophonous noise blasts out, dealing <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
+          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -544,12 +570,15 @@
           "name": "Charm",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -569,18 +598,20 @@
           "name": "Counter Performance",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "bard",
             "composition",
             "concentrate",
             "fortune",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "reaction",
           "duration": "",
           "range": "",
-          "area": "60 ft emanation",
+          "area": "60ft emanation",
           "targets": "",
           "save": "",
           "description": "<p><strong>Trigger</strong> You or an ally within 60 feet rolls a saving throw against an auditory or visual effect.</p>\n<hr />\n<p>Your performance protects you and your allies. Roll a Performance check for a type you know—it must be an auditory performance if the trigger was auditory or a visual one for a visual trigger, and this action gains the traits for the type of performance. You and allies in the area can use the better result between your Performance check and the saving throw.</p>",
@@ -595,11 +626,14 @@
           "name": "Soothe",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "healing",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -607,7 +641,7 @@
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains <span class=\"roll\" onclick=\"roll(this)\">1d10+4</span> Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by <span class=\"roll\" onclick=\"roll(this)\">1d10+4</span>.</p>",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -621,9 +655,11 @@
           "name": "Truespeech (Constant)",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -645,6 +681,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -687,699 +724,5 @@
       }
     }
   ],
-  "description": "<p>Kanyas are bearers of blessings and fortune, as well as harbingers of wisdom and spiritual growth. They are generally peaceful but quick to act if a community they are residing in is threatened. They pride themselves on inspiring mortals to such joy that they express it through the arts, leading to their common moniker as \"muses.\" More than one bard looks to a kanya as their personal inspiration, yet much like inspiration, kanyas come and go as they please. They wander the world as they will, offering rain, generosity, wisdom, and support to whomever pleases them.</p>\n<p>Kanyas sometimes secretly follow the adventures of mortal heroes to record their stories as epic poems and songs, which they then perform in the packed mead halls of Elysium. When pursuing such goals, kanyas take pains to use their innate spells to remain in hiding, as they would rather observe and record events without \"polluting\" them with their own intervention. Nevertheless, a kanya who sees their charge faced with certain death often cannot resist the urge to intervene and save the day. Inevitably, this brings a close to the kanya's chronicles, as their relationship with their subject invariably shifts from one of detached observation to friendship or more. Yet, kanyas remain hesitant to involve themselves for overlong in a mortal's life, in part because they fear what sort of fiendish attention their presence might attract, but mostly out of respect for the mortal's own destiny. A kanya would, all things being equal, prefer to let mortals choose their own fate rather than run the risk of sending someone down a path to which their heart is not set.</p>\n<hr />\n<p>Azatas are manifestations of freedom and unestrained joy—kindly celestials with a penchant for curious exploration, spontaneous revelry, and whimsical quests. Born of good dreams and heartfelt wishes for a better world, they reside in the untamable wilds of Elysium. Azatas are passionate and mercurial, as beautiful and bright as a child's fantasy, but also fiercely loyal to those they hold dear. They act quickly and directly against fiendish and foul influences, but they tend to avoid guiding mortal affairs otherwise, allowing people to choose their own destiny without the meddling of otherworldly forces.</p>\n<p>Azatas reject the dual chains of both duty and tyranny, but also the heavy chains of despair that reality so often inflicts upon those who live in it. This can give them a dubious reputation with other celestials, who consider azatas to be flighty and unreliable, but azatas know that unrelenting self-sacrifice can be just as destructive to the soul as evil. Azatas refuse to compromise the beauty of the world with such banality, instead living without regret and savoring every triumph and agony they encounter upon the way.</p>",
-  "recallKnowledge": "Religion, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 16,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Kanya",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Large",
-      "Azata",
-      "Celestial",
-      "Holy",
-      "(caster)"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 16,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Diabolic",
-      "Draconic",
-      "Empyrean",
-      "Truespeech"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "performance",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 5
-    },
-    "items": [
-      {
-        "name": "Longsword",
-        "quantity": 1,
-        "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "versatile-p"
-        ]
-      },
-      {
-        "name": "Virtuoso Harp",
-        "quantity": 1,
-        "description": "<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played.</p>\n<p>A virtuoso instrument is more finely made and gives a +1 item bonus to Performance checks using that instrument.</p>",
-        "level": 3,
-        "price": "50 gp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 135,
-      "max": 135,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "cold-iron",
-        "value": 10
-      },
-      {
-        "type": "unholy",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Free Expression",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A kanya's auditory and sonic effects attempt to counteract any effect that would directly control, manipulate, or prevent them from expressing themself freely, such as Silence. They can also spend an action, which has concentrate trait, to speak forcefully and counteract such effects. The counteract modifier is +16 in either case.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\nfly 45 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Longsword",
-        "bonus": 18,
-        "traits": [
-          "holy",
-          "magical",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+10",
-            "type": "slashing"
-          },
-          {
-            "roll": "1d6",
-            "type": "sonic"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+10)*2",
-            "type": "slashing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "sonic"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "holy",
-          "magical",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+10",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+10)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Muse's Courage",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Any Courageous Anthem the kanya casts grants a +2 status bonus instead of +1.</p>\n<hr />\n<p>Spell Effect: Courageous Anthem (Kanya)</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 18,
-        "dc": 26,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [
-          {
-            "name": "Courageous Anthem",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "bard",
-              "composition",
-              "concentrate",
-              "emotion",
-              "mental"
-            ],
-            "castingTime": "1",
-            "duration": "1 round",
-            "range": "",
-            "area": "60 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You inspire yourself and your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "W7FgwI6OVHfHW7zc"
-          },
-          {
-            "name": "Daze",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate",
-              "mental",
-              "nonlethal"
-            ],
-            "castingTime": "2",
-            "duration": "1 round",
-            "range": "60 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "basic will",
-            "description": "<p>You push into the target's mind and daze it with a mental jolt. The jolt deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage, with a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "p0tsCoD5OjQL79KK"
-          },
-          {
-            "name": "Detect Magic",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "30 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "6A7TBJj1r3UA0PES"
-          },
-          {
-            "name": "Figment",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "illusion",
-              "manipulate",
-              "subtle"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "KurLn7VM9tnOjEmT"
-          },
-          {
-            "name": "Light",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "light",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until your next daily preparations",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "VZhse5yjZ5v0KBiq"
-          },
-          {
-            "name": "Summon Instrument",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "3",
-            "duration": "1 hour",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You materialize a Musical Instrument (Handheld) in your grasp. The instrument is typical for its type, but it plays only for you. It vanishes when the spell ends. If you cast <em>summon instrument</em> again, any instrument you previously summoned disappears.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The instrument is instead a Musical Instrument (Virtuoso handheld).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "IHeWX8CdohZV85Sm"
-          },
-          {
-            "name": "Uplifting Overture",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "bard",
-              "composition",
-              "concentrate",
-              "emotion",
-              "mental"
-            ],
-            "castingTime": "1",
-            "duration": "1 round",
-            "range": "60 feet",
-            "area": "",
-            "targets": "1 ally",
-            "save": "",
-            "description": "<p>Your performance makes allies feel they can succeed at anything. This counts as having prepared to Aid your ally on a skill check of your choice. When you later use the Aid reaction, you can roll Performance instead of the normal skill check, and if you roll a failure, you get a success instead. If you are legendary in Performance, you automatically critically succeed.</p>\n<p>The GM might rule that you can't use this ability if the act of encouraging your ally would interfere with the skill check (such as a check to Sneak quietly or maintain a disguise).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "0tNjAITf1ADylFdw"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "e7Rk8yVGVqEP62yA",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [
-          {
-            "name": "Invisibility",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "illusion",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>Illusions bend light around the target, rendering it Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "c8L2sj5ovaD2Pzkn"
-          }
-        ],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Suggestion",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "incapacitation",
-              "linguistic",
-              "manipulate",
-              "mental"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "IYfghoI2y4C2dAGp"
-          },
-          {
-            "name": "Clear Mind",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 willing creature",
-            "save": "",
-            "description": "<p>You drive mental contamination from the target's mind. Attempt to counteract an effect of your choice imposing one of these conditions on the target: Fleeing, Frightened, and Stupefied. If you failed to counteract the effect but you would have if its counteract rank were 2 lower, instead suppress the effect until the beginning of your next turn. The effect's duration doesn't elapse while it's suppressed. This spell can't counteract or suppress conditions that are part of curses, diseases, or a natural state of the target.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> Add Confused, Controlled, and Slowed to the list of conditions.</p>\n<p><strong>Heightened (6th)</strong> Add Doomed to the list of conditions.</p>\n<p><strong>Heightened (8th)</strong> Add Stunned to the list of conditions.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "Ufbr1NBYryNgpsAd"
-          },
-          {
-            "name": "Noise Blast",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "10 ft burst",
-            "targets": "",
-            "save": "fortitude",
-            "description": "<p>A cacophonous noise blasts out, dealing <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "HCJCCOW7dDBnZ56p"
-          },
-          {
-            "name": "Charm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "incapacitation",
-              "manipulate",
-              "mental"
-            ],
-            "castingTime": "2",
-            "duration": "1 hour",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes Friendly toward you. If it was Friendly, it becomes Helpful. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "6QVO5QvCS9rm8VRU"
-          },
-          {
-            "name": "Counter Performance",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "bard",
-              "composition",
-              "concentrate",
-              "fortune",
-              "manipulate"
-            ],
-            "castingTime": "reaction",
-            "duration": "",
-            "range": "",
-            "area": "60 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p><strong>Trigger</strong> You or an ally within 60 feet rolls a saving throw against an auditory or visual effect.</p>\n<hr />\n<p>Your performance protects you and your allies. Roll a Performance check for a type you know—it must be an auditory performance if the trigger was auditory or a visual one for a visual trigger, and this action gains the traits for the type of performance. You and allies in the area can use the better result between your Performance check and the saving throw.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "AW71P1cTx8xnC3Zh"
-          },
-          {
-            "name": "Soothe",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 willing creature",
-            "save": "",
-            "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains <span class=\"roll\" onclick=\"roll(this)\">1d10+4</span> Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by <span class=\"roll\" onclick=\"roll(this)\">1d10+4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ctbW853tYEeOVJ3u"
-          }
-        ],
-        "lv5spells": [
-          {
-            "name": "Truespeech (Constant)",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "uncommon",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 hour",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "A6QXR1khVrcieezn"
-          }
-        ],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>Kanyas are bearers of blessings and fortune, as well as harbingers of wisdom and spiritual growth. They are generally peaceful but quick to act if a community they are residing in is threatened. They pride themselves on inspiring mortals to such joy that they express it through the arts, leading to their common moniker as \"muses.\" More than one bard looks to a kanya as their personal inspiration, yet much like inspiration, kanyas come and go as they please. They wander the world as they will, offering rain, generosity, wisdom, and support to whomever pleases them.</p>\n<p>Kanyas sometimes secretly follow the adventures of mortal heroes to record their stories as epic poems and songs, which they then perform in the packed mead halls of Elysium. When pursuing such goals, kanyas take pains to use their innate spells to remain in hiding, as they would rather observe and record events without \"polluting\" them with their own intervention. Nevertheless, a kanya who sees their charge faced with certain death often cannot resist the urge to intervene and save the day. Inevitably, this brings a close to the kanya's chronicles, as their relationship with their subject invariably shifts from one of detached observation to friendship or more. Yet, kanyas remain hesitant to involve themselves for overlong in a mortal's life, in part because they fear what sort of fiendish attention their presence might attract, but mostly out of respect for the mortal's own destiny. A kanya would, all things being equal, prefer to let mortals choose their own fate rather than run the risk of sending someone down a path to which their heart is not set.</p>\n<hr />\n<p>Azatas are manifestations of freedom and unestrained joy—kindly celestials with a penchant for curious exploration, spontaneous revelry, and whimsical quests. Born of good dreams and heartfelt wishes for a better world, they reside in the untamable wilds of Elysium. Azatas are passionate and mercurial, as beautiful and bright as a child's fantasy, but also fiercely loyal to those they hold dear. They act quickly and directly against fiendish and foul influences, but they tend to avoid guiding mortal affairs otherwise, allowing people to choose their own destiny without the meddling of otherworldly forces.</p>\n<p>Azatas reject the dual chains of both duty and tyranny, but also the heavy chains of despair that reality so often inflicts upon those who live in it. This can give them a dubious reputation with other celestials, who consider azatas to be flighty and unreliable, but azatas know that unrelenting self-sacrifice can be just as destructive to the soul as evil. Azatas refuse to compromise the beauty of the world with such banality, instead living without regret and savoring every triumph and agony they encounter upon the way.</p>",
-    "recallKnowledge": "Religion, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 23"
 }

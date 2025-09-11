@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Medium",
     "Chaotic",
     "Evil",
@@ -16,15 +17,15 @@
     "Xulgath"
   ],
   "source": "Pathfinder #151: The Show Must Go On",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 9,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Draconic",
     "Sakvroth"
@@ -83,7 +84,7 @@
       "quantity": 1,
       "description": "<p>This pick has a longer handle and broader head than a regular pick. It is too heavy to wield in one hand.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
         "fatal-d12"
       ]
@@ -93,7 +94,7 @@
       "quantity": 4,
       "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "thrown"
       ]
@@ -103,7 +104,7 @@
       "quantity": 1,
       "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
+      "price": "8 gp",
       "traits": []
     },
     {
@@ -111,7 +112,7 @@
       "quantity": 1,
       "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>",
       "level": 0,
-      "price": "5 gp ",
+      "price": "5 gp",
       "traits": []
     }
   ],
@@ -158,11 +159,11 @@
         "aura",
         "olfactory"
       ],
-      "description": "<p>30 feet. A creature entering the aura must attempt a DC 19 Fortitude save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>Effect: Xulgath Stench</p>",
+      "description": "<p>30 feet. A creature entering the aura must attempt a DC 19 Fortitude Saving Throw save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>Effect: Xulgath Stench</p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -179,12 +180,12 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d12+6)*2",
+          "roll": "(1d10+6)*2",
           "type": "piercing"
         }
       ],
       "effects": [
-        "Weakening-strike"
+        "weakening-strike"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -211,7 +212,7 @@
         }
       ],
       "effects": [
-        "Weakening-strike"
+        "weakening-strike"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -275,297 +276,10 @@
       "name": "Weakening Strike",
       "actions": 1,
       "traits": [],
-      "description": "<p>The target must succeed at a DC 20 Fortitude save or become Enfeebled 1 (or Enfeebled 2 on a critical hit) for 1 round.</p>",
+      "description": "<p>The target must succeed at a DC 20 Fortitude Saving Throw save or become Enfeebled 1 (or Enfeebled 2 on a critical hit) for 1 round.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Xulgath leaders are usually the strongest, most violent members of a community-although in some cases, particularly in larger groups, xulgath tribes are led by powerful demon cultists or other monsters who seek to use the xulgaths as servants or slaves.</p>\n<hr />\n<p>Reptilian humanoids who live in the uppermost reaches of the Darklands, xulgaths (known as troglodytes to many surface-dwelling folk) often attack intruders in their territory on sight. They live in simple familial communities, battling rival groups and other aggressive Darklands inhabitants in order to survive. They occasionally raid surface settlements, usually at the behest of cruel, bloodthirsty leaders who are often themselves in the thrall of more powerful creatures like nagas or demons. A typical xulgath has dull gray, dark gray, or ashen scales, with a long tail and bony protrusions that run the length of its spine. A typical xulgath is 5 feet tall and weighs 150 pounds.</p>\n<p>Although today the xulgaths are brutal and scattered, they were one of the first intelligent humanoids to rise in the primeval world, once ruling over a mighty empire that stretched throughout the Darklands. Today, all that remains of this era are ruins of massive stone ziggurats and crumbling cities found within some of the larger caverns. Some groups of xulgaths continue to live among these ruins, venerating their ancestors' accomplishments, while others consider these areas taboo and leave them to become infested with Darklands vermin. Sages don't agree on why the ancient xulgath civilization fell. Some suspect it was the result of a loss of several wars waged against serpentfolk, while others suggest that the corruptive influence of demon worship rotted their culture from within.</p>\n<p>Certainly, many xulgath settlements continue to worship demons to this day, paying homage and offering live sacrifices to terrible creatures from the Abyss. Occasionally, a xulgath shaman can call forth and bind a lesser demon to help serve the group, but a shaman who delves too deep into occultism might summon a more powerful fiend that either tears the xulgaths to pieces or enslaves them.</p>",
-  "recallKnowledge": "Society, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Lakkai One-Fang",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Humanoid",
-      "Xulgath"
-    ],
-    "source": "Pathfinder #151: The Show Must Go On",
-    "perception": {
-      "value": 9,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Draconic",
-      "Sakvroth"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 1
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Greatpick",
-        "quantity": 1,
-        "description": "<p>This pick has a longer handle and broader head than a regular pick. It is too heavy to wield in one hand.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "fatal-d12"
-        ]
-      },
-      {
-        "name": "Javelin",
-        "quantity": 4,
-        "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "thrown"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      },
-      {
-        "name": "Snare Kit",
-        "quantity": 1,
-        "description": "<p>This kit contains tools and materials for creating snares. A snare kit allows you to Craft snares using the Crafting skill.</p>",
-        "level": 0,
-        "price": "5 gp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 44,
-      "max": 44,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Stench",
-        "actions": null,
-        "traits": [
-          "aura",
-          "olfactory"
-        ],
-        "description": "<p>30 feet. A creature entering the aura must attempt a DC 19 Fortitude save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths' stench for 1 minute.</p>\n<p>Effect: Xulgath Stench</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Greatpick",
-        "bonus": 11,
-        "traits": [
-          "fatal-d12"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d12+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Weakening-strike"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 11,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Weakening-strike"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 11,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+6",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+6)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Javelin",
-        "bonus": 8,
-        "traits": [
-          "thrown-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Weakening Strike",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The target must succeed at a DC 20 Fortitude save or become Enfeebled 1 (or Enfeebled 2 on a critical hit) for 1 round.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Xulgath leaders are usually the strongest, most violent members of a community-although in some cases, particularly in larger groups, xulgath tribes are led by powerful demon cultists or other monsters who seek to use the xulgaths as servants or slaves.</p>\n<hr />\n<p>Reptilian humanoids who live in the uppermost reaches of the Darklands, xulgaths (known as troglodytes to many surface-dwelling folk) often attack intruders in their territory on sight. They live in simple familial communities, battling rival groups and other aggressive Darklands inhabitants in order to survive. They occasionally raid surface settlements, usually at the behest of cruel, bloodthirsty leaders who are often themselves in the thrall of more powerful creatures like nagas or demons. A typical xulgath has dull gray, dark gray, or ashen scales, with a long tail and bony protrusions that run the length of its spine. A typical xulgath is 5 feet tall and weighs 150 pounds.</p>\n<p>Although today the xulgaths are brutal and scattered, they were one of the first intelligent humanoids to rise in the primeval world, once ruling over a mighty empire that stretched throughout the Darklands. Today, all that remains of this era are ruins of massive stone ziggurats and crumbling cities found within some of the larger caverns. Some groups of xulgaths continue to live among these ruins, venerating their ancestors' accomplishments, while others consider these areas taboo and leave them to become infested with Darklands vermin. Sages don't agree on why the ancient xulgath civilization fell. Some suspect it was the result of a loss of several wars waged against serpentfolk, while others suggest that the corruptive influence of demon worship rotted their culture from within.</p>\n<p>Certainly, many xulgath settlements continue to worship demons to this day, paying homage and offering live sacrifices to terrible creatures from the Abyss. Occasionally, a xulgath shaman can call forth and bind a lesser demon to help serve the group, but a shaman who delves too deep into occultism might summon a more powerful fiend that either tears the xulgaths to pieces or enslaves them.</p>",
-    "recallKnowledge": "Society, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 18"
 }

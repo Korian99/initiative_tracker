@@ -15,13 +15,13 @@
     "Humanoid"
   ],
   "source": "Pathfinder #179: Cradle of Quartz",
+  "senses": [],
   "perception": {
     "value": 15,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [],
   "skills": [
     {
@@ -84,9 +84,8 @@
       "quantity": 1,
       "description": "<p>Made for settling disputes when diplomacy fails, dueling pistols are finely crafted and made to fit easily into a holster or pocket. Noble and wealthy merchants in both Alkenstar and Dongun Hold often own matching pairs of dueling pistols in case they're called upon to address a challenge-though this practice has become increasingly rare in the modern age.</p>",
       "level": 1,
-      "price": "12 gp ",
+      "price": "12 gp",
       "traits": [
-        "uncommon",
         "concealable",
         "concussive",
         "fatal-d10"
@@ -97,7 +96,7 @@
       "quantity": 1,
       "description": "<p>This bit of hardened metal, favored by street toughs, is typically made of brass and features four finger holes so that it can sit atop the knuckles, adding extra power to a punch.</p>",
       "level": 0,
-      "price": "3 sp ",
+      "price": "3 sp",
       "traits": [
         "agile",
         "free-hand",
@@ -107,9 +106,9 @@
     {
       "name": "Thunderstone (Moderate)",
       "quantity": 2,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a DC 20 Fortitude save saving throw with the listed DC or be Deafened until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls. The bomb deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> sonic damage and 2 sonic splash damage, and the DC is 20.</p>",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a @Check[fortitude|dc:20|name:Moderate Thunderstone|showDC:all] saving throw with the listed DC or be @UUID[Compendium.pf2e.conditionitems.Item.Deafened] until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls. The bomb deals 2d4 sonic damage and 2 sonic splash damage, and the DC is 20.</p>",
       "level": 3,
-      "price": "10 gp ",
+      "price": "10 gp",
       "traits": [
         "alchemical",
         "bomb",
@@ -123,34 +122,8 @@
       "quantity": 1,
       "description": "<p>This leather holster is crafted to better hide small firearms from view. Only firearms designed for use in one hand are small enough to disguise with this holster. You gain a +1 item bonus to Stealth checks and DCs to hide or conceal a firearm or hand crossbow in this holster.</p>",
       "level": 3,
-      "price": "25 gp ",
-      "traits": [
-        "uncommon"
-      ]
-    },
-    {
-      "name": "Rounds (Dueling Pistol)",
-      "quantity": 10,
-      "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": [
-        "alchemical"
-      ]
-    },
-    {
-      "name": "Golden Silencer (Standard)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p><strong>Requirements</strong> You're an expert in Stealth.</p>\n<hr />\n<p>The Golden Gunners are dreaded for their use of their golden silencers, which they put to good use in clandestine raids. They silence both the loud gunshot and the screams of creatures wounded by its shot. A weapon with a golden silencer attached emits no light and makes no noise when fired. A target hit by a ranged Strike from the affixed weapon must succeed at a DC 20 Fortitude save or be silenced as well until the start of its next turn. A silenced creature can't call for help or use sonic abilities, nor can it use abilities with the auditory trait. This prevents it from casting spells that include verbal components.</p>",
-      "level": 6,
-      "price": "50 gp ",
-      "traits": [
-        "uncommon",
-        "consumable",
-        "illusion",
-        "magical",
-        "talisman"
-      ]
+      "price": "25 gp",
+      "traits": []
     }
   ],
   "generalAbilities": [],
@@ -197,7 +170,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -281,13 +254,13 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d10+6)*2",
+          "roll": "(1d6+6)*2",
           "type": "piercing"
         }
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -297,319 +270,10 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The Gilded Gunner assassin deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The Gilded Gunner assassin deals an additional 2d6 precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Society, DC: 25",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 15,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Gilded Gunner Assassin",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Rare",
-      "Medium",
-      "Evil",
-      "Humanoid"
-    ],
-    "source": "Pathfinder #179: Cradle of Quartz",
-    "perception": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Dueling Pistol",
-        "quantity": 1,
-        "description": "<p>Made for settling disputes when diplomacy fails, dueling pistols are finely crafted and made to fit easily into a holster or pocket. Noble and wealthy merchants in both Alkenstar and Dongun Hold often own matching pairs of dueling pistols in case they're called upon to address a challenge-though this practice has become increasingly rare in the modern age.</p>",
-        "level": 1,
-        "price": "12 gp ",
-        "traits": [
-          "uncommon",
-          "concealable",
-          "concussive",
-          "fatal-d10"
-        ]
-      },
-      {
-        "name": "Knuckle Duster",
-        "quantity": 1,
-        "description": "<p>This bit of hardened metal, favored by street toughs, is typically made of brass and features four finger holes so that it can sit atop the knuckles, adding extra power to a punch.</p>",
-        "level": 0,
-        "price": "3 sp ",
-        "traits": [
-          "agile",
-          "free-hand",
-          "monk"
-        ]
-      },
-      {
-        "name": "Thunderstone (Moderate)",
-        "quantity": 2,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<hr />\n<p>When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a DC 20 Fortitude save saving throw with the listed DC or be Deafened until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls.</p>\n<p>You gain a +1 item bonus to attack rolls. The bomb deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> sonic damage and 2 sonic splash damage, and the DC is 20.</p>",
-        "level": 3,
-        "price": "10 gp ",
-        "traits": [
-          "alchemical",
-          "bomb",
-          "consumable",
-          "sonic",
-          "splash"
-        ]
-      },
-      {
-        "name": "Concealed Holster",
-        "quantity": 1,
-        "description": "<p>This leather holster is crafted to better hide small firearms from view. Only firearms designed for use in one hand are small enough to disguise with this holster. You gain a +1 item bonus to Stealth checks and DCs to hide or conceal a firearm or hand crossbow in this holster.</p>",
-        "level": 3,
-        "price": "25 gp ",
-        "traits": [
-          "uncommon"
-        ]
-      },
-      {
-        "name": "Rounds (Dueling Pistol)",
-        "quantity": 10,
-        "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "alchemical"
-        ]
-      },
-      {
-        "name": "Golden Silencer (Standard)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p><strong>Requirements</strong> You're an expert in Stealth.</p>\n<hr />\n<p>The Golden Gunners are dreaded for their use of their golden silencers, which they put to good use in clandestine raids. They silence both the loud gunshot and the screams of creatures wounded by its shot. A weapon with a golden silencer attached emits no light and makes no noise when fired. A target hit by a ranged Strike from the affixed weapon must succeed at a DC 20 Fortitude save or be silenced as well until the start of its next turn. A silenced creature can't call for help or use sonic abilities, nor can it use abilities with the auditory trait. This prevents it from casting spells that include verbal components.</p>",
-        "level": 6,
-        "price": "50 gp ",
-        "traits": [
-          "uncommon",
-          "consumable",
-          "illusion",
-          "magical",
-          "talisman"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 75,
-      "max": 75,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Shot of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The Gilded Gunner has a loaded firearm in hand</p>\n<p><strong>Trigger</strong> A creature within 30 feet uses a manipulate action, uses a move action, or makes a ranged attack</p>\n<hr />\n<p><strong>Effect</strong> The Gilded Gunner makes a ranged Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the Gilded Gunner disrupts that action. This Strike doesn't count toward the Gilded Gunner's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Knuckle Duster",
-        "bonus": 15,
-        "traits": [
-          "agile",
-          "free-hand"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Thunderstone",
-        "bonus": 15,
-        "traits": [
-          "alchemical",
-          "bomb",
-          "sonic",
-          "splash",
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4",
-            "type": "sonic"
-          },
-          {
-            "roll": "2",
-            "type": "splash sonic"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4)*2",
-            "type": "sonic"
-          },
-          {
-            "roll": "(2)*2",
-            "type": "splash sonic"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Dueling Pistol",
-        "bonus": 15,
-        "traits": [
-          "concealable",
-          "concussive",
-          "fatal-d10",
-          "range-increment-60",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The Gilded Gunner assassin deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Society, DC: 25",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 20"
 }

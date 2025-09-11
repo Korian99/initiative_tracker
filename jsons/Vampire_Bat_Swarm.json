@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 1,
   "traits": [
+    "Common",
     "Large",
     "Animal",
     "Swarm"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Echolocation 20ft precise",
+    "Low light vision"
+  ],
   "perception": {
     "value": 10,
-    "note": "echolocation 20 ft preciselow light-vision",
+    "note": "Echolocation 20ft precise, Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "echolocation 20 ft precise",
-    "low light-vision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -37,7 +38,7 @@
       "name": "athletics",
       "modifier": 4,
       "note": [
-        "to Climb <span class=\"roll\" onclick=\"roll(this)\">7</span>"
+        "to Climb 7"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -137,175 +138,26 @@
       "value": 3
     }
   ],
-  "defensiveAbilities": [],
-  "speed": "5 ft,\nfly 30 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Swarm Mind",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster doesn't have a single mind (typically because it's a swarm of smaller creatures), and is immune to mental effects that target only a specific number of creatures. It is still subject to mental effects that affect all creatures in an area.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "5 ft, fly 30ft",
   "strikes": [],
   "offensiveAbilities": [
     {
       "name": "Blood Feast",
       "actions": 1,
       "traits": [],
-      "description": "<p>Each enemy in the bat swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing damage (DC 16 basic Reflex save). Creatures that fail this save also take 1 bleed damage.</p>",
+      "description": "<p>Each enemy in the bat swarm's space takes 1d4 Piercing Damage damage (Basic DC 16 Reflex Saving Throw save). Creatures that fail this save also take 1 Bleed Damage damage.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Although the typical vampire bat has a wingspan of 7 inches and doesn't pose a significant threat to larger prey alone (and indeed, these blood-drinkers can feed without their sleeping victims ever noticing), some unusually aggressive species of these bats hunt in deadly swarms. A churning cloud of vampire bats is much more dangerous than the sum of its individual parts and is capable of inflicting an overwhelming number of bleeding wounds in a frighteningly short span of time.</p>\n<hr />\n<p>A wide range of bats dwell throughout the world. Most of these nocturnal animals are harmless insectivores, but deadly breeds of vampire bats and oversized bats the size of horses pose much more significant threats to adventurers.</p>",
-  "recallKnowledge": "Nature, DC: 15",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Vampire Bat Swarm",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Large",
-      "Animal",
-      "Swarm"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 10,
-      "note": "echolocation 20 ft preciselow light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "echolocation 20 ft precise",
-      "low light-vision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 4,
-        "note": [
-          "to Climb <span class=\"roll\" onclick=\"roll(this)\">7</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": -3
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Echolocation (Precise) 20 feet",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A bat swarm can use its hearing as a precise sense at the listed range.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 11,
-      "max": 11,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "swarm-mind"
-    ],
-    "resistances": [
-      {
-        "type": "bludgeoning",
-        "value": 6
-      },
-      {
-        "type": "piercing",
-        "value": 6
-      },
-      {
-        "type": "slashing",
-        "value": 3
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "area-damage",
-        "value": 3
-      },
-      {
-        "type": "splash-damage",
-        "value": 3
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "5 ft,\nfly 30 ft,\n",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Blood Feast",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>Each enemy in the bat swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing damage (DC 16 basic Reflex save). Creatures that fail this save also take 1 bleed damage.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Although the typical vampire bat has a wingspan of 7 inches and doesn't pose a significant threat to larger prey alone (and indeed, these blood-drinkers can feed without their sleeping victims ever noticing), some unusually aggressive species of these bats hunt in deadly swarms. A churning cloud of vampire bats is much more dangerous than the sum of its individual parts and is capable of inflicting an overwhelming number of bleeding wounds in a frighteningly short span of time.</p>\n<hr />\n<p>A wide range of bats dwell throughout the world. Most of these nocturnal animals are harmless insectivores, but deadly breeds of vampire bats and oversized bats the size of horses pose much more significant threats to adventurers.</p>",
-    "recallKnowledge": "Nature, DC: 15",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 15"
 }

@@ -18,19 +18,19 @@
     "Unholy"
   ],
   "source": "Pathfinder Society Scenario #3-14: The Tomb Between Worlds",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 20,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Necril",
     "Sphinx",
-    "Ancient osiriani"
+    "ancient osiriani"
   ],
   "skills": [
     {
@@ -93,7 +93,7 @@
       "quantity": 1,
       "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>",
       "level": 0,
-      "price": "5 sp ",
+      "price": "5 sp",
       "traits": [
         "reach"
       ]
@@ -150,8 +150,8 @@
       "name": "Attack of Opportunity (Special)",
       "actions": -1,
       "traits": [],
-      "description": "<p>The mummy pharaoh can use Attack of Opportunity when a creature within its reach uses a concentrate action, in addition to its normal trigger. It can disrupt triggering concentrate actions, and it disrupts actions on any hit, not just a critical hit.</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p>The mummy pharaoh can use Attack of Opportunity when a creature within its reach uses a concentrate action, in addition to its normal trigger. It can disrupt triggering concentrate actions, and it disrupts actions on any hit, not just a critical hit.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Great Despair",
@@ -164,7 +164,7 @@
         "incapacitation",
         "mental"
       ],
-      "description": "<p>30 feet. Living creatures are Frightened 1 while in a mummy pharaoh's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a DC 25 Will save (after taking the penalty from being frightened) or be Paralyzed for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>Effect: Despair</p>",
+      "description": "<p>30 feet. Living creatures are Frightened 1 while in a mummy pharaoh's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a DC 25 Will Saving Throw save (after taking the penalty from being frightened) or be Paralyzed for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>Effect: Despair</p>",
       "collapsed": false
     },
     {
@@ -173,7 +173,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>When a mummy pharaoh is destroyed, necromantic energies rebuild its body in its tomb over <span class=\"roll\" onclick=\"roll(this)\">1d10</span> days. If the re-forming body is destroyed during that time, the process starts anew. A slain mummy pharaoh can be destroyed for good with a Consecrate ritual.</p>",
+      "description": "<p>When a mummy pharaoh is destroyed, necromantic energies rebuild its body in its tomb over 1d10 days. If the re-forming body is destroyed during that time, the process starts anew. A slain mummy pharaoh can be destroyed for good with a Consecrate ritual.</p>",
       "collapsed": false
     },
     {
@@ -187,7 +187,7 @@
       "collapsed": false
     }
   ],
-  "speed": "20 ft,\n",
+  "speed": "20 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -210,7 +210,7 @@
         }
       ],
       "effects": [
-        "Insidious-mummy-rot"
+        "insidious-mummy-rot"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -238,7 +238,7 @@
         }
       ],
       "effects": [
-        "Insidious-mummy-rot"
+        "insidious-mummy-rot"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -264,7 +264,7 @@
         "disease",
         "divine"
       ],
-      "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by insidious mummy rot turns to sand and can't be resurrected except by a 7th-rank Resurrect ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> void damage and Stupefied 2 (1 day)</p>",
+      "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by insidious mummy rot turns to sand and can't be resurrected except by a 7th-rank Resurrect ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> DC 26 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> 8d6 Void Damage damage and Stupefied 2 (1 day)</p>",
       "collapsed": false
     },
     {
@@ -275,297 +275,10 @@
         "divine",
         "fire"
       ],
-      "description": "<p>The mummy pharaoh exhales a 60 foot cone of superheated sand that deals <span class=\"roll\" onclick=\"roll(this)\">5d6</span> fire damage and <span class=\"roll\" onclick=\"roll(this)\">5d6</span> slashing damage (DC 28 basic Reflex save).</p>\n<p>The mummy pharaoh can't use Sandstorm Wrath again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The mummy pharaoh exhales a 60ft Cone of superheated sand that deals 5d6 Fire Damage|options:area-damage]{5d6 fire damage and 5d6 slashing damage} (Basic DC 28 Reflex Saving Throw save).</p>\n<p>The mummy pharaoh can't use Sandstorm Wrath again for 1d4 rounds.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>While mummy guardians are undead crafted from the corpses of sacrificed-usually unwilling victims-and retain only fragments of their memories, a mummy pharaoh is the result of a deliberate embrace of undeath by a sadistic and cruel ruler. The transformation from life to undeath is no less awful and painful, but as the transition is an intentional bid to escape death by a powerful personality who fully embraces the blasphemous repercussions of the choice, the mummy pharaoh retains its memories and personality intact. Although in most cases a mummy pharaoh is formed from a particularly depraved ruler instructing their priests to perform complex rituals that grant the ruler eternal unlife, a ruler who was filled with incredible anger in life might spontaneously arise from death as a mummy pharaoh without undergoing this ritual. Depending on the nature of the ruler, a mummy pharaoh might have spellcasting or other class features instead of its Attack of Opportunity and disruptive abilities-the exact nature of the abilities the ruler had in life can significantly change or strengthen the mummy pharaoh presented here (which represents the least powerful variety of this deadly undead foe).</p>\n<hr />\n<p>While many cultures practice mummification of the dead for benign reasons, undead mummies are created through foul rituals, typically to provide eternally vigilant guardians.</p>",
-  "recallKnowledge": "Religion, DC: 26",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Khisisi (7-8)",
-    "type": "Creature",
-    "level": 9,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Evil",
-      "Lawful",
-      "Mummy",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder Society Scenario #3-14: The Tomb Between Worlds",
-    "perception": {
-      "value": 20,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Necril",
-      "Sphinx",
-      "Ancient osiriani"
-    ],
-    "skills": [
-      {
-        "name": "deception",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "occultism",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 5
-    },
-    "items": [
-      {
-        "name": "Longspear",
-        "quantity": 1,
-        "description": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>",
-        "level": 0,
-        "price": "5 sp ",
-        "traits": [
-          "reach"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+1 status to all saves vs. vitality",
-    "hp": {
-      "value": 165,
-      "max": 165,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "fire",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity (Special)",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>The mummy pharaoh can use Attack of Opportunity when a creature within its reach uses a concentrate action, in addition to its normal trigger. It can disrupt triggering concentrate actions, and it disrupts actions on any hit, not just a critical hit.</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Great Despair",
-        "actions": null,
-        "traits": [
-          "aura",
-          "divine",
-          "emotion",
-          "fear",
-          "incapacitation",
-          "mental"
-        ],
-        "description": "<p>30 feet. Living creatures are Frightened 1 while in a mummy pharaoh's despair aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a DC 25 Will save (after taking the penalty from being frightened) or be Paralyzed for 1 round. The creature is then temporarily immune for 24 hours.</p>\n<p>Effect: Despair</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Rejuvenation",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>When a mummy pharaoh is destroyed, necromantic energies rebuild its body in its tomb over <span class=\"roll\" onclick=\"roll(this)\">1d10</span> days. If the re-forming body is destroyed during that time, the process starts anew. A slain mummy pharaoh can be destroyed for good with a Consecrate ritual.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Undead Mastery",
-        "actions": null,
-        "traits": [
-          "aura",
-          "divine"
-        ],
-        "description": "<p>100 feet. Commanded or allied undead in the aura that have a lower level than the mummy pharaoh gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves, and skill checks.</p>\n<p>Effect: Undead Mastery</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 20,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+11",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+11)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Insidious-mummy-rot"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Longspear",
-        "bonus": 21,
-        "traits": [
-          "magical",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+11",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+11)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Insidious-mummy-rot"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Channel Rot",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>The mummy pharaoh can deliver insidious mummy rot through melee weapons it wields.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Insidious Mummy Rot",
-        "actions": null,
-        "traits": [
-          "curse",
-          "disease",
-          "divine"
-        ],
-        "description": "<p>This disease and any damage from it can't be healed until this curse is removed. A creature killed by insidious mummy rot turns to sand and can't be resurrected except by a 7th-rank Resurrect ritual or similar magic.</p>\n<p><strong>Saving Throw</strong> DC 26 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">8d6</span> void damage and Stupefied 2 (1 day)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sandstorm Wrath",
-        "actions": 2,
-        "traits": [
-          "concentrate",
-          "divine",
-          "fire"
-        ],
-        "description": "<p>The mummy pharaoh exhales a 60 foot cone of superheated sand that deals <span class=\"roll\" onclick=\"roll(this)\">5d6</span> fire damage and <span class=\"roll\" onclick=\"roll(this)\">5d6</span> slashing damage (DC 28 basic Reflex save).</p>\n<p>The mummy pharaoh can't use Sandstorm Wrath again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>While mummy guardians are undead crafted from the corpses of sacrificed-usually unwilling victims-and retain only fragments of their memories, a mummy pharaoh is the result of a deliberate embrace of undeath by a sadistic and cruel ruler. The transformation from life to undeath is no less awful and painful, but as the transition is an intentional bid to escape death by a powerful personality who fully embraces the blasphemous repercussions of the choice, the mummy pharaoh retains its memories and personality intact. Although in most cases a mummy pharaoh is formed from a particularly depraved ruler instructing their priests to perform complex rituals that grant the ruler eternal unlife, a ruler who was filled with incredible anger in life might spontaneously arise from death as a mummy pharaoh without undergoing this ritual. Depending on the nature of the ruler, a mummy pharaoh might have spellcasting or other class features instead of its Attack of Opportunity and disruptive abilities-the exact nature of the abilities the ruler had in life can significantly change or strengthen the mummy pharaoh presented here (which represents the least powerful variety of this deadly undead foe).</p>\n<hr />\n<p>While many cultures practice mummification of the dead for benign reasons, undead mummies are created through foul rituals, typically to provide eternally vigilant guardians.</p>",
-    "recallKnowledge": "Religion, DC: 26",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 26"
 }

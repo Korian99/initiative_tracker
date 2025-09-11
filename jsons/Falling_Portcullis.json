@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Falling Portcullis",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 6,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,39 +17,54 @@
   "source": "Pathfinder Kingmaker",
   "stealth": {
     "value": 15,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>A tripline under the arch causes the keep's portcullis to slam down, sealing the entrance and alerting the denizens of the keep to the intruder's presence.</p>",
-  "disable": "<p>DC 25 Thievery check (trained) to lock the portcullis</p>",
+  "disable": "<p>DC 25 Thievery  (trained) to lock the portcullis</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Falling Portcullis",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The trip wire is pulled or severed (typically by a person walking through the archway)</p><hr /><p><strong>Effect</strong> The portcullis comes crashing down, sealing the entrance and alerting the denizens of the keep to the intruder's presence. Any creature passing under the portcullis or standing below it must attempt a DC 27 Reflex Saving Throw save. Once it falls, the portcullis can be lifted with a DC 30 Athletics  check to Force it Open, or via the winch.</p><hr /><p><strong>Critical Success</strong> The creature dodges aside into an adjacent square (the player chooses which square they end up in).</p>\n<p><strong>Success</strong> As critical success, but the creature takes a glancing blow from the falling portcullis and takes 2d8 Bludgeoning Damage damage.</p>\n<p><strong>Failure</strong> As critical success, but the creature takes a solid blow from the falling portcullis and takes (4d8+18) Bludgeoning Damage damage.</p>\n<p><strong>Critical Failure</strong> The portcullis lands squarely on the creature, inflicting (6d8+18) Piercing Damage damage and Immobilizing them. A Medium or smaller creature is also knocked Prone.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 24,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 14
   },
   "fortitude": {
     "value": 17,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 11,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 56,
     "max": 56,
-    "note": "<b>Hardness</b> 14 <b>BT</b> 28. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -61,93 +76,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Falling Portcullis",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> The trip wire is pulled or severed (typically by a person walking through the archway)</p><hr /><p><strong>Effect</strong> The portcullis comes crashing down, sealing the entrance and alerting the denizens of the keep to the intruder's presence. Any creature passing under the portcullis or standing below it must attempt a DC 27 Reflex save. Once it falls, the portcullis can be lifted with a DC 30 Athletics check to Force it Open, or via the winch.</p><hr /><p><strong>Critical Success</strong> The creature dodges aside into an adjacent square (the player chooses which square they end up in).</p>\n<p><strong>Success</strong> As critical success, but the creature takes a glancing blow from the falling portcullis and takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> bludgeoning damage.</p>\n<p><strong>Failure</strong> As critical success, but the creature takes a solid blow from the falling portcullis and takes <span class=\"roll\" onclick=\"roll(this)\">4d8+18</span> bludgeoning damage.</p>\n<p><strong>Critical Failure</strong> The portcullis lands squarely on the creature, inflicting <span class=\"roll\" onclick=\"roll(this)\">6d8+18</span> piercing damage and Immobilizing them. A Medium or smaller creature is also knocked Prone.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 15,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Falling Portcullis",
-    "type": "hazard",
-    "level": 6,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "stealth": {
-      "value": 15,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>A tripline under the arch causes the keep's portcullis to slam down, sealing the entrance and alerting the denizens of the keep to the intruder's presence.</p>",
-    "disable": "<p>DC 25 Thievery check (trained) to lock the portcullis</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 24,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 56,
-      "max": 56,
-      "note": "<b>Hardness</b> 14 <b>BT</b> 28. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Falling Portcullis",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The trip wire is pulled or severed (typically by a person walking through the archway)</p><hr /><p><strong>Effect</strong> The portcullis comes crashing down, sealing the entrance and alerting the denizens of the keep to the intruder's presence. Any creature passing under the portcullis or standing below it must attempt a DC 27 Reflex save. Once it falls, the portcullis can be lifted with a DC 30 Athletics check to Force it Open, or via the winch.</p><hr /><p><strong>Critical Success</strong> The creature dodges aside into an adjacent square (the player chooses which square they end up in).</p>\n<p><strong>Success</strong> As critical success, but the creature takes a glancing blow from the falling portcullis and takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> bludgeoning damage.</p>\n<p><strong>Failure</strong> As critical success, but the creature takes a solid blow from the falling portcullis and takes <span class=\"roll\" onclick=\"roll(this)\">4d8+18</span> bludgeoning damage.</p>\n<p><strong>Critical Failure</strong> The portcullis lands squarely on the creature, inflicting <span class=\"roll\" onclick=\"roll(this)\">6d8+18</span> piercing damage and Immobilizing them. A Medium or smaller creature is also knocked Prone.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 22"
-  },
-  "recallKnowledge": ", DC: 22"
+  "recallKnowledge": ", DC 22"
 }

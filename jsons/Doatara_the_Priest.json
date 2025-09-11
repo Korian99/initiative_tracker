@@ -13,17 +13,16 @@
     "Medium",
     "Evil",
     "Human",
-    "Humanoid",
-    "(caster)"
+    "Humanoid"
   ],
   "source": "Pathfinder One-Shot #4: Mark of the Mantis",
+  "senses": [],
   "perception": {
     "value": 17,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common",
     "Daemonic",
@@ -111,7 +110,7 @@
       "quantity": 4,
       "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
       "level": 0,
-      "price": "2 sp ",
+      "price": "2 sp",
       "traits": [
         "agile",
         "finesse",
@@ -124,7 +123,7 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -136,7 +135,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
@@ -144,59 +143,8 @@
       "quantity": 1,
       "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
-    },
-    {
-      "name": "Darkvision Elixir (Moderate)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p>\n",
-      "level": 4,
-      "price": "11 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir"
-      ]
-    },
-    {
-      "name": "Elixir of Life (Moderate)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">5d6+12</span> healing Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-      "level": 9,
-      "price": "150 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "healing"
-      ]
-    },
-    {
-      "name": "Giant Scorpion Venom",
-      "quantity": 2,
-      "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 22 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 2 (1 round)</p>",
-      "level": 6,
-      "price": "40 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "injury",
-        "poison"
-      ]
-    },
-    {
-      "name": "Giant Wasp Venom",
-      "quantity": 1,
-      "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage and clumsy 2 (1 round)</p>",
-      "level": 7,
-      "price": "55 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "injury",
-        "poison"
-      ]
     }
   ],
   "generalAbilities": [],
@@ -240,7 +188,7 @@
   ],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -324,12 +272,14 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 4,
+      "autoHeightenLevel": 3,
       "cantrips": [
         {
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -338,7 +288,7 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "30 ft emanation",
+          "area": "30ft emanation",
           "targets": "",
           "save": "",
           "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
@@ -353,6 +303,8 @@
           "name": "Guidance",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate"
           ],
@@ -362,7 +314,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
+          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -374,6 +326,8 @@
           "name": "Shield",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "force"
@@ -384,7 +338,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the Force Barrage spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
+          "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the Force Barrage spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -393,68 +347,94 @@
           "id": "Eb9BDXZDm7e12llF"
         }
       ],
-      "rituals": [],
-      "spellLocations": [
+      "lv1spells": [
         {
-          "id": "WzwqGqghoA0a8FyP",
-          "rank": 2
+          "name": "Fear",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VDW3QqNjPo3oWaTy"
         },
         {
-          "id": "gdbGa7lMILCB7Jqo",
-          "rank": 2
+          "name": "Harm",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 living creature or 1 willing undead creature",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "09CD7HMNrIdjIBaL"
         },
         {
-          "id": "nr4jPAeJuTEdXGwy",
-          "rank": 2
-        },
-        {
-          "id": "B1c6tB9AoILIwo3J",
-          "rank": 3
-        },
-        {
-          "id": "VDW3QqNjPo3oWaTy",
-          "rank": 3
-        },
-        {
-          "id": "VOQvm4Y4TrKKpsYq",
-          "rank": 3
-        },
-        {
-          "id": "09CD7HMNrIdjIBaL",
-          "rank": 4
-        },
-        {
-          "id": "09CD7HMNrIdjIBaL",
-          "rank": 4
-        },
-        {
-          "id": "09CD7HMNrIdjIBaL",
-          "rank": 4
-        },
-        {
-          "id": "09CD7HMNrIdjIBaL",
-          "rank": 4
-        },
-        {
-          "id": "EaI8neQoeQBYHnWr",
-          "rank": 4
-        },
-        {
-          "id": "ELBpHScMXwYroFx1",
-          "rank": 4
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "EaI8neQoeQBYHnWr"
         }
       ],
-      "usedAttribute": "wisdom",
-      "_id": "ThFmtc1FQL5VJ5rq",
-      "modifications": [],
-      "lv1spells": [],
       "lv2spells": [
         {
           "name": "Darkvision",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -462,7 +442,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You grant yourself supernatural sight in areas of darkness. You gain Darkvision.</p>\n\n\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range is touch and it targets 1 willing creature.</p>\n<p><strong>Heightened (5th)</strong> The spell's range is touch and it targets 1 willing creature. The duration is until the next time you make your daily preparations.</p>",
+          "description": "<p>You grant yourself supernatural sight in areas of darkness. You gain Darkvision.</p>\n<p></p>\n<p></p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range is touch and it targets 1 willing creature.</p>\n<p><strong>Heightened (5th)</strong> The spell's range is touch and it targets 1 willing creature. The duration is until the next time you make your daily preparations.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -471,81 +451,14 @@
           "id": "WzwqGqghoA0a8FyP"
         },
         {
-          "name": "Faerie Fire",
-          "type": "spell",
-          "level": 2,
-          "traits": [
-            "concentrate",
-            "light"
-          ],
-          "castingTime": "2",
-          "duration": "5 minutes",
-          "range": "120 feet",
-          "area": "10 ft burst",
-          "targets": "",
-          "save": "",
-          "description": "<p>All creatures in the area when you cast the spell are limned in colorful, heatless fire of a color of your choice for the duration. Visible creatures can't be Concealed while affected by faerie fire. If the creatures are Invisible, they are Concealed while affected by faerie fire, rather than being Undetected.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "gdbGa7lMILCB7Jqo"
-        },
-        {
-          "name": "Restore Senses",
-          "type": "spell",
-          "level": 2,
-          "traits": [
-            "concentrate",
-            "healing"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>You attempt to counteract a single effect imposing the Blinded or Deafened conditions on the target, restoring its vision or hearing. This can counteract both temporary magic and permanent consequences of magic, but it doesn't cure someone who does not have the sense due to some natural state or effect, such as from birth or from a non-magical wound or toxin.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures. You can choose the effect to counteract separately for each selected creature.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "nr4jPAeJuTEdXGwy"
-        }
-      ],
-      "lv2slots": {},
-      "lv3spells": [
-        {
-          "name": "Vampiric Touch",
-          "type": "spell",
-          "level": 3,
-          "traits": [
-            "concentrate",
-            "death",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "touch",
-          "area": "",
-          "targets": "1 living creature",
-          "save": "basic fortitude",
-          "description": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal <span class=\"roll\" onclick=\"roll(this)\">6d6</span> void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "VOQvm4Y4TrKKpsYq"
-        },
-        {
           "name": "Dispel Magic",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -562,38 +475,39 @@
           "id": "B1c6tB9AoILIwo3J"
         },
         {
-          "name": "Fear",
+          "name": "Faerie Fire",
           "type": "spell",
-          "level": 1,
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "emotion",
-            "fear",
+            "light",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "varies",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "will",
-          "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
+          "duration": "5 minutes",
+          "range": "120 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>All creatures in the area when you cast the spell are limned in colorful, heatless fire of a color of your choice for the duration. Visible creatures can't be Concealed while affected by faerie fire. If the creatures are Invisible, they are Concealed while affected by faerie fire, rather than being Undetected.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "VDW3QqNjPo3oWaTy"
-        }
-      ],
-      "lv3slots": {},
-      "lv4spells": [
+          "id": "gdbGa7lMILCB7Jqo"
+        },
         {
           "name": "Invisibility",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "illusion"
+            "illusion",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -610,122 +524,82 @@
           "id": "ELBpHScMXwYroFx1"
         },
         {
-          "name": "Harm",
+          "name": "Restore Senses",
           "type": "spell",
-          "level": 1,
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "09CD7HMNrIdjIBaL"
-        },
-        {
-          "name": "Harm",
-          "type": "spell",
-          "level": 1,
-          "traits": [
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "09CD7HMNrIdjIBaL"
-        },
-        {
-          "name": "Harm",
-          "type": "spell",
-          "level": 1,
-          "traits": [
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "09CD7HMNrIdjIBaL"
-        },
-        {
-          "name": "Harm",
-          "type": "spell",
-          "level": 1,
-          "traits": [
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "09CD7HMNrIdjIBaL"
-        },
-        {
-          "name": "Heal",
-          "type": "spell",
-          "level": 1,
-          "traits": [
+            "concentrate",
             "healing",
             "manipulate"
           ],
-          "castingTime": "1 to 3",
+          "castingTime": "2",
           "duration": "",
-          "range": "varies",
+          "range": "touch",
           "area": "",
-          "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You attempt to counteract a single effect imposing the Blinded or Deafened conditions on the target, restoring its vision or hearing. This can counteract both temporary magic and permanent consequences of magic, but it doesn't cure someone who does not have the sense due to some natural state or effect, such as from birth or from a non-magical wound or toxin.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures. You can choose the effect to counteract separately for each selected creature.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "EaI8neQoeQBYHnWr"
+          "id": "nr4jPAeJuTEdXGwy"
         }
       ],
-      "lv4slots": {},
+      "lv3spells": [
+        {
+          "name": "Vampiric Touch",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "death",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 living creature",
+          "save": "Basic fortitude",
+          "description": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal 6d6 void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VOQvm4Y4TrKKpsYq"
+        }
+      ],
+      "lv4spells": [],
       "lv5spells": [],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
+      },
+      "lv2slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv3slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv4slots": {
+        "current": 6,
+        "max": 6
       },
       "lv5slots": {
         "current": 0,
@@ -758,28 +632,22 @@
       "bonus": 17,
       "dc": 25,
       "focusPoints": {
-        "current": "1",
-        "max": "1"
+        "current": 0,
+        "max": 0
       },
-      "autoHeightenLevel": 4,
+      "autoHeightenLevel": 1,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "wisdom",
-      "_id": "1568vjnhIuG3IPD2",
-      "modifications": [],
-      "lv1spells": [],
-      "lv2spells": [],
-      "lv3spells": [],
-      "lv4spells": [
+      "lv1spells": [
         {
           "name": "Sudden Shift",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "cleric",
-            "focus"
+            "focus",
+            "manipulate"
           ],
           "castingTime": "reaction",
           "duration": "until the end of your next turn",
@@ -796,12 +664,16 @@
           "id": "bKUJU8cgBhp7qUNS"
         }
       ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
       "lv5spells": [],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -844,856 +716,5 @@
       }
     }
   ],
-  "description": "",
-  "recallKnowledge": "Society, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 17,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Doatara the Priest",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Evil",
-      "Human",
-      "Humanoid",
-      "(caster)"
-    ],
-    "source": "Pathfinder One-Shot #4: Mark of the Mantis",
-    "perception": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common",
-      "Daemonic",
-      "Osiriani"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "Assassin Lore",
-        "modifier": 12,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 3
-    },
-    "items": [
-      {
-        "name": "Dagger",
-        "quantity": 4,
-        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
-        "level": 0,
-        "price": "2 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "thrown-10",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Religious Symbol (Silver)",
-        "quantity": 1,
-        "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Darkvision Elixir (Moderate)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 1 hour.</p>\n",
-        "level": 4,
-        "price": "11 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir"
-        ]
-      },
-      {
-        "name": "Elixir of Life (Moderate)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">5d6+12</span> healing Hit Points and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-        "level": 9,
-        "price": "150 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "healing"
-        ]
-      },
-      {
-        "name": "Giant Scorpion Venom",
-        "quantity": 2,
-        "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 22 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 2 (1 round)</p>",
-        "level": 6,
-        "price": "40 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "injury",
-          "poison"
-        ]
-      },
-      {
-        "name": "Giant Wasp Venom",
-        "quantity": 1,
-        "description": "<p>Giant wasp venom interferes with a victim's movement.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">3d6</span> poison damage and clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage and clumsy 2 (1 round)</p>",
-        "level": 7,
-        "price": "55 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "injury",
-          "poison"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 115,
-      "max": 115,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "poison",
-        "value": 5
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Dagger",
-        "bonus": 16,
-        "traits": [
-          "agile",
-          "finesse",
-          "thrown-10",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Channel Smite",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> Doatara expends a Harm spell</p>\n<hr />\n<p><strong>Effect</strong> Doatara makes a melee Strike and adds the <em>harm</em> spell's void damage to the Strike's damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Poison Weapon",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> Doatara is wielding a piercing or slashing weapon</p>\n<hr />\n<p><strong>Effect</strong> Doatara Interacts to draw an injury poison and applies the poison to the required weapon. If her next attack with that weapon before the end of her next turn hits and deals damage, it applies the effects of the poison. If she critically fails the attack roll, the poison is wasted as normal.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Prepared Spells",
-        "type": "prepared",
-        "bonus": 17,
-        "dc": 25,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [
-          {
-            "name": "Detect Magic",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "30 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "CCCiDEn8ADGbtQHq"
-          },
-          {
-            "name": "Guidance",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "1",
-            "duration": "until the start of your next turn",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "8bwD4e7SR9ZNj7yZ"
-          },
-          {
-            "name": "Shield",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "force"
-            ],
-            "castingTime": "1",
-            "duration": "until the start of your next turn",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You raise a magical shield of force. This counts as using the Raise a Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use.</p>\n<p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. The shield has Hardness 5. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes. Unlike a normal Shield Block, you can use the spell's reaction against the Force Barrage spell.</p>\n<p>Heightening the spell increases the shield's Hardness.</p>\n\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "Eb9BDXZDm7e12llF"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [
-          {
-            "id": "WzwqGqghoA0a8FyP",
-            "rank": 2
-          },
-          {
-            "id": "gdbGa7lMILCB7Jqo",
-            "rank": 2
-          },
-          {
-            "id": "nr4jPAeJuTEdXGwy",
-            "rank": 2
-          },
-          {
-            "id": "B1c6tB9AoILIwo3J",
-            "rank": 3
-          },
-          {
-            "id": "VDW3QqNjPo3oWaTy",
-            "rank": 3
-          },
-          {
-            "id": "VOQvm4Y4TrKKpsYq",
-            "rank": 3
-          },
-          {
-            "id": "09CD7HMNrIdjIBaL",
-            "rank": 4
-          },
-          {
-            "id": "09CD7HMNrIdjIBaL",
-            "rank": 4
-          },
-          {
-            "id": "09CD7HMNrIdjIBaL",
-            "rank": 4
-          },
-          {
-            "id": "09CD7HMNrIdjIBaL",
-            "rank": 4
-          },
-          {
-            "id": "EaI8neQoeQBYHnWr",
-            "rank": 4
-          },
-          {
-            "id": "ELBpHScMXwYroFx1",
-            "rank": 4
-          }
-        ],
-        "usedAttribute": "wisdom",
-        "_id": "ThFmtc1FQL5VJ5rq",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [
-          {
-            "name": "Darkvision",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 hour",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You grant yourself supernatural sight in areas of darkness. You gain Darkvision.</p>\n\n\n<hr />\n<p><strong>Heightened (3rd)</strong> The spell's range is touch and it targets 1 willing creature.</p>\n<p><strong>Heightened (5th)</strong> The spell's range is touch and it targets 1 willing creature. The duration is until the next time you make your daily preparations.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "WzwqGqghoA0a8FyP"
-          },
-          {
-            "name": "Faerie Fire",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "light"
-            ],
-            "castingTime": "2",
-            "duration": "5 minutes",
-            "range": "120 feet",
-            "area": "10 ft burst",
-            "targets": "",
-            "save": "",
-            "description": "<p>All creatures in the area when you cast the spell are limned in colorful, heatless fire of a color of your choice for the duration. Visible creatures can't be Concealed while affected by faerie fire. If the creatures are Invisible, they are Concealed while affected by faerie fire, rather than being Undetected.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "gdbGa7lMILCB7Jqo"
-          },
-          {
-            "name": "Restore Senses",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "healing"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You attempt to counteract a single effect imposing the Blinded or Deafened conditions on the target, restoring its vision or hearing. This can counteract both temporary magic and permanent consequences of magic, but it doesn't cure someone who does not have the sense due to some natural state or effect, such as from birth or from a non-magical wound or toxin.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The spell's range increases to 30 feet, and you can target up to 10 creatures. You can choose the effect to counteract separately for each selected creature.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "nr4jPAeJuTEdXGwy"
-          }
-        ],
-        "lv2slots": {},
-        "lv3spells": [
-          {
-            "name": "Vampiric Touch",
-            "type": "spell",
-            "level": 3,
-            "traits": [
-              "concentrate",
-              "death",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 living creature",
-            "save": "basic fortitude",
-            "description": "<p>Your touch leeches the lifeblood out of a target to empower yourself. You deal <span class=\"roll\" onclick=\"roll(this)\">6d6</span> void damage to the target. You gain temporary Hit Points equal to half the void damage the target takes (after applying resistances and the like). You lose any remaining temporary Hit Points after 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "VOQvm4Y4TrKKpsYq"
-          },
-          {
-            "name": "Dispel Magic",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 spell effect or unattended magic item",
-            "save": "",
-            "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "B1c6tB9AoILIwo3J"
-          },
-          {
-            "name": "Fear",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "fear",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "VDW3QqNjPo3oWaTy"
-          }
-        ],
-        "lv3slots": {},
-        "lv4spells": [
-          {
-            "name": "Invisibility",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "illusion"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ELBpHScMXwYroFx1"
-          },
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "09CD7HMNrIdjIBaL"
-          },
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "09CD7HMNrIdjIBaL"
-          },
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "09CD7HMNrIdjIBaL"
-          },
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "09CD7HMNrIdjIBaL"
-          },
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "EaI8neQoeQBYHnWr"
-          }
-        ],
-        "lv4slots": {},
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      },
-      {
-        "name": "Divine Focus Spells",
-        "type": "focus",
-        "bonus": 17,
-        "dc": 25,
-        "focusPoints": {
-          "current": "1",
-          "max": "1"
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "wisdom",
-        "_id": "1568vjnhIuG3IPD2",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Sudden Shift",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "cleric",
-              "focus"
-            ],
-            "castingTime": "reaction",
-            "duration": "until the end of your next turn",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p><strong>Trigger</strong> An enemy misses you with a melee attack.</p>\n<hr />\n<p>You swiftly move from a dangerous spot and veil yourself. You Step and become Concealed.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "bKUJU8cgBhp7qUNS"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "",
-    "recallKnowledge": "Society, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 23"
 }

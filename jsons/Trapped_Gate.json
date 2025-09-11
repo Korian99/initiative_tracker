@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Trapped Gate",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 1,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,36 +17,46 @@
   "source": "Pathfinder #213: Thirst for Blood",
   "stealth": {
     "value": 7,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>A hair trigger rings an alarm and launches a small assortment of wooden spikes to impale anyone attempting to open the gate incorrectly.</p>",
-  "disable": "<p>DC 15 Thievery check (trained) to disable the thin trigger that snaps when attempting to open the gate.</p>",
+  "disable": "<p>DC 15 Thievery  (trained) to disable the thin trigger that snaps when attempting to open the gate.</p>",
   "reset": "",
   "routine": "",
   "items": [],
   "generalAbilities": [],
   "ac": {
     "value": 16,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 5
   },
   "fortitude": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 2,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 20,
     "max": 20,
-    "note": "<b>Hardness</b> 5 <b>BT</b> 10. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -63,85 +73,10 @@
       "name": "Impale Trespasser",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature attempts to open the gate</p><hr /><p><strong>Effect</strong> A loud alarm rings and set of wooden spikes swings up from below and over the gate, dealing <span class=\"roll\" onclick=\"roll(this)\">3d8</span> piercing damage to the triggering creature (DC 17 basic Reflex save). If the creature takes damage from the spikes, they also become Grabbed by the gate. The creature can attempt to Escape. If the creature succeeded at their basic Reflex save, they gain a +1 circumstance bonus to their checks to Escape, as the spikes didn't fully impale them. If the creature critically failed their basic Reflex save, they take a –2 circumstance penalty to their checks to Escape, as the spikes are embedded particularly deep.</p>",
+      "description": "<p><strong>Trigger</strong> A creature attempts to open the gate</p><hr /><p><strong>Effect</strong> A loud alarm rings and set of wooden spikes swings up from below and over the gate, dealing 3d8 Piercing Damage damage to the triggering creature (Basic DC 17 Reflex Saving Throw save). If the creature takes damage from the spikes, they also become Grabbed by the gate. The creature can attempt to [[/act escape dc=17]]. If the creature succeeded at their basic Reflex save, they gain a +1 circumstance bonus to their checks to Escape, as the spikes didn't fully impale them. If the creature critically failed their basic Reflex save, they take a –2 circumstance penalty to their checks to Escape, as the spikes are embedded particularly deep.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Trapped Gate",
-    "type": "hazard",
-    "level": 1,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder #213: Thirst for Blood",
-    "stealth": {
-      "value": 7,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>A hair trigger rings an alarm and launches a small assortment of wooden spikes to impale anyone attempting to open the gate incorrectly.</p>",
-    "disable": "<p>DC 15 Thievery check (trained) to disable the thin trigger that snaps when attempting to open the gate.</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 16,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "modifications": []
-    },
-    "reflex": {
-      "value": 2,
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 20,
-      "max": 20,
-      "note": "<b>Hardness</b> 5 <b>BT</b> 10. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Impale Trespasser",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature attempts to open the gate</p><hr /><p><strong>Effect</strong> A loud alarm rings and set of wooden spikes swings up from below and over the gate, dealing <span class=\"roll\" onclick=\"roll(this)\">3d8</span> piercing damage to the triggering creature (DC 17 basic Reflex save). If the creature takes damage from the spikes, they also become Grabbed by the gate. The creature can attempt to Escape. If the creature succeeded at their basic Reflex save, they gain a +1 circumstance bonus to their checks to Escape, as the spikes didn't fully impale them. If the creature critically failed their basic Reflex save, they take a –2 circumstance penalty to their checks to Escape, as the spikes are embedded particularly deep.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 15"
-  },
-  "recallKnowledge": ", DC: 15"
+  "recallKnowledge": ", DC 15"
 }

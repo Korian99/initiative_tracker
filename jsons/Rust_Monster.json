@@ -9,27 +9,28 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Medium",
     "Aberration"
   ],
   "source": "Pathfinder Bestiary",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
   "perception": {
     "value": 8,
-    "note": "darkvisionscent 30 ft imprecise",
+    "note": "Darkvision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 30 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
       "name": "athletics",
       "modifier": 7,
       "note": [
-        "to Disarm a metal item <span class=\"roll\" onclick=\"roll(this)\">13</span>"
+        "to Disarm a metal item 13"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -106,7 +107,7 @@
       "collapsed": false
     }
   ],
-  "speed": "35 ft,\nclimb 10 ft,\n",
+  "speed": "35 ft, climb 10ft",
   "strikes": [
     {
       "type": "melee",
@@ -118,7 +119,7 @@
       "damageRolls": [],
       "critRolls": [],
       "effects": [
-        "Rust"
+        "rust"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -170,7 +171,7 @@
         }
       ],
       "effects": [
-        "Improved-knockdown"
+        "improved-knockdown"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -190,212 +191,17 @@
       "name": "Rust",
       "actions": null,
       "traits": [],
-      "description": "<p>A rust monster's antenna causes metal to rapidly rust and corrode.</p>\n<p>If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust monster deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness.</p>\n<p>If the rust monster hits an unattended metal item, the item takes this damage automatically.</p>\n<p>If a creature uses the Shield Block reaction with a metal shield against an antenna attack, the shield is automatically broken, but no other item is rusted on that attack.</p>",
+      "description": "<p>A rust monster's antenna causes metal to rapidly rust and corrode.</p>\n<p>If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust monster deals 2d6 damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness.</p>\n<p>If the rust monster hits an unattended metal item, the item takes this damage automatically.</p>\n<p>If a creature uses the Shield Block reaction with a metal shield against an antenna attack, the shield is automatically broken, but no other item is rusted on that attack.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Knockdown",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature as a free action. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Found in lost dungeons, deep caves, and abandoned mines, rust monsters are a bane to any adventurers who rely on armor, weapons, or other metal items. These strange-looking creatures grow to about 5 feet long, with four insectile legs and a long tail ending in a four-pronged appendage resembling a tiny windmill. However, it is the rust monster's feathery antennae that strike fear in the hearts of battle-hardened warriors, for a single touch from even just one antenna can reduce an adventurer's most valuable tools to a useless pile of rust.</p>\n<p>Rust monsters aren't inherently aggressive creatures, but they're voracious oxidivores, meaning they consume the rust created by their antennae. The creatures savagely attack anything that gets between them and a possible meal, and they relentlessly pursue any source of metal. A rust monster can be distracted by a single metal-rich item, but they are often encountered in groups of three or more, sharply raising the cost of escape.</p>\n<p>Rust monsters are a terrible scourge in mining communities. If a group of rust monsters discovers rich veins of ore, they can multiply quickly. By weakening tunnels, attacking workers, and consuming the source of the miners' livelihood, these aberrations have created many mountainside ghost towns.</p>",
-  "recallKnowledge": "Occultism, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Rust Monster",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Medium",
-      "Aberration"
-    ],
-    "source": "Pathfinder Bestiary",
-    "perception": {
-      "value": 8,
-      "note": "darkvisionscent 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 30 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 7,
-        "note": [
-          "to Disarm a metal item <span class=\"roll\" onclick=\"roll(this)\">13</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Metal Scent 30 feet",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A rust monster can smell metal as a precise sense.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 40,
-      "max": 40,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Tail Trip",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature carrying a metal item attempts to move out of a square within reach of the rust monster's tail.</p>\n<hr />\n<p><strong>Effect</strong> The rust monster makes a tail Strike against the triggering creature.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "35 ft,\nclimb 10 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Antenna",
-        "bonus": 10,
-        "traits": [
-          "finesse"
-        ],
-        "damageRolls": [],
-        "critRolls": [],
-        "effects": [
-          "Rust"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Mandibles",
-        "bonus": 8,
-        "traits": [
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 8,
-        "traits": [
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+2",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+2)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Improved-knockdown"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Antenna Disarm",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The rust monster attempts to Disarm a metal item a creature is holding using its antenna (with the same modifier as an antenna Strike).</p>\n<p>On a success, the item is subject to the rust monster's rust ability in addition to the effects of the Disarm, and if the check to Disarm is a critical success, the rust monster drops the item on the ground in its own space.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Rust",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A rust monster's antenna causes metal to rapidly rust and corrode.</p>\n<p>If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust monster deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness.</p>\n<p>If the rust monster hits an unattended metal item, the item takes this damage automatically.</p>\n<p>If a creature uses the Shield Block reaction with a metal shield against an antenna attack, the shield is automatically broken, but no other item is rusted on that attack.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Found in lost dungeons, deep caves, and abandoned mines, rust monsters are a bane to any adventurers who rely on armor, weapons, or other metal items. These strange-looking creatures grow to about 5 feet long, with four insectile legs and a long tail ending in a four-pronged appendage resembling a tiny windmill. However, it is the rust monster's feathery antennae that strike fear in the hearts of battle-hardened warriors, for a single touch from even just one antenna can reduce an adventurer's most valuable tools to a useless pile of rust.</p>\n<p>Rust monsters aren't inherently aggressive creatures, but they're voracious oxidivores, meaning they consume the rust created by their antennae. The creatures savagely attack anything that gets between them and a possible meal, and they relentlessly pursue any source of metal. A rust monster can be distracted by a single metal-rich item, but they are often encountered in groups of three or more, sharply raising the cost of escape.</p>\n<p>Rust monsters are a terrible scourge in mining communities. If a group of rust monsters discovers rich veins of ore, they can multiply quickly. By weakening tunnels, attacking workers, and consuming the source of the miners' livelihood, these aberrations have created many mountainside ghost towns.</p>",
-    "recallKnowledge": "Occultism, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism, DC 18"
 }

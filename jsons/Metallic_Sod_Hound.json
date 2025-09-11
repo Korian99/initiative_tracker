@@ -9,20 +9,22 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Small",
     "Earth",
     "Elemental"
   ],
   "source": "Pathfinder Society Scenario #1-09: Star-Crossed Voyages",
+  "senses": [
+    "Darkvision",
+    "metal sense (imprecise) 60 feet"
+  ],
   "perception": {
     "value": 9,
-    "note": "darkvision",
+    "note": "Darkvision, metal sense (imprecise) 60 feet",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -36,7 +38,7 @@
       "name": "survival",
       "modifier": 9,
       "note": [
-        "to track <span class=\"roll\" onclick=\"roll(this)\">11</span>"
+        "to track 11"
       ],
       "usedAttribute": "wisdom",
       "modifications": []
@@ -110,7 +112,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "30 ft,\nburrow 20 ft,\n",
+  "speed": "30 ft, burrow 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -132,7 +134,7 @@
         }
       ],
       "effects": [
-        "Knockdown"
+        "knockdown"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -147,165 +149,15 @@
       "traits": [],
       "description": "<p>The metallic sod hound can Burrow through any earthen matter, including rock or metal. When it does so, the metallic sod hound moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Nature, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Metallic Sod Hound",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Small",
-      "Earth",
-      "Elemental"
-    ],
-    "source": "Pathfinder Society Scenario #1-09: Star-Crossed Voyages",
-    "perception": {
-      "value": 9,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 9,
-        "note": [
-          "to track <span class=\"roll\" onclick=\"roll(this)\">11</span>"
-        ],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": -1
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Metal Sense (Imprecise) 60 feet",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A metallic sod hound can sense metal objects within 60 feet as if using the scent ability.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 44,
-      "max": 44,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed",
-      "paralyzed",
-      "poison",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\nburrow 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 11,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Earth Glide",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The metallic sod hound can Burrow through any earthen matter, including rock or metal. When it does so, the metallic sod hound moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Nature, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 18"
 }

@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Chaotic",
     "Evil",
     "Humanoid"
   ],
   "source": "Pathfinder #164: Hands of the Devil",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 7,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Sakvroth"
   ],
@@ -39,7 +40,7 @@
       "name": "athletics",
       "modifier": 8,
       "note": [
-        "Climbing <span class=\"roll\" onclick=\"roll(this)\">11</span>"
+        "Climbing 11"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -83,8 +84,8 @@
       "name": "Light Blindness",
       "actions": null,
       "traits": [],
-      "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "ac": {
@@ -122,7 +123,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "30 ft,\nclimb 20 ft,\n",
+  "speed": "30 ft, climb 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -196,7 +197,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -206,7 +207,7 @@
       "name": "Instinctual Tinker",
       "actions": 2,
       "traits": [],
-      "description": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a Crafting check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains <span class=\"roll\" onclick=\"roll(this)\">4d6</span> healing Hit Points and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>Success</strong> The target gains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> healing Hit Points.</p>\n<p><strong>Critical Failure</strong> The morlock injures itself, taking <span class=\"roll\" onclick=\"roll(this)\">2d6</span> untyped damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>Effect: Instinctual Tinker (Critical Success)</p>",
+      "description": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a crafting|defense:fortitude check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains 4d6 Healing Damage Hit Points and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>Success</strong> The target gains 2d6 Healing Damage Hit Points.</p>\n<p><strong>Critical Failure</strong> The morlock injures itself, taking 2d6 Untyped Damage damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>Effect: Instinctual Tinker (Critical Success)</p>",
       "collapsed": false
     },
     {
@@ -220,7 +221,7 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>A morlock's Strikes deal an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>A morlock's Strikes deal an extra 1d6 precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     },
     {
@@ -232,244 +233,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Originating from humans long lost from the world of light, morlocks are brutal monsters that dwell in the tangled tunnels of the upper reaches of the Darklands. Their wiry frames mask the strength of their limbs and their swift reactions, and their arms are long enough that they can drop into an uncanny, four-limbed shuffle for speed or stealth. They no longer remember the lives their ancestors led on the surface, although many morlocks still dwell in the shattered ruins of their ancient homes. Some morlocks worship the statues of humans from these bygone eras as gods, but others now worship Lamashtu, Rovagug, or other violent deities.</p>\n<p>Morlock young are insatiable and clamor for even the slightest morsel of food, even consuming their siblings if no other meal presents itself. Most morlocks encourage the practice to ensure their ancestral group as a whole grows stronger.</p>\n<p>A typical morlock stands just over 5 feet tall and weighs roughly 150 pounds.</p>",
-  "recallKnowledge": "Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Warped Brew Morlock",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Humanoid"
-    ],
-    "source": "Pathfinder #164: Hands of the Devil",
-    "perception": {
-      "value": 7,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Sakvroth"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 8,
-        "note": [
-          "Climbing <span class=\"roll\" onclick=\"roll(this)\">11</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Light Blindness",
-        "actions": null,
-        "traits": [],
-        "description": "<p><p>When first exposed to bright light, the monster is Blinded until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's Dazzled.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+2 status to all saves vs. disease and poison",
-    "hp": {
-      "value": 38,
-      "max": 38,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\nclimb 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Wooden Chair",
-        "bonus": 7,
-        "traits": [
-          "forceful"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 9,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Pewter Mug",
-        "bonus": 8,
-        "traits": [
-          "range-increment-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Instinctual Tinker",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a Crafting check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains <span class=\"roll\" onclick=\"roll(this)\">4d6</span> healing Hit Points and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>Success</strong> The target gains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> healing Hit Points.</p>\n<p><strong>Critical Failure</strong> The morlock injures itself, taking <span class=\"roll\" onclick=\"roll(this)\">2d6</span> untyped damage (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>Effect: Instinctual Tinker (Critical Success)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Leap Attack",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The morlock Strides up to twice its Speed, during which it attempts a High Jump or a Long Jump. At any point during its movement, the morlock can make a melee Strike against an enemy in its reach.</p>\n<p>The morlock then can't use Leap Attack for 1 round.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A morlock's Strikes deal an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Swarming Stance",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A morlock can share the same space as another morlock, but no more than two morlocks can occupy the same space. When morlocks share the same space, they gain a +1 circumstance bonus to attack rolls.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Originating from humans long lost from the world of light, morlocks are brutal monsters that dwell in the tangled tunnels of the upper reaches of the Darklands. Their wiry frames mask the strength of their limbs and their swift reactions, and their arms are long enough that they can drop into an uncanny, four-limbed shuffle for speed or stealth. They no longer remember the lives their ancestors led on the surface, although many morlocks still dwell in the shattered ruins of their ancient homes. Some morlocks worship the statues of humans from these bygone eras as gods, but others now worship Lamashtu, Rovagug, or other violent deities.</p>\n<p>Morlock young are insatiable and clamor for even the slightest morsel of food, even consuming their siblings if no other meal presents itself. Most morlocks encourage the practice to ensure their ancestral group as a whole grows stronger.</p>\n<p>A typical morlock stands just over 5 feet tall and weighs roughly 150 pounds.</p>",
-    "recallKnowledge": "Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 16"
 }

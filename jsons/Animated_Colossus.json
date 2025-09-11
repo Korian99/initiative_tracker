@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 15,
   "traits": [
+    "Common",
     "Gargantuan",
     "Construct",
     "Mindless"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 23,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -59,6 +60,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 15
+    }
+  },
   "fortitude": {
     "value": 31,
     "note": "",
@@ -81,13 +87,20 @@
   "hp": {
     "value": 245,
     "max": 245,
-    "note": "<b>Hardness</b> 15 <b>BT</b> 122. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 15)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated colossus has Hardness. This Hardness reduces any damage the colossus takes by an amount equal to the Hardness. Once an animated colossus is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 35.</p>",
+      "collapsed": false
+    },
     {
       "name": "Enormous",
       "actions": null,
@@ -96,7 +109,7 @@
       "collapsed": false
     }
   ],
-  "speed": "50 ft,\n",
+  "speed": "50 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -120,7 +133,7 @@
         }
       ],
       "effects": [
-        "Improved-grab"
+        "improved-grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -168,204 +181,24 @@
       "name": "Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d12+11</span> bludgeoning, DC 36 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "description": "<p>(3d12+11) Bludgeoning Damage, Basic DC 36 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
       "collapsed": false
     },
     {
       "name": "Trample",
       "actions": 3,
       "traits": [],
-      "description": "<p>Huge or smaller, foot, DC 36 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
+      "description": "<p>Huge or smaller, foot, Basic DC 36 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Animating a 100-foot-tall statue is worth the cost for spellcasters guarding immense dungeons.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
-  "recallKnowledge": "Arcana, Crafting, DC: 34",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 23,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Animated Colossus",
-    "type": "Creature",
-    "level": 15,
-    "traits": [
-      "Gargantuan",
-      "Construct",
-      "Mindless"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 23,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 33,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 9
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 8
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 39,
-      "note": "(35 when broken); construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 31,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 245,
-      "max": 245,
-      "note": "<b>Hardness</b> 15 <b>BT</b> 122. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Enormous",
-        "actions": null,
-        "traits": [],
-        "description": "<p>An animated colossus takes up a space of 6 squares by 6 squares (30 feet by 30 feet) and is 100 feet tall.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "50 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 32,
-        "traits": [
-          "magical",
-          "reach-30",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d12+17",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d12+17)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Improved-grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Foot",
-        "bonus": 32,
-        "traits": [
-          "agile",
-          "magical",
-          "reach-20",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8+17",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8+17)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Colossus's Grasp",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The colossus can Grab a creature using only one hand.</p>\n<p>It can move normally with a creature Grabbed or Restrained in its fist, carrying the creature along. If it has two creatures grabbed in this way, it can't use its fist Strike.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d12+11</span> bludgeoning, DC 36 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Trample",
-        "actions": 3,
-        "traits": [],
-        "description": "<p>Huge or smaller, foot, DC 36 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Animating a 100-foot-tall statue is worth the cost for spellcasters guarding immense dungeons.</p>\n<hr />\n<p>Many animated objects have useful functions but become dangers when uncontrolled.</p>",
-    "recallKnowledge": "Arcana, Crafting, DC: 34",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 34"
 }

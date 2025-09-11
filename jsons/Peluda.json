@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 10,
   "traits": [
+    "Common",
     "Large",
     "Dragon",
     "Evil",
@@ -16,15 +17,15 @@
     "Lawful"
   ],
   "source": "Pathfinder Bestiary 2",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 21,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Draconic"
   ],
@@ -114,11 +115,11 @@
       "name": "Vulnerable Tail",
       "actions": null,
       "traits": [],
-      "description": "<p>If the peluda takes 30 or more slashing damage from a critical hit, the attacker severs the peluda's tail. The peluda takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bleed and can't make tail attacks until their tail grows back (in about 1 week).</p>",
+      "description": "<p>If the peluda takes 30 or more slashing damage from a critical hit, the attacker severs the peluda's tail. The peluda takes 2d6 Bleed Damage and can't make tail attacks until their tail grows back (in about 1 week).</p>",
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\nswim 30 ft,\n",
+  "speed": "30 ft, swim 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -167,7 +168,7 @@
         }
       ],
       "effects": [
-        "Peluda-venom"
+        "peluda-venom"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -195,7 +196,7 @@
         }
       ],
       "effects": [
-        "Improved-knockdown"
+        "improved-knockdown"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -211,7 +212,7 @@
         "fire",
         "primal"
       ],
-      "description": "<p>The peluda breathes a torrent of flames that deals <span class=\"roll\" onclick=\"roll(this)\">7d10</span> fire damage in a 60 foot line (DC 29 basic Reflex save).</p>\n<p>They can't use their Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The peluda breathes a torrent of flames that deals 7d10 Fire Damage damage in a 60ft Line (Basic DC 29 Reflex Saving Throw save).</p>\n<p>They can't use their Breath Weapon again for 1d4 rounds.</p>",
       "collapsed": false
     },
     {
@@ -220,256 +221,24 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 29 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Enfeebled 1, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Enfeebled 2, and off-guard (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 29 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 2d6 Poison Damage damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> 2d6 Poison Damage damage, Enfeebled 1, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> 2d6 Poison Damage damage, Enfeebled 2, and off-guard (1 round)</p>",
       "collapsed": false
     },
     {
       "name": "Quill Barrage",
       "actions": 2,
       "traits": [],
-      "description": "<p>The peluda bristles their quills and shakes, sending dozens of spear-like barbs in every direction. All creatures within 30 feet take <span class=\"roll\" onclick=\"roll(this)\">11d6</span> piercing damage (DC 29 basic Reflex save) and are exposed to peluda venom if they take any damage.</p>\n<p>The peluda can't use Quill Barrage again for 1 minute.</p>",
+      "description": "<p>The peluda bristles their quills and shakes, sending dozens of spear-like barbs in every direction. All creatures within 30 feet take 11d6 Piercing Damage damage (Basic DC 29 Reflex Saving Throw save) and are exposed to peluda venom if they take any damage.</p>\n<p>The peluda can't use Quill Barrage again for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Improved Knockdown",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature as a free action. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Peludas are wild and savage dragons that favor reedy marshlands, sparsely forested bogs, and river valleys for lairs. A single peluda typically claims a stretch of waterways a few miles in length, then systematically drives off any potential rivals so that the peluda can despoil the land as they please, leaving clawed footprints on muddy riverbanks, toppling trees, and impaling half-eaten corpses on their quills as trophies left to rot. They venture beyond their domains to hunt, roasting prey with their breath or pulverizing them with their tails, burning and killing for cruel sport before slithering, sated, back to their mucky lairs.</p>\n<p>Peludas despise weakness and loathe creatures smaller than themselves, especially humanoids, whom they see as fragile and soft, good only for eating or breaking. In contrast, peludas have a massive inferiority complex regarding more impressive creatures-especially larger and stronger dragons. Peludas will try anything to become stronger, including ingesting shiny coins, gems, and jewelry, which old folk tales claim will strengthen their quills and fire breath.</p>",
-  "recallKnowledge": "Arcana, DC: 27",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 21,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Peluda",
-    "type": "Creature",
-    "level": 10,
-    "traits": [
-      "Large",
-      "Dragon",
-      "Evil",
-      "Fire",
-      "Lawful"
-    ],
-    "source": "Pathfinder Bestiary 2",
-    "perception": {
-      "value": 21,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Draconic"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 7
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 3
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 30,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+1 status to all saves vs. magic",
-    "hp": {
-      "value": 170,
-      "max": 170,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "fire",
-      "paralyzed",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Quill Thrust",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature within 10 feet attempts a melee Strike against the peluda</p>\n<hr />\n<p><strong>Effect</strong> The peluda shifts their position and makes a quill Strike against the attacking creature. This Strike doesn't count toward the peluda's multiple attack penalty, and the peluda's multiple attack penalty doesn't apply to this Strike.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Vulnerable Tail",
-        "actions": null,
-        "traits": [],
-        "description": "<p>If the peluda takes 30 or more slashing damage from a critical hit, the attacker severs the peluda's tail. The peluda takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bleed and can't make tail attacks until their tail grows back (in about 1 week).</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nswim 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 23,
-        "traits": [
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d12+13",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d12+13)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Quill",
-        "bonus": 23,
-        "traits": [
-          "agile",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Peluda-venom"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 23,
-        "traits": [
-          "reach-15",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+13",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+13)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Improved-knockdown"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Breath Weapon",
-        "actions": 2,
-        "traits": [
-          "fire",
-          "primal"
-        ],
-        "description": "<p>The peluda breathes a torrent of flames that deals <span class=\"roll\" onclick=\"roll(this)\">7d10</span> fire damage in a 60 foot line (DC 29 basic Reflex save).</p>\n<p>They can't use their Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Peluda Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 29 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Enfeebled 1, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Enfeebled 2, and off-guard (1 round)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Quill Barrage",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The peluda bristles their quills and shakes, sending dozens of spear-like barbs in every direction. All creatures within 30 feet take <span class=\"roll\" onclick=\"roll(this)\">11d6</span> piercing damage (DC 29 basic Reflex save) and are exposed to peluda venom if they take any damage.</p>\n<p>The peluda can't use Quill Barrage again for 1 minute.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Peludas are wild and savage dragons that favor reedy marshlands, sparsely forested bogs, and river valleys for lairs. A single peluda typically claims a stretch of waterways a few miles in length, then systematically drives off any potential rivals so that the peluda can despoil the land as they please, leaving clawed footprints on muddy riverbanks, toppling trees, and impaling half-eaten corpses on their quills as trophies left to rot. They venture beyond their domains to hunt, roasting prey with their breath or pulverizing them with their tails, burning and killing for cruel sport before slithering, sated, back to their mucky lairs.</p>\n<p>Peludas despise weakness and loathe creatures smaller than themselves, especially humanoids, whom they see as fragile and soft, good only for eating or breaking. In contrast, peludas have a massive inferiority complex regarding more impressive creatures-especially larger and stronger dragons. Peludas will try anything to become stronger, including ingesting shiny coins, gems, and jewelry, which old folk tales claim will strengthen their quills and fire breath.</p>",
-    "recallKnowledge": "Arcana, DC: 27",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana, DC 27"
 }

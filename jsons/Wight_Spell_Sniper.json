@@ -13,19 +13,18 @@
     "Medium",
     "Undead",
     "Unholy",
-    "Wight",
-    "(caster)"
+    "Wight"
   ],
   "source": "Pathfinder #208: Hoof, Cinder, and Storm",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 18,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril",
@@ -92,7 +91,7 @@
       "quantity": 1,
       "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
       "level": 0,
-      "price": "14 gp ",
+      "price": "14 gp",
       "traits": [
         "deadly-d10",
         "propulsive"
@@ -103,36 +102,17 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
       "name": "Fearless Sash",
       "quantity": 1,
-      "description": "<p>A feeling of security radiates out from this sash made of fine yellow fabric. You gain a +1 status bonus to saves against fear.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You and each ally in a 5 foot emanation reduce your Frightened values by 1.</p>",
+      "description": "<p>A feeling of security radiates out from this sash made of fine yellow fabric. You gain a +1 status bonus to saves against fear.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You and each ally in a @Template[emanation|distance:5] reduce your @UUID[Compendium.pf2e.conditionitems.Item.Frightened] values by 1.</p>",
       "level": 7,
-      "price": "325 gp ",
+      "price": "325 gp",
       "traits": [
         "invested",
-        "magical"
-      ]
-    },
-    {
-      "name": "Arrows",
-      "quantity": 30,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
-    },
-    {
-      "name": "Spellstrike Ammunition (Type II)",
-      "quantity": 1,
-      "description": "<p><strong>Ammunition</strong> any</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Cast a Spell</p>\n<hr />\n<p>Mystic patterns create a magic reservoir within this ammunition. You activate <em>spellstrike ammunition</em> by Casting a Spell into the ammunition. The spell must be of a spell rank the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated <em>spellstrike ammunition</em> is targeted by the spell. If the creature isn't a valid target for the spell, the spell is lost.</p>\n<p>The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.</p>\n<p>The maximum rank of spell the ammunition can hold determines its item level and Price.</p>\n<p>Maximum Spell Rank 2nd</p>",
-      "level": 5,
-      "price": "30 gp ",
-      "traits": [
-        "consumable",
         "magical"
       ]
     }
@@ -189,8 +169,16 @@
   ],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -213,7 +201,7 @@
         }
       ],
       "effects": [
-        "Drain-life"
+        "drain-life"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -239,12 +227,12 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d6+7)*2+1d10",
+          "roll": "(2d6+7)*2",
           "type": "piercing"
         }
       ],
       "effects": [
-        "Drain-life"
+        "drain-life"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -259,12 +247,12 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>When the wight sniper damages a living creature using an unarmed attack or ranged weapon, the sniper gains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> temporary Hit Points, and the creature must succeed at a DC 22 Fortitude save or become Drained 1. Further damage dealt by the wight sniper's attacks increase the value of the drained condition by 1 on a failed save, to a maximum of Drained 4.</p>\n<p>Effect: Drain Life</p>",
+      "description": "<p>When the wight sniper damages a living creature using an unarmed attack or ranged weapon, the sniper gains 2d6 temporary Hit Points, and the creature must succeed at a DC 22 Fortitude Saving Throw save or become Drained 1. Further damage dealt by the wight sniper's attacks increase the value of the drained condition by 1 on a failed save, to a maximum of drained 4.</p>\n<p>Effect: Drain Life (Wight Spell Sniper)</p>",
       "collapsed": false
     },
     {
       "name": "Drain the Prey",
-      "actions": null,
+      "actions": 0,
       "traits": [
         "divine"
       ],
@@ -284,28 +272,26 @@
       },
       "autoHeightenLevel": 4,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "OV4xDN2b8ZenDA8M",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [
         {
           "name": "Noise Blast",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "sonic"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "30 feet",
-          "area": "10 ft burst",
+          "area": "10ft burst",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>A cacophonous noise blasts out, dealing <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
+          "description": "<p>A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -317,14 +303,17 @@
           "name": "Revealing Light",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "light"
+            "light",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "varies",
           "range": "120 feet",
-          "area": "10 ft burst",
+          "area": "10ft burst",
           "targets": "",
           "save": "reflex",
           "description": "<p>A wave of magical light washes over the area. You choose the appearance of the light, such as colorful, heatless flames or sparkling motes. A creature affected by <em>revealing light</em> is Dazzled. If the creature was Invisible, it becomes Concealed instead. If the creature was already concealed for any other reason, it is no longer concealed.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The light affects the creature for 2 rounds.</p>\n<p><strong>Failure</strong> The light affects the creature for 1 minute.</p>\n<p><strong>Critical Failure</strong> The light affects the creature for 10 minutes.</p>",
@@ -339,16 +328,19 @@
           "name": "Harm",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "manipulate"
+            "manipulate",
+            "void"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse void energy in a 30 foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -363,16 +355,19 @@
           "name": "Harm",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "manipulate"
+            "manipulate",
+            "void"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse void energy in a 30 foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse void energy in a 30ft Emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -387,6 +382,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -429,441 +425,5 @@
       }
     }
   ],
-  "description": "<p>Wights are intelligent undead spawned through inescapable cycles of spite. This spite might come from their own malevolent will in life, or can be instilled by necromantic rituals, typically involving the desecration of burial sites. Wights usually haunt burial grounds, catacombs, or other places of the dead. Their hunger is targeted toward the living—those whose pumping hearts and ruddy warmth inspire visceral hatred.</p>\n<p>As many types of wights exist as types of people from which they might be created. Hulking brutes, skittering sneaks, and cunning tinkers all make for different wights with different niches to fill. The environment, too, plays a part in determining a wight's special abilities and defenses. Frost wights, for instance, can be found in parts of the world where exposure is a common end and the resentment of being left alone in the wild is a common source of spite. Durable and sustained by void energy, wights can last in harsh environments without decaying the way some lesser undead do.</p>\n<p>A single wight can wreak significant havoc if it is compelled to rise from its tomb. Because creatures slain under a wight's curse can become wights as well, all it takes is a single wight and a handful of unlucky graveyard visitors to create a veritable horde of these undead. Thus, canny priests and adventurers know that the best solution to a wight problem is swift and total eradication. Care must be taken, though, to destroy wight spawn before attempting to destroy the parent wight, for spawn without a master gain the ability to create spawn of their own.</p>",
-  "recallKnowledge": "Religion, DC: 25",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 18,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Wight Spell Sniper",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Undead",
-      "Unholy",
-      "Wight",
-      "(caster)"
-    ],
-    "source": "Pathfinder #208: Hoof, Cinder, and Storm",
-    "perception": {
-      "value": 18,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril",
-      "Orcish"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Composite Shortbow",
-        "quantity": 1,
-        "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
-        "level": 0,
-        "price": "14 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Fearless Sash",
-        "quantity": 1,
-        "description": "<p>A feeling of security radiates out from this sash made of fine yellow fabric. You gain a +1 status bonus to saves against fear.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You and each ally in a 5 foot emanation reduce your Frightened values by 1.</p>",
-        "level": 7,
-        "price": "325 gp ",
-        "traits": [
-          "invested",
-          "magical"
-        ]
-      },
-      {
-        "name": "Arrows",
-        "quantity": 30,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      },
-      {
-        "name": "Spellstrike Ammunition (Type II)",
-        "quantity": 1,
-        "description": "<p><strong>Ammunition</strong> any</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Cast a Spell</p>\n<hr />\n<p>Mystic patterns create a magic reservoir within this ammunition. You activate <em>spellstrike ammunition</em> by Casting a Spell into the ammunition. The spell must be of a spell rank the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated <em>spellstrike ammunition</em> is targeted by the spell. If the creature isn't a valid target for the spell, the spell is lost.</p>\n<p>The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.</p>\n<p>The maximum rank of spell the ammunition can hold determines its item level and Price.</p>\n<p>Maximum Spell Rank 2nd</p>",
-        "level": 5,
-        "price": "30 gp ",
-        "traits": [
-          "consumable",
-          "magical"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Grave Weapon",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>The wight is bound to a dagger it was buried with. Other wights can be bound to different weapons.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 115,
-      "max": 115,
-      "note": "fueled by spite, void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious",
-      "bleed"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 16,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+8",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+8)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Drain-life"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Composite Shortbow",
-        "bonus": 18,
-        "traits": [
-          "deadly-d10",
-          "magical",
-          "propulsive",
-          "range-increment-60",
-          "reload-0"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+7)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Drain-life"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Drain Life",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>When the wight sniper damages a living creature using an unarmed attack or ranged weapon, the sniper gains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> temporary Hit Points, and the creature must succeed at a DC 22 Fortitude save or become Drained 1. Further damage dealt by the wight sniper's attacks increase the value of the drained condition by 1 on a failed save, to a maximum of Drained 4.</p>\n<p>Effect: Drain Life</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Drain the Prey",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p><strong>Trigger</strong> The wight spell sniper kills a living creature</p><hr /><p><strong>Effect</strong> The wight spell sniper breathes in the essence of the slain creature, making it easier to sense and hunt similar prey. The wight chooses one of the creature's traits (excluding rarity or size). Until the wight uses this ability again, it gains a +2 circumstance bonus to Perception checks to Seek creatures with that trait and a +2 circumstance bonus to Survival checks to Track creatures with that trait. The saving throw DCs of the wight's spells and abilities increase by 1 against creatures with the same trait.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 16,
-        "dc": 24,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "OV4xDN2b8ZenDA8M",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [
-          {
-            "name": "Noise Blast",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "10 ft burst",
-            "targets": "",
-            "save": "fortitude",
-            "description": "<p>A cacophonous noise blasts out, dealing <span class=\"roll\" onclick=\"roll(this)\">2d10</span> sonic damage. Each creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Deafened for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "YgQd5smboIDvkXFM"
-          },
-          {
-            "name": "Revealing Light",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "light"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "120 feet",
-            "area": "10 ft burst",
-            "targets": "",
-            "save": "reflex",
-            "description": "<p>A wave of magical light washes over the area. You choose the appearance of the light, such as colorful, heatless flames or sparkling motes. A creature affected by <em>revealing light</em> is Dazzled. If the creature was Invisible, it becomes Concealed instead. If the creature was already concealed for any other reason, it is no longer concealed.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The light affects the creature for 2 rounds.</p>\n<p><strong>Failure</strong> The light affects the creature for 1 minute.</p>\n<p><strong>Critical Failure</strong> The light affects the creature for 10 minutes.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "dLySvBeBMdKwouGG"
-          },
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse void energy in a 30 foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "M5WQAp9O4L2LLcc6"
-          }
-        ],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse void energy in a 30 foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "7Csalm57ZOwpcGam"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>Wights are intelligent undead spawned through inescapable cycles of spite. This spite might come from their own malevolent will in life, or can be instilled by necromantic rituals, typically involving the desecration of burial sites. Wights usually haunt burial grounds, catacombs, or other places of the dead. Their hunger is targeted toward the living—those whose pumping hearts and ruddy warmth inspire visceral hatred.</p>\n<p>As many types of wights exist as types of people from which they might be created. Hulking brutes, skittering sneaks, and cunning tinkers all make for different wights with different niches to fill. The environment, too, plays a part in determining a wight's special abilities and defenses. Frost wights, for instance, can be found in parts of the world where exposure is a common end and the resentment of being left alone in the wild is a common source of spite. Durable and sustained by void energy, wights can last in harsh environments without decaying the way some lesser undead do.</p>\n<p>A single wight can wreak significant havoc if it is compelled to rise from its tomb. Because creatures slain under a wight's curse can become wights as well, all it takes is a single wight and a handful of unlucky graveyard visitors to create a veritable horde of these undead. Thus, canny priests and adventurers know that the best solution to a wight problem is swift and total eradication. Care must be taken, though, to destroy wight spawn before attempting to destroy the parent wight, for spawn without a master gain the ability to create spawn of their own.</p>",
-    "recallKnowledge": "Religion, DC: 25",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 23"
 }

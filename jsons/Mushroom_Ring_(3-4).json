@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Mushroom Ring (3-4)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 4,
   "traits": [
-    "Hazard",
-    "Complex",
     "Rare",
     "Medium",
     "Magical",
@@ -18,32 +17,46 @@
   "source": "Pathfinder Society Scenario #2-00: The King in Thorns",
   "stealth": {
     "value": 12,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>This <em>mushroom ring</em> forms a portal to the First World, allowing the Thorned Monarch's reinforcements into the Material Plane. When the PCs approach, a creature emerges. Creatures continue to emerge until the mushroom ring is disabled. Disabling the mushroom ring also causes any creatures that have emerged to disappear.</p>",
-  "disable": "<p>DC 22 Thievery check (trained) or DC 22 Nature check to rearrange the mushrooms to disrupt the portal (two actions) or Dispel Magic (2nd rank, counteract DC 20) to counteract the magical properties; three successes are required to disable the portal</p>",
+  "disable": "<p>DC 22 Thievery  (trained) or DC 22 Nature  to rearrange the mushrooms to disrupt the portal (two actions) or Dispel Magic (2nd rank, counteract DC 20) to counteract the magical properties; three successes are required to disable the portal</p>",
   "reset": "",
   "routine": "<p>(1 action) A Nuglub emerges from the <em>mushroom ring</em> and defends it. All nuglubs use the <em>mushroom ring's</em> initiative.</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Portal",
+      "actions": -1,
+      "traits": [
+        "magical"
+      ],
+      "description": "<p><strong>Trigger</strong> The PCs approach the <em>mushroom ring</em></p>\n<hr />\n<p><strong>Effect</strong> A Nuglub emerges from the portal to defend it, and the hazard then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 21,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 14,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 8,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -62,98 +75,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Portal",
-      "actions": -1,
-      "traits": [
-        "magical"
-      ],
-      "description": "<p><strong>Trigger</strong> The PCs approach the <em>mushroom ring</em></p>\n<hr />\n<p><strong>Effect</strong> A Nuglub emerges from the portal to defend it, and the hazard then rolls initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 12,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Mushroom Ring (3-4)",
-    "type": "hazard",
-    "level": 4,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Rare",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Scenario #2-00: The King in Thorns",
-    "stealth": {
-      "value": 12,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>This <em>mushroom ring</em> forms a portal to the First World, allowing the Thorned Monarch's reinforcements into the Material Plane. When the PCs approach, a creature emerges. Creatures continue to emerge until the mushroom ring is disabled. Disabling the mushroom ring also causes any creatures that have emerged to disappear.</p>",
-    "disable": "<p>DC 22 Thievery check (trained) or DC 22 Nature check to rearrange the mushrooms to disrupt the portal (two actions) or Dispel Magic (2nd rank, counteract DC 20) to counteract the magical properties; three successes are required to disable the portal</p>",
-    "reset": "",
-    "routine": "<p>(1 action) A Nuglub emerges from the <em>mushroom ring</em> and defends it. All nuglubs use the <em>mushroom ring's</em> initiative.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 21,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 62,
-      "max": 62,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Portal",
-        "actions": -1,
-        "traits": [
-          "magical"
-        ],
-        "description": "<p><strong>Trigger</strong> The PCs approach the <em>mushroom ring</em></p>\n<hr />\n<p><strong>Effect</strong> A Nuglub emerges from the portal to defend it, and the hazard then rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 24"
-  },
-  "recallKnowledge": ", DC: 24"
+  "recallKnowledge": ", DC 19"
 }

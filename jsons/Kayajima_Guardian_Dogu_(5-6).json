@@ -10,21 +10,21 @@
   "level": 7,
   "traits": [
     "Unique",
-    "Huge",
+    "huge",
     "Construct",
     "Earth",
     "Mindless"
   ],
   "source": "Pathfinder Society Scenario #2-02: Mountain of Sea and Sky",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 14,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -61,6 +61,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 10
+    }
+  },
   "fortitude": {
     "value": 17,
     "note": "",
@@ -83,14 +88,22 @@
   "hp": {
     "value": 130,
     "max": 130,
-    "note": "<b>Hardness</b> 10 <b>BT</b> 65. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "30 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, the guardian dogu has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once the guardian is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 22.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -142,7 +155,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -155,7 +168,7 @@
         "force",
         "primal"
       ],
-      "description": "<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> to <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"></p>n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Kayajima guardian pulses with mystical energies that emit a pale blue glow before it emits a wave of force. If the Kayajima guardian uses 1 action to use, it unleashes a powerful blast that deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> force damage to all creatures in a 15 foot cone. If the Kayajima guardian uses 2 actions to use Ley Line Surge, increase the size of the cone to 30 foot cone and the damage to <span class=\"roll\" onclick=\"roll(this)\">6d6</span> force damage. If the Kayajima guardian uses 3 actions to use Ley Line Surge, increase the size of the cone to 60 foot cone and the damage to <span class=\"roll\" onclick=\"roll(this)\">8d6</span> force damage.</p>\n<p>Each creature in the area must attempt a DC 22 Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet.</p>",
+      "description": "<p><span class=\"action-glyph\">A</span> to <span class=\"action-glyph\">3</span></p>n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Kayajima guardian pulses with mystical energies that emit a pale blue glow before it emits a wave of force. If the Kayajima guardian uses 1 action to use, it unleashes a powerful blast that deals 4d6 Force Damage damage to all creatures in a 15ft Cone. If the Kayajima guardian uses 2 actions to use Ley Line Surge, increase the size of the cone to 30ft Cone and the damage to 6d6 Force Damage damage. If the Kayajima guardian uses 3 actions to use Ley Line Surge, increase the size of the cone to 60ft Cone and the damage to 8d6 Force Damage damage.</p>\n<p>Each creature in the area must attempt a DC 22 Fortitude Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet.</p>",
       "collapsed": false
     },
     {
@@ -167,179 +180,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Crafting, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 14,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Kayajima Guardian Dogu (5-6)",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Unique",
-      "Huge",
-      "Construct",
-      "Earth",
-      "Mindless"
-    ],
-    "source": "Pathfinder Society Scenario #2-02: Mountain of Sea and Sky",
-    "perception": {
-      "value": 14,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": -1
-    },
-    "constitution": {
-      "value": 6
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 26,
-      "note": "(22 when broken); construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 130,
-      "max": 130,
-      "note": "<b>Hardness</b> 10 <b>BT</b> 65. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Energized Fist",
-        "bonus": 19,
-        "traits": [
-          "magical",
-          "reach-10",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d12+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d12+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Eye Beam",
-        "bonus": 14,
-        "traits": [
-          "fire",
-          "magical",
-          "range-increment-80"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4d6+10",
-            "type": "fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d6+10)*2",
-            "type": "fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Ley Line Surge",
-        "actions": 1,
-        "traits": [
-          "force",
-          "primal"
-        ],
-        "description": "<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> to <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"></p>n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Kayajima guardian pulses with mystical energies that emit a pale blue glow before it emits a wave of force. If the Kayajima guardian uses 1 action to use, it unleashes a powerful blast that deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> force damage to all creatures in a 15 foot cone. If the Kayajima guardian uses 2 actions to use Ley Line Surge, increase the size of the cone to 30 foot cone and the damage to <span class=\"roll\" onclick=\"roll(this)\">6d6</span> force damage. If the Kayajima guardian uses 3 actions to use Ley Line Surge, increase the size of the cone to 60 foot cone and the damage to <span class=\"roll\" onclick=\"roll(this)\">8d6</span> force damage.</p>\n<p>Each creature in the area must attempt a DC 22 Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sudden Charge",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The Kayajima guardian propels itself with jets of blue energy from its feet, dashing up to a foe and swinging its fist. It Strides twice. If it ends its movement within melee range of at least one enemy, it can make an energized fist Strike against that enemy.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Crafting, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 23"
 }

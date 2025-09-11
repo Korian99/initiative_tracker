@@ -4,44 +4,56 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Violent Shove",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 3,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Haunt"
   ],
   "source": "Pathfinder Book of the Dead",
   "stealth": {
     "value": 13,
-    "note": "(trained) to feel an ominous presence in the room",
-    "modifications": []
+    "note": "(trained) to feel an ominous presence in the room"
   },
   "description": "<p>An invisible force bats creatures aside, hurling them into a nearby wall.</p>",
-  "disable": "<p>DC 19 Occultism check (trained) to disperse the force or DC 20 Religion check (trained) to ward yourself from harm</p>",
+  "disable": "<p>DC 19 Occultism  (trained) to disperse the force or DC 20 Religion  (trained) to ward yourself from harm</p>",
   "reset": "<p>1 day</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Shove",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature moves adjacent to the haunted wall</p>\n<hr />\n<p><strong>Effect</strong> A powerful force sweeps across the room, shoving all creatures in the room toward the wall. Each creature in the area must attempt a DC 20 Fortitude Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 5 feet toward the wall. If the creature would collide with the wall, they take (1d10+5) Bludgeoning Damage damage.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet toward the wall. If the creature would collide with the wall, they take (2d10+10) Bludgeoning Damage damage.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 15 feet toward the wall. If the creature would collide with the wall, they take (3d10+15) Bludgeoning Damage damage and are knocked Prone.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -57,89 +69,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Shove",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature moves adjacent to the haunted wall</p>\n<hr />\n<p><strong>Effect</strong> A powerful force sweeps across the room, shoving all creatures in the room toward the wall. Each creature in the area must attempt a DC 20 Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 5 feet toward the wall. If the creature would collide with the wall, they take <span class=\"roll\" onclick=\"roll(this)\">1d10+5</span> bludgeoning damage.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet toward the wall. If the creature would collide with the wall, they take <span class=\"roll\" onclick=\"roll(this)\">2d10+10</span> bludgeoning damage.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 15 feet toward the wall. If the creature would collide with the wall, they take <span class=\"roll\" onclick=\"roll(this)\">3d10+15</span> bludgeoning damage and are knocked Prone.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Violent Shove",
-    "type": "hazard",
-    "level": 3,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Haunt"
-    ],
-    "source": "Pathfinder Book of the Dead",
-    "stealth": {
-      "value": 13,
-      "note": "(trained) to feel an ominous presence in the room",
-      "modifications": []
-    },
-    "description": "<p>An invisible force bats creatures aside, hurling them into a nearby wall.</p>",
-    "disable": "<p>DC 19 Occultism check (trained) to disperse the force or DC 20 Religion check (trained) to ward yourself from harm</p>",
-    "reset": "<p>1 day</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 10,
-      "max": 10,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Shove",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature moves adjacent to the haunted wall</p>\n<hr />\n<p><strong>Effect</strong> A powerful force sweeps across the room, shoving all creatures in the room toward the wall. Each creature in the area must attempt a DC 20 Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 5 feet toward the wall. If the creature would collide with the wall, they take <span class=\"roll\" onclick=\"roll(this)\">1d10+5</span> bludgeoning damage.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet toward the wall. If the creature would collide with the wall, they take <span class=\"roll\" onclick=\"roll(this)\">2d10+10</span> bludgeoning damage.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 15 feet toward the wall. If the creature would collide with the wall, they take <span class=\"roll\" onclick=\"roll(this)\">3d10+15</span> bludgeoning damage and are knocked Prone.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 18"
-  },
-  "recallKnowledge": ", DC: 18"
+  "recallKnowledge": ", DC 18"
 }

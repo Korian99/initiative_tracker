@@ -10,21 +10,21 @@
   "level": 3,
   "traits": [
     "Rare",
-    "Tiny",
+    "tiny",
     "Aeon",
     "Plant",
     "Wood"
   ],
   "source": "Pathfinder Rage of Elements",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 9,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Muan",
     "Rasu",
@@ -148,7 +148,7 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\nclimb 20 ft,\n",
+  "speed": "30 ft, climb 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -171,7 +171,7 @@
         }
       ],
       "effects": [
-        "Knockdown"
+        "knockdown"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -191,213 +191,17 @@
       "name": "Take Root",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The lomori sprout is on the ground</p>\n<hr />\n<p><strong>Effect</strong> The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a 5 foot burst within 60 feet of the lomori sprout, dealing <span class=\"roll\" onclick=\"roll(this)\">4d4</span> bludgeoning damage (DC 20 basic Reflex save) to creatures in the area; on a failed save, a creature gains the Immobilized condition until it Escapes (DC 20). The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically Escape.</p>",
+      "description": "<p><strong>Requirements</strong> The lomori sprout is on the ground</p>\n<hr />\n<p><strong>Effect</strong> The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a 5ft Burst within 60 feet of the lomori sprout, dealing 4d4 Bludgeoning Damage damage (Basic DC 20 Reflex Saving Throw save) to creatures in the area; on a failed save, a creature gains the Immobilized condition until it Escapes. The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically Escape.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Lomori sprouts are passionate gardeners who closely tend new growth on the Plane of Wood. Incredibly industrious, they lovingly guide young plants into elaborate constructions and patterns, forming tree tunnels, spiraling fields of flowers, complex hedge mazes, towering tapestries of interwoven bamboo, and other dizzying creations. Lomori sprouts meticulously collect the trimmings, seeds, and debris from the flora in their care. They plant the seeds to yield new growth and frenetically weave the rest into nests, spheres, and other simple objects. They're shy and skittish, often losing themselves in their labors, but they're always friendly to those who treat their gardens with respect.</p>\n<p>Lomoris are aeon spirits dispatched to the elemental planes long ago to pursue the act of creation. While most of the aeons dispatched to the other elemental planes performed their duties and rejoined their aeon brethren, those on the Plane of Wood lingered, becoming trapped as the plane receded. Over the ages, they adapted and evolved into lomoris. Today, lomoris have more in common with the other denizens of the Plane of Wood than they do with their aeon ancestors.</p>\n<p>Lomori sprouts, much like conrasus, have a central black sphere, known as a lomori's core, that functions as their primary body and consciousness. Where conrasus forge a sturdy exoskeleton, lomoris cultivate a tall mound of prairie grass surrounding their core, which easily grows to be 2–3 times the core's height. The lomori shapes the mound as it grows, creating protective layers to guard their core and forming other useful appendages. Most lomoris have six intricately detailed, crab-like legs of wood that emerge from the lower half of their core, allowing them to rapidly scuttle across the ground or climb trees.</p>",
-  "recallKnowledge": "Nature, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Lomori Sprout",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Rare",
-      "Tiny",
-      "Aeon",
-      "Plant",
-      "Wood"
-    ],
-    "source": "Pathfinder Rage of Elements",
-    "perception": {
-      "value": 9,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Muan",
-      "Rasu",
-      "Utopian"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "Gardening Lore",
-        "modifier": 11,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 50,
-      "max": 50,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "fire",
-        "value": 3
-      },
-      {
-        "exceptions": [],
-        "type": "void",
-        "value": 3
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Scurry",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature the lomori sprout can observe attacks the sprout;</p>\n<hr />\n<p><strong>Effect</strong> After the attack resolves, the lomori sprout can Stride up to their speed. This movement doesn't trigger reactions from the triggering creature.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nclimb 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Grass Lash",
-        "bonus": 9,
-        "traits": [
-          "disarm",
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Greater Forest Passage",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The lomori sprout ignores difficult terrain and greater difficult terrain from plants and fungi.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Take Root",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The lomori sprout is on the ground</p>\n<hr />\n<p><strong>Effect</strong> The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a 5 foot burst within 60 feet of the lomori sprout, dealing <span class=\"roll\" onclick=\"roll(this)\">4d4</span> bludgeoning damage (DC 20 basic Reflex save) to creatures in the area; on a failed save, a creature gains the Immobilized condition until it Escapes (DC 20). The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically Escape.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Lomori sprouts are passionate gardeners who closely tend new growth on the Plane of Wood. Incredibly industrious, they lovingly guide young plants into elaborate constructions and patterns, forming tree tunnels, spiraling fields of flowers, complex hedge mazes, towering tapestries of interwoven bamboo, and other dizzying creations. Lomori sprouts meticulously collect the trimmings, seeds, and debris from the flora in their care. They plant the seeds to yield new growth and frenetically weave the rest into nests, spheres, and other simple objects. They're shy and skittish, often losing themselves in their labors, but they're always friendly to those who treat their gardens with respect.</p>\n<p>Lomoris are aeon spirits dispatched to the elemental planes long ago to pursue the act of creation. While most of the aeons dispatched to the other elemental planes performed their duties and rejoined their aeon brethren, those on the Plane of Wood lingered, becoming trapped as the plane receded. Over the ages, they adapted and evolved into lomoris. Today, lomoris have more in common with the other denizens of the Plane of Wood than they do with their aeon ancestors.</p>\n<p>Lomori sprouts, much like conrasus, have a central black sphere, known as a lomori's core, that functions as their primary body and consciousness. Where conrasus forge a sturdy exoskeleton, lomoris cultivate a tall mound of prairie grass surrounding their core, which easily grows to be 2–3 times the core's height. The lomori shapes the mound as it grows, creating protective layers to guard their core and forming other useful appendages. Most lomoris have six intricately detailed, crab-like legs of wood that emerge from the lower half of their core, allowing them to rapidly scuttle across the ground or climb trees.</p>",
-    "recallKnowledge": "Nature, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 18"
 }

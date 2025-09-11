@@ -12,17 +12,16 @@
     "Unique",
     "Medium",
     "Human",
-    "Humanoid",
-    "(caster)"
+    "Humanoid"
   ],
   "source": "Pathfinder Society Quest #23: Lacking Respect",
+  "senses": [],
   "perception": {
     "value": 5,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common",
     "Goblin",
@@ -93,7 +92,7 @@
       "name": "Familiar",
       "actions": null,
       "traits": [],
-      "description": "<p>Oloranvis's familiar is a poppet elkhound named Ruditgar. His Speed is 40 feet. He has poppet immunities and weakness 2 to fire. When Oloranvis Casts or Sustains a hex, she can cause ice to form in a 5 foot burst centered on Ruditgar's square. Those squares are difficult terrain until the start of her next turn. Ruditgar and Oloranvis communicate telepathically through touch.</p>",
+      "description": "<p>Oloranvis's familiar is a poppet elkhound named Ruditgar. His Speed is 40 feet. He has poppet immunities and weakness 2 to fire. When Oloranvis Casts or Sustains a hex, she can cause ice to form in a 5ft Type:burst centered on Ruditgar's square. Those squares are difficult terrain until the start of her next turn. Ruditgar and Oloranvis communicate telepathically through touch.</p>",
       "collapsed": false
     }
   ],
@@ -139,7 +138,7 @@
   ],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -205,9 +204,37 @@
       "autoHeightenLevel": 1,
       "cantrips": [
         {
+          "name": "Clinging Ice",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "cold",
+            "hex",
+            "manipulate",
+            "witch"
+          ],
+          "castingTime": "1",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "reflex",
+          "description": "<p>Freezing sleet and heavy snowfall collect on the target's feet and legs, dealing 1d4 cold damage and other effects depending on its Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage, and takes a -5-foot circumstance penalty to its Speeds until the spell ends.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and a -10-foot circumstance penalty to its Speeds until the spell ends.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "sIsNUAEqfhZMW257"
+        },
+        {
           "name": "Electric Arc",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "electricity",
@@ -218,8 +245,8 @@
           "range": "30 feet",
           "area": "",
           "targets": "1 or 2 creatures",
-          "save": "basic reflex",
-          "description": "<p>An arc of lightning leaps from one target to another. Each target takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> electricity damage with a basic Reflex save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "save": "Basic reflex",
+          "description": "<p>An arc of lightning leaps from one target to another. Each target takes 2d4 electricity damage with a basic Reflex save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -231,6 +258,8 @@
           "name": "Frostbite",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "cold",
             "concentrate",
@@ -241,8 +270,8 @@
           "range": "60 feet",
           "area": "",
           "targets": "1 creature",
-          "save": "basic fortitude",
-          "description": "<p>An orb of biting cold coalesces around your target, freezing its body. The target takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage with a basic Fortitude save. On a critical failure, the target also gains weakness 1 to bludgeoning until the start of your next turn.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the weakness on a critical failure increases by 1.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>An orb of biting cold coalesces around your target, freezing its body. The target takes 2d4 cold damage with a basic Fortitude save. On a critical failure, the target also gains weakness 1 to bludgeoning until the start of your next turn.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4 and the weakness on a critical failure increases by 1.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -254,6 +283,8 @@
           "name": "Gale Blast",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "air",
             "concentrate",
@@ -262,10 +293,10 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "5 ft emanation",
+          "area": "5ft emanation",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>Wind flows from your outstretched hands and whirls around you in a 5-foot emanation. Each creature in the area takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage, with a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet away from you.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet away from you.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "description": "<p>Wind flows from your outstretched hands and whirls around you in a 5-foot emanation. Each creature in the area takes 1d6 bludgeoning damage, with a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet away from you.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet away from you.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -277,6 +308,8 @@
           "name": "Guidance",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate"
           ],
@@ -286,7 +319,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
+          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -298,6 +331,8 @@
           "name": "Tangle Vine",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
@@ -311,7 +346,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n<p></p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -320,40 +355,25 @@
           "id": "eqfYEjGKtqe2GRp4"
         }
       ],
-      "rituals": [],
-      "spellLocations": [
-        {
-          "id": "x6vR7vkLSnEWmm7f",
-          "rank": 1
-        },
-        {
-          "id": "otAQcOcJ5bsuwVze",
-          "rank": 1
-        },
-        {
-          "id": "tMRTUS90HkqPvoEa",
-          "rank": 1
-        }
-      ],
-      "usedAttribute": "intelligence",
-      "_id": "ESBjgYgZKa5qxIaV",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Chilling Spray",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "cold",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "15 ft cone",
+          "area": "15ft cone",
           "targets": "",
           "save": "reflex",
-          "description": "<p>A cone of icy shards bursts from your spread hands and coats the targets in a layer of frost. You deal <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage to creatures in the area; they must each attempt a Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a –5-foot status penalty to its Speeds for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a –10-foot status penalty to its Speeds for 2 rounds.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span>.</p>",
+          "description": "<p>A cone of icy shards bursts from your spread hands and coats the targets in a layer of frost. You deal 2d4 cold damage to creatures in the area; they must each attempt a Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a –5-foot status penalty to its Speeds for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a –10-foot status penalty to its Speeds for 2 rounds.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -365,11 +385,14 @@
           "name": "Fear",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "fear",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -389,10 +412,13 @@
           "name": "Ventriloquism",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "auditory",
             "concentrate",
-            "illusion"
+            "illusion",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -409,7 +435,6 @@
           "id": "tMRTUS90HkqPvoEa"
         }
       ],
-      "lv1slots": {},
       "lv2spells": [],
       "lv3spells": [],
       "lv4spells": [],
@@ -419,6 +444,11 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
       "lv2slots": {
         "current": 0,
         "max": 0
@@ -462,52 +492,23 @@
       "bonus": 10,
       "dc": 18,
       "focusPoints": {
-        "current": 1,
-        "max": 1
+        "current": 0,
+        "max": 0
       },
       "autoHeightenLevel": 1,
-      "cantrips": [
-        {
-          "name": "Clinging Ice",
-          "type": "cantrip",
-          "level": 1,
-          "traits": [
-            "uncommon",
-            "cold",
-            "hex",
-            "manipulate",
-            "witch"
-          ],
-          "castingTime": "1",
-          "duration": "1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "reflex",
-          "description": "<p>Freezing sleet and heavy snowfall collect on the target's feet and legs, dealing <span class=\"roll\" onclick=\"roll(this)\">1d4</span> cold damage and other effects depending on its Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage, and takes a -5-foot circumstance penalty to its Speeds until the spell ends.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and a -10-foot circumstance penalty to its Speeds until the spell ends.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "sIsNUAEqfhZMW257"
-        }
-      ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "intelligence",
-      "_id": "RCGoIMPK3YmJceFp",
-      "modifications": [],
+      "cantrips": [],
       "lv1spells": [
         {
           "name": "Phase Familiar",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "focus",
             "hex",
-            "manipulate"
+            "manipulate",
+            "witch"
           ],
           "castingTime": "reaction",
           "duration": "",
@@ -515,7 +516,7 @@
           "area": "",
           "targets": "your familiar",
           "save": "",
-          "description": "<p><strong>Trigger</strong> Your familiar would take damage.</p>\n<hr />\n<p>Your patron momentarily recalls your familiar to the ether, shifting it from its solid, physical form into a ghostly version of itself. Against the triggering damage, your familiar gains resistance 5 to all damage and is immune to precision damage.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the resistance by 2.</p>",
+          "description": "<p><strong>Trigger</strong> Your familiar would take damage.</p>\n<hr />\n<p>Your patron momentarily recalls your familiar to the ether, shifting it from its solid, physical form into a ghostly version of itself. Against the triggering damage, your familiar gains resistance 5 to all damage and is immune to precision damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the resistance by 2.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -533,6 +534,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -575,587 +577,5 @@
       }
     }
   ],
-  "description": "",
-  "recallKnowledge": "Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 5,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Oloranvis Elvanna",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Human",
-      "Humanoid",
-      "(caster)"
-    ],
-    "source": "Pathfinder Society Quest #23: Lacking Respect",
-    "perception": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common",
-      "Goblin",
-      "Hallit",
-      "Jotun",
-      "Skald"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "occultism",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 0
-    },
-    "intelligence": {
-      "value": 4
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Robe",
-        "quantity": 1,
-        "description": "",
-        "level": 0,
-        "price": "",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Familiar",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Oloranvis's familiar is a poppet elkhound named Ruditgar. His Speed is 40 feet. He has poppet immunities and weakness 2 to fire. When Oloranvis Casts or Sustains a hex, she can cause ice to form in a 5 foot burst centered on Ruditgar's square. Those squares are difficult terrain until the start of her next turn. Ruditgar and Oloranvis communicate telepathically through touch.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 23,
-      "max": 23,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "doubleVs": [],
-        "exceptions": [],
-        "type": "cold",
-        "value": 3
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Nails",
-        "bonus": 7,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6",
-            "type": "slashing"
-          },
-          {
-            "roll": "1d6",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6)*2",
-            "type": "slashing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Eldritch Nails",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Oloranvis's razor-sharp nails sparkle with the residue of her winter magic. Her unarmed nail strikes cause both cold and slashing damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Winter's Gift",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Oloranvis has an unusually strong connection to winter magic even for a winter witch. When she casts a spell with the cold trait, she gains a +1 status bonus to the spell DC or spell attack.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Primal Prepared Spells",
-        "type": "prepared",
-        "bonus": 10,
-        "dc": 18,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Electric Arc",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "electricity",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 or 2 creatures",
-            "save": "basic reflex",
-            "description": "<p>An arc of lightning leaps from one target to another. Each target takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> electricity damage with a basic Reflex save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "5zXrg3ZsVtXopGWx"
-          },
-          {
-            "name": "Frostbite",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "cold",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "60 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "basic fortitude",
-            "description": "<p>An orb of biting cold coalesces around your target, freezing its body. The target takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage with a basic Fortitude save. On a critical failure, the target also gains weakness 1 to bludgeoning until the start of your next turn.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the weakness on a critical failure increases by 1.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "gIxgvJgvHbazHyCN"
-          },
-          {
-            "name": "Gale Blast",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "air",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "5 ft emanation",
-            "targets": "",
-            "save": "fortitude",
-            "description": "<p>Wind flows from your outstretched hands and whirls around you in a 5-foot emanation. Each creature in the area takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage, with a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet away from you.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet away from you.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ucy149TVdsTe8ubI"
-          },
-          {
-            "name": "Guidance",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "1",
-            "duration": "until the start of your next turn",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "OHoK3AuQNRiI8E8T"
-          },
-          {
-            "name": "Tangle Vine",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "manipulate",
-              "plant",
-              "wood"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>A vine appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack roll against the target.</p>\n\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the immobilized condition.</p>\n<p><strong>Success</strong> The target takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "eqfYEjGKtqe2GRp4"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [
-          {
-            "id": "x6vR7vkLSnEWmm7f",
-            "rank": 1
-          },
-          {
-            "id": "otAQcOcJ5bsuwVze",
-            "rank": 1
-          },
-          {
-            "id": "tMRTUS90HkqPvoEa",
-            "rank": 1
-          }
-        ],
-        "usedAttribute": "intelligence",
-        "_id": "ESBjgYgZKa5qxIaV",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Chilling Spray",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "cold",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "15 ft cone",
-            "targets": "",
-            "save": "reflex",
-            "description": "<p>A cone of icy shards bursts from your spread hands and coats the targets in a layer of frost. You deal <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage to creatures in the area; they must each attempt a Reflex save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and takes a –5-foot status penalty to its Speeds for 2 rounds.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and takes a –10-foot status penalty to its Speeds for 2 rounds.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "x6vR7vkLSnEWmm7f"
-          },
-          {
-            "name": "Fear",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "fear",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "otAQcOcJ5bsuwVze"
-          },
-          {
-            "name": "Ventriloquism",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "auditory",
-              "concentrate",
-              "illusion"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Whenever you speak or make any other sound vocally, you can make your vocalization seem to originate from somewhere else within 60 feet, and you can change that apparent location freely as you vocalize. Any creature that hears the sound can attempt to disbelieve your illusion.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The spell's duration increases to 1 hour, and you can also change the tone, quality, and other aspects of your voice. Before a creature can attempt to disbelieve your illusion, it must actively attempt a Perception check or otherwise use actions to interact with the sound.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "tMRTUS90HkqPvoEa"
-          }
-        ],
-        "lv1slots": {},
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      },
-      {
-        "name": "Primal Focus Spells",
-        "type": "focus",
-        "bonus": 10,
-        "dc": 18,
-        "focusPoints": {
-          "current": 1,
-          "max": 1
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Clinging Ice",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "cold",
-              "hex",
-              "manipulate",
-              "witch"
-            ],
-            "castingTime": "1",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "reflex",
-            "description": "<p>Freezing sleet and heavy snowfall collect on the target's feet and legs, dealing <span class=\"roll\" onclick=\"roll(this)\">1d4</span> cold damage and other effects depending on its Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage, and takes a -5-foot circumstance penalty to its Speeds until the spell ends.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and a -10-foot circumstance penalty to its Speeds until the spell ends.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "sIsNUAEqfhZMW257"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "intelligence",
-        "_id": "RCGoIMPK3YmJceFp",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Phase Familiar",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "focus",
-              "hex",
-              "manipulate"
-            ],
-            "castingTime": "reaction",
-            "duration": "",
-            "range": "60 feet",
-            "area": "",
-            "targets": "your familiar",
-            "save": "",
-            "description": "<p><strong>Trigger</strong> Your familiar would take damage.</p>\n<hr />\n<p>Your patron momentarily recalls your familiar to the ether, shifting it from its solid, physical form into a ghostly version of itself. Against the triggering damage, your familiar gains resistance 5 to all damage and is immune to precision damage.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the resistance by 2.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "04wB9V3UvmiozUKU"
-          }
-        ],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "",
-    "recallKnowledge": "Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 16"
 }

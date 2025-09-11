@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Glyph of Warding (Kingmaker)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 13,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Kingmaker",
   "stealth": {
     "value": 24,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>An hourglass-shaped glyph flashes with mauve light, then seems to quickly drain its sand away, as if to indicate time has suddenly run out.</p>",
-  "disable": "<p>DC 34 Thievery check (trained) to remove the glyph without triggering it, or Dispel Magic (7th rank, counteract DC 34) to counteract the glyph.</p>",
+  "disable": "<p>DC 34 Thievery  (trained) to remove the glyph without triggering it, or Dispel Magic (7th rank, counteract DC 34) to counteract the glyph.</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Release Spell",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature attempting to open the desk drawer or the secret door to area <strong>D6</strong> triggers the associated glyph</p>\n<p><strong>Effect</strong> The glyph of warding targets the creature with a Spirit Blast (Basic DC 34 Fortitude Saving Throw save).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,90 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Release Spell",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature attempting to open the desk drawer or the secret door to area <strong>D6</strong> triggers the associated glyph</p>\n<p><strong>Effect</strong> The glyph of warding targets the creature with a Spirit Blast (DC 34 basic Fortitude save).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 24,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Glyph of Warding (Kingmaker)",
-    "type": "hazard",
-    "level": 13,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "stealth": {
-      "value": 24,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>An hourglass-shaped glyph flashes with mauve light, then seems to quickly drain its sand away, as if to indicate time has suddenly run out.</p>",
-    "disable": "<p>DC 34 Thievery check (trained) to remove the glyph without triggering it, or Dispel Magic (7th rank, counteract DC 34) to counteract the glyph.</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Release Spell",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature attempting to open the desk drawer or the secret door to area <strong>D6</strong> triggers the associated glyph</p>\n<p><strong>Effect</strong> The glyph of warding targets the creature with a Spirit Blast (DC 34 basic Fortitude save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 31"
-  },
-  "recallKnowledge": ", DC: 31"
+  "recallKnowledge": ", DC 31"
 }

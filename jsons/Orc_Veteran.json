@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 1,
   "traits": [
+    "Common",
     "Medium",
     "Humanoid",
     "Orc"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 6,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Orcish",
     "Common"
@@ -74,7 +75,7 @@
       "quantity": 4,
       "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "thrown"
       ]
@@ -84,9 +85,8 @@
       "quantity": 1,
       "description": "<p>This single-bladed bearded axe has a jagged blade that's perfect for separating bone from tendon and cartilage.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
-        "uncommon",
         "forceful",
         "orc",
         "sweep"
@@ -97,7 +97,7 @@
       "quantity": 2,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -107,9 +107,9 @@
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
+      "price": "8 gp",
       "traits": []
     }
   ],
@@ -153,18 +153,18 @@
       "name": "Ferocity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -273,285 +273,5 @@
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "description": "<p>Orc veterans have survived several bloody and chaotic conflicts, coming out the other side with scars and experience that make them even more dangerous opponents.</p>\n<hr />\n<p>Many orcs are forged in the fires of violence and conflict, often from the moment they're born. As they live lives that are frequently cut brutally short, orcs revel in testing their strength against worthy foes, whether by challenging a higher-ranking member of their community for dominance, taming a powerful beast, or slaying a fearsome monster.</p>\n<p>Tall and powerful, with long arms and thickly muscled legs, many orcs top 7 feet in height. Their heavy limbs and broad, almost bow-legged stances combine with a tendency to slouch forward to create an almost contradictory set of circumstances where an orc can tower over other humanoids while simultaneously staring them in the eye. These features, alongside a tendency to scar easily, can make them seem quite intimidating.</p>\n<p>The half-orc dromaars, most commonly born of unions between orcs and humans, are often tested even more harshly than their full orc kin, but those who endure these tests can rise to positions of authority. \"An orc can have what an orc can hold\" is a saying that not only applies to an individual's ability to secure their own destiny and position, but is also likely the root of orcs referring to their communities as holds.</p>",
-  "recallKnowledge": "Society, DC: 15",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Orc Veteran",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Medium",
-      "Humanoid",
-      "Orc"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 6,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Orcish",
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Javelin",
-        "quantity": 4,
-        "description": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "thrown"
-        ]
-      },
-      {
-        "name": "Orc Necksplitter",
-        "quantity": 1,
-        "description": "<p>This single-bladed bearded axe has a jagged blade that's perfect for separating bone from tendon and cartilage.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "uncommon",
-          "forceful",
-          "orc",
-          "sweep"
-        ]
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 2,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 23,
-      "max": 23,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Ferocity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Reactive Strike",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Orc Necksplitter",
-        "bonus": 7,
-        "traits": [
-          "forceful",
-          "sweep"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 7,
-        "traits": [
-          "agile",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 7,
-        "traits": [
-          "agile",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Javelin",
-        "bonus": 5,
-        "traits": [
-          "thrown-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [],
-    "description": "<p>Orc veterans have survived several bloody and chaotic conflicts, coming out the other side with scars and experience that make them even more dangerous opponents.</p>\n<hr />\n<p>Many orcs are forged in the fires of violence and conflict, often from the moment they're born. As they live lives that are frequently cut brutally short, orcs revel in testing their strength against worthy foes, whether by challenging a higher-ranking member of their community for dominance, taming a powerful beast, or slaying a fearsome monster.</p>\n<p>Tall and powerful, with long arms and thickly muscled legs, many orcs top 7 feet in height. Their heavy limbs and broad, almost bow-legged stances combine with a tendency to slouch forward to create an almost contradictory set of circumstances where an orc can tower over other humanoids while simultaneously staring them in the eye. These features, alongside a tendency to scar easily, can make them seem quite intimidating.</p>\n<p>The half-orc dromaars, most commonly born of unions between orcs and humans, are often tested even more harshly than their full orc kin, but those who endure these tests can rise to positions of authority. \"An orc can have what an orc can hold\" is a saying that not only applies to an individual's ability to secure their own destiny and position, but is also likely the root of orcs referring to their communities as holds.</p>",
-    "recallKnowledge": "Society, DC: 15",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 15"
 }

@@ -16,15 +16,15 @@
     "Swarm"
   ],
   "source": "Pathfinder #215: To Blot Out the Sun",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 11,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -68,6 +68,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 10
+    }
+  },
   "fortitude": {
     "value": 15,
     "note": "",
@@ -90,7 +95,7 @@
   "hp": {
     "value": 85,
     "max": 85,
-    "note": "<b>Hardness</b> 10 <b>BT</b> 42. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
@@ -107,8 +112,16 @@
       "value": 10
     }
   ],
-  "defensiveAbilities": [],
-  "speed": "30 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated treasure swarm has Hardness. This Hardness reduces any damage the swarm takes by an amount equal to its Hardness. Once an animated treasure swarm is reduced to fewer than half its Hit Points, or immediately upon becoming damaged by a critical hit, its construct armor breaks, removing the Hardness and reducing its AC to 21.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
   "strikes": [],
   "offensiveAbilities": [
     {
@@ -117,7 +130,7 @@
       "traits": [
         "magical"
       ],
-      "description": "<p>Each enemy in the animated treasure swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> piercing or <span class=\"roll\" onclick=\"roll(this)\">6d6</span> slashing damage (DC 25 basic Reflex save).</p>",
+      "description": "<p>Each enemy in the animated treasure swarm's space takes 6d6 Piercing Damage or 6d6 Slashing Damage damage (Basic DC 25 Reflex Saving Throw save).</p>",
       "collapsed": false
     },
     {
@@ -133,155 +146,10 @@
       "traits": [
         "magical"
       ],
-      "description": "<p>The animated treasure swarm hurls its most fragile components in a destructive barrage, dealing <span class=\"roll\" onclick=\"roll(this)\">4d6</span> bludgeoning damage to all creatures in a 20 foot burst within 100 feet (DC 25 basic Reflex save).</p>",
+      "description": "<p>The animated treasure swarm hurls its most fragile components in a destructive barrage, dealing 4d6 Bludgeoning Damage damage to all creatures in a 20ft Type:burst within 100 feet (Basic DC 25 Reflex Saving Throw save).</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Crafting, DC: 25",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Animated Treasure Swarm",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Uncommon",
-      "Large",
-      "Construct",
-      "Mindless",
-      "Swarm"
-    ],
-    "source": "Pathfinder #215: To Blot Out the Sun",
-    "perception": {
-      "value": 11,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "note": "(21 when broken), construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 85,
-      "max": 85,
-      "note": "<b>Hardness</b> 10 <b>BT</b> 42. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "area-damage",
-        "value": 10
-      },
-      {
-        "exceptions": [],
-        "type": "splash-damage",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\n",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Blade Storm",
-        "actions": 1,
-        "traits": [
-          "magical"
-        ],
-        "description": "<p>Each enemy in the animated treasure swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> piercing or <span class=\"roll\" onclick=\"roll(this)\">6d6</span> slashing damage (DC 25 basic Reflex save).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "One with the Hoard",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The animated treasure swarm is adjacent to Viseldron's hoard</p><hr /><p><strong>Effect</strong> The animated treasure swarm enters Viseldron's hoard, then emerges from the hoard at any other point in, or adjacent to, the hoard's area.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Trash the Place",
-        "actions": 1,
-        "traits": [
-          "magical"
-        ],
-        "description": "<p>The animated treasure swarm hurls its most fragile components in a destructive barrage, dealing <span class=\"roll\" onclick=\"roll(this)\">4d6</span> bludgeoning damage to all creatures in a 20 foot burst within 100 feet (DC 25 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Crafting, DC: 25",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 23"
 }

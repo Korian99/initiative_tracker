@@ -15,16 +15,16 @@
     "Troll"
   ],
   "source": "Pathfinder Society Scenario #2-03: Catastrophe's Spark",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
   "perception": {
     "value": 9,
-    "note": "darkvisionscent 30 ft imprecise",
+    "note": "Darkvision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 30 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -115,8 +115,16 @@
       "value": 15
     }
   ],
-  "defensiveAbilities": [],
-  "speed": "35 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 15 (Deactivated by Acid or Fire)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -138,8 +146,8 @@
         }
       ],
       "effects": [
-        "Bloodfire-fever",
-        "Knockdown"
+        "bloodfire-fever",
+        "knockdown"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -154,190 +162,24 @@
       "traits": [
         "disease"
       ],
-      "description": "<p><strong>Saving Throw</strong> Fortitude</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 1 and Clumsy 1 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 2 and Clumsy 2 (1 day)</p>\n<p><strong>Stage 5</strong> Enfeebled 2, Clumsy 2, and Fatigued (1 day)</p>",
+      "description": "<p><strong>Saving Throw</strong>  Fortitude</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 1 and Clumsy 1 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 2 and Clumsy 2 (1 day)</p>\n<p><strong>Stage 5</strong> Enfeebled 2, Clumsy 2, and Fatigued (1 day)</p>",
       "collapsed": false
     },
     {
       "name": "Pack Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The trollhound deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> damage to any creature within reach of at least two of the trollhound's allies.</p>",
+      "description": "<p>The trollhound deals an extra 1d6 damage to any creature within reach of at least two of the trollhound's allies.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Trollhounds are squat, slavering beasts akin to trolls in canine form. Requiring vast quantities of meat to fuel their regenerative metabolisms, packs of wild trollhounds prowl the foothills of regions where trolls dwell, their voracious hunger driving them to slaughter and consume any prey they encounter. In some regions, trolls breed trollhounds as pets, utilizing the trollhounds' keen sense of smell to aid in the hunt.</p>\n<p>Covered in fetid, weeping sores, trollhounds are carriers of a debilitating contagion known as bloodfire fever. Creatures that contract the disease through the bite of a trollhound experience deep internal pain, as if their blood were on fire. Additional symptoms include loss of muscle coordination, pus-filled blisters, and overall lethargy and fatigue. Other than suffering from skin irritation, both trolls and trollhounds are immune to the major effects of the disease.</p>\n<p>Trollhounds are fearless on the hunt and in combat, relying on their ability to regenerate to carry them through. Not even the threat of fire is enough to repel them, as the beasts don't recognize the danger it represents. Nevertheless, fire is one of the most effective tools in combating trollhounds; canny hunters know to burn every last remnant of a supposedly slain trollhound, for their regenerative powers are potent indeed.</p>\n<p>While trolls themselves have had great success in domesticating, training, and even befriending trollhounds, the same cannot be said for other would-be masters. Whether impeded by constant exposure to trollhounds' diseased slobber, their ravenous hunger that never seems to be fully sated, or simply their foul personality and quick-to-bite temperament, most attempts to use trollhounds in place of more reliable guardians end in pain, misery, and a pack of feral trollhounds escaping into the hinterlands. Left to their own devices, a pack of escaped trollhounds can breed relatively quickly, and it can take less than a year for a small pack to multiply into a significant threat to the countryside. Best to leave the trollhounds to the trolls, as they say!</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 22",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Mutated Trollhound",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Beast",
-      "Troll"
-    ],
-    "source": "Pathfinder Society Scenario #2-03: Catastrophe's Spark",
-    "perception": {
-      "value": 9,
-      "note": "darkvisionscent 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 30 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 6
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": -2
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 110,
-      "max": 110,
-      "note": "regeneration 15 (deactivated by acid or fire)",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "fire",
-        "value": 15
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "35 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 11,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d12+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d12+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Bloodfire-fever",
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Bloodfire Fever",
-        "actions": null,
-        "traits": [
-          "disease"
-        ],
-        "description": "<p><strong>Saving Throw</strong> Fortitude</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 1 and Clumsy 1 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 2 and Clumsy 2 (1 day)</p>\n<p><strong>Stage 5</strong> Enfeebled 2, Clumsy 2, and Fatigued (1 day)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Pack Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The trollhound deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d6</span> damage to any creature within reach of at least two of the trollhound's allies.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Trollhounds are squat, slavering beasts akin to trolls in canine form. Requiring vast quantities of meat to fuel their regenerative metabolisms, packs of wild trollhounds prowl the foothills of regions where trolls dwell, their voracious hunger driving them to slaughter and consume any prey they encounter. In some regions, trolls breed trollhounds as pets, utilizing the trollhounds' keen sense of smell to aid in the hunt.</p>\n<p>Covered in fetid, weeping sores, trollhounds are carriers of a debilitating contagion known as bloodfire fever. Creatures that contract the disease through the bite of a trollhound experience deep internal pain, as if their blood were on fire. Additional symptoms include loss of muscle coordination, pus-filled blisters, and overall lethargy and fatigue. Other than suffering from skin irritation, both trolls and trollhounds are immune to the major effects of the disease.</p>\n<p>Trollhounds are fearless on the hunt and in combat, relying on their ability to regenerate to carry them through. Not even the threat of fire is enough to repel them, as the beasts don't recognize the danger it represents. Nevertheless, fire is one of the most effective tools in combating trollhounds; canny hunters know to burn every last remnant of a supposedly slain trollhound, for their regenerative powers are potent indeed.</p>\n<p>While trolls themselves have had great success in domesticating, training, and even befriending trollhounds, the same cannot be said for other would-be masters. Whether impeded by constant exposure to trollhounds' diseased slobber, their ravenous hunger that never seems to be fully sated, or simply their foul personality and quick-to-bite temperament, most attempts to use trollhounds in place of more reliable guardians end in pain, misery, and a pack of feral trollhounds escaping into the hinterlands. Left to their own devices, a pack of escaped trollhounds can breed relatively quickly, and it can take less than a year for a small pack to multiply into a significant threat to the countryside. Best to leave the trollhounds to the trolls, as they say!</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 22",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 20"
 }

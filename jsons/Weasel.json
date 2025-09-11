@@ -9,27 +9,28 @@
   "type": "Creature",
   "level": -1,
   "traits": [
-    "Tiny",
+    "Common",
+    "tiny",
     "Animal"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Low light vision",
+    "Scent 60ft imprecise"
+  ],
   "perception": {
     "value": 4,
-    "note": "low light-visionscent 60 ft imprecise",
+    "note": "Low light vision, Scent 60ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision",
-    "scent 60 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
       "name": "acrobatics",
       "modifier": 5,
       "note": [
-        "to Escape <span class=\"roll\" onclick=\"roll(this)\">7</span>"
+        "to Escape 7"
       ],
       "usedAttribute": "dexterity",
       "modifications": []
@@ -112,7 +113,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -136,7 +137,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -149,171 +150,17 @@
       "name": "Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p><span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing, DC 15 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "description": "<p>1d4 Piercing Damage, Basic DC 15 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Despite their small stature, weasels are skilled hunters. Nearly fearless in pursuit of food, they frequently kill creatures up to five times their own size. Their preferred tactic is to latch onto the back of their victim's neck and constrict with their jaws until the target dies. To keep themselves well fed, weasels kill more creatures than they need and stuff their victims into hollow logs or empty dens to eat later.</p>\n<p>Scholars have observed weasels, both in the wild and captivity, perform a bizarre behavior in front of their prey. They rush about unpredictably, throw themselves to the ground, wriggle into and out of burrows, and generally appear to behave entirely irrationally. In response, their prey becomes confused or seemingly hypnotized, which gives the weasel an opportunity to dash forward and strike a killing blow.</p>\n<p>A typical weasel is 12 inches long and weighs less than a pound.</p>\n<hr />\n<p>Weasels are lithe, clever predators known for both their beautiful, sleek fur and their ability to crawl into tight spaces. Pound for pound, few animals are as voracious as weasels. Insatiably hungry, they eat almost half their own weight each day, leading them to constantly hunt for new prey to satisfy their hunger.</p>",
-  "recallKnowledge": "Nature, DC: 13",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 4,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Weasel",
-    "type": "Creature",
-    "level": -1,
-    "traits": [
-      "Tiny",
-      "Animal"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 4,
-      "note": "low light-visionscent 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision",
-      "scent 60 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 5,
-        "note": [
-          "to Escape <span class=\"roll\" onclick=\"roll(this)\">7</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Lithe",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A weasel treats any tight space it can barely fit its head in or wider as difficult terrain and doesn't need to Squeeze to move through it.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 2,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 7,
-      "max": 7,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 7,
-        "traits": [
-          "agile",
-          "finesse",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+2",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+2)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing, DC 15 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Despite their small stature, weasels are skilled hunters. Nearly fearless in pursuit of food, they frequently kill creatures up to five times their own size. Their preferred tactic is to latch onto the back of their victim's neck and constrict with their jaws until the target dies. To keep themselves well fed, weasels kill more creatures than they need and stuff their victims into hollow logs or empty dens to eat later.</p>\n<p>Scholars have observed weasels, both in the wild and captivity, perform a bizarre behavior in front of their prey. They rush about unpredictably, throw themselves to the ground, wriggle into and out of burrows, and generally appear to behave entirely irrationally. In response, their prey becomes confused or seemingly hypnotized, which gives the weasel an opportunity to dash forward and strike a killing blow.</p>\n<p>A typical weasel is 12 inches long and weighs less than a pound.</p>\n<hr />\n<p>Weasels are lithe, clever predators known for both their beautiful, sleek fur and their ability to crawl into tight spaces. Pound for pound, few animals are as voracious as weasels. Insatiably hungry, they eat almost half their own weight each day, leading them to constantly hunt for new prey to satisfy their hunger.</p>",
-    "recallKnowledge": "Nature, DC: 13",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 13"
 }

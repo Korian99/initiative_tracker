@@ -16,21 +16,21 @@
     "Unholy"
   ],
   "source": "Pathfinder #176: Lost Mammoth Valley",
+  "senses": [
+    "Darkvision",
+    "Lifesense 30ft imprecise"
+  ],
   "perception": {
     "value": 14,
-    "note": "darkvisionlifesense 30 ft imprecise",
+    "note": "Darkvision, Lifesense 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "lifesense 30 ft imprecise"
-  ],
   "languages": [
     "Common",
     "Hallit",
     "Necril",
-    "Can't speak"
+    "can't speak"
   ],
   "skills": [
     {
@@ -74,7 +74,15 @@
     "value": -1
   },
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Lifesense (Imprecise) 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Lifesense allows a monster to sense the vital essence of living and undead creatures within the listed range. The sense can distinguish between the vitality energy animating living creatures and the void energy animating undead creatures, much as sight distinguishes colors.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 22,
     "note": "",
@@ -123,9 +131,16 @@
       "traits": [],
       "description": "<p><strong>Trigger</strong> A creature misses the necrohusk with a melee Strike</p><hr /><p><strong>Effect</strong> The necrohusk Steps.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "30 ft,\nclimb 30 ft,\n",
+  "speed": "30 ft, climb 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -205,10 +220,10 @@
         }
       ],
       "effects": [
-        "Vile-innards"
+        "vile-innards"
       ],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -225,7 +240,7 @@
       "name": "Impaling Lunge",
       "actions": 2,
       "traits": [],
-      "description": "<p>The necrohusk Strides twice. If the necrohusk ends its movement within melee range of an enemy, it makes a leg Strike against that enemy. On a hit, the Strike deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bleed.</p>",
+      "description": "<p>The necrohusk Strides twice. If the necrohusk ends its movement within melee range of an enemy, it makes a leg Strike against that enemy. On a hit, the Strike deals an additional 1d6 Bleed Damage.</p>",
       "collapsed": false
     },
     {
@@ -237,249 +252,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Necrohusks are skittering, undead monstrosities, created when a humanoid is purposefully twisted into a new creature through necromantic experimentation. Unlike fleshwarps and recipients of successful necrografts, prospective necrohusks never survive the procedure. After reanimation, they're cunning, animalistic creatures that follow their creator's orders without question.</p>\n<p>Creating a necrohusk is an incredibly difficult endeavor, fraught with error. Most attempts result in lumps of useless, rotten slurry or malformed undead no more cunning or dangerous than a mundane zombie. The costs in time, experimental subjects, and expensive spell components lead some would-be necromancers to conclude that the results aren't worth the risk. Occasionally, spellcasters can harness the power of the Void during the process, which lessens the monetary cost but vastly increases the danger, often producing a deadly backlash resulting in the creator's death and a masterless necrohusk.</p>\n<p>Among the Sutaki, only Ashen Swale and his lieutenants, Turkek and Azi, have the skill and knowledge to create necrohusks with any regularity, although Turkek's interests often lead him away from such gruesome endeavors. Necrohusks are created from volunteers in Ashen Swale's cult or from traitorous Sutaki whom Ashen Swale wants to punish with a ghastly fate.</p>",
-  "recallKnowledge": "Religion, DC: 25",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 14,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Necrohusk",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Rare",
-      "Medium",
-      "Evil",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder #176: Lost Mammoth Valley",
-    "perception": {
-      "value": 14,
-      "note": "darkvisionlifesense 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "lifesense 30 ft imprecise"
-    ],
-    "languages": [
-      "Common",
-      "Hallit",
-      "Necril",
-      "Can't speak"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -3
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 75,
-      "max": 75,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "prone",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Skitter",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature misses the necrohusk with a melee Strike</p><hr /><p><strong>Effect</strong> The necrohusk Steps.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nclimb 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 15,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+5",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d6",
-            "type": "poison"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+5)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "poison"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Leg",
-        "bonus": 15,
-        "traits": [
-          "agile"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+5",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+5)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Ichor Spit",
-        "bonus": 14,
-        "traits": [
-          "range-increment-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8",
-            "type": "poison"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8)*2",
-            "type": "poison"
-          }
-        ],
-        "effects": [
-          "Vile-innards"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Frenzied Assault",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The necrohusk makes three leg Strikes. If more than one Strike hits the same target, combine the damage of the Strikes that hit the creature and apply the creature's resistances and weaknesses only once.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Impaling Lunge",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The necrohusk Strides twice. If the necrohusk ends its movement within melee range of an enemy, it makes a leg Strike against that enemy. On a hit, the Strike deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bleed.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Vile Innards",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The necrohusk spews some of its rotting insides when it makes an ichor spit Strike. On a critical hit, the target is Sickened 2.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Necrohusks are skittering, undead monstrosities, created when a humanoid is purposefully twisted into a new creature through necromantic experimentation. Unlike fleshwarps and recipients of successful necrografts, prospective necrohusks never survive the procedure. After reanimation, they're cunning, animalistic creatures that follow their creator's orders without question.</p>\n<p>Creating a necrohusk is an incredibly difficult endeavor, fraught with error. Most attempts result in lumps of useless, rotten slurry or malformed undead no more cunning or dangerous than a mundane zombie. The costs in time, experimental subjects, and expensive spell components lead some would-be necromancers to conclude that the results aren't worth the risk. Occasionally, spellcasters can harness the power of the Void during the process, which lessens the monetary cost but vastly increases the danger, often producing a deadly backlash resulting in the creator's death and a masterless necrohusk.</p>\n<p>Among the Sutaki, only Ashen Swale and his lieutenants, Turkek and Azi, have the skill and knowledge to create necrohusks with any regularity, although Turkek's interests often lead him away from such gruesome endeavors. Necrohusks are created from volunteers in Ashen Swale's cult or from traitorous Sutaki whom Ashen Swale wants to punish with a ghastly fate.</p>",
-    "recallKnowledge": "Religion, DC: 25",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 20"
 }

@@ -9,18 +9,19 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Human",
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [],
   "perception": {
     "value": 11,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -78,7 +79,7 @@
       "quantity": 1,
       "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
       "level": 1,
-      "price": "20 gp ",
+      "price": "20 gp",
       "traits": [
         "deadly-d10",
         "propulsive",
@@ -90,7 +91,7 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -102,7 +103,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
@@ -111,14 +112,6 @@
       "description": "<p>When sounded, a signal whistle can be heard clearly up to half a mile away across open terrain.</p>",
       "level": 0,
       "price": "8 cp",
-      "traits": []
-    },
-    {
-      "name": "Arrows",
-      "quantity": 100,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
       "traits": []
     }
   ],
@@ -158,7 +151,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -167,18 +160,18 @@
       "traits": [
         "agile",
         "finesse",
-        "versatile-p"
+        "versatile-s"
       ],
       "damageRolls": [
         {
           "roll": "1d6+4",
-          "type": "slashing"
+          "type": "piercing"
         }
       ],
       "critRolls": [
         {
           "roll": "(1d6+4)*2",
-          "type": "slashing"
+          "type": "piercing"
         }
       ],
       "effects": [],
@@ -221,6 +214,7 @@
       "bonus": 10,
       "traits": [
         "deadly-d10",
+        "propulsive",
         "range-increment-100",
         "reload-0",
         "volley-30"
@@ -233,7 +227,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d8+3)*2+1d10",
+          "roll": "(1d8+3)*2",
           "type": "piercing"
         }
       ],
@@ -256,268 +250,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Archer sentries slightly outrank rank-and-file guards, taking positions on walls, garrisons, and other important locations where they can stay out of the fray and pick off criminals or assailants.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
-  "recallKnowledge": "Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Archer Sentry",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "Legal Lore",
-        "modifier": 4,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Composite Longbow",
-        "quantity": 1,
-        "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
-        "level": 1,
-        "price": "20 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive",
-          "volley-30"
-        ]
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Signal Whistle",
-        "quantity": 1,
-        "description": "<p>When sounded, a signal whistle can be heard clearly up to half a mile away across open terrain.</p>",
-        "level": 0,
-        "price": "8 cp",
-        "traits": []
-      },
-      {
-        "name": "Arrows",
-        "quantity": 100,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 30,
-      "max": 30,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 10,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 10,
-        "traits": [
-          "agile",
-          "finesse",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Composite Longbow",
-        "bonus": 10,
-        "traits": [
-          "deadly-d10",
-          "range-increment-100",
-          "reload-0",
-          "volley-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+3",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+3)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Sentry's Aim",
-        "actions": 2,
-        "traits": [
-          "concentrate"
-        ],
-        "description": "<p>The archer sentry aims carefully and fires. They make a ranged weapon Strike with a +1 circumstance bonus.</p>\n<p>The Strike ignores the Concealed condition, lesser cover, and standard cover, and reduces greater cover to standard cover.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Archer sentries slightly outrank rank-and-file guards, taking positions on walls, garrisons, and other important locations where they can stay out of the fray and pick off criminals or assailants.</p><hr /><p>Larger societies rely on those with the authority and the ability to interpret and enforce laws. Some carry out these duties fairly, but others are harsh and cruel, imposing severe punishments on anyone unable to pay for clemency.</p>",
-    "recallKnowledge": "Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 16"
 }

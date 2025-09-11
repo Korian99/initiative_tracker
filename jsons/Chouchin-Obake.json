@@ -9,18 +9,19 @@
   "type": "Creature",
   "level": 6,
   "traits": [
+    "Common",
     "Medium",
     "Evil",
     "Kami"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [],
   "perception": {
     "value": 15,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -126,18 +127,18 @@
         "divine",
         "void"
       ],
-      "description": "<p>15 feet. A ghostly blue flame within the chouchin-obake draws upon the life-force of the living to sustain themself.</p>\n<p>At the start of the chouchin-obake's turn, each creature in the aura takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage (DC 26 basic Fortitude save). The chouchin-obake regains an amount of Hit Points equal to the amount of damage taken by the single creature that took the most damage.</p>",
+      "description": "<p>15 feet. A ghostly blue flame within the chouchin-obake draws upon the life-force of the living to sustain themself.</p>\n<p>At the start of the chouchin-obake's turn, each creature in the aura takes 2d6 Void Damage damage (Basic DC 26 Fortitude Saving Throw save). The chouchin-obake regains an amount of Hit Points equal to the amount of damage taken by the single creature that took the most damage.</p>",
       "collapsed": false
     },
     {
       "name": "Shadowbind",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature attempts to leave the chouchin-obake's Lifewick Candle aura during a move action</p>\n<hr />\n<p><strong>Effect</strong> The chouchin-obake attempts to bind the creature using their own shadow. The triggering creature must succeed at a DC 26 Reflex save or become Immobilized until its next turn.</p>",
+      "description": "<p><strong>Trigger</strong> A creature attempts to leave the chouchin-obake's Lifewick Candle aura during a move action</p>\n<hr />\n<p><strong>Effect</strong> The chouchin-obake attempts to bind the creature using their own shadow. The triggering creature must succeed at a DC 26 Reflex Saving Throw save or become Immobilized until its next turn.</p>",
       "collapsed": false
     }
   ],
-  "speed": "0 ft,\nfly 20 ft,\n",
+  "speed": "0 ft, fly 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -168,7 +169,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -204,7 +205,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -214,236 +215,17 @@
       "name": "Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p><span class=\"roll\" onclick=\"roll(this)\">2d8</span> void plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> fire, DC 26 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "description": "<p>2d8 Void Damage]{2d8 void plus 1d6 fire}, Basic DC 26 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>A chouchin-obake takes the shape of a paper lantern with a horizontal split near the bottom from which a long tongue protrudes. Upon closer inspection, two eyes appear above the split mouth. Chouchin-obake are anomalous in that they don't awaken in the same way other tsukumogami do. Paper lanterns are nearly impossible to maintain for long enough to spawn tsukumogami. Instead, a chouchin-obake is a kind of fire kami that takes the form of a lantern's flame and inhabits a paper lantern when they manifest.</p>\n<hr />\n<p>Tsukumogami are intelligent, mobile objects formed from the union between a 100-year-old object and a kami. Tsukumogami range from harmless to malicious, each individual personality a result of how the object was treated before its awakening. Well-cared-for objects tend to birth helpful, friendly tsukumogami, while mistreated or abandoned objects twist into malevolent and violent beings.Most tsukumogami are, by nature, mischievous, and oftentimes want nothing more than to occupy the attention of living creatures.</p>\n<p>Tsukumogami can commonly be found in areas with a strong cultural belief iin the value of caring for objects, which helps items survive long enough to become tsukumogami. Towns and villages with large tsukumogami populations are referred to as \"sleepless towns\" due to the nightly tsukumogami celebrations, which can become so raucous that they prevent the living residents from sleeping peacefully.</p>",
-  "recallKnowledge": ", DC: 22",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 15,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Chouchin-Obake",
-    "type": "Creature",
-    "level": 6,
-    "traits": [
-      "Medium",
-      "Evil",
-      "Kami"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 3
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 24,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 75,
-      "max": 75,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed",
-      "death-effects",
-      "disease",
-      "doomed",
-      "drained",
-      "fatigued",
-      "healing",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [
-      {
-        "type": "physical",
-        "value": 5
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Lifewick Candle",
-        "actions": null,
-        "traits": [
-          "aura",
-          "divine",
-          "void"
-        ],
-        "description": "<p>15 feet. A ghostly blue flame within the chouchin-obake draws upon the life-force of the living to sustain themself.</p>\n<p>At the start of the chouchin-obake's turn, each creature in the aura takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> void damage (DC 26 basic Fortitude save). The chouchin-obake regains an amount of Hit Points equal to the amount of damage taken by the single creature that took the most damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shadowbind",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature attempts to leave the chouchin-obake's Lifewick Candle aura during a move action</p>\n<hr />\n<p><strong>Effect</strong> The chouchin-obake attempts to bind the creature using their own shadow. The triggering creature must succeed at a DC 26 Reflex save or become Immobilized until its next turn.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "0 ft,\nfly 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Tendril",
-        "bonus": 16,
-        "traits": [
-          "finesse",
-          "reach-15"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8",
-            "type": "void"
-          },
-          {
-            "roll": "2d6",
-            "type": "fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8)*2",
-            "type": "void"
-          },
-          {
-            "roll": "(2d6)*2",
-            "type": "fire"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Flame",
-        "bonus": 16,
-        "traits": [
-          "range-increment-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4",
-            "type": "void"
-          },
-          {
-            "roll": "2d6",
-            "type": "fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4)*2",
-            "type": "void"
-          },
-          {
-            "roll": "(2d6)*2",
-            "type": "fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><span class=\"roll\" onclick=\"roll(this)\">2d8</span> void plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> fire, DC 26 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>A chouchin-obake takes the shape of a paper lantern with a horizontal split near the bottom from which a long tongue protrudes. Upon closer inspection, two eyes appear above the split mouth. Chouchin-obake are anomalous in that they don't awaken in the same way other tsukumogami do. Paper lanterns are nearly impossible to maintain for long enough to spawn tsukumogami. Instead, a chouchin-obake is a kind of fire kami that takes the form of a lantern's flame and inhabits a paper lantern when they manifest.</p>\n<hr />\n<p>Tsukumogami are intelligent, mobile objects formed from the union between a 100-year-old object and a kami. Tsukumogami range from harmless to malicious, each individual personality a result of how the object was treated before its awakening. Well-cared-for objects tend to birth helpful, friendly tsukumogami, while mistreated or abandoned objects twist into malevolent and violent beings.Most tsukumogami are, by nature, mischievous, and oftentimes want nothing more than to occupy the attention of living creatures.</p>\n<p>Tsukumogami can commonly be found in areas with a strong cultural belief iin the value of caring for objects, which helps items survive long enough to become tsukumogami. Towns and villages with large tsukumogami populations are referred to as \"sleepless towns\" due to the nightly tsukumogami celebrations, which can become so raucous that they prevent the living residents from sleeping peacefully.</p>",
-    "recallKnowledge": ", DC: 22",
-    "originalCreature": {}
-  }
+  "recallKnowledge": ", DC 22"
 }

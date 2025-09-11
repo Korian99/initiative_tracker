@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 13,
   "traits": [
+    "Common",
     "Large",
     "Giant",
     "Humanoid",
     "Shadow"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 20,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Jotun",
@@ -48,7 +49,7 @@
       "name": "stealth",
       "modifier": 21,
       "note": [
-        "to Hide in dim light <span class=\"roll\" onclick=\"roll(this)\">23</span>"
+        "to Hide in dim light 23"
       ],
       "usedAttribute": "dexterity",
       "modifications": []
@@ -78,9 +79,8 @@
       "quantity": 1,
       "description": "<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": [
-        "uncommon",
         "disarm",
         "finesse",
         "trip"
@@ -89,9 +89,9 @@
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
+      "price": "8 gp",
       "traits": []
     }
   ],
@@ -135,11 +135,11 @@
       "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "35 ft,\n",
+  "speed": "35 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -163,7 +163,7 @@
         }
       ],
       "effects": [
-        "Pall-of-shadow"
+        "pall-of-shadow"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -193,7 +193,7 @@
         }
       ],
       "effects": [
-        "Pall-of-shadow"
+        "pall-of-shadow"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -209,7 +209,7 @@
         "divine",
         "shadow"
       ],
-      "description": "<p>When a shadow giant hits with a melee attack, the target must succeed at a DC 30 Fortitude save or become Drained 1 and take a –1 status penalty to Perception checks involving sight as long as they remain drained. On a critical failure, this condition doesn't heal naturally and can be removed only with magic.</p>",
+      "description": "<p>When a shadow giant hits with a melee attack, the target must succeed at a DC 30 Fortitude Saving Throw save or become Drained 1 and take a –1 status penalty to Perception checks involving sight as long as they remain drained. On a critical failure, this condition doesn't heal naturally and can be removed only with magic.</p>",
       "collapsed": false
     },
     {
@@ -220,7 +220,7 @@
         "shadow",
         "teleportation"
       ],
-      "description": "<p>Shadows extend the giant's chain as they make a spiked chain Strike, increasing their reach to 60 feet for that Strike. If this hits, the target must succeed at a DC 33 Will save or be teleported to an empty space within the shadow giant's normal reach.</p>",
+      "description": "<p>Shadows extend the giant's chain as they make a spiked chain Strike, increasing their reach to 60 feet for that Strike. If this hits, the target must succeed at a DC 33 Will Saving Throw save or be teleported to an empty space within the shadow giant's normal reach.</p>",
       "collapsed": false
     },
     {
@@ -235,247 +235,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Shadow giants are natives of the Netherworld, where they have dwelled in perpetual twilight for millennia. They live in familiar groups and uphold a nomadic way of life as they roam across ancestral lands between shadowy forests and misty chasms. These hunter-gatherers pass down lore through oral histories, conduct pilgrimages to unholy ziggurats of black stone, and bathe in the blood of their long-standing foes, including rival shadow giant clans and fiends of the Netherworld intent on enslaving their kind.</p>\n<p>Standing 15 feet tall, with gray skin and hair only a shade lighter, shadow giants are fearsome foes with a well-earned reputation as zealous warmongers and ruthless combatants. They rarely interact with outsiders, though they may treat with proven warriors who show the giants the respect and deference they feel they deserve.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
-  "recallKnowledge": "Society, DC: 31",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Shadow Giant",
-    "type": "Creature",
-    "level": 13,
-    "traits": [
-      "Large",
-      "Giant",
-      "Humanoid",
-      "Shadow"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 20,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Jotun",
-      "Shadowtongue"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 21,
-        "note": [
-          "to Hide in dim light <span class=\"roll\" onclick=\"roll(this)\">23</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 8
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 3
-    },
-    "items": [
-      {
-        "name": "Spiked Chain",
-        "quantity": 1,
-        "description": "<p>This 4-foot-long length of chain is covered with barbs and has spikes on one or both ends. Some feature metal hoops used as handgrips.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": [
-          "uncommon",
-          "disarm",
-          "finesse",
-          "trip"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 33,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 23,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 275,
-      "max": 275,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Reactive Strike",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "35 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Spiked Chain",
-        "bonus": 27,
-        "traits": [
-          "disarm",
-          "reach-10",
-          "trip"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8+18",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8+18)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Pall-of-shadow"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 26,
-        "traits": [
-          "agile",
-          "nonlethal",
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8+18",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8+18)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Pall-of-shadow"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Pall of Shadow",
-        "actions": null,
-        "traits": [
-          "divine",
-          "shadow"
-        ],
-        "description": "<p>When a shadow giant hits with a melee attack, the target must succeed at a DC 30 Fortitude save or become Drained 1 and take a –1 status penalty to Perception checks involving sight as long as they remain drained. On a critical failure, this condition doesn't heal naturally and can be removed only with magic.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shadow Chain",
-        "actions": 2,
-        "traits": [
-          "divine",
-          "shadow",
-          "teleportation"
-        ],
-        "description": "<p>Shadows extend the giant's chain as they make a spiked chain Strike, increasing their reach to 60 feet for that Strike. If this hits, the target must succeed at a DC 33 Will save or be teleported to an empty space within the shadow giant's normal reach.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shadowcloak",
-        "actions": 1,
-        "traits": [
-          "divine",
-          "shadow"
-        ],
-        "description": "<p>The shadow giant gains the effect of the Blur spell for 1 minute or until it is exposed to direct sunlight, whichever comes first.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Shadow giants are natives of the Netherworld, where they have dwelled in perpetual twilight for millennia. They live in familiar groups and uphold a nomadic way of life as they roam across ancestral lands between shadowy forests and misty chasms. These hunter-gatherers pass down lore through oral histories, conduct pilgrimages to unholy ziggurats of black stone, and bathe in the blood of their long-standing foes, including rival shadow giant clans and fiends of the Netherworld intent on enslaving their kind.</p>\n<p>Standing 15 feet tall, with gray skin and hair only a shade lighter, shadow giants are fearsome foes with a well-earned reputation as zealous warmongers and ruthless combatants. They rarely interact with outsiders, though they may treat with proven warriors who show the giants the respect and deference they feel they deserve.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They vary widely but are united in their hunger, requiring sustenance of their own element along with the feasts one would expect from such a massive humanoid. Although a simple matter for some giants, more esoteric types find this need a harsh reality. While a massive fistful of ice or snow alongside their meal will satisfy a frost giant, shadow giants hunger for the coagulated shadows of the Netherworld.</p>",
-    "recallKnowledge": "Society, DC: 31",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 31"
 }

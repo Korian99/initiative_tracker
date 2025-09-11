@@ -4,43 +4,57 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Wrathful Dinosaur",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 8,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium"
   ],
   "source": "Pathfinder #182: Graveclaw",
   "stealth": {
     "value": 18,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>This figurine of a charging triceratops was crafted from the dinosaur's femur and contains its spirit.</p>",
-  "disable": "<p>DC 24 Nature check (expert) to banish the dinosaur's spirit with a primal incantation, DC 28 Intimidation check to scare it off with a frightening display, or DC 26 Survival check (expert) to calm the spirit</p>",
+  "disable": "<p>DC 24 Nature  (expert) to banish the dinosaur's spirit with a primal incantation, DC 28 Intimidation  to scare it off with a frightening display, or DC 26 Survival  (expert) to calm the spirit</p>",
   "reset": "<p>1 day</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Triceratops Trample",
+      "actions": -1,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p><strong>Trigger</strong> A living creature approaches within 10 feet of the figurine</p>\n<hr />\n<p><strong>Effect</strong> A spectral triceratops appears around the figurine and charges toward the triggering creature, affecting a line 30 feet long. Creatures in this area take (4d10+22) Bludgeoning Damage damage (Basic DC 26 Reflex Saving Throw).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -56,92 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Triceratops Trample",
-      "actions": -1,
-      "traits": [
-        "primal"
-      ],
-      "description": "<p><strong>Trigger</strong> A living creature approaches within 10 feet of the figurine</p>\n<hr />\n<p><strong>Effect</strong> A spectral triceratops appears around the figurine and charges toward the triggering creature, affecting a line 30 feet long. Creatures in this area take <span class=\"roll\" onclick=\"roll(this)\">4d10+22</span> bludgeoning damage (DC 26 basic Reflex save).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 18,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Wrathful Dinosaur",
-    "type": "hazard",
-    "level": 8,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium"
-    ],
-    "source": "Pathfinder #182: Graveclaw",
-    "stealth": {
-      "value": 18,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>This figurine of a charging triceratops was crafted from the dinosaur's femur and contains its spirit.</p>",
-    "disable": "<p>DC 24 Nature check (expert) to banish the dinosaur's spirit with a primal incantation, DC 28 Intimidation check to scare it off with a frightening display, or DC 26 Survival check (expert) to calm the spirit</p>",
-    "reset": "<p>1 day</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Triceratops Trample",
-        "actions": -1,
-        "traits": [
-          "primal"
-        ],
-        "description": "<p><strong>Trigger</strong> A living creature approaches within 10 feet of the figurine</p>\n<hr />\n<p><strong>Effect</strong> A spectral triceratops appears around the figurine and charges toward the triggering creature, affecting a line 30 feet long. Creatures in this area take <span class=\"roll\" onclick=\"roll(this)\">4d10+22</span> bludgeoning damage (DC 26 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 24"
-  },
-  "recallKnowledge": ", DC: 24"
+  "recallKnowledge": ", DC 24"
 }

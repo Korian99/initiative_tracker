@@ -9,25 +9,27 @@
   "type": "Creature",
   "level": 13,
   "traits": [
+    "Common",
     "Medium",
     "Elf",
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [
+    "Low light vision",
+    "plus vigilance"
+  ],
   "perception": {
     "value": 24,
-    "note": "low light-vision",
+    "note": "Low light vision, plus vigilance",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Common",
     "Elven",
     "Fey",
-    "Plus one regional language"
+    "plus one regional language"
   ],
   "skills": [
     {
@@ -90,9 +92,8 @@
       "quantity": 1,
       "description": "<p>Essentially a longer version of the scimitar, this traditional elven weapon has a thinner blade than its cousin.</p>",
       "level": 0,
-      "price": "4 gp ",
+      "price": "4 gp",
       "traits": [
-        "uncommon",
         "elf",
         "finesse",
         "forceful"
@@ -103,7 +104,7 @@
       "quantity": 1,
       "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
       "level": 1,
-      "price": "20 gp ",
+      "price": "20 gp",
       "traits": [
         "deadly-d10",
         "propulsive",
@@ -115,7 +116,7 @@
       "quantity": 1,
       "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chain mail. However, it is much lighter than chain mail and protects only the torso, upper arms, and upper legs of its wearer.</p>",
       "level": 0,
-      "price": "5 gp ",
+      "price": "5 gp",
       "traits": [
         "flexible",
         "noisy"
@@ -127,7 +128,7 @@
       "name": "Vigilance",
       "actions": null,
       "traits": [],
-      "description": "<p>A court guard gains a +1 circumstance bonus on Perception checks to Sense motive and Seek creatures, and if they succeed, they get a critical success instead.</p>",
+      "description": "<p>A court guard gains a +1 circumstance bonus on Perception checks to [[/act sense-motive]] and [[/act seek]] creatures, and if they succeed, they get a critical success instead.</p>",
       "collapsed": false
     }
   ],
@@ -155,7 +156,7 @@
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "savenote": "1 status vs. mental effects",
+  "savenote": "+1 status vs. mental effects",
   "hp": {
     "value": 225,
     "max": 225,
@@ -167,6 +168,13 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
+      "name": "+1 Status vs. mental effects",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
       "name": "Interposition",
       "actions": -1,
       "traits": [],
@@ -174,7 +182,7 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -251,7 +259,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d8+10)*2+1d10",
+          "roll": "(2d8+10)*2",
           "type": "piercing"
         }
       ],
@@ -281,293 +289,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>In the tangled web of lineages, rivalries, and shifting alliances that is an elven noble court, aristocratic families employ bodyguards loyal to them alone.</p><hr /><p>Elves' long lives give them centuries to delve into studies, artistry, or exploration.</p>",
-  "recallKnowledge": "Society, DC: 31",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 24,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Elven Court Guard",
-    "type": "Creature",
-    "level": 13,
-    "traits": [
-      "Medium",
-      "Elf",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 24,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Elven",
-      "Fey",
-      "Plus one regional language"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 26,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "Heraldry Lore",
-        "modifier": 21,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Elven Curve Blade",
-        "quantity": 1,
-        "description": "<p>Essentially a longer version of the scimitar, this traditional elven weapon has a thinner blade than its cousin.</p>",
-        "level": 0,
-        "price": "4 gp ",
-        "traits": [
-          "uncommon",
-          "elf",
-          "finesse",
-          "forceful"
-        ]
-      },
-      {
-        "name": "Composite Longbow",
-        "quantity": 1,
-        "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
-        "level": 1,
-        "price": "20 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive",
-          "volley-30"
-        ]
-      },
-      {
-        "name": "Chain Shirt",
-        "quantity": 1,
-        "description": "<p>Sometimes called a hauberk, this is a long shirt constructed of the same metal rings as chain mail. However, it is much lighter than chain mail and protects only the torso, upper arms, and upper legs of its wearer.</p>",
-        "level": 0,
-        "price": "5 gp ",
-        "traits": [
-          "flexible",
-          "noisy"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Vigilance",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A court guard gains a +1 circumstance bonus on Perception checks to Sense motive and Seek creatures, and if they succeed, they get a critical success instead.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 35,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 23,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "1 status vs. mental effects",
-    "hp": {
-      "value": 225,
-      "max": 225,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Interposition",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An ally within 15 feet of the guard would take damage</p><hr /><p><strong>Effect</strong> The guard Strides. This movement does not trigger reactions, and the guard must end the Stride in a space adjacent to the ally. The guard then switches places with the ally, taking all damage and associated effects instead of the ally.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Elven Curve Blade",
-        "bonus": 27,
-        "traits": [
-          "finesse",
-          "forceful",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+12",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+12)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 26,
-        "traits": [
-          "agile",
-          "finesse",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+12",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+12)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Composite Longbow",
-        "bonus": 27,
-        "traits": [
-          "deadly-d10",
-          "magical",
-          "propulsive",
-          "range-increment-100",
-          "reload-0",
-          "volley-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+10",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+10)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Avenge the Fallen",
-        "actions": 1,
-        "traits": [
-          "fortune"
-        ],
-        "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The guard is within 30 feet of the creature they were guarding, and that creature is either Dying or died since the guard's last turn</p><hr /><p><strong>Effect</strong> The guard Strikes the creature that damaged their ally. They roll the attack roll twice and use the higher result.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Dancing Blade",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The guard makes a Strike against a creature, then Strides. This Stride doesn't trigger reactions. If the guard ends this Stride in a different space adjacent to the same creature, they make another Strike against it. If both Strikes succeed, the creature is Off-Guard until the start of the guard's next turn. Each attack counts toward the guard's multiple attack penalty, but the penalty doesn't increase until they've made both attacks.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>In the tangled web of lineages, rivalries, and shifting alliances that is an elven noble court, aristocratic families employ bodyguards loyal to them alone.</p><hr /><p>Elves' long lives give them centuries to delve into studies, artistry, or exploration.</p>",
-    "recallKnowledge": "Society, DC: 31",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 31"
 }

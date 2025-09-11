@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Large",
     "Evil",
     "Swarm",
@@ -16,20 +17,20 @@
     "Unholy"
   ],
   "source": "Pathfinder #176: Lost Mammoth Valley",
+  "senses": [
+    "Lifesense 30ft precise",
+    "Tremorsense 30ft imprecise"
+  ],
   "perception": {
     "value": 11,
-    "note": "lifesense 30 ft precisetremorsense 30 ft imprecise",
+    "note": "Lifesense 30ft precise, Tremorsense 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "lifesense 30 ft precise",
-    "tremorsense 30 ft imprecise"
-  ],
   "languages": [
     "Common",
     "Hallit",
-    "Can't speak any language"
+    "can't speak any language"
   ],
   "skills": [
     {
@@ -66,7 +67,15 @@
     "value": 0
   },
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Lifesense 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Lifesense allows a monster to sense the vital essence of living and undead creatures within the listed range. The sense can distinguish between the vitality energy animating living creatures and the void energy animating undead creatures, much as sight distinguishes colors.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 21,
     "note": "",
@@ -137,181 +146,28 @@
       "name": "Stifle",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature in the swarm's space attempts to Cast a Spell with a verbal component or attempts an action with the linguistic or vocal traits</p><hr />\n<p><strong>Effect</strong> The swarming hands clamp over the triggering creature's mouth, preventing it from vocalizing. The affected creature must succeed at a DC 22 Reflex save or the triggering action is disrupted.</p>",
+      "description": "<p><strong>Trigger</strong> A creature in the swarm's space attempts to Cast a Spell with a verbal component or attempts an action with the linguistic or vocal traits</p><hr />\n<p><strong>Effect</strong> The swarming hands clamp over the triggering creature's mouth, preventing it from vocalizing. The affected creature must succeed at a DC 22 Reflex Saving Throw save or the triggering action is disrupted.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\nclimb 30 ft,\n",
+  "speed": "30 ft, climb 30ft",
   "strikes": [],
   "offensiveAbilities": [
     {
       "name": "Pummeling Grasp",
       "actions": 1,
       "traits": [],
-      "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> slashing damage (DC 20 basic Reflex save). A creature that fails its save against Pummeling Grasp is also knocked Prone.</p>",
+      "description": "<p>Each enemy in the swarm's space takes 3d6 Slashing Damage damage (Basic DC 20 Reflex Saving Throw). A creature that fails its save against Pummeling Grasp is also knocked Prone.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Religion, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Crawling Hand Swarm",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Large",
-      "Evil",
-      "Swarm",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder #176: Lost Mammoth Valley",
-    "perception": {
-      "value": 11,
-      "note": "lifesense 30 ft precisetremorsense 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "lifesense 30 ft precise",
-      "tremorsense 30 ft imprecise"
-    ],
-    "languages": [
-      "Common",
-      "Hallit",
-      "Can't speak any language"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 60,
-      "max": 60,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "precision",
-      "swarm-mind",
-      "unconscious",
-      "visual"
-    ],
-    "resistances": [
-      {
-        "type": "bludgeoning",
-        "value": 2
-      },
-      {
-        "type": "piercing",
-        "value": 5
-      },
-      {
-        "type": "slashing",
-        "value": 5
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "area-damage",
-        "value": 5
-      },
-      {
-        "type": "splash-damage",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Stifle",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature in the swarm's space attempts to Cast a Spell with a verbal component or attempts an action with the linguistic or vocal traits</p><hr />\n<p><strong>Effect</strong> The swarming hands clamp over the triggering creature's mouth, preventing it from vocalizing. The affected creature must succeed at a DC 22 Reflex save or the triggering action is disrupted.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nclimb 30 ft,\n",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Pummeling Grasp",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> slashing damage (DC 20 basic Reflex save). A creature that fails its save against Pummeling Grasp is also knocked Prone.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Religion, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 20"
 }

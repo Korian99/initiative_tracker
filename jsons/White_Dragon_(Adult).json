@@ -9,24 +9,25 @@
   "type": "Creature",
   "level": 10,
   "traits": [
+    "Common",
     "Large",
     "Chaotic",
     "Cold",
     "Dragon",
-    "Evil",
-    "(caster)"
+    "Evil"
   ],
   "source": "Pathfinder Bestiary",
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise",
+    "snow vision"
+  ],
   "perception": {
     "value": 20,
-    "note": "darkvisionscent 60 ft imprecise",
+    "note": "Darkvision, Scent 60ft imprecise, snow vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 60 ft imprecise"
-  ],
   "languages": [
     "Common",
     "Draconic"
@@ -148,7 +149,7 @@
         "aura",
         "cold"
       ],
-      "description": "<p>5 feet. <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage (DC 27 basic Reflex save)</p>",
+      "description": "<p>5 feet. 2d6 Cold Damage damage (Basic DC 27 Reflex Saving Throw save)</p>",
       "collapsed": false
     },
     {
@@ -158,7 +159,7 @@
         "arcane",
         "cold"
       ],
-      "description": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to the dragon.</p>\n<hr />\n<p><strong>Effect</strong> The dragon's blood sprays on the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage. A creature that takes cold damage in this way is Slowed 1 for 1 round.</p>",
+      "description": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to the dragon.</p>\n<hr />\n<p><strong>Effect</strong> The dragon's blood sprays on the creature, dealing 2d6 Cold Damage damage. A creature that takes cold damage in this way is Slowed 1 for 1 round.</p>",
       "collapsed": false
     },
     {
@@ -170,11 +171,11 @@
         "fear",
         "mental"
       ],
-      "description": "<p>90 feet. DC 27 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
+      "description": "<p>90 feet. DC 27 Will Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\nclimb 30 ft,\nfly 120 ft,\n",
+  "speed": "30 ft, climb 30ft, fly 120ft",
   "strikes": [
     {
       "type": "melee",
@@ -274,7 +275,7 @@
         "arcane",
         "cold"
       ],
-      "description": "<p>The dragon breathes a cloud of frost that deals <span class=\"roll\" onclick=\"roll(this)\">11d6</span> cold damage in a 40 foot cone (DC 29 basic Reflex save).</p>\n<p>It can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The dragon breathes a cloud of frost that deals 11d6 Cold Damage damage in a 40ft Cone (Basic DC 29 Reflex Saving Throw save).</p>\n<p>It can't use Breath Weapon again for 1d4 rounds.</p>",
       "collapsed": false
     },
     {
@@ -295,7 +296,7 @@
       "name": "Ground Slam",
       "actions": 1,
       "traits": [],
-      "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within 10 feet must succeed at a DC 29 Reflex save or fall Prone and take <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage.</p>\n<p>The dragon can then Step.</p>",
+      "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within 10 feet must succeed at a DC 29 Reflex Saving Throw save or fall Prone and take 3d6 Bludgeoning Damage damage.</p>\n<p>The dragon can then Step.</p>",
       "collapsed": false
     },
     {
@@ -312,7 +313,7 @@
         "arcane",
         "water"
       ],
-      "description": "<p>The dragon reshapes a cube of ice or snow it touches, up to 10 feet across. Any creature standing atop the ice must succeed at a DC 15 Reflex save or DC 15 Acrobatics check.</p>\n<p>On a failure, the creature falls Prone atop the ice; on a critical failure, it falls off the ice entirely and is also prone.</p>",
+      "description": "<p>The dragon reshapes a cube of ice or snow it touches, up to 10 feet across. Any creature standing atop the ice must succeed at a DC 15 Reflex Saving Throw save or DC 15 Acrobatics  check.</p>\n<p>On a failure, the creature falls Prone atop the ice; on a critical failure, it falls off the ice entirely and is also prone.</p>",
       "collapsed": false
     }
   ],
@@ -326,29 +327,27 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 5,
+      "autoHeightenLevel": 2,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "B7rzf0nBJmzg8x0y",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Gust of Wind (At Will)",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "air",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "until the start of your next turn",
           "range": "",
-          "area": "60 ft line",
+          "area": "60ft line",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>A violent wind issues forth from your palm, blowing from the point where you are when you cast the spell to the line's opposite end. The wind extinguishes small non-magical fires, disperses fog and mist, blows objects of light Bulk or less around, and pushes larger objects. Large or smaller creatures in the area must attempt a Fortitude save. Large or smaller creatures that later move into the gust must attempt the save on entering.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can't move against the wind.</p>\n<p><strong>Failure</strong> The creature is knocked Prone. If it was flying, it suffers the effects of critical failure instead.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 30 feet in the wind's direction, knocked Prone, and takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage.</p>",
+          "description": "<p>A violent wind issues forth from your palm, blowing from the point where you are when you cast the spell to the line's opposite end. The wind extinguishes small non-magical fires, disperses fog and mist, blows objects of light Bulk or less around, and pushes larger objects. Large or smaller creatures in the area must attempt a Fortitude save. Large or smaller creatures that later move into the gust must attempt the save on entering.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can't move against the wind.</p>\n<p><strong>Failure</strong> The creature is knocked Prone. If it was flying, it suffers the effects of critical failure instead.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 30 feet in the wind's direction, knocked Prone, and takes 2d6 bludgeoning damage.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -362,14 +361,17 @@
           "name": "Obscuring Mist (At Will)",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "water"
           ],
           "castingTime": "3",
           "duration": "1 minute",
           "range": "120 feet",
-          "area": "20 ft burst",
+          "area": "20ft burst",
           "targets": "",
           "save": "",
           "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
@@ -389,6 +391,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -431,443 +434,5 @@
       }
     }
   ],
-  "description": "<p>The most feral and least intelligent of all the chromatic dragons, white dragons are brutish, predatory, and chiefly motivated by self-preservation. Nearly all other dragons look down on white dragons as hopelessly hotheaded and dull, though this does not make them any less dangerous-in fact, it may mean the opposite. It's nearly impossible to treat with white dragons, not because they lack the capacity to do so, but because they just don't care to. They are as difficult to deal with as they are quick to anger, and they become incensed at almost anything. When a white dragon does speak, it spews threats, inane jokes, and incoherent babbling as a prelude to attacking-and when the attack comes, it's bloody and relentless.</p>\n<p>Thankfully, white dragons prefer very cold, remote locations that are far from people. Dwelling on glacial mountaintops or in ice caverns beneath forbidding tundra, they treat the lands around them as their own personal hunting grounds. They fly out to feed or terrorize other creatures, especially those who trespass near the dragon's territory, then bring any treasure back to be displayed in icy niches in their lairs. They collect all kinds of valuables, with a slight preference for items with high utility-such as tools, trade goods, and fine food-over coins or jewels. The ability to shape ice lets white dragons rearrange their lairs exactly to their specifications, and they take great pride in how they've decorated their homes over the years.</p>\n<hr />\n<p>While there are many types of dragons, from the powerful planar dragons to the strange esoteric dragons, few dragon varieties are as well-known and as rightly feared as the chromatic dragons. Differentiated by the hue of their scales, each color of dragon unleashes its own flavor of murderous cruelty-be it by claw, tooth, or breath-and unlike most creatures, dragons only become more powerful as they age. Their lust for treasure, food, bloodshed, and control are legendary. Physically powerful with egos to match, these dragons are often morally depraved and act as criminal masterminds, vicious tyrants, or voracious raiders.</p>",
-  "recallKnowledge": "Arcana, DC: 27",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "White Dragon (Adult)",
-    "type": "Creature",
-    "level": 10,
-    "traits": [
-      "Large",
-      "Chaotic",
-      "Cold",
-      "Dragon",
-      "Evil",
-      "(caster)"
-    ],
-    "source": "Pathfinder Bestiary",
-    "perception": {
-      "value": 20,
-      "note": "darkvisionscent 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 60 ft imprecise"
-    ],
-    "languages": [
-      "Common",
-      "Draconic"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "arcana",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 7
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Snow Vision",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Snow doesn't impair a white dragon's vision; it ignores concealment from snowfall.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 29,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+1 status to all saves vs. magic",
-    "hp": {
-      "value": 215,
-      "max": 215,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "cold",
-      "paralyzed",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "fire",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Dragon Chill",
-        "actions": null,
-        "traits": [
-          "arcane",
-          "aura",
-          "cold"
-        ],
-        "description": "<p>5 feet. <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage (DC 27 basic Reflex save)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Freezing Blood",
-        "actions": -1,
-        "traits": [
-          "arcane",
-          "cold"
-        ],
-        "description": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to the dragon.</p>\n<hr />\n<p><strong>Effect</strong> The dragon's blood sprays on the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage. A creature that takes cold damage in this way is Slowed 1 for 1 round.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Frightful Presence",
-        "actions": null,
-        "traits": [
-          "aura",
-          "emotion",
-          "fear",
-          "mental"
-        ],
-        "description": "<p>90 feet. DC 27 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nclimb 30 ft,\nfly 120 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 23,
-        "traits": [
-          "cold",
-          "magical",
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+13",
-            "type": "piercing"
-          },
-          {
-            "roll": "2d6",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+13)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(2d6)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 23,
-        "traits": [
-          "agile",
-          "magical",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+13",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+13)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 22,
-        "traits": [
-          "magical",
-          "reach-15"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+11",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+11)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Breath Weapon",
-        "actions": 2,
-        "traits": [
-          "arcane",
-          "cold"
-        ],
-        "description": "<p>The dragon breathes a cloud of frost that deals <span class=\"roll\" onclick=\"roll(this)\">11d6</span> cold damage in a 40 foot cone (DC 29 basic Reflex save).</p>\n<p>It can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Draconic Frenzy",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The dragon makes two claw Strikes and one tail Strike in any order</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Draconic Momentum",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When the dragon scores a critical hit with a Strike, it recharges its Breath Weapon</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Ground Slam",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within 10 feet must succeed at a DC 29 Reflex save or fall Prone and take <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage.</p>\n<p>The dragon can then Step.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Ice Climb",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A white dragon can climb on ice as though it had the listed climb Speed. It ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shape Ice",
-        "actions": 2,
-        "traits": [
-          "arcane",
-          "water"
-        ],
-        "description": "<p>The dragon reshapes a cube of ice or snow it touches, up to 10 feet across. Any creature standing atop the ice must succeed at a DC 15 Reflex save or DC 15 Acrobatics check.</p>\n<p>On a failure, the creature falls Prone atop the ice; on a critical failure, it falls off the ice entirely and is also prone.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Arcane Innate Spells",
-        "type": "innate",
-        "bonus": 19,
-        "dc": 27,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 5,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "B7rzf0nBJmzg8x0y",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Gust of Wind (At Will)",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "air",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "until the start of your next turn",
-            "range": "",
-            "area": "60 ft line",
-            "targets": "",
-            "save": "fortitude",
-            "description": "<p>A violent wind issues forth from your palm, blowing from the point where you are when you cast the spell to the line's opposite end. The wind extinguishes small non-magical fires, disperses fog and mist, blows objects of light Bulk or less around, and pushes larger objects. Large or smaller creatures in the area must attempt a Fortitude save. Large or smaller creatures that later move into the gust must attempt the save on entering.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature can't move against the wind.</p>\n<p><strong>Failure</strong> The creature is knocked Prone. If it was flying, it suffers the effects of critical failure instead.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 30 feet in the wind's direction, knocked Prone, and takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ui2iVt9gJcMIs6H5"
-          }
-        ],
-        "lv2spells": [
-          {
-            "name": "Obscuring Mist (At Will)",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "20 ft burst",
-            "targets": "",
-            "save": "",
-            "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ac9hRct9QTDrzhy1"
-          }
-        ],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The most feral and least intelligent of all the chromatic dragons, white dragons are brutish, predatory, and chiefly motivated by self-preservation. Nearly all other dragons look down on white dragons as hopelessly hotheaded and dull, though this does not make them any less dangerous-in fact, it may mean the opposite. It's nearly impossible to treat with white dragons, not because they lack the capacity to do so, but because they just don't care to. They are as difficult to deal with as they are quick to anger, and they become incensed at almost anything. When a white dragon does speak, it spews threats, inane jokes, and incoherent babbling as a prelude to attacking-and when the attack comes, it's bloody and relentless.</p>\n<p>Thankfully, white dragons prefer very cold, remote locations that are far from people. Dwelling on glacial mountaintops or in ice caverns beneath forbidding tundra, they treat the lands around them as their own personal hunting grounds. They fly out to feed or terrorize other creatures, especially those who trespass near the dragon's territory, then bring any treasure back to be displayed in icy niches in their lairs. They collect all kinds of valuables, with a slight preference for items with high utility-such as tools, trade goods, and fine food-over coins or jewels. The ability to shape ice lets white dragons rearrange their lairs exactly to their specifications, and they take great pride in how they've decorated their homes over the years.</p>\n<hr />\n<p>While there are many types of dragons, from the powerful planar dragons to the strange esoteric dragons, few dragon varieties are as well-known and as rightly feared as the chromatic dragons. Differentiated by the hue of their scales, each color of dragon unleashes its own flavor of murderous cruelty-be it by claw, tooth, or breath-and unlike most creatures, dragons only become more powerful as they age. Their lust for treasure, food, bloodshed, and control are legendary. Physically powerful with egos to match, these dragons are often morally depraved and act as criminal masterminds, vicious tyrants, or voracious raiders.</p>",
-    "recallKnowledge": "Arcana, DC: 27",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana, DC 27"
 }

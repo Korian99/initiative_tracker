@@ -9,21 +9,23 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Medium",
     "Animal",
     "Aquatic"
   ],
   "source": "Pathfinder Bestiary",
+  "senses": [
+    "Darkvision",
+    "Scent 100ft imprecise",
+    "blood scent"
+  ],
   "perception": {
     "value": 10,
-    "note": "darkvisionscent 100 ft imprecise",
+    "note": "Darkvision, Scent 100ft imprecise, blood scent",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 100 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -115,11 +117,11 @@
       "name": "Aquatic Opportunity (Special)",
       "actions": -1,
       "traits": [],
-      "description": "<p>As Attack of Opportunity, but both the bunyip and the triggering creature must be in water.</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
+      "description": "<p>As Attack of Opportunity, but both the bunyip and the triggering creature must be in water.</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
       "collapsed": false
     }
   ],
-  "speed": "10 ft,\nswim 40 ft,\n",
+  "speed": "10 ft, swim 40ft",
   "strikes": [
     {
       "type": "melee",
@@ -175,7 +177,7 @@
   "offensiveAbilities": [
     {
       "name": "Blood Frenzy",
-      "actions": null,
+      "actions": 0,
       "traits": [],
       "description": "<p><strong>Requirements</strong> The bunyip is not Fatigued or already in a frenzy.</p>\n<p><strong>Trigger</strong> The bunyip deals bleed damage to a living creature.</p><hr /><p><strong>Effect</strong> The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a -2 penalty to AC.</p>",
       "collapsed": false
@@ -191,7 +193,7 @@
         "mental",
         "primal"
       ],
-      "description": "<p>The bunyip lets out a loud and horrifying roar. Other creatures within 100 feet must succeed at a DC 21 Will save or become Frightened 2 (Frightened 3 on a critical failure,Frightened 1 on a success, or unaffected on a critical success).</p>\n<p>No matter the result, the creature is temporarily immune to the effect for 1 minute.</p>",
+      "description": "<p>The bunyip lets out a loud and horrifying roar. Other creatures within 100 feet must succeed at a DC 21 Will Saving Throw save or become Frightened 2 (Frightened 3 on a critical failure,Frightened 1 on a success, or unaffected on a critical success).</p>\n<p>No matter the result, the creature is temporarily immune to the effect for 1 minute.</p>",
       "collapsed": false
     },
     {
@@ -201,223 +203,10 @@
         "morph",
         "primal"
       ],
-      "description": "<p>A bunyip can alter its form slightly to gain an advantage and make it harder to recognize. When it does, its teeth shrink and its Jaws Strike doesn't deal the <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent bleed damage. It can choose to gain either a long snake tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile legs, increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip can return to normal or switch between a long tail or crocodile legs.</p>",
+      "description": "<p>A bunyip can alter its form slightly to gain an advantage and make it harder to recognize. When it does, its teeth shrink and its Jaws Strike doesn't deal the 1d6 persistent bleed damage. It can choose to gain either a long snake tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile legs, increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip can return to normal or switch between a long tail or crocodile legs.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Bunyips are dangerous aquatic predators that resemble a cross between a shark and a seal. Found in freshwater inlets or saltwater coves worldwide, bunyips hunt where prey is plentiful, often to the consternation of coastal residents and fisherfolk.</p>\n<p>Despite their outlandish appearance and tendency to defend their territory with loud, bellowing roars that echo for great distances, bunyips are very rarely sighted by humanoids, leaving many to question their existence. For hundreds of years, bunyips were widely regarded as nothing more than folk tales, and even now that their existence as a species has been proven, the existence of any particular bunyip in a local area is often met with heavy skepticism. While their limited shapechanging abilities are no doubt a significant part of the reason for this air of mystery, another major factor is that the aquatic creatures rarely hunt humanoids, preferring to eat smaller animals. Most bunyips avoid human contact, except when one wanders too close to their den or favorite hunting spot, at which point the territorial bunyip attacks with swift and terrible ferocity. Many scholars agree that a large number of unexplained disappearances near coastal areas are the result of unreported bunyip aggression.</p>\n<p>In some ports, bunyips have learned that delicious prizes can be had from the chum and garbage discarded by fishing boats and merchant vessels. They lurk close to the shore and carefully choose their victims, plucking them off docks and small boats. These bunyips are particularly careful to keep their true forms hidden, but this does little to dull rumors of monster-infested waters.</p>",
-  "recallKnowledge": "Nature, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Bunyip",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Medium",
-      "Animal",
-      "Aquatic"
-    ],
-    "source": "Pathfinder Bestiary",
-    "perception": {
-      "value": 10,
-      "note": "darkvisionscent 100 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 100 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Blood Scent",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The bunyip can smell blood in the water from up to 1 mile away.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 45,
-      "max": 45,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Aquatic Opportunity (Special)",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>As Attack of Opportunity, but both the bunyip and the triggering creature must be in water.</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "10 ft,\nswim 40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 11,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 11,
-        "traits": [
-          "agile"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Blood Frenzy",
-        "actions": null,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The bunyip is not Fatigued or already in a frenzy.</p>\n<p><strong>Trigger</strong> The bunyip deals bleed damage to a living creature.</p><hr /><p><strong>Effect</strong> The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a -2 penalty to AC.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Roar",
-        "actions": 1,
-        "traits": [
-          "auditory",
-          "concentrate",
-          "emotion",
-          "fear",
-          "mental",
-          "primal"
-        ],
-        "description": "<p>The bunyip lets out a loud and horrifying roar. Other creatures within 100 feet must succeed at a DC 21 Will save or become Frightened 2 (Frightened 3 on a critical failure,Frightened 1 on a success, or unaffected on a critical success).</p>\n<p>No matter the result, the creature is temporarily immune to the effect for 1 minute.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shift Form",
-        "actions": 1,
-        "traits": [
-          "morph",
-          "primal"
-        ],
-        "description": "<p>A bunyip can alter its form slightly to gain an advantage and make it harder to recognize. When it does, its teeth shrink and its Jaws Strike doesn't deal the <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent bleed damage. It can choose to gain either a long snake tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile legs, increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip can return to normal or switch between a long tail or crocodile legs.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Bunyips are dangerous aquatic predators that resemble a cross between a shark and a seal. Found in freshwater inlets or saltwater coves worldwide, bunyips hunt where prey is plentiful, often to the consternation of coastal residents and fisherfolk.</p>\n<p>Despite their outlandish appearance and tendency to defend their territory with loud, bellowing roars that echo for great distances, bunyips are very rarely sighted by humanoids, leaving many to question their existence. For hundreds of years, bunyips were widely regarded as nothing more than folk tales, and even now that their existence as a species has been proven, the existence of any particular bunyip in a local area is often met with heavy skepticism. While their limited shapechanging abilities are no doubt a significant part of the reason for this air of mystery, another major factor is that the aquatic creatures rarely hunt humanoids, preferring to eat smaller animals. Most bunyips avoid human contact, except when one wanders too close to their den or favorite hunting spot, at which point the territorial bunyip attacks with swift and terrible ferocity. Many scholars agree that a large number of unexplained disappearances near coastal areas are the result of unreported bunyip aggression.</p>\n<p>In some ports, bunyips have learned that delicious prizes can be had from the chum and garbage discarded by fishing boats and merchant vessels. They lurk close to the shore and carefully choose their victims, plucking them off docks and small boats. These bunyips are particularly careful to keep their true forms hidden, but this does little to dull rumors of monster-infested waters.</p>",
-    "recallKnowledge": "Nature, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 18"
 }

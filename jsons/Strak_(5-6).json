@@ -17,15 +17,15 @@
     "Orc"
   ],
   "source": "Pathfinder Society Scenario #2-10: In Burning Dawn",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 11,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Orcish"
@@ -84,9 +84,8 @@
       "quantity": 1,
       "description": "<p>This single-bladed bearded axe has a jagged blade that's perfect for separating bone from tendon and cartilage.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
-        "uncommon",
         "forceful",
         "orc",
         "sweep"
@@ -95,9 +94,9 @@
     {
       "name": "Alchemist's Fire (Moderate) [Infused]",
       "quantity": 9,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>",
       "level": 3,
-      "price": "10 gp ",
+      "price": "10 gp",
       "traits": [
         "alchemical",
         "bomb",
@@ -110,9 +109,9 @@
     {
       "name": "Acid Flask (Moderate) [Infused]",
       "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>",
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 2d6 persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>",
       "level": 3,
-      "price": "10 gp ",
+      "price": "10 gp",
       "traits": [
         "acid",
         "alchemical",
@@ -127,7 +126,7 @@
       "quantity": 1,
       "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -143,37 +142,19 @@
       "quantity": 1,
       "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": []
-    },
-    {
-      "name": "Smokestick (Greater) [Infused]",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>With a sharp twist of this item, you instantly create a screen of thick, opaque smoke in a burst centered on one corner of your space. All creatures within that area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>\n<p>The radius of the burst is 20 feet.</p>",
-      "level": 7,
-      "price": "53 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "infused"
-      ]
-    },
-    {
-      "name": "Elixir of Life (Lesser) [Infused]",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">3d6+6</span> Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-      "level": 5,
-      "price": "30 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "healing",
-        "infused"
-      ]
     }
   ],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Infused Items",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Strak carries the following infused items, which last for 24 hours, or until the next time he makes his daily preparations: Elixir of Life (Lesser), Acid Flask (Moderate), Alchemist's Fire (Moderate) (9), and Smokestick (Greater).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 24,
     "note": "",
@@ -213,18 +194,18 @@
       "name": "Attack of Opportunity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Ferocity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -283,7 +264,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
@@ -324,7 +305,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -339,351 +320,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Society, DC: 22",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Strak (5-6)",
-    "type": "Creature",
-    "level": 6,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Humanoid",
-      "Orc"
-    ],
-    "source": "Pathfinder Society Scenario #2-10: In Burning Dawn",
-    "perception": {
-      "value": 11,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Orcish"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Orc Necksplitter",
-        "quantity": 1,
-        "description": "<p>This single-bladed bearded axe has a jagged blade that's perfect for separating bone from tendon and cartilage.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "uncommon",
-          "forceful",
-          "orc",
-          "sweep"
-        ]
-      },
-      {
-        "name": "Alchemist's Fire (Moderate) [Infused]",
-        "quantity": 9,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>",
-        "level": 3,
-        "price": "10 gp ",
-        "traits": [
-          "alchemical",
-          "bomb",
-          "consumable",
-          "fire",
-          "infused",
-          "splash"
-        ]
-      },
-      {
-        "name": "Acid Flask (Moderate) [Infused]",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>",
-        "level": 3,
-        "price": "10 gp ",
-        "traits": [
-          "acid",
-          "alchemical",
-          "bomb",
-          "consumable",
-          "infused",
-          "splash"
-        ]
-      },
-      {
-        "name": "Alchemist's Tools",
-        "quantity": 1,
-        "description": "<p>This mobile collection of vials and chemicals can be used for simple alchemical tasks.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Flint and Steel",
-        "quantity": 1,
-        "description": "<p>Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time-consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer.</p>",
-        "level": 0,
-        "price": "5 cp",
-        "traits": []
-      },
-      {
-        "name": "Formula Book",
-        "quantity": 1,
-        "description": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": []
-      },
-      {
-        "name": "Smokestick (Greater) [Infused]",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>With a sharp twist of this item, you instantly create a screen of thick, opaque smoke in a burst centered on one corner of your space. All creatures within that area are concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>\n<p>The radius of the burst is 20 feet.</p>",
-        "level": 7,
-        "price": "53 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "infused"
-        ]
-      },
-      {
-        "name": "Elixir of Life (Lesser) [Infused]",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>Elixirs of life accelerate a living creatures natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">3d6+6</span> Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-        "level": 5,
-        "price": "30 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "healing",
-          "infused"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 24,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 92,
-      "max": 92,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Ferocity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its Wounded value increases by 1. When it is Wounded 3, it can no longer use this ability</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Orc Necksplitter",
-        "bonus": 16,
-        "traits": [
-          "forceful",
-          "orc",
-          "sweep"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+10",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+10)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Moderate Acid Flask",
-        "bonus": 15,
-        "traits": [
-          "range-increment-30",
-          "splash"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4",
-            "type": "acid"
-          },
-          {
-            "roll": "2d6",
-            "type": "persistent acid"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4)*2",
-            "type": "acid"
-          },
-          {
-            "roll": "(2d6)*2",
-            "type": "persistent acid"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Moderate Alchemist's Fire",
-        "bonus": 15,
-        "traits": [
-          "range-increment-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8",
-            "type": "fire"
-          },
-          {
-            "roll": "2d6",
-            "type": "persistent fire"
-          },
-          {
-            "roll": "4",
-            "type": "splash fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8)*2",
-            "type": "fire"
-          },
-          {
-            "roll": "(2d6)*2",
-            "type": "persistent fire"
-          },
-          {
-            "roll": "(4)*2",
-            "type": "splash fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Quick Bomber",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>Strak draws an alchemical bomb with an Interact action and throws it as a ranged Strike.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Society, DC: 22",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 22"
 }

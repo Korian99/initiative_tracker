@@ -9,19 +9,22 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Unique",
     "Large",
-    "Beast"
+    "Beast",
+    "Centaur",
+    "Humanoid"
   ],
-  "source": "Pathfinder #187: The Seventh Arch",
+  "source": "Pathfinder Adventure Path: Gatewalkers",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 9,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Elven",
@@ -86,9 +89,9 @@
     {
       "name": "Longsword",
       "quantity": 1,
-      "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
+      "description": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "versatile-p"
       ]
@@ -98,30 +101,38 @@
       "quantity": 3,
       "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
+        "monk",
         "thrown-20"
       ]
     },
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
+      "price": "8 gp",
       "traits": []
     },
     {
       "name": "Cloak of Gnawing Leaves",
       "quantity": 1,
-      "description": "<p>This cloak appears to be woven from a thousand living leaves, hungry for flesh and eager to defend the cloak's wearer.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/r.png\" title=\"reaction\" alt=\"reaction\"> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are damaged by a melee attack from an adjacent creature</p>\n<hr />\n<p><strong>Effect</strong> The leaves lash out at your attacker, rising up to reveal snapping jaws made of wicked thorns. The triggering creature must attempt a DC 17 Reflex save saving throw.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> piercing and 1 bleed.</p>",
+      "description": "<p>This cloak appears to be woven from a thousand living leaves, hungry for flesh and eager to defend the cloak's wearer.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are damaged by a melee attack from an adjacent creature</p>\n<hr />\n<p><strong>Effect</strong> The leaves lash out at your attacker, rising up to reveal snapping jaws made of wicked thorns. The triggering creature must attempt a @Check[reflex|dc:17] saving throw.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes @Damage[1d4[piercing]].</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[2d4[piercing]] and @Damage[1[bleed]].</p>",
       "level": 3,
-      "price": "60 gp ",
+      "price": "60 gp",
       "traits": [
-        "rare",
         "invested",
         "primal"
       ]
+    },
+    {
+      "name": "Horse Skull Helmet",
+      "quantity": 1,
+      "description": "",
+      "level": 0,
+      "price": "",
+      "traits": []
     }
   ],
   "generalAbilities": [],
@@ -164,11 +175,11 @@
       "name": "Shield Block",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "40 ft,\n",
+  "speed": "40 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -274,296 +285,10 @@
       "name": "Trample",
       "actions": 3,
       "traits": [],
-      "description": "<p>Medium or smaller, hoof, DC 18 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
+      "description": "<p>Medium or smaller, hoof, Basic DC 18 Reflex Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Centaurs are legendary hunters and trackers who resemble heavily muscled humans with the bodies of powerful horses from the waist down. They are typically reclusive but haughty, quick to assume that their handsome physiques and long history of cultural traditions make them superior to any two-legged folk they encounter. While stories of bloody clashes between centaurs and humanoid settlers are well known, centaurs are neither intrinsically bloodthirsty nor recklessly aggressive. Rather, they are proud and stubborn and do not take kindly to outsiders who encroach on their ancestral grounds, some of which have been ruled by centaurs for thousands of years. Against despoilers of nature who fail to heed their warnings, centaurs do not hesitate to use their finely honed hunting skills to inflict deadly wounds.</p>\n<p>Centaurs train with weapons as well as their heavy hooves, and the thunder of centaurs charging across the plains is often mistaken for a stampede or even an earthquake. Despite their insular nature, some centaurs form close alliances with elves, fey, gnomes, and isolated human communities. Such allies are often surprised to learn the depths of centaurs' honor, pragmatism, and wilderness lore. Rarely, a centaur leaves its tribe to travel the wider world. Such lone centaur wanderers more easily integrate into humanoid societies, but other centaurs are quick to assume that some dishonor led to their exile and thus give such vagabonds a wide berth.</p>\n<p>Centaurs have incredible variation in their individual size and coloration. Their upper bodies are fairly similar within a tribe and even region, but their lower bodies-like those of horses-can vary widely from parent to child. Most centaurs are at least 7 feet tall and weigh more than 2,000 pounds.</p>\n<p>Centaurs live in groups of dozens of members, usually led by an old, powerful seer or battle-hardened warrior who has carried out many noble deeds and earned a lifetime of respect from their comrades. The revered leader guides the habits of their entire group; a wise seer might encourage the tribe to roam far from civilization to preserve the ways of its ancestors, while an aggressive warrior might foster skirmishes with nearby humanoid settlements and even rival centaur groups.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Captain Salah",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Large",
-      "Beast"
-    ],
-    "source": "Pathfinder #187: The Seventh Arch",
-    "perception": {
-      "value": 9,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Elven",
-      "Fey"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Longsword",
-        "quantity": 1,
-        "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "versatile-p"
-        ]
-      },
-      {
-        "name": "Spear",
-        "quantity": 3,
-        "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half-plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      },
-      {
-        "name": "Cloak of Gnawing Leaves",
-        "quantity": 1,
-        "description": "<p>This cloak appears to be woven from a thousand living leaves, hungry for flesh and eager to defend the cloak's wearer.</p>\n<p><strong>Activate</strong> <img src=\"assets/images/actions/r.png\" title=\"reaction\" alt=\"reaction\"> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are damaged by a melee attack from an adjacent creature</p>\n<hr />\n<p><strong>Effect</strong> The leaves lash out at your attacker, rising up to reveal snapping jaws made of wicked thorns. The triggering creature must attempt a DC 17 Reflex save saving throw.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> piercing and 1 bleed.</p>",
-        "level": 3,
-        "price": "60 gp ",
-        "traits": [
-          "rare",
-          "invested",
-          "primal"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "note": "22 with shield raised",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 40,
-      "max": 40,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Shield Block",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Hoof",
-        "bonus": 9,
-        "traits": [
-          "agile"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Longsword",
-        "bonus": 11,
-        "traits": [
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Spear",
-        "bonus": 11,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Spear",
-        "bonus": 9,
-        "traits": [
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Trample",
-        "actions": 3,
-        "traits": [],
-        "description": "<p>Medium or smaller, hoof, DC 18 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Centaurs are legendary hunters and trackers who resemble heavily muscled humans with the bodies of powerful horses from the waist down. They are typically reclusive but haughty, quick to assume that their handsome physiques and long history of cultural traditions make them superior to any two-legged folk they encounter. While stories of bloody clashes between centaurs and humanoid settlers are well known, centaurs are neither intrinsically bloodthirsty nor recklessly aggressive. Rather, they are proud and stubborn and do not take kindly to outsiders who encroach on their ancestral grounds, some of which have been ruled by centaurs for thousands of years. Against despoilers of nature who fail to heed their warnings, centaurs do not hesitate to use their finely honed hunting skills to inflict deadly wounds.</p>\n<p>Centaurs train with weapons as well as their heavy hooves, and the thunder of centaurs charging across the plains is often mistaken for a stampede or even an earthquake. Despite their insular nature, some centaurs form close alliances with elves, fey, gnomes, and isolated human communities. Such allies are often surprised to learn the depths of centaurs' honor, pragmatism, and wilderness lore. Rarely, a centaur leaves its tribe to travel the wider world. Such lone centaur wanderers more easily integrate into humanoid societies, but other centaurs are quick to assume that some dishonor led to their exile and thus give such vagabonds a wide berth.</p>\n<p>Centaurs have incredible variation in their individual size and coloration. Their upper bodies are fairly similar within a tribe and even region, but their lower bodies-like those of horses-can vary widely from parent to child. Most centaurs are at least 7 feet tall and weigh more than 2,000 pounds.</p>\n<p>Centaurs live in groups of dozens of members, usually led by an old, powerful seer or battle-hardened warrior who has carried out many noble deeds and earned a lifetime of respect from their comrades. The revered leader guides the habits of their entire group; a wise seer might encourage the tribe to roam far from civilization to preserve the ways of its ancestors, while an aggressive warrior might foster skirmishes with nearby humanoid settlements and even rival centaur groups.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature or Society, DC 18"
 }

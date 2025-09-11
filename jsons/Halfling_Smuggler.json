@@ -9,18 +9,21 @@
   "type": "Creature",
   "level": 6,
   "traits": [
+    "Common",
     "Small",
     "Halfling",
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [
+    "keen eyes"
+  ],
   "perception": {
     "value": 13,
-    "note": "",
+    "note": "keen eyes",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common",
     "Halfling"
@@ -107,9 +110,8 @@
       "quantity": 1,
       "description": "<p>This halfling weapon looks like a long, two-pronged fork and is used as both a weapon and a cooking implement.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
-        "uncommon",
         "agile",
         "backstabber",
         "deadly-d6",
@@ -133,7 +135,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
@@ -141,7 +143,7 @@
       "quantity": 1,
       "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit. You can draw and replace a worn disguise kit as part of the action that uses it.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
@@ -149,53 +151,16 @@
       "quantity": 1,
       "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
       "name": "Thieves' Toolkit",
       "quantity": 1,
-      "description": "<p>You need a thieves' toolkit to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with Replacement Picks appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>",
+      "description": "<p>You need a thieves' toolkit to @UUID[Compendium.pf2e.actionspf2e.Item.Pick a Lock]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.Disable a Device]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Thieves' Toolkit (Replacement Picks)]{Replacement Picks} appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
-    },
-    {
-      "name": "Arsenic",
-      "quantity": 1,
-      "description": "<p>This toxin is a compound of arsenic and other substances. You can't reduce your sickened condition while affected.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude save</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 minutes</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Sickened 1 (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Sickened 2 (1 minute)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> poison damage and Sickened 3 (1 minute)</p>",
-      "level": 1,
-      "price": "3 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "ingested",
-        "poison"
-      ]
-    },
-    {
-      "name": "Elixir of Life (Lesser)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p><hr /><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">3d6+6</span> healing Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-      "level": 5,
-      "price": "30 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "healing"
-      ]
-    },
-    {
-      "name": "Smoke Ball (Lesser)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<hr />\n<p>Upon smashing this ball on the ground, you instantly create a screen of thick, opaque smoke in a 5 foot burst centered on one corner of your space. All creatures within that area are Concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>",
-      "level": 1,
-      "price": "3 gp ",
-      "traits": [
-        "alchemical",
-        "consumable"
-      ]
     }
   ],
   "generalAbilities": [
@@ -210,7 +175,7 @@
       "name": "Keen Eyes",
       "actions": null,
       "traits": [],
-      "description": "<p>The halfling gains a +2 circumstance bonus when using the Seek action to find Hidden or Undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is Concealed or hidden from them, reduce the DC of the flat check to DC 3 Flat check for a concealed target or DC 9 Flat check for a hidden one.</p>",
+      "description": "<p>The halfling gains a +2 circumstance bonus when using the Seek action to find Hidden or Undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is Concealed or hidden from them, reduce the DC of the flat check to DC 3 Flat  for a concealed target or DC 9 Flat  for a hidden one.</p>",
       "collapsed": false
     }
   ],
@@ -249,7 +214,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -270,7 +235,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d4+9)*2+1d6",
+          "roll": "(1d4+9)*2",
           "type": "piercing"
         }
       ],
@@ -299,7 +264,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d4+9)*2+1d6",
+          "roll": "(1d4+9)*2",
           "type": "piercing"
         }
       ],
@@ -375,7 +340,7 @@
     },
     {
       "name": "Hidden Pockets",
-      "actions": null,
+      "actions": 0,
       "traits": [],
       "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The smuggler Interacts to draw an item of light Bulk concealed in one of their hidden pockets. The pockets can store up to four objects of light Bulk. For most smugglers, these items are Arsenic, an Elixir of Life (Lesser), a Smoke Ball (Lesser), and a Thieves' Toolkit. The smuggler can refill the pockets over the course of 1 minute.</p>",
       "collapsed": false
@@ -384,406 +349,10 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The smuggler deals an extra <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The smuggler deals an extra 2d6 precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Halfling smugglers are sought out for their ability to deftly navigate the shadowy underworld to move illicit goods and information.</p><hr /><p>Halflings thrive on simple pleasures—having a pint at the pub or warming their feet by the hearth.</p>",
-  "recallKnowledge": "Society, DC: 22",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Halfling Smuggler",
-    "type": "Creature",
-    "level": 6,
-    "traits": [
-      "Small",
-      "Halfling",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common",
-      "Halfling"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "Underworld Lore",
-        "modifier": 14,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Filcher's Fork",
-        "quantity": 1,
-        "description": "<p>This halfling weapon looks like a long, two-pronged fork and is used as both a weapon and a cooking implement.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "uncommon",
-          "agile",
-          "backstabber",
-          "deadly-d6",
-          "finesse",
-          "halfling",
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Sling",
-        "quantity": 1,
-        "description": "<p>Little more than a leather cup attached to a pair of straps, a sling can be used to fling smooth stones or sling bullets at a range.</p>",
-        "level": 0,
-        "price": "",
-        "traits": [
-          "propulsive"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Disguise Kit",
-        "quantity": 1,
-        "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit. You can draw and replace a worn disguise kit as part of the action that uses it.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Clothing (Fine)",
-        "quantity": 1,
-        "description": "<p>Fine clothing, suitable for a noble or royal, is made with expensive fabrics, precious metals, and intricate patterns.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Thieves' Toolkit",
-        "quantity": 1,
-        "description": "<p>You need a thieves' toolkit to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' toolkit is broken, you can repair it by replacing the lock picks with Replacement Picks appropriate to your toolkit; this doesn't require using the Repair action. If you wear your thieves' toolkit, you can draw and replace it as part of the action that uses it.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Arsenic",
-        "quantity": 1,
-        "description": "<p>This toxin is a compound of arsenic and other substances. You can't reduce your sickened condition while affected.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude save</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 minutes</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Sickened 1 (1 minute)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Sickened 2 (1 minute)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d8</span> poison damage and Sickened 3 (1 minute)</p>",
-        "level": 1,
-        "price": "3 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "ingested",
-          "poison"
-        ]
-      },
-      {
-        "name": "Elixir of Life (Lesser)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p><hr /><p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain <span class=\"roll\" onclick=\"roll(this)\">3d6+6</span> healing Hit Points and gain +1 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n",
-        "level": 5,
-        "price": "30 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "healing"
-        ]
-      },
-      {
-        "name": "Smoke Ball (Lesser)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<hr />\n<p>Upon smashing this ball on the ground, you instantly create a screen of thick, opaque smoke in a 5 foot burst centered on one corner of your space. All creatures within that area are Concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.</p>",
-        "level": 1,
-        "price": "3 gp ",
-        "traits": [
-          "alchemical",
-          "consumable"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Grease Some Palms",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A smuggler is adept at navigating official channels and makes network contacts in order to keep their goods moving. They gain a +2 circumstance bonus to Make an Impression and Request with members of the local bureaucracy.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Keen Eyes",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The halfling gains a +2 circumstance bonus when using the Seek action to find Hidden or Undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is Concealed or hidden from them, reduce the DC of the flat check to DC 3 Flat check for a concealed target or DC 9 Flat check for a hidden one.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 23,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 95,
-      "max": 95,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Filcher's Fork",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "backstabber",
-          "deadly-d6",
-          "finesse",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+9",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+9)*2+1d6",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Filcher's Fork",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "backstabber",
-          "deadly-d6",
-          "magical",
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+9",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+9)*2+1d6",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 16,
-        "traits": [
-          "agile",
-          "finesse",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+9",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+9)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Sling",
-        "bonus": 16,
-        "traits": [
-          "propulsive",
-          "range-increment-50",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+7",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+7)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Distracting Escape",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> Smugglers succeed by making a move only after they've diverted others' attention. The smuggler Creates a Diversion. If the smuggler became Hidden to at least one creature, the smuggler can then Sneak.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Hidden Pockets",
-        "actions": null,
-        "traits": [],
-        "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The smuggler Interacts to draw an item of light Bulk concealed in one of their hidden pockets. The pockets can store up to four objects of light Bulk. For most smugglers, these items are Arsenic, an Elixir of Life (Lesser), a Smoke Ball (Lesser), and a Thieves' Toolkit. The smuggler can refill the pockets over the course of 1 minute.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The smuggler deals an extra <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Halfling smugglers are sought out for their ability to deftly navigate the shadowy underworld to move illicit goods and information.</p><hr /><p>Halflings thrive on simple pleasures—having a pint at the pub or warming their feet by the hearth.</p>",
-    "recallKnowledge": "Society, DC: 22",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 22"
 }

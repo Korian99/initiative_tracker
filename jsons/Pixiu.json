@@ -11,19 +11,19 @@
   "traits": [
     "Uncommon",
     "Large",
-    "Dragon",
-    "(caster)"
+    "Dragon"
   ],
   "source": "Pathfinder Lost Omens Tian Xia World Guide",
+  "senses": [
+    "Darkvision",
+    "goldsense (precise) 120 feet"
+  ],
   "perception": {
     "value": 18,
-    "note": "darkvision",
+    "note": "Darkvision, goldsense (precise) 120 feet",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "Darkvision"
-  ],
   "languages": [
     "Draconic"
   ],
@@ -137,7 +137,7 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\nfly 40 ft,\n",
+  "speed": "30 ft, fly 40ft",
   "strikes": [
     {
       "type": "melee",
@@ -168,7 +168,7 @@
         }
       ],
       "effects": [
-        "Devour-wealth"
+        "devour-wealth"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -216,14 +216,14 @@
       "name": "Devour Wealth",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The pixiu's previous action was a successful jaws Strike</p>\n<hr />\n<p><strong>Effect</strong> The pixiu swallows up to <span class=\"roll\" onclick=\"roll(this)\">2d12</span> gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.</p>",
+      "description": "<p><strong>Requirements</strong> The pixiu's previous action was a successful jaws Strike</p>\n<hr />\n<p><strong>Effect</strong> The pixiu swallows up to [[/r 2d12]] gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.</p>",
       "collapsed": false
     },
     {
       "name": "Trample",
       "actions": 3,
       "traits": [],
-      "description": "<p>Medium or smaller, claw, DC 26 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
+      "description": "<p>Medium or smaller, claw, Basic DC 26 Reflex Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details></p>",
       "collapsed": false
     }
   ],
@@ -239,11 +239,6 @@
       },
       "autoHeightenLevel": 4,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "9nrwHdfCfO84ZdAM",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -252,9 +247,12 @@
           "name": "Cleanse Affliction",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "healing"
+            "healing",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -274,9 +272,12 @@
           "name": "Cleanse Affliction",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "healing"
+            "healing",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -296,9 +297,12 @@
           "name": "Cleanse Affliction",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 4,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "healing"
+            "healing",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -321,6 +325,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -363,375 +368,5 @@
       }
     }
   ],
-  "description": "<p>To witness a pixiu (pee-shee-oh) is a blessing indeed—and a sight to behold. This winged, dragon-headed lion has a formidable appearance that belies its youthful exuberance. Legend claims it was this overenthusiastic playfulness that caused the first of their kind to be banished from heaven, cursed to gather wealth and never let it go. Whatever the case, each pixiu has an uncanny ability to sniff out gold, which it loves to eat. Curiously, a pixiu's touch is also able to sunder curses and censure malign spirits, perhaps a remnant of its lost divinity.</p>\n<p>Due to its celestial background and ability to exorcise curses, a pixiu is also believed to be a bringer and protector of prosperity, attracting good fortune and fending off evil spirits. Its heavenly origins and love of wealth may be the reason why imperial dragons have cared for them since time immemorial, valuing them as guardians and loyal companions. In particular, underworld dragons employ pixius to expand their hoards, and many sovereign dragons value them as status symbols. In dragon-ruled realms across Tian Xia, the presence of a pixiu within a community is seen as a sign of its draconic patron's approval and goodwill.</p>\n<p>Despite the protection of imperial dragons, the lure of wealth is still enough to drive some to attack a pixiu. Although a pixiu will rarely forgive an attacker, it prefers to withdraw peacefully from those it judges as purehearted but desperate. A pixiu's draconic masters, however, aren't always as forgiving.</p>",
-  "recallKnowledge": "Arcana, DC: 26",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 18,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Pixiu",
-    "type": "Creature",
-    "level": 8,
-    "traits": [
-      "Uncommon",
-      "Large",
-      "Dragon",
-      "(caster)"
-    ],
-    "source": "Pathfinder Lost Omens Tian Xia World Guide",
-    "perception": {
-      "value": 18,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "Darkvision"
-    ],
-    "languages": [
-      "Draconic"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 6
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Goldsense (Precise) 120 feet",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The pixiu can detect the presence, location, and approximate value of gold within 120 feet.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 26,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 165,
-      "max": 165,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "doubleVs": [],
-        "exceptions": [],
-        "type": "void",
-        "value": 10
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Good Fortune",
-        "actions": -1,
-        "traits": [
-          "fortune"
-        ],
-        "description": "<p><strong>Trigger</strong> The pixiu, or an ally within 30 feet, is about to attempt a saving throw but hasn't rolled yet</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> That creature rolls the triggering saving throw twice and takes the better result.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Stored Wealth",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Pixius can eat gold and gems with no adverse effects. A pixiu's belly can hold any number of gold pieces, usually around 100. Whenever it takes slashing or piercing damage, a number of gold pieces equal to the damage falls from its belly to the ground in its square.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nfly 40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 20,
-        "traits": [
-          "magical",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4",
-            "type": "spirit"
-          },
-          {
-            "roll": "2d10+5",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4)*2",
-            "type": "spirit"
-          },
-          {
-            "roll": "(2d10+5)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Devour-wealth"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 20,
-        "traits": [
-          "agile",
-          "magical",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4",
-            "type": "spirit"
-          },
-          {
-            "roll": "2d6+5",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4)*2",
-            "type": "spirit"
-          },
-          {
-            "roll": "(2d6+5)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Devour Wealth",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The pixiu's previous action was a successful jaws Strike</p>\n<hr />\n<p><strong>Effect</strong> The pixiu swallows up to <span class=\"roll\" onclick=\"roll(this)\">2d12</span> gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Trample",
-        "actions": 3,
-        "traits": [],
-        "description": "<p>Medium or smaller, claw, DC 26 basic Reflex save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. The monster can attempt to Trample the same creature only once in a single use of Trample. The monster deals the damage of the listed Strike, but trampled creatures can attempt a basic Reflex save at the listed DC (no damage on a critical success, half damage on a success, double damage on a critical failure).</p></p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 18,
-        "dc": 26,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "9nrwHdfCfO84ZdAM",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Cleanse Affliction",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "healing"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 willing creature",
-            "save": "",
-            "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "shptZ5ZphDp6mh5i"
-          },
-          {
-            "name": "Cleanse Affliction",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "healing"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 willing creature",
-            "save": "",
-            "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "shptZ5ZphDp6mh5i"
-          },
-          {
-            "name": "Cleanse Affliction",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "healing"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 willing creature",
-            "save": "",
-            "description": "<p>Gentle restorative magic pushes back the effects of toxins and more complex maladies. Choose an affliction on the target, such as a curse, disease, or poison. If it has advanced past stage one, reduce the stage by one. This reduction can be applied only once to a given case of an affliction, with the case ending when it's completely cured. Although the reduction can't occur again, heightened versions of this spell attempt to counteract with each casting.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> Attempt to counteract the affliction if it is a disease or poison.</p>\n<p><strong>Heightened (4th)</strong> Attempt to counteract the affliction if it is a curse, disease, or poison.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "shptZ5ZphDp6mh5i"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>To witness a pixiu (pee-shee-oh) is a blessing indeed—and a sight to behold. This winged, dragon-headed lion has a formidable appearance that belies its youthful exuberance. Legend claims it was this overenthusiastic playfulness that caused the first of their kind to be banished from heaven, cursed to gather wealth and never let it go. Whatever the case, each pixiu has an uncanny ability to sniff out gold, which it loves to eat. Curiously, a pixiu's touch is also able to sunder curses and censure malign spirits, perhaps a remnant of its lost divinity.</p>\n<p>Due to its celestial background and ability to exorcise curses, a pixiu is also believed to be a bringer and protector of prosperity, attracting good fortune and fending off evil spirits. Its heavenly origins and love of wealth may be the reason why imperial dragons have cared for them since time immemorial, valuing them as guardians and loyal companions. In particular, underworld dragons employ pixius to expand their hoards, and many sovereign dragons value them as status symbols. In dragon-ruled realms across Tian Xia, the presence of a pixiu within a community is seen as a sign of its draconic patron's approval and goodwill.</p>\n<p>Despite the protection of imperial dragons, the lure of wealth is still enough to drive some to attack a pixiu. Although a pixiu will rarely forgive an attacker, it prefers to withdraw peacefully from those it judges as purehearted but desperate. A pixiu's draconic masters, however, aren't always as forgiving.</p>",
-    "recallKnowledge": "Arcana, DC: 26",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana, DC 24"
 }

@@ -9,26 +9,27 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Animal"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 6,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
       "name": "acrobatics",
       "modifier": 6,
       "note": [
-        "to Escape <span class=\"roll\" onclick=\"roll(this)\">8</span>"
+        "to Escape 8"
       ],
       "usedAttribute": "dexterity",
       "modifications": []
@@ -103,7 +104,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "30 ft,\nclimb 30 ft,\n",
+  "speed": "30 ft, climb 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -120,7 +121,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d8+4)*2+1d10",
+          "roll": "(1d8+4)*2",
           "type": "piercing"
         }
       ],
@@ -140,10 +141,10 @@
       "damageRolls": [],
       "critRolls": [],
       "effects": [
-        "Entangling-slime"
+        "entangling-slime"
       ],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -165,177 +166,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>The slurk is a sticky, tusked frog-beast found in underground lairs and caves. It has two massive tusks that it uses to gore prey and tangle with rival slurks. With the slurk's natural ability to climb walls and cling effortlessly to ceilings, it can be easy for unwary cave explorers to end up on the wrong end of these formidable ivory tusks.</p>\n<p>Slurks exude two very different types of foul-smelling secretions from their pale white skin. Large pustules on the slurk's back drip a sticky resin-like slime that quickly hardens upon exposure to air. By flexing its skin, the slurk can burst these pustules in the direction of intruders, covering its foes in sticky goo and severely limiting their ability to withstand the monster's other attacks, including the effects of its other secretion. Glands along the slurk's ventral side excrete an incredibly slippery and fetid grease, which protects the slurk from the immobilizing effects of its own back slime but also has the added benefit of making it extremely difficult to grapple and capture. The best way to discover if a slurk is in the vicinity is to look for hard clumps of such grease, which accumulate and dry in cave corners and amid rock piles where slurks rest between meals.</p>\n<p>Slurks are thought to be descendants of a failed dwarven attempt to domesticate and breed large subterranean frogs as food and labor animals. Despite this apparent failure, others who live underground often befriend slurks. The sticky frog-beasts have proven extremely desirable to kobolds (page 210), who now domesticate and train slurks as powerful mounts and guardians. While other creatures, particularly boggards, sometimes train slurks to serve as guardians, kobolds remain those who use these creatures the most. A kobold mounted on a slurk will often hide in the upper ledges of a cave, using the advantages of height and surprise to harry foes with ranged attacks. Kobold riders also take advantage of the slurk's ability to climb, and charge at their enemies from the walls of a cavern.</p>",
-  "recallKnowledge": "Nature, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Slurk",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Animal"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 6,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 6,
-        "note": [
-          "to Escape <span class=\"roll\" onclick=\"roll(this)\">8</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+12 to fortitude saves vs. Grapple, Reposition, or Shove",
-    "hp": {
-      "value": 35,
-      "max": 35,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\nclimb 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Tusks",
-        "bonus": 11,
-        "traits": [
-          "deadly-d10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Slime Squirt",
-        "bonus": 9,
-        "traits": [
-          "range-increment-30"
-        ],
-        "damageRolls": [],
-        "critRolls": [],
-        "effects": [
-          "Entangling-slime"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Belly Grease",
-        "actions": 3,
-        "traits": [],
-        "description": "<p>The slurk extrudes a slippery grease from its ventral glands to coat the floor under it and in a 5-foot emanation, turning the affected area into uneven ground for 10 minutes, after which it dries to a putrid crust. The DC to Balance across the slime is 18.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Entangling Slime",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A creature struck by a slurk's slime squirt becomes Clumsy 1 and takes a –5-foot penalty to Speed for 1 hour or until the slime is removed.</p>\n<p>The slime can be removed with a total of three Interact actions by the entangled creature or creatures adjacent to the creature. These actions don't need to be consecutive or made by the same creature.</p>\n<p>Effect: Entangling Slime</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>The slurk is a sticky, tusked frog-beast found in underground lairs and caves. It has two massive tusks that it uses to gore prey and tangle with rival slurks. With the slurk's natural ability to climb walls and cling effortlessly to ceilings, it can be easy for unwary cave explorers to end up on the wrong end of these formidable ivory tusks.</p>\n<p>Slurks exude two very different types of foul-smelling secretions from their pale white skin. Large pustules on the slurk's back drip a sticky resin-like slime that quickly hardens upon exposure to air. By flexing its skin, the slurk can burst these pustules in the direction of intruders, covering its foes in sticky goo and severely limiting their ability to withstand the monster's other attacks, including the effects of its other secretion. Glands along the slurk's ventral side excrete an incredibly slippery and fetid grease, which protects the slurk from the immobilizing effects of its own back slime but also has the added benefit of making it extremely difficult to grapple and capture. The best way to discover if a slurk is in the vicinity is to look for hard clumps of such grease, which accumulate and dry in cave corners and amid rock piles where slurks rest between meals.</p>\n<p>Slurks are thought to be descendants of a failed dwarven attempt to domesticate and breed large subterranean frogs as food and labor animals. Despite this apparent failure, others who live underground often befriend slurks. The sticky frog-beasts have proven extremely desirable to kobolds (page 210), who now domesticate and train slurks as powerful mounts and guardians. While other creatures, particularly boggards, sometimes train slurks to serve as guardians, kobolds remain those who use these creatures the most. A kobold mounted on a slurk will often hide in the upper ledges of a cave, using the advantages of height and surprise to harry foes with ranged attacks. Kobold riders also take advantage of the slurk's ability to climb, and charge at their enemies from the walls of a cavern.</p>",
-    "recallKnowledge": "Nature, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 16"
 }

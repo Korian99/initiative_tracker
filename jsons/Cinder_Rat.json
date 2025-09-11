@@ -9,20 +9,22 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Small",
     "Elemental",
     "Fire"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
   "perception": {
     "value": 9,
-    "note": "darkvision",
+    "note": "Darkvision, smoke vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -134,11 +136,11 @@
         "aura",
         "fire"
       ],
-      "description": "<p>5 feet.</p>\n<p>A creature that enters the aura or begins its turn there must succeed at a DC 22 Fortitude save or become Sickened 1.</p>\n<p>Everything within the aura, including the cinder rat, is Concealed by smoke.</p>",
+      "description": "<p>5 feet.</p>\n<p>A creature that enters the aura or begins its turn there must succeed at a DC 22 Fortitude Saving Throw save or become Sickened 1.</p>\n<p>Everything within the aura, including the cinder rat, is Concealed by smoke.</p>",
       "collapsed": false
     }
   ],
-  "speed": "40 ft,\n",
+  "speed": "40 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -177,189 +179,5 @@
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "description": "<p>These oversized rodents are made of smoldering charcoal and elemental fire, and noxious fumes continually bellow from their flaming flesh. Even other fire elementals find cinder rats unpleasant and are glad when they're summoned away from the Plane of Fire.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire. Although most fire elementals revel in the chance to experience new kinds of fires away from their home plane, even the most considerate fire elemental can be a danger to humanoids and their property.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Cinder Rat",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Small",
-      "Elemental",
-      "Fire"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 9,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Smoke Vision",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The cinder rat ignores the Concealed condition from smoke.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 45,
-      "max": 45,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed",
-      "fire",
-      "paralyzed",
-      "poison",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "cold",
-        "value": 5
-      },
-      {
-        "exceptions": [],
-        "type": "water",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Fetid Fumes",
-        "actions": null,
-        "traits": [
-          "aura",
-          "fire"
-        ],
-        "description": "<p>5 feet.</p>\n<p>A creature that enters the aura or begins its turn there must succeed at a DC 22 Fortitude save or become Sickened 1.</p>\n<p>Everything within the aura, including the cinder rat, is Concealed by smoke.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 10,
-        "traits": [
-          "finesse",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "fire"
-          },
-          {
-            "roll": "1d4",
-            "type": "persistent fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "fire"
-          },
-          {
-            "roll": "(1d4)*2",
-            "type": "persistent fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [],
-    "description": "<p>These oversized rodents are made of smoldering charcoal and elemental fire, and noxious fumes continually bellow from their flaming flesh. Even other fire elementals find cinder rats unpleasant and are glad when they're summoned away from the Plane of Fire.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire. Although most fire elementals revel in the chance to experience new kinds of fires away from their home plane, even the most considerate fire elemental can be a danger to humanoids and their property.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 18"
 }

@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Medium",
     "Construct",
     "Mindless"
   ],
   "source": "Pathfinder Adventure: Crown of the Kobold King",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 11,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -59,6 +60,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 8
+    }
+  },
   "fortitude": {
     "value": 13,
     "note": "",
@@ -81,7 +87,7 @@
   "hp": {
     "value": 56,
     "max": 56,
-    "note": "<b>Hardness</b> 8 <b>BT</b> 28. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
@@ -94,6 +100,13 @@
   ],
   "defensiveAbilities": [
     {
+      "name": "Construct Armor (Hardness 8)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated armor has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an animated armor is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 18.</p>",
+      "collapsed": false
+    },
+    {
       "name": "Haunted",
       "actions": null,
       "traits": [],
@@ -101,7 +114,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -146,7 +159,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -159,181 +172,10 @@
       "name": "Disabling Strike",
       "actions": 1,
       "traits": [],
-      "description": "<p>The dismemberment table attempts a blade Strike on a single target that it has Grabbed or Restrained. If this Strike hits, the blade cuts deep into one of the target's limbs. The target must attempt a DC 22 Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature suffers no additional effect.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bleed damage.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bleed damage and is Clumsy 1. This clumsy condition ends once the creature is restored to full Hit Points.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2.</p>",
+      "description": "<p>The dismemberment table attempts a blade Strike on a single target that it has Grabbed or Restrained. If this Strike hits, the blade cuts deep into one of the target's limbs. The target must attempt a DC 22 Fortitude Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature suffers no additional effect.</p>\n<p><strong>Success</strong> The creature takes 1d6 Bleed Damage damage.</p>\n<p><strong>Failure</strong> The creature takes 2d6 Bleed Damage damage and is Clumsy 1. This clumsy condition ends once the creature is restored to full Hit Points.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Crafting, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Dismemberment Table",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Medium",
-      "Construct",
-      "Mindless"
-    ],
-    "source": "Pathfinder Adventure: Crown of the Kobold King",
-    "perception": {
-      "value": 11,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "note": "18 when broken",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 56,
-      "max": 56,
-      "note": "<b>Hardness</b> 8 <b>BT</b> 28. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "vitality",
-        "value": 8
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Haunted",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The dismemberment table is powered by unquiet spirits, and it takes damage from vitality energy as if it were undead. Vitality energy bypasses the table's hardness.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Blade",
-        "bonus": 14,
-        "traits": [
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+7",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+7)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Strap",
-        "bonus": 14,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "2d4+7",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+7)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Disabling Strike",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The dismemberment table attempts a blade Strike on a single target that it has Grabbed or Restrained. If this Strike hits, the blade cuts deep into one of the target's limbs. The target must attempt a DC 22 Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature suffers no additional effect.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bleed damage.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bleed damage and is Clumsy 1. This clumsy condition ends once the creature is restored to full Hit Points.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Crafting, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 20"
 }

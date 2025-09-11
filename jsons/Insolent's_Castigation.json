@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Insolent's Castigation",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 9,
   "traits": [
-    "Hazard",
-    "Simple",
     "Rare",
     "Medium",
     "Mechanical",
@@ -18,39 +17,54 @@
   "source": "Pathfinder Society Scenario #3-14: The Tomb Between Worlds",
   "stealth": {
     "value": 20,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>Pressure plates trigger hidden mauls in the walls of the pits that swing up to slam creatures and knock them off the span.</p>",
-  "disable": "<p>DC 30 Society check (expert) to locate the hidden deactivation switch or DC 33 Thievery check (expert) to jam the mechanics on the span.</p>",
+  "disable": "<p>DC 30 Society  (expert) to locate the hidden deactivation switch or DC 33 Thievery  (expert) to jam the mechanics on the span.</p>",
   "reset": "<p>The trap resets over the course of the round and is ready to swing again 1 round later. It can be manually reset if Disabled.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Castigate the Disrespectful",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature moves onto the span.</p>\n<hr />\n<p><strong>Effect</strong> The mauls swing up, making an attack against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 28,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 17
   },
   "fortitude": {
     "value": 21,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 15,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 68,
     "max": 68,
-    "note": "<b>Hardness</b> 17 <b>BT</b> 34. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -80,120 +94,13 @@
         }
       ],
       "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
   ],
-  "offensiveAbilities": [
-    {
-      "name": "Castigate the Disrespectful",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature moves onto the span.</p>\n<hr />\n<p><strong>Effect</strong> The mauls swing up, making an attack against the triggering creature.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Insolent's Castigation",
-    "type": "hazard",
-    "level": 9,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Rare",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Scenario #3-14: The Tomb Between Worlds",
-    "stealth": {
-      "value": 20,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>Pressure plates trigger hidden mauls in the walls of the pits that swing up to slam creatures and knock them off the span.</p>",
-    "disable": "<p>DC 30 Society check (expert) to locate the hidden deactivation switch or DC 33 Thievery check (expert) to jam the mechanics on the span.</p>",
-    "reset": "<p>The trap resets over the course of the round and is ready to swing again 1 round later. It can be manually reset if Disabled.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 28,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 21,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 68,
-      "max": 68,
-      "note": "<b>Hardness</b> 17 <b>BT</b> 34. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Mauls",
-        "bonus": 25,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "4d10+26",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d10+26)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Castigate the Disrespectful",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature moves onto the span.</p>\n<hr />\n<p><strong>Effect</strong> The mauls swing up, making an attack against the triggering creature.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 31"
-  },
-  "recallKnowledge": ", DC: 31"
+  "recallKnowledge": ", DC 26"
 }

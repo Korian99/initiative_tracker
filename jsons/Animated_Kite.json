@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 0,
   "traits": [
+    "Common",
     "Small",
     "Construct",
     "Mindless"
   ],
   "source": "Pathfinder Lost Omens Tian Xia World Guide",
-  "perception": {
-    "value": 6,
-    "note": "darkvision",
-    "usedAttribute": "wisdom",
-    "modifications": []
-  },
   "senses": [
     "Darkvision"
   ],
+  "perception": {
+    "value": 6,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
   "languages": [],
   "skills": [
     {
@@ -59,6 +60,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 1
+    }
+  },
   "fortitude": {
     "value": 4,
     "note": "",
@@ -81,14 +87,22 @@
   "hp": {
     "value": 10,
     "max": 10,
-    "note": "<b>Hardness</b> 1 <b>BT</b> 5. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "0 ft,\nfly 30 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 1)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated kite has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an animated kite is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 13.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -131,153 +145,10 @@
       "name": "Sawing Line",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The animated kite has its line attached to an ally</p>\n<hr />\n<p><strong>Effect</strong> Each creature along the line between the kite and its ally takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> slashing damage (DC 16 basic Reflex save).</p>",
+      "description": "<p><strong>Requirements</strong> The animated kite has its line attached to an ally</p>\n<hr />\n<p><strong>Effect</strong> Each creature along the line between the kite and its ally takes 1d6 Slashing Damage damage (Basic DC 16 Reflex Saving Throw save).</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>An animated kite is perfect for spying, allowing observation from a great distance, although many are treated more like pets. The kite itself is a simple handcraft, easily created and destroyed, made of enchanted paper stretched over a fine bamboo frame. More advanced kites can be decorated with a variety of runes that allow the enchanter to see or hear from a distance.</p>",
-  "recallKnowledge": "Arcana, Crafting, DC: 14",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Animated Kite",
-    "type": "Creature",
-    "level": 0,
-    "traits": [
-      "Small",
-      "Construct",
-      "Mindless"
-    ],
-    "source": "Pathfinder Lost Omens Tian Xia World Guide",
-    "perception": {
-      "value": 6,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "Darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 0
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 15,
-      "note": "13 when broken; construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 10,
-      "max": 10,
-      "note": "<b>Hardness</b> 1 <b>BT</b> 5. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "0 ft,\nfly 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Frame",
-        "bonus": 7,
-        "traits": [
-          "finesse",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Attach Line",
-        "actions": 1,
-        "traits": [
-          "manipulate"
-        ],
-        "description": "<p>The animated kite gives its line to an adjacent ally with a free hand. The kite remains attached until the creature releases it or the kite flies more than 60 feet away. A creature between them can also sever the line with a successful Strike against AC 13 that deals any amount of slashing damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sawing Line",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The animated kite has its line attached to an ally</p>\n<hr />\n<p><strong>Effect</strong> Each creature along the line between the kite and its ally takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> slashing damage (DC 16 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>An animated kite is perfect for spying, allowing observation from a great distance, although many are treated more like pets. The kite itself is a simple handcraft, easily created and destroyed, made of enchanted paper stretched over a fine bamboo frame. More advanced kites can be decorated with a variety of runes that allow the enchanter to see or hear from a distance.</p>",
-    "recallKnowledge": "Arcana, Crafting, DC: 14",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 14"
 }

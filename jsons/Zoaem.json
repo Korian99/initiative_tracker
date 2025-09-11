@@ -9,22 +9,22 @@
   "type": "Creature",
   "level": 1,
   "traits": [
+    "Common",
     "Small",
     "Archon",
     "Celestial",
-    "Holy",
-    "(caster)"
+    "Holy"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 6,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Diabolic",
     "Draconic",
@@ -125,6 +125,13 @@
   ],
   "defensiveAbilities": [
     {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
       "name": "Archon's Protection",
       "actions": -1,
       "traits": [],
@@ -132,7 +139,7 @@
       "collapsed": false
     }
   ],
-  "speed": "0 ft,\nfly 40 ft,\n",
+  "speed": "0 ft, fly 40ft",
   "strikes": [
     {
       "type": "ranged",
@@ -159,7 +166,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -174,7 +181,7 @@
         "incapacitation",
         "visual"
       ],
-      "description": "<p><strong>Frequency</strong> once per hour;</p>\n<hr />\n<p><strong>Effect</strong> The zoaem's rings and wings move in a complex pattern, mesmerizing creatures in the zoaem's choice of a 10 foot emanation or a 5 foot burst within 60 feet. Each creature must succeed at a DC 17 Will save or be Fascinated with the zoaem for 1 minute and Stunned 1 (or stunned for 1 round on a critical failure).</p>",
+      "description": "<p><strong>Frequency</strong> once per hour;</p>\n<hr />\n<p><strong>Effect</strong> The zoaem's rings and wings move in a complex pattern, mesmerizing creatures in the zoaem's choice of a 10ft Emanation or a 5ft Burst within 60 feet. Each creature must succeed at a DC 17 Will Saving Throw save or be Fascinated with the zoaem for 1 minute and Stunned 1 (or stunned for 1 round on a critical failure).</p>",
       "collapsed": false
     },
     {
@@ -185,7 +192,7 @@
         "divine",
         "light"
       ],
-      "description": "<p>The zoaem shines an intense light of truth, as Revealing Light (DC 17 Reflex save) but in a 60 foot line. Against creatures affected by this light, the zoaem and their allies gain a +1 status bonus to damage rolls and Recall Knowledge checks. The zoaem can't use Light of Truth again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p>Effect: Light of Truth</p>",
+      "description": "<p>The zoaem shines an intense light of truth, as Revealing Light (DC 17 Reflex Saving Throw save) but in a 60ft Line. Against creatures affected by this light, the zoaem and their allies gain a +1 status bonus to damage rolls and Recall Knowledge checks. The zoaem can't use Light of Truth again for 1d4 rounds.</p>\n<hr />\n<p>Effect: Light of Truth</p>",
       "collapsed": false
     }
   ],
@@ -199,12 +206,14 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 1,
+      "autoHeightenLevel": 4,
       "cantrips": [
         {
           "name": "Light",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "light",
@@ -216,7 +225,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -225,27 +234,25 @@
           "id": "B1OobqcaTS7Yz5Hl"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "LuEtjZU04QhnXDDV",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Heal",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "healing",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -261,10 +268,12 @@
           "name": "Read Omens",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "prediction"
           ],
           "castingTime": "10 minutes",
           "duration": "",
@@ -287,6 +296,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -329,341 +339,5 @@
       }
     }
   ],
-  "description": "<p>These endlessly curious archons are formed from spinning wheels of golden light given corporeal shape. They serve as lookouts and mobile support troops for the archon legions, at times uniting to form powerful warriors of light called gestalts. Larger collectives of zoaems can even temporarily fuse into greater archons, approaching the power of the first zoaem, which broke itself apart to serve Heaven more efficiently.</p>\n<hr />\n<p>Archons are guardians of Heaven and enemies of corruption. Before gods and their servants set foot in the celestial planes, archons already resided in Heaven, the original inhabitants of the realm. Upon meeting, the archons and divine angels quickly discovered they were of a kind, holding justice and righteousness in their hearts. An alliance was formed, and archons now serve as stalwart allies to all celestials and mortals they find worthy.</p>\n<p>While the first archons coalesced from the immense seven-tiered mountain of Heaven, they choose willing and worthy Heaven-bound souls to join their ranks. These mortals hear and answer the call of a mysterious voice, manifesting in the Garden at the mountain's peak. There they swear to forever serve the cause of justice and transform into their new archon forms.</p>\n<p>Though deeply concerned with defending mortal life and willing to sacrifice themselves in battle against fiends, archons often feel rote and inscrutable to others, and their forms can border on frightening and bizarre. For this reason, they often have issues with interacting with mortals, or with the free spirited azatas. Despite this, archons draw great strength from others, especially those who exemplify virtue.</p>\n<p>Beyond their celestial allies, archons also maintain ancient ties with aeons. The inscrutable factions can still be seen working together to defend longforgotten secrets and enforce rules that predate mortal life. Archons explain these missions as necessary without further elaboration, leaving even their angelic allies frustrated with archons' obstinance.</p>",
-  "recallKnowledge": "Religion, DC: 15",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Zoaem",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Small",
-      "Archon",
-      "Celestial",
-      "Holy",
-      "(caster)"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 6,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Diabolic",
-      "Draconic",
-      "Empyrean",
-      "Utopian"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": -5
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 16,
-      "note": "all-around vision",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 20,
-      "max": 20,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "fear-effects"
-    ],
-    "resistances": [
-      {
-        "doubleVs": [],
-        "exceptions": [],
-        "type": "fire",
-        "value": 3
-      }
-    ],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "unholy",
-        "value": 3
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Archon's Protection",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An enemy damages the archon's ally and both are within 15 feet of the archon</p>\n<hr />\n<p><strong>Effect</strong> The ally gains resistance 3 to all damage against the triggering damage and the archon can make a Strike against the enemy.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "0 ft,\nfly 40 ft,\n",
-    "strikes": [
-      {
-        "type": "ranged",
-        "name": "Eye Ray",
-        "bonus": 8,
-        "traits": [
-          "agile",
-          "fire",
-          "holy",
-          "magical",
-          "range-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8",
-            "type": "fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8)*2",
-            "type": "fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Behold!",
-        "actions": 2,
-        "traits": [
-          "concentrate",
-          "illusion",
-          "incapacitation",
-          "visual"
-        ],
-        "description": "<p><strong>Frequency</strong> once per hour;</p>\n<hr />\n<p><strong>Effect</strong> The zoaem's rings and wings move in a complex pattern, mesmerizing creatures in the zoaem's choice of a 10 foot emanation or a 5 foot burst within 60 feet. Each creature must succeed at a DC 17 Will save or be Fascinated with the zoaem for 1 minute and Stunned 1 (or stunned for 1 round on a critical failure).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Light of Truth",
-        "actions": 1,
-        "traits": [
-          "concentrate",
-          "divine",
-          "light"
-        ],
-        "description": "<p>The zoaem shines an intense light of truth, as Revealing Light (DC 17 Reflex save) but in a 60 foot line. Against creatures affected by this light, the zoaem and their allies gain a +1 status bonus to damage rolls and Recall Knowledge checks. The zoaem can't use Light of Truth again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p>Effect: Light of Truth</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 9,
-        "dc": 17,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Light",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "light",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until your next daily preparations",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "B1OobqcaTS7Yz5Hl"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "LuEtjZU04QhnXDDV",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "TtDi7Ie2iM7WuXrb"
-          }
-        ],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Read Omens",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "uncommon",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "10 minutes",
-            "duration": "",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You peek into the future. Choose a particular goal or activity you plan to engage in within 1 week, or an event you expect might happen within 1 week. You learn a cryptic clue or piece of advice that could help with the chosen event, often in the form of a rhyme or omen.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "5gS4mGLJi1nW1Cq3"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>These endlessly curious archons are formed from spinning wheels of golden light given corporeal shape. They serve as lookouts and mobile support troops for the archon legions, at times uniting to form powerful warriors of light called gestalts. Larger collectives of zoaems can even temporarily fuse into greater archons, approaching the power of the first zoaem, which broke itself apart to serve Heaven more efficiently.</p>\n<hr />\n<p>Archons are guardians of Heaven and enemies of corruption. Before gods and their servants set foot in the celestial planes, archons already resided in Heaven, the original inhabitants of the realm. Upon meeting, the archons and divine angels quickly discovered they were of a kind, holding justice and righteousness in their hearts. An alliance was formed, and archons now serve as stalwart allies to all celestials and mortals they find worthy.</p>\n<p>While the first archons coalesced from the immense seven-tiered mountain of Heaven, they choose willing and worthy Heaven-bound souls to join their ranks. These mortals hear and answer the call of a mysterious voice, manifesting in the Garden at the mountain's peak. There they swear to forever serve the cause of justice and transform into their new archon forms.</p>\n<p>Though deeply concerned with defending mortal life and willing to sacrifice themselves in battle against fiends, archons often feel rote and inscrutable to others, and their forms can border on frightening and bizarre. For this reason, they often have issues with interacting with mortals, or with the free spirited azatas. Despite this, archons draw great strength from others, especially those who exemplify virtue.</p>\n<p>Beyond their celestial allies, archons also maintain ancient ties with aeons. The inscrutable factions can still be seen working together to defend longforgotten secrets and enforce rules that predate mortal life. Archons explain these missions as necessary without further elaboration, leaving even their angelic allies frustrated with archons' obstinance.</p>",
-    "recallKnowledge": "Religion, DC: 15",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 15"
 }

@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Electrified Entrance",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 7,
   "traits": [
-    "Hazard",
-    "Simple",
     "Uncommon",
     "Large",
     "Magical",
@@ -18,36 +17,54 @@
   "source": "Pathfinder Claws of the Tyrant",
   "stealth": {
     "value": 14,
-    "note": "(trained) to spot the runes etched into the door's frame",
-    "modifications": []
+    "note": "(trained) to spot the runes etched into the door's frame"
   },
   "description": "<p>Magical runes electrocute anyone who crosses the door's threshold.</p>",
-  "disable": "<p>DC 26 Acrobatics check (trained) to jump through the door before the runes trigger, DC 28 Thievery check (expert) to scratch out the runes, or Dispel Magic (4th rank; counteract DC 24) to counteract the runes</p>",
+  "disable": "<p>DC 26 Acrobatics  (trained) to jump through the door before the runes trigger, DC 28 Thievery  (expert) to scratch out the runes, or Dispel Magic (4th rank; counteract DC 24) to counteract the runes</p>",
   "reset": "<p>1 minute</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Sizzle",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>A creature moves through the doorway</p><hr /><p><strong>Effect</strong> Arcs of lightning flash across the threshold. The triggering creature takes (4d8+18) Electricity Damage damage (Basic DC 23 Reflex Saving Throw save). On a failure, the creature is also Dazzled for 1 minute. On a critical failure, the creature is Blinded for 1 minute and then dazzled for an additional minute.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 22,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 14
   },
   "fortitude": {
     "value": 18,
+    "note": null,
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 12,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 58,
     "max": 58,
-    "note": "<b>Hardness</b> 14 <b>BT</b> 29. BT 26",
+    "note": "BT 26",
     "modifications": []
   },
   "immunities": [
@@ -59,91 +76,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Sizzle",
-      "actions": -1,
-      "traits": [],
-      "description": "<p>A creature moves through the doorway</p><hr /><p><strong>Effect</strong> Arcs of lightning flash across the threshold. The triggering creature takes <span class=\"roll\" onclick=\"roll(this)\">4d8+18</span> electricity damage (DC 23 basic Reflex save). On a failure, the creature is also Dazzled for 1 minute. On a critical failure, the creature is Blinded for 1 minute and then dazzled for an additional minute.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 14,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Electrified Entrance",
-    "type": "hazard",
-    "level": 7,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Uncommon",
-      "Large",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Claws of the Tyrant",
-    "stealth": {
-      "value": 14,
-      "note": "(trained) to spot the runes etched into the door's frame",
-      "modifications": []
-    },
-    "description": "<p>Magical runes electrocute anyone who crosses the door's threshold.</p>",
-    "disable": "<p>DC 26 Acrobatics check (trained) to jump through the door before the runes trigger, DC 28 Thievery check (expert) to scratch out the runes, or Dispel Magic (4th rank; counteract DC 24) to counteract the runes</p>",
-    "reset": "<p>1 minute</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 18,
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 58,
-      "max": 58,
-      "note": "<b>Hardness</b> 14 <b>BT</b> 29. BT 26",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Sizzle",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>A creature moves through the doorway</p><hr /><p><strong>Effect</strong> Arcs of lightning flash across the threshold. The triggering creature takes <span class=\"roll\" onclick=\"roll(this)\">4d8+18</span> electricity damage (DC 23 basic Reflex save). On a failure, the creature is also Dazzled for 1 minute. On a critical failure, the creature is Blinded for 1 minute and then dazzled for an additional minute.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 25"
-  },
-  "recallKnowledge": ", DC: 25"
+  "recallKnowledge": ", DC 23"
 }

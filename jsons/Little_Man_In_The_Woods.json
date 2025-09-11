@@ -17,19 +17,19 @@
     "Unholy"
   ],
   "source": "Pathfinder Book of the Dead",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 12,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril",
-    "One additional language"
+    "one additional language"
   ],
   "skills": [
     {
@@ -43,7 +43,7 @@
       "name": "athletics",
       "modifier": 14,
       "note": [
-        "to Grapple <span class=\"roll\" onclick=\"roll(this)\">16</span>"
+        "to Grapple 16"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -87,7 +87,7 @@
       "quantity": 1,
       "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": [
         "deadly-d10"
       ]
@@ -141,9 +141,16 @@
       "traits": [],
       "description": "<p>A little man in the woods can mimic the sounds of a person in distress by attempting a Deception check to Lie. The little man in the woods has a +4 circumstance bonus to this check.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -167,7 +174,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -191,13 +198,13 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d6+3)*2+1d10",
+          "roll": "(1d6+3)*2",
           "type": "piercing"
         }
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -218,240 +225,17 @@
       "name": "Strangle",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The little man in the woods has a creature Grabbed or Restrained</p>\n<hr />\n<p><strong>Effect</strong> The little man in the woods tightens his grip around the creature's neck, extending the Grab, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6+3</span> bludgeoning damage with a DC 24 basic Fortitude save, and strangling the creature for as long as it remains grabbed or restrained. A strangled creature can't speak, which prevents it from casting spells with a verbal component or activating items with a command component. The strangled creature must hold its breath or start suffocating.</p>",
+      "description": "<p><strong>Requirements</strong> The little man in the woods has a creature Grabbed or Restrained</p>\n<hr />\n<p><strong>Effect</strong> The little man in the woods tightens his grip around the creature's neck, extending the Grab, dealing (2d6+3) Bludgeoning Damage damage with a Basic DC 24 Fortitude Saving Throw, and strangling the creature for as long as it remains grabbed or restrained. A strangled creature can't speak, which prevents it from casting spells with a verbal component or activating items with a command component. The strangled creature must hold its breath or start suffocating.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>A murdered man left unburied in the wilds might return as a being called a \"little man in the woods,\" his decayed corpse shriveling until it shrinks to the size of a child. Denied the respect of a burial that would smooth his spirit's transition to the afterlife, he is unable to leave the mortal plane and enter the realm of the spirits. Forgotten, lost, and miserable, suffering from unbearable hunger and cold, the little man in the woods is desperate to return to his mortal home and be laid to rest properly.</p>\n<p>Despite his understandable motives, the little man in the woods has degenerated into a foul, twisted creature. He deceives travelers with plaintive cries then begs them to lead him to a home he barely recalls. He strangles all who can't or won't aid him, including those who lead him to the wrong home or otherwise delay his journey.</p>\n<p>The little man in the woods lays his victims' bodies out in the wilds, leaving the corpse unburied and exposed. He guards these rotting corpses over years as they shrivel and decay, until each one rises as another little man in the woods. Like any of the actions he has been compelled to perform, creating more of his kind brings the little man in the woods no pleasure.</p>",
-  "recallKnowledge": "Religion, DC: 27",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 12,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Little Man In The Woods",
-    "type": "Creature",
-    "level": 6,
-    "traits": [
-      "Rare",
-      "Small",
-      "Chaotic",
-      "Evil",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder Book of the Dead",
-    "perception": {
-      "value": 12,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril",
-      "One additional language"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 14,
-        "note": [
-          "to Grapple <span class=\"roll\" onclick=\"roll(this)\">16</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [
-      {
-        "name": "Shortbow",
-        "quantity": 1,
-        "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": [
-          "deadly-d10"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 24,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 95,
-      "max": 95,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Voice Imitation",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A little man in the woods can mimic the sounds of a person in distress by attempting a Deception check to Lie. The little man in the woods has a +4 circumstance bonus to this check.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 17,
-        "traits": [
-          "finesse",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+7",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+7)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Shortbow",
-        "bonus": 18,
-        "traits": [
-          "deadly-d10",
-          "magical",
-          "range-increment-60"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+3",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+3)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Adopt Guise",
-        "actions": 2,
-        "traits": [
-          "illusion",
-          "mental",
-          "occult"
-        ],
-        "description": "<p>Playing on the expectations of surrounding creatures, the little man in the woods adopts the guise of a Small or Medium living person that matches the voice he imitates. This guise is subjective and entirely in the mind of each creature around him.</p>\n<p>A creature that doesn't believe the little man in the woods' voice imitation sees the little man in the woods as he truly is and isn't fooled by Adopt Guise.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Strangle",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The little man in the woods has a creature Grabbed or Restrained</p>\n<hr />\n<p><strong>Effect</strong> The little man in the woods tightens his grip around the creature's neck, extending the Grab, dealing <span class=\"roll\" onclick=\"roll(this)\">2d6+3</span> bludgeoning damage with a DC 24 basic Fortitude save, and strangling the creature for as long as it remains grabbed or restrained. A strangled creature can't speak, which prevents it from casting spells with a verbal component or activating items with a command component. The strangled creature must hold its breath or start suffocating.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>A murdered man left unburied in the wilds might return as a being called a \"little man in the woods,\" his decayed corpse shriveling until it shrinks to the size of a child. Denied the respect of a burial that would smooth his spirit's transition to the afterlife, he is unable to leave the mortal plane and enter the realm of the spirits. Forgotten, lost, and miserable, suffering from unbearable hunger and cold, the little man in the woods is desperate to return to his mortal home and be laid to rest properly.</p>\n<p>Despite his understandable motives, the little man in the woods has degenerated into a foul, twisted creature. He deceives travelers with plaintive cries then begs them to lead him to a home he barely recalls. He strangles all who can't or won't aid him, including those who lead him to the wrong home or otherwise delay his journey.</p>\n<p>The little man in the woods lays his victims' bodies out in the wilds, leaving the corpse unburied and exposed. He guards these rotting corpses over years as they shrivel and decay, until each one rises as another little man in the woods. Like any of the actions he has been compelled to perform, creating more of his kind brings the little man in the woods no pleasure.</p>",
-    "recallKnowledge": "Religion, DC: 27",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 22"
 }

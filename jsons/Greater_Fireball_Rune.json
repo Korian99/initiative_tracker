@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Greater Fireball Rune",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 7,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Fire",
     "Magical",
@@ -18,32 +18,47 @@
   "source": "Pathfinder Society Scenario #4-09: Killer in the Golden Mask",
   "stealth": {
     "value": 17,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>An invisible rune creates an invisible, spherical magical sensor with a 20-foot radius.</p>",
-  "disable": "<p>DC 25 Thievery check (expert) to erase the rune without triggering the sensor, or Dispel Magic (4th rank; counteract DC 23) to counteract the rune</p>",
+  "disable": "<p>DC 25 Thievery  (expert) to erase the rune without triggering the sensor, or Dispel Magic (4th rank; counteract DC 23) to counteract the rune</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Fireball",
+      "actions": -1,
+      "traits": [
+        "arcane",
+        "fire"
+      ],
+      "description": "<p><strong>Trigger</strong> A living creature enters the sensor area</p>\n<hr />\n<p><strong>Effect</strong> The rune detonates a fireball centered on the triggering creature's square. This is a 4th-rank Fireball spell that deals 8d6 Fire Damage{8d6 fire damage} (Basic DC 25 Reflex Saving Throw).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -59,97 +74,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Fireball",
-      "actions": -1,
-      "traits": [
-        "arcane",
-        "fire"
-      ],
-      "description": "<p><strong>Trigger</strong> A living creature enters the sensor area</p>\n<hr />\n<p><strong>Effect</strong> The rune detonates a fireball centered on the triggering creature's square. This is a 4th-rank Fireball spell that deals <span class=\"roll\" onclick=\"roll(this)\">8d6</span> fire damage (DC 25 basic Reflex save).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 17,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Greater Fireball Rune",
-    "type": "hazard",
-    "level": 7,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Fire",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Scenario #4-09: Killer in the Golden Mask",
-    "stealth": {
-      "value": 17,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>An invisible rune creates an invisible, spherical magical sensor with a 20-foot radius.</p>",
-    "disable": "<p>DC 25 Thievery check (expert) to erase the rune without triggering the sensor, or Dispel Magic (4th rank; counteract DC 23) to counteract the rune</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Fireball",
-        "actions": -1,
-        "traits": [
-          "arcane",
-          "fire"
-        ],
-        "description": "<p><strong>Trigger</strong> A living creature enters the sensor area</p>\n<hr />\n<p><strong>Effect</strong> The rune detonates a fireball centered on the triggering creature's square. This is a 4th-rank Fireball spell that deals <span class=\"roll\" onclick=\"roll(this)\">8d6</span> fire damage (DC 25 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 23"
-  },
-  "recallKnowledge": ", DC: 23"
+  "recallKnowledge": ", DC 23"
 }

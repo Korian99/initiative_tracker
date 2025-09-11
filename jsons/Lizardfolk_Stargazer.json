@@ -9,19 +9,19 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Humanoid",
-    "Lizardfolk",
-    "(caster)"
+    "Lizardfolk"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [],
   "perception": {
     "value": 8,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Draconic",
     "Iruxi",
@@ -131,7 +131,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\nswim 20 ft,\n",
+  "speed": "25 ft, swim 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -235,6 +235,8 @@
           "name": "Guidance",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate"
           ],
@@ -244,7 +246,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
+          "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -256,6 +258,8 @@
           "name": "Ignition",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
@@ -268,7 +272,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the persistent fire damage on a critical hit increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>\n<p>Scaling Persistent Fire Damage</p>\n<p>Scaling Persistent Fire Damage (Melee)</p>",
+          "description": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing 2d4 fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and 1d4 persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the persistent fire damage on a critical hit increases by 1d4.</p>\n<p>(@item.rank)d4 Persistent,fire Damage{Scaling Persistent Fire Damage}</p>\n<p>(@item.rank)d6 Persistent,fire Damage{Scaling Persistent Fire Damage (Melee)}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -280,6 +284,8 @@
           "name": "Know the Way",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -303,6 +309,8 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "light",
@@ -314,7 +322,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -326,6 +334,8 @@
           "name": "Stabilize",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "healing",
@@ -347,43 +357,20 @@
           "id": "kqJAtzGjWZxRjwne"
         }
       ],
-      "rituals": [],
-      "spellLocations": [
-        {
-          "id": "pQ368xwz7IYUEQGf",
-          "rank": 1
-        },
-        {
-          "id": "OAKRWCfZx8XIrT0N",
-          "rank": 1
-        },
-        {
-          "id": "3n9D9aop6j6rCKxZ",
-          "rank": 1
-        },
-        {
-          "id": "I6YCbcdl7fJS3ydK",
-          "rank": 1
-        },
-        {
-          "id": "sq0krljsuyNEy6nc",
-          "rank": 1
-        }
-      ],
-      "usedAttribute": "wisdom",
-      "_id": "rlBRYOIKCiyQfcQ8",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Charm",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "incapacitation",
             "manipulate",
-            "mental"
+            "mental",
+            "subtle"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -403,17 +390,20 @@
           "name": "Heal",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "healing",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -425,9 +415,12 @@
           "name": "Pest Form",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "polymorph"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -435,7 +428,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You transform into the battle form of a Tiny animal, such as a cat, insect, lizard, or rat. You can decide the specific type of animal (such as a rat or praying mantis), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait and you can't make Strikes. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities:</p>\n<ul>\n<li>AC = 15 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>Speed 20 feet.</li>\n<li>Weakness 5 to physical damage. (If you take physical damage in this form, you take 5 additional damage.)</li>\n<li>Low-light vision and imprecise scent 30 feet.</li>\n<li>Acrobatics and Stealth modifiers of +10, unless your own modifier is higher; Athletics modifier -4.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> You can turn into a flying creature, such as a bird, which grants you a fly Speed of 20 feet.</p>\n",
+          "description": "<p>You transform into the battle form of a Tiny animal, such as a cat, insect, lizard, or rat. You can decide the specific type of animal (such as a rat or praying mantis), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait and you can't make Strikes. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities:</p>\n<ul>\n<li>AC = 15 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>Speed 20 feet.</li>\n<li>Weakness 5 to physical damage. (If you take physical damage in this form, you take 5 additional damage.)</li>\n<li>Low-light vision and imprecise scent 30 feet.</li>\n<li>Acrobatics and Stealth modifiers of +10, unless your own modifier is higher; Athletics modifier -4.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> You can turn into a flying creature, such as a bird, which grants you a fly Speed of 20 feet.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -447,8 +440,11 @@
           "name": "Runic Body",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -456,7 +452,7 @@
           "area": "",
           "targets": "1 willing creature",
           "save": "",
-          "description": "<p>Glowing runes appear on the target's body. All its unarmed attacks become <em>+1 striking</em> unarmed attacks, gaining a +1 item bonus to attack rolls and increasing the number of damage dice to two.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The unarmed attacks are <em>+2 greater striking</em>.</p>\n<p><strong>Heightened (9th)</strong> The unarmed attacks are <em>+3 major striking</em>.</p>\n",
+          "description": "<p>Glowing runes appear on the target's body. All its unarmed attacks become <em>+1 striking</em> unarmed attacks, gaining a +1 item bonus to attack rolls and increasing the number of damage dice to two.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The unarmed attacks are <em>+2 greater striking</em>.</p>\n<p><strong>Heightened (9th)</strong> The unarmed attacks are <em>+3 major striking</em>.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -468,12 +464,15 @@
           "name": "Summon Animal",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "summon"
           ],
           "castingTime": "3",
-          "duration": "1 minute",
+          "duration": "Sustained up to 1 minute",
           "range": "30 feet",
           "area": "",
           "targets": "",
@@ -487,7 +486,6 @@
           "id": "sq0krljsuyNEy6nc"
         }
       ],
-      "lv1slots": {},
       "lv2spells": [],
       "lv3spells": [],
       "lv4spells": [],
@@ -497,6 +495,11 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 5,
+        "max": 5
+      },
       "lv2slots": {
         "current": 0,
         "max": 0
@@ -535,547 +538,5 @@
       }
     }
   ],
-  "description": "<p>The tradition of astrology and looking to the stars for both navigation and prognostication is well-established in iruxi society, and their wise and observant stargazers are among the people's most respected members. Even the lowliest stargazer, as presented here, has a number of useful primal spells to aid their kin; in larger iruxi settlements, stargazers wield even greater powers.</p>\n<hr />\n<p>Capable and adaptable predators, the reptilian beings known as lizardfolk are heirs to truly ancient civilizations. Their oral traditions cover thousands of years, and they revere the bones of their ancestors. Fossilized lizardfolk are even built into the walls of lizardfolk's stone and glass cities, to allow these predecessors to watch over their kin. Lizardfolk likewise have longstanding traditions of religious worship and astrology, with eyes on the past, the future, and the stars whenever they make a large decision. Their long history has taught them to be patient in all things, though this has seen them losing ground to hastier peoples in modern times.</p>\n<p>Lizardfolk refer to themselves as \"iruxi,\" though they have taken their common moniker among other peoples in stride. Most of their settlements are entirely communal, with hatchlings raised by anyone with the time and temperament for such a role. Iruxis dwell and thrive in all tropical and temperate biomes, but they are most at home in swamplands, coastal regions, and river lands. They are talented swimmers, and many of their major cities are partially submerged to take advantage of this fact, causing them to often be overlooked by others. Fish and aquatic plants make up a large part of their preferred diets.</p>",
-  "recallKnowledge": "Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Lizardfolk Stargazer",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Humanoid",
-      "Lizardfolk",
-      "(caster)"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Draconic",
-      "Iruxi",
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "diplomacy",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Iruxi Lore",
-        "modifier": 6,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Staff",
-        "quantity": 1,
-        "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>",
-        "level": 0,
-        "price": "",
-        "traits": [
-          "monk",
-          "two-hand-d8"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 30,
-      "max": 30,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\nswim 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Staff",
-        "bonus": 8,
-        "traits": [
-          "two-hand-d8"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+2",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+2)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 8,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+2",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+2)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 8,
-        "traits": [
-          "agile",
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+2",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+2)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Deep Breath",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A lizardfolk stargazer can hold their breath for 20 minutes.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Primal Prepared Spells",
-        "type": "prepared",
-        "bonus": 10,
-        "dc": 18,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Guidance",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "1",
-            "duration": "until the start of your next turn",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You ask for the guidance of supernatural entities, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "HFpQANVgMMZsuOyh"
-          },
-          {
-            "name": "Ignition",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "fire",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing <span class=\"roll\" onclick=\"roll(this)\">2d4</span> fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the persistent fire damage on a critical hit increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>\n<p>Scaling Persistent Fire Damage</p>\n<p>Scaling Persistent Fire Damage (Melee)</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "zN9mtEXrVGYwoRVc"
-          },
-          {
-            "name": "Know the Way",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>In your mind's eye, you magically reorient yourself. You immediately know which direction is north (if it exists at your current location), and you can choose a location you were at within the last 24 hours and learn what direction it lies.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can choose a location you were at within the last week.</p>\n<p><strong>Heightened (7th)</strong> You can choose a location you were at regardless of how long ago you were there.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "9H2dOs2f8T2cuNk6"
-          },
-          {
-            "name": "Light",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "light",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until your next daily preparations",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create an orb of light that sheds bright light in a 20-foot radius (and dim light for the next 20 feet) in a color you choose. If you create the light in the same space as a willing creature, you can attach the light to the creature, causing it to float near that creature as it moves. You can Sustain the spell to move the light up to 60 feet; you can attach or detach it from a creature as part of this movement.</p>\n<p>You can Dismiss the spell. If you Cast the Spell while you already have four <em>light</em> spells active, you must choose one of the existing spells to end.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The orb sheds light in a 60-foot radius (and dim light for the next 60 feet).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "4wVYUWwVVqOz389w"
-          },
-          {
-            "name": "Stabilize",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "healing",
-              "manipulate",
-              "vitality"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 dying creature",
-            "save": "",
-            "description": "<p>Life energy shuts death's door. The target loses the Dying condition, though it remains Unconscious at 0 Hit Points.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "kqJAtzGjWZxRjwne"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [
-          {
-            "id": "pQ368xwz7IYUEQGf",
-            "rank": 1
-          },
-          {
-            "id": "OAKRWCfZx8XIrT0N",
-            "rank": 1
-          },
-          {
-            "id": "3n9D9aop6j6rCKxZ",
-            "rank": 1
-          },
-          {
-            "id": "I6YCbcdl7fJS3ydK",
-            "rank": 1
-          },
-          {
-            "id": "sq0krljsuyNEy6nc",
-            "rank": 1
-          }
-        ],
-        "usedAttribute": "wisdom",
-        "_id": "rlBRYOIKCiyQfcQ8",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Charm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "incapacitation",
-              "manipulate",
-              "mental"
-            ],
-            "castingTime": "2",
-            "duration": "1 hour",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes Friendly toward you. If it was Friendly, it becomes Helpful. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "pQ368xwz7IYUEQGf"
-          },
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "OAKRWCfZx8XIrT0N"
-          },
-          {
-            "name": "Pest Form",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You transform into the battle form of a Tiny animal, such as a cat, insect, lizard, or rat. You can decide the specific type of animal (such as a rat or praying mantis), but this has no effect on the form's Size or statistics. While in this form, you gain the animal trait and you can't make Strikes. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities:</p>\n<ul>\n<li>AC = 15 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>Speed 20 feet.</li>\n<li>Weakness 5 to physical damage. (If you take physical damage in this form, you take 5 additional damage.)</li>\n<li>Low-light vision and imprecise scent 30 feet.</li>\n<li>Acrobatics and Stealth modifiers of +10, unless your own modifier is higher; Athletics modifier -4.</li>\n</ul>\n<hr />\n<p><strong>Heightened (4th)</strong> You can turn into a flying creature, such as a bird, which grants you a fly Speed of 20 feet.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "I6YCbcdl7fJS3ydK"
-          },
-          {
-            "name": "Runic Body",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "touch",
-            "area": "",
-            "targets": "1 willing creature",
-            "save": "",
-            "description": "<p>Glowing runes appear on the target's body. All its unarmed attacks become <em>+1 striking</em> unarmed attacks, gaining a +1 item bonus to attack rolls and increasing the number of damage dice to two.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The unarmed attacks are <em>+2 greater striking</em>.</p>\n<p><strong>Heightened (9th)</strong> The unarmed attacks are <em>+3 major striking</em>.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "3n9D9aop6j6rCKxZ"
-          },
-          {
-            "name": "Summon Animal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You summon a creature that has the animal trait and whose level is –1 to fight for you.</p>\n<hr />\n<p><strong>Heightened</strong> As listed in the summon trait.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "sq0krljsuyNEy6nc"
-          }
-        ],
-        "lv1slots": {},
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The tradition of astrology and looking to the stars for both navigation and prognostication is well-established in iruxi society, and their wise and observant stargazers are among the people's most respected members. Even the lowliest stargazer, as presented here, has a number of useful primal spells to aid their kin; in larger iruxi settlements, stargazers wield even greater powers.</p>\n<hr />\n<p>Capable and adaptable predators, the reptilian beings known as lizardfolk are heirs to truly ancient civilizations. Their oral traditions cover thousands of years, and they revere the bones of their ancestors. Fossilized lizardfolk are even built into the walls of lizardfolk's stone and glass cities, to allow these predecessors to watch over their kin. Lizardfolk likewise have longstanding traditions of religious worship and astrology, with eyes on the past, the future, and the stars whenever they make a large decision. Their long history has taught them to be patient in all things, though this has seen them losing ground to hastier peoples in modern times.</p>\n<p>Lizardfolk refer to themselves as \"iruxi,\" though they have taken their common moniker among other peoples in stride. Most of their settlements are entirely communal, with hatchlings raised by anyone with the time and temperament for such a role. Iruxis dwell and thrive in all tropical and temperate biomes, but they are most at home in swamplands, coastal regions, and river lands. They are talented swimmers, and many of their major cities are partially submerged to take advantage of this fact, causing them to often be overlooked by others. Fish and aquatic plants make up a large part of their preferred diets.</p>",
-    "recallKnowledge": "Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 16"
 }

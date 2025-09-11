@@ -4,44 +4,56 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Unsafe Stairs",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 0,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental"
   ],
   "source": "Pathfinder Adventure: Crown of the Kobold King",
   "stealth": {
     "value": 6,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>The rickety stairs groan and strain alarmingly if a Small or larger creature ascends them.</p>",
-  "disable": "<p>DC 16 Crafting check to quickly jury-rig some supports to prevent the stairs from collapsing</p>",
+  "disable": "<p>DC 16 Crafting  to quickly jury-rig some supports to prevent the stairs from collapsing</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Collapse",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A Small or larger creature attempts to climb the stairs;</p>\n<p><strong>Effect</strong> The stairs attempt a Basic DC 8 Flat  (if a Small creature triggered the hazard) or a Basic DC 16 Flat  (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take (2d6 + 3) Bludgeoning Damage damage from the collapsing rubble (Basic DC 16 Reflex Saving Throw).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -57,89 +69,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Collapse",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A Small or larger creature attempts to climb the stairs;</p>\n<p><strong>Effect</strong> The stairs attempt a DC 8 Flat check (if a Small creature triggered the hazard) or a DC 16 Flat check (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take <span class=\"roll\" onclick=\"roll(this)\">2d6</span> + 3 bludgeoning damage from the collapsing rubble (DC 16 basic Reflex save).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Unsafe Stairs",
-    "type": "hazard",
-    "level": 0,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental"
-    ],
-    "source": "Pathfinder Adventure: Crown of the Kobold King",
-    "stealth": {
-      "value": 6,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>The rickety stairs groan and strain alarmingly if a Small or larger creature ascends them.</p>",
-    "disable": "<p>DC 16 Crafting check to quickly jury-rig some supports to prevent the stairs from collapsing</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Collapse",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A Small or larger creature attempts to climb the stairs;</p>\n<p><strong>Effect</strong> The stairs attempt a DC 8 Flat check (if a Small creature triggered the hazard) or a DC 16 Flat check (if a Medium or multiple Small creatures triggered it). On a failure, the stairs collapse. All creatures on the stairs fall and take <span class=\"roll\" onclick=\"roll(this)\">2d6</span> + 3 bludgeoning damage from the collapsing rubble (DC 16 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 14"
-  },
-  "recallKnowledge": ", DC: 14"
+  "recallKnowledge": ", DC 14"
 }

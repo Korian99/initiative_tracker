@@ -14,26 +14,25 @@
     "Evil",
     "Fiend",
     "Sahkil",
-    "Unholy",
-    "(caster)"
+    "Unholy"
   ],
   "source": "Pathfinder Adventure: Night of the Gray Death",
+  "senses": [
+    "Darkvision",
+    "Truesight 60ft precise"
+  ],
   "perception": {
     "value": 18,
-    "note": "darkvisiontruesight 60 ft precise",
+    "note": "Darkvision, Truesight 60ft precise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "truesight 60 ft precise"
-  ],
   "languages": [
     "Chthonian",
     "Diabolic",
     "Empyrean",
     "Requian",
-    "Telepathy 100 feet, tongues"
+    "telepathy 100 feet, tongues"
   ],
   "skills": [
     {
@@ -153,11 +152,11 @@
       "name": "Entangling Train",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature moves adjacent to the pakalchi</p>\n<hr />\n<p><strong>Effect</strong> Writhing, pitch-black vines wrap around the creature. The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> slashing damage and takes a -15-foot circumstance penalty to its Speeds until the end of its next turn.</p>",
+      "description": "<p><strong>Trigger</strong> A creature moves adjacent to the pakalchi</p>\n<hr />\n<p><strong>Effect</strong> Writhing, pitch-black vines wrap around the creature. The creature takes 1d6 Slashing Damage damage and takes a -15-foot circumstance penalty to its Speeds until the end of its next turn.</p>",
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -198,7 +197,7 @@
         }
       ],
       "effects": [
-        "Betrayal-toxin"
+        "betrayal-toxin"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -279,10 +278,10 @@
         }
       ],
       "effects": [
-        "Betrayal-toxin"
+        "betrayal-toxin"
       ],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -296,7 +295,7 @@
         "mental",
         "poison"
       ],
-      "description": "<p>A creature affected by betrayal toxin hears whispers of incessant doubt in their head and can't treat any creature as their ally</p>\n<p><strong>Saving Throw</strong> DC 28 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> Stupefied 2 (1 round)</p>",
+      "description": "<p>A creature affected by betrayal toxin hears whispers of incessant doubt in their head and can't treat any creature as their ally</p>\n<p><strong>Saving Throw</strong> DC 28 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> Stupefied 2 (1 round)</p>",
       "collapsed": false
     },
     {
@@ -320,12 +319,14 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 5,
+      "autoHeightenLevel": 7,
       "cantrips": [
         {
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -334,7 +335,7 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "30 ft emanation",
+          "area": "30ft emanation",
           "targets": "",
           "save": "",
           "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
@@ -346,11 +347,6 @@
           "id": "7efVk0uJ4rHossDI"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "mySer6QUVoWS93x6",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -360,16 +356,19 @@
           "name": "Calm Emotions",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "incapacitation",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "Sustained up to 1 minute",
           "range": "120 feet",
-          "area": "10 ft burst",
+          "area": "10ft burst",
           "targets": "",
           "save": "will",
           "description": "<p>You forcibly calm creatures in the area, soothing them into a nonviolent state; each creature must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> Calming urges impose a -1 status penalty to the creature's attack rolls.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, it ceases to be affected by calm emotions.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>",
@@ -384,11 +383,14 @@
           "name": "Charm",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "incapacitation",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "until the next time you make daily preparations",
@@ -408,11 +410,14 @@
           "name": "Suggestion (At Will)",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "incapacitation",
             "linguistic",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -429,20 +434,18 @@
           "id": "nwxgFqcqNXuFwOHS"
         }
       ],
-      "lv5slots": {
-        "current": 3,
-        "max": 3
-      },
       "lv6spells": [
         {
           "name": "Dominate",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "concentrate",
             "incapacitation",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "until the next time you make your daily preparations",
@@ -462,9 +465,11 @@
           "name": "Tongues (Constant)",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -484,9 +489,12 @@
           "name": "True Seeing (Constant)",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "revelation"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -503,22 +511,21 @@
           "id": "E5PjZjz4Va4WCYMP"
         }
       ],
-      "lv6slots": {
-        "current": 3,
-        "max": 3
-      },
       "lv7spells": [
         {
           "name": "Mask of Terror (Self Only)",
           "type": "spell",
           "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "fear",
             "illusion",
             "manipulate",
-            "mental"
+            "mental",
+            "visual"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -535,13 +542,10 @@
           "id": "YKOgA62QUG2td6rZ"
         }
       ],
-      "lv7slots": {
-        "current": 1,
-        "max": 1
-      },
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -558,6 +562,18 @@
         "current": 0,
         "max": 0
       },
+      "lv5slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv6slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv7slots": {
+        "current": 1,
+        "max": 1
+      },
       "lv8slots": {
         "current": 0,
         "max": 0
@@ -572,584 +588,5 @@
       }
     }
   ],
-  "description": "<p>Ages ago, when this cycle of the multiverse was still adolescent, a cabal of psychopomps who already felt bored and restrained in their role of ushering souls to their ultimate resting place rebelled against their station. It was this corruption of the cycle of souls that spawned the first sahkils.</p>\n<p>Ambivalent to the prescribed order of the multiverse and spiteful of mortals, sahkils delight in spreading fear and unease to all beings, clogging up the metaphysical cycle with anxiety-ridden mortals too scared to achieve their potential. These fiends have drastically changed from their dedicated psychopomp predecessors. They are creatures of spite and torment, fear and disgust. They exploit the most common and rare fears for their own perverse satisfaction, and they want nothing more than to frighten mortals and make them quetion their reason for existence.</p>\n<p>Most sahkils lurk on the Ethereal Plane, but they frequently invade the Material Plane to torment mortals and spread terror. They use their innate ability to slip between the veils of the Ethereal and Material effortlessly, often stalking their targets for days or weeks before enacting their devious plots.</p>\n<hr />\n<p>Pakalchis strive to intensify their preys' inherent insecurity over personal and emotional bonds, playing on the threat of those relationships falling into ruin. These sahkils are among the most manipulative of their kind, pulling strings both literal and figurative on their victims over stretched-out periods of time, exhilarating in the despair and fear for as long as possible.</p>",
-  "recallKnowledge": "Religion, DC: 26",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 18,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Miss Whisper",
-    "type": "Creature",
-    "level": 9,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Evil",
-      "Fiend",
-      "Sahkil",
-      "Unholy",
-      "(caster)"
-    ],
-    "source": "Pathfinder Adventure: Night of the Gray Death",
-    "perception": {
-      "value": 18,
-      "note": "darkvisiontruesight 60 ft precise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "truesight 60 ft precise"
-    ],
-    "languages": [
-      "Chthonian",
-      "Diabolic",
-      "Empyrean",
-      "Requian",
-      "Telepathy 100 feet, tongues"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 21,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 21,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 21,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 6
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 26,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 140,
-      "max": 140,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "fear-effects",
-      "poison"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "holy",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Bound",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The dawnsilver manacles affixing the pakalchi to the wall are enchanted. The pakalchi can't remove them, although any other creature can with a single Interact action. While bound, she's Immobilized, can't make melee Strikes, and can't Skip Between, though she can still make thorn attacks with a -4 circumstance penalty.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Easy to Call",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A sahkil's level is considered 2 lower for the purpose of being conjured by the Binding Circleritual (and potentially other rituals, at the GM's discretion), but it is always free to attack or leave instead of negotiate unless the primary caster's check is a critical success.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Entangling Train",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature moves adjacent to the pakalchi</p>\n<hr />\n<p><strong>Effect</strong> Writhing, pitch-black vines wrap around the creature. The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> slashing damage and takes a -15-foot circumstance penalty to its Speeds until the end of its next turn.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Vine",
-        "bonus": 18,
-        "traits": [
-          "finesse",
-          "reach",
-          "unholy",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+6",
-            "type": "slashing"
-          },
-          {
-            "roll": "1d6",
-            "type": "spirit"
-          },
-          {
-            "roll": "1d6",
-            "type": "bleed"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+6)*2",
-            "type": "slashing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "spirit"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "bleed"
-          }
-        ],
-        "effects": [
-          "Betrayal-toxin"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 18,
-        "traits": [
-          "agile",
-          "finesse",
-          "unarmed",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+6",
-            "type": "slashing"
-          },
-          {
-            "roll": "1d6",
-            "type": "spirit"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+6)*2",
-            "type": "slashing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "spirit"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Thorn",
-        "bonus": 18,
-        "traits": [
-          "agile",
-          "range-increment-50",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+6",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d6",
-            "type": "spirit"
-          },
-          {
-            "roll": "1d6",
-            "type": "bleed"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+6)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "spirit"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "bleed"
-          }
-        ],
-        "effects": [
-          "Betrayal-toxin"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Betrayal Toxin",
-        "actions": null,
-        "traits": [
-          "divine",
-          "mental",
-          "poison"
-        ],
-        "description": "<p>A creature affected by betrayal toxin hears whispers of incessant doubt in their head and can't treat any creature as their ally</p>\n<p><strong>Saving Throw</strong> DC 28 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> Stupefied 2 (1 round)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Skip Between",
-        "actions": 1,
-        "traits": [
-          "divine",
-          "teleportation"
-        ],
-        "description": "<p>The sahkil moves from the Material Plane to the Ethereal Plane or vice-versa, with the effects of Ethereal Jaunt except that the effect has an unlimited duration and can be Dismissed.</p>\n<p>A summoned sahkil can't use Skip Between.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 20,
-        "dc": 30,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 5,
-        "cantrips": [
-          {
-            "name": "Detect Magic",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "30 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "7efVk0uJ4rHossDI"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "mySer6QUVoWS93x6",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [
-          {
-            "name": "Calm Emotions",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "incapacitation",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "10 ft burst",
-            "targets": "",
-            "save": "will",
-            "description": "<p>You forcibly calm creatures in the area, soothing them into a nonviolent state; each creature must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> Calming urges impose a -1 status penalty to the creature's attack rolls.</p>\n<p><strong>Failure</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, it ceases to be affected by calm emotions.</p>\n<p><strong>Critical Failure</strong> As failure, but hostility doesn't end the effect.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "CtWmBHUvnSEY14ZY"
-          },
-          {
-            "name": "Charm",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "incapacitation",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until the next time you make daily preparations",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes Friendly toward you. If it was Friendly, it becomes Helpful. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "f571oZKiFlEM1Km1"
-          },
-          {
-            "name": "Suggestion (At Will)",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "concentrate",
-              "incapacitation",
-              "linguistic",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "nwxgFqcqNXuFwOHS"
-          }
-        ],
-        "lv5slots": {
-          "current": 3,
-          "max": 3
-        },
-        "lv6spells": [
-          {
-            "name": "Dominate",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "uncommon",
-              "concentrate",
-              "incapacitation",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until the next time you make your daily preparations",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You take command of the target, forcing it to obey your orders. If you issue an obviously self-destructive order, the target doesn't act until you issue a new order. The effect depends on its Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Stunned 1 as it fights off your commands.</p>\n<p><strong>Failure</strong> The target follows your orders but can attempt a Will save at the end of each of its turns. On a success, the spell ends.</p>\n<p><strong>Critical Failure</strong> As a failure, but the target receives a new save only if you give it a new order that is against its nature, such as killing its allies.</p>\n<hr /><p><strong>Heightened (10th)</strong> The duration is unlimited.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "FlG5gx4MeJjJFOPv"
-          },
-          {
-            "name": "Tongues (Constant)",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "uncommon",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 hour",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "kIaulAXNpfYFGj9s"
-          },
-          {
-            "name": "True Seeing (Constant)",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "E5PjZjz4Va4WCYMP"
-          }
-        ],
-        "lv6slots": {
-          "current": 3,
-          "max": 3
-        },
-        "lv7spells": [
-          {
-            "name": "Mask of Terror (Self Only)",
-            "type": "spell",
-            "level": 7,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "fear",
-              "illusion",
-              "manipulate",
-              "mental"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "self",
-            "save": "",
-            "description": "<p>The target appears to be a gruesome and terrifying creature. The effect is unique to each observer, so a human viewing the target might see a demon with bloody fangs, but a demon observing the target might see a glowing angelic visage. When any creature attempts a hostile action against the target, the creature must attempt a Will save. It is then temporarily immune until the end of its next turn.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature becomes Frightened 2 before using its action.</p>\n<p><strong>Critical Failure</strong> The creature becomes Frightened 2, and its action fails and is wasted.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> You can target up to 5 creatures. If a creature uses a hostile action or reaction that affects multiple targets simultaneously, it needs to attempt only one save against mask of terror.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "YKOgA62QUG2td6rZ"
-          }
-        ],
-        "lv7slots": {
-          "current": 1,
-          "max": 1
-        },
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>Ages ago, when this cycle of the multiverse was still adolescent, a cabal of psychopomps who already felt bored and restrained in their role of ushering souls to their ultimate resting place rebelled against their station. It was this corruption of the cycle of souls that spawned the first sahkils.</p>\n<p>Ambivalent to the prescribed order of the multiverse and spiteful of mortals, sahkils delight in spreading fear and unease to all beings, clogging up the metaphysical cycle with anxiety-ridden mortals too scared to achieve their potential. These fiends have drastically changed from their dedicated psychopomp predecessors. They are creatures of spite and torment, fear and disgust. They exploit the most common and rare fears for their own perverse satisfaction, and they want nothing more than to frighten mortals and make them quetion their reason for existence.</p>\n<p>Most sahkils lurk on the Ethereal Plane, but they frequently invade the Material Plane to torment mortals and spread terror. They use their innate ability to slip between the veils of the Ethereal and Material effortlessly, often stalking their targets for days or weeks before enacting their devious plots.</p>\n<hr />\n<p>Pakalchis strive to intensify their preys' inherent insecurity over personal and emotional bonds, playing on the threat of those relationships falling into ruin. These sahkils are among the most manipulative of their kind, pulling strings both literal and figurative on their victims over stretched-out periods of time, exhilarating in the despair and fear for as long as possible.</p>",
-    "recallKnowledge": "Religion, DC: 26",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 26"
 }

@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Rigged Cubby",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 6,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder #158: Sixty Feet Under",
   "stealth": {
     "value": 15,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>A hidden string connected to precariously stacked bricks causes the cubby to collapse in on itself when the string is pulled.</p>",
-  "disable": "<p>DC 20 Thievery check to cut the string without setting off the trap</p>",
+  "disable": "<p>DC 20 Thievery  to cut the string without setting off the trap</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Collapse",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature touches the sickle in the cubby</p>\n<hr />\n<p><strong>Effect</strong> The heavy bricks above the cubby collapse, leaving the sickle unscathed but dealing (4d6+10) Bludgeoning Damage damage (Basic DC 26 Reflex Saving Throw save) to the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 25,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -61,93 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Collapse",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature touches the sickle in the cubby</p>\n<hr />\n<p><strong>Effect</strong> The heavy bricks above the cubby collapse, leaving the sickle unscathed but dealing <span class=\"roll\" onclick=\"roll(this)\">4d6+10</span> bludgeoning damage (DC 26 basic Reflex save) to the triggering creature.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 15,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Rigged Cubby",
-    "type": "hazard",
-    "level": 6,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder #158: Sixty Feet Under",
-    "stealth": {
-      "value": 15,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>A hidden string connected to precariously stacked bricks causes the cubby to collapse in on itself when the string is pulled.</p>",
-    "disable": "<p>DC 20 Thievery check to cut the string without setting off the trap</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 1,
-      "max": 1,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "critical-hits"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Collapse",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature touches the sickle in the cubby</p>\n<hr />\n<p><strong>Effect</strong> The heavy bricks above the cubby collapse, leaving the sickle unscathed but dealing <span class=\"roll\" onclick=\"roll(this)\">4d6+10</span> bludgeoning damage (DC 26 basic Reflex save) to the triggering creature.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 22"
-  },
-  "recallKnowledge": ", DC: 22"
+  "recallKnowledge": ", DC 22"
 }

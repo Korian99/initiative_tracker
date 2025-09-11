@@ -17,15 +17,15 @@
     "Unholy"
   ],
   "source": "Pathfinder #173: Doorway to the Red Star",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 25,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril"
@@ -89,12 +89,10 @@
     {
       "name": "Spellcutter",
       "quantity": 1,
-      "description": "<p>The blade of this <em>+2 greater striking adamantine longsword</em> seems to absorb light from the air around it, giving the impression the wielder is standing in the shadow of a much larger creature.</p>\n<p>While <em>Spellcutter</em> is a potent weapon for battling undead and constructs, an ancient restriction on the blade prevents it from harming living creatures; attacks against living beings deal no damage. This restriction doesn't apply to dhampirs or creatures with the Void Healing ability who are otherwise living; the magic of the blade can't distinguish between such beings and undead.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/r.png\" title=\"reaction\" alt=\"reaction\"> envision</p>\n<p><strong>Trigger</strong> You're targeted by a spell while wielding <em>Spellcutter</em></p>\n<hr />\n<p><strong>Effect</strong> <em>Spellcutter</em> attempts to absorb the magic of the triggering spell, giving you a +4 status bonus to your AC and saves against the effect.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<hr />\n<p><strong>Effect</strong> Touching <em>Spellcutter</em> to any light source of 12th level or lower (including 6th-rank spells with the light trait) instantly extinguishes the effect. If the source of the light is a large flame, such as a forest fire or bonfire, it only extinguishes the light source in a 5-foot radius burst from the point of contact.</p>",
+      "description": "<p>The blade of this <em>+2 greater striking adamantine longsword</em> seems to absorb light from the air around it, giving the impression the wielder is standing in the shadow of a much larger creature.</p>\n<p>While <em>Spellcutter</em> is a potent weapon for battling undead and constructs, an ancient restriction on the blade prevents it from harming living creatures; attacks against living beings deal no damage. This restriction doesn't apply to dhampirs or creatures with the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Void Healing] ability who are otherwise living; the magic of the blade can't distinguish between such beings and undead.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Trigger</strong> You're targeted by a spell while wielding <em>Spellcutter</em></p>\n<hr />\n<p><strong>Effect</strong> <em>Spellcutter</em> attempts to absorb the magic of the triggering spell, giving you a +4 status bonus to your AC and saves against the effect.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> Touching <em>Spellcutter</em> to any light source of 12th level or lower (including 6th-rank spells with the light trait) instantly extinguishes the effect. If the source of the light is a large flame, such as a forest fire or bonfire, it only extinguishes the light source in a 5-foot radius burst from the point of contact.</p>",
       "level": 17,
-      "price": "15000 gp ",
-      "traits": [
-        "unique"
-      ]
+      "price": "15000 gp",
+      "traits": []
     }
   ],
   "generalAbilities": [],
@@ -151,8 +149,8 @@
       "name": "Attack of Opportunity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Mohrg Spawn",
@@ -160,11 +158,18 @@
       "traits": [
         "occult"
       ],
-      "description": "<p>A living creature slain by a mohrg that had a lower level than the mohrg rises as a mohrg spawn after <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds, on its turn. This mohrg spawn is under the command of the mohrg that created it.</p>\n<p>If the creator of the mohrg spawn is destroyed, the mohrg spawn is destroyed as well, immediately collapsing into a pile of decayed flesh and bones.</p>",
+      "description": "<p>A living creature slain by a mohrg that had a lower level than the mohrg rises as a mohrg spawn after 1d4 rounds, on its turn. This mohrg spawn is under the command of the mohrg that created it.</p>\n<p>If the creator of the mohrg spawn is destroyed, the mohrg spawn is destroyed as well, immediately collapsing into a pile of decayed flesh and bones.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
       "collapsed": false
     }
   ],
-  "speed": "50 ft,\nclimb 25 ft,\n",
+  "speed": "50 ft, climb 25ft",
   "strikes": [
     {
       "type": "melee",
@@ -186,7 +191,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -204,7 +209,7 @@
       "damageRolls": [],
       "critRolls": [],
       "effects": [
-        "Paralysis"
+        "paralysis"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -253,275 +258,17 @@
         "incapacitation",
         "occult"
       ],
-      "description": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a DC 30 Fortitude save or become Paralyzed. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
+      "description": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a DC 30 Fortitude Saving Throw save or become Paralyzed. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>The weight of murder wears heavy on the soul. With souls marked by a lifetime of dealing death, these killers, whether mass murderers, bloodthirsty soldiers, or sadistic executioners, sometimes do not let judgment and lawful execution stanch their slaying sprees. When such individuals are brought to justice, they may rise after death as mohrgs to continue their ruinous work.</p>\n<p>Drawn to others of their kind, mohrgs prefer to hunt in small groups, occasionally in partnership with weaker free-willed undead such as shadows and wights. They seek out weak prey and revel in causing drawn-out suffering. Some mohrgs haunt locations they favored in life, reenacting old crimes on new victims. They may even skulk about in public, wearing rags, cloaks, or freshly harvested skins to hide their nature. The most dangerous mohrgs are those who grow powerful enough to no longer fear being struck down again and openly assault settlements in an attempt to turn living towns into mass graves.</p>\n<p>Since those slain by a mohrg rise soon thereafter as mohrg spawn, the murders of a mohrg rarely go unnoticed for long, even when they take extra care to prey only on a society's dregs. Since mohrg spawn remain under a mohrg's control, a canny mohrg might order its spawn to remain in hiding to keep its presence secret until a point where it feels confident unleashing its undead army upon a doomed settlement.</p>\n<p>Mohrgs retain a twisted sentimentality for the crimes of their mortal life, seeking out trinkets that remind them of favorite murders. When not out hunting, mohrgs arrange their mementos into disturbing shrines. Often, these trinkets are valuable objects, and might even provide important clues to ongoing mysteries.</p>",
-  "recallKnowledge": "Religion, DC: 34",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 25,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Taon",
-    "type": "Creature",
-    "level": 15,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder #173: Doorway to the Red Star",
-    "perception": {
-      "value": 25,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 26,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 29,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 29,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 28,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 6
-    },
-    "items": [
-      {
-        "name": "Spellcutter",
-        "quantity": 1,
-        "description": "<p>The blade of this <em>+2 greater striking adamantine longsword</em> seems to absorb light from the air around it, giving the impression the wielder is standing in the shadow of a much larger creature.</p>\n<p>While <em>Spellcutter</em> is a potent weapon for battling undead and constructs, an ancient restriction on the blade prevents it from harming living creatures; attacks against living beings deal no damage. This restriction doesn't apply to dhampirs or creatures with the Void Healing ability who are otherwise living; the magic of the blade can't distinguish between such beings and undead.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/r.png\" title=\"reaction\" alt=\"reaction\"> envision</p>\n<p><strong>Trigger</strong> You're targeted by a spell while wielding <em>Spellcutter</em></p>\n<hr />\n<p><strong>Effect</strong> <em>Spellcutter</em> attempts to absorb the magic of the triggering spell, giving you a +4 status bonus to your AC and saves against the effect.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<hr />\n<p><strong>Effect</strong> Touching <em>Spellcutter</em> to any light source of 12th level or lower (including 6th-rank spells with the light trait) instantly extinguishes the effect. If the source of the light is a large flame, such as a forest fire or bonfire, it only extinguishes the light source in a 5-foot radius burst from the point of contact.</p>",
-        "level": 17,
-        "price": "15000 gp ",
-        "traits": [
-          "unique"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 38,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 230,
-      "max": 230,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison"
-    ],
-    "resistances": [
-      {
-        "type": "piercing",
-        "value": 15
-      },
-      {
-        "type": "slashing",
-        "value": 10
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Mohrg Spawn",
-        "actions": null,
-        "traits": [
-          "occult"
-        ],
-        "description": "<p>A living creature slain by a mohrg that had a lower level than the mohrg rises as a mohrg spawn after <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds, on its turn. This mohrg spawn is under the command of the mohrg that created it.</p>\n<p>If the creator of the mohrg spawn is destroyed, the mohrg spawn is destroyed as well, immediately collapsing into a pile of decayed flesh and bones.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "50 ft,\nclimb 25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 29,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d12+14",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d12+14)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tongue",
-        "bonus": 29,
-        "traits": [
-          "agile",
-          "reach-10"
-        ],
-        "damageRolls": [],
-        "critRolls": [],
-        "effects": [
-          "Paralysis"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Spellcutter",
-        "bonus": 31,
-        "traits": [
-          "magical",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8+14",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8+14)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Cruel Reactions",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Taon gains an extra reaction each round that can be used only to make an Attack of Opportunity.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Paralysis",
-        "actions": null,
-        "traits": [
-          "incapacitation",
-          "occult"
-        ],
-        "description": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a DC 30 Fortitude save or become Paralyzed. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>The weight of murder wears heavy on the soul. With souls marked by a lifetime of dealing death, these killers, whether mass murderers, bloodthirsty soldiers, or sadistic executioners, sometimes do not let judgment and lawful execution stanch their slaying sprees. When such individuals are brought to justice, they may rise after death as mohrgs to continue their ruinous work.</p>\n<p>Drawn to others of their kind, mohrgs prefer to hunt in small groups, occasionally in partnership with weaker free-willed undead such as shadows and wights. They seek out weak prey and revel in causing drawn-out suffering. Some mohrgs haunt locations they favored in life, reenacting old crimes on new victims. They may even skulk about in public, wearing rags, cloaks, or freshly harvested skins to hide their nature. The most dangerous mohrgs are those who grow powerful enough to no longer fear being struck down again and openly assault settlements in an attempt to turn living towns into mass graves.</p>\n<p>Since those slain by a mohrg rise soon thereafter as mohrg spawn, the murders of a mohrg rarely go unnoticed for long, even when they take extra care to prey only on a society's dregs. Since mohrg spawn remain under a mohrg's control, a canny mohrg might order its spawn to remain in hiding to keep its presence secret until a point where it feels confident unleashing its undead army upon a doomed settlement.</p>\n<p>Mohrgs retain a twisted sentimentality for the crimes of their mortal life, seeking out trinkets that remind them of favorite murders. When not out hunting, mohrgs arrange their mementos into disturbing shrines. Often, these trinkets are valuable objects, and might even provide important clues to ongoing mysteries.</p>",
-    "recallKnowledge": "Religion, DC: 34",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 34"
 }

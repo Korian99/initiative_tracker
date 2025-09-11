@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Greater Planar Rift",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 21,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,32 +17,47 @@
   "source": "Pathfinder #162: Ruins of the Radiant Siege",
   "stealth": {
     "value": 31,
-    "note": "(legendary)",
-    "modifications": []
+    "note": "(legendary)"
   },
   "description": "<p>A ragged planar rift drags things into its depths and hurls creatures through from its terminal end.</p>",
   "disable": "<p>Dispel Magic (9th rank; counteract DC 46) to seal the rift</p>",
   "reset": "",
-  "routine": "",
+  "routine": null,
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Greater Planar Rift",
+      "actions": -1,
+      "traits": [
+        "arcane",
+        "teleportation"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature moves within 5 feet of the rift</p>\n<hr />\n<p><strong>Effect</strong> The creature must succeed at a DC 44 Will Saving Throw save or be drawn into the rift. A creature so drawn in becomes Stunned 3 and immediately teleports to a different random area in Kharnas's ruins.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,96 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Greater Planar Rift",
-      "actions": -1,
-      "traits": [
-        "arcane",
-        "teleportation"
-      ],
-      "description": "<p><strong>Trigger</strong> A creature moves within 5 feet of the rift</p>\n<hr />\n<p><strong>Effect</strong> The creature must succeed at a DC 44 Will save or be drawn into the rift. A creature so drawn in becomes Stunned 3 and immediately teleports to a different random area in Kharnas's ruins.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 31,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Greater Planar Rift",
-    "type": "hazard",
-    "level": 21,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder #162: Ruins of the Radiant Siege",
-    "stealth": {
-      "value": 31,
-      "note": "(legendary)",
-      "modifications": []
-    },
-    "description": "<p>A ragged planar rift drags things into its depths and hurls creatures through from its terminal end.</p>",
-    "disable": "<p>Dispel Magic (9th rank; counteract DC 46) to seal the rift</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 10,
-      "max": 10,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Greater Planar Rift",
-        "actions": -1,
-        "traits": [
-          "arcane",
-          "teleportation"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature moves within 5 feet of the rift</p>\n<hr />\n<p><strong>Effect</strong> The creature must succeed at a DC 44 Will save or be drawn into the rift. A creature so drawn in becomes Stunned 3 and immediately teleports to a different random area in Kharnas's ruins.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 42"
-  },
-  "recallKnowledge": ", DC: 42"
+  "recallKnowledge": ", DC 42"
 }

@@ -9,18 +9,21 @@
   "type": "Creature",
   "level": 4,
   "traits": [
+    "Common",
     "Medium",
     "Human",
     "Humanoid"
   ],
   "source": "Pathfinder #215: To Blot Out the Sun",
+  "senses": [
+    "(+16 when rolling initiative)"
+  ],
   "perception": {
     "value": 12,
-    "note": "",
+    "note": "(+16 when rolling initiative)",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -71,7 +74,7 @@
       "quantity": 1,
       "description": "<p>This polearm has a relatively short, 5-foot shaft. The business end is a long spike with an axe blade attached.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
         "reach",
         "versatile-s"
@@ -82,7 +85,7 @@
       "quantity": 1,
       "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
       "level": 1,
-      "price": "14 gp ",
+      "price": "14 gp",
       "traits": [
         "deadly-d10",
         "propulsive"
@@ -93,7 +96,7 @@
       "quantity": 1,
       "description": "<p>A suit of chain mail consists of several pieces of armor composed of small metal rings linked together in a protective mesh. It typically includes a chain shirt, leggings, a pair of arms, and a coif, collectively protecting most of the body.</p>",
       "level": 0,
-      "price": "6 gp ",
+      "price": "6 gp",
       "traits": [
         "flexible",
         "noisy"
@@ -102,32 +105,21 @@
     {
       "name": "Manacles (Simple)",
       "quantity": 1,
-      "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a DC 5 Flat check any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful DC 22 Thievery checks.</p>",
+      "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful @Check[thievery|dc:22|traits:action:pick-a-lock] checks.</p>",
       "level": 1,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
-    },
-    {
-      "name": "Arrows",
-      "quantity": 20,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
-    },
-    {
-      "name": "Silver Salve",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p><hr /><p>You can slather this silvery paste onto one melee weapon, one thrown weapon, or 10 pieces of ammunition. Silver salve spoils quickly, so once you open a vial, you must use it all at once, rather than saving it.</p>\n<p>For the next hour, the weapon or ammunition counts as silver instead of its normal material (such as cold iron) for any physical damage it deals.</p>\n",
-      "level": 2,
-      "price": "6 gp ",
-      "traits": [
-        "alchemical",
-        "consumable"
-      ]
     }
   ],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "+2 to Perception to Initiative",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 21,
     "note": "",
@@ -154,7 +146,7 @@
   },
   "savenote": "",
   "hp": {
-    "value": 60,
+    "value": 75,
     "max": 60,
     "note": "",
     "modifications": []
@@ -174,11 +166,11 @@
       "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -251,7 +243,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d6+5)*2+1d10",
+          "roll": "(1d6+5)*2",
           "type": "piercing"
         }
       ],
@@ -272,284 +264,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Often the younger offspring of minor nobility or those from long lines of trusted staff, palace guards are in charge of defending the royal family and their inner stronghold. Their days consist of guarding doorways, escorting nobles, and keeping those in their charge as safe as possible.</p><hr /><p>The denizens of a noble court are the most powerful people in a civilization, primed with wealth, station, and authority above the common people.</p>",
-  "recallKnowledge": "Society, DC: 19",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 12,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Living Guard",
-    "type": "Creature",
-    "level": 4,
-    "traits": [
-      "Medium",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder #215: To Blot Out the Sun",
-    "perception": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Halberd",
-        "quantity": 1,
-        "description": "<p>This polearm has a relatively short, 5-foot shaft. The business end is a long spike with an axe blade attached.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "reach",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Composite Shortbow",
-        "quantity": 1,
-        "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
-        "level": 1,
-        "price": "14 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive"
-        ]
-      },
-      {
-        "name": "Chain Mail with Nin's Sigil",
-        "quantity": 1,
-        "description": "<p>A suit of chain mail consists of several pieces of armor composed of small metal rings linked together in a protective mesh. It typically includes a chain shirt, leggings, a pair of arms, and a coif, collectively protecting most of the body.</p>",
-        "level": 0,
-        "price": "6 gp ",
-        "traits": [
-          "flexible",
-          "noisy"
-        ]
-      },
-      {
-        "name": "Manacles (Simple)",
-        "quantity": 1,
-        "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a DC 5 Flat check any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from simple manacles requires three successful DC 22 Thievery checks.</p>",
-        "level": 1,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Arrows",
-        "quantity": 20,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      },
-      {
-        "name": "Silver Salve",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p><hr /><p>You can slather this silvery paste onto one melee weapon, one thrown weapon, or 10 pieces of ammunition. Silver salve spoils quickly, so once you open a vial, you must use it all at once, rather than saving it.</p>\n<p>For the next hour, the weapon or ammunition counts as silver instead of its normal material (such as cold iron) for any physical damage it deals.</p>\n",
-        "level": 2,
-        "price": "6 gp ",
-        "traits": [
-          "alchemical",
-          "consumable"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 60,
-      "max": 60,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Guard's Parry",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature attacks the palace guard's liege, and the liege is within the guard's melee reach</p><hr /><p><strong>Effect</strong> The liege gains a +2 circumstance bonus to AC against the triggering attack, and the palace guard gains a +2 circumstance bonus to attack and damage rolls until the end of their next turn.</p><hr /><p>Effect: Guard's Parry (Guard)</p>\n<p>Effect: Guard's Parry (Liege)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Reactive Strike",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Halberd",
-        "bonus": 14,
-        "traits": [
-          "reach-10",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 14,
-        "traits": [
-          "agile",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+7",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+7)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Composite Shortbow",
-        "bonus": 12,
-        "traits": [
-          "deadly-d10",
-          "propulsive",
-          "range-increment-60",
-          "reload-0"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+5",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+5)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Crowd Control",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The palace guard's last action was a successful halberd Strike</p><hr /><p><strong>Effect</strong> The palace guard attempts to Reposition the creature they hit using their halberd's reach. This attempt neither applies nor counts toward the guard's multiple attack penalty.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Often the younger offspring of minor nobility or those from long lines of trusted staff, palace guards are in charge of defending the royal family and their inner stronghold. Their days consist of guarding doorways, escorting nobles, and keeping those in their charge as safe as possible.</p><hr /><p>The denizens of a noble court are the most powerful people in a civilization, primed with wealth, station, and authority above the common people.</p>",
-    "recallKnowledge": "Society, DC: 19",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 19"
 }

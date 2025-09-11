@@ -14,15 +14,16 @@
     "Ooze"
   ],
   "source": "Pathfinder Adventure: Rusthenge",
+  "senses": [
+    "Darkvision",
+    "magic sense (precise) 30 feet"
+  ],
   "perception": {
     "value": 6,
-    "note": "darkvision",
+    "note": "Darkvision, magic sense (precise) 30 feet",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -114,8 +115,16 @@
     }
   ],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "15 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "-2 Status Vs. Evocation and Necromancy",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    }
+  ],
+  "speed": "15 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -147,7 +156,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -162,7 +171,7 @@
       "traits": [
         "arcane"
       ],
-      "description": "<p><strong>Trigger</strong> A creature within 30 feet that the primordial envy can sense Casts a Spell</p>\n<hr />\n<p><strong>Effect</strong> The primordial envy's surface shimmers with a kaleidoscope of color that shines out to illuminate the triggering creature. The primordial envy attempts to counter the spell, with a counteract modifier of +12. On a success, the spell is countered and the primordial envy gains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> temporary Hit Points.</p>",
+      "description": "<p><strong>Trigger</strong> A creature within 30 feet that the primordial envy can sense Casts a Spell</p>\n<hr />\n<p><strong>Effect</strong> The primordial envy's surface shimmers with a kaleidoscope of color that shines out to illuminate the triggering creature. The primordial envy attempts to counter the spell, with a counteract modifier of +12. On a success, the spell is countered and the primordial envy gains [[/br 2d6 #Temp HP]] temporary Hit Points.</p>",
       "collapsed": false
     },
     {
@@ -171,193 +180,17 @@
       "traits": [
         "arcane"
       ],
-      "description": "<p>The primordial envy attempts to drain magic from a spellcasting creature that it has Grabbed or Restrained. The spellcasting creature must attempt a DC 20 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Spell Drain for 24 hours.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental damage and becomes Stupefied 1 for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but one of the creature's uncast spells or unused spell slots is lost, as if they had cast it. The spell or slot lost is one of the highest-rank spells the creature can cast, determined randomly if multiple prepared spells are available. If a cantrip is drained, the spellcaster loses access to that cantrip for 10 minutes. The primordial envy becomes Quickened 1 for 1 round, and can use the extra action to Stride or Strike.</p>",
+      "description": "<p>The primordial envy attempts to drain magic from a spellcasting creature that it has Grabbed or Restrained. The spellcasting creature must attempt a DC 20 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Spell Drain for 24 hours.</p>\n<p><strong>Success</strong> The creature takes 1d6 Mental Damage damage.</p>\n<p><strong>Failure</strong> The creature takes 2d6 Mental Damage damage and becomes Stupefied 1 for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but one of the creature's uncast spells or unused spell slots is lost, as if they had cast it. The spell or slot lost is one of the highest-rank spells the creature can cast, determined randomly if multiple prepared spells are available. If a cantrip is drained, the spellcaster loses access to that cantrip for 10 minutes. The primordial envy becomes Quickened 1 for 1 round, and can use the extra action to Stride or Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>The primordial envy is most often found in underground ruins within Edasseril. It hungers for magic, leaching it from any source it can come into contact with. This hunger can be exploited by clever adventurers who bait it with powerful destructive magics. A primordial envy is one of the most defensive sin oozes, and it tends to layer abjuration spells over itself to both increase its resilience and empower its attacks.</p>\n<hr />\n<p>Thassilon's ruins contain numerous sources of raw magical power that have been lost or forgotten. As many of these sources are steeped in sinful soul energy used by the runelords to enhance their power, some of these sources go \"sour,\" forming into a sinsludge—a mucky effluvium that develops into a barely rudimentary consciousness based on the emotion behind the sin.</p>\n<h2>Other Sinsludges</h2>\n<p>The primordial envy is the least dangerous sinsludge. The glistening pride's shimmering visage lures victims, then curses them with an inflated and competitive ego that tends to get them killed. The crusted sloth leaves victims wallowing in lethargy until they starve, while the shimmering greed imprisons would-be treasure seekers within shells of precious metal. The slithering lust's sweet scents enthrall victims with their deepest desires, distracting them as it feeds. But the most terrible of the sinsludges are the ravenous wrath, which uses blasts of devastating energy to feed, and the rancid gluttony, which consumes souls and leaves bodies behind as lethal undead.</p>",
-  "recallKnowledge": "Occultism, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Primordial Envy",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Rare",
-      "Large",
-      "Ooze"
-    ],
-    "source": "Pathfinder Adventure: Rusthenge",
-    "perception": {
-      "value": 6,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": -4
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Magic Sense",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A primordial envy can detect magical auras, items, and spellcasters within 30 feet.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "–2 status vs. evocation and necromancy",
-    "hp": {
-      "value": 60,
-      "max": 60,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "mental",
-      "precision",
-      "unconscious",
-      "visual"
-    ],
-    "resistances": [
-      {
-        "doubleVs": [],
-        "exceptions": [],
-        "type": "piercing",
-        "value": 5
-      },
-      {
-        "doubleVs": [],
-        "exceptions": [],
-        "type": "slashing",
-        "value": 5
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "15 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Pseudopod",
-        "bonus": 9,
-        "traits": [
-          "magical",
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+4",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "1d6",
-            "type": "mental"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+4)*2",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "mental"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Confiscate Spell",
-        "actions": -1,
-        "traits": [
-          "arcane"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature within 30 feet that the primordial envy can sense Casts a Spell</p>\n<hr />\n<p><strong>Effect</strong> The primordial envy's surface shimmers with a kaleidoscope of color that shines out to illuminate the triggering creature. The primordial envy attempts to counter the spell, with a counteract modifier of +12. On a success, the spell is countered and the primordial envy gains <span class=\"roll\" onclick=\"roll(this)\">2d6</span> temporary Hit Points.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Spell Drain",
-        "actions": 1,
-        "traits": [
-          "arcane"
-        ],
-        "description": "<p>The primordial envy attempts to drain magic from a spellcasting creature that it has Grabbed or Restrained. The spellcasting creature must attempt a DC 20 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Spell Drain for 24 hours.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> mental damage.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental damage and becomes Stupefied 1 for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but one of the creature's uncast spells or unused spell slots is lost, as if they had cast it. The spell or slot lost is one of the highest-rank spells the creature can cast, determined randomly if multiple prepared spells are available. If a cantrip is drained, the spellcaster loses access to that cantrip for 10 minutes. The primordial envy becomes Quickened 1 for 1 round, and can use the extra action to Stride or Strike.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>The primordial envy is most often found in underground ruins within Edasseril. It hungers for magic, leaching it from any source it can come into contact with. This hunger can be exploited by clever adventurers who bait it with powerful destructive magics. A primordial envy is one of the most defensive sin oozes, and it tends to layer abjuration spells over itself to both increase its resilience and empower its attacks.</p>\n<hr />\n<p>Thassilon's ruins contain numerous sources of raw magical power that have been lost or forgotten. As many of these sources are steeped in sinful soul energy used by the runelords to enhance their power, some of these sources go \"sour,\" forming into a sinsludge—a mucky effluvium that develops into a barely rudimentary consciousness based on the emotion behind the sin.</p>\n<h2>Other Sinsludges</h2>\n<p>The primordial envy is the least dangerous sinsludge. The glistening pride's shimmering visage lures victims, then curses them with an inflated and competitive ego that tends to get them killed. The crusted sloth leaves victims wallowing in lethargy until they starve, while the shimmering greed imprisons would-be treasure seekers within shells of precious metal. The slithering lust's sweet scents enthrall victims with their deepest desires, distracting them as it feeds. But the most terrible of the sinsludges are the ravenous wrath, which uses blasts of devastating energy to feed, and the rancid gluttony, which consumes souls and leaves bodies behind as lethal undead.</p>",
-    "recallKnowledge": "Occultism, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism, DC 18"
 }

@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Animal"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Low light vision",
+    "Scent 30ft imprecise"
+  ],
   "perception": {
     "value": 7,
-    "note": "low light-visionscent 30 ft imprecise",
+    "note": "Low light vision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision",
-    "scent 30 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -102,7 +103,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "30 ft,\nswim 30 ft,\n",
+  "speed": "30 ft, swim 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -124,8 +125,8 @@
         }
       ],
       "effects": [
-        "Grab",
-        "Monitor-lizard-venom"
+        "grab",
+        "monitor-lizard-venom"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -138,7 +139,7 @@
       "name": "Gnashing Grip",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature Grabbed by the giant monitor lizard's jaws fails a check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The giant monitor lizard's jaws deal <span class=\"roll\" onclick=\"roll(this)\">1d6</span> piercing damage and the triggering creature is exposed to monitor lizard venom.</p>",
+      "description": "<p><strong>Trigger</strong> A creature Grabbed by the giant monitor lizard's jaws fails a check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The giant monitor lizard's jaws deal 1d6 Piercing Damage damage and the triggering creature is exposed to monitor lizard venom.</p>",
       "collapsed": false
     },
     {
@@ -154,176 +155,17 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 17 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Enfeebled 2 (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 17 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage and Enfeebled 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Large and seemingly ponderous, a monitor lizard is a deceptively swift and ruthless predator. It ambushes its prey by rushing out from cover and biting the target with its powerful jaws. A giant monitor lizard's saliva is venomous, allowing it to bring down prey larger than it can easily haul away in its jaws. Giant monitor lizards grow up to 14 feet long, including their long tails, and they weigh about 350 pounds. Their bodies are normally dark brown with patches of yellow or green.</p>\n<p>When nesting, a giant monitor lizard digs a deep burrow to hide in. The burrow serves as both a safe haven and a location from which the lizard can ambush larger prey such as deer, boars, or even humanoids. A giant monitor lizard can consume nearly its own body weight in a single meal, and its loosely articulated jaws allow it to swallow surprisingly large prey.</p>\n<hr />\n<p>Lizards have a wide range of appearances and abilities, but most share a basic reptilian shape—long tails, wide toothy mouths, and four legs. While a few species are capable of movement on two legs for short periods of time, most are strictly quadrupedal. The three species presented here represent the most common and well-known of the larger species.</p>",
-  "recallKnowledge": "Nature, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Giant Monitor Lizard",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Animal"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 7,
-      "note": "low light-visionscent 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision",
-      "scent 30 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": -2
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 36,
-      "max": 36,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\nswim 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 11,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+3",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+3)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Grab",
-          "Monitor-lizard-venom"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Gnashing Grip",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature Grabbed by the giant monitor lizard's jaws fails a check to Escape.</p>\n<hr />\n<p><strong>Effect</strong> The giant monitor lizard's jaws deal <span class=\"roll\" onclick=\"roll(this)\">1d6</span> piercing damage and the triggering creature is exposed to monitor lizard venom.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Lurching Charge",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The giant monitor lizard Strides twice and then makes a jaws Strike. If the lizard moved at least 20 feet away from its starting position, it gains a +2 circumstance bonus to this attack roll.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Monitor Lizard Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 17 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Enfeebled 2 (1 round)</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Large and seemingly ponderous, a monitor lizard is a deceptively swift and ruthless predator. It ambushes its prey by rushing out from cover and biting the target with its powerful jaws. A giant monitor lizard's saliva is venomous, allowing it to bring down prey larger than it can easily haul away in its jaws. Giant monitor lizards grow up to 14 feet long, including their long tails, and they weigh about 350 pounds. Their bodies are normally dark brown with patches of yellow or green.</p>\n<p>When nesting, a giant monitor lizard digs a deep burrow to hide in. The burrow serves as both a safe haven and a location from which the lizard can ambush larger prey such as deer, boars, or even humanoids. A giant monitor lizard can consume nearly its own body weight in a single meal, and its loosely articulated jaws allow it to swallow surprisingly large prey.</p>\n<hr />\n<p>Lizards have a wide range of appearances and abilities, but most share a basic reptilian shape—long tails, wide toothy mouths, and four legs. While a few species are capable of movement on two legs for short periods of time, most are strictly quadrupedal. The three species presented here represent the most common and well-known of the larger species.</p>",
-    "recallKnowledge": "Nature, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 16"
 }

@@ -16,15 +16,15 @@
     "Unholy"
   ],
   "source": "Pathfinder #171: Hurricane's Howl",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 21,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril"
@@ -83,7 +83,7 @@
       "quantity": 1,
       "description": "<p>This large crossbow is harder to load and more substantial than a regular crossbow, but it packs a greater punch.</p>",
       "level": 0,
-      "price": "4 gp ",
+      "price": "4 gp",
       "traits": []
     },
     {
@@ -91,7 +91,7 @@
       "quantity": 1,
       "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "thrown-20"
       ]
@@ -99,31 +99,10 @@
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
+      "price": "8 gp",
       "traits": []
-    },
-    {
-      "name": "Bolts",
-      "quantity": 20,
-      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
-    },
-    {
-      "name": "Storm Bolts",
-      "quantity": 2,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>The head of this bolt is made from gleaming copper.</p>\n<p>When an activated <em>storm bolt</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals <span class=\"roll\" onclick=\"roll(this)\">3d12</span> electricity damage and the target must attempt a DC 25 Reflex save saving throw.</p>\n<p>If this bolt is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a -10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>",
-      "level": 9,
-      "price": "130 gp ",
-      "traits": [
-        "air",
-        "consumable",
-        "electricity",
-        "magical"
-      ]
     }
   ],
   "generalAbilities": [],
@@ -182,7 +161,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>When Bharlen is destroyed, her armor rebuilds its body over the course of <span class=\"roll\" onclick=\"roll(this)\">1d10</span> days-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>Bharlen can only be permanently destroyed by obliterating her armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
+      "description": "<p>When Bharlen is destroyed, her armor rebuilds its body over the course of 1d10 days-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>Bharlen can only be permanently destroyed by obliterating her armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
       "collapsed": false
     },
     {
@@ -195,9 +174,16 @@
       ],
       "description": "<p>30 feet. When a creature in the aura uses a vitality spell or ability, Bharlen automatically attempts to counteract it, with a +18 counteract modifier.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -256,7 +242,7 @@
         }
       ],
       "effects": [
-        "Push"
+        "push"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -314,7 +300,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -324,7 +310,7 @@
       "name": "Brute Strength",
       "actions": null,
       "traits": [],
-      "description": "<p>Bharlen deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d8</span> damage with tridents, and a trident gains the shove trait while she is using it in melee (both the extra damage die and the shove trait have been included in Bharlen's trident Strikes above).</p>",
+      "description": "<p>Bharlen deals an extra 1d8 damage with tridents, and a trident gains the shove trait while she is using it in melee (both the extra damage die and the shove trait have been included in Bharlen's trident Strikes above).</p>",
       "collapsed": false
     },
     {
@@ -334,14 +320,14 @@
         "arcane",
         "electricity"
       ],
-      "description": "<p>Bharlen unleashes crackling lightning in a 30 foot cone. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">6d12</span> electricity damage (DC 30 basic Reflex save).</p>\n<p>Bharlen can use this ability once every <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>Bharlen unleashes crackling lightning in a cone|distance:30|damaging:yes. Creatures in the area take 6d12 Electricity Damage damage (Basic DC 30 Reflex Saving Throw save).</p>\n<p>Bharlen can use this ability once every 1d4 rounds.</p>",
       "collapsed": false
     },
     {
       "name": "Graveknight's Curse",
       "actions": null,
       "traits": [],
-      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<p><strong>Saving Throw</strong> DC 40 Will save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, all speeds reduced by 10, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
+      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<p><strong>Saving Throw</strong> DC 40 Will Saving Throw save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, all speeds reduced by 10, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
       "collapsed": false
     },
     {
@@ -367,385 +353,15 @@
       "traits": [],
       "description": "<p>Bharlen has access to the critical specialization effects of any weapon she wields.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Push",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Religion, DC: 28",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 21,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Bharlen Sajor",
-    "type": "Creature",
-    "level": 11,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Evil",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder #171: Hurricane's Howl",
-    "perception": {
-      "value": 21,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 7
-    },
-    "constitution": {
-      "value": 7
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 5
-    },
-    "items": [
-      {
-        "name": "Heavy Crossbow",
-        "quantity": 1,
-        "description": "<p>This large crossbow is harder to load and more substantial than a regular crossbow, but it packs a greater punch.</p>",
-        "level": 0,
-        "price": "4 gp ",
-        "traits": []
-      },
-      {
-        "name": "Trident",
-        "quantity": 1,
-        "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      },
-      {
-        "name": "Bolts",
-        "quantity": 20,
-        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      },
-      {
-        "name": "Storm Bolts",
-        "quantity": 2,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>The head of this bolt is made from gleaming copper.</p>\n<p>When an activated <em>storm bolt</em> hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals <span class=\"roll\" onclick=\"roll(this)\">3d12</span> electricity damage and the target must attempt a DC 25 Reflex save saving throw.</p>\n<p>If this bolt is shot from a weapon with a <em>shock</em> property rune, the save DC increases to 27, though the attack doesn't benefit from the <em>shock</em> property rune itself.</p>\n<hr />\n<p><strong>Critical Success</strong> The foe is unaffected.</p>\n<p><strong>Success</strong> The foe takes half damage and isn't affected by the wind.</p>\n<p><strong>Failure</strong> The foe takes full damage and is buffeted by winds for 1 round, taking a -2 circumstance penalty to ranged attack rolls and a -10-foot circumstance penalty to its fly Speed.</p>\n<p><strong>Critical Failure</strong> As failure, but the foe takes double damage.</p>",
-        "level": 9,
-        "price": "130 gp ",
-        "traits": [
-          "air",
-          "consumable",
-          "electricity",
-          "magical"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 32,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 24,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 190,
-      "max": 190,
-      "note": "void healing, rejuvenation",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "electricity",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "No Escape",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature within Bharlen's reach moves away from her</p>\n<hr />\n<p><strong>Effect</strong> Bharlen Strides up to her Speed, following the foe and keeping it in reach throughout this movement.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Rejuvenation",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>When Bharlen is destroyed, her armor rebuilds its body over the course of <span class=\"roll\" onclick=\"roll(this)\">1d10</span> days-or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>Bharlen can only be permanently destroyed by obliterating her armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sacrilegious Aura",
-        "actions": null,
-        "traits": [
-          "aura",
-          "divine",
-          "evil"
-        ],
-        "description": "<p>30 feet. When a creature in the aura uses a vitality spell or ability, Bharlen automatically attempts to counteract it, with a +18 counteract modifier.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shock Trident",
-        "bonus": 24,
-        "traits": [
-          "electricity",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+11",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+11)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 23,
-        "traits": [
-          "agile",
-          "electricity",
-          "magical",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+11",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "1d6",
-            "type": "electricity"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+11)*2",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "electricity"
-          }
-        ],
-        "effects": [
-          "Push"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Shock Trident",
-        "bonus": 24,
-        "traits": [
-          "electricity",
-          "magical",
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+11",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+11)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Shock Heavy Crossbow",
-        "bonus": 24,
-        "traits": [
-          "electricity",
-          "magical",
-          "range-increment-120",
-          "reload-2"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Brute Strength",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Bharlen deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d8</span> damage with tridents, and a trident gains the shove trait while she is using it in melee (both the extra damage die and the shove trait have been included in Bharlen's trident Strikes above).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Devastating Blast",
-        "actions": 2,
-        "traits": [
-          "arcane",
-          "electricity"
-        ],
-        "description": "<p>Bharlen unleashes crackling lightning in a 30 foot cone. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">6d12</span> electricity damage (DC 30 basic Reflex save).</p>\n<p>Bharlen can use this ability once every <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Graveknight's Curse",
-        "actions": null,
-        "traits": [],
-        "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour.</p>\n<p><strong>Saving Throw</strong> DC 40 Will save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and cannot remove the armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, all speeds reduced by 10, and cannot remove the armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Ruinous Weapons",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Any weapons Bharlen wields gain the effects of the <em>+1 Striking</em> and <em>Shock</em> runes.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sodden Strike",
-        "actions": 2,
-        "traits": [
-          "divine",
-          "water"
-        ],
-        "description": "<p>Bharlen calls to the endless storm to lend murderous power to her blows. She makes a Strike; on a hit, seawater appears in the target's lungs and the target is Sickened 1 (Sickened 3 on a critical hit).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Weapon Master",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Bharlen has access to the critical specialization effects of any weapon she wields.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Religion, DC: 28",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 28"
 }

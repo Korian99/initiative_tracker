@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Medium",
     "Construct",
     "Earth",
     "Mindless"
   ],
   "source": "Pathfinder #200: Seven Dooms for Sandpoint",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 11,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -58,7 +59,7 @@
       "quantity": 1,
       "description": "<p>This polearm is a long trident with a central prong that's longer than the other two.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
         "disarm",
         "reach"
@@ -71,6 +72,11 @@
     "note": "(19 when broken); construct armor",
     "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": {
+      "value": 7
+    }
   },
   "fortitude": {
     "value": 14,
@@ -94,14 +100,22 @@
   "hp": {
     "value": 54,
     "max": 54,
-    "note": "<b>Hardness</b> 7 <b>BT</b> 27. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "20 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 7)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p>\n<p>Once an animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 19.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -133,145 +147,5 @@
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "description": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
-  "recallKnowledge": "Arcana, Crafting, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Statue of Alaznist",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Medium",
-      "Construct",
-      "Earth",
-      "Mindless"
-    ],
-    "source": "Pathfinder #200: Seven Dooms for Sandpoint",
-    "perception": {
-      "value": 11,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [
-      {
-        "name": "Ranseur",
-        "quantity": 1,
-        "description": "<p>This polearm is a long trident with a central prong that's longer than the other two.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "disarm",
-          "reach"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 23,
-      "note": "(19 when broken); construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 54,
-      "max": 54,
-      "note": "<b>Hardness</b> 7 <b>BT</b> 27. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Ranseur",
-        "bonus": 13,
-        "traits": [
-          "disarm",
-          "magical",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [],
-    "description": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
-    "recallKnowledge": "Arcana, Crafting, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 20"
 }

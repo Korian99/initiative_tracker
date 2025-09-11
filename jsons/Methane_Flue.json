@@ -4,44 +4,56 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Methane Flue",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 8,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental"
   ],
   "source": "Pathfinder #177: Burning Tundra",
   "stealth": {
     "value": 18,
-    "note": "(expert) to hear hissing gas",
-    "modifications": []
+    "note": "(expert) to hear hissing gas"
   },
   "description": "<p>Invisible but highly flammable natural gas has built up beneath the ground, where geological pressure can ignite it.</p>",
-  "disable": "<p>DC 28 Survival check to dig around the vent in a way that diffuses the fumes</p>",
+  "disable": "<p>DC 28 Survival  to dig around the vent in a way that diffuses the fumes</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Flame Spurt",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature moves within 5 feet of the flue</p><hr />\n<p><strong>Effect</strong> A fiery geyser of flaming gas explodes from the ground. Creatures within 5 feet of the flue take 4d10 Fire Damage damage (Basic DC 30 Reflex Saving Throw); creatures that fail the save also take 4d10 Persistent,fire Damage damage.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -57,89 +69,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Flame Spurt",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature moves within 5 feet of the flue</p><hr />\n<p><strong>Effect</strong> A fiery geyser of flaming gas explodes from the ground. Creatures within 5 feet of the flue take <span class=\"roll\" onclick=\"roll(this)\">4d10</span> fire damage (DC 30 basic Reflex save); creatures that fail the save also take <span class=\"roll\" onclick=\"roll(this)\">4d10</span> persistent plus fire damage.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 18,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Methane Flue",
-    "type": "hazard",
-    "level": 8,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental"
-    ],
-    "source": "Pathfinder #177: Burning Tundra",
-    "stealth": {
-      "value": 18,
-      "note": "(expert) to hear hissing gas",
-      "modifications": []
-    },
-    "description": "<p>Invisible but highly flammable natural gas has built up beneath the ground, where geological pressure can ignite it.</p>",
-    "disable": "<p>DC 28 Survival check to dig around the vent in a way that diffuses the fumes</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Flame Spurt",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature moves within 5 feet of the flue</p><hr />\n<p><strong>Effect</strong> A fiery geyser of flaming gas explodes from the ground. Creatures within 5 feet of the flue take <span class=\"roll\" onclick=\"roll(this)\">4d10</span> fire damage (DC 30 basic Reflex save); creatures that fail the save also take <span class=\"roll\" onclick=\"roll(this)\">4d10</span> persistent plus fire damage.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 24"
-  },
-  "recallKnowledge": ", DC: 24"
+  "recallKnowledge": ", DC 24"
 }

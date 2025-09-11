@@ -4,51 +4,58 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Darkened Shadow Bombard",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 7,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Magical"
   ],
   "source": "Pathfinder Society Scenario #4-17: Trapping the Hag's Claw",
   "stealth": {
     "value": 17,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>A cannon built of cast iron and infused with shadow magic, mounted on the side of Aslynn's flying ship.</p>",
-  "disable": "<p>DC 28 Arcana check or DC 28 Thievery check to disrupt the cannon; two checks are required to disable it</p>",
+  "disable": "<p>DC 28 Arcana  or DC 28 Thievery  to disrupt the cannon; two checks are required to disable it</p>",
   "reset": "",
   "routine": "<p>(three actions) The cannon fires a blast that contains as many PCs as possible, choosing randomly in the event of a tie, then reloads.</p>",
   "items": [],
   "generalAbilities": [],
   "ac": {
     "value": 25,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 10
   },
   "fortitude": {
     "value": 20,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 13,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": null,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 60,
     "max": 60,
-    "note": "<b>Hardness</b> 10 <b>BT</b> 30. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
@@ -78,6 +85,8 @@
         }
       ],
       "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -92,104 +101,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 17,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Darkened Shadow Bombard",
-    "type": "hazard",
-    "level": 7,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Magical"
-    ],
-    "source": "Pathfinder Society Scenario #4-17: Trapping the Hag's Claw",
-    "stealth": {
-      "value": 17,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>A cannon built of cast iron and infused with shadow magic, mounted on the side of Aslynn's flying ship.</p>",
-    "disable": "<p>DC 28 Arcana check or DC 28 Thievery check to disrupt the cannon; two checks are required to disable it</p>",
-    "reset": "",
-    "routine": "<p>(three actions) The cannon fires a blast that contains as many PCs as possible, choosing randomly in the event of a tie, then reloads.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 20,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 13,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": null,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 60,
-      "max": 60,
-      "note": "<b>Hardness</b> 10 <b>BT</b> 30. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "ranged",
-        "name": "Cannon Blast",
-        "bonus": 18,
-        "traits": [
-          "range-increment-40",
-          "reload-2"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+9",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+9)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Load the Cannons",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The ship flies within 30 feet of a PC</p>\n<hr />\n<p><strong>Effect</strong> The cannon reloads and rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 23"
-  },
-  "recallKnowledge": ", DC: 23"
+  "recallKnowledge": ", DC 23"
 }

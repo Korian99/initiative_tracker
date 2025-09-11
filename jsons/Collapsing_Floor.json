@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Collapsing Floor",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 2,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Society Scenario #1-01: The Absalom Initiation",
   "stealth": {
     "value": 4,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>Around the edges of the pit, more rotting boards are ready to give way.</p>",
-  "disable": "<p>DC 16 Crafting check to reinforce the beams</p>",
+  "disable": "<p>DC 16 Crafting  to reinforce the beams</p>",
   "reset": "<p>As the damage to the floor spreads, the areas adjacent to the new pit become new areas of this hazard.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Pitfall",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature walks next to the pit.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage (typically 3 Bludgeoning Damage damage) plus 4d6 Piercing Damage damage from landing on broken boards.</p>\n<p>That creature can attempt to Grab an Edge to avoid falling; the DC to Climb the walls or Grab an Edge is 18.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,90 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Pitfall",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature walks next to the pit.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage (typically 3 bludgeoning damage) plus <span class=\"roll\" onclick=\"roll(this)\">4d6</span> piercing damage from landing on broken boards.</p>\n<p>That creature can attempt to Grab an Edge to avoid falling; the DC to Climb the walls or Grab an Edge is 18.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 4,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Collapsing Floor",
-    "type": "hazard",
-    "level": 2,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Scenario #1-01: The Absalom Initiation",
-    "stealth": {
-      "value": 4,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>Around the edges of the pit, more rotting boards are ready to give way.</p>",
-    "disable": "<p>DC 16 Crafting check to reinforce the beams</p>",
-    "reset": "<p>As the damage to the floor spreads, the areas adjacent to the new pit become new areas of this hazard.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Pitfall",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature walks next to the pit.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage (typically 3 bludgeoning damage) plus <span class=\"roll\" onclick=\"roll(this)\">4d6</span> piercing damage from landing on broken boards.</p>\n<p>That creature can attempt to Grab an Edge to avoid falling; the DC to Climb the walls or Grab an Edge is 18.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 16"
-  },
-  "recallKnowledge": ", DC: 16"
+  "recallKnowledge": ", DC 16"
 }

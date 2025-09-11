@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 7,
   "traits": [
+    "Common",
     "Medium",
     "Evil",
     "Humanoid",
     "Lawful"
   ],
   "source": "Pathfinder #180: The Smoking Gun",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 16,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common"
   ],
@@ -74,7 +75,7 @@
       "quantity": 1,
       "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
       "level": 0,
-      "price": "14 gp ",
+      "price": "14 gp",
       "traits": [
         "deadly-d10",
         "propulsive"
@@ -85,20 +86,12 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
         "versatile-s"
       ]
-    },
-    {
-      "name": "Arrows",
-      "quantity": 60,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
     }
   ],
   "generalAbilities": [],
@@ -128,7 +121,7 @@
   },
   "savenote": "",
   "hp": {
-    "value": 105,
+    "value": 125,
     "max": 105,
     "note": "",
     "modifications": []
@@ -137,6 +130,13 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [
+    {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
     {
       "name": "Biting Snakes",
       "actions": -1,
@@ -152,11 +152,11 @@
         "aura",
         "visual"
       ],
-      "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a DC 25 Fortitude save. If the creature fails, it becomes Slowed 1 for 1 minute. The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
+      "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a DC 25 Fortitude Saving Throw save. If the creature fails, it becomes Slowed 1 for 1 minute. The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -180,7 +180,7 @@
         }
       ],
       "effects": [
-        "Serpent-venom"
+        "serpent-venom"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -208,7 +208,7 @@
         }
       ],
       "effects": [
-        "Serpent-venom"
+        "serpent-venom"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -234,12 +234,12 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d6+7)*2+1d10",
+          "roll": "(1d6+7)*2",
           "type": "piercing"
         }
       ],
       "effects": [
-        "Serpent-venom"
+        "serpent-venom"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -257,7 +257,7 @@
         "incapacitation",
         "visual"
       ],
-      "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a DC 25 Fortitude save against the medusa's glass gaze. If the creature was already Slowed by glass gaze before attempting its save, a failed save causes it to be Petrified permanently.</p>\n<p>After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>",
+      "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a DC 25 Fortitude Saving Throw save against the medusa's glass gaze. If the creature was already Slowed by glass gaze before attempting its save, a failed save causes it to be Petrified permanently.</p>\n<p>After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>",
       "collapsed": false
     },
     {
@@ -266,288 +266,10 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Enfeebled 2 (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 2d6 Poison Damage damage and Enfeebled 2 (1 round)</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life.</p>",
-  "recallKnowledge": "Society, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 16,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Alethsia",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Medium",
-      "Evil",
-      "Humanoid",
-      "Lawful"
-    ],
-    "source": "Pathfinder #180: The Smoking Gun",
-    "perception": {
-      "value": 16,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "deception",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Composite Shortbow",
-        "quantity": 1,
-        "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
-        "level": 0,
-        "price": "14 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive"
-        ]
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Arrows",
-        "quantity": 60,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "note": "all-around vision",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 105,
-      "max": 105,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Biting Snakes",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature ends its turn adjacent to the medusa.</p>\n<hr />\n<p><strong>Effect</strong> The medusa makes a snake fangs Strike against the creature.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Glass Gaze",
-        "actions": null,
-        "traits": [
-          "arcane",
-          "aura",
-          "visual"
-        ],
-        "description": "<p>30 feet. When a creature ends its turn in the aura, it must attempt a DC 25 Fortitude save. If the creature fails, it becomes Slowed 1 for 1 minute. The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 18,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Serpent-venom"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Snake Fangs",
-        "bonus": 16,
-        "traits": [
-          "agile",
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Serpent-venom"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Composite Shortbow",
-        "bonus": 19,
-        "traits": [
-          "deadly-d10",
-          "magical",
-          "propulsive",
-          "range-increment-60",
-          "reload-0"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+7)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Serpent-venom"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Focus Gaze",
-        "actions": 1,
-        "traits": [
-          "arcane",
-          "concentrate",
-          "incapacitation",
-          "visual"
-        ],
-        "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a DC 25 Fortitude save against the medusa's glass gaze. If the creature was already Slowed by glass gaze before attempting its save, a failed save causes it to be Petrified permanently.</p>\n<p>After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Serpent Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage and Enfeebled 2 (1 round)</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life.</p>",
-    "recallKnowledge": "Society, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 23"
 }

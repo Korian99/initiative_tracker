@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 13,
   "traits": [
-    "Huge",
+    "Common",
+    "huge",
     "Air",
     "Elemental"
   ],
   "source": "Pathfinder Rage of Elements",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 20,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Sussuran"
   ],
@@ -120,7 +121,7 @@
       "collapsed": false
     }
   ],
-  "speed": "0 ft,\nfly 100 ft,\n",
+  "speed": "0 ft, fly 100ft",
   "strikes": [
     {
       "type": "melee",
@@ -143,7 +144,7 @@
         }
       ],
       "effects": [
-        "Push"
+        "push"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -171,7 +172,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -188,7 +189,7 @@
       "name": "Elephant Blast",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The picture-in-clouds is in elephant shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds breathes out a 30 foot cone of air from their cloudy trunk. Creatures in the area must attempt a DC 30 Fortitude save to stand their ground. A creature pushed into a solid object stops moving and takes <span class=\"roll\" onclick=\"roll(this)\">4d10</span> bludgeoning damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 20 feet.</p>\n<p><strong>Failure</strong> The creature is pushed 40 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet and knocked Prone.</p>",
+      "description": "<p><strong>Requirements</strong> The picture-in-clouds is in elephant shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds breathes out a 30ft Cone of air from their cloudy trunk. Creatures in the area must attempt a DC 30 Fortitude Saving Throw save to stand their ground. A creature pushed into a solid object stops moving and takes 4d10 Bludgeoning Damage damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 20 feet.</p>\n<p><strong>Failure</strong> The creature is pushed 40 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet and knocked Prone.</p>",
       "collapsed": false
     },
     {
@@ -197,14 +198,14 @@
       "traits": [
         "move"
       ],
-      "description": "<p><strong>Requirements</strong> The picture-in-clouds is in eagle shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds Flies 125 feet, flapping their wings and creating a barrier along their path. This barrier has the effects of Wall of Wind (DC 30 Fortitude save) and lasts until the end of the picture-in-clouds's next turn.</p>",
+      "description": "<p><strong>Requirements</strong> The picture-in-clouds is in eagle shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds Flies 125 feet, flapping their wings and creating a barrier along their path. This barrier has the effects of Wall of Wind (DC 30 Fortitude Saving Throw) and lasts until the end of the picture-in-clouds's next turn.</p>",
       "collapsed": false
     },
     {
       "name": "Slicing Wind",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The picture-in-clouds is in sword shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds spins, forming a whirlwind that deals <span class=\"roll\" onclick=\"roll(this)\">5d8</span> slashing damage in a 15 foot emanation (DC 30 basic Reflex save).</p>",
+      "description": "<p><strong>Requirements</strong> The picture-in-clouds is in sword shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds spins, forming a whirlwind that deals 5d8 Slashing Damage damage in a 15ft Emanation (Basic DC 30 Reflex Saving Throw save).</p>",
       "collapsed": false
     },
     {
@@ -218,240 +219,10 @@
       "name": "Push 15 feet",
       "actions": 1,
       "traits": [],
-      "description": "<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>The shifting shapes of clouds in the sky have captivated the imaginations of mortal children for centuries. Pictures-in-clouds represent this pure possibility of air, transforming into anything the Universe imagines them to be.</p>\n<hr />\n<p>Many elementals that roam the Plane of Air embody the mercurial formlessness and chaos of tumultuous storms.</p>\n<h2>Tempestuous Spirits</h2>\n<p>Air elementals are often flighty contrarians, often more concerned with bringing about change than with the specific changes they enact. Art and writing created by such elementals is exceptionally rare, as they usually destroy their projects once the challenge and excitement of completing them fades.</p>\n<h2>Invisible Courtiers</h2>\n<p>Formless and invisible elementals are the favored children of Hshurha, the air elementals' mother goddess. They receive favorable treatment in her realm, Verglas Precessional, where they serve as trusted advisors, emissaries to other planes, and members of her personal retinue, in addition to performing clandestine tasks the goddess wishes to keep hidden.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 31",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Picture-in-Clouds",
-    "type": "Creature",
-    "level": 13,
-    "traits": [
-      "Huge",
-      "Air",
-      "Elemental"
-    ],
-    "source": "Pathfinder Rage of Elements",
-    "perception": {
-      "value": 20,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Sussuran"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 26,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 8
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 4
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 35,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 26,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 175,
-      "max": 175,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed",
-      "paralyzed",
-      "poison",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Disperse",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The picture-in-clouds takes damage from a hostile action</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds disperses. Until the end of the current turn, they can't be attacked or targeted, they don't take up space, and any auras or emanations they have are suppressed. At the end of the turn, the picture-in-clouds re-forms in any sufficient space within 150 feet of where they dispersed; any auras or emanations they have are restored as long as the duration didn't run out while the elemental was dispersed.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "High Winds",
-        "actions": null,
-        "traits": [
-          "air",
-          "aura"
-        ],
-        "description": "<p>60 feet. Air within the emanation is difficult terrain for Flying creatures that don't have the air trait.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "0 ft,\nfly 100 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Gust",
-        "bonus": 26,
-        "traits": [
-          "finesse",
-          "reach-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d10+10",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d10+10)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Push"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Lightning Lash",
-        "bonus": 26,
-        "traits": [
-          "range-increment-100"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d12",
-            "type": "electricity"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d12)*2",
-            "type": "electricity"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Cloudgaze",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The picture-in-clouds shifts into their choice of an eagle shape, elephant shape, or sword shape.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Elephant Blast",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The picture-in-clouds is in elephant shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds breathes out a 30 foot cone of air from their cloudy trunk. Creatures in the area must attempt a DC 30 Fortitude save to stand their ground. A creature pushed into a solid object stops moving and takes <span class=\"roll\" onclick=\"roll(this)\">4d10</span> bludgeoning damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed 20 feet.</p>\n<p><strong>Failure</strong> The creature is pushed 40 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 40 feet and knocked Prone.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Feather Storm",
-        "actions": 2,
-        "traits": [
-          "move"
-        ],
-        "description": "<p><strong>Requirements</strong> The picture-in-clouds is in eagle shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds Flies 125 feet, flapping their wings and creating a barrier along their path. This barrier has the effects of Wall of Wind (DC 30 Fortitude save) and lasts until the end of the picture-in-clouds's next turn.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Slicing Wind",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The picture-in-clouds is in sword shape</p>\n<hr />\n<p><strong>Effect</strong> The picture-in-clouds spins, forming a whirlwind that deals <span class=\"roll\" onclick=\"roll(this)\">5d8</span> slashing damage in a 15 foot emanation (DC 30 basic Reflex save).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Swiftness",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The picture-in-clouds's movement doesn't trigger reactions.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Push 15 feet",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>The shifting shapes of clouds in the sky have captivated the imaginations of mortal children for centuries. Pictures-in-clouds represent this pure possibility of air, transforming into anything the Universe imagines them to be.</p>\n<hr />\n<p>Many elementals that roam the Plane of Air embody the mercurial formlessness and chaos of tumultuous storms.</p>\n<h2>Tempestuous Spirits</h2>\n<p>Air elementals are often flighty contrarians, often more concerned with bringing about change than with the specific changes they enact. Art and writing created by such elementals is exceptionally rare, as they usually destroy their projects once the challenge and excitement of completing them fades.</p>\n<h2>Invisible Courtiers</h2>\n<p>Formless and invisible elementals are the favored children of Hshurha, the air elementals' mother goddess. They receive favorable treatment in her realm, Verglas Precessional, where they serve as trusted advisors, emissaries to other planes, and members of her personal retinue, in addition to performing clandestine tasks the goddess wishes to keep hidden.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 31",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 31"
 }

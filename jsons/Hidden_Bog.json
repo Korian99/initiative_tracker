@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Hidden Bog",
-  "type": "hazard",
+  "type": "Hazard",
   "level": -1,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Bounty #6: The Road from Otari",
   "stealth": {
     "value": 4,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>This section of grass-strewn ground hides a pool of sticky mud 10 feet across.</p>",
-  "disable": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 15 Crafting check or <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 18 Thievery check to create a makeshift plank across the hidden bog; creatures can then traverse the hazard's area without stepping into the mud.</p>",
+  "disable": "<p><span class=\"action-glyph\">2</span> DC 15 Crafting  or <span class=\"action-glyph\">2</span> DC 18 Thievery  to create a makeshift plank across the hidden bog; creatures can then traverse the hazard's area without stepping into the mud.</p>",
   "reset": "<p>Creatures can still step into the mud after the trap is revealed, but the area containing the mud is obvious.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Collapse",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creatures enters the 10-foot-square area of the hidden bog</p>\n<hr />\n<p><strong>Effect</strong> The creatures squelches into two feet of sticky mud, ending its move action. The mud imposes a -10 foot penalty to the creature's Speed until it is wiped off (requiring <span class=\"action-glyph\">3</span>).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,90 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Collapse",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creatures enters the 10-foot-square area of the hidden bog</p>\n<hr />\n<p><strong>Effect</strong> The creatures squelches into two feet of sticky mud, ending its move action. The mud imposes a -10 foot penalty to the creature's Speed until it is wiped off (requiring <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\">).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 4,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Hidden Bog",
-    "type": "hazard",
-    "level": -1,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental",
-      "Trap"
-    ],
-    "source": "Pathfinder Bounty #6: The Road from Otari",
-    "stealth": {
-      "value": 4,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>This section of grass-strewn ground hides a pool of sticky mud 10 feet across.</p>",
-    "disable": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 15 Crafting check or <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 18 Thievery check to create a makeshift plank across the hidden bog; creatures can then traverse the hazard's area without stepping into the mud.</p>",
-    "reset": "<p>Creatures can still step into the mud after the trap is revealed, but the area containing the mud is obvious.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Collapse",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creatures enters the 10-foot-square area of the hidden bog</p>\n<hr />\n<p><strong>Effect</strong> The creatures squelches into two feet of sticky mud, ending its move action. The mud imposes a -10 foot penalty to the creature's Speed until it is wiped off (requiring <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\">).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 13"
-  },
-  "recallKnowledge": ", DC: 13"
+  "recallKnowledge": ", DC 13"
 }

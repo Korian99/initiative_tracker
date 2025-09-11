@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Ice Slick",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 0,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Bounty #1: The Whitefang Wyrm",
   "stealth": {
     "value": 7,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>A sheer slick of ice causes anyone other than Ssalarn who attempts to cross it to slip and fall.</p>",
-  "disable": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 18 Athletics check to break the ice and roughen its surface</p>",
+  "disable": "<p><span class=\"action-glyph\">2</span> DC 18 Athletics  to break the ice and roughen its surface</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Slip and Slide",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature walks onto the ice slick</p>\n<hr />\n<p><strong>Effect</strong> The target must attempt a Athletics check to Balance. If it fails this check, it falls Prone and slides 10 feet in the direction it was moving when this reaction was triggered. If this movement is stopped by a wall, the target takes 1d6 bludgeoning damage per 5 feet of prevented movement. If this forced movement moves the target through another creature's space, that other creature must succeed at a DC 14 Reflex Saving Throw save or be knocked prone as well.</p>\n<hr />\n<p>5 foot damage: 1d6 Bludgeoning Damage damage</p>\n<p>10 foot damage: 2d6 Bludgeoning Damage damage</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 16,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 10,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 4,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -61,93 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Slip and Slide",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature walks onto the ice slick</p>\n<hr />\n<p><strong>Effect</strong> The target must attempt a Athletics check to Balance. If it fails this check, it falls Prone and slides 10 feet in the direction it was moving when this reaction was triggered. If this movement is stopped by a wall, the target takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage per 5 feet of prevented movement. If this forced movement moves the target through another creature's space, that other creature must succeed at a DC 14 Reflex save or be knocked prone as well.</p>\n<hr />\n<p>5 foot damage: <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage</p>\n<p>10 foot damage: <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Ice Slick",
-    "type": "hazard",
-    "level": 0,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental",
-      "Trap"
-    ],
-    "source": "Pathfinder Bounty #1: The Whitefang Wyrm",
-    "stealth": {
-      "value": 7,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>A sheer slick of ice causes anyone other than Ssalarn who attempts to cross it to slip and fall.</p>",
-    "disable": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 18 Athletics check to break the ice and roughen its surface</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 16,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 4,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 20,
-      "max": 20,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Slip and Slide",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature walks onto the ice slick</p>\n<hr />\n<p><strong>Effect</strong> The target must attempt a Athletics check to Balance. If it fails this check, it falls Prone and slides 10 feet in the direction it was moving when this reaction was triggered. If this movement is stopped by a wall, the target takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage per 5 feet of prevented movement. If this forced movement moves the target through another creature's space, that other creature must succeed at a DC 14 Reflex save or be knocked prone as well.</p>\n<hr />\n<p>5 foot damage: <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage</p>\n<p>10 foot damage: <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 14"
-  },
-  "recallKnowledge": ", DC: 14"
+  "recallKnowledge": ", DC 14"
 }

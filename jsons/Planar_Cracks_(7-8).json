@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Planar Cracks (7-8)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 7,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Environmental",
     "Magical"
@@ -17,32 +17,46 @@
   "source": "Pathfinder Society Scenario #2-16: Freedom for Wishes",
   "stealth": {
     "value": 16,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>The cracks scintillate and shift between the elemental planes, leaking perilous energy with each shift.</p>",
-  "disable": "<p>DC 28 Thievery check (expert) twice to assemble a seal using objects strongly grounded to the Material Plane, DC 26 Arcana check (trained) twice to invoke incantations to seal the cracks, or Dispel Magic (4th rank, counteract DC 22) to counteract the cracks.</p>",
+  "disable": "<p>DC 28 Thievery  (expert) twice to assemble a seal using objects strongly grounded to the Material Plane, DC 26 Arcana  (trained) twice to invoke incantations to seal the cracks, or Dispel Magic (4th rank, counteract DC 22) to counteract the cracks.</p>",
   "reset": "<p>The cracks re-form after 1 hour.</p>",
-  "routine": "<p>(1 action) A surge of energy strikes a random non-mephit creature in the foyer. Roll <span class=\"roll\" onclick=\"roll(this)\">1d4</span> to determine the element of the energy surge.</p>\n<p>1-Energy from the Plane of Air: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+3</span> electricity damage (DC 25 basic Reflex save); on a failure, the creature is pushed back 10 feet toward the entryway. The hazard gains the air and electricity traits for this round.</p>\n<p>2-Energy from the Plane of Earth: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+3</span> bludgeoning damage (DC 25 basic Reflex save); on a failed save, the creature is knocked Prone. The hazard gains the earth trait for this round.</p>\n<p>3-Energy from the Plane of Fire: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+9</span> fire damage (DC 25 basic Reflex save). The hazard gains the fire trait for this round.</p>\n<p>4-Energy from the Plane of Water: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+3</span> cold damage (DC 25 basic Reflex save); on a failed save, the creature's lungs fill with water, making them Sickened 2. The hazard gains the cold and water traits for this round.</p>",
+  "routine": "<p>(1 action) A surge of energy strikes a random non-mephit creature in the foyer. Roll [[/r 1d4]] to determine the element of the energy surge.</p>\n<p>1-Energy from the Plane of Air: the creature takes (2d10+3) Electricity Damage damage (Basic DC 25 Reflex Saving Throw save); on a failure, the creature is pushed back 10 feet toward the entryway. The hazard gains the air and electricity traits for this round.</p>\n<p>2-Energy from the Plane of Earth: the creature takes (2d10+3) Bludgeoning Damage damage (Basic DC 25 Reflex Saving Throw save); on a failed save, the creature is knocked Prone. The hazard gains the earth trait for this round.</p>\n<p>3-Energy from the Plane of Fire: the creature takes (2d10+9) Fire Damage damage (Basic DC 25 Reflex Saving Throw save). The hazard gains the fire trait for this round.</p>\n<p>4-Energy from the Plane of Water: the creature takes (2d10+3) Cold Damage damage (Basic DC 25 Reflex Saving Throw save); on a failed save, the creature's lungs fill with water, making them Sickened 2. The hazard gains the cold and water traits for this round.</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Elemental Surge",
+      "actions": -1,
+      "traits": [
+        "arcane"
+      ],
+      "description": "<p><strong>Trigger</strong> A non-mephit creature enters the manor</p>\n<hr />\n<p><strong>Effect</strong> Raw elemental energy seeps into the Material Plane. The hazard rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,94 +72,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Elemental Surge",
-      "actions": -1,
-      "traits": [
-        "arcane"
-      ],
-      "description": "<p><strong>Trigger</strong> A non-mephit creature enters the manor</p>\n<hr />\n<p><strong>Effect</strong> Raw elemental energy seeps into the Material Plane. The hazard rolls initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 16,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Planar Cracks (7-8)",
-    "type": "hazard",
-    "level": 7,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Environmental",
-      "Magical"
-    ],
-    "source": "Pathfinder Society Scenario #2-16: Freedom for Wishes",
-    "stealth": {
-      "value": 16,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>The cracks scintillate and shift between the elemental planes, leaking perilous energy with each shift.</p>",
-    "disable": "<p>DC 28 Thievery check (expert) twice to assemble a seal using objects strongly grounded to the Material Plane, DC 26 Arcana check (trained) twice to invoke incantations to seal the cracks, or Dispel Magic (4th rank, counteract DC 22) to counteract the cracks.</p>",
-    "reset": "<p>The cracks re-form after 1 hour.</p>",
-    "routine": "<p>(1 action) A surge of energy strikes a random non-mephit creature in the foyer. Roll <span class=\"roll\" onclick=\"roll(this)\">1d4</span> to determine the element of the energy surge.</p>\n<p>1-Energy from the Plane of Air: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+3</span> electricity damage (DC 25 basic Reflex save); on a failure, the creature is pushed back 10 feet toward the entryway. The hazard gains the air and electricity traits for this round.</p>\n<p>2-Energy from the Plane of Earth: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+3</span> bludgeoning damage (DC 25 basic Reflex save); on a failed save, the creature is knocked Prone. The hazard gains the earth trait for this round.</p>\n<p>3-Energy from the Plane of Fire: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+9</span> fire damage (DC 25 basic Reflex save). The hazard gains the fire trait for this round.</p>\n<p>4-Energy from the Plane of Water: the creature takes <span class=\"roll\" onclick=\"roll(this)\">2d10+3</span> cold damage (DC 25 basic Reflex save); on a failed save, the creature's lungs fill with water, making them Sickened 2. The hazard gains the cold and water traits for this round.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Elemental Surge",
-        "actions": -1,
-        "traits": [
-          "arcane"
-        ],
-        "description": "<p><strong>Trigger</strong> A non-mephit creature enters the manor</p>\n<hr />\n<p><strong>Effect</strong> Raw elemental energy seeps into the Material Plane. The hazard rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 23"
-  },
-  "recallKnowledge": ", DC: 23"
+  "recallKnowledge": ", DC 23"
 }

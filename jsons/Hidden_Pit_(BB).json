@@ -4,50 +4,65 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Hidden Pit (BB)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 0,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium"
   ],
   "source": "Pathfinder Beginner Box",
   "stealth": {
     "value": 8,
-    "note": "(or DC 0 Perception check if the trapdoor is disabled or broken)",
-    "modifications": []
+    "note": "(or @Check[perception|dc:0|traits:hazard] if the trapdoor is disabled or broken)"
   },
   "description": "<p>A wooden trapdoor covers a 10-foot square pit that's 20 feet deep.</p>",
-  "disable": "<p>DC 12 Thievery check to remove the trapdoor.</p>",
+  "disable": "<p>DC 12 Thievery  to remove the trapdoor.</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Pitfall",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>If a creature walks onto the trapdoor, that creature falls in unless it succeeds at a DC 16 Reflex Saving Throw save to grab hold of the edge. The pit is 20 feet deep, dealing 10 Bludgeoning Damage damage to anyone who falls to the bottom.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 3
   },
   "fortitude": {
     "value": 1,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 1,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 12,
     "max": 12,
-    "note": "<b>Hardness</b> 3 <b>BT</b> 6. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -58,90 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Pitfall",
-      "actions": -1,
-      "traits": [],
-      "description": "<p>If a creature walks onto the trapdoor, that creature falls in unless it succeeds at a DC 16 Reflex save to grab hold of the edge. The pit is 20 feet deep, dealing 10 bludgeoning damage to anyone who falls to the bottom.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Hidden Pit (BB)",
-    "type": "hazard",
-    "level": 0,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium"
-    ],
-    "source": "Pathfinder Beginner Box",
-    "stealth": {
-      "value": 8,
-      "note": "(or DC 0 Perception check if the trapdoor is disabled or broken)",
-      "modifications": []
-    },
-    "description": "<p>A wooden trapdoor covers a 10-foot square pit that's 20 feet deep.</p>",
-    "disable": "<p>DC 12 Thievery check to remove the trapdoor.</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 1,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 1,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 12,
-      "max": 12,
-      "note": "<b>Hardness</b> 3 <b>BT</b> 6. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Pitfall",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>If a creature walks onto the trapdoor, that creature falls in unless it succeeds at a DC 16 Reflex save to grab hold of the edge. The pit is 20 feet deep, dealing 10 bludgeoning damage to anyone who falls to the bottom.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 14"
-  },
-  "recallKnowledge": ", DC: 14"
+  "recallKnowledge": ", DC 14"
 }

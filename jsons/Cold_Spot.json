@@ -4,44 +4,59 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Cold Spot",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 1,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Haunt"
   ],
   "source": "Pathfinder Book of the Dead",
   "stealth": {
     "value": 7,
-    "note": "<span class=\"fontstyle0\">(trained)</span>",
-    "modifications": []
+    "note": "<span class=\"fontstyle0\">(trained)</span>"
   },
   "description": "<p>The temperature suddenly drops as spectral forces gather in the area.</p>",
-  "disable": "<p>DC 19 Religion check (trained) to banish the cold spot with ritual prayers or DC 20 Occultism check (trained) to foil the arrival of outside forces</p>",
+  "disable": "<p>DC 19 Religion  (trained) to banish the cold spot with ritual prayers or DC 20 Occultism  (trained) to foil the arrival of outside forces</p>",
   "reset": "<p>1 hour</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Sudden Chill",
+      "actions": -1,
+      "traits": [
+        "cold",
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> A living creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> The temperature drops as Invisible spirits gather around the living. Living creatures within 15 feet take (2d4+5) Cold Damage damage (Basic DC 17 Fortitude Saving Throw). Creatures that critically fail their save are additionally Clumsy 1.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -57,95 +72,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Sudden Chill",
-      "actions": -1,
-      "traits": [
-        "cold",
-        "occult"
-      ],
-      "description": "<p><strong>Trigger</strong> A living creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> The temperature drops as Invisible spirits gather around the living. Living creatures within 15 feet take <span class=\"roll\" onclick=\"roll(this)\">2d4+5</span> cold damage (DC 17 basic Fortitude save). Creatures that critically fail their save are additionally Clumsy 1.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Cold Spot",
-    "type": "hazard",
-    "level": 1,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Haunt"
-    ],
-    "source": "Pathfinder Book of the Dead",
-    "stealth": {
-      "value": 7,
-      "note": "<span class=\"fontstyle0\">(trained)</span>",
-      "modifications": []
-    },
-    "description": "<p>The temperature suddenly drops as spectral forces gather in the area.</p>",
-    "disable": "<p>DC 19 Religion check (trained) to banish the cold spot with ritual prayers or DC 20 Occultism check (trained) to foil the arrival of outside forces</p>",
-    "reset": "<p>1 hour</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 10,
-      "max": 10,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Sudden Chill",
-        "actions": -1,
-        "traits": [
-          "cold",
-          "occult"
-        ],
-        "description": "<p><strong>Trigger</strong> A living creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> The temperature drops as Invisible spirits gather around the living. Living creatures within 15 feet take <span class=\"roll\" onclick=\"roll(this)\">2d4+5</span> cold damage (DC 17 basic Fortitude save). Creatures that critically fail their save are additionally Clumsy 1.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 15"
-  },
-  "recallKnowledge": ", DC: 15"
+  "recallKnowledge": ", DC 15"
 }

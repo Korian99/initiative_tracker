@@ -16,16 +16,16 @@
     "Swarm"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Darkvision",
+    "Echolocation 120ft precise"
+  ],
   "perception": {
     "value": 23,
-    "note": "darkvisionecholocation 120 ft precise",
+    "note": "Darkvision, Echolocation 120ft precise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "echolocation 120 ft precise"
-  ],
   "languages": [
     "Petran"
   ],
@@ -134,17 +134,24 @@
   ],
   "defensiveAbilities": [
     {
+      "name": "Swarm Mind",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster doesn't have a single mind (typically because it's a swarm of smaller creatures), and is immune to mental effects that target only a specific number of creatures. It is still subject to mental effects that affect all creatures in an area.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
       "name": "Resonant Chimes",
       "actions": null,
       "traits": [
         "aura",
         "sonic"
       ],
-      "description": "<p>30 feet. The consonite choir's tones resonate within physical objects. A creature that begins its turn in the aura deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> sonic damage on any Strike using a weapon.</p>",
+      "description": "<p>30 feet. The consonite choir's tones resonate within physical objects. A creature that begins its turn in the aura deals an additional 2d6 Sonic Damage damage on any Strike using a weapon.</p>",
       "collapsed": false
     }
   ],
-  "speed": "10 ft,\nfly 40 ft,\n",
+  "speed": "10 ft, fly 40ft",
   "strikes": [
     {
       "type": "ranged",
@@ -177,7 +184,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -187,209 +194,10 @@
       "name": "Swarming Chimes",
       "actions": 1,
       "traits": [],
-      "description": "<p>The swarm deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> slashing damage plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> sonic damage to each enemy in the swarm's space (DC 33 basic Reflex save). On a critical failure, the enemy is also Deafened for 1 minute.</p>",
+      "description": "<p>The swarm deals 4d6 Slashing Damage]{4d6 slashing damage plus 2d6 sonic damage} to each enemy in the swarm's space (Basic DC 33 Reflex Saving Throw save). On a critical failure, the enemy is also Deafened for 1 minute.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Floods of crystalline blades called consonite choirs surge through the caverns and tunnels of the Plane of Earth. Although their resonant chimes can be among the most beautiful music in the planes, those who intrude on their territory are instead confronted with a bone-shaking wall of sound and a barrage of razor-sharp crystals.</p>\n<p>The blades form naturally, just one of the many wondrous types of crystal on the Plane of Earth. Razor-edged consonite stalactites hum and chime along with the plane's grinding movement. As large collections of these crystals begin to communicate with each other through their shared song, they awaken into a sort of musical collective.</p>\n<p>Eventually, consonite choirs' songs grow loud and complex enough to shake these colonies loose of their stone moorings and free them to explore the Plane of Earth. Consonite choirs typically prefer to stay near their spawning grounds but might be coerced to perform in the homes of wealthy shaitans or serve other powerful creatures of earth. They willingly leave the comfort of their homes to hunt down the hated xorns, who enjoy the flavor of their immobile consonite brethren.</p>\n<p>Consonite choirs who leave the Plane of Earth, either through natural portals or by answering the calls of powerful rituals, often find the open spaces of other planes more to their liking. They enjoy the sensation of high winds moving through their chimes and search tirelessly for skilled performance partners. Crueler fates trap other choirs-more powerful beings might mystically bind them to service or bully them into becoming living trophies.</p>\n<p>Over years of movement, the individual crystal blades of a choir naturally chip and break down. In their native caverns, consonite choirs can easily find new members. Trapped elsewhere, they must rely on others for replacement blades or eventually fall into torpor.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 33",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 23,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Consonite Choir",
-    "type": "Creature",
-    "level": 13,
-    "traits": [
-      "Uncommon",
-      "Gargantuan",
-      "Earth",
-      "Elemental",
-      "Swarm"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 23,
-      "note": "darkvisionecholocation 120 ft precise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "echolocation 120 ft precise"
-    ],
-    "languages": [
-      "Petran"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "performance",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 8
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 6
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Echolocation (Precise) 120 feet",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The consonite choir can use hearing as a precise sense at the listed range.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 32,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 200,
-      "max": 200,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "swarm-mind"
-    ],
-    "resistances": [
-      {
-        "type": "bludgeoning",
-        "value": 8
-      },
-      {
-        "type": "piercing",
-        "value": 15
-      },
-      {
-        "type": "slashing",
-        "value": 15
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "area-damage",
-        "value": 8
-      },
-      {
-        "type": "splash-damage",
-        "value": 8
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Resonant Chimes",
-        "actions": null,
-        "traits": [
-          "aura",
-          "sonic"
-        ],
-        "description": "<p>30 feet. The consonite choir's tones resonate within physical objects. A creature that begins its turn in the aura deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> sonic damage on any Strike using a weapon.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "10 ft,\nfly 40 ft,\n",
-    "strikes": [
-      {
-        "type": "ranged",
-        "name": "Launched Blade",
-        "bonus": 26,
-        "traits": [
-          "magical",
-          "range-120",
-          "sonic"
-        ],
-        "damageRolls": [
-          {
-            "roll": "6d6",
-            "type": "piercing"
-          },
-          {
-            "roll": "2d6",
-            "type": "sonic"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(6d6)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(2d6)*2",
-            "type": "sonic"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Swarming Chimes",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The swarm deals <span class=\"roll\" onclick=\"roll(this)\">4d6</span> slashing damage plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> sonic damage to each enemy in the swarm's space (DC 33 basic Reflex save). On a critical failure, the enemy is also Deafened for 1 minute.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Floods of crystalline blades called consonite choirs surge through the caverns and tunnels of the Plane of Earth. Although their resonant chimes can be among the most beautiful music in the planes, those who intrude on their territory are instead confronted with a bone-shaking wall of sound and a barrage of razor-sharp crystals.</p>\n<p>The blades form naturally, just one of the many wondrous types of crystal on the Plane of Earth. Razor-edged consonite stalactites hum and chime along with the plane's grinding movement. As large collections of these crystals begin to communicate with each other through their shared song, they awaken into a sort of musical collective.</p>\n<p>Eventually, consonite choirs' songs grow loud and complex enough to shake these colonies loose of their stone moorings and free them to explore the Plane of Earth. Consonite choirs typically prefer to stay near their spawning grounds but might be coerced to perform in the homes of wealthy shaitans or serve other powerful creatures of earth. They willingly leave the comfort of their homes to hunt down the hated xorns, who enjoy the flavor of their immobile consonite brethren.</p>\n<p>Consonite choirs who leave the Plane of Earth, either through natural portals or by answering the calls of powerful rituals, often find the open spaces of other planes more to their liking. They enjoy the sensation of high winds moving through their chimes and search tirelessly for skilled performance partners. Crueler fates trap other choirs-more powerful beings might mystically bind them to service or bully them into becoming living trophies.</p>\n<p>Over years of movement, the individual crystal blades of a choir naturally chip and break down. In their native caverns, consonite choirs can easily find new members. Trapped elsewhere, they must rely on others for replacement blades or eventually fall into torpor.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 33",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 31"
 }

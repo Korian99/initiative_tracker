@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Cold",
     "Elemental",
     "Water"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 8,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Thalassic"
   ],
@@ -148,7 +149,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\nswim 30 ft,\n",
+  "speed": "25 ft, swim 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -168,7 +169,7 @@
         }
       ],
       "effects": [
-        "Push"
+        "push"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -195,7 +196,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d6+4)*2+1d6",
+          "roll": "(1d6+4)*2",
           "type": "piercing"
         },
         {
@@ -218,7 +219,7 @@
         "cold",
         "manipulate"
       ],
-      "description": "<p>The ledalusca freezes their surface into a translucent, faintly colored ice sculpture matching the mirror image of a Medium creature or object they have seen before. While in this form, instead of a wave, they have the following Strike:</p>\n<p><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> ice shell +10/+5/+0, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> cold damage</p>\n<p>The physical damage is a type that matches the new shape of the ledalusca's frozen shell. The ledalusca can revert to their liquid form by taking this action again.</p>",
+      "description": "<p>The ledalusca freezes their surface into a translucent, faintly colored ice sculpture matching the mirror image of a Medium creature or object they have seen before. While in this form, instead of a wave, they have the following Strike:</p>\n<p><strong>Melee</strong> <span class=\"action-glyph\">a</span> ice shell +10/+5/+0, <strong>Damage</strong> 1d4 Cold Damage damage</p>\n<p>The physical damage is a type that matches the new shape of the ledalusca's frozen shell. The ledalusca can revert to their liquid form by taking this action again.</p>",
       "collapsed": false
     },
     {
@@ -229,247 +230,15 @@
       ],
       "description": "<p>Until the next time they act, the ledaluca appears to be either an ice sculpture (if under the effects of Freeze Shell) or a pool of still water (if not). They have an automatic result of 28 on Deception checks and DCs to pass as what they appear to be.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Push",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Ledaluscas are reflective water elementals that can bring forth images previously reflected on their surfaces and wholly freeze themselves in the shapes of what they reflected. They explore and protect the calmest boundaries of the icy regions of the Plane of Water, where ice forms in shiny, flawless sheets.</p>\n<p>Insatiably curious, their eagerness propels some ledaluscas to pickpocket interesting-looking objects to play with. Others travel to different planes to locate, observe, and reflect a wider variety of creatures than those on their home plane. They pretend to be ice sculptures or still pools for this purpose, especially if they can find a spot in a high-traffic area to inhabit. Despite their perfect mimicry, ledaluscas are unable to create an appearance from scratch, nor can they adjust the appearance they take on or combine elements of different reflections. Some of them find this disheartening, like artists vexed by a lack of creativity.</p>\n<p>One of the strangest encounters a ledalusca can experience is with a creature or object that has no reflection. A ledalusca can see a vampire, for example, but is unable to reproduce its image. For a creature that effectively has an unlimited memory for images, this proves utterly confusing. The vague memory of the encounter sticks in the ledalusca's mind like a splintering a humanoid's finger.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Ledalusca",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Cold",
-      "Elemental",
-      "Water"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 8,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Thalassic"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Recall Reflection",
-        "actions": null,
-        "traits": [
-          "illusion",
-          "primal"
-        ],
-        "description": "<p>A ledalusca can recall and replay any reflection ever cast on its surface, although it must still Seek to consciously notice fine or significant details.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 40,
-      "max": 40,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "cold",
-      "paralyzed",
-      "poison",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "fire",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Shell Block",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The ledalusca takes physical damage from an attack</p>\n<p><strong>Requirements</strong> The ledalusca's shell is frozen (see Freeze Shell)</p>\n<hr />\n<p><strong>Effect</strong> The ledalusca angles their shell to absorb the blow, gaining resistance 5 to the triggering damage. If they take bludgeoning or fire damage after applying this resistance, their frozen shell shatters until they freeze a new one.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\nswim 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Wave",
-        "bonus": 10,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Push"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Ice Shard",
-        "bonus": 9,
-        "traits": [
-          "deadly-d6",
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d4",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2+1d6",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d4)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Freeze Shell",
-        "actions": 1,
-        "traits": [
-          "cold",
-          "manipulate"
-        ],
-        "description": "<p>The ledalusca freezes their surface into a translucent, faintly colored ice sculpture matching the mirror image of a Medium creature or object they have seen before. While in this form, instead of a wave, they have the following Strike:</p>\n<p><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> ice shell +10/+5/+0, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> cold damage</p>\n<p>The physical damage is a type that matches the new shape of the ledalusca's frozen shell. The ledalusca can revert to their liquid form by taking this action again.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Hold Still",
-        "actions": 1,
-        "traits": [
-          "concentrate"
-        ],
-        "description": "<p>Until the next time they act, the ledaluca appears to be either an ice sculpture (if under the effects of Freeze Shell) or a pool of still water (if not). They have an automatic result of 28 on Deception checks and DCs to pass as what they appear to be.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Ledaluscas are reflective water elementals that can bring forth images previously reflected on their surfaces and wholly freeze themselves in the shapes of what they reflected. They explore and protect the calmest boundaries of the icy regions of the Plane of Water, where ice forms in shiny, flawless sheets.</p>\n<p>Insatiably curious, their eagerness propels some ledaluscas to pickpocket interesting-looking objects to play with. Others travel to different planes to locate, observe, and reflect a wider variety of creatures than those on their home plane. They pretend to be ice sculptures or still pools for this purpose, especially if they can find a spot in a high-traffic area to inhabit. Despite their perfect mimicry, ledaluscas are unable to create an appearance from scratch, nor can they adjust the appearance they take on or combine elements of different reflections. Some of them find this disheartening, like artists vexed by a lack of creativity.</p>\n<p>One of the strangest encounters a ledalusca can experience is with a creature or object that has no reflection. A ledalusca can see a vampire, for example, but is unable to reproduce its image. For a creature that effectively has an unlimited memory for images, this proves utterly confusing. The vague memory of the encounter sticks in the ledalusca's mind like a splintering a humanoid's finger.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 16"
 }

@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Test of Strength",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 13,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,32 +17,51 @@
   "source": "Pathfinder Kingmaker",
   "stealth": {
     "value": 27,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>The steps angle downward into a slope, releasing all currently placed boulders to roll back down to the north.</p>",
-  "disable": "<p>DC 37 Thievery check (expert) to disable the hidden hinges for one of the steps, thereby locking all four steps into place</p>",
+  "disable": "<p>DC 37 Thievery  (expert) to disable the hidden hinges for one of the steps, thereby locking all four steps into place</p>",
   "reset": "<p>The trap Releases Boulders 24 hours after it Opens Doors. Once the trap Releases Boulders, it resets itself automatically.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Open Doors",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> All four boulders are placed within six minutes;</p>\n<p><strong>Effect</strong> the doors to area <strong>D4</strong> open.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Release Boulders",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> All four boulders are not placed within six minutes</p>\n<p><strong>Effect</strong> All four steps angle downward, causing any boulders held within to roll toward area <strong>D1</strong>. Each rolling boulder inflicts (3d6 + 6) Bludgeoning Damage damage on all creatures in area <strong>D2</strong>(Basic DC 37 Reflex Saving Throw).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,104 +77,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Open Doors",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> All four boulders are placed within six minutes;</p>\n<p><strong>Effect</strong> the doors to area <strong>D4</strong> open.</p>",
-      "collapsed": false
-    },
-    {
-      "name": "Release Boulders",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> All four boulders are not placed within six minutes</p>\n<p><strong>Effect</strong> All four steps angle downward, causing any boulders held within to roll toward area <strong>D1</strong>. Each rolling boulder inflicts <span class=\"roll\" onclick=\"roll(this)\">3d6</span> + 6 bludgeoning damage on all creatures in area <strong>D2</strong>(DC 37 basic Reflex save).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 27,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Test of Strength",
-    "type": "hazard",
-    "level": 13,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "stealth": {
-      "value": 27,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>The steps angle downward into a slope, releasing all currently placed boulders to roll back down to the north.</p>",
-    "disable": "<p>DC 37 Thievery check (expert) to disable the hidden hinges for one of the steps, thereby locking all four steps into place</p>",
-    "reset": "<p>The trap Releases Boulders 24 hours after it Opens Doors. Once the trap Releases Boulders, it resets itself automatically.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Open Doors",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> All four boulders are placed within six minutes;</p>\n<p><strong>Effect</strong> the doors to area <strong>D4</strong> open.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Release Boulders",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> All four boulders are not placed within six minutes</p>\n<p><strong>Effect</strong> All four steps angle downward, causing any boulders held within to roll toward area <strong>D1</strong>. Each rolling boulder inflicts <span class=\"roll\" onclick=\"roll(this)\">3d6</span> + 6 bludgeoning damage on all creatures in area <strong>D2</strong>(DC 37 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 31"
-  },
-  "recallKnowledge": ", DC: 31"
+  "recallKnowledge": ", DC 31"
 }

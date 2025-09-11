@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 13,
   "traits": [
-    "Huge",
+    "Common",
+    "huge",
     "Elemental",
     "Fire"
   ],
   "source": "Pathfinder Rage of Elements",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 24,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Pyric"
@@ -124,7 +125,7 @@
     }
   ],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -146,7 +147,7 @@
         }
       ],
       "effects": [
-        "Improved-grab"
+        "improved-grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -189,10 +190,10 @@
         }
       ],
       "effects": [
-        "Marinade"
+        "marinade"
       ],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -209,14 +210,14 @@
       "name": "Roast",
       "actions": 1,
       "traits": [],
-      "description": "<p>The brochmaw turns a skewer over their oven, cooking anything impaled on it. Creatures Grabbed by the brochmaw's skewer take <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage (DC 32 basic Fortitude save). Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve for 1 minute.</p>\n<p>Effect: Roast</p>",
+      "description": "<p>The brochmaw turns a skewer over their oven, cooking anything impaled on it. Creatures Grabbed by the brochmaw's skewer take 3d6 Fire Damage damage (Basic DC 32 Fortitude Saving Throw save). Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve for 1 minute.</p>\n<p>Effect: Roast</p>",
       "collapsed": false
     },
     {
       "name": "Serve",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The brochmaw has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The brochmaw eats their hard-earned meal off one of their skewers. The brochmaw bites down on one creature it has grabbed, dealing <span class=\"roll\" onclick=\"roll(this)\">12d6</span> piercing damage (DC 32 basic Fortitude save); the brochmaw regains Hit Points equal to half the damage dealt. The creature is then freed from the skewer.</p>",
+      "description": "<p><strong>Requirements</strong> The brochmaw has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The brochmaw eats their hard-earned meal off one of their skewers. The brochmaw bites down on one creature it has grabbed, dealing 12d6 Piercing Damage damage (Basic DC 32 Fortitude Saving Throw save); the brochmaw regains Hit Points equal to half the damage dealt. The creature is then freed from the skewer.</p>",
       "collapsed": false
     },
     {
@@ -225,243 +226,15 @@
       "traits": [],
       "description": "<p>The skewers of a brochmaw are more than long enough to hold multiple creatures. A brochmaw can have up to three creatures Grabbed on its skewer, and it can still make Strikes with its skewer even if it has creatures grabbed, though it can't target creatures it has grabbed.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>With bodies of fired clay, brochmaws look like walking cylindrical ovens split across the middle by their titular maws, which rage with the fires of culinary perfection. Behind their maw burns a powerful internal oven, where the elemental creatures roast their prey. Brochmaws are driven solely by their voracious appetites, only leaving their lairs to acquire new meals. Early attempts to force brochmaws into service resulted in their would-be captors being reduced to nothing more than ash on a plate, accompanied by a written review of how they tasted. Now, brochmaws are employed all across the Planes, lured by the sweet promise of new, fresh meat.</p>\n<p>Though brochmaws have no use for money, they do trade gifts for services. The only thing they have to offer is cooked meat from their own mouths, which they deem extremely valuable. Surprisingly, all who have tried brochmaw meat claim it to be a savory roasted delight. Given that brochmaws offer nothing but cooked meat and desire nothing but raw meat, trading with them is a simple if slightly dangerous affair, often coming down to the quantity and rarity of the meat offered.</p>\n<p>Brochmaws hate to see meat go to waste. If one discovers a carcass of any sort, they call others of their kind to join them in a festive cookout, with dancing and feasting inevitably accompanied by compliments or complaints about the quality of the food.</p>\n<h2>Planar Delicacies</h2>\n<p>Though brochmaws love to devour new things, they still have favorite meals they like to keep on hand. Brochmaws love amphibian meat, though the origin of this appeal is a mystery. They will eagerly consume geniekin of all kinds because the magical blood produces a psychedelic effect. Brochmaws think celestials are as dangerous as they are delicious, requiring a precise cooking process to avoid killing the consumer. Most brochmaws are far too impatient to prepare celestial meat properly, often to disastrous results.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 31",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 24,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Brochmaw",
-    "type": "Creature",
-    "level": 13,
-    "traits": [
-      "Huge",
-      "Elemental",
-      "Fire"
-    ],
-    "source": "Pathfinder Rage of Elements",
-    "perception": {
-      "value": 24,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Pyric"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 28,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 21,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Cooking Lore",
-        "modifier": 24,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 8
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 8
-    },
-    "intelligence": {
-      "value": 3
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 32,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 23,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 259,
-      "max": 259,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed",
-      "paralyzed",
-      "fire",
-      "sleep",
-      "poison"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "cold",
-        "value": 15
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Skewer",
-        "bonus": 27,
-        "traits": [
-          "reach-15"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d10+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d10+8)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Improved-grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Hot Oil",
-        "bonus": 25,
-        "traits": [
-          "range-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d6+7",
-            "type": "fire"
-          },
-          {
-            "roll": "3",
-            "type": "splash fire"
-          },
-          {
-            "roll": "1d8",
-            "type": "persistent fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d6+7)*2",
-            "type": "fire"
-          },
-          {
-            "roll": "(3)*2",
-            "type": "splash fire"
-          },
-          {
-            "roll": "(1d8)*2",
-            "type": "persistent fire"
-          }
-        ],
-        "effects": [
-          "Marinade"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Marinade",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A creature taking persistent fire damage from the brochmaw's hot oil Strike is more readily cooked, taking a –2 circumstance penalty to Fortitude saves against Roast for as long as it is taking persistent fire damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Roast",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The brochmaw turns a skewer over their oven, cooking anything impaled on it. Creatures Grabbed by the brochmaw's skewer take <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage (DC 32 basic Fortitude save). Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve for 1 minute.</p>\n<p>Effect: Roast</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Serve",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The brochmaw has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The brochmaw eats their hard-earned meal off one of their skewers. The brochmaw bites down on one creature it has grabbed, dealing <span class=\"roll\" onclick=\"roll(this)\">12d6</span> piercing damage (DC 32 basic Fortitude save); the brochmaw regains Hit Points equal to half the damage dealt. The creature is then freed from the skewer.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Skewer Master",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The skewers of a brochmaw are more than long enough to hold multiple creatures. A brochmaw can have up to three creatures Grabbed on its skewer, and it can still make Strikes with its skewer even if it has creatures grabbed, though it can't target creatures it has grabbed.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>With bodies of fired clay, brochmaws look like walking cylindrical ovens split across the middle by their titular maws, which rage with the fires of culinary perfection. Behind their maw burns a powerful internal oven, where the elemental creatures roast their prey. Brochmaws are driven solely by their voracious appetites, only leaving their lairs to acquire new meals. Early attempts to force brochmaws into service resulted in their would-be captors being reduced to nothing more than ash on a plate, accompanied by a written review of how they tasted. Now, brochmaws are employed all across the Planes, lured by the sweet promise of new, fresh meat.</p>\n<p>Though brochmaws have no use for money, they do trade gifts for services. The only thing they have to offer is cooked meat from their own mouths, which they deem extremely valuable. Surprisingly, all who have tried brochmaw meat claim it to be a savory roasted delight. Given that brochmaws offer nothing but cooked meat and desire nothing but raw meat, trading with them is a simple if slightly dangerous affair, often coming down to the quantity and rarity of the meat offered.</p>\n<p>Brochmaws hate to see meat go to waste. If one discovers a carcass of any sort, they call others of their kind to join them in a festive cookout, with dancing and feasting inevitably accompanied by compliments or complaints about the quality of the food.</p>\n<h2>Planar Delicacies</h2>\n<p>Though brochmaws love to devour new things, they still have favorite meals they like to keep on hand. Brochmaws love amphibian meat, though the origin of this appeal is a mystery. They will eagerly consume geniekin of all kinds because the magical blood produces a psychedelic effect. Brochmaws think celestials are as dangerous as they are delicious, requiring a precise cooking process to avoid killing the consumer. Most brochmaws are far too impatient to prepare celestial meat properly, often to disastrous results.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 31",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 31"
 }

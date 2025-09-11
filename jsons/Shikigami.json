@@ -9,22 +9,22 @@
   "type": "Creature",
   "level": 1,
   "traits": [
-    "Tiny",
+    "Common",
+    "tiny",
     "Kami",
     "Lawful",
-    "Spirit",
-    "(caster)"
+    "Spirit"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 10,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common"
   ],
@@ -137,7 +137,7 @@
     }
   ],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -230,23 +230,25 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 1,
+      "autoHeightenLevel": 2,
       "cantrips": [
         {
           "name": "Forbidding Ward",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "Sustained up to 1 minute",
           "range": "30 feet",
           "area": "",
           "targets": "1 ally and 1 enemy",
           "save": "",
-          "description": "<p>You ward an ally against the attacks and hostile spells from the target enemy. The target ally gains a +1 status bonus to Armor Class and saving throws against the target enemy's attacks, spells, and other effects.</p>\n\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>",
+          "description": "<p>You ward an ally against the attacks and hostile spells from the target enemy. The target ally gains a +1 status bonus to Armor Class and saving throws against the target enemy's attacks, spells, and other effects.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -255,18 +257,16 @@
           "id": "jQhLKk6CqVEPZJv8"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "ybXtrOFeg06hi75j",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Purify Food and Drink",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -288,9 +288,12 @@
           "name": "Animal Messenger",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "1 minute",
           "duration": "see text",
@@ -310,8 +313,11 @@
           "name": "Invisibility (Self Only)",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "illusion"
+            "illusion",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -336,6 +342,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -378,390 +385,5 @@
       }
     }
   ],
-  "description": "<p>Shikigami are the least powerful of all kami and the most common. Unlike most other kami, which are bound to their wards by a more powerful spirit or deity, shikigami are minor spirits that even mortal practitioners can sometimes bind into a tiny paper form and task with guarding small works, such as garden statues and vases. Landowners delight in having shikigami protect their gardens, whether they paid a wandering spellcaster to entreat the shikigami or simply had the fortune of another spirit assigning a shikigami to their land. Travelers who come across a shikigami-graced milestone or waypost believe that such encounters are good omens for the journey ahead.</p>\n<p>For their part, shikigami have mixed opinions on civilization and the humanoids who dwell therein. While shikigami will fight to protect their ward against invaders and desecrators, these kami are just as likely to leave-their ward in tow-if locals begin to despoil the area or show a disregard for nature. Most practitioners capable of binding a shikigami wouldn't engage in this type of disrespect, but should the kami catch wind of such practices, shikigami across the land might abandon their contracts en masse, leaving an uncomfortable vacuum with their unexpected exodus. In this way, shikigami exemplify the precarious balance between the expansion of civilization and the preservation of the natural world.</p>\n<p>Not all shikigami protect gardens, so you can substitute the shikigami's spade for any sort of mundane tool that's useful to the shikigami's task and their ward. The kami wields any such weapon with the same damage dice, modifiers, and traits listed for their spade Strike, but change the damage type as appropriate for the new weapon.</p>\n<hr />\n<p>Kami are divine nature spirits native to the lands of Tian Xia, far to the east of the Inner Sea region. They serve as guardians of natural objects and places they protect-their \"wards\"-and are ancient enemies of the oni. Kami can merge with their wards, allowing them to surreptitiously watch anyone who treads upon their sacred grounds. Kami leave those who they deem harmless alone, but the spirits fight vigilantly to scare away anyone perceived as a threat.</p>\n<p>Kami choose their own wards, though many mortals seek to attract them to sites that might require protection, leading to a proliferation of certain trees, statues, gates, and other symbolic elements in areas where kami are known to dwell.</p>",
-  "recallKnowledge": "Occultism, DC: 15",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Shikigami",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Tiny",
-      "Kami",
-      "Lawful",
-      "Spirit",
-      "(caster)"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 10,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "diplomacy",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "medicine",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 3
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Ward",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>Every kami is bound to a ward: a specific animal, plant, object, or location. A kami can merge with or emerge from their ward as a single action, which has the concentrate trait. While merged, the kami can observe their surroundings with their usual senses as well as the senses of their ward, but can't move, communicate with, or control their ward. Additionally, a kami merged with their ward recovers Hit Points each minute as if they spent an entire day resting.</p>\n<p>A shikigami's ward is typically a minor work of art or symbol of civilization, such as a milestone, trail sign, personal garden, or tiny statue.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 25,
-      "max": 25,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "cold-iron",
-        "value": 3
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 7,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+2",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+2)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Spade",
-        "bonus": 7,
-        "traits": [
-          "agile",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+2",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+2)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Spade",
-        "bonus": 7,
-        "traits": [
-          "agile",
-          "thrown-10",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+2",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+2)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 9,
-        "dc": 17,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Forbidding Ward",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 ally and 1 enemy",
-            "save": "",
-            "description": "<p>You ward an ally against the attacks and hostile spells from the target enemy. The target ally gains a +1 status bonus to Armor Class and saving throws against the target enemy's attacks, spells, and other effects.</p>\n\n<hr />\n<p><strong>Heightened (6th)</strong> The status bonus increases to +2.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "jQhLKk6CqVEPZJv8"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "ybXtrOFeg06hi75j",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Purify Food and Drink",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 cubic foot of contaminated food or water",
-            "save": "",
-            "description": "<p>You remove toxins and contaminations from food and drink, making them safe to consume. This spell doesn't prevent future contamination, natural decay, or spoilage. One cubic foot of liquid is roughly 8 gallons.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "7gYWPPtrOYREk1vi"
-          }
-        ],
-        "lv2spells": [
-          {
-            "name": "Animal Messenger",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "1 minute",
-            "duration": "see text",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You offer food, and an ordinary Tiny animal within range approaches to eat it. You imprint the image, direction, and distance of an obvious place or landmark well known to you within the animal. You can also attach a small object or note up to light Bulk to it. The animal does its best to reach the destination; if it makes it there, it waits nearby and allows nonhostile creatures to approach and remove the attached object. The spell ends after the message is delivered or after 24 hours, whichever comes first.</p>\n<p>If there are no Tiny wild animals in range, the spell is lost.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "MB5hT0YX1f0S1B4K"
-          },
-          {
-            "name": "Invisibility (Self Only)",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "illusion"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "self",
-            "save": "",
-            "description": "<p>Cloaked in illusion, the target becomes Invisible. This makes it Undetected to all creatures, though the creatures can attempt to find the target, making it Hidden to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "iGgnvBVMpX59E7rh"
-          }
-        ],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>Shikigami are the least powerful of all kami and the most common. Unlike most other kami, which are bound to their wards by a more powerful spirit or deity, shikigami are minor spirits that even mortal practitioners can sometimes bind into a tiny paper form and task with guarding small works, such as garden statues and vases. Landowners delight in having shikigami protect their gardens, whether they paid a wandering spellcaster to entreat the shikigami or simply had the fortune of another spirit assigning a shikigami to their land. Travelers who come across a shikigami-graced milestone or waypost believe that such encounters are good omens for the journey ahead.</p>\n<p>For their part, shikigami have mixed opinions on civilization and the humanoids who dwell therein. While shikigami will fight to protect their ward against invaders and desecrators, these kami are just as likely to leave-their ward in tow-if locals begin to despoil the area or show a disregard for nature. Most practitioners capable of binding a shikigami wouldn't engage in this type of disrespect, but should the kami catch wind of such practices, shikigami across the land might abandon their contracts en masse, leaving an uncomfortable vacuum with their unexpected exodus. In this way, shikigami exemplify the precarious balance between the expansion of civilization and the preservation of the natural world.</p>\n<p>Not all shikigami protect gardens, so you can substitute the shikigami's spade for any sort of mundane tool that's useful to the shikigami's task and their ward. The kami wields any such weapon with the same damage dice, modifiers, and traits listed for their spade Strike, but change the damage type as appropriate for the new weapon.</p>\n<hr />\n<p>Kami are divine nature spirits native to the lands of Tian Xia, far to the east of the Inner Sea region. They serve as guardians of natural objects and places they protect-their \"wards\"-and are ancient enemies of the oni. Kami can merge with their wards, allowing them to surreptitiously watch anyone who treads upon their sacred grounds. Kami leave those who they deem harmless alone, but the spirits fight vigilantly to scare away anyone perceived as a threat.</p>\n<p>Kami choose their own wards, though many mortals seek to attract them to sites that might require protection, leading to a proliferation of certain trees, statues, gates, and other symbolic elements in areas where kami are known to dwell.</p>",
-    "recallKnowledge": "Occultism, DC: 15",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism, DC 15"
 }

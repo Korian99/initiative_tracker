@@ -15,15 +15,15 @@
     "Mythic"
   ],
   "source": "Pathfinder War of Immortals",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 21,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Sakvroth",
     "(Can't Speak)"
@@ -54,7 +54,7 @@
       "name": "survival",
       "modifier": 17,
       "note": [
-        "to Track <span class=\"roll\" onclick=\"roll(this)\">24</span>"
+        "to Track 24"
       ],
       "usedAttribute": "wisdom",
       "modifications": []
@@ -131,6 +131,13 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
       "name": "Hazard Immunity",
       "actions": null,
       "traits": [],
@@ -154,7 +161,7 @@
       "collapsed": false
     }
   ],
-  "speed": "40 ft,\nclimb 30 ft,\n",
+  "speed": "40 ft, climb 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -176,7 +183,7 @@
         }
       ],
       "effects": [
-        "Improved-grab"
+        "improved-grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -222,7 +229,7 @@
       "name": "Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d6+12</span> bludgeoning, DC 32 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "description": "<p>(3d6+12) Bludgeoning Damage, Basic DC 32 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -234,9 +241,9 @@
     },
     {
       "name": "Mythic Skill",
-      "actions": null,
+      "actions": 0,
       "traits": [],
-      "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Mythic Gogiteth attempts its next Athletics or Stealth skill check with a +4 bonus and is considered to have mythic proficiency for that check. This applies to one skill when this ability is gained and a second skill if the creature is 12th level or higher.</p>",
+      "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Mythic Gogiteth attempts its next Athletics or Stealth skill check with a +4 bonus and is considered to have mythic proficiency for that check.</p>",
       "collapsed": false
     },
     {
@@ -245,263 +252,15 @@
       "traits": [],
       "description": "<p>The gogiteth Strides three times. Once per Stride, it can attempt a leg Strike against a creature in its reach at any point during the Stride; it must make each attack against a different creature, but it doesn't apply its multiple attack penalty until after making all its Strikes. If any of the Strikes result in a critical failure, Skittering Assault ends.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Improved Grab",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead spend an action to use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Gogiteths are horrific nightmares with grasping, spiderlike legs; vicious, gnashing teeth; and far too many eyes. Of all the creatures on Golarion for whom the acquisition of mythic power might prove a nightmare for others, the gogiteth is arguably one of the most terrible.</p>\n<p>Normally, a gogiteth's victims at least have the possible salvation of hearing the horrible crackling and popping of its joints as it clambers towards them through the dark, an opportunity to flee the slavering nightmare seeking them. Mythic ambusher gogiteths are unnaturally silent, however. The first sound a creature might hear when being hunted by such a monstrosity is the sharp wheeze of their own fleeting breath as the gogiteth's jaws snap shut around them, or the tearing of their flesh and clothing as one of its legs pierces them through.</p>\n<p>Though little is known about the origins of gogiteths, mythic gogiteths generally acquire mythic power in the same way that other creatures do. Golarion has no shortage of vile deities who might take cruel delight in bestowing a sliver of mythic power upon a creature as frightful and terrible as a gogiteth. Their traditional hive homes in the Darklands make it unlikely that they would be affected by the Godsrain, but it is not impossible that droplets of Gorum's spilled blood could seep through cracks and make their way down into the thirsty jaws of one of these nightmarish monstrosities.</p>",
-  "recallKnowledge": "Occultism, DC: 35",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 21,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Mythic Gogiteth",
-    "type": "Creature",
-    "level": 12,
-    "traits": [
-      "Rare",
-      "Large",
-      "Aberration",
-      "Mythic"
-    ],
-    "source": "Pathfinder War of Immortals",
-    "perception": {
-      "value": 21,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Sakvroth",
-      "(Can't Speak)"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 28,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 17,
-        "note": [
-          "to Track <span class=\"roll\" onclick=\"roll(this)\">24</span>"
-        ],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Remove a Condition",
-        "actions": 1,
-        "traits": [
-          "concentrate"
-        ],
-        "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The creature ends one condition affecting it.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 31,
-      "note": "all-around vision",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 250,
-      "max": 250,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "poison",
-        "value": 10
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Hazard Immunity",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A mythic ambusher never triggers the reactions of hazards in its own lair and is immune to the negative consequences of damaging area effects created by hazards in its lair.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Mythic Resilience (Reflex and Will)",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the incapacitation trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Skittering Reposition",
-        "actions": -1,
-        "traits": [
-          "move"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature that starts its move outside the gogiteth's reach moves into its reach.</p>\n<hr />\n<p><strong>Effect</strong> The gogiteth moves 10 feet. This does not trigger reactions.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "40 ft,\nclimb 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 26,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d10+12",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d10+12)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Improved-grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Leg",
-        "bonus": 26,
-        "traits": [
-          "agile",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d6+12",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d6+12)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Carry Off Prey",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The gogiteth can move at its full Speed while it has a creature Grabbed in its jaws, bringing the grabbed creature along.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d6+12</span> bludgeoning, DC 32 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Mythic Power",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The creature has a pool of 3 Mythic Points, and can spend those Mythic Points for any of the actions it has.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Mythic Skill",
-        "actions": null,
-        "traits": [],
-        "description": "<p><strong>Cost</strong> 1 Mythic Point</p><hr /><p><strong>Effect</strong> The Mythic Gogiteth attempts its next Athletics or Stealth skill check with a +4 bonus and is considered to have mythic proficiency for that check. This applies to one skill when this ability is gained and a second skill if the creature is 12th level or higher.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Skittering Assault",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The gogiteth Strides three times. Once per Stride, it can attempt a leg Strike against a creature in its reach at any point during the Stride; it must make each attack against a different creature, but it doesn't apply its multiple attack penalty until after making all its Strikes. If any of the Strikes result in a critical failure, Skittering Assault ends.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Gogiteths are horrific nightmares with grasping, spiderlike legs; vicious, gnashing teeth; and far too many eyes. Of all the creatures on Golarion for whom the acquisition of mythic power might prove a nightmare for others, the gogiteth is arguably one of the most terrible.</p>\n<p>Normally, a gogiteth's victims at least have the possible salvation of hearing the horrible crackling and popping of its joints as it clambers towards them through the dark, an opportunity to flee the slavering nightmare seeking them. Mythic ambusher gogiteths are unnaturally silent, however. The first sound a creature might hear when being hunted by such a monstrosity is the sharp wheeze of their own fleeting breath as the gogiteth's jaws snap shut around them, or the tearing of their flesh and clothing as one of its legs pierces them through.</p>\n<p>Though little is known about the origins of gogiteths, mythic gogiteths generally acquire mythic power in the same way that other creatures do. Golarion has no shortage of vile deities who might take cruel delight in bestowing a sliver of mythic power upon a creature as frightful and terrible as a gogiteth. Their traditional hive homes in the Darklands make it unlikely that they would be affected by the Godsrain, but it is not impossible that droplets of Gorum's spilled blood could seep through cracks and make their way down into the thirsty jaws of one of these nightmarish monstrosities.</p>",
-    "recallKnowledge": "Occultism, DC: 35",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism, DC 30"
 }

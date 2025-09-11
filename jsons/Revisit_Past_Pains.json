@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Revisit Past Pains",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 18,
   "traits": [
-    "Hazard",
-    "Simple",
     "Uncommon",
     "Medium",
     "Haunt"
@@ -17,32 +16,48 @@
   "source": "Pathfinder #186: Ghost King's Rage",
   "stealth": {
     "value": 35,
-    "note": "(master)",
-    "modifications": []
+    "note": "(master)"
   },
   "description": "<p>A spirit locked in memories of its death flies down the hall, forcing intruders to experience the agony of its death.</p>",
-  "disable": "<p>DC 48 Diplomacy check (master) to calm the spirit or DC 46 Occultism check (master) to ward off the spirit</p>",
+  "disable": "<p>DC 48 Diplomacy  (master) to calm the spirit or DC 46 Occultism  (master) to ward off the spirit</p>",
   "reset": "<p>1 hour.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Share Pain",
+      "actions": -1,
+      "traits": [
+        "illusion",
+        "mental",
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> Creatures within 30 feet take (6d12+41) Mental Damage damage (Basic DC 40 Will Saving Throw) as they experience the spirit's death.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,98 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Share Pain",
-      "actions": -1,
-      "traits": [
-        "illusion",
-        "mental",
-        "occult"
-      ],
-      "description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> Creatures within 30 feet take <span class=\"roll\" onclick=\"roll(this)\">6d12+41</span> mental damage (DC 40 basic Will save) as they experience the spirit's death.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 35,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Revisit Past Pains",
-    "type": "hazard",
-    "level": 18,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Uncommon",
-      "Medium",
-      "Haunt"
-    ],
-    "source": "Pathfinder #186: Ghost King's Rage",
-    "stealth": {
-      "value": 35,
-      "note": "(master)",
-      "modifications": []
-    },
-    "description": "<p>A spirit locked in memories of its death flies down the hall, forcing intruders to experience the agony of its death.</p>",
-    "disable": "<p>DC 48 Diplomacy check (master) to calm the spirit or DC 46 Occultism check (master) to ward off the spirit</p>",
-    "reset": "<p>1 hour.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Share Pain",
-        "actions": -1,
-        "traits": [
-          "illusion",
-          "mental",
-          "occult"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>Effect</strong> Creatures within 30 feet take <span class=\"roll\" onclick=\"roll(this)\">6d12+41</span> mental damage (DC 40 basic Will save) as they experience the spirit's death.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 40"
-  },
-  "recallKnowledge": ", DC: 40"
+  "recallKnowledge": ", DC 38"
 }

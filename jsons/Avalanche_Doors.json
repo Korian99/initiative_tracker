@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Avalanche Doors",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 4,
   "traits": [
-    "Hazard",
-    "Simple",
     "Uncommon",
     "Medium",
     "Mechanical",
@@ -18,39 +17,54 @@
   "source": "Pathfinder Adventure: Crown of the Kobold King",
   "stealth": {
     "value": 12,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>The double door is a false door; when triggered, the door slams downward like a drawbridge to crush anyone standing before it.</p>",
-  "disable": "<p>DC 22 Thievery check (trained) to detach the trigger from the doors and lock them in place</p>",
+  "disable": "<p>DC 22 Thievery  (trained) to detach the trigger from the doors and lock them in place</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Topple Forward",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> Someone attempts to open the doors, or the doors take enough damage to become broken;</p>\n<p><strong>Effect</strong> The heavy metal doors are spring-loaded to slam downward, dropping like a drawbridge to smash all creatures in a 10-foot-square before the doors. All creatures in this area must attempt a DC 21 Reflex Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature lurches to the side and takes no damage-move the creature to a square of the creature's choice adjacent to the trap's area of effect.</p>\n<p><strong>Success</strong> The creature takes 3d8 Bludgeoning Damage damage and is pushed into an adjacent square just outside the trap's area.</p>\n<p><strong>Failure</strong> The creature takes 6d8 Bludgeoning Damage damage, is pushed into an adjacent square just outside the trap's area, and falls Prone in that square.</p>\n<p><strong>Critical Failure</strong> The creature takes 12d8 Bludgeoning Damage damage and is knocked prone. The heavy doors pin the creature to the ground, Immobilizing it ([[/act escape dc=22]]). A non-immobilized character can lift the doors by Forcing them open with a successful DC 22 Athletics  check so that an immobilized character can crawl to safety.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 21,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 11
   },
   "fortitude": {
     "value": 14,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 8,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 50,
     "max": 50,
-    "note": "<b>Hardness</b> 11 <b>BT</b> 25. BT 25",
+    "note": "BT 25",
     "modifications": []
   },
   "immunities": [
@@ -62,94 +76,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Topple Forward",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> Someone attempts to open the doors, or the doors take enough damage to become broken;</p>\n<p><strong>Effect</strong> The heavy metal doors are spring-loaded to slam downward, dropping like a drawbridge to smash all creatures in a 10-foot-square before the doors. All creatures in this area must attempt a DC 21 Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature lurches to the side and takes no damage-move the creature to a square of the creature's choice adjacent to the trap's area of effect.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">3d8</span> bludgeoning damage and is pushed into an adjacent square just outside the trap's area.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">6d8</span> bludgeoning damage, is pushed into an adjacent square just outside the trap's area, and falls Prone in that square.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">12d8</span> bludgeoning damage and is knocked prone. The heavy doors pin the creature to the ground, Immobilizing it (Escape DC 22). A non-Immobilized character can lift the doors by Forcing them open with a successful DC 22 Athletics check so that an immobilized character can crawl to safety.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 12,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Avalanche Doors",
-    "type": "hazard",
-    "level": 4,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Uncommon",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Adventure: Crown of the Kobold King",
-    "stealth": {
-      "value": 12,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>The double door is a false door; when triggered, the door slams downward like a drawbridge to crush anyone standing before it.</p>",
-    "disable": "<p>DC 22 Thievery check (trained) to detach the trigger from the doors and lock them in place</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 21,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 50,
-      "max": 50,
-      "note": "<b>Hardness</b> 11 <b>BT</b> 25. BT 25",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Topple Forward",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> Someone attempts to open the doors, or the doors take enough damage to become broken;</p>\n<p><strong>Effect</strong> The heavy metal doors are spring-loaded to slam downward, dropping like a drawbridge to smash all creatures in a 10-foot-square before the doors. All creatures in this area must attempt a DC 21 Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature lurches to the side and takes no damage-move the creature to a square of the creature's choice adjacent to the trap's area of effect.</p>\n<p><strong>Success</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">3d8</span> bludgeoning damage and is pushed into an adjacent square just outside the trap's area.</p>\n<p><strong>Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">6d8</span> bludgeoning damage, is pushed into an adjacent square just outside the trap's area, and falls Prone in that square.</p>\n<p><strong>Critical Failure</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">12d8</span> bludgeoning damage and is knocked prone. The heavy doors pin the creature to the ground, Immobilizing it (Escape DC 22). A non-Immobilized character can lift the doors by Forcing them open with a successful DC 22 Athletics check so that an immobilized character can crawl to safety.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 21"
-  },
-  "recallKnowledge": ", DC: 21"
+  "recallKnowledge": ", DC 19"
 }

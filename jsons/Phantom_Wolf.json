@@ -15,19 +15,18 @@
     "Evil",
     "Incorporeal",
     "Phantom",
-    "Spirit",
-    "(caster)"
+    "Spirit"
   ],
   "source": "Pathfinder #196: The Summer That Never Was",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 7,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common"
   ],
@@ -138,11 +137,11 @@
       "name": "Vulnerable to Kindness",
       "actions": null,
       "traits": [],
-      "description": "<p>Any creature within 30 feet that the phantom can see and hear can issue a calm and friendly greeting to it as a two-action activity with the auditory, concentrate, linguistic, and mental traits. A creature greeting the phantom in this manner must attempt a DC 17 Diplomacy check.</p>\n<hr />\n<p><strong>Critical Success</strong> The phantom takes <span class=\"roll\" onclick=\"roll(this)\">4d8</span> mental damage and is Stunned 1.</p>\n<p><strong>Success</strong> The phantom takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> mental damage.</p>\n<p><strong>Failure</strong> The phantom takes <span class=\"roll\" onclick=\"roll(this)\">1d8</span> mental damage.</p>\n<p><strong>Critical Failure</strong> The phantom is unaffected, and is not affected by this weakness for 1 round.</p>",
+      "description": "<p>Any creature within 30 feet that the phantom can see and hear can issue a calm and friendly greeting to it as a two-action activity with the auditory, concentrate, linguistic, and mental traits. A creature greeting the phantom in this manner must attempt a DC 17 Diplomacy  check.</p>\n<hr />\n<p><strong>Critical Success</strong> The phantom takes 4d8 Mental Damage damage and is Stunned 1.</p>\n<p><strong>Success</strong> The phantom takes 2d8 Mental Damage damage.</p>\n<p><strong>Failure</strong> The phantom takes 1d8 Mental Damage damage.</p>\n<p><strong>Critical Failure</strong> The phantom is unaffected, and is not affected by this weakness for 1 round.</p>",
       "collapsed": false
     }
   ],
-  "speed": "0 ft,\nfly 35 ft,\n",
+  "speed": "0 ft, fly 35ft",
   "strikes": [
     {
       "type": "melee",
@@ -178,7 +177,7 @@
       "name": "Pack Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The phantom wolf's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d4</span> damage to creatures within reach of at least one of its allies.</p>",
+      "description": "<p>The phantom wolf's Strikes deal an additional 1d4 damage to creatures within reach of at least one of its allies.</p>",
       "collapsed": false
     }
   ],
@@ -198,6 +197,8 @@
           "name": "Daze",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate",
@@ -209,8 +210,8 @@
           "range": "60 feet",
           "area": "",
           "targets": "1 creature",
-          "save": "basic will",
-          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "save": "Basic will",
+          "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -222,6 +223,8 @@
           "name": "Ghost Sound",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "auditory",
             "concentrate",
@@ -229,7 +232,7 @@
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "Sustained up to ",
           "range": "30 feet",
           "area": "",
           "targets": "",
@@ -243,21 +246,19 @@
           "id": "kY3tcsDI13TEic7v"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "IfgRYpjy1kMxYZ7N",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Fear",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "fear",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -283,6 +284,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -325,337 +327,5 @@
       }
     }
   ],
-  "description": "<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest-Heaven, Hell, Abaddon, and so forth-where it becomes a petitioner.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like night hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath-at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves-one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must simply find a way back into the River of Souls. Such a quest is no easy feat, however-the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
-  "recallKnowledge": "Occultism, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Phantom Wolf",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Rare",
-      "Medium",
-      "Ethereal",
-      "Evil",
-      "Incorporeal",
-      "Phantom",
-      "Spirit",
-      "(caster)"
-    ],
-    "source": "Pathfinder #196: The Summer That Never Was",
-    "perception": {
-      "value": 7,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": -5
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -3
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Walk the Ethereal Line",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The phantom walks the thin line between the Ethereal and Material Planes in order to exist on both planes simultaneously.</p>\n<p>They can shift back to solely the Ethereal Plane by using this ability again.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 14,
-      "max": 14,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "disease",
-      "paralyzed",
-      "poison",
-      "precision"
-    ],
-    "resistances": [
-      {
-        "doubleVs": [
-          "non-magical"
-        ],
-        "exceptions": [
-          "force",
-          "ghost-touch"
-        ],
-        "type": "all-damage",
-        "value": 2
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Susceptible to Death",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like Execute) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Vulnerable to Kindness",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Any creature within 30 feet that the phantom can see and hear can issue a calm and friendly greeting to it as a two-action activity with the auditory, concentrate, linguistic, and mental traits. A creature greeting the phantom in this manner must attempt a DC 17 Diplomacy check.</p>\n<hr />\n<p><strong>Critical Success</strong> The phantom takes <span class=\"roll\" onclick=\"roll(this)\">4d8</span> mental damage and is Stunned 1.</p>\n<p><strong>Success</strong> The phantom takes <span class=\"roll\" onclick=\"roll(this)\">2d8</span> mental damage.</p>\n<p><strong>Failure</strong> The phantom takes <span class=\"roll\" onclick=\"roll(this)\">1d8</span> mental damage.</p>\n<p><strong>Critical Failure</strong> The phantom is unaffected, and is not affected by this weakness for 1 round.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "0 ft,\nfly 35 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 7,
-        "traits": [
-          "finesse",
-          "force",
-          "magical",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+2",
-            "type": "force"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+2)*2",
-            "type": "force"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Pack Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The phantom wolf's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d4</span> damage to creatures within reach of at least one of its allies.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Occult Innate Spells",
-        "type": "innate",
-        "bonus": 6,
-        "dc": 14,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Daze",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate",
-              "mental",
-              "nonlethal"
-            ],
-            "castingTime": "2",
-            "duration": "1 round",
-            "range": "60 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "basic will",
-            "description": "<p>You cloud the target's mind and daze it with a mental jolt. The jolt deals mental damage equal to your spellcasting ability modifier; the target must attempt a basic Will save. If the target critically fails the save, it is also Stunned 1.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "BXwNW8Zaf8b7XyXX"
-          },
-          {
-            "name": "Ghost Sound",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "auditory",
-              "concentrate",
-              "illusion",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create an auditory illusion of simple sounds that has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range. You can't create intelligible words or other intricate sounds (such as music).</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range increases to 60 feet.</p>\n<p><strong>Heightened (5th)</strong> The range increases to 120 feet.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "kY3tcsDI13TEic7v"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "IfgRYpjy1kMxYZ7N",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Fear",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "fear",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "AmLMXqmuS6pganPJ"
-          }
-        ],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest-Heaven, Hell, Abaddon, and so forth-where it becomes a petitioner.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like night hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath-at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves-one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must simply find a way back into the River of Souls. Such a quest is no easy feat, however-the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
-    "recallKnowledge": "Occultism, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism or Occultism, DC 15"
 }

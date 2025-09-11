@@ -1,6 +1,6 @@
 {
   "initiative": 0,
-  "initiativebonus": 12,
+  "initiativebonus": 8,
   "comments": "",
   "conditions": [],
   "color": "#fff",
@@ -9,64 +9,51 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Uncommon",
     "Medium",
     "Aberration"
   ],
-  "source": "Pathfinder #157: Devil at the Dreaming Palace",
+  "source": "Pathfinder Adventure: Crown of the Kobold King",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
   "perception": {
-    "value": 12,
-    "note": "darkvisionscent 30 ft imprecise",
+    "value": 8,
+    "note": "Darkvision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 30 ft imprecise"
-  ],
   "languages": [
     "Aklo",
-    "(can't speak any language)"
+    "can't speak any language"
   ],
   "skills": [
     {
-      "name": "acrobatics",
-      "modifier": 11,
-      "note": [],
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    {
       "name": "athletics",
-      "modifier": 10,
+      "modifier": 9,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
     },
     {
       "name": "stealth",
-      "modifier": 10,
+      "modifier": 8,
       "note": [
-        "in rocky terrain <span class=\"roll\" onclick=\"roll(this)\">14</span>"
+        "in rocky terrain 10"
       ],
       "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    {
-      "name": "survival",
-      "modifier": 8,
-      "note": [],
-      "usedAttribute": "wisdom",
       "modifications": []
     }
   ],
   "strength": {
-    "value": 3
-  },
-  "dexterity": {
     "value": 4
   },
+  "dexterity": {
+    "value": 3
+  },
   "constitution": {
-    "value": 1
+    "value": 2
   },
   "intelligence": {
     "value": -3
@@ -75,80 +62,69 @@
     "value": 3
   },
   "charisma": {
-    "value": -1
+    "value": -2
   },
   "items": [],
   "generalAbilities": [],
   "ac": {
-    "value": 19,
+    "value": 20,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
-    "value": 10,
+    "value": 7,
     "note": "",
     "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
-    "value": 11,
+    "value": 10,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
-    "value": 12,
+    "value": 10,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
-    "value": 40,
-    "max": 40,
+    "value": 35,
+    "max": 35,
     "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [
     {
-      "doubleVs": [
-        "non-magical"
-      ],
       "type": "physical",
-      "value": 3
+      "value": 5
     }
   ],
   "weaknesses": [],
-  "defensiveAbilities": [
-    {
-      "name": "Attack of Opportunity",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
-    }
-  ],
-  "speed": "30 ft,\nclimb 20 ft,\n",
+  "defensiveAbilities": [],
+  "speed": "25 ft, climb 20ft",
   "strikes": [
     {
       "type": "melee",
       "name": "Jaws",
-      "bonus": 12,
+      "bonus": 11,
       "traits": [
         "unarmed"
       ],
       "damageRolls": [
         {
-          "roll": "1d8+6",
-          "type": "piercing"
+          "roll": "1d12+6",
+          "type": "slashing"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d8+6)*2",
-          "type": "piercing"
+          "roll": "(1d12+6)*2",
+          "type": "slashing"
         }
       ],
       "effects": [],
@@ -163,23 +139,22 @@
       "bonus": 11,
       "traits": [
         "agile",
-        "finesse",
         "unarmed"
       ],
       "damageRolls": [
         {
-          "roll": "1d6+6",
-          "type": "slashing"
+          "roll": "1d8+6",
+          "type": "bludgeoning"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d6+6)*2",
-          "type": "slashing"
+          "roll": "(1d8+6)*2",
+          "type": "bludgeoning"
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -187,229 +162,13 @@
   ],
   "offensiveAbilities": [
     {
-      "name": "Unbalancing Blow",
-      "actions": null,
+      "name": "Gripping Tentacle",
+      "actions": -1,
       "traits": [],
-      "description": "<p>Any creature a grick critically hits is Off-Guard against its attacks until the end of the grick's next turn.</p>",
-      "collapsed": false
-    },
-    {
-      "name": "Vermicular Movement",
-      "actions": null,
-      "traits": [],
-      "description": "<p>When a grick takes a Stride action to move half its Speed or less, that movement doesn't trigger reactions.</p>",
+      "description": "<p><strong>Trigger</strong> A creature in the grick's reach uses a move action or leaves a square during a move action it's using</p>\n<p><strong>Effect</strong> The grick makes a tentacle Strike against the target. If the attack is a critical hit and the trigger was a move action, the grick disrupts that action.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Occultism, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 12,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Grick",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Medium",
-      "Aberration"
-    ],
-    "source": "Pathfinder #157: Devil at the Dreaming Palace",
-    "perception": {
-      "value": 12,
-      "note": "darkvisionscent 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 30 ft imprecise"
-    ],
-    "languages": [
-      "Aklo",
-      "(can't speak any language)"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 10,
-        "note": [
-          "in rocky terrain <span class=\"roll\" onclick=\"roll(this)\">14</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -3
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 40,
-      "max": 40,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "doubleVs": [
-          "non-magical"
-        ],
-        "type": "physical",
-        "value": 3
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "30 ft,\nclimb 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 12,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tentacle",
-        "bonus": 11,
-        "traits": [
-          "agile",
-          "finesse",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+6)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Unbalancing Blow",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Any creature a grick critically hits is Off-Guard against its attacks until the end of the grick's next turn.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Vermicular Movement",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When a grick takes a Stride action to move half its Speed or less, that movement doesn't trigger reactions.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Occultism, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism, DC 18"
 }

@@ -12,17 +12,18 @@
     "Unique",
     "Small",
     "Halfling",
-    "Humanoid",
-    "(caster)"
+    "Humanoid"
   ],
   "source": "Pathfinder #167: Ready? Fight!",
+  "senses": [
+    "keen eyes"
+  ],
   "perception": {
     "value": 27,
-    "note": "",
+    "note": "keen eyes",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Goblin",
     "Halfling",
@@ -92,9 +93,8 @@
       "quantity": 1,
       "description": "<p>This halfling weapon looks like a long, two-pronged fork and is used as both a weapon and a cooking implement.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
-        "uncommon",
         "agile",
         "backstabber",
         "deadly-d6",
@@ -108,7 +108,7 @@
       "quantity": 1,
       "description": "<p>These stiff leather armguards grant you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5. You can affix talismans to <em>bracers of armor</em> as though they were light armor.</p>",
       "level": 14,
-      "price": "4000 gp ",
+      "price": "4000 gp",
       "traits": [
         "invested",
         "magical"
@@ -178,7 +178,7 @@
   ],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -203,7 +203,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d4+3)*2+1d6",
+          "roll": "(2d4+3)*2",
           "type": "piercing"
         },
         {
@@ -240,7 +240,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d4+3)*2+1d6",
+          "roll": "(2d4+3)*2",
           "type": "piercing"
         },
         {
@@ -272,6 +272,8 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -280,7 +282,7 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "30 ft emanation",
+          "area": "30ft emanation",
           "targets": "",
           "save": "",
           "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
@@ -295,6 +297,8 @@
           "name": "Electric Arc",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "electricity",
@@ -305,8 +309,8 @@
           "range": "30 feet",
           "area": "",
           "targets": "1 or 2 creatures",
-          "save": "basic reflex",
-          "description": "<p>An arc of lightning leaps from one target to another. You deal electricity damage equal to <span class=\"roll\" onclick=\"roll(this)\">1d4</span> plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "save": "Basic reflex",
+          "description": "<p>An arc of lightning leaps from one target to another. You deal electricity damage equal to 1d4 plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -318,6 +322,8 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "light",
@@ -329,7 +335,7 @@
           "area": "",
           "targets": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally",
           "save": "",
-          "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -341,6 +347,8 @@
           "name": "Ray of Frost",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "cold",
@@ -353,7 +361,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals 2d4 cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p></p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -365,6 +373,8 @@
           "name": "Stabilize",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "healing",
@@ -386,136 +396,21 @@
           "id": "YCkYUgtD9nrLZii8"
         }
       ],
-      "rituals": [],
-      "spellLocations": [
-        {
-          "id": "qj31kkWlcJAvRDAH",
-          "rank": 1
-        },
-        {
-          "id": "OlWopURH0B5Skh2s",
-          "rank": 1
-        },
-        {
-          "id": "KgJS8S8hPQ7K71nz",
-          "rank": 1
-        },
-        {
-          "id": "3AJ2GSU634pKy6o8",
-          "rank": 1
-        },
-        {
-          "id": "MMjzLbJYQJBQfsFL",
-          "rank": 2
-        },
-        {
-          "id": "HCYtEtOj25xv1bWr",
-          "rank": 2
-        },
-        {
-          "id": "HCYtEtOj25xv1bWr",
-          "rank": 2
-        },
-        {
-          "id": "U06kiDXVs0VTnDvX",
-          "rank": 2
-        },
-        {
-          "id": "8MHrrj49vKW6hxOR",
-          "rank": 3
-        },
-        {
-          "id": "8MHrrj49vKW6hxOR",
-          "rank": 3
-        },
-        {
-          "id": "RCZXluNKklUfCUJw",
-          "rank": 3
-        },
-        {
-          "id": "KgJS8S8hPQ7K71nz",
-          "rank": 3
-        },
-        {
-          "id": "PyRGVVsaE31MSJUk",
-          "rank": 4
-        },
-        {
-          "id": "PyRGVVsaE31MSJUk",
-          "rank": 4
-        },
-        {
-          "id": "PyRGVVsaE31MSJUk",
-          "rank": 4
-        },
-        {
-          "id": "fpwjNWkCNelwMtJU",
-          "rank": 4
-        },
-        {
-          "id": "7jDeM3wbrtcgnTI6",
-          "rank": 5
-        },
-        {
-          "id": "MMjzLbJYQJBQfsFL",
-          "rank": 5
-        },
-        {
-          "id": "msR0u1xH9gdo0joH",
-          "rank": 5
-        },
-        {
-          "id": "msR0u1xH9gdo0joH",
-          "rank": 5
-        },
-        {
-          "id": "DF2PYuaQ7o3ZQNrM",
-          "rank": 6
-        },
-        {
-          "id": "nBwOttIK3uyFzwfU",
-          "rank": 6
-        },
-        {
-          "id": "hiSRxfyzVOwK2Ow3",
-          "rank": 6
-        },
-        {
-          "id": "eseQ5nUnYpDCaBqO",
-          "rank": 6
-        },
-        {
-          "id": "EwIUvItOM8UEnL7g",
-          "rank": 7
-        },
-        {
-          "id": "arnSjzFpXxUJo95z",
-          "rank": 7
-        },
-        {
-          "id": "7cSVKo9ETna8bsce",
-          "rank": 7
-        },
-        {
-          "id": "zWzQZYCghnILRJuv",
-          "rank": 7
-        }
-      ],
-      "usedAttribute": "charisma",
-      "_id": "EDwLmZrzV7UKSmVT",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Alarm",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "10 minutes",
           "duration": "8 hours",
           "range": "touch",
-          "area": "20 ft burst",
+          "area": "20ft burst",
           "targets": "",
           "save": "",
           "description": "<p>You ward an area to alert you when creatures enter without your permission. When you cast alarm, select a password. Whenever a Small or larger corporeal creature enters the spell's area without speaking the password, alarm sends your choice of a mental alert (in which case the spell gains the mental trait) or an audible alarm with the sound and volume of a hand bell (in which case the spell gains the auditory trait). Either option automatically awakens you, and the bell allows each creature in the area to attempt a DC 15 Perception check to wake up. A creature aware of the alarm must succeed at a Stealth check against the spell's DC or trigger the spell when moving into the area.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can specify criteria for which creatures sound the alarm spell-for instance, orcs or masked people.</p>",
@@ -530,8 +425,11 @@
           "name": "Fleet Step",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -539,7 +437,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You gain a +30-foot status bonus to your Speed.</p>\n",
+          "description": "<p>You gain a +30-foot status bonus to your Speed.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -551,17 +449,20 @@
           "name": "Heal",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "healing",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -573,8 +474,11 @@
           "name": "Jump",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "manipulate"
+            "manipulate",
+            "move"
           ],
           "castingTime": "1",
           "duration": "",
@@ -591,14 +495,16 @@
           "id": "3AJ2GSU634pKy6o8"
         }
       ],
-      "lv1slots": {},
       "lv2spells": [
         {
           "name": "Dispel Magic",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -618,34 +524,16 @@
           "name": "Glitterdust",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "120 feet",
-          "area": "10 ft burst",
-          "targets": "",
-          "save": "reflex",
-          "description": "<p>Creatures in the area are outlined by glittering dust. Each creature must attempt a Reflex save. If a creature has its invisibility negated by this spell, it is Concealed instead of Invisible. This applies both if the creature was already Invisible and if it benefits from new invisibility effects before the end of the invisibility negation effect from this spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The target is Dazzled for 1 minute and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded for 1 round and Dazzled for 10 minutes. Its invisibility is negated for 10 minutes.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "HCYtEtOj25xv1bWr"
-        },
-        {
-          "name": "Glitterdust",
-          "type": "spell",
-          "level": 2,
-          "traits": [
-            "concentrate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "10 ft burst",
+          "area": "10ft burst",
           "targets": "",
           "save": "reflex",
           "description": "<p>Creatures in the area are outlined by glittering dust. Each creature must attempt a Reflex save. If a creature has its invisibility negated by this spell, it is Concealed instead of Invisible. This applies both if the creature was already Invisible and if it benefits from new invisibility effects before the end of the invisibility negation effect from this spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The target is Dazzled for 1 minute and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded for 1 round and Dazzled for 10 minutes. Its invisibility is negated for 10 minutes.</p>",
@@ -660,14 +548,17 @@
           "name": "Obscuring Mist",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "water"
           ],
           "castingTime": "3",
           "duration": "1 minute",
           "range": "120 feet",
-          "area": "20 ft burst",
+          "area": "20ft burst",
           "targets": "",
           "save": "",
           "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
@@ -679,35 +570,16 @@
           "id": "U06kiDXVs0VTnDvX"
         }
       ],
-      "lv2slots": {},
       "lv3spells": [
         {
           "name": "Earthbind",
           "type": "spell",
           "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
-          ],
-          "castingTime": "2",
-          "duration": "varies",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 flying creature",
-          "save": "fortitude",
-          "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "8MHrrj49vKW6hxOR"
-        },
-        {
-          "name": "Earthbind",
-          "type": "spell",
-          "level": 3,
-          "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -727,8 +599,11 @@
           "name": "Haste",
           "type": "spell",
           "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -743,83 +618,19 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "RCZXluNKklUfCUJw"
-        },
-        {
-          "name": "Heal",
-          "type": "spell",
-          "level": 1,
-          "traits": [
-            "healing",
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "KgJS8S8hPQ7K71nz"
         }
       ],
-      "lv3slots": {},
       "lv4spells": [
         {
           "name": "Air Walk",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "air",
-            "concentrate"
-          ],
-          "castingTime": "2",
-          "duration": "5 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "PyRGVVsaE31MSJUk"
-        },
-        {
-          "name": "Air Walk",
-          "type": "spell",
-          "level": 4,
-          "traits": [
-            "air",
-            "concentrate"
-          ],
-          "castingTime": "2",
-          "duration": "5 minutes",
-          "range": "touch",
-          "area": "",
-          "targets": "1 creature",
-          "save": "",
-          "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "PyRGVVsaE31MSJUk"
-        },
-        {
-          "name": "Air Walk",
-          "type": "spell",
-          "level": 4,
-          "traits": [
-            "air",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "5 minutes",
@@ -839,8 +650,11 @@
           "name": "Freedom of Movement",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -848,7 +662,7 @@
           "area": "",
           "targets": "1 creature touched",
           "save": "",
-          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>freedom of movement</em> spell.</p>\n",
+          "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>freedom of movement</em> spell.</p>\n<p>{Spell Effect: Freedom of Movement}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -857,23 +671,25 @@
           "id": "fpwjNWkCNelwMtJU"
         }
       ],
-      "lv4slots": {},
       "lv5spells": [
         {
           "name": "Cone of Cold",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "cold",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "60 ft cone",
+          "area": "60ft cone",
           "targets": "",
-          "save": "basic reflex",
-          "description": "<p>Icy cold rushes forth from your hands. You deal <span class=\"roll\" onclick=\"roll(this)\">12d6</span> cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+          "save": "Basic reflex",
+          "description": "<p>Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -885,10 +701,13 @@
           "name": "Wall of Ice",
           "type": "spell",
           "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
           "traits": [
             "cold",
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "water"
           ],
           "castingTime": "3",
           "duration": "1 minute",
@@ -896,69 +715,27 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals 2d6 cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "msR0u1xH9gdo0joH"
-        },
-        {
-          "name": "Wall of Ice",
-          "type": "spell",
-          "level": 5,
-          "traits": [
-            "cold",
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "msR0u1xH9gdo0joH"
-        },
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "traits": [
-            "concentrate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "MMjzLbJYQJBQfsFL"
         }
       ],
-      "lv5slots": {},
       "lv6spells": [
         {
           "name": "Baleful Polymorph",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "incapacitation",
-            "manipulate"
+            "manipulate",
+            "polymorph"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -978,11 +755,14 @@
           "name": "Blinding Fury",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "curse",
             "emotion",
-            "incapacitation"
+            "incapacitation",
+            "mental"
           ],
           "castingTime": "reaction",
           "duration": "varies",
@@ -1002,17 +782,20 @@
           "name": "Chain Lightning",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "electricity"
+            "electricity",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "500 feet",
           "area": "",
           "targets": "1 creature, plus any number of additional creatures",
-          "save": "basic reflex",
-          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
+          "save": "Basic reflex",
+          "description": "<p>You discharge a powerful bolt of lightning at the target, dealing 8d12 electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -1021,12 +804,40 @@
           "id": "nBwOttIK3uyFzwfU"
         },
         {
+          "name": "Dragon Form",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "polymorph"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>Calling upon powerful magic, you gain a Large dragon battle form. When you Cast this Spell, choose one type of common dragon or another type to which your GM allows access. While in this form, you gain the dragon trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p>\n<p>You gain the following statistics and abilities regardless of which battle form you choose:</p><ul><li><p>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</p></li><li><p>10 temporary Hit Points.</p></li><li><p>Speed 40 feet, fly 100 feet. You gain any of the following Speeds the chosen dragon has, but with the listed amount: burrow 20 feet, climb 40 feet, swim 60 feet.</p></li><li><p>Resistance 10 against the damage type of your Dragon Breath (see below).</p></li><li><p>Darkvision and imprecise scent 60 feet.</p></li><li><p>The following unarmed melee attacks, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +22, and your damage bonus is +6. These attacks are Strength based (for the purpose of the enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead. See below for more on these attacks.</p><ul><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> jaws, <strong>Damage</strong> 2d12 piercing plus 2d6 damage of the same damage type as your Dragon Breath (see below);</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> claw (agile), <strong>Damage</strong> 3d10 slashing;</p></li><li><p><strong>Melee</strong> <span class=\"action-glyph\">1</span> tail (reach 10 feet), <strong>Damage</strong> 3d10 bludgeoning.</p></li></ul></li><li><p>Athletics modifier of +23, unless your own is higher.</p></li><li><p><strong>Dragon Breath</strong><span class=\"action-glyph\"><strong>2</strong></span> You exhale deadly magical energy in an area, dealing 10d6 damage to each creature in the area with a basic save against your spell DC. The shape, damage type, and save type match that of your chosen dragon's breath. If the chosen dragon's breath can deal more than one type of damage, choose one when you cast <em>dragon form</em>. The shape is a 30-foot cone or a 100-foot line. Once activated, Dragon Breath can't be used again for 1d4 rounds. Dragon Breath has the tradition trait matching the type of dragon and the damage trait matching the type of damage it deals, if applicable.</p></li><li><p><strong>Tradition Resistance</strong> If the dragon's magical tradition matches that of your dragon form spell, you gain the listed ability. <strong>Arcane</strong> resistance 5 against magic; <strong>divine</strong> resistance 10 to spirit, vitality, and void; <strong>occult</strong> resistance 10 to mental; <strong>primal</strong> resistance 5 to physical damage.</p></li></ul><p></p><table border=\"1\" class=\"pf2e remaster\"><thead><tr style=\"text-align:right\"><th>Dragon</th><th>Tradition</th><th>Speeds</th><th>Dragon Breath</th><th>Saving Throw</th></tr></thead><tbody><tr><td>Adamantine</td><td>Primal</td><td>Burrow</td><td>Cone of bludgeoning</td><td>Reflex</td></tr><tr><td>Conspirator</td><td>Occult</td><td>Climb</td><td>Cone of poison</td><td>Fortitude</td></tr><tr><td>Diabolic</td><td>Divine</td><td>—</td><td>Cone of fire</td><td>Reflex</td></tr><tr><td>Empyreal</td><td>Divine</td><td>—</td><td>Cone of spirit</td><td>Reflex</td></tr><tr><td>Fortune</td><td>Arcane</td><td>—</td><td>Cone of force</td><td>Reflex</td></tr><tr><td>Horned</td><td>Primal</td><td>Swim</td><td>Cone of poison</td><td>Fortitude</td></tr><tr><td>Mirage</td><td>Arcane</td><td>Climb</td><td>Cone of mental</td><td>Will</td></tr><tr><td>Omen</td><td>Occult</td><td>—</td><td>Cone of mental</td><td>Will</td></tr></tbody></table><hr /><p><strong>Heightened (8th)</strong> Your battle form is Huge, you gain a +20-foot status bonus to your fly Speed, and your attacks have 10-foot reach (or 15-foot reach if they previously had 10-foot reach). You instead gain AC = 21 + your level, 15 temporary HP, an attack modifier of +28, a damage bonus of +12, and Athletics +28. Your Dragon Breath deals an additional 4d6 damage.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "EwIUvItOM8UEnL7g"
+        },
+        {
           "name": "True Seeing",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "revelation"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -1043,25 +854,27 @@
           "id": "hiSRxfyzVOwK2Ow3"
         }
       ],
-      "lv6slots": {},
       "lv7spells": [
         {
           "name": "Eclipse Burst",
           "type": "spell",
           "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
           "traits": [
             "cold",
             "concentrate",
             "darkness",
-            "manipulate"
+            "manipulate",
+            "void"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "500 feet",
-          "area": "60 ft burst",
+          "area": "60ft burst",
           "targets": "",
           "save": "reflex",
-          "description": "<p>A globe of freezing darkness explodes in the area, dealing <span class=\"roll\" onclick=\"roll(this)\">8d10</span> cold damage to creatures in the area, plus <span class=\"roll\" onclick=\"roll(this)\">8d4</span> additional void damage to living creatures. Each creature in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span> and the void damage against the living increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "description": "<p>A globe of freezing darkness explodes in the area, dealing 8d10 cold damage to creatures in the area, plus 8d4 additional void damage to living creatures. Each creature in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d10 and the void damage against the living increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -1073,8 +886,11 @@
           "name": "Energy Aegis",
           "type": "spell",
           "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "1 minute",
           "duration": "24 hours",
@@ -1082,7 +898,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
+          "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -1094,8 +910,11 @@
           "name": "Unfettered Pack",
           "type": "spell",
           "level": 7,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 hour",
@@ -1110,34 +929,40 @@
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "zWzQZYCghnILRJuv"
-        },
-        {
-          "name": "Dragon Form",
-          "type": "spell",
-          "level": 6,
-          "traits": [
-            "concentrate",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>Calling upon powerful magic, you gain a Large dragon battle form. When you Cast this Spell, choose one type of common dragon or another type to which your GM allows access. While in this form, you gain the dragon trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p><hr /><p>You gain the following statistics and abilities regardless of which battle form you choose:</p><ul><li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li><li>10 temporary Hit Points.</li><li>Speed 40 feet, fly Speed 100 feet.</li><li>Resistance 10 against the damage type of your Dragon Breath (see below).</li><li>Darkvision and imprecise scent 60 feet.</li><li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +22, and your damage bonus is +6. These attacks are Strength based (for the purpose of the Enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead. See below for more on these attacks.</li><li>Athletics modifier of +23, unless your own modifier is higher.</li><li><strong>Breath Weapon</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> (varies) The shape, damage, and damage type of your breath weapon depend on your specific dragon form (see below). A creature in the area attempts a basic save against your spell DC. This is a Reflex save unless stated otherwise in the special ability description for your specific dragon form. Once activated, your breath weapon can't be used again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds. Your breath weapon has the trait corresponding to the type of damage it deals.</li></ul><p>You also gain specific abilities based on the type of dragon:</p><ul><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> bludgeoning</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> fire</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> spirit;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> spirit</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> force;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> force</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> mental</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> mental</li></ul></li><li><p><strong>Tradition Resistance</strong> If the dragon's magical tradition matches that of your dragon form spell, you gain the listed ability. <strong>Arcane</strong> resistance 5 against damage from spells; <strong>divine</strong> resistance 10 to spirit, vitality, and void; <strong>occult</strong> resistance 10 to mental; <strong>primal</strong> resistance 5 to physical damage.</p><hr /><p><strong>Heightened (8th)</strong> Your battle form is Huge, you gain a +20-foot status bonus to your fly Speed, and your attacks have 10-foot reach (or 15-foot reach if they previously had 10-foot reach). You instead gain AC = 21 + your level, 15 temporary HP, an attack modifier of +28, a damage bonus of +12, Athletics +28, and a +14 status bonus to breath weapon damage.</p></li></ul>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "EwIUvItOM8UEnL7g"
         }
       ],
-      "lv7slots": {},
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv2slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv3slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv4slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv5slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv6slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv7slots": {
+        "current": 4,
+        "max": 4
+      },
       "lv8slots": {
         "current": 0,
         "max": 0
@@ -1157,56 +982,22 @@
       "bonus": 27,
       "dc": 35,
       "focusPoints": {
-        "current": 3,
-        "max": 3
+        "current": 0,
+        "max": 0
       },
-      "autoHeightenLevel": 7,
+      "autoHeightenLevel": 3,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "TWHIXASInyOgYomw",
-      "modifications": [],
-      "lv1spells": [],
-      "lv2spells": [],
-      "lv3spells": [],
-      "lv4spells": [],
-      "lv5spells": [],
-      "lv6spells": [],
-      "lv7spells": [
-        {
-          "name": "Personal Blizzard",
-          "type": "spell",
-          "level": 3,
-          "traits": [
-            "uncommon",
-            "attack",
-            "focus",
-            "hex",
-            "manipulate"
-          ],
-          "castingTime": "1",
-          "duration": "1 minute",
-          "range": "30 feet",
-          "area": "",
-          "targets": "1 creature",
-          "save": "fortitude",
-          "description": "<p>You summon an isolated blizzard of obscuring, scouring ice to follow your target. The target attempts a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold damage, and the spell ends.</p>\n<p><strong>Failure</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold damage and <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus cold damage. (The persistent damage automatically ends when the spell ends.) It is Concealed to other creatures, and other creatures are concealed to it.</p>\n<p><strong>Critical Failure</strong> As failure, but both the cold damage and the persistent cold damage increase to <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage and persistent cold damage increase by 1 (2 on a critical failure).</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "ZzFD7YepVU77xMSi"
-        },
+      "lv1spells": [
         {
           "name": "Cackle",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "concentrate",
-            "focus"
+            "focus",
+            "witch"
           ],
           "castingTime": "free",
           "duration": "",
@@ -1226,14 +1017,17 @@
           "name": "Elemental Betrayal",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
             "focus",
-            "hex"
+            "hex",
+            "witch"
           ],
           "castingTime": "1",
-          "duration": "1 minute",
+          "duration": "Sustained up to 1 minute",
           "range": "30 feet",
           "area": "",
           "targets": "1 creature",
@@ -1250,12 +1044,14 @@
           "name": "Life Boost",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "focus",
             "healing",
             "hex",
-            "manipulate"
+            "manipulate",
+            "witch"
           ],
           "castingTime": "1",
           "duration": "4 rounds",
@@ -1275,11 +1071,13 @@
           "name": "Phase Familiar",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "focus",
             "hex",
-            "manipulate"
+            "manipulate",
+            "witch"
           ],
           "castingTime": "reaction",
           "duration": "",
@@ -1296,9 +1094,44 @@
           "id": "IrLRB8koUeU65Zrq"
         }
       ],
+      "lv2spells": [],
+      "lv3spells": [
+        {
+          "name": "Personal Blizzard",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "focus",
+            "hex",
+            "manipulate",
+            "witch"
+          ],
+          "castingTime": "1",
+          "duration": "Sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "fortitude",
+          "description": "<p>You summon an isolated blizzard of obscuring, scouring ice to follow your target. The target attempts a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes 1d6 Cold Damage damage, and the spell ends.</p>\n<p><strong>Failure</strong> The target takes 1d6 Cold Damage damage and 1d6 Persistent,cold Damage damage. (The persistent damage automatically ends when the spell ends.) It is Concealed to other creatures, and other creatures are concealed to it.</p>\n<p><strong>Critical Failure</strong> As failure, but both the cold damage and the persistent cold damage increase to [[/r 2d6]].</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage and persistent cold damage increase by 1 (2 on a critical failure).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ZzFD7YepVU77xMSi"
+        }
+      ],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -1341,1353 +1174,5 @@
       }
     }
   ],
-  "description": "",
-  "recallKnowledge": "Society, DC: 32",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 27,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Juspix Rammel",
-    "type": "Creature",
-    "level": 14,
-    "traits": [
-      "Unique",
-      "Small",
-      "Halfling",
-      "Humanoid",
-      "(caster)"
-    ],
-    "source": "Pathfinder #167: Ready? Fight!",
-    "perception": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Goblin",
-      "Halfling",
-      "Orcish",
-      "Skald",
-      "Taldane",
-      "Tien"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "arcana",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "occultism",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": -1
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 5
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Filcher's Fork",
-        "quantity": 1,
-        "description": "<p>This halfling weapon looks like a long, two-pronged fork and is used as both a weapon and a cooking implement.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "uncommon",
-          "agile",
-          "backstabber",
-          "deadly-d6",
-          "finesse",
-          "halfling",
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Bracers of Armor II",
-        "quantity": 1,
-        "description": "<p>These stiff leather armguards grant you a +2 item bonus to AC and saving throws, and a maximum Dexterity modifier of +5. You can affix talismans to <em>bracers of armor</em> as though they were light armor.</p>",
-        "level": 14,
-        "price": "4000 gp ",
-        "traits": [
-          "invested",
-          "magical"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Ceaseless Shadows",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Juspix doesn't need concealment or cover to Hide or Sneak. If he has lesser cover from creatures, he instead has cover and can Take Cover. If he has cover from creatures, he instead has greater cover.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Familiar",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Juspix's familiar is a wildcat named Ontiok. Ontiok has a Speed of 40 feet, darkvision, and the Damage Avoidance familiar ability. Juspix has the Lifelink and Spell Delivery master abilities.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Witch Patron",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Winter</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 33,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 240,
-      "max": 240,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "cold",
-        "value": 10
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Filcher's Fork",
-        "bonus": 25,
-        "traits": [
-          "agile",
-          "backstabber",
-          "deadly-d6",
-          "finesse",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+3",
-            "type": "piercing"
-          },
-          {
-            "roll": "3d6",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+3)*2+1d6",
-            "type": "piercing"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Filcher's Fork",
-        "bonus": 25,
-        "traits": [
-          "agile",
-          "backstabber",
-          "deadly-d6",
-          "magical",
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+3",
-            "type": "piercing"
-          },
-          {
-            "roll": "3d6",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+3)*2+1d6",
-            "type": "piercing"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [
-      {
-        "name": "Prepared Primal Spells",
-        "type": "prepared",
-        "bonus": 27,
-        "dc": 35,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 7,
-        "cantrips": [
-          {
-            "name": "Detect Magic",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "30 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "lNCdWC6w3YmFoduo"
-          },
-          {
-            "name": "Electric Arc",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "electricity",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 or 2 creatures",
-            "save": "basic reflex",
-            "description": "<p>An arc of lightning leaps from one target to another. You deal electricity damage equal to <span class=\"roll\" onclick=\"roll(this)\">1d4</span> plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "STycYKNRysKguZt2"
-          },
-          {
-            "name": "Light",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "light",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until the next time you make your daily preparations",
-            "range": "touch",
-            "area": "",
-            "targets": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally",
-            "save": "",
-            "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "LQOHHpTXwGYDxiFG"
-          },
-          {
-            "name": "Ray of Frost",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "cold",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "cR7AO3aaoSLvY2GQ"
-          },
-          {
-            "name": "Stabilize",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "healing",
-              "manipulate",
-              "vitality"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 dying creature",
-            "save": "",
-            "description": "<p>Vitality energy shuts death's door. The target loses the Dying condition, though it remains Unconscious at 0 Hit Points.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "YCkYUgtD9nrLZii8"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [
-          {
-            "id": "qj31kkWlcJAvRDAH",
-            "rank": 1
-          },
-          {
-            "id": "OlWopURH0B5Skh2s",
-            "rank": 1
-          },
-          {
-            "id": "KgJS8S8hPQ7K71nz",
-            "rank": 1
-          },
-          {
-            "id": "3AJ2GSU634pKy6o8",
-            "rank": 1
-          },
-          {
-            "id": "MMjzLbJYQJBQfsFL",
-            "rank": 2
-          },
-          {
-            "id": "HCYtEtOj25xv1bWr",
-            "rank": 2
-          },
-          {
-            "id": "HCYtEtOj25xv1bWr",
-            "rank": 2
-          },
-          {
-            "id": "U06kiDXVs0VTnDvX",
-            "rank": 2
-          },
-          {
-            "id": "8MHrrj49vKW6hxOR",
-            "rank": 3
-          },
-          {
-            "id": "8MHrrj49vKW6hxOR",
-            "rank": 3
-          },
-          {
-            "id": "RCZXluNKklUfCUJw",
-            "rank": 3
-          },
-          {
-            "id": "KgJS8S8hPQ7K71nz",
-            "rank": 3
-          },
-          {
-            "id": "PyRGVVsaE31MSJUk",
-            "rank": 4
-          },
-          {
-            "id": "PyRGVVsaE31MSJUk",
-            "rank": 4
-          },
-          {
-            "id": "PyRGVVsaE31MSJUk",
-            "rank": 4
-          },
-          {
-            "id": "fpwjNWkCNelwMtJU",
-            "rank": 4
-          },
-          {
-            "id": "7jDeM3wbrtcgnTI6",
-            "rank": 5
-          },
-          {
-            "id": "MMjzLbJYQJBQfsFL",
-            "rank": 5
-          },
-          {
-            "id": "msR0u1xH9gdo0joH",
-            "rank": 5
-          },
-          {
-            "id": "msR0u1xH9gdo0joH",
-            "rank": 5
-          },
-          {
-            "id": "DF2PYuaQ7o3ZQNrM",
-            "rank": 6
-          },
-          {
-            "id": "nBwOttIK3uyFzwfU",
-            "rank": 6
-          },
-          {
-            "id": "hiSRxfyzVOwK2Ow3",
-            "rank": 6
-          },
-          {
-            "id": "eseQ5nUnYpDCaBqO",
-            "rank": 6
-          },
-          {
-            "id": "EwIUvItOM8UEnL7g",
-            "rank": 7
-          },
-          {
-            "id": "arnSjzFpXxUJo95z",
-            "rank": 7
-          },
-          {
-            "id": "7cSVKo9ETna8bsce",
-            "rank": 7
-          },
-          {
-            "id": "zWzQZYCghnILRJuv",
-            "rank": 7
-          }
-        ],
-        "usedAttribute": "charisma",
-        "_id": "EDwLmZrzV7UKSmVT",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Alarm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "10 minutes",
-            "duration": "8 hours",
-            "range": "touch",
-            "area": "20 ft burst",
-            "targets": "",
-            "save": "",
-            "description": "<p>You ward an area to alert you when creatures enter without your permission. When you cast alarm, select a password. Whenever a Small or larger corporeal creature enters the spell's area without speaking the password, alarm sends your choice of a mental alert (in which case the spell gains the mental trait) or an audible alarm with the sound and volume of a hand bell (in which case the spell gains the auditory trait). Either option automatically awakens you, and the bell allows each creature in the area to attempt a DC 15 Perception check to wake up. A creature aware of the alarm must succeed at a Stealth check against the spell's DC or trigger the spell when moving into the area.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can specify criteria for which creatures sound the alarm spell-for instance, orcs or masked people.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "qj31kkWlcJAvRDAH"
-          },
-          {
-            "name": "Fleet Step",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You gain a +30-foot status bonus to your Speed.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "OlWopURH0B5Skh2s"
-          },
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "KgJS8S8hPQ7K71nz"
-          },
-          {
-            "name": "Jump",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1",
-            "duration": "",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Your legs surge with strength, ready to leap high and far. You jump 30 feet in any direction without touching the ground. You must land on a space of solid ground within 30 feet of you, or else you fall after using your next action.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range becomes touch, the target changes to one touched creature, and the duration becomes 1 minute, allowing the target to jump as described whenever it takes the Leap action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "3AJ2GSU634pKy6o8"
-          }
-        ],
-        "lv1slots": {},
-        "lv2spells": [
-          {
-            "name": "Dispel Magic",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 spell effect or unattended magic item",
-            "save": "",
-            "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "MMjzLbJYQJBQfsFL"
-          },
-          {
-            "name": "Glitterdust",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "10 ft burst",
-            "targets": "",
-            "save": "reflex",
-            "description": "<p>Creatures in the area are outlined by glittering dust. Each creature must attempt a Reflex save. If a creature has its invisibility negated by this spell, it is Concealed instead of Invisible. This applies both if the creature was already Invisible and if it benefits from new invisibility effects before the end of the invisibility negation effect from this spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The target is Dazzled for 1 minute and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded for 1 round and Dazzled for 10 minutes. Its invisibility is negated for 10 minutes.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "HCYtEtOj25xv1bWr"
-          },
-          {
-            "name": "Glitterdust",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "10 ft burst",
-            "targets": "",
-            "save": "reflex",
-            "description": "<p>Creatures in the area are outlined by glittering dust. Each creature must attempt a Reflex save. If a creature has its invisibility negated by this spell, it is Concealed instead of Invisible. This applies both if the creature was already Invisible and if it benefits from new invisibility effects before the end of the invisibility negation effect from this spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The target is Dazzled for 1 minute and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is Blinded for 1 round and Dazzled for 10 minutes. Its invisibility is negated for 10 minutes.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "HCYtEtOj25xv1bWr"
-          },
-          {
-            "name": "Obscuring Mist",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "20 ft burst",
-            "targets": "",
-            "save": "",
-            "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "U06kiDXVs0VTnDvX"
-          }
-        ],
-        "lv2slots": {},
-        "lv3spells": [
-          {
-            "name": "Earthbind",
-            "type": "spell",
-            "level": 3,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 flying creature",
-            "save": "fortitude",
-            "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "8MHrrj49vKW6hxOR"
-          },
-          {
-            "name": "Earthbind",
-            "type": "spell",
-            "level": 3,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 flying creature",
-            "save": "fortitude",
-            "description": "<p>Using the weight of earth, you hamper a target's flight, with effects based on its Fortitude save. If the creature reaches the ground safely, it doesn't take falling damage.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target falls safely up to 120 feet.</p>\n<p><strong>Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 round.</p>\n<p><strong>Critical Failure</strong> The target falls safely up to 120 feet. If it hits the ground, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "8MHrrj49vKW6hxOR"
-          },
-          {
-            "name": "Haste",
-            "type": "spell",
-            "level": 3,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>Magic empowers the target to act faster. It gains the Quickened condition and can use the extra action each round only for Strike and Stride actions.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to 6 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "RCZXluNKklUfCUJw"
-          },
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "KgJS8S8hPQ7K71nz"
-          }
-        ],
-        "lv3slots": {},
-        "lv4spells": [
-          {
-            "name": "Air Walk",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "air",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "5 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "PyRGVVsaE31MSJUk"
-          },
-          {
-            "name": "Air Walk",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "air",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "5 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "PyRGVVsaE31MSJUk"
-          },
-          {
-            "name": "Air Walk",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "air",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "5 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>The target can walk on air as if it were solid ground. It can ascend and descend in this way at a maximum of a 45-degree angle.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "PyRGVVsaE31MSJUk"
-          },
-          {
-            "name": "Freedom of Movement",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature touched",
-            "save": "",
-            "description": "<p>You repel effects that would hinder a creature or slow its movement. While under this spell's effect, the target ignores effects that would give them a circumstance penalty to Speed. When they attempt to Escape an effect that has them Immobilized, Grabbed, or Restrained, they automatically succeed unless the effect is magical and of a higher rank than the <em>freedom of movement</em> spell.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "fpwjNWkCNelwMtJU"
-          }
-        ],
-        "lv4slots": {},
-        "lv5spells": [
-          {
-            "name": "Cone of Cold",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "cold",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "60 ft cone",
-            "targets": "",
-            "save": "basic reflex",
-            "description": "<p>Icy cold rushes forth from your hands. You deal <span class=\"roll\" onclick=\"roll(this)\">12d6</span> cold damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "7jDeM3wbrtcgnTI6"
-          },
-          {
-            "name": "Wall of Ice",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "cold",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "msR0u1xH9gdo0joH"
-          },
-          {
-            "name": "Wall of Ice",
-            "type": "spell",
-            "level": 5,
-            "traits": [
-              "cold",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You sculpt an ice barrier that blocks sight and, once shattered, freezes foes. You create either a 1-foot-thick wall of ice in a straight line up to 60 feet long and 10 feet high (the wall doesn't have to be vertical, but it must be anchored on both sides to a solid surface) or a 1-foot-thick, 10-foot radius hemisphere of ice. The ice that makes up the wall is opaque. If you wish, the wall can be of a smaller length, height, or radius.</p>\n<p>You must create the wall in an unbroken open space so its edges don't pass through any creatures or objects, or the spell is lost. Each 10-foot-by-10-foot section of the wall has AC 10, Hardness 10, and 40 Hit Points, and it's immune to critical hits, cold damage, and precision damage. A section also has weakness to fire 15; a section of the wall destroyed by fire melts, evaporating into water and steam. A section destroyed by means other than fire leaves behind a chilling mass of ice that is difficult terrain and deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> cold damage to any creature passing through it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The Hit Points of each section of the wall increase by 10, and the cold damage dealt to creatures crossing a destroyed section increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "msR0u1xH9gdo0joH"
-          },
-          {
-            "name": "Dispel Magic",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 spell effect or unattended magic item",
-            "save": "",
-            "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "MMjzLbJYQJBQfsFL"
-          }
-        ],
-        "lv5slots": {},
-        "lv6spells": [
-          {
-            "name": "Baleful Polymorph",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate",
-              "incapacitation",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "fortitude",
-            "description": "<p>You transform the target creature into a harmless animal appropriate to the area, with effects based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor features of the harmless animal. Its insides churn as they partially transform, causing it to be Sickened 1. When it recovers from the Sickened condition, its features revert to normal.</p>\n<p><strong>Failure</strong> The target transforms for 1 minute but keeps its mind. If it spends all its actions on its turn concentrating on its original form, it can attempt a Will save to end the effect immediately.</p>\n<p><strong>Critical Failure</strong> The target is transformed into the chosen harmless animal, body and mind, for an unlimited duration.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "DF2PYuaQ7o3ZQNrM"
-          },
-          {
-            "name": "Blinding Fury",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate",
-              "curse",
-              "emotion",
-              "incapacitation"
-            ],
-            "castingTime": "reaction",
-            "duration": "varies",
-            "range": "60 feet",
-            "area": "",
-            "targets": "The triggering creature",
-            "save": "will",
-            "description": "<p><strong>Trigger</strong> A creature damages you.</p>\n<hr />\n<p>You curse the target with your outrage at being attacked. The effect is determined by the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't Observe you until the end of its turn, and if you're currently Observed by it, you become Hidden to it.</p>\n<p><strong>Failure</strong> As success, and for 1 minute, every time the target damages you, it can't Observe you until the end of its turn.</p>\n<p><strong>Critical Failure</strong> As success, and for an unlimited duration, the first time each round the target damages a creature, it can't Observe that creature until the end of its turn. If it damages several creatures at once, the creature it can't perceive is chosen randomly among those creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "eseQ5nUnYpDCaBqO"
-          },
-          {
-            "name": "Chain Lightning",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate",
-              "electricity"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "500 feet",
-            "area": "",
-            "targets": "1 creature, plus any number of additional creatures",
-            "save": "basic reflex",
-            "description": "<p>You discharge a powerful bolt of lightning at the target, dealing <span class=\"roll\" onclick=\"roll(this)\">8d12</span> electricity damage. The target must attempt a basic Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome). The chain ends if any one of the targets critically succeeds at its save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d12</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "nBwOttIK3uyFzwfU"
-          },
-          {
-            "name": "True Seeing",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion or transmutation in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "hiSRxfyzVOwK2Ow3"
-          }
-        ],
-        "lv6slots": {},
-        "lv7spells": [
-          {
-            "name": "Eclipse Burst",
-            "type": "spell",
-            "level": 7,
-            "traits": [
-              "cold",
-              "concentrate",
-              "darkness",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "500 feet",
-            "area": "60 ft burst",
-            "targets": "",
-            "save": "reflex",
-            "description": "<p>A globe of freezing darkness explodes in the area, dealing <span class=\"roll\" onclick=\"roll(this)\">8d10</span> cold damage to creatures in the area, plus <span class=\"roll\" onclick=\"roll(this)\">8d4</span> additional void damage to living creatures. Each creature in the area must attempt a Reflex save. If the globe overlaps with an area of magical light or affects a creature affected by magical light, eclipse burst attempts to counteract the light effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and becomes Blinded by the darkness for an unlimited duration.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span> and the void damage against the living increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "arnSjzFpXxUJo95z"
-          },
-          {
-            "name": "Energy Aegis",
-            "type": "spell",
-            "level": 7,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "1 minute",
-            "duration": "24 hours",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You protect the target with a powerful, long-lasting energy barrier. The target gains resistance 5 to acid, cold, electricity, fire, force, sonic, vitality, and void damage.</p>\n\n<hr />\n<p><strong>Heightened (9th)</strong> The resistances increase to 10.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "7cSVKo9ETna8bsce"
-          },
-          {
-            "name": "Unfettered Pack",
-            "type": "spell",
-            "level": 7,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 hour",
-            "range": "30 feet",
-            "area": "",
-            "targets": "up to 10 creatures",
-            "save": "",
-            "description": "<p>You free those who travel alongside you from environmental hindrances. Targets don't take circumstance penalties to Speed from vegetation, rubble, winds, or other properties of the environment, whether or not the environment is magical, and they ignore difficult terrain from such environmental properties.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The targets also ignore greater difficult terrain from environmental properties.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "zWzQZYCghnILRJuv"
-          },
-          {
-            "name": "Dragon Form",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Calling upon powerful magic, you gain a Large dragon battle form. When you Cast this Spell, choose one type of common dragon or another type to which your GM allows access. While in this form, you gain the dragon trait. You have hands in this battle form and can take manipulate actions. You can Dismiss the spell.</p><hr /><p>You gain the following statistics and abilities regardless of which battle form you choose:</p><ul><li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li><li>10 temporary Hit Points.</li><li>Speed 40 feet, fly Speed 100 feet.</li><li>Resistance 10 against the damage type of your Dragon Breath (see below).</li><li>Darkvision and imprecise scent 60 feet.</li><li>One or more unarmed melee attacks specific to the battle form you choose, which are the only attacks you can Strike with. You're trained with them. Your attack modifier is +22, and your damage bonus is +6. These attacks are Strength based (for the purpose of the Enfeebled condition, for example). If your unarmed attack modifier is higher, you can use it instead. See below for more on these attacks.</li><li>Athletics modifier of +23, unless your own modifier is higher.</li><li><strong>Breath Weapon</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> (varies) The shape, damage, and damage type of your breath weapon depend on your specific dragon form (see below). A creature in the area attempts a basic save against your spell DC. This is a Reflex save unless stated otherwise in the special ability description for your specific dragon form. Once activated, your breath weapon can't be used again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds. Your breath weapon has the trait corresponding to the type of damage it deals.</li></ul><p>You also gain specific abilities based on the type of dragon:</p><ul><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> bludgeoning</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> fire</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> spirit;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> spirit</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> force;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> force</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> poison</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> mental</li></ul></li><li><p><strong></strong></p><ul><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> jaws, <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">2d12</span> piercing plus <span class=\"roll\" onclick=\"roll(this)\">2d6</span> mental;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> claw (agile), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> slashing;</li><li><strong>Melee</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> tail (reach 10 feet), <strong>Damage</strong> <span class=\"roll\" onclick=\"roll(this)\">3d10</span> bludgeoning;</li><li>breath weapon 30-foot cone, <span class=\"roll\" onclick=\"roll(this)\">10d6</span> mental</li></ul></li><li><p><strong>Tradition Resistance</strong> If the dragon's magical tradition matches that of your dragon form spell, you gain the listed ability. <strong>Arcane</strong> resistance 5 against damage from spells; <strong>divine</strong> resistance 10 to spirit, vitality, and void; <strong>occult</strong> resistance 10 to mental; <strong>primal</strong> resistance 5 to physical damage.</p><hr /><p><strong>Heightened (8th)</strong> Your battle form is Huge, you gain a +20-foot status bonus to your fly Speed, and your attacks have 10-foot reach (or 15-foot reach if they previously had 10-foot reach). You instead gain AC = 21 + your level, 15 temporary HP, an attack modifier of +28, a damage bonus of +12, Athletics +28, and a +14 status bonus to breath weapon damage.</p></li></ul>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "EwIUvItOM8UEnL7g"
-          }
-        ],
-        "lv7slots": {},
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      },
-      {
-        "name": "Focus Spells",
-        "type": "focus",
-        "bonus": 27,
-        "dc": 35,
-        "focusPoints": {
-          "current": 3,
-          "max": 3
-        },
-        "autoHeightenLevel": 7,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "TWHIXASInyOgYomw",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [
-          {
-            "name": "Personal Blizzard",
-            "type": "spell",
-            "level": 3,
-            "traits": [
-              "uncommon",
-              "attack",
-              "focus",
-              "hex",
-              "manipulate"
-            ],
-            "castingTime": "1",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "fortitude",
-            "description": "<p>You summon an isolated blizzard of obscuring, scouring ice to follow your target. The target attempts a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold damage, and the spell ends.</p>\n<p><strong>Failure</strong> The target takes <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold damage and <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus cold damage. (The persistent damage automatically ends when the spell ends.) It is Concealed to other creatures, and other creatures are concealed to it.</p>\n<p><strong>Critical Failure</strong> As failure, but both the cold damage and the persistent cold damage increase to <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage and persistent cold damage increase by 1 (2 on a critical failure).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ZzFD7YepVU77xMSi"
-          },
-          {
-            "name": "Cackle",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "concentrate",
-              "focus"
-            ],
-            "castingTime": "free",
-            "duration": "",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>With a quick burst of laughter, you prolong a magical effect you created. You Sustain a Spell as a free action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "0JofZo30SO9OmvMB"
-          },
-          {
-            "name": "Elemental Betrayal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "focus",
-              "hex"
-            ],
-            "castingTime": "1",
-            "duration": "1 minute",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You call upon the elements to undermine your foe. When you Cast this Spell, choose air, earth, fire, or water. Each time the target takes damage from a spell or effect with the chosen trait, it takes an additional 2 damage of one damage type dealt by the spell or effect. If you chose fire or water, the target also takes this additional damage when taking fire or cold damage, respectively, from effects or spells without the chosen trait.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Increase the additional damage by 1.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "k8W5apiz3S9uCjO0"
-          },
-          {
-            "name": "Life Boost",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "focus",
-              "healing",
-              "hex",
-              "manipulate"
-            ],
-            "castingTime": "1",
-            "duration": "4 rounds",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You temporarily bolster the target's vitality. The target gains fast healing equal to double the spell's rank.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "BcAHKsa5SmS7qMW5"
-          },
-          {
-            "name": "Phase Familiar",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "focus",
-              "hex",
-              "manipulate"
-            ],
-            "castingTime": "reaction",
-            "duration": "",
-            "range": "60 feet",
-            "area": "",
-            "targets": "your familiar",
-            "save": "",
-            "description": "<p><strong>Trigger</strong> Your familiar would take damage.</p>\n<hr />\n<p><strong>Effect</strong> You draw upon your patron's power to momentarily shift your familiar from its solid, physical form into an ephemeral version of itself shaped of mist. Your familiar gains resistance 5 to all damage and is immune to precision damage. These apply only against the triggering damage.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "IrLRB8koUeU65Zrq"
-          }
-        ],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "",
-    "recallKnowledge": "Society, DC: 32",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 32"
 }

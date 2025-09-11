@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Rolling Stone Cylinder Trap",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 6,
   "traits": [
-    "Hazard",
-    "Complex",
     "Uncommon",
     "Medium",
     "Mechanical",
@@ -18,11 +17,10 @@
   "source": "Pathfinder #194: Cult of the Cave Worm",
   "stealth": {
     "value": 18,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>A 10-foot-long, 5-foot-thick column of stone thuds to the ground, just in front of the bridge. It immediately starts to roll down the bridge, quickly picking up speed.</p>",
-  "disable": "<p>DC 25 Thievery check to create a wedge to immobilize the column, DC 21 Athletics check to immobilize the column until the end of the creature's next turn, a creature can Climb over an Immobilized column with a successful DC 18 Athletics check.</p>",
+  "disable": "<p>DC 25 Thievery  check to create a wedge to immobilize the column, DC 21 Athletics  check to immobilize the column until the end of the creature's next turn, a creature can Climb over an Immobilized column with a successful DC 18 Athletics  check.</p>",
   "reset": "",
   "routine": "<p>(1 action) The rolling stone cylinder trap uses Crushing Roll.</p>",
   "items": [],
@@ -37,28 +35,36 @@
   ],
   "ac": {
     "value": 21,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 14
   },
   "fortitude": {
     "value": 18,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 11,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 58,
     "max": 58,
-    "note": "<b>Hardness</b> 14 <b>BT</b> 29. (BT 29)",
+    "note": "(BT 29)",
     "modifications": []
   },
   "immunities": [
@@ -82,104 +88,10 @@
       "name": "Crushing Roll",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The rolling stone cylinder is not Immobilized</p>\n<hr />\n<p><strong>Effect</strong> The rolling stone cylinder trap moves its Speed west along the bridge. Creatures it moves past or lands on take <span class=\"roll\" onclick=\"roll(this)\">5d6</span> bludgeoning damage and are forced to move west to the first available space (DC 27 basic Reflex save). Creatures who critically succeed at the Reflex save are not damaged but are still moved west. If the rolling stone tries to move into a non-creature obstruction, such as a wall or barricade, it deals bludgeoning damage to the obstruction and only continues moving if the obstruction is destroyed, otherwise the trap stops.</p>",
+      "description": "<p><strong>Requirements</strong> The rolling stone cylinder is not Immobilized</p>\n<hr />\n<p><strong>Effect</strong> The rolling stone cylinder trap moves its Speed west along the bridge. Creatures it moves past or lands on take 5d6 Bludgeoning Damage damage and are forced to move west to the first available space (Basic DC 27 Reflex Saving Throw). Creatures who critically succeed at the Reflex save are not damaged but are still moved west. If the rolling stone tries to move into a non-creature obstruction, such as a wall or barricade, it deals bludgeoning damage to the obstruction and only continues moving if the obstruction is destroyed, otherwise the trap stops.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 18,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Rolling Stone Cylinder Trap",
-    "type": "hazard",
-    "level": 6,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Uncommon",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder #194: Cult of the Cave Worm",
-    "stealth": {
-      "value": 18,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>A 10-foot-long, 5-foot-thick column of stone thuds to the ground, just in front of the bridge. It immediately starts to roll down the bridge, quickly picking up speed.</p>",
-    "disable": "<p>DC 25 Thievery check to create a wedge to immobilize the column, DC 21 Athletics check to immobilize the column until the end of the creature's next turn, a creature can Climb over an Immobilized column with a successful DC 18 Athletics check.</p>",
-    "reset": "",
-    "routine": "<p>(1 action) The rolling stone cylinder trap uses Crushing Roll.</p>",
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Speed 20 feet (west only)",
-        "actions": null,
-        "traits": [],
-        "description": "",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 21,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 18,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 58,
-      "max": 58,
-      "note": "<b>Hardness</b> 14 <b>BT</b> 29. (BT 29)",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Drop and Roll",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>A lever at the top of the south tower is pulled</p>\n<hr />\n<p><strong>Effect</strong> A thick column of stone drops from above the gate, then uses crushing roll. The rolling stone cylinder trap rolls initiative.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Crushing Roll",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The rolling stone cylinder is not Immobilized</p>\n<hr />\n<p><strong>Effect</strong> The rolling stone cylinder trap moves its Speed west along the bridge. Creatures it moves past or lands on take <span class=\"roll\" onclick=\"roll(this)\">5d6</span> bludgeoning damage and are forced to move west to the first available space (DC 27 basic Reflex save). Creatures who critically succeed at the Reflex save are not damaged but are still moved west. If the rolling stone tries to move into a non-creature obstruction, such as a wall or barricade, it deals bludgeoning damage to the obstruction and only continues moving if the obstruction is destroyed, otherwise the trap stops.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 24"
-  },
-  "recallKnowledge": ", DC: 24"
+  "recallKnowledge": ", DC 22"
 }

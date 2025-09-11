@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": -1,
   "traits": [
+    "Common",
     "Small",
     "Evil",
     "Humanoid",
@@ -16,15 +17,15 @@
     "Lawful"
   ],
   "source": "Pathfinder Society Scenario #5-07: Sewer Dragon Crisis",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 3,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Draconic"
@@ -41,7 +42,7 @@
       "name": "crafting",
       "modifier": 2,
       "note": [
-        "traps <span class=\"roll\" onclick=\"roll(this)\">3</span>"
+        "traps 3"
       ],
       "usedAttribute": "intelligence",
       "modifications": []
@@ -78,7 +79,7 @@
       "quantity": 1,
       "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -86,7 +87,7 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -98,15 +99,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
-      "traits": []
-    },
-    {
-      "name": "Bolts",
-      "quantity": 10,
-      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-      "level": 0,
-      "price": "1 sp ",
+      "price": "2 gp",
       "traits": []
     }
   ],
@@ -146,7 +139,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -197,7 +190,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -214,236 +207,10 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The loyalist deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d4</span> precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The loyalist deals an extra 1d4 precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Society, DC: 13",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 3,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Tok Loyalist",
-    "type": "Creature",
-    "level": -1,
-    "traits": [
-      "Small",
-      "Evil",
-      "Humanoid",
-      "Kobold",
-      "Lawful"
-    ],
-    "source": "Pathfinder Society Scenario #5-07: Sewer Dragon Crisis",
-    "perception": {
-      "value": 3,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Draconic"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 2,
-        "note": [
-          "traps <span class=\"roll\" onclick=\"roll(this)\">3</span>"
-        ],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 0
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [
-      {
-        "name": "Hand Crossbow",
-        "quantity": 1,
-        "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Bolts",
-        "quantity": 10,
-        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 8,
-      "max": 8,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 6,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+1",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+1)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Hand Crossbow",
-        "bonus": 6,
-        "traits": [
-          "range-increment-60",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Hurried Retreat",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The loyalist is adjacent to at least one enemy</p>\n<hr />\n<p><strong>Effect</strong> The loyalist Strides up to its Speed plus 5 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. It must end this movement in a space that's not adjacent to any enemy.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The loyalist deals an extra <span class=\"roll\" onclick=\"roll(this)\">1d4</span> precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Society, DC: 13",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 13"
 }

@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Falling Debris",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 1,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Adventure: Crown of the Kobold King",
   "stealth": {
     "value": 10,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>A net filled with stones and a small anvil crashes down on someone who steps into the room.</p>",
-  "disable": "<p>DC 17 Thievery check to disarm the trap through a cracked-open door, or <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Interact to open the door slowly without triggering the trap</p>",
+  "disable": "<p>DC 17 Thievery  to disarm the trap through a cracked-open door, or <span class=\"action-glyph\">3</span> Interact to open the door slowly without triggering the trap</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Drop Debris",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature opens the door without taking care to avoid triggering the trap;</p>\n<p><strong>Effect</strong> The net drops a dozen hefty stones and a small but quite hard anvil onto the creature, inflicting 3d6 Bludgeoning Damage damage (Basic DC 17 Reflex Saving Throw). The sound of this trap going off alerts Gurtlekep in area <strong>C8</strong>.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,90 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Drop Debris",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature opens the door without taking care to avoid triggering the trap;</p>\n<p><strong>Effect</strong> The net drops a dozen hefty stones and a small but quite hard anvil onto the creature, inflicting <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage (DC 17 basic Reflex save). The sound of this trap going off alerts Gurtlekep in area <strong>C8</strong>.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Falling Debris",
-    "type": "hazard",
-    "level": 1,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Adventure: Crown of the Kobold King",
-    "stealth": {
-      "value": 10,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>A net filled with stones and a small anvil crashes down on someone who steps into the room.</p>",
-    "disable": "<p>DC 17 Thievery check to disarm the trap through a cracked-open door, or <img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> Interact to open the door slowly without triggering the trap</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Drop Debris",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature opens the door without taking care to avoid triggering the trap;</p>\n<p><strong>Effect</strong> The net drops a dozen hefty stones and a small but quite hard anvil onto the creature, inflicting <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage (DC 17 basic Reflex save). The sound of this trap going off alerts Gurtlekep in area <strong>C8</strong>.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 15"
-  },
-  "recallKnowledge": ", DC: 15"
+  "recallKnowledge": ", DC 15"
 }

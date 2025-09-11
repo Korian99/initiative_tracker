@@ -10,24 +10,23 @@
   "level": 14,
   "traits": [
     "Uncommon",
-    "Huge",
+    "huge",
     "Fiend",
     "Qlippoth",
-    "Unholy",
-    "(caster)"
+    "Unholy"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise",
+    "Truesight 60ft precise"
+  ],
   "perception": {
     "value": 27,
-    "note": "darkvisionscent 30 ft imprecisetruesight 60 ft precise",
+    "note": "Darkvision, Scent 30ft imprecise, Truesight 60ft precise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 30 ft imprecise",
-    "truesight 60 ft precise"
-  ],
   "languages": [
     "Chthonian",
     "Telepathy 100 feet"
@@ -125,7 +124,7 @@
   ],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "40 ft,\nclimb 40 ft,\nfly 40 ft,\n",
+  "speed": "40 ft, climb 40ft, fly 40ft",
   "strikes": [
     {
       "type": "melee",
@@ -158,7 +157,7 @@
         }
       ],
       "effects": [
-        "Rotting-curse"
+        "rotting-curse"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -216,7 +215,7 @@
         "occult",
         "visual"
       ],
-      "description": "<p>The augnagar's writhing limbs and flesh seethe and squirm in a disorienting and unsettling manner. Creatures in a 30 foot emanation must attempt a DC 34 Will save, after which they are temporarily immune to further Confusing Displays for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stupefied 1 for 1 round.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 and Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't attempt a flat check to recover from confusion whenever it takes damage from an attack or spell.</p>",
+      "description": "<p>The augnagar's writhing limbs and flesh seethe and squirm in a disorienting and unsettling manner. Creatures in a 30ft Emanation must attempt a DC 34 Will Saving Throw save, after which they are temporarily immune to further Confusing Displays for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stupefied 1 for 1 round.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 and Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't attempt a flat check to recover from confusion whenever it takes damage from an attack or spell.</p>",
       "collapsed": false
     },
     {
@@ -226,7 +225,7 @@
         "occult",
         "void"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The augnagar inhales sharply, drawing life force out of creatures in a 50 foot cone. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">14d6</span> void damage with a DC 34 basic Fortitude save. A creature that fails its save is also Fatigued.</p>\n<p>If any creatures take damage from this activity, the augnagar becomes Quickened for 1 round, and it can use the extra action only to Stride or Strike.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The augnagar inhales sharply, drawing life force out of creatures in a 50ft Cone. Creatures in the area take 14d6 Void Damage damage with a Basic DC 34 Fortitude Saving Throw save. A creature that fails its save is also Fatigued.</p>\n<p>If any creatures take damage from this activity, the augnagar becomes Quickened for 1 round, and it can use the extra action only to Stride or Strike.</p>",
       "collapsed": false
     },
     {
@@ -237,7 +236,7 @@
         "disease",
         "occult"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> Drained 1 (1 day)</p>\n<p><strong>Stage 2</strong> drained 2 and the creature displays hideous, festering wounds exuding a horrific stench. When the victim takes piercing or slashing damage, creatures within 30 feet must succeed at a DC 32 Fortitude save or become Sickened 1. The victim automatically fails this save (1 day).</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Stage 1</strong> Drained 1 (1 day)</p>\n<p><strong>Stage 2</strong> drained 2 and the creature displays hideous, festering wounds exuding a horrific stench. When the victim takes piercing or slashing damage, creatures within 30 feet must succeed at a DC 32 Fortitude Saving Throw save or become Sickened 1. The victim automatically fails this save (1 day).</p>",
       "collapsed": false
     }
   ],
@@ -253,11 +252,6 @@
       },
       "autoHeightenLevel": 7,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "EjSQcYiJF0lhuXqk",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -267,9 +261,12 @@
           "name": "Translocate",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "teleportation"
           ],
           "castingTime": "2",
           "duration": "",
@@ -289,9 +286,12 @@
           "name": "Translocate",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "teleportation"
           ],
           "castingTime": "2",
           "duration": "",
@@ -311,9 +311,12 @@
           "name": "Translocate",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 5,
+          "timesPrepared": 3,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "teleportation"
           ],
           "castingTime": "2",
           "duration": "",
@@ -336,9 +339,12 @@
           "name": "Truesight (Constant)",
           "type": "spell",
           "level": 6,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "revelation"
           ],
           "castingTime": "2",
           "duration": "10 minutes",
@@ -358,6 +364,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -400,412 +407,5 @@
       }
     }
   ],
-  "description": "<p>The brutish and gluttonous augnagar live to feast—preferably on rotten flesh and, when possible, demon flesh. But to them, the greatest delicacy is the flesh of other augnagars. Augnagars have swollen, spiderlike legs with leathery membranes like a bat's wings, and three tails ending in hooked stings perfect for slicing flesh.</p>\n<p>An augnagar that gorges sufficiently, especially on other augnagars, can grow so massive it can't even move, thrashing and festering where it lies. It eventually flies into a frenzy of self-cannibalism as it rips apart its own flesh to feast on. From the ruinous remains emerges a thulgant—a smaller but more powerful qlippoth.</p>\n<hr />\n<p>Long before the creatures known as demons came to be the dominant force in the Outer Rifts, qlippoth ruled the innumerable cracks of the Outer Sphere. These inimical creatures are a form of primordial and alien evil that predates mortal life, and most immortal life as well. Since the rise of mortal sin and the associated expansion of demonic life through the Outer Rifts, qlippoth have been driven to their deepest reaches, and they seethe with rancor at the loss of their realms. Yet, rather than directly oppose demons, qlippoth instead turn to the source—mortal sin—and wage an endless war to eradicate all creatures capable of sinful acts so that the demonic tide might be turned back. To ensure they do not bolster their foe's ranks, they enact horrific transformations on their targets, converting their victims into beings incapable of discerning right from wrong; this renders them unable to be judged by Pharasma's courts and thus incapable of becoming fiends. Most mortals consider the ministrations of a qlippoth to be far worse than any fate awaiting them in the afterlife.</p>",
-  "recallKnowledge": "Religion, DC: 34",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 27,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Augnagar",
-    "type": "Creature",
-    "level": 14,
-    "traits": [
-      "Uncommon",
-      "Huge",
-      "Fiend",
-      "Qlippoth",
-      "Unholy",
-      "(caster)"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 27,
-      "note": "darkvisionscent 30 ft imprecisetruesight 60 ft precise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 30 ft imprecise",
-      "truesight 60 ft precise"
-    ],
-    "languages": [
-      "Chthonian",
-      "Telepathy 100 feet"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 28,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 26,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 8
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 8
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 36,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 23,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 225,
-      "max": 225,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "controlled",
-      "fear-effects"
-    ],
-    "resistances": [
-      {
-        "type": "mental",
-        "value": 15
-      },
-      {
-        "exceptions": [
-          "cold-iron"
-        ],
-        "type": "physical",
-        "value": 15
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "40 ft,\nclimb 40 ft,\nfly 40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 28,
-        "traits": [
-          "magical",
-          "reach-10",
-          "unarmed",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d12+14",
-            "type": "piercing"
-          },
-          {
-            "roll": "3d6",
-            "type": "persistent bleed"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d12+14)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "persistent bleed"
-          }
-        ],
-        "effects": [
-          "Rotting-curse"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Sting",
-        "bonus": 28,
-        "traits": [
-          "agile",
-          "finesse",
-          "magical",
-          "reach-15",
-          "unholy"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8+14",
-            "type": "slashing"
-          },
-          {
-            "roll": "3d6",
-            "type": "persistent bleed"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8+14)*2",
-            "type": "slashing"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "persistent bleed"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Confusing Display",
-        "actions": 2,
-        "traits": [
-          "concentrate",
-          "emotion",
-          "fear",
-          "incapacitation",
-          "mental",
-          "occult",
-          "visual"
-        ],
-        "description": "<p>The augnagar's writhing limbs and flesh seethe and squirm in a disorienting and unsettling manner. Creatures in a 30 foot emanation must attempt a DC 34 Will save, after which they are temporarily immune to further Confusing Displays for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Stupefied 1 for 1 round.</p>\n<p><strong>Failure</strong> The creature is stupefied 1 and Confused for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature can't attempt a flat check to recover from confusion whenever it takes damage from an attack or spell.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Inhale Vitality",
-        "actions": 2,
-        "traits": [
-          "occult",
-          "void"
-        ],
-        "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The augnagar inhales sharply, drawing life force out of creatures in a 50 foot cone. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">14d6</span> void damage with a DC 34 basic Fortitude save. A creature that fails its save is also Fatigued.</p>\n<p>If any creatures take damage from this activity, the augnagar becomes Quickened for 1 round, and it can use the extra action only to Stride or Strike.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Rotting Curse",
-        "actions": null,
-        "traits": [
-          "curse",
-          "disease",
-          "occult"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 32 Fortitude save</p>\n<hr />\n<p><strong>Stage 1</strong> Drained 1 (1 day)</p>\n<p><strong>Stage 2</strong> drained 2 and the creature displays hideous, festering wounds exuding a horrific stench. When the victim takes piercing or slashing damage, creatures within 30 feet must succeed at a DC 32 Fortitude save or become Sickened 1. The victim automatically fails this save (1 day).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Occult Innate Spells",
-        "type": "innate",
-        "bonus": 23,
-        "dc": 31,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 7,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "EjSQcYiJF0lhuXqk",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [
-          {
-            "name": "Translocate",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "l1UFCKsoLgUqxvql"
-          },
-          {
-            "name": "Translocate",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "l1UFCKsoLgUqxvql"
-          },
-          {
-            "name": "Translocate",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "l1UFCKsoLgUqxvql"
-          }
-        ],
-        "lv6spells": [],
-        "lv7spells": [
-          {
-            "name": "Truesight (Constant)",
-            "type": "spell",
-            "level": 6,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "10 minutes",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You see things within 60 feet as they actually are. The GM rolls a secret counteract check against any illusion, morph or polymorph effect in the area, but only for the purpose of determining whether you see through it (for instance, if the check succeeds against a polymorph spell, you can see the creature's true form, but you don't end the polymorph spell).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ykP7JOxhkiOJWHS0"
-          }
-        ],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The brutish and gluttonous augnagar live to feast—preferably on rotten flesh and, when possible, demon flesh. But to them, the greatest delicacy is the flesh of other augnagars. Augnagars have swollen, spiderlike legs with leathery membranes like a bat's wings, and three tails ending in hooked stings perfect for slicing flesh.</p>\n<p>An augnagar that gorges sufficiently, especially on other augnagars, can grow so massive it can't even move, thrashing and festering where it lies. It eventually flies into a frenzy of self-cannibalism as it rips apart its own flesh to feast on. From the ruinous remains emerges a thulgant—a smaller but more powerful qlippoth.</p>\n<hr />\n<p>Long before the creatures known as demons came to be the dominant force in the Outer Rifts, qlippoth ruled the innumerable cracks of the Outer Sphere. These inimical creatures are a form of primordial and alien evil that predates mortal life, and most immortal life as well. Since the rise of mortal sin and the associated expansion of demonic life through the Outer Rifts, qlippoth have been driven to their deepest reaches, and they seethe with rancor at the loss of their realms. Yet, rather than directly oppose demons, qlippoth instead turn to the source—mortal sin—and wage an endless war to eradicate all creatures capable of sinful acts so that the demonic tide might be turned back. To ensure they do not bolster their foe's ranks, they enact horrific transformations on their targets, converting their victims into beings incapable of discerning right from wrong; this renders them unable to be judged by Pharasma's courts and thus incapable of becoming fiends. Most mortals consider the ministrations of a qlippoth to be far worse than any fate awaiting them in the afterlife.</p>",
-    "recallKnowledge": "Religion, DC: 34",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 32"
 }

@@ -15,15 +15,16 @@
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [
+    "Tremorsense 30ft imprecise",
+    "+27 for initiative"
+  ],
   "perception": {
     "value": 24,
-    "note": "tremorsense 30 ft imprecise",
+    "note": "Tremorsense 30ft imprecise, +27 for initiative",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "tremorsense 30 ft imprecise"
-  ],
   "languages": [
     "Common"
   ],
@@ -95,9 +96,8 @@
       "quantity": 2,
       "description": "<p>Made for settling disputes when diplomacy fails, dueling pistols are finely crafted and made to fit easily into a holster or pocket. Noble and wealthy merchants in both Alkenstar and Dongun Hold often own matching pairs of dueling pistols in case they're called upon to address a challenge-though this practice has become increasingly rare in the modern age.</p>",
       "level": 1,
-      "price": "12 gp ",
+      "price": "12 gp",
       "traits": [
-        "uncommon",
         "concealable",
         "concussive",
         "fatal-d10"
@@ -106,22 +106,12 @@
     {
       "name": "Obsidian Goggles",
       "quantity": 1,
-      "description": "<p>The sleek, black lenses of these goggles somehow make everything seem more brightly lit. While wearing the goggles, you gain a +1 item bonus to Perception checks involving sight.</p>\n<hr />\n<p><strong>Activate—Darkvision</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> Adjusting your goggles, you gain darkvision for 1 hour.</p>\n",
+      "description": "<p>The sleek, black lenses of these goggles somehow make everything seem more brightly lit. While wearing the goggles, you gain a +1 item bonus to Perception checks involving sight.</p>\n<hr />\n<p><strong>Activate—Darkvision</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> Adjusting your goggles, you gain darkvision for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Obsidian Goggles]</p>",
       "level": 5,
-      "price": "150 gp ",
+      "price": "150 gp",
       "traits": [
         "invested",
         "magical"
-      ]
-    },
-    {
-      "name": "Rounds (Dueling Pistol)",
-      "quantity": 40,
-      "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": [
-        "alchemical"
       ]
     }
   ],
@@ -170,6 +160,13 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
+      "name": "+3 to Initiative with Perception",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
       "name": "Shoot First",
       "actions": -1,
       "traits": [],
@@ -185,11 +182,11 @@
         "fear",
         "mental"
       ],
-      "description": "<p>60 feet, DC 30 Will save. The duelist's presence makes foes hesitate. Any enemy that enters or starts its turn in the aura must succeed at the Will save or be Stunned 1. Regardless of the result of its save, the creature is temporarily immune for 1 day.</p>",
+      "description": "<p>60 feet, DC 30 Will Saving Throw. The duelist's presence makes foes hesitate. Any enemy that enters or starts its turn in the aura must succeed at the Will save or be Stunned 1. Regardless of the result of its save, the creature is temporarily immune for 1 day.</p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -239,7 +236,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(3d10+13)*2",
+          "roll": "(2d6+13)*2",
           "type": "piercing"
         }
       ],
@@ -274,286 +271,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Rumors circulate in the saloons that an undefeated master duelist roams the roads, waiting for their next contest.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
-  "recallKnowledge": "Society, DC: 32",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 24,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Peerless Duelist",
-    "type": "Creature",
-    "level": 12,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 24,
-      "note": "tremorsense 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "tremorsense 30 ft imprecise"
-    ],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 25,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 26,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "Dueling Lore",
-        "modifier": 25,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Dueling Pistol",
-        "quantity": 2,
-        "description": "<p>Made for settling disputes when diplomacy fails, dueling pistols are finely crafted and made to fit easily into a holster or pocket. Noble and wealthy merchants in both Alkenstar and Dongun Hold often own matching pairs of dueling pistols in case they're called upon to address a challenge-though this practice has become increasingly rare in the modern age.</p>",
-        "level": 1,
-        "price": "12 gp ",
-        "traits": [
-          "uncommon",
-          "concealable",
-          "concussive",
-          "fatal-d10"
-        ]
-      },
-      {
-        "name": "Obsidian Goggles",
-        "quantity": 1,
-        "description": "<p>The sleek, black lenses of these goggles somehow make everything seem more brightly lit. While wearing the goggles, you gain a +1 item bonus to Perception checks involving sight.</p>\n<hr />\n<p><strong>Activate—Darkvision</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> Adjusting your goggles, you gain darkvision for 1 hour.</p>\n",
-        "level": 5,
-        "price": "150 gp ",
-        "traits": [
-          "invested",
-          "magical"
-        ]
-      },
-      {
-        "name": "Rounds (Dueling Pistol)",
-        "quantity": 40,
-        "description": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the Alchemical Crafting skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "alchemical"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "I See You",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The peerless duelist's Perception checks and firearm Strikes ignore lesser cover and the Concealed condition.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 33,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 200,
-      "max": 200,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Shoot First",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An attacker the duelist can see targets them with a Strike or spell</p>\n<p><strong>Requirements</strong> The duelist is holding a loaded firearm</p><hr /><p><strong>Effect</strong> The duelist makes a firearm Strike against the triggering creature. On a critical hit, they disrupt the triggering action.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Threatening Aura",
-        "actions": null,
-        "traits": [
-          "aura",
-          "emotion",
-          "fear",
-          "mental"
-        ],
-        "description": "<p>60 feet, DC 30 Will save. The duelist's presence makes foes hesitate. Any enemy that enters or starts its turn in the aura must succeed at the Will save or be Stunned 1. Regardless of the result of its save, the creature is temporarily immune for 1 day.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 25,
-        "traits": [
-          "agile",
-          "finesse",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+11",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+11)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Dueling Pistol",
-        "bonus": 26,
-        "traits": [
-          "concealable",
-          "concussive",
-          "fatal-d10",
-          "magical",
-          "range-increment-60",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+13",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d10+13)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Ace Shooter",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The peerless duelist deals an extra die of damage on any firearm Strike they attempt. This extra damage is already included in their <em>dueling pistol</em> Strike.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Disarming Shot",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The duelist fires a dueling pistol to attempt a Disarm an enemy at range with the bullet. The duelist attempts an attack roll with the dueling pistol instead of an Athletics check, taking any penalty appropriate for the firearm's range increment. The duelist doesn't have to meet the requirements of the Disarm action.</p>\n<p>Instead of Disarming, the duelist can use Disarming Shot to attempt an Escape action for the benefit of themself or an ally within range.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Double Reload",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The peerless duelist has an empty dueling pistol in each hand</p><hr /><p><strong>Effect</strong> The peerless duelist Interacts to reload both dueling pistols.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Rumors circulate in the saloons that an undefeated master duelist roams the roads, waiting for their next contest.</p><hr /><p>These lone wolves have an aura of mystery, bravado, and swagger.</p>",
-    "recallKnowledge": "Society, DC: 32",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 30"
 }

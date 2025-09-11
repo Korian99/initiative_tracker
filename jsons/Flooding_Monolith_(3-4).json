@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Flooding Monolith (3-4)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 2,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Environmental",
     "Water"
@@ -17,39 +17,54 @@
   "source": "Pathfinder Society Scenario #2-14: Lost in Flames",
   "stealth": {
     "value": 5,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>A surge of abyssal energy creates a powerful wave pushing away from the monolith.</p>",
-  "disable": "<p>DC 18 Arcana check, DC 18 Occultism check, or DC 18 Religion check to magically alter the runes, or DC 21 Thievery check to physically alter them. A PC that can read Abyssal or Cyclops is better able to identify key runes, gaining a +1 circumstance bonus to these check (+2 if they speak both).</p>\n<p>Each check requires two actions, and disabling the monolith requires three successful checks. A PC that critically succeeds earns two success. On a failed check, the attempting PC is exposed to the burning flames wreathing the monolith, taking <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage (DC 18 basic Reflex save).</p>",
+  "disable": "<p>Basic DC 18 Arcana , Basic DC 18 Occultism , or Basic DC 18 Religion  to magically alter the runes, or Basic DC 21 Thievery  to physically alter them. A PC that can read Abyssal or Cyclops is better able to identify key runes, gaining a +1 circumstance bonus to these check (+2 if they speak both).</p>\n<p>Each check requires two actions, and disabling the monolith requires three successful checks. A PC that critically succeeds earns two success. On a failed check, the attempting PC is exposed to the burning flames wreathing the monolith, taking 2d6 Fire Damage damage (Basic DC 18 Reflex Saving Throw save).</p>",
   "reset": "",
-  "routine": "<p>(1 action) On the hazard's turn it sends a wave of water along the fork of the river (North, South, or East) that contains the nearest PC. Any creature along that fork in or on the surface of the water must attempt a DC 18 Fortitude save.</p>\n<p>The monolith's guardians are accustomed to these surges and are immune to this effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes advantage of the undertow after the surge to reposition themselves. The creature can Step, ignoring difficult terrain caused by the water.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet away from the monolith.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 15 feet away from the monolith and knocked Prone.</p>",
+  "routine": "<p>(1 action) On the hazard's turn it sends a wave of water along the fork of the river (North, South, or East) that contains the nearest PC. Any creature along that fork in or on the surface of the water must attempt a DC 18 Fortitude Saving Throw save.</p>\n<p>The monolith's guardians are accustomed to these surges and are immune to this effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes advantage of the undertow after the surge to reposition themselves. The creature can Step, ignoring difficult terrain caused by the water.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet away from the monolith.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 15 feet away from the monolith and knocked Prone.</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Flare",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature other than the monolith's guardians approaches within 40 feet of the monolith</p>\n<hr />\n<p><strong>Effect</strong> the flames wreathing the monolith flare with incandescent light. The triggering creature must attempt a DC 18 Fortitude Saving Throw save.</p>\n<p>On a failure, the creature is Dazzled for one round.</p>\n<p>On a critical failure, the creature is Blinded for one round, then Dazzled for one round.</p>\n<p>The hazard rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 15,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 8
   },
   "fortitude": {
     "value": 12,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 5,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 34,
     "max": 34,
-    "note": "<b>Hardness</b> 8 <b>BT</b> 17. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -61,93 +76,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Flare",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature other than the monolith's guardians approaches within 40 feet of the monolith</p>\n<hr />\n<p><strong>Effect</strong> the flames wreathing the monolith flare with incandescent light. The triggering creature must attempt a DC 18 Fortitude save.</p>\n<p>On a failure, the creature is Dazzled for one round.</p>\n<p>On a critical failure, the creature is Blinded for one round, then Dazzled for one round.</p>\n<p>The hazard rolls initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 5,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Flooding Monolith (3-4)",
-    "type": "hazard",
-    "level": 2,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Environmental",
-      "Water"
-    ],
-    "source": "Pathfinder Society Scenario #2-14: Lost in Flames",
-    "stealth": {
-      "value": 5,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>A surge of abyssal energy creates a powerful wave pushing away from the monolith.</p>",
-    "disable": "<p>DC 18 Arcana check, DC 18 Occultism check, or DC 18 Religion check to magically alter the runes, or DC 21 Thievery check to physically alter them. A PC that can read Abyssal or Cyclops is better able to identify key runes, gaining a +1 circumstance bonus to these check (+2 if they speak both).</p>\n<p>Each check requires two actions, and disabling the monolith requires three successful checks. A PC that critically succeeds earns two success. On a failed check, the attempting PC is exposed to the burning flames wreathing the monolith, taking <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage (DC 18 basic Reflex save).</p>",
-    "reset": "",
-    "routine": "<p>(1 action) On the hazard's turn it sends a wave of water along the fork of the river (North, South, or East) that contains the nearest PC. Any creature along that fork in or on the surface of the water must attempt a DC 18 Fortitude save.</p>\n<p>The monolith's guardians are accustomed to these surges and are immune to this effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes advantage of the undertow after the surge to reposition themselves. The creature can Step, ignoring difficult terrain caused by the water.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is pushed 10 feet away from the monolith.</p>\n<p><strong>Critical Failure</strong> The creature is pushed 15 feet away from the monolith and knocked Prone.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 15,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 5,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 34,
-      "max": 34,
-      "note": "<b>Hardness</b> 8 <b>BT</b> 17. ",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "critical-hits"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Flare",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature other than the monolith's guardians approaches within 40 feet of the monolith</p>\n<hr />\n<p><strong>Effect</strong> the flames wreathing the monolith flare with incandescent light. The triggering creature must attempt a DC 18 Fortitude save.</p>\n<p>On a failure, the creature is Dazzled for one round.</p>\n<p>On a critical failure, the creature is Blinded for one round, then Dazzled for one round.</p>\n<p>The hazard rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 16"
-  },
-  "recallKnowledge": ", DC: 16"
+  "recallKnowledge": ", DC 16"
 }

@@ -16,13 +16,13 @@
     "Humanoid"
   ],
   "source": "Pathfinder Kingmaker",
+  "senses": [],
   "perception": {
     "value": 17,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common",
     "Skald"
@@ -109,7 +109,7 @@
       "quantity": 1,
       "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -117,7 +117,7 @@
       "quantity": 1,
       "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "magical",
         "versatile-p"
@@ -128,7 +128,7 @@
       "quantity": 1,
       "description": "<p>This small axe can be used in close combat or thrown.</p>",
       "level": 0,
-      "price": "4 sp ",
+      "price": "4 sp",
       "traits": [
         "agile",
         "sweep",
@@ -138,9 +138,9 @@
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
+      "price": "8 gp",
       "traits": []
     },
     {
@@ -150,28 +150,6 @@
       "level": 0,
       "price": "",
       "traits": []
-    },
-    {
-      "name": "Bolts",
-      "quantity": 10,
-      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
-    },
-    {
-      "name": "Healing Potion (Moderate)",
-      "quantity": 3,
-      "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain <span class=\"roll\" onclick=\"roll(this)\">3d8+10</span> healing Hit Points.</p>",
-      "level": 6,
-      "price": "50 gp ",
-      "traits": [
-        "consumable",
-        "healing",
-        "magical",
-        "potion",
-        "vitality"
-      ]
     }
   ],
   "generalAbilities": [],
@@ -214,11 +192,11 @@
       "name": "Attack of Opportunity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -295,7 +273,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -312,7 +290,7 @@
       "name": "Dramatic Disarm",
       "actions": null,
       "traits": [],
-      "description": "<p>If Baron Drelev scores a critical success on an Athletics check to Disarm an opponent, he can choose to have the disarmed item fly <span class=\"roll\" onclick=\"roll(this)\">1d4</span> × 5 feet in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a DC 20 Reflex save to catch the item (otherwise it falls to the ground in that space).</p>",
+      "description": "<p>If Baron Drelev scores a critical success on an Athletics check to Disarm an opponent, he can choose to have the disarmed item fly 1d4 × 5 feet in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a DC 20 Reflex Saving Throw save to catch the item (otherwise it falls to the ground in that space).</p>",
       "collapsed": false
     },
     {
@@ -333,355 +311,10 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>Baron Drelev deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>Baron Drelev deals 2d6 extra precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Hannis Drelev spent his youth in Brevoy frustrated at the lack of opportunity for advancement. When he heard Lady Jamandi was looking for volunteers to aid her in exploring and taming the Stolen Lands, he saw an opportunity to bolster his fame. In the months since, Hannis has come to regret his decision, and now that he has been forced to surrender to Irovetti and Armag, his attitude has shifted from frustration to outright cruelty.</p>\n<p>Drelev comes across as a sullen, greedy, conceited man, never satisfied with his lot in life, but always disdainful of anyone who has less than him. Though skilled at politics, the baron fancies himself a skilled swordsman as well. He loves dueling and often spars against his own guardsmen and senior officers. He likes to show off, taunting and belittling those he overpowers, but reacts angrily to situations where others get the best of him.</p>\n<p>A patient opponent who prides himself on his ability to skillfully outmaneuver his foes, Baron Drelev begins nearly every turn with Defensive Slice. He favors disarming foes, and attempts to do so once per round when facing an armed foe, mocking them wickedly if he's successful and cursing them violently if not.</p>",
-  "recallKnowledge": "Society, DC: 30",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 17,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Hannis Drelev",
-    "type": "Creature",
-    "level": 12,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Evil",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "perception": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common",
-      "Skald"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "Brevoy Lore",
-        "modifier": 19,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": -1
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [
-      {
-        "name": "Crossbow",
-        "quantity": 1,
-        "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Longsword",
-        "quantity": 1,
-        "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "magical",
-          "versatile-p"
-        ]
-      },
-      {
-        "name": "Hatchet",
-        "quantity": 1,
-        "description": "<p>This small axe can be used in close combat or thrown.</p>",
-        "level": 0,
-        "price": "4 sp ",
-        "traits": [
-          "agile",
-          "sweep",
-          "thrown-10"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      },
-      {
-        "name": "Key Ring",
-        "quantity": 1,
-        "description": "<p>Contains keys to all locks in Drelev Keep</p>",
-        "level": 0,
-        "price": "",
-        "traits": []
-      },
-      {
-        "name": "Bolts",
-        "quantity": 10,
-        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      },
-      {
-        "name": "Healing Potion (Moderate)",
-        "quantity": 3,
-        "description": "<p>A healing potion is a vial of a ruby-red liquid that imparts a tingling sensation as the drinker's wounds heal rapidly. When you drink a healing potion, you regain <span class=\"roll\" onclick=\"roll(this)\">3d8+10</span> healing Hit Points.</p>",
-        "level": 6,
-        "price": "50 gp ",
-        "traits": [
-          "consumable",
-          "healing",
-          "magical",
-          "potion",
-          "vitality"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 33,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 23,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 220,
-      "max": 220,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Longsword",
-        "bonus": 26,
-        "traits": [
-          "disarm",
-          "magical",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+11",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+11)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Hatchet",
-        "bonus": 25,
-        "traits": [
-          "agile",
-          "sweep"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+11",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+11)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Crossbow",
-        "bonus": 23,
-        "traits": [
-          "range-increment-120",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Defensive Slice",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirement</strong> Baron Drelev hasn't attempted a Strike during this turn.</p>\n<hr />\n<p><strong>Effect</strong> Baron Drelev assumes a defensive position with his weapons out, then attempts a melee Strike. He takes a -2 status penalty on all Strikes (including this one) and gains a +2 status bonus to his AC until the start of his next turn.</p>\n<p>Effect: Defensive Slice</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Dramatic Disarm",
-        "actions": null,
-        "traits": [],
-        "description": "<p>If Baron Drelev scores a critical success on an Athletics check to Disarm an opponent, he can choose to have the disarmed item fly <span class=\"roll\" onclick=\"roll(this)\">1d4</span> × 5 feet in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a DC 20 Reflex save to catch the item (otherwise it falls to the ground in that space).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Harrying Swordfighter",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Baron Drelev adds the disarm weapon trait to any sword he wields.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Skirmish Strike",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Effect</strong> Baron Drelev Steps and then Strikes or Strikes and then Steps.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Baron Drelev deals <span class=\"roll\" onclick=\"roll(this)\">2d6</span> extra precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Hannis Drelev spent his youth in Brevoy frustrated at the lack of opportunity for advancement. When he heard Lady Jamandi was looking for volunteers to aid her in exploring and taming the Stolen Lands, he saw an opportunity to bolster his fame. In the months since, Hannis has come to regret his decision, and now that he has been forced to surrender to Irovetti and Armag, his attitude has shifted from frustration to outright cruelty.</p>\n<p>Drelev comes across as a sullen, greedy, conceited man, never satisfied with his lot in life, but always disdainful of anyone who has less than him. Though skilled at politics, the baron fancies himself a skilled swordsman as well. He loves dueling and often spars against his own guardsmen and senior officers. He likes to show off, taunting and belittling those he overpowers, but reacts angrily to situations where others get the best of him.</p>\n<p>A patient opponent who prides himself on his ability to skillfully outmaneuver his foes, Baron Drelev begins nearly every turn with Defensive Slice. He favors disarming foes, and attempts to do so once per round when facing an armed foe, mocking them wickedly if he's successful and cursing them violently if not.</p>",
-    "recallKnowledge": "Society, DC: 30",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 30"
 }

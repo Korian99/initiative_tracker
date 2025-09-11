@@ -4,44 +4,56 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Deep Mud",
-  "type": "hazard",
+  "type": "Hazard",
   "level": -1,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental"
   ],
   "source": "Pathfinder Bounty #14: The Blackwood Truce",
   "stealth": {
     "value": 2,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>The mud greedily latches onto anything that lands in it, hampering movement.</p>",
-  "disable": "<p>DC 15 Survival check to navigate a safe path along the remaining bits of stone</p>",
+  "disable": "<p>DC 15 Survival  to navigate a safe path along the remaining bits of stone</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Squelch",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature steps in the mud</p>\n<hr />\n<p><strong>Effect</strong> Deep mud sucks at the creature's feet. The triggering creature must attempt a Basic DC 16 Reflex Saving Throw save as they pull against the mud and struggle to stay upright. On a failure, the mud deals [[/r 2d4[bludgeoning] #Squelch]]{2d4 bludgeoning damage} and the creature falls Prone.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -57,89 +69,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Squelch",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature steps in the mud</p>\n<hr />\n<p><strong>Effect</strong> Deep mud sucks at the creature's feet. The triggering creature must attempt a DC 16 basic Reflex save as they pull against the mud and struggle to stay upright. On a failure, the mud deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> bludgeoning damage and the creature falls Prone.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 2,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Deep Mud",
-    "type": "hazard",
-    "level": -1,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental"
-    ],
-    "source": "Pathfinder Bounty #14: The Blackwood Truce",
-    "stealth": {
-      "value": 2,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>The mud greedily latches onto anything that lands in it, hampering movement.</p>",
-    "disable": "<p>DC 15 Survival check to navigate a safe path along the remaining bits of stone</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 10,
-      "max": 10,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Squelch",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature steps in the mud</p>\n<hr />\n<p><strong>Effect</strong> Deep mud sucks at the creature's feet. The triggering creature must attempt a DC 16 basic Reflex save as they pull against the mud and struggle to stay upright. On a failure, the mud deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> bludgeoning damage and the creature falls Prone.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 13"
-  },
-  "recallKnowledge": ", DC: 13"
+  "recallKnowledge": ", DC 13"
 }

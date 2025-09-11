@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Glyph of Warding (B8)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 13,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,32 +17,46 @@
   "source": "Pathfinder #184: The Ghouls Hunger",
   "stealth": {
     "value": 23,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>A magical glyph flashes before triggering a spell.</p>",
-  "disable": "<p>DC 33 Thievery check (trained) to disable the glyph, or Dispel Magic (7th rank, counteract DC 33) to counteract the glyph</p>",
+  "disable": "<p>DC 33 Thievery  (trained) to disable the glyph, or Dispel Magic (7th rank, counteract DC 33) to counteract the glyph</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Discharge Glyph",
+      "actions": -1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature opens the door between area <strong>B8</strong> and <strong>B7</strong></p>\n<hr />\n<p><strong>Effect</strong> A Noise Blast, heightened to 6th level (DC 33 Fortitude Saving Throw, 6d10 Sonic Damage damage), is centered on the creature opening the door. The sound alerts all creatures in the tower.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,94 +72,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Discharge Glyph",
-      "actions": -1,
-      "traits": [
-        "divine"
-      ],
-      "description": "<p><strong>Trigger</strong> A creature opens the door between area <strong>B8</strong> and <strong>B7</strong></p>\n<hr />\n<p><strong>Effect</strong> A Noise Blast, heightened to 6th level (DC 33 Fortitude save, <span class=\"roll\" onclick=\"roll(this)\">6d10</span> sonic damage), is centered on the creature opening the door. The sound alerts all creatures in the tower.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 23,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Glyph of Warding (B8)",
-    "type": "hazard",
-    "level": 13,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder #184: The Ghouls Hunger",
-    "stealth": {
-      "value": 23,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>A magical glyph flashes before triggering a spell.</p>",
-    "disable": "<p>DC 33 Thievery check (trained) to disable the glyph, or Dispel Magic (7th rank, counteract DC 33) to counteract the glyph</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Discharge Glyph",
-        "actions": -1,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature opens the door between area <strong>B8</strong> and <strong>B7</strong></p>\n<hr />\n<p><strong>Effect</strong> A Noise Blast, heightened to 6th level (DC 33 Fortitude save, <span class=\"roll\" onclick=\"roll(this)\">6d10</span> sonic damage), is centered on the creature opening the door. The sound alerts all creatures in the tower.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 31"
-  },
-  "recallKnowledge": ", DC: 31"
+  "recallKnowledge": ", DC 31"
 }

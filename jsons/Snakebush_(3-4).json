@@ -4,44 +4,66 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Snakebush (3-4)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 2,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental"
   ],
   "source": "Pathfinder Society Scenario #4-13: Within the Prairies",
   "stealth": {
     "value": 8,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>The branches of this peculiar bush are heavy with ripening berries.</p>",
-  "disable": "<p>DC 18 Survivial check (trained) to avoid gathering unripe berries</p>",
+  "disable": "<p>DC 18 Survivial  (trained) to avoid gathering unripe berries</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Snakebite",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature gathers unripe berries from the bush</p>\n<hr />\n<p><strong>Effect</strong> A nearby branch warps into a vier's head and Strikes at the creature.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Viper Venom",
+      "actions": null,
+      "traits": [
+        "injury",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 18 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> (1d10+2) Poison Damage damage (1 round)</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 18,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 11,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 9,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -77,137 +99,16 @@
           "type": "piercing"
         }
       ],
+      "effects": [
+        "viper-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
   ],
-  "offensiveAbilities": [
-    {
-      "name": "Snakebite",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature gathers unripe berries from the bush</p>\n<hr />\n<p><strong>Effect</strong> A nearby branch warps into a vier's head and Strikes at the creature.</p>",
-      "collapsed": false
-    },
-    {
-      "name": "Viper Venom",
-      "actions": null,
-      "traits": [
-        "injury",
-        "poison"
-      ],
-      "description": "<p><strong>Saving Throw</strong> DC 18 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10+2</span> poison damage (1 round)</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Snakebush (3-4)",
-    "type": "hazard",
-    "level": 2,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental"
-    ],
-    "source": "Pathfinder Society Scenario #4-13: Within the Prairies",
-    "stealth": {
-      "value": 8,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>The branches of this peculiar bush are heavy with ripening berries.</p>",
-    "disable": "<p>DC 18 Survivial check (trained) to avoid gathering unripe berries</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 11,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 32,
-      "max": 32,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Snakebranch",
-        "bonus": 14,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "3",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3)*2",
-            "type": "piercing"
-          }
-        ],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Snakebite",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature gathers unripe berries from the bush</p>\n<hr />\n<p><strong>Effect</strong> A nearby branch warps into a vier's head and Strikes at the creature.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Viper Venom",
-        "actions": null,
-        "traits": [
-          "injury",
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 18 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10+2</span> poison damage (1 round)</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 16"
-  },
-  "recallKnowledge": ", DC: 16"
+  "recallKnowledge": ", DC 16"
 }

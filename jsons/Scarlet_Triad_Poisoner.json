@@ -17,13 +17,13 @@
     "Humanoid"
   ],
   "source": "Pathfinder #147: Tomorrow Must Burn",
+  "senses": [],
   "perception": {
     "value": 16,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common",
     "Kholo"
@@ -96,7 +96,7 @@
       "quantity": 1,
       "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -104,7 +104,7 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -116,7 +116,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
@@ -124,15 +124,15 @@
       "quantity": 1,
       "description": "<p>You need an alchemist's lab to Craft alchemical items during downtime.</p>\n<p>An expanded alchemist's lab gives a +1 item bonus to Crafting checks to create alchemical items.</p>",
       "level": 3,
-      "price": "55 gp ",
+      "price": "55 gp",
       "traits": []
     },
     {
       "name": "Manacles (Good) (Marked with the Symbol of the Scarlet Triad)",
       "quantity": 1,
-      "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a DC 5 Flat check any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful DC 32 Thievery checks.</p>",
+      "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a @Check[flat|dc:5] any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful @Check[thievery|dc:32|traits:action:pick-a-lock] checks.</p>",
       "level": 9,
-      "price": "250 gp ",
+      "price": "250 gp",
       "traits": []
     },
     {
@@ -142,54 +142,6 @@
       "level": 0,
       "price": "",
       "traits": []
-    },
-    {
-      "name": "Addlebrain",
-      "quantity": 2,
-      "description": "<p>Certain Scarlet Triad poisoners use toxins like addlebrain to keep captured prisoners docile and compliant for short periods of time until they can be properly shackled and imprisoned. Addlebrain is distilled from a hallucinogenic lichen that can often be found growing in the sewers below particularly large cities like Katapesh.</p>\n<p>Once soaked in special reagents and then dried, a dose of addlebrain must be either lit with flame or tossed into a fire to activate, whereupon it unleashes a cloud of toxin as normal for an inhaled poison.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Inhaled)</p>\n<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 1 day</p>\n<p><strong>Stage 1</strong> Enfeebled 1 and Stupefied 1 (10 minutes)</p>\n<p><strong>Stage 2</strong> Enfeebled 2 and stupefied 2 (1 hour)</p>\n<p><strong>Stage 3</strong> Fatigued, enfeebled 4, and stupefied 4 (1 day)</p>",
-      "level": 7,
-      "price": "58 gp ",
-      "traits": [
-        "rare",
-        "alchemical",
-        "consumable",
-        "inhaled",
-        "poison"
-      ]
-    },
-    {
-      "name": "Antidote (Greater)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +4 item bonus to Fortitude saving throws against poisons for 6 hours.</p>\n",
-      "level": 10,
-      "price": "160 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir",
-        "healing"
-      ]
-    },
-    {
-      "name": "Bolts",
-      "quantity": 10,
-      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
-    },
-    {
-      "name": "Giant Scorpion Venom (Applied to Bolts)",
-      "quantity": 10,
-      "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 22 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 2 (1 round)</p>",
-      "level": 6,
-      "price": "40 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "injury",
-        "poison"
-      ]
     }
   ],
   "generalAbilities": [],
@@ -233,7 +185,7 @@
   ],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -283,10 +235,10 @@
         }
       ],
       "effects": [
-        "Giant-scorpion-venom"
+        "giant-scorpion-venom"
       ],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -296,318 +248,10 @@
       "name": "Running Poison Strike",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The poisoner Strides, poisoning their weapon as they move. The poisoner moves up to their Speed and makes a melee Strike that deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> poison damage. This has no effect on a Strike that already deals poison damage.</p>",
+      "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The poisoner Strides, poisoning their weapon as they move. The poisoner moves up to their Speed and makes a melee Strike that deals 2d8 Poison Damage damage. This has no effect on a Strike that already deals poison damage.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Society, DC: 26",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 16,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Scarlet Triad Poisoner",
-    "type": "Creature",
-    "level": 8,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder #147: Tomorrow Must Burn",
-    "perception": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common",
-      "Kholo"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "medicine",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 4
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Crossbow",
-        "quantity": 1,
-        "description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Alchemist's Lab (Expanded)",
-        "quantity": 1,
-        "description": "<p>You need an alchemist's lab to Craft alchemical items during downtime.</p>\n<p>An expanded alchemist's lab gives a +1 item bonus to Crafting checks to create alchemical items.</p>",
-        "level": 3,
-        "price": "55 gp ",
-        "traits": []
-      },
-      {
-        "name": "Manacles (Good) (Marked with the Symbol of the Scarlet Triad)",
-        "quantity": 1,
-        "description": "<p>You can manacle someone who is willing or otherwise at your mercy as an exploration activity taking 10-30 seconds depending on the creature's size and how many manacles you apply. A two-legged creature with its legs bound takes a -15-foot circumstance penalty to its Speeds, and a two-handed creature with its wrists bound has to succeed at a DC 5 Flat check any time it uses a manipulate action or else that action fails. This DC may be higher depending on how tightly the manacles constrain the hands. A creature bound to a stationary object is immobilized. For creatures with more or fewer limbs, the GM determines what effect manacles have, if any. Freeing a creature from good manacles requires five successful DC 32 Thievery checks.</p>",
-        "level": 9,
-        "price": "250 gp ",
-        "traits": []
-      },
-      {
-        "name": "Key to Manacles",
-        "quantity": 1,
-        "description": "",
-        "level": 0,
-        "price": "",
-        "traits": []
-      },
-      {
-        "name": "Addlebrain",
-        "quantity": 2,
-        "description": "<p>Certain Scarlet Triad poisoners use toxins like addlebrain to keep captured prisoners docile and compliant for short periods of time until they can be properly shackled and imprisoned. Addlebrain is distilled from a hallucinogenic lichen that can often be found growing in the sewers below particularly large cities like Katapesh.</p>\n<p>Once soaked in special reagents and then dried, a dose of addlebrain must be either lit with flame or tossed into a fire to activate, whereupon it unleashes a cloud of toxin as normal for an inhaled poison.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact (Inhaled)</p>\n<p><strong>Saving Throw</strong> DC 25 Fortitude save</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 1 day</p>\n<p><strong>Stage 1</strong> Enfeebled 1 and Stupefied 1 (10 minutes)</p>\n<p><strong>Stage 2</strong> Enfeebled 2 and stupefied 2 (1 hour)</p>\n<p><strong>Stage 3</strong> Fatigued, enfeebled 4, and stupefied 4 (1 day)</p>",
-        "level": 7,
-        "price": "58 gp ",
-        "traits": [
-          "rare",
-          "alchemical",
-          "consumable",
-          "inhaled",
-          "poison"
-        ]
-      },
-      {
-        "name": "Antidote (Greater)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>An antidote protects you against toxins. Upon drinking an antidote, you gain a +4 item bonus to Fortitude saving throws against poisons for 6 hours.</p>\n",
-        "level": 10,
-        "price": "160 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir",
-          "healing"
-        ]
-      },
-      {
-        "name": "Bolts",
-        "quantity": 10,
-        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      },
-      {
-        "name": "Giant Scorpion Venom (Applied to Bolts)",
-        "quantity": 10,
-        "description": "<p>Scorpion venom is excruciating and its effects are somewhat debilitating.</p>\n<hr />\n<p><strong>Activate</strong> <img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> DC 22 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d10</span> poison damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d10</span> poison damage and enfeebled 2 (1 round)</p>",
-        "level": 6,
-        "price": "40 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "injury",
-          "poison"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+1 status to all saves vs. poison",
-    "hp": {
-      "value": 135,
-      "max": 135,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "poison",
-        "value": 10
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 19,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+10",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+10)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Crossbow",
-        "bonus": 19,
-        "traits": [
-          "range-increment-120",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Giant-scorpion-venom"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Running Poison Strike",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The poisoner Strides, poisoning their weapon as they move. The poisoner moves up to their Speed and makes a melee Strike that deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> poison damage. This has no effect on a Strike that already deals poison damage.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Society, DC: 26",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 24"
 }

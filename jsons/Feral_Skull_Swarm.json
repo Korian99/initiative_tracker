@@ -10,7 +10,7 @@
   "level": 12,
   "traits": [
     "Uncommon",
-    "Huge",
+    "huge",
     "Evil",
     "Mindless",
     "Swarm",
@@ -18,16 +18,16 @@
     "Unholy"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
   "perception": {
     "value": 21,
-    "note": "darkvisionscent 30 ft imprecise",
+    "note": "Darkvision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 30 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -153,18 +153,25 @@
       "name": "Boneshard Burst",
       "actions": null,
       "traits": [],
-      "description": "<p>When a feral skull swarm is reduced to 0 Hit Points, it erupts in an explosion of foul energy and bone fragments in a 30 foot burst, dealing <span class=\"roll\" onclick=\"roll(this)\">3d12</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">2d12</span> void damage (DC 32 basic Reflex save).</p>",
+      "description": "<p>When a feral skull swarm is reduced to 0 Hit Points, it erupts in an explosion of foul energy and bone fragments in a 30ft Burst, dealing 3d12 Piercing Damage|options:area-damage]{3d12 piercing damage and 2d12 void damage} (Basic DC 32 Reflex Saving Throw save).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
       "collapsed": false
     }
   ],
-  "speed": "40 ft,\n",
+  "speed": "40 ft, ",
   "strikes": [],
   "offensiveAbilities": [
     {
       "name": "Feral Gnaw",
       "actions": 1,
       "traits": [],
-      "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage, and <span class=\"roll\" onclick=\"roll(this)\">2d6</span> slashing damage (DC 32 basic Reflex save).</p>\n<p>A creature that fails its saving throw also takes <span class=\"roll\" onclick=\"roll(this)\">1d10</span> bleed.</p>",
+      "description": "<p>Each enemy in the swarm's space takes 2d6 Bludgeoning Damage,2d6[slashing]]{2d6 bludgeoning damage, 2d6 piercing damage, and 2d6 slashing damage} (Basic DC 32 Reflex Saving Throw save).</p>\n<p>A creature that fails its saving throw also takes 1d10 Bleed Damage.</p>",
       "collapsed": false
     },
     {
@@ -176,198 +183,10 @@
         "fear",
         "mental"
       ],
-      "description": "<p>The feral skull swarm emits a terrifying howl. Each creature within 60 feet must succeed at a DC 32 Will save or become Frightened 2 (Frightened 3 and Fleeing for 1 round on a critical failure).</p>\n<p>Whether it succeeds or fails its save, a creature is temporarily immune to Frightening Howl for 24 hours.</p>",
+      "description": "<p>The feral skull swarm emits a terrifying howl. Each creature within 60 feet must succeed at a DC 32 Will Saving Throw save or become Frightened 2 (Frightened 3 and Fleeing for 1 round on a critical failure).</p>\n<p>Whether it succeeds or fails its save, a creature is temporarily immune to Frightening Howl for 24 hours.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Some skull swarms are crafted from the heads of feral and dangerous beasts. These can include predatory cats, bears, dinosaurs, and the like, but just as often they're made from bulls, horses, apes, and other creatures that were gentler in life. In death, a feral skull swarm is bloodthirsty regardless of its origins, with a keen scent for living flesh. Even herbivore skulls diligently chew on the flesh of their swarm's victims.</p>\n<hr />\n<p>A skull swarm is composed of reanimated masses of craniums and jawbones, forming a terrifying avalanche of undead fury. Most skull swarms are mindless, though some retain a vestige of wit, awareness, and even magical talents from life, culminating in a highly intelligent swarm mind.</p>",
-  "recallKnowledge": "Religion, DC: 32",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 21,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Feral Skull Swarm",
-    "type": "Creature",
-    "level": 12,
-    "traits": [
-      "Uncommon",
-      "Huge",
-      "Evil",
-      "Mindless",
-      "Swarm",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 21,
-      "note": "darkvisionscent 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 30 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 21,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 7
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Feral Trackers",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A feral skull swarm gains a +2 circumstance bonus to Perception checks to Seek and to Survival checks to Track, both against any creature that has taken damage from the swarm's Feral Gnaw within the previous 24 hours.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 32,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 160,
-      "max": 160,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "precision",
-      "unconscious"
-    ],
-    "resistances": [
-      {
-        "type": "bludgeoning",
-        "value": 5
-      },
-      {
-        "type": "cold",
-        "value": 10
-      },
-      {
-        "type": "electricity",
-        "value": 10
-      },
-      {
-        "type": "fire",
-        "value": 10
-      },
-      {
-        "type": "piercing",
-        "value": 10
-      },
-      {
-        "type": "slashing",
-        "value": 10
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "area-damage",
-        "value": 10
-      },
-      {
-        "type": "splash-damage",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Boneshard Burst",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When a feral skull swarm is reduced to 0 Hit Points, it erupts in an explosion of foul energy and bone fragments in a 30 foot burst, dealing <span class=\"roll\" onclick=\"roll(this)\">3d12</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">2d12</span> void damage (DC 32 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "40 ft,\n",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Feral Gnaw",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning damage, <span class=\"roll\" onclick=\"roll(this)\">2d6</span> piercing damage, and <span class=\"roll\" onclick=\"roll(this)\">2d6</span> slashing damage (DC 32 basic Reflex save).</p>\n<p>A creature that fails its saving throw also takes <span class=\"roll\" onclick=\"roll(this)\">1d10</span> bleed.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Frightening Howl",
-        "actions": 1,
-        "traits": [
-          "auditory",
-          "emotion",
-          "fear",
-          "mental"
-        ],
-        "description": "<p>The feral skull swarm emits a terrifying howl. Each creature within 60 feet must succeed at a DC 32 Will save or become Frightened 2 (Frightened 3 and Fleeing for 1 round on a critical failure).</p>\n<p>Whether it succeeds or fails its save, a creature is temporarily immune to Frightening Howl for 24 hours.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Some skull swarms are crafted from the heads of feral and dangerous beasts. These can include predatory cats, bears, dinosaurs, and the like, but just as often they're made from bulls, horses, apes, and other creatures that were gentler in life. In death, a feral skull swarm is bloodthirsty regardless of its origins, with a keen scent for living flesh. Even herbivore skulls diligently chew on the flesh of their swarm's victims.</p>\n<hr />\n<p>A skull swarm is composed of reanimated masses of craniums and jawbones, forming a terrifying avalanche of undead fury. Most skull swarms are mindless, though some retain a vestige of wit, awareness, and even magical talents from life, culminating in a highly intelligent swarm mind.</p>",
-    "recallKnowledge": "Religion, DC: 32",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 30"
 }

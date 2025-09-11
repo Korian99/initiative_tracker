@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 10,
   "traits": [
+    "Common",
     "Medium",
     "Humanoid",
     "Orc"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 20,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Orcish"
@@ -95,7 +96,7 @@
       "quantity": 1,
       "description": "<p>This strong but slender staff is tapered at the ends and well balanced. It's designed to be an offensive and defensive weapon.</p>",
       "level": 0,
-      "price": "2 sp ",
+      "price": "2 sp",
       "traits": [
         "monk",
         "parry",
@@ -108,7 +109,7 @@
       "quantity": 1,
       "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
       "level": 1,
-      "price": "20 gp ",
+      "price": "20 gp",
       "traits": [
         "deadly-d10",
         "propulsive",
@@ -118,17 +119,9 @@
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
-      "traits": []
-    },
-    {
-      "name": "Arrows",
-      "quantity": 20,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
+      "price": "8 gp",
       "traits": []
     }
   ],
@@ -186,11 +179,11 @@
       "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -267,7 +260,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d8+10)*2+1d10",
+          "roll": "(2d8+10)*2",
           "type": "piercing"
         }
       ],
@@ -290,312 +283,10 @@
       "name": "Staff Swipe",
       "actions": 2,
       "traits": [],
-      "description": "<p>The veteran master extends their reach to smash multiple creatures with their bo. They attempt a bo staff Strike against each enemy in a 15 foot cone. This counts as two attacks toward their multiple attack penalty, but the penalty doesn't increase until after all the attacks.</p>",
+      "description": "<p>The veteran master extends their reach to smash multiple creatures with their bo. They attempt a bo staff Strike against each enemy in a 15ft Type:cone. This counts as two attacks toward their multiple attack penalty, but the penalty doesn't increase until after all the attacks.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>While the sword and shield are reliable and proven in battle, the veteran master is the weapon. They have been hardened by decades of fighting, but they still manage to find peace within themselves to gain a physical advantage.</p><hr /><p>Orcs have a strict moral code encompassing valor and accomplishment, and they cast out those unwilling to follow it. For the last few generations, orcs have been trying to erase the narratives around their culture as being solely focused on war and violence. They invite other races and adventuring parties inside their holds so they may experience the truth of who the orcs are.</p>",
-  "recallKnowledge": "Society, DC: 27",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Orc Veteran Master",
-    "type": "Creature",
-    "level": 10,
-    "traits": [
-      "Medium",
-      "Humanoid",
-      "Orc"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 20,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Orcish"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "Warfare Lore",
-        "modifier": 18,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Bo Staff",
-        "quantity": 1,
-        "description": "<p>This strong but slender staff is tapered at the ends and well balanced. It's designed to be an offensive and defensive weapon.</p>",
-        "level": 0,
-        "price": "2 sp ",
-        "traits": [
-          "monk",
-          "parry",
-          "reach",
-          "trip"
-        ]
-      },
-      {
-        "name": "Composite Longbow",
-        "quantity": 1,
-        "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
-        "level": 1,
-        "price": "20 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive",
-          "volley-30"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      },
-      {
-        "name": "Arrows",
-        "quantity": 20,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 30,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 175,
-      "max": 175,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Fly Through Battle",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The veteran master gains an additional reaction each round that can be used only to make a Reactive Pursuit.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Reactive Pursuit",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An enemy within reach attempts to move away</p><hr /><p><strong>Effect</strong> The veteran master Strides up to their Speed, following the enemy and keeping it in reach throughout its movement until it stops moving or the master has moved their full Speed.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Reactive Strike",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Bo Staff",
-        "bonus": 24,
-        "traits": [
-          "magical",
-          "parry",
-          "reach",
-          "trip"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+13",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+13)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 24,
-        "traits": [
-          "agile",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+13",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+13)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Composite Longbow",
-        "bonus": 23,
-        "traits": [
-          "deadly-d10",
-          "magical",
-          "propulsive",
-          "range-increment-100",
-          "reload-0",
-          "volley-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+10",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+10)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Reshape the Battle",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The veteran master attempts a bo staff Strike. If it hits a creature of the master's size or smaller, the master can automatically Reposition it to any space within the bo staff's reach.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Staff Swipe",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The veteran master extends their reach to smash multiple creatures with their bo. They attempt a bo staff Strike against each enemy in a 15 foot cone. This counts as two attacks toward their multiple attack penalty, but the penalty doesn't increase until after all the attacks.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>While the sword and shield are reliable and proven in battle, the veteran master is the weapon. They have been hardened by decades of fighting, but they still manage to find peace within themselves to gain a physical advantage.</p><hr /><p>Orcs have a strict moral code encompassing valor and accomplishment, and they cast out those unwilling to follow it. For the last few generations, orcs have been trying to erase the narratives around their culture as being solely focused on war and violence. They invite other races and adventuring parties inside their holds so they may experience the truth of who the orcs are.</p>",
-    "recallKnowledge": "Society, DC: 27",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 27"
 }

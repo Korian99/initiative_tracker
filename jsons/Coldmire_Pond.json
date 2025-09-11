@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 8,
   "traits": [
-    "Huge",
+    "Common",
+    "huge",
     "Aquatic",
     "Elemental",
     "Water"
   ],
   "source": "Pathfinder Rage of Elements",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 16,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Thalassic"
   ],
@@ -118,7 +119,7 @@
       "collapsed": false
     }
   ],
-  "speed": "20 ft,\nswim 50 ft,\n",
+  "speed": "20 ft, swim 50ft",
   "strikes": [
     {
       "type": "melee",
@@ -138,7 +139,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -151,14 +152,14 @@
       "name": "Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p><span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold, DC 25 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "description": "<p>1d6 Bludgeoning Damage]{1d6 bludgeoning plus 1d6 cold}, Basic DC 25 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
       "collapsed": false
     },
     {
       "name": "Drag Below",
       "actions": 2,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The coldmire pond occupies the same space as a target it has Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The coldmire pond pulls the target below the surface. The target must succeed at a DC 26 Reflex save or fall Prone and begin drowning.</p>",
+      "description": "<p><strong>Requirements</strong> The coldmire pond occupies the same space as a target it has Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The coldmire pond pulls the target below the surface. The target must succeed at a DC 26 Reflex Saving Throw save or fall Prone and begin drowning.</p>",
       "collapsed": false
     },
     {
@@ -168,190 +169,10 @@
         "primal",
         "water"
       ],
-      "description": "<p>Water surges out of the coldmire pond in a 20 foot emanation and crashes into nearby creatures, knocking them off their feet. Creatures in the area, as well as any creatures currently sharing the coldmire pond's space, take <span class=\"roll\" onclick=\"roll(this)\">4d8</span> bludgeoning damage and are knocked Prone (DC 26 basic Reflex save). Creatures standing inside the coldmire pond treat their result as one step worse.</p>",
+      "description": "<p>Water surges out of the coldmire pond in a 20ft Emanation and crashes into nearby creatures, knocking them off their feet. Creatures in the area, as well as any creatures currently sharing the coldmire pond's space, take 4d8 Bludgeoning Damage damage and are knocked Prone (Basic DC 26 Reflex Saving Throw save). Creatures standing inside the coldmire pond treat their result as one step worse.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Coldmire ponds are often mistaken for shallow pools of water, but these sentient bodies of living water actually crawl along the ground or float through other liquids. Coldmires are dangerous ambush predators, drowning creatures that stray too close to or, even more hazardously, stand or swim inside their waters.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 24",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 16,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Coldmire Pond",
-    "type": "Creature",
-    "level": 8,
-    "traits": [
-      "Huge",
-      "Aquatic",
-      "Elemental",
-      "Water"
-    ],
-    "source": "Pathfinder Rage of Elements",
-    "perception": {
-      "value": 16,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Thalassic"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 27,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 135,
-      "max": 135,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed",
-      "paralyzed",
-      "poison",
-      "sleep"
-    ],
-    "resistances": [
-      {
-        "doubleVs": [],
-        "exceptions": [],
-        "type": "fire",
-        "value": 10
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Shallow Waters",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The coldmire pond can occupy the same space as other creatures. Creatures who move through the coldmire pond treat it as difficult terrain. Two creatures both occupying the coldmire pond's space are flanking it, regardless of their actual positions within the coldmire pond.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "20 ft,\nswim 50 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Clammy Pseudopod",
-        "bonus": 20,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "2d8+9",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+9)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> cold, DC 25 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Drag Below",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The coldmire pond occupies the same space as a target it has Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The coldmire pond pulls the target below the surface. The target must succeed at a DC 26 Reflex save or fall Prone and begin drowning.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Flash Flood",
-        "actions": 2,
-        "traits": [
-          "primal",
-          "water"
-        ],
-        "description": "<p>Water surges out of the coldmire pond in a 20 foot emanation and crashes into nearby creatures, knocking them off their feet. Creatures in the area, as well as any creatures currently sharing the coldmire pond's space, take <span class=\"roll\" onclick=\"roll(this)\">4d8</span> bludgeoning damage and are knocked Prone (DC 26 basic Reflex save). Creatures standing inside the coldmire pond treat their result as one step worse.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Coldmire ponds are often mistaken for shallow pools of water, but these sentient bodies of living water actually crawl along the ground or float through other liquids. Coldmires are dangerous ambush predators, drowning creatures that stray too close to or, even more hazardously, stand or swim inside their waters.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 24",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 24"
 }

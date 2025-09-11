@@ -4,51 +4,58 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Wraithwell",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 12,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Haunt"
   ],
   "source": "Pathfinder #209: Destroyer's Doom",
   "stealth": {
     "value": 27,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>An orb of undeath draws creatures closer to a cursed existence.</p>",
-  "disable": "<p>DC 27 Religion check to negate the forces of undeath (master), DC 30 Occultism check (expert) to channel vital energy, DC 35 Thievery check (master) to extricate the orb from the altar</p>",
+  "disable": "<p>DC 27 Religion  to negate the forces of undeath (master), DC 30 Occultism  (expert) to channel vital energy, DC 35 Thievery  (master) to extricate the orb from the altar</p>",
   "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
-  "routine": "<p>(1 action; void) The wraiths attack all living creatures in the area, dealing <span class=\"roll\" onclick=\"roll(this)\">3d10+14</span> void damage (DC 32 basic Fortitude save). Creatures who fail their saves are Drained 1 (Drained 2 on a critical failure) or increase their drained value by 1 (2 on a critical failure), up to a maximum of Drained 4.</p>",
+  "routine": "<p>(1 action; void) The wraiths attack all living creatures in the area, dealing (3d10+14) Void Damage damage (Basic DC 32 Fortitude Saving Throw save). Creatures who fail their saves are Drained 1 (Drained 2 on a critical failure) or increase their drained value by 1 (2 on a critical failure), up to a maximum of Drained 4.</p>",
   "items": [],
   "generalAbilities": [],
   "ac": {
     "value": 30,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 20
   },
   "fortitude": {
     "value": 25,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 19,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 82,
     "max": 82,
-    "note": "<b>Hardness</b> 20 <b>BT</b> 41. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -72,7 +79,7 @@
       "name": "Wraith Storm",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p><hr /><p><strong>Effect</strong> A cyclone of wraiths spirals from the orb, grasping at all living creatures in the area. Targeted creatures must succeed at a DC 32 Will save or be Doomed 1 (Doomed 2 on a critical failure).</p>",
+      "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p><hr /><p><strong>Effect</strong> A cyclone of wraiths spirals from the orb, grasping at all living creatures in the area. Targeted creatures must succeed at a DC 32 Will Saving Throw save or be Doomed 1 (Doomed 2 on a critical failure).</p>",
       "collapsed": false
     },
     {
@@ -84,96 +91,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 27,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Wraithwell",
-    "type": "hazard",
-    "level": 12,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Haunt"
-    ],
-    "source": "Pathfinder #209: Destroyer's Doom",
-    "stealth": {
-      "value": 27,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>An orb of undeath draws creatures closer to a cursed existence.</p>",
-    "disable": "<p>DC 27 Religion check to negate the forces of undeath (master), DC 30 Occultism check (expert) to channel vital energy, DC 35 Thievery check (master) to extricate the orb from the altar</p>",
-    "reset": "<p>The haunt deactivates 1 minute after all living creatures leave the area. After 1 hour, the haunt reactivates.</p>",
-    "routine": "<p>(1 action; void) The wraiths attack all living creatures in the area, dealing <span class=\"roll\" onclick=\"roll(this)\">3d10+14</span> void damage (DC 32 basic Fortitude save). Creatures who fail their saves are Drained 1 (Drained 2 on a critical failure) or increase their drained value by 1 (2 on a critical failure), up to a maximum of Drained 4.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 30,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 25,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 19,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 82,
-      "max": 82,
-      "note": "<b>Hardness</b> 20 <b>BT</b> 41. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Unholy Repair",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The locus is sustained by the power of Tar-Baphon. The orb regains 10 Hit Points at the beginning of every round and is repaired by void damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Wraith Storm",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature touches the orb or attempts to disable the haunt</p><hr /><p><strong>Effect</strong> A cyclone of wraiths spirals from the orb, grasping at all living creatures in the area. Targeted creatures must succeed at a DC 32 Will save or be Doomed 1 (Doomed 2 on a critical failure).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Undeath Manifest",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A creature who dies in the presence of the orb immediately becomes undead. Casting Bind Undead or Peaceful Rest in the presence of the orb automatically destroys the locus; other spells or abilities that combat undead might also do so, at GM discretion.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 30"
-  },
-  "recallKnowledge": ", DC: 30"
+  "recallKnowledge": ", DC 30"
 }

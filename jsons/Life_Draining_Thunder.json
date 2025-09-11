@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Life Draining Thunder",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 13,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,32 +17,47 @@
   "source": "Pathfinder Adventure: Shadows at Sundown",
   "stealth": {
     "value": 25,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>Thassilonian runes set with onyx erupt with negative energy and thunderous roars at the presence of a living creature.</p>",
-  "disable": "<p>DC 35 Thievery check (master) to destroy the key rune, DC 37 Arcana check (master) to harmlessly discharge the runes, or Dispel Magic (7th rank; counteract DC 31) to counteract the trap</p>",
+  "disable": "<p>DC 35 Thievery  (master) to destroy the key rune, DC 37 Arcana  (master) to harmlessly discharge the runes, or Dispel Magic (7th rank; counteract DC 31) to counteract the trap</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Thunderous Lifedrain",
+      "actions": -1,
+      "traits": [
+        "occult",
+        "sonic"
+      ],
+      "description": "<p><strong>Trigger</strong> A living creature approaches within 5 feet of either double door</p>\n<hr />\n<p><strong>Effect</strong> All living creatures in the room take 9d6 Void Damage damage and 9d6 Sonic Damage damage (Basic DC 33 Reflex Saving Throw).</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,96 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Thunderous Lifedrain",
-      "actions": -1,
-      "traits": [
-        "occult",
-        "sonic"
-      ],
-      "description": "<p><strong>Trigger</strong> A living creature approaches within 5 feet of either double door</p>\n<hr />\n<p><strong>Effect</strong> All living creatures in the room take <span class=\"roll\" onclick=\"roll(this)\">9d6</span> void damage and <span class=\"roll\" onclick=\"roll(this)\">9d6</span> sonic damage (DC 33 basic Reflex save).</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 25,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Life Draining Thunder",
-    "type": "hazard",
-    "level": 13,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Adventure: Shadows at Sundown",
-    "stealth": {
-      "value": 25,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>Thassilonian runes set with onyx erupt with negative energy and thunderous roars at the presence of a living creature.</p>",
-    "disable": "<p>DC 35 Thievery check (master) to destroy the key rune, DC 37 Arcana check (master) to harmlessly discharge the runes, or Dispel Magic (7th rank; counteract DC 31) to counteract the trap</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 10,
-      "max": 10,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Thunderous Lifedrain",
-        "actions": -1,
-        "traits": [
-          "occult",
-          "sonic"
-        ],
-        "description": "<p><strong>Trigger</strong> A living creature approaches within 5 feet of either double door</p>\n<hr />\n<p><strong>Effect</strong> All living creatures in the room take <span class=\"roll\" onclick=\"roll(this)\">9d6</span> void damage and <span class=\"roll\" onclick=\"roll(this)\">9d6</span> sonic damage (DC 33 basic Reflex save).</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 31"
-  },
-  "recallKnowledge": ", DC: 31"
+  "recallKnowledge": ", DC 31"
 }

@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Praise of Yog-Sothoth",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 19,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Kingmaker",
   "stealth": {
     "value": 37,
-    "note": "(legendary) to recognize the symbols as a magical trap",
-    "modifications": []
+    "note": "(legendary) to recognize the symbols as a magical trap"
   },
   "description": "<p>Magical letters reveal phrases in Aklo that, if not properly spoken aloud, inflict numbing cold.</p>",
-  "disable": "<p>DC 47 Occultism check (master) or DC 49 Religion check (master) three times in a row to successfully speak aloud the esoteric phrases as they appear (this causes the trap to deactivate for 1 hour, although the phrases continue to appear during this time), or Dispel Magic (9th rank, counteract DC 38).</p>",
+  "disable": "<p>DC 47 Occultism  (master) or DC 49 Religion  (master) three times in a row to successfully speak aloud the esoteric phrases as they appear (this causes the trap to deactivate for 1 hour, although the phrases continue to appear during this time), or Dispel Magic (9th rank, counteract DC 38).</p>",
   "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets after 1 minute.</p>",
-  "routine": "<p>(1 action) The trap fills the entirety of area <strong>B4</strong> with additional blasts of cold. All creatures in area <strong>B4</strong> take <span class=\"roll\" onclick=\"roll(this)\">12d6</span> cold damage (DC 41 basic Fortitude save, plus Immobilized for 1 minute on a critical failure).</p>",
+  "routine": "<p>(1 action) The trap fills the entirety of area <strong>B4</strong> with additional blasts of cold. All creatures in area <strong>B4</strong> take 12d6 Cold Damage damage (Basic DC 41 Fortitude Saving Throw, plus Immobilized for 1 minute on a critical failure).</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Reactive Charge",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature spends more than 1 round in the room without speaking aloud the phrases appearing in the alcove.</p>\n<hr />\n<p><strong>Effect</strong> The creature takes 12d6 Cold Damage damage (Basic DC 41 Fortitude Saving Throw, plus Immobilized for 1 minute on a critical failure). The trap then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,90 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Reactive Charge",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature spends more than 1 round in the room without speaking aloud the phrases appearing in the alcove.</p>\n<hr />\n<p><strong>Effect</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">12d6</span> cold damage (DC 41 basic Fortitude save, plus Immobilized for 1 minute on a critical failure). The trap then rolls initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 37,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Praise of Yog-Sothoth",
-    "type": "hazard",
-    "level": 19,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "stealth": {
-      "value": 37,
-      "note": "(legendary) to recognize the symbols as a magical trap",
-      "modifications": []
-    },
-    "description": "<p>Magical letters reveal phrases in Aklo that, if not properly spoken aloud, inflict numbing cold.</p>",
-    "disable": "<p>DC 47 Occultism check (master) or DC 49 Religion check (master) three times in a row to successfully speak aloud the esoteric phrases as they appear (this causes the trap to deactivate for 1 hour, although the phrases continue to appear during this time), or Dispel Magic (9th rank, counteract DC 38).</p>",
-    "reset": "<p>The trap deactivates 1 round after it has no target creatures and resets after 1 minute.</p>",
-    "routine": "<p>(1 action) The trap fills the entirety of area <strong>B4</strong> with additional blasts of cold. All creatures in area <strong>B4</strong> take <span class=\"roll\" onclick=\"roll(this)\">12d6</span> cold damage (DC 41 basic Fortitude save, plus Immobilized for 1 minute on a critical failure).</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Reactive Charge",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature spends more than 1 round in the room without speaking aloud the phrases appearing in the alcove.</p>\n<hr />\n<p><strong>Effect</strong> The creature takes <span class=\"roll\" onclick=\"roll(this)\">12d6</span> cold damage (DC 41 basic Fortitude save, plus Immobilized for 1 minute on a critical failure). The trap then rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 39"
-  },
-  "recallKnowledge": ", DC: 39"
+  "recallKnowledge": ", DC 39"
 }

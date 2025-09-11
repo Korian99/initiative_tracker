@@ -17,15 +17,16 @@
     "Swarm"
   ],
   "source": "Pathfinder Kingmaker",
+  "senses": [
+    "Low light vision",
+    "blood scent"
+  ],
   "perception": {
     "value": 30,
-    "note": "low light-vision",
+    "note": "Low light vision, blood scent",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Chthonian",
     "Common"
@@ -49,7 +50,7 @@
       "name": "stealth",
       "modifier": 34,
       "note": [
-        "in vegetation <span class=\"roll\" onclick=\"roll(this)\">38</span>"
+        "in vegetation 38"
       ],
       "usedAttribute": "dexterity",
       "modifications": []
@@ -78,9 +79,7 @@
     {
       "name": "Blood Scent",
       "actions": null,
-      "traits": [
-        "fey"
-      ],
+      "traits": [],
       "description": "<p>A mandragora can smell creatures with blood as an imprecise sense at a range of 30 feet, and it can smell demons, fey, and sorcerers with blood as a precise sense at a range of 30 feet.</p>",
       "collapsed": false
     }
@@ -154,6 +153,13 @@
   ],
   "defensiveAbilities": [
     {
+      "name": "Fast Healing 15",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A monster with this ability regains the given number of Hit Points each round at the beginning of its turn.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
       "name": "Vulnerability to Supernatural Darkness",
       "actions": null,
       "traits": [],
@@ -161,14 +167,14 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\nburrow 10 ft,\nclimb 30 ft,\n",
+  "speed": "30 ft, burrow 10ft, climb 30ft",
   "strikes": [],
   "offensiveAbilities": [
     {
       "name": "Blood Drain",
-      "actions": null,
+      "actions": 0,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> An enemy takes damage from the mandragora swarm's Swarming Bites action</p>\n<hr />\n<p><strong>Effect</strong> The mandragora swarm drains blood from the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">9d6</span> damage. If the creature is a demon, fey, or sorcerer, the mandragora gains temporary Hit Points equal to the damage dealt. A creature that has its blood drained by a mandragora is Drained 2 until it receives healing of any kind or amount.</p>",
+      "description": "<p><strong>Trigger</strong> An enemy takes damage from the mandragora swarm's Swarming Bites action</p>\n<hr />\n<p><strong>Effect</strong> The mandragora swarm drains blood from the creature, dealing 9d6 damage. If the creature is a demon, fey, or sorcerer, the mandragora gains temporary Hit Points equal to the damage dealt. A creature that has its blood drained by a mandragora is Drained 2 until it receives healing of any kind or amount.</p>",
       "collapsed": false
     },
     {
@@ -177,7 +183,7 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 40 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage, Confused, and stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage, confused, and stupefied 1 (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 40 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 4d6 Poison Damage damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> 4d6 Poison Damage damage, Confused, and stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> 6d6 Poison Damage damage, confused, and stupefied 1 (1 round)</p>",
       "collapsed": false
     },
     {
@@ -188,224 +194,17 @@
         "mental",
         "primal"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a DC 40 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and Slowed 1. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a DC 40 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and Slowed 1. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>",
       "collapsed": false
     },
     {
       "name": "Swarming Bites",
       "actions": 1,
       "traits": [],
-      "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">7d8</span> piercing damage (DC 40 basic Reflex save) and is exposed to mandragora swarm venom. A successful save negates the poison exposure.</p>",
+      "description": "<p>Each enemy in the swarm's space takes 7d8 Piercing Damage damage (Basic DC 40 Reflex Saving Throw) and is exposed to mandragora swarm venom. A successful save negates the poison exposure.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
-  "recallKnowledge": "Nature, DC: 43",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 30,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Mandragora Swarm",
-    "type": "Creature",
-    "level": 18,
-    "traits": [
-      "Rare",
-      "Large",
-      "Chaotic",
-      "Evil",
-      "Plant",
-      "Swarm"
-    ],
-    "source": "Pathfinder Kingmaker",
-    "perception": {
-      "value": 30,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Chthonian",
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 32,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 29,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 34,
-        "note": [
-          "in vegetation <span class=\"roll\" onclick=\"roll(this)\">38</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 8
-    },
-    "constitution": {
-      "value": 6
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 6
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Blood Scent",
-        "actions": null,
-        "traits": [
-          "fey"
-        ],
-        "description": "<p>A mandragora can smell creatures with blood as an imprecise sense at a range of 30 feet, and it can smell demons, fey, and sorcerers with blood as a precise sense at a range of 30 feet.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 42,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 30,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 34,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 230,
-      "max": 230,
-      "note": "fast healing 15",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "swarm-mind"
-    ],
-    "resistances": [
-      {
-        "type": "bludgeoning",
-        "value": 15
-      },
-      {
-        "type": "electricity",
-        "value": 15
-      },
-      {
-        "type": "piercing",
-        "value": 15
-      },
-      {
-        "type": "slashing",
-        "value": 7
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "area-damage",
-        "value": 15
-      },
-      {
-        "type": "fire",
-        "value": 15
-      },
-      {
-        "type": "splash-damage",
-        "value": 15
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Vulnerability to Supernatural Darkness",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Whenever a mandragora begins its turn in an area of magical darkness, it is Slowed 1 on that turn.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nburrow 10 ft,\nclimb 30 ft,\n",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Blood Drain",
-        "actions": null,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An enemy takes damage from the mandragora swarm's Swarming Bites action</p>\n<hr />\n<p><strong>Effect</strong> The mandragora swarm drains blood from the creature, dealing <span class=\"roll\" onclick=\"roll(this)\">9d6</span> damage. If the creature is a demon, fey, or sorcerer, the mandragora gains temporary Hit Points equal to the damage dealt. A creature that has its blood drained by a mandragora is Drained 2 until it receives healing of any kind or amount.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Mandragora Swarm Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 40 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">4d6</span> poison damage, Confused, and stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">6d6</span> poison damage, confused, and stupefied 1 (1 round)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Piercing Shriek",
-        "actions": 1,
-        "traits": [
-          "auditory",
-          "mental",
-          "primal"
-        ],
-        "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a DC 40 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and Slowed 1. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Swarming Bites",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>Each enemy in the swarm's space takes <span class=\"roll\" onclick=\"roll(this)\">7d8</span> piercing damage (DC 40 basic Reflex save) and is exposed to mandragora swarm venom. A successful save negates the poison exposure.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
-    "recallKnowledge": "Nature, DC: 43",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 38"
 }

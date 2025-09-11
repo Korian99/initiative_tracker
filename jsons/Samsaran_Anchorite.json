@@ -12,19 +12,18 @@
     "Uncommon",
     "Medium",
     "Humanoid",
-    "Samsaran",
-    "(caster)"
+    "Samsaran"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 9,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Common",
     "Empyrean",
@@ -84,7 +83,7 @@
       "quantity": 1,
       "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "thrown-20"
       ]
@@ -98,14 +97,6 @@
       "traits": [
         "propulsive"
       ]
-    },
-    {
-      "name": "Sling Bullets",
-      "quantity": 10,
-      "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>",
-      "level": 0,
-      "price": "1 cp",
-      "traits": []
     }
   ],
   "generalAbilities": [
@@ -173,7 +164,7 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -220,7 +211,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -242,6 +233,8 @@
           "name": "Guidance",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate"
           ],
@@ -251,7 +244,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
+          "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n<p></p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -263,6 +256,8 @@
           "name": "Light",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "light",
@@ -274,7 +269,7 @@
           "area": "",
           "targets": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally",
           "save": "",
-          "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
+          "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -283,34 +278,19 @@
           "id": "E2xUMXLUIPzYhGE5"
         }
       ],
-      "rituals": [],
-      "spellLocations": [
-        {
-          "id": "Xmyxii3iWarPXiJW",
-          "rank": 1
-        },
-        {
-          "id": "pHilTAt85BF0fIgK",
-          "rank": 1
-        },
-        {
-          "id": "2rhqcAMHCcrU6nJX",
-          "rank": 1
-        }
-      ],
-      "usedAttribute": "wisdom",
-      "_id": "bxnrpUx8pN5QerLc",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Command",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "auditory",
             "concentrate",
             "linguistic",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "until the end of the target's next turn",
@@ -330,17 +310,20 @@
           "name": "Heal",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "healing",
-            "manipulate"
+            "manipulate",
+            "vitality"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -352,8 +335,11 @@
           "name": "Sanctuary",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -370,7 +356,6 @@
           "id": "2rhqcAMHCcrU6nJX"
         }
       ],
-      "lv1slots": {},
       "lv2spells": [],
       "lv3spells": [],
       "lv4spells": [],
@@ -380,6 +365,11 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
       "lv2slots": {
         "current": 0,
         "max": 0
@@ -418,430 +408,5 @@
       }
     }
   ],
-  "description": "<p>A unique connection to the cycle of life and death defines the mortal lives of samsarans. With a tendency toward reclusiveness, samsarans have delicate builds, enigmatic and pupilless eyes, and blood as clear as water. When a samsaran dies, their body vanishes and their soul instantly reincarnates into a newborn child elsewhere on the same plane: usually another samsaran, but occasionally a humanoid of a different ancestry.</p>\n<p>Though all samsarans have an innate understanding of their nature, they consciously remember little from their former lives. Some, however, are occasionally struck by disjointed memories or flashes of déjà vu linked to a previous existence that can earn them a reputation for preternatural wisdom and insight. Most samsarans prefer to lead studious lives filled with moments of deep reflection. Their sights remain set on the eternal and on enlightenment, reducing the appeal of the short-term material gains one can achieve in just one lifetime. A samsaran ceases their cycle of reincarnation only upon reaching perfect state of enlightenment-or falling so far from harmony that they proceed to a doomed afterlife.</p>\n<p>The ancestral home of the samsarans lies in Zi Ha, a remote mountain nation in Tian Xia. These treacherous mountains help ensure the solitude most samsarans prefer, and they're further protected by misguiding illusions, defensive wards, and secure fortifications.</p>",
-  "recallKnowledge": "Society, DC: 17",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Samsaran Anchorite",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Humanoid",
-      "Samsaran",
-      "(caster)"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 9,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Empyrean",
-      "Samsaran"
-    ],
-    "skills": [
-      {
-        "name": "medicine",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "occultism",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 0
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Spear",
-        "quantity": 1,
-        "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Sling",
-        "quantity": 1,
-        "description": "<p>Little more than a leather cup attached to a pair of straps, a sling can be used to fling smooth stones or sling bullets at a range.</p>",
-        "level": 0,
-        "price": "",
-        "traits": [
-          "propulsive"
-        ]
-      },
-      {
-        "name": "Sling Bullets",
-        "quantity": 10,
-        "description": "<p>These are small metal balls, typically either iron or lead, designed to be used as ammunition in slings.</p>",
-        "level": 0,
-        "price": "1 cp",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Cryptomnesia",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A samsaran anchorite subconsciously retains bits of knowledge from their innumerable former lives, granting them a +1 circumstance bonus to skill checks that aren't listed in their skills above, and allowing them to attempt all skill actions that normally require the user to be trained.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 16,
-      "max": 16,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "All This Has Happened Before",
-        "actions": -1,
-        "traits": [
-          "occult"
-        ],
-        "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The samsaran anchorite is about to roll initiative</p>\n<hr />\n<p><strong>Effect</strong> The anchorite experiences a flash of recognition from a previous existence, gaining a +4 circumstance bonus to the triggering roll.</p>\n<p>If this causes the anchorite to be the first creature to act, they also become Quickened for 1 round, but they can use the extra action only to Recall Knowledge or Step.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "All This Will Happen Again",
-        "actions": -1,
-        "traits": [
-          "emotion",
-          "fortune",
-          "mental"
-        ],
-        "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The samsaran anchorite fails or critically fails a Will save against an emotion effect</p>\n<hr />\n<p><strong>Effect</strong> Even in the face of overwhelming tribulation, the anchorite finds solace in the notion that all things are merely part of a never-ending cycle.They reroll the saving throw with a +1 status bonus; they must use the second result.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Spear",
-        "bonus": 5,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "1d6+2",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+2)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Sling",
-        "bonus": 7,
-        "traits": [
-          "range-increment-50",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+2",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+2)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Prepared Spells",
-        "type": "prepared",
-        "bonus": 9,
-        "dc": 17,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 1,
-        "cantrips": [
-          {
-            "name": "Guidance",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "1",
-            "duration": "until the start of your next turn",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You ask for divine guidance, granting the target a +1 status bonus to one attack roll, Perception check, saving throw, or skill check the target attempts before the duration ends. The target chooses which roll to use the bonus on before rolling. If the target uses the bonus, the spell ends. Either way, the target is then temporarily immune for 1 hour.</p>\n\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "dCMRd83On6K0wQJ7"
-          },
-          {
-            "name": "Light",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "light",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until the next time you make your daily preparations",
-            "range": "touch",
-            "area": "",
-            "targets": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally",
-            "save": "",
-            "description": "<p>The object glows, casting bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. If you cast this spell again on a second object, the light spell on the first object ends.</p>\n\n<hr />\n<p><strong>Heightened (4th)</strong> The object sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "E2xUMXLUIPzYhGE5"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [
-          {
-            "id": "Xmyxii3iWarPXiJW",
-            "rank": 1
-          },
-          {
-            "id": "pHilTAt85BF0fIgK",
-            "rank": 1
-          },
-          {
-            "id": "2rhqcAMHCcrU6nJX",
-            "rank": 1
-          }
-        ],
-        "usedAttribute": "wisdom",
-        "_id": "bxnrpUx8pN5QerLc",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Command",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "auditory",
-              "concentrate",
-              "linguistic",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until the end of the target's next turn",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the Fleeing condition), release what it's holding, drop Prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr /><p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr /><p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "Xmyxii3iWarPXiJW"
-          },
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vitality energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, somatic, verbal)</strong> You disperse vitality energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "pHilTAt85BF0fIgK"
-          },
-          {
-            "name": "Sanctuary",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You ward a creature with protective energy that deters enemy attacks. Creatures attempting to attack the target must attempt a Will save each time. If the target uses a hostile action, the spell ends.</p>\n<hr /><p><strong>Critical Success</strong> Sanctuary ends.</p>\n<p><strong>Success</strong> The creature can attempt its attack and any other attacks against the target this turn.</p>\n<p><strong>Failure</strong> The creature can't attack the target and wastes the action. It can't attempt further attacks against the target this turn.</p>\n<p><strong>Critical Failure</strong> The creature wastes the action and can't attempt to attack the target for the rest of sanctuary's duration.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "2rhqcAMHCcrU6nJX"
-          }
-        ],
-        "lv1slots": {},
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>A unique connection to the cycle of life and death defines the mortal lives of samsarans. With a tendency toward reclusiveness, samsarans have delicate builds, enigmatic and pupilless eyes, and blood as clear as water. When a samsaran dies, their body vanishes and their soul instantly reincarnates into a newborn child elsewhere on the same plane: usually another samsaran, but occasionally a humanoid of a different ancestry.</p>\n<p>Though all samsarans have an innate understanding of their nature, they consciously remember little from their former lives. Some, however, are occasionally struck by disjointed memories or flashes of déjà vu linked to a previous existence that can earn them a reputation for preternatural wisdom and insight. Most samsarans prefer to lead studious lives filled with moments of deep reflection. Their sights remain set on the eternal and on enlightenment, reducing the appeal of the short-term material gains one can achieve in just one lifetime. A samsaran ceases their cycle of reincarnation only upon reaching perfect state of enlightenment-or falling so far from harmony that they proceed to a doomed afterlife.</p>\n<p>The ancestral home of the samsarans lies in Zi Ha, a remote mountain nation in Tian Xia. These treacherous mountains help ensure the solitude most samsarans prefer, and they're further protected by misguiding illusions, defensive wards, and secure fortifications.</p>",
-    "recallKnowledge": "Society, DC: 17",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 15"
 }

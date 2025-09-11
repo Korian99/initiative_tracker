@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Unstable Ice",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 0,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental",
     "Trap"
@@ -17,32 +17,44 @@
   "source": "Pathfinder Bounty #1: The Whitefang Wyrm",
   "stealth": {
     "value": 5,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>The ice here is fractured due to the warming weather conditions and the inexorable flow of the ocean water below.</p>",
-  "disable": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 19 Athletics check to move the ice sheets into a more stable position</p>",
+  "disable": "<p><span class=\"action-glyph\">2</span> DC 19 Athletics  to move the ice sheets into a more stable position</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Drift",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature steps onto the unstable ice</p>\n<hr />\n<p><strong>Effect</strong> The weight and momentum of the creatures causes the fractured ice to shatter and separate, leaving them stranded on a floating iceberg.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 0,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -58,90 +70,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Drift",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature steps onto the unstable ice</p>\n<hr />\n<p><strong>Effect</strong> The weight and momentum of the creatures causes the fractured ice to shatter and separate, leaving them stranded on a floating iceberg.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 5,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Unstable Ice",
-    "type": "hazard",
-    "level": 0,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental",
-      "Trap"
-    ],
-    "source": "Pathfinder Bounty #1: The Whitefang Wyrm",
-    "stealth": {
-      "value": 5,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>The ice here is fractured due to the warming weather conditions and the inexorable flow of the ocean water below.</p>",
-    "disable": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> DC 19 Athletics check to move the ice sheets into a more stable position</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 0,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 0,
-      "max": 0,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Drift",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature steps onto the unstable ice</p>\n<hr />\n<p><strong>Effect</strong> The weight and momentum of the creatures causes the fractured ice to shatter and separate, leaving them stranded on a floating iceberg.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 14"
-  },
-  "recallKnowledge": ", DC: 14"
+  "recallKnowledge": ", DC 14"
 }

@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 1,
   "traits": [
+    "Common",
     "Medium",
     "Hobgoblin",
     "Humanoid"
   ],
   "source": "Pathfinder Beginner Box",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 7,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -64,7 +65,7 @@
       "quantity": 1,
       "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "versatile-p"
       ]
@@ -74,7 +75,7 @@
       "quantity": 1,
       "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": [
         "deadly-d10"
       ]
@@ -82,17 +83,9 @@
     {
       "name": "Breastplate",
       "quantity": 1,
-      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
+      "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
       "level": 0,
-      "price": "8 gp ",
-      "traits": []
-    },
-    {
-      "name": "Arrows",
-      "quantity": 10,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
+      "price": "8 gp",
       "traits": []
     }
   ],
@@ -144,10 +137,10 @@
       "actions": -1,
       "traits": [],
       "description": "<p>If they Raised a Shield since their last turn, the hobgoblin can spend their reaction to block a Strike. Reduce the damage by 5, but the hobgoblin and the shield both take the remaining damage, possibly Breaking or destroying the shield.</p>",
-      "collapsed": true
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -191,229 +184,18 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d6)*2+1d10",
+          "roll": "(1d6)*2",
           "type": "piercing"
         }
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "description": "<p>Hobgoblins are singularly devoted to war, and their entire civilization is built upon fostering and maintaining conflict while simultaneously proving their superiority in battle. Highly organized, they work efficiently and effectively in groups, whether that group is a small raiding party, a roving war band, or a fully regimented army. Physically, hobgoblins stand about as tall as humans and have gray, ashen skin.</p>",
-  "recallKnowledge": "Society, DC: 15",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Hobgoblin Soldier (BB)",
-    "type": "Creature",
-    "level": 1,
-    "traits": [
-      "Medium",
-      "Hobgoblin",
-      "Humanoid"
-    ],
-    "source": "Pathfinder Beginner Box",
-    "perception": {
-      "value": 7,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [
-      {
-        "name": "Longsword",
-        "quantity": 1,
-        "description": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "versatile-p"
-        ]
-      },
-      {
-        "name": "Shortbow",
-        "quantity": 1,
-        "description": "<p>This smaller bow is made of a single piece of wood and favored by skirmishers and cavalry.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": [
-          "deadly-d10"
-        ]
-      },
-      {
-        "name": "Breastplate",
-        "quantity": 1,
-        "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or Half Plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>",
-        "level": 0,
-        "price": "8 gp ",
-        "traits": []
-      },
-      {
-        "name": "Arrows",
-        "quantity": 10,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "(20 with shield raised)",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 5,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 20,
-      "max": 20,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Formation",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When they're adjacent to at least two other allies, the hobgoblin soldier gains a +1 circumstance bonus to AC and saving throws.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shield Block",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>If they Raised a Shield since their last turn, the hobgoblin can spend their reaction to block a Strike. Reduce the damage by 5, but the hobgoblin and the shield both take the remaining damage, possibly Breaking or destroying the shield.</p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Longsword",
-        "bonus": 8,
-        "traits": [
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+3",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+3)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Shortbow",
-        "bonus": 8,
-        "traits": [
-          "deadly-d10",
-          "range-increment-60",
-          "reload-0"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [],
-    "description": "<p>Hobgoblins are singularly devoted to war, and their entire civilization is built upon fostering and maintaining conflict while simultaneously proving their superiority in battle. Highly organized, they work efficiently and effectively in groups, whether that group is a small raiding party, a roving war band, or a fully regimented army. Physically, hobgoblins stand about as tall as humans and have gray, ashen skin.</p>",
-    "recallKnowledge": "Society, DC: 15",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 15"
 }

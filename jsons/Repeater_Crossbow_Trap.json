@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Repeater Crossbow Trap",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 5,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,39 +17,54 @@
   "source": "Pathfinder #178: Punks in a Powder Keg",
   "stealth": {
     "value": 13,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>A pressure plate in the hallway floor releases a latch, causing a ceiling panel to drop down. A <em>+1 striking heavy crossbow</em> contained in a steel box sprays bolts at any creatures in the hallway.</p>",
-  "disable": "<p>DC 20 Thievery check (Expert) or DC 20 Crafting check (Trained) to disengage the reloading mechanism; the trap can also be disabled by the switch in area <strong>F2</strong></p>",
+  "disable": "<p>DC 20 Thievery  (Expert) or DC 20 Crafting  (Trained) to disengage the reloading mechanism; the trap can also be disabled by the switch in area <strong>F2</strong></p>",
   "reset": "<p>The trap runs out of ammo after it fires 5 bolts; it must be manually reloaded.</p>",
   "routine": "<p>(3 actions) The repeater crossbow trap reloads (2 actions) then Strikes a random creature in the hallway.</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Auto-Bolter",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An object or creature weighing at least 25 pounds steps on the pressure plate at the south end of the hallway</p>\n<hr />\n<p><strong>Effect</strong> A <em>+1 striking heavy crossbow</em> encased in a steel box drops from the ceiling and fires. The repeater crossbow trap Strikes a random creature in the hallway. The trap then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 22,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 12
   },
   "fortitude": {
     "value": 15,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 9,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 50,
     "max": 50,
-    "note": "<b>Hardness</b> 12 <b>BT</b> 25. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -83,123 +98,13 @@
         }
       ],
       "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
   ],
-  "offensiveAbilities": [
-    {
-      "name": "Auto-Bolter",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> An object or creature weighing at least 25 pounds steps on the pressure plate at the south end of the hallway</p>\n<hr />\n<p><strong>Effect</strong> A <em>+1 striking heavy crossbow</em> encased in a steel box drops from the ceiling and fires. The repeater crossbow trap Strikes a random creature in the hallway. The trap then rolls initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Repeater Crossbow Trap",
-    "type": "hazard",
-    "level": 5,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder #178: Punks in a Powder Keg",
-    "stealth": {
-      "value": 13,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>A pressure plate in the hallway floor releases a latch, causing a ceiling panel to drop down. A <em>+1 striking heavy crossbow</em> contained in a steel box sprays bolts at any creatures in the hallway.</p>",
-    "disable": "<p>DC 20 Thievery check (Expert) or DC 20 Crafting check (Trained) to disengage the reloading mechanism; the trap can also be disabled by the switch in area <strong>F2</strong></p>",
-    "reset": "<p>The trap runs out of ammo after it fires 5 bolts; it must be manually reloaded.</p>",
-    "routine": "<p>(3 actions) The repeater crossbow trap reloads (2 actions) then Strikes a random creature in the hallway.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 15,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 50,
-      "max": 50,
-      "note": "<b>Hardness</b> 12 <b>BT</b> 25. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "ranged",
-        "name": "Heavy Crossbow",
-        "bonus": 16,
-        "traits": [
-          "agile",
-          "range-120",
-          "reload-2"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Auto-Bolter",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> An object or creature weighing at least 25 pounds steps on the pressure plate at the south end of the hallway</p>\n<hr />\n<p><strong>Effect</strong> A <em>+1 striking heavy crossbow</em> encased in a steel box drops from the ceiling and fires. The repeater crossbow trap Strikes a random creature in the hallway. The trap then rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 20"
-  },
-  "recallKnowledge": ", DC: 20"
+  "recallKnowledge": ", DC 20"
 }

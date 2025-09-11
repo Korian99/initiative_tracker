@@ -15,19 +15,18 @@
     "Lawful",
     "Skeleton",
     "Undead",
-    "Unholy",
-    "(caster)"
+    "Unholy"
   ],
   "source": "Pathfinder Society Scenario #3-10: Delve the Pallid Depths",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 10,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Dwarven",
     "Necril",
@@ -80,9 +79,8 @@
       "quantity": 1,
       "description": "<p>This favored weapon of the dwarves has a large, ornate head mounted on a thick handle. This powerful axe can be wielded with one hand or two.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": [
-        "uncommon",
         "dwarf",
         "sweep",
         "two-hand-d12"
@@ -151,8 +149,16 @@
     }
   ],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "30 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -189,7 +195,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>The forged bones calls on the power contained in its mask to shoot a burst of forge-hot flames at intruders, dealing <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage in a 15 foot cone (DC 17 basic Reflex save).</p>\n<p>The forged bones can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The forged bones calls on the power contained in its mask to shoot a burst of forge-hot flames at intruders, dealing 3d6 Fire Damage damage in a 15ft Cone (Basic DC 17 Reflex Saving Throw save).</p>\n<p>The forged bones can't use Breath Weapon again for 1d4 rounds.</p>",
       "collapsed": false
     }
   ],
@@ -205,27 +211,25 @@
       },
       "autoHeightenLevel": 2,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "NBbBo6yO26XCZQQE",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Bane",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "1 minute",
           "range": "",
-          "area": "5 ft emanation",
+          "area": "5ft emanation",
           "targets": "enemies in the area",
           "save": "will",
-          "description": "<p>You fill the minds of your enemies with doubt.</p>\n<p>Enemies in the area must succeed at a Will save or take a -1 status penalty to attack rolls as long as they are in the area.</p>\n<p>Once per turn, starting the turn after you cast bane, you can use a single action, which has the concentrate trait, to increase the emanation's radius by 5 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract bless.</p>\n",
+          "description": "<p>You fill the minds of your enemies with doubt.</p>\n<p>Enemies in the area must succeed at a Will save or take a -1 status penalty to attack rolls as long as they are in the area.</p>\n<p>Once per turn, starting the turn after you cast bane, you can use a single action, which has the concentrate trait, to increase the emanation's radius by 5 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract bless.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -234,19 +238,18 @@
           "id": "BKAam1kW6oLcE3Li"
         }
       ],
-      "lv1slots": {
-        "current": 1,
-        "max": 1
-      },
       "lv2spells": [
         {
           "name": "Reaper's Lantern",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "death",
-            "light"
+            "light",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -263,10 +266,6 @@
           "id": "1Cve9JKdhlaQMoza"
         }
       ],
-      "lv2slots": {
-        "current": 1,
-        "max": 1
-      },
       "lv3spells": [],
       "lv4spells": [],
       "lv5spells": [],
@@ -275,6 +274,15 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 1,
+        "max": 1
+      },
+      "lv2slots": {
+        "current": 1,
+        "max": 1
+      },
       "lv3slots": {
         "current": 0,
         "max": 0
@@ -309,321 +317,5 @@
       }
     }
   ],
-  "description": "",
-  "recallKnowledge": "Religion, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Forged Bones",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Uncommon",
-      "Large",
-      "Evil",
-      "Lawful",
-      "Skeleton",
-      "Undead",
-      "Unholy",
-      "(caster)"
-    ],
-    "source": "Pathfinder Society Scenario #3-10: Delve the Pallid Depths",
-    "perception": {
-      "value": 10,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Dwarven",
-      "Necril",
-      "Sakvroth"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Ceremonial Dwarven War Axe",
-        "quantity": 1,
-        "description": "<p>This favored weapon of the dwarves has a large, ornate head mounted on a thick handle. This powerful axe can be wielded with one hand or two.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": [
-          "uncommon",
-          "dwarf",
-          "sweep",
-          "two-hand-d12"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 40,
-      "max": 40,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [
-      {
-        "type": "cold",
-        "value": 5
-      },
-      {
-        "type": "electricity",
-        "value": 5
-      },
-      {
-        "type": "fire",
-        "value": 5
-      },
-      {
-        "type": "piercing",
-        "value": 5
-      },
-      {
-        "type": "slashing",
-        "value": 5
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "War Axe",
-        "bonus": 10,
-        "traits": [
-          "dwarf",
-          "sweep",
-          "two-hand-d12"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+7",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+7)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Forge-Flame Breath",
-        "actions": 2,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>The forged bones calls on the power contained in its mask to shoot a burst of forge-hot flames at intruders, dealing <span class=\"roll\" onclick=\"roll(this)\">3d6</span> fire damage in a 15 foot cone (DC 17 basic Reflex save).</p>\n<p>The forged bones can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 9,
-        "dc": 17,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 2,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "NBbBo6yO26XCZQQE",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Bane",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "5 ft emanation",
-            "targets": "enemies in the area",
-            "save": "will",
-            "description": "<p>You fill the minds of your enemies with doubt.</p>\n<p>Enemies in the area must succeed at a Will save or take a -1 status penalty to attack rolls as long as they are in the area.</p>\n<p>Once per turn, starting the turn after you cast bane, you can use a single action, which has the concentrate trait, to increase the emanation's radius by 5 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract bless.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "BKAam1kW6oLcE3Li"
-          }
-        ],
-        "lv1slots": {
-          "current": 1,
-          "max": 1
-        },
-        "lv2spells": [
-          {
-            "name": "Reaper's Lantern",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "death",
-              "light"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "fortitude",
-            "description": "<p>You call forth a ghostly lantern that guides the living toward death and the undead toward true death. It sheds bright light in the spell's area, and dim light to twice that area. Though the lantern is insubstantial, you must keep a hand free to hold it or the spell ends (though using the hand for somatic spell components doesn't end the spell). Living creatures and undead in the area when you Cast the Spell, or that enter the area later, must attempt Fortitude saves. Living creatures that fail their Fortitude saves gain only half the normal benefit from healing effects while within the area. Undead targets that fail their Fortitude saves become Enfeebled 1 while within the area. Once a creature attempts a save against <em>reaper's lantern</em>, it uses the same outcome if it leaves the area and enters it again.</p>\n<p>Once per turn, starting on the turn after you cast <em>reaper's lantern</em>, you can use a single action, which has the concentrate trait, to increase the emanation's radius by 5 feet. When you do so, you force creatures in the area that haven't yet attempted a save against <em>reaper's lantern</em> to attempt one.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "1Cve9JKdhlaQMoza"
-          }
-        ],
-        "lv2slots": {
-          "current": 1,
-          "max": 1
-        },
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "",
-    "recallKnowledge": "Religion, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 18"
 }

@@ -9,18 +9,19 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Medium",
     "Human",
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [],
   "perception": {
     "value": 13,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -106,7 +107,7 @@
       "quantity": 1,
       "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -114,9 +115,8 @@
       "quantity": 1,
       "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>",
       "level": 0,
-      "price": "6 sp ",
+      "price": "6 sp",
       "traits": [
-        "uncommon",
         "agile",
         "finesse",
         "trip"
@@ -125,17 +125,9 @@
     {
       "name": "Climbing Kit",
       "quantity": 1,
-      "description": "<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a DC 5 Flat check whenever you critically fail to prevent a fall. A single kit has only enough materials for one climber; each climber needs their own kit. If you wear your climbing kit, you can access it as part of a Climb action.</p>",
+      "description": "<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a @Check[flat|dc:5] whenever you critically fail to prevent a fall. A single kit has only enough materials for one climber; each climber needs their own kit. If you wear your climbing kit, you can access it as part of a Climb action.</p>",
       "level": 0,
-      "price": "5 sp ",
-      "traits": []
-    },
-    {
-      "name": "Bolts",
-      "quantity": 20,
-      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-      "level": 0,
-      "price": "1 sp ",
+      "price": "5 sp",
       "traits": []
     }
   ],
@@ -183,7 +175,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\nclimb 15 ft,\n",
+  "speed": "25 ft, climb 15ft",
   "strikes": [
     {
       "type": "melee",
@@ -271,293 +263,10 @@
       "name": "Trick Attack",
       "actions": 1,
       "traits": [],
-      "description": "<p>The tomb raider chooses one of their weapons. The next attack with that weapon this turn deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage. In addition, the tomb raider can Interact to draw or reload the weapon.</p>",
+      "description": "<p>The tomb raider chooses one of their weapons. The next attack with that weapon this turn deals an additional 2d6 precision damage. In addition, the tomb raider can Interact to draw or reload the weapon.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Great treasure awaits those willing to explore the hazardous depths of ancient tombs and forgotten dungeons. Some tomb raiders seek the riches of bygone eras; others recover pieces of history thought lost to the sands of time.</p><hr /><p>Explorers are often well-equipped and well-trained for any type of hazard and are eager to lead others into the wild.</p>",
-  "recallKnowledge": "Society, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Tomb Raider",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Medium",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "Architecture Lore",
-        "modifier": 11,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "Engineering Lore",
-        "modifier": 11,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Hand Crossbow",
-        "quantity": 1,
-        "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Kukri",
-        "quantity": 1,
-        "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>",
-        "level": 0,
-        "price": "6 sp ",
-        "traits": [
-          "uncommon",
-          "agile",
-          "finesse",
-          "trip"
-        ]
-      },
-      {
-        "name": "Climbing Kit",
-        "quantity": 1,
-        "description": "<p>This satchel includes 50 feet of rope, pulleys, a dozen pitons, a hammer, a grappling hook, and one set of crampons. Climbing kits allow you to attach yourself to the wall you're Climbing, moving half as quickly as usual (minimum 5 feet) but letting you attempt a DC 5 Flat check whenever you critically fail to prevent a fall. A single kit has only enough materials for one climber; each climber needs their own kit. If you wear your climbing kit, you can access it as part of a Climb action.</p>",
-        "level": 0,
-        "price": "5 sp ",
-        "traits": []
-      },
-      {
-        "name": "Bolts",
-        "quantity": 20,
-        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Hazard Spotter",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Even if the tomb raider isn't Searching, they get a check to find traps that normally require them to be Searching.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 75,
-      "max": 75,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\nclimb 15 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Kukri",
-        "bonus": 15,
-        "traits": [
-          "agile",
-          "trip"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+9",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+9)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 15,
-        "traits": [
-          "agile",
-          "finesse",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+9",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+9)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Hand Crossbow",
-        "bonus": 15,
-        "traits": [
-          "range-increment-60",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Trick Attack",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The tomb raider chooses one of their weapons. The next attack with that weapon this turn deals an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> precision damage. In addition, the tomb raider can Interact to draw or reload the weapon.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Great treasure awaits those willing to explore the hazardous depths of ancient tombs and forgotten dungeons. Some tomb raiders seek the riches of bygone eras; others recover pieces of history thought lost to the sands of time.</p><hr /><p>Explorers are often well-equipped and well-trained for any type of hazard and are eager to lead others into the wild.</p>",
-    "recallKnowledge": "Society, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 20"
 }

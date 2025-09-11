@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 10,
   "traits": [
+    "Common",
     "Medium",
     "Graveknight",
     "Undead",
     "Unholy"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 19,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril"
@@ -82,7 +83,7 @@
       "quantity": 1,
       "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
       "level": 0,
-      "price": "20 gp ",
+      "price": "20 gp",
       "traits": [
         "deadly-d10",
         "propulsive",
@@ -94,7 +95,7 @@
       "quantity": 1,
       "description": "<p>This immense two-handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close-quarter fights.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
         "versatile-p"
       ]
@@ -102,20 +103,12 @@
     {
       "name": "Full Plate",
       "quantity": 1,
-      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of Padded Armor and a pair of gauntlets.</p>",
+      "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor] and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>",
       "level": 2,
-      "price": "30 gp ",
+      "price": "30 gp",
       "traits": [
         "bulwark"
       ]
-    },
-    {
-      "name": "Arrows",
-      "quantity": 20,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
     }
   ],
   "generalAbilities": [],
@@ -166,8 +159,8 @@
       "name": "Reactive Strike",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Rejuvenation",
@@ -175,7 +168,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>When a graveknight is destroyed, their armor rebuilds their body over the course of <span class=\"roll\" onclick=\"roll(this)\">1d10</span> days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating their armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
+      "description": "<p>When a graveknight is destroyed, their armor rebuilds their body over the course of [[/gmr 1d10]] days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating their armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
       "collapsed": false
     },
     {
@@ -188,9 +181,16 @@
       ],
       "description": "<p>30 feet.</p>\n<p>When a creature in the aura uses a vitality spell or ability, the graveknight automatically attempts to counteract it, with a counteract modifier of +17.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -287,7 +287,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d8+6)*2+1d10",
+          "roll": "(2d8+6)*2",
           "type": "piercing"
         },
         {
@@ -310,7 +310,7 @@
         "arcane",
         "cold"
       ],
-      "description": "<p>The graveknight unleashes a 30 foot cone of energy. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">11d6</span> cold with a DC 29 basic Reflex save.</p>\n<p>The graveknight can use this ability once every <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The graveknight unleashes a 30ft Cone of energy. Creatures in the area take 11d6 Cold Damage with a Basic DC 29 Reflex Saving Throw.</p>\n<p>The graveknight can use this ability once every [[/gmr 1d4 #Recharge Devastating Blast]] rounds.</p>",
       "collapsed": false
     },
     {
@@ -320,7 +320,7 @@
         "arcane",
         "curse"
       ],
-      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour</p>\n<p><strong>Saving Throw</strong> DC 33 Will save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and can't remove armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, –10-foot status penalty to Speeds, and can't remove armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
+      "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour</p>\n<p><strong>Saving Throw</strong> DC 33 Will Saving Throw save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and can't remove armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, –10-foot status penalty to Speeds, and can't remove armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
       "collapsed": false
     },
     {
@@ -342,354 +342,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Graveknights are undead warriors granted unlife by a cursed suit of armor.</p>",
-  "recallKnowledge": "Religion, DC: 27",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 19,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Graveknight",
-    "type": "Creature",
-    "level": 10,
-    "traits": [
-      "Medium",
-      "Graveknight",
-      "Undead",
-      "Unholy"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 19,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 23,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 22,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Warfare Lore",
-        "modifier": 20,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 7
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 5
-    },
-    "items": [
-      {
-        "name": "Composite Longbow",
-        "quantity": 1,
-        "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
-        "level": 0,
-        "price": "20 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive",
-          "volley-30"
-        ]
-      },
-      {
-        "name": "Greatsword",
-        "quantity": 1,
-        "description": "<p>This immense two-handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close-quarter fights.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "versatile-p"
-        ]
-      },
-      {
-        "name": "Full Plate",
-        "quantity": 1,
-        "description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of Padded Armor and a pair of gauntlets.</p>",
-        "level": 2,
-        "price": "30 gp ",
-        "traits": [
-          "bulwark"
-        ]
-      },
-      {
-        "name": "Arrows",
-        "quantity": 20,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 31,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 175,
-      "max": 175,
-      "note": "rejuvenation, void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "cold",
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious",
-      "bleed"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Reactive Strike",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Rejuvenation",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>When a graveknight is destroyed, their armor rebuilds their body over the course of <span class=\"roll\" onclick=\"roll(this)\">1d10</span> days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.</p>\n<p>A graveknight can only be permanently destroyed by obliterating their armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sacrilegious Aura",
-        "actions": null,
-        "traits": [
-          "aura",
-          "divine",
-          "void"
-        ],
-        "description": "<p>30 feet.</p>\n<p>When a creature in the aura uses a vitality spell or ability, the graveknight automatically attempts to counteract it, with a counteract modifier of +17.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Frost Greatsword",
-        "bonus": 24,
-        "traits": [
-          "cold",
-          "magical",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d12+10",
-            "type": "slashing"
-          },
-          {
-            "roll": "1d6",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d12+10)*2",
-            "type": "slashing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Frost Fist",
-        "bonus": 24,
-        "traits": [
-          "agile",
-          "cold",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+10",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "1d6",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+10)*2",
-            "type": "bludgeoning"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Frost Composite Longbow",
-        "bonus": 21,
-        "traits": [
-          "cold",
-          "deadly-d10",
-          "magical",
-          "propulsive",
-          "range-increment-100",
-          "reload-0",
-          "volley-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+6",
-            "type": "piercing"
-          },
-          {
-            "roll": "1d6",
-            "type": "cold"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+6)*2+1d10",
-            "type": "piercing"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "cold"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Devastating Blast",
-        "actions": 2,
-        "traits": [
-          "arcane",
-          "cold"
-        ],
-        "description": "<p>The graveknight unleashes a 30 foot cone of energy. Creatures in the area take <span class=\"roll\" onclick=\"roll(this)\">11d6</span> cold with a DC 29 basic Reflex save.</p>\n<p>The graveknight can use this ability once every <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Graveknight's Curse",
-        "actions": null,
-        "traits": [
-          "arcane",
-          "curse"
-        ],
-        "description": "<p>This curse affects anyone who wears a graveknight's armor for at least 1 hour</p>\n<p><strong>Saving Throw</strong> DC 33 Will save</p>\n<p><strong>Onset</strong> 1 hour</p>\n<p><strong>Stage 1</strong> Doomed 1 and can't remove armor (1 day)</p>\n<p><strong>Stage 2</strong> Doomed 2, –10-foot status penalty to Speeds, and can't remove armor (1 day)</p>\n<p><strong>Stage 3</strong> dies and transforms into the armor's graveknight.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Phantom Mount",
-        "actions": 3,
-        "traits": [
-          "arcane",
-          "summon"
-        ],
-        "description": "<p>HP 58; AC 27, Fort +17, Ref +15, Will +14</p>\n<hr />\n<p>The graveknight summons a supernatural mount, as Marvelous Mount heightened to a rank equal to half the graveknight's level. Unlike <em>marvelous mount</em>, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).</p>\n<p>If the steed is destroyed, the graveknight must wait 1 hour before using this ability again.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Weapon Master",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The graveknight has access to the critical specialization effects of any weapons it wields.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Graveknights are undead warriors granted unlife by a cursed suit of armor.</p>",
-    "recallKnowledge": "Religion, DC: 27",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 27"
 }

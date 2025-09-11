@@ -9,18 +9,19 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Medium",
     "Human",
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [],
   "perception": {
     "value": 13,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -85,7 +86,7 @@
       "quantity": 1,
       "description": "<p>This long, narrow tube is used for shooting blowgun darts, using only the power of a forcefully exhaled breath.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "agile",
         "nonlethal"
@@ -96,20 +97,12 @@
       "quantity": 1,
       "description": "<p>This small axe can be used in close combat or thrown.</p>",
       "level": 0,
-      "price": "4 sp ",
+      "price": "4 sp",
       "traits": [
         "agile",
         "sweep",
         "thrown-10"
       ]
-    },
-    {
-      "name": "Blowgun Darts",
-      "quantity": 10,
-      "description": "<p>These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison.</p>",
-      "level": 0,
-      "price": "5 cp",
-      "traits": []
     }
   ],
   "generalAbilities": [],
@@ -147,8 +140,16 @@
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "30 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Skittish",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The castaway takes damage from a Strike</p><hr /><p><strong>Effect</strong> The castaway Steps away from the source of the Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -216,19 +217,23 @@
       ],
       "damageRolls": [
         {
+          "roll": "1",
+          "type": "piercing"
+        },
+        {
           "roll": "2d6",
           "type": "poison"
         },
         {
           "roll": "1d6",
           "type": "persistent poison"
-        },
-        {
-          "roll": "1",
-          "type": "piercing"
         }
       ],
       "critRolls": [
+        {
+          "roll": "(1)*2",
+          "type": "piercing"
+        },
         {
           "roll": "(2d6)*2",
           "type": "poison"
@@ -236,10 +241,6 @@
         {
           "roll": "(1d6)*2",
           "type": "persistent poison"
-        },
-        {
-          "roll": "(1)*2",
-          "type": "piercing"
         }
       ],
       "effects": [],
@@ -259,7 +260,7 @@
         "linguistic",
         "mental"
       ],
-      "description": "<p>The castaway launches into a nonsensical verbal stream of consciousness. Creatures in a 30 foot emanation must succeed at a DC 19 Will save or be Confused for 1 round. Once a creature has succeeded at a save against the castaway's Cockamamie Rant, they are immune to its effects for 24 hours.</p>",
+      "description": "<p>The castaway launches into a nonsensical verbal stream of consciousness. Creatures in a 30ft Type:emanation must succeed at a DC 19 Will Saving Throw save or be Confused for 1 round. Once a creature has succeeded at a save against the castaway's Cockamamie Rant, they are immune to its effects for 24 hours.</p>",
       "collapsed": false
     },
     {
@@ -269,305 +270,17 @@
         "manipulate",
         "trap"
       ],
-      "description": "<p><strong>Frequency</strong> five times per day</p><hr /><p><strong>Effect</strong> By scrounging local materials, the castaway constructs a simple but effective deadfall without expending resources. Treat this as a snare with a DC 19 Perception check to spot, and a DC 23 Thievery check to disable. It occupies a single 5-foot square and lasts 24 hours before falling apart. The first creature that enters the space takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage (DC 22 basic Reflex save).</p>",
+      "description": "<p><strong>Frequency</strong> five times per day</p><hr /><p><strong>Effect</strong> By scrounging local materials, the castaway constructs a simple but effective deadfall without expending resources. Treat this as a snare with a Basic DC 19 Perception  check to spot, and a Basic DC 23 Thievery  check to disable. It occupies a single 5-foot square and lasts 24 hours before falling apart. The first creature that enters the space takes 6d6 Bludgeoning Damage damage (Basic DC 22 Reflex Saving Throw save).</p>",
       "collapsed": false
     },
     {
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The castaways deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The castaways deals 1d6 extra precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Be it the result of shipwreck, forcible marooning, or personal choice, surviving alone on an island long enough tends to weed out the weak of body and mind. Lack of social interaction tends to breed belligerence towards outsiders, but hostilities are not a certainty.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
-  "recallKnowledge": "Society, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Castaway",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Medium",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "crafting",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [
-      {
-        "name": "Blowgun",
-        "quantity": 1,
-        "description": "<p>This long, narrow tube is used for shooting blowgun darts, using only the power of a forcefully exhaled breath.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "agile",
-          "nonlethal"
-        ]
-      },
-      {
-        "name": "Hatchet",
-        "quantity": 1,
-        "description": "<p>This small axe can be used in close combat or thrown.</p>",
-        "level": 0,
-        "price": "4 sp ",
-        "traits": [
-          "agile",
-          "sweep",
-          "thrown-10"
-        ]
-      },
-      {
-        "name": "Blowgun Darts",
-        "quantity": 10,
-        "description": "<p>These thin, light darts are typically made of hardwood and stabilized with fletching of down or fur. They are often hollow so they can be used to deliver poison.</p>",
-        "level": 0,
-        "price": "5 cp",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 80,
-      "max": 80,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Hatchet",
-        "bonus": 15,
-        "traits": [
-          "agile",
-          "sweep"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+7",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+7)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 15,
-        "traits": [
-          "agile",
-          "finesse",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+7",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+7)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Blowgun",
-        "bonus": 15,
-        "traits": [
-          "agile",
-          "nonlethal",
-          "range-increment-20",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6",
-            "type": "poison"
-          },
-          {
-            "roll": "1d6",
-            "type": "persistent poison"
-          },
-          {
-            "roll": "1",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6)*2",
-            "type": "poison"
-          },
-          {
-            "roll": "(1d6)*2",
-            "type": "persistent poison"
-          },
-          {
-            "roll": "(1)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Cockamamie Rant",
-        "actions": 2,
-        "traits": [
-          "auditory",
-          "concentrate",
-          "linguistic",
-          "mental"
-        ],
-        "description": "<p>The castaway launches into a nonsensical verbal stream of consciousness. Creatures in a 30 foot emanation must succeed at a DC 19 Will save or be Confused for 1 round. Once a creature has succeeded at a save against the castaway's Cockamamie Rant, they are immune to its effects for 24 hours.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Snare Master",
-        "actions": 3,
-        "traits": [
-          "manipulate",
-          "trap"
-        ],
-        "description": "<p><strong>Frequency</strong> five times per day</p><hr /><p><strong>Effect</strong> By scrounging local materials, the castaway constructs a simple but effective deadfall without expending resources. Treat this as a snare with a DC 19 Perception check to spot, and a DC 23 Thievery check to disable. It occupies a single 5-foot square and lasts 24 hours before falling apart. The first creature that enters the space takes <span class=\"roll\" onclick=\"roll(this)\">6d6</span> bludgeoning damage (DC 22 basic Reflex save).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The castaways deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Be it the result of shipwreck, forcible marooning, or personal choice, surviving alone on an island long enough tends to weed out the weak of body and mind. Lack of social interaction tends to breed belligerence towards outsiders, but hostilities are not a certainty.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
-    "recallKnowledge": "Society, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 20"
 }

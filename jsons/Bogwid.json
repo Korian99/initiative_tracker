@@ -9,19 +9,20 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Medium",
     "Aberration"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 12,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -114,11 +115,11 @@
         "aura",
         "olfactory"
       ],
-      "description": "<p>20 feet.</p>\n<p>A creature entering the aura or begins their turn in the aura must succeed at a DC 20 Fortitude save or become Sickened 1 (or Sickened 2 on a critical failure). A creature that succeeds is temporarily immune to the aura for 1 minute.</p>",
+      "description": "<p>20 feet.</p>\n<p>A creature entering the aura or begins their turn in the aura must succeed at a DC 20 Fortitude Saving Throw save or become Sickened 1 (or Sickened 2 on a critical failure). A creature that succeeds is temporarily immune to the aura for 1 minute.</p>",
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\nclimb 20 ft,\nswim 20 ft,\n",
+  "speed": "25 ft, climb 20ft, swim 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -140,7 +141,7 @@
         }
       ],
       "effects": [
-        "Bogwid-fever"
+        "bogwid-fever"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -167,10 +168,10 @@
         }
       ],
       "effects": [
-        "Ravenous-young"
+        "ravenous-young"
       ],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -182,218 +183,17 @@
       "traits": [
         "disease"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<p><strong>Onset</strong> 1 day</p>\n<hr />\n<p><strong>Stage 1</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 2, and the DC to recover from persistent bleed is increased by 2 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 3, and the DC to recover from persistent bleed is increased by 5 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 4, the DC to recover from persistent bleed is increased by 5, and you take <span class=\"roll\" onclick=\"roll(this)\">1d8</span> persistent bleed damage every <span class=\"roll\" onclick=\"roll(this)\">1d4</span> hours (1 day)</p>\n<hr />\n<p>Effect: Bogwid Fever</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<p><strong>Onset</strong> 1 day</p>\n<hr />\n<p><strong>Stage 1</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 2, and the DC to recover from persistent bleed is increased by 2 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 3, and the DC to recover from persistent bleed is increased by 5 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 4, the DC to recover from persistent bleed is increased by 5, and you take 1d8 Bleed Damage{1d8 persistent bleed damage} every 1d4 hours (1 day)</p>\n<hr />\n<p>Effect: Bogwid Fever</p>",
       "collapsed": false
     },
     {
       "name": "Ravenous Young",
       "actions": null,
       "traits": [],
-      "description": "<p>The larvae launched from the bogwid attach themselves to the target and begin to feed. Once a larva is attached, the target becomes Drained 1. While the larva remains attached, the target cannot recover from persistent bleed. To remove the larva, the target can attempt to Escape. Additionally, any area damage dealt to the target destroys all attached larvae.</p>\n<hr />\n<p>Effect: Ravenous Young</p>",
+      "description": "<p>The larvae launched from the bogwid attach themselves to the target and begin to feed. Once a larva is attached, the target becomes Drained 1. While the larva remains attached, the target cannot recover from persistent bleed. To remove the larva, the target can attempt to [[/act escape dc=21]]. Additionally, any area damage dealt to the target destroys all attached larvae.</p>\n<hr />\n<p>Effect: Ravenous Young</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>The abhorrent combination between a toad and an octopus, a bogwid drags its bloated green body through the swamps in search of a meal for the many larvae it carries on its back. Despite its absurd appearance and its pervasive scent, a bogwid is an ambush hunter. It will hide itself in sand, vegetation, or whatever happens to be around and wait patiently until a larger creature, such as a humanoid or a crocodile, approaches, before it attacks. A desperate bogwid may even attack a small group in search of food for both it and its young. Once it has a suitably large corpse, the larvae on its back will leap onto it and begin fighting each other for their one chance at survival. The remaining larva buries itself in the body and begins devouring it over the next couple of weeks. Afterward, a fully grown bogwid emerges from what is left of the rotting corpse. Within a week of its new life, the young bogwid too will begin asexually producing larvae on its back, repeating the cycle.</p>\n<p>Bogwids earned their name due to their environment. They are almost exclusively found in bogs and swamps. Occasionally one might be found in a suitable warm environment closer to civilization, but they are too often hunted if they are seen near a town or settlement. Some have discovered that bogwids have an extremely negative reaction when introduced to the cold and will violently attack whatever they perceive to be the source.</p>",
-  "recallKnowledge": "Occultism, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 12,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Bogwid",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Medium",
-      "Aberration"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 12,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": -2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 100,
-      "max": 100,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "cold",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Revolting Aura",
-        "actions": null,
-        "traits": [
-          "aura",
-          "olfactory"
-        ],
-        "description": "<p>20 feet.</p>\n<p>A creature entering the aura or begins their turn in the aura must succeed at a DC 20 Fortitude save or become Sickened 1 (or Sickened 2 on a critical failure). A creature that succeeds is temporarily immune to the aura for 1 minute.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\nclimb 20 ft,\nswim 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Tentacle",
-        "bonus": 15,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+8",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+8)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Bogwid-fever"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Larval Spit",
-        "bonus": 14,
-        "traits": [
-          "range-increment-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8",
-            "type": "persistent bleed"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8)*2",
-            "type": "persistent bleed"
-          }
-        ],
-        "effects": [
-          "Ravenous-young"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Bogwid Fever",
-        "actions": null,
-        "traits": [
-          "disease"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<p><strong>Onset</strong> 1 day</p>\n<hr />\n<p><strong>Stage 1</strong> Enfeebled 1 (1 day)</p>\n<p><strong>Stage 2</strong> Enfeebled 2, and the DC to recover from persistent bleed is increased by 2 (1 day)</p>\n<p><strong>Stage 3</strong> Enfeebled 3, and the DC to recover from persistent bleed is increased by 5 (1 day)</p>\n<p><strong>Stage 4</strong> Enfeebled 4, the DC to recover from persistent bleed is increased by 5, and you take <span class=\"roll\" onclick=\"roll(this)\">1d8</span> persistent bleed damage every <span class=\"roll\" onclick=\"roll(this)\">1d4</span> hours (1 day)</p>\n<hr />\n<p>Effect: Bogwid Fever</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Ravenous Young",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The larvae launched from the bogwid attach themselves to the target and begin to feed. Once a larva is attached, the target becomes Drained 1. While the larva remains attached, the target cannot recover from persistent bleed. To remove the larva, the target can attempt to Escape. Additionally, any area damage dealt to the target destroys all attached larvae.</p>\n<hr />\n<p>Effect: Ravenous Young</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>The abhorrent combination between a toad and an octopus, a bogwid drags its bloated green body through the swamps in search of a meal for the many larvae it carries on its back. Despite its absurd appearance and its pervasive scent, a bogwid is an ambush hunter. It will hide itself in sand, vegetation, or whatever happens to be around and wait patiently until a larger creature, such as a humanoid or a crocodile, approaches, before it attacks. A desperate bogwid may even attack a small group in search of food for both it and its young. Once it has a suitably large corpse, the larvae on its back will leap onto it and begin fighting each other for their one chance at survival. The remaining larva buries itself in the body and begins devouring it over the next couple of weeks. Afterward, a fully grown bogwid emerges from what is left of the rotting corpse. Within a week of its new life, the young bogwid too will begin asexually producing larvae on its back, repeating the cycle.</p>\n<p>Bogwids earned their name due to their environment. They are almost exclusively found in bogs and swamps. Occasionally one might be found in a suitable warm environment closer to civilization, but they are too often hunted if they are seen near a town or settlement. Some have discovered that bogwids have an extremely negative reaction when introduced to the cold and will violently attack whatever they perceive to be the source.</p>",
-    "recallKnowledge": "Occultism, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism, DC 20"
 }

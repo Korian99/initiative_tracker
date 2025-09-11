@@ -12,19 +12,18 @@
     "Uncommon",
     "Small",
     "Dero",
-    "Humanoid",
-    "(caster)"
+    "Humanoid"
   ],
   "source": "Pathfinder #214: The Broken Palace",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 2,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Aklo",
     "Sakvroth"
@@ -83,7 +82,7 @@
       "quantity": 1,
       "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
       "level": 0,
-      "price": "2 sp ",
+      "price": "2 sp",
       "traits": [
         "agile",
         "finesse",
@@ -134,11 +133,11 @@
       "name": "Vulnerable to Sunlight",
       "actions": null,
       "traits": [],
-      "description": "<p>A dero punk takes 2 untyped damage for every hour they're exposed to sunlight.</p>",
+      "description": "<p>A dero punk takes 2 Untyped Damage damage for every hour they're exposed to sunlight.</p>",
       "collapsed": false
     }
   ],
-  "speed": "20 ft,\n",
+  "speed": "20 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -207,7 +206,7 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>A dero punk deals <span class=\"roll\" onclick=\"roll(this)\">1d4</span> extra precision damage to creatures who are Off-Guard.</p></details>",
+      "description": "<p>A dero punk deals 1d4 extra precision damage to creatures who are Off-Guard.</p>",
       "collapsed": false
     }
   ],
@@ -221,12 +220,14 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 0,
+      "autoHeightenLevel": 1,
       "cantrips": [
         {
           "name": "Figment",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "illusion",
@@ -234,12 +235,12 @@
             "subtle"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "Sustained up to ",
           "range": "30 feet",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n",
+          "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -251,6 +252,8 @@
           "name": "Telekinetic Projectile",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
@@ -262,7 +265,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal 2d6 bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -271,11 +274,6 @@
           "id": "ogX58YuUMzorHCmq"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "u1eOXRbLwSvouuEB",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -286,6 +284,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -328,340 +327,5 @@
       }
     }
   ],
-  "description": "<p>Dero stalkers explore the surface world by night, seeking out victims to abduct. While hiding from the burning light of day, stalkers often assist with magisters' experiments.</p>\n<hr />\n<p>Deros are short, wiry humanoids with milky white eyes, gray-blue skin, and wild shocks of off-white or gray hair. The descendants of a mysterious type of fey abandoned in the deepest, darkest caverns of Golarion, deros are the subject of fearful legends and folk tales to most of the world's surface races. They skulk beneath major metropolitan areas, performing cruel and twisted experiments on unwilling subjects.</p>\n<p>Deros, particularly the leading magisters, are fixated with curing their allergy to sunlight. To understand how the surface dwellers can withstand the light of the sun, deros conduct late-night raids on surface cities, abducting victims and performing terrible experiments on them. Those who survive are often returned with much of their memory erased and their bodies bearing mysterious scars.</p>\n<p>The largest dero settlements are built around esoteric machines of floating crystals. As these crystals grind against each other and hum with sickening blue energy, crystal flakes and powdery residue collect beneath the machinery. Dero magisters gather these products, creating tools and repurposing the crystals to power magical items.</p>",
-  "recallKnowledge": "Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 2,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Dero Punk",
-    "type": "Creature",
-    "level": 0,
-    "traits": [
-      "Uncommon",
-      "Small",
-      "Dero",
-      "Humanoid",
-      "(caster)"
-    ],
-    "source": "Pathfinder #214: The Broken Palace",
-    "perception": {
-      "value": 2,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Aklo",
-      "Sakvroth"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "medicine",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": -2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Dagger",
-        "quantity": 1,
-        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
-        "level": 0,
-        "price": "2 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "thrown-10",
-          "versatile-s"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 15,
-      "max": 15,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "confused"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Vulnerable to Sunlight",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A dero punk takes 2 untyped damage for every hour they're exposed to sunlight.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Dagger",
-        "bonus": 6,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+1",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+1)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Dagger",
-        "bonus": 6,
-        "traits": [
-          "agile",
-          "thrown-10",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+1",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+1)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Gang Up",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A dero punk gains a +1 status bonus on melee Strikes while they are adjacent to an allied dero.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A dero punk deals <span class=\"roll\" onclick=\"roll(this)\">1d4</span> extra precision damage to creatures who are Off-Guard.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Occult Innate Spells",
-        "type": "innate",
-        "bonus": 8,
-        "dc": 16,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 0,
-        "cantrips": [
-          {
-            "name": "Figment",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "illusion",
-              "manipulate",
-              "subtle"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create a simple illusory sound or vision. A sound adds the auditory trait to the spell and the sound can't include intelligible words or elaborate music. A vision adds the visual trait, can be no larger than a 5-foot cube, and is clearly crude and undetailed if viewed from within 15 feet. When you Cast or Sustain the Spell, you can attempt to Create a Diversion with the illusion, gaining a +2 circumstance bonus to your Deception check. If the attempt fails against a creature, that creature disbelieves the <em>figment</em>.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "TcY2zr7kvZrI83jF"
-          },
-          {
-            "name": "Telekinetic Projectile",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bludgeoning, piercing, or slashing damage—as appropriate for the object you hurled. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ogX58YuUMzorHCmq"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "u1eOXRbLwSvouuEB",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>Dero stalkers explore the surface world by night, seeking out victims to abduct. While hiding from the burning light of day, stalkers often assist with magisters' experiments.</p>\n<hr />\n<p>Deros are short, wiry humanoids with milky white eyes, gray-blue skin, and wild shocks of off-white or gray hair. The descendants of a mysterious type of fey abandoned in the deepest, darkest caverns of Golarion, deros are the subject of fearful legends and folk tales to most of the world's surface races. They skulk beneath major metropolitan areas, performing cruel and twisted experiments on unwilling subjects.</p>\n<p>Deros, particularly the leading magisters, are fixated with curing their allergy to sunlight. To understand how the surface dwellers can withstand the light of the sun, deros conduct late-night raids on surface cities, abducting victims and performing terrible experiments on them. Those who survive are often returned with much of their memory erased and their bodies bearing mysterious scars.</p>\n<p>The largest dero settlements are built around esoteric machines of floating crystals. As these crystals grind against each other and hum with sickening blue energy, crystal flakes and powdery residue collect beneath the machinery. Dero magisters gather these products, creating tools and repurposing the crystals to power magical items.</p>",
-    "recallKnowledge": "Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 14"
 }

@@ -15,15 +15,15 @@
     "Vishkanya"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 10,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Common",
     "Vishkanyan"
@@ -103,9 +103,8 @@
       "quantity": 1,
       "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>",
       "level": 0,
-      "price": "6 sp ",
+      "price": "6 sp",
       "traits": [
-        "uncommon",
         "agile",
         "finesse",
         "trip"
@@ -118,7 +117,6 @@
       "level": 0,
       "price": "1 cp",
       "traits": [
-        "uncommon",
         "agile",
         "monk",
         "thrown"
@@ -129,7 +127,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
@@ -137,15 +135,15 @@
       "quantity": 1,
       "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
       "name": "Thieves' Tools",
       "quantity": 1,
-      "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with Replacement Picks appropriate to your tools; this doesn't require using the Repair action.</p>",
+      "description": "<p>You need thieves' tools to @UUID[Compendium.pf2e.actionspf2e.Item.Pick a Lock]{Pick Locks} or @UUID[Compendium.pf2e.actionspf2e.Item.Disable a Device]{Disable Devices} (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Thieves' Toolkit (Replacement Picks)]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     }
   ],
@@ -184,8 +182,16 @@
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "+2 to All Saves vs. Poison",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -246,7 +252,7 @@
       "name": "Envenom",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Using either saliva or blood, the vishkanya applies vishkanyan venom to one weapon they're holding. To use their blood, they must be injured, or they can deal themselves 1 slashing damage as part of the action.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Using either saliva or blood, the vishkanya applies vishkanyan venom to one weapon they're holding. To use their blood, they must be injured, or they can deal themselves 1 Slashing Damage damage as part of the action.</p>",
       "collapsed": false
     },
     {
@@ -267,7 +273,7 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The vishkanya deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The vishkanya deals 1d6 extra precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     },
     {
@@ -277,299 +283,10 @@
         "injury",
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage, off-guard, and a -5-foot penalty to Speed (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage (1 round)</p>\n<p><strong>Stage 2</strong> 1d4 Poison Damage damage and Off-Guard (1 round)</p>\n<p><strong>Stage 3</strong> 1d4 Poison Damage damage, off-guard, and a -5-foot penalty to Speed (1 round)</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>From a distance, vishkanyas share more than a passing resemblance to humans. However, a closer inspection reveals ophidian eyes with gold or white coloring, a forked tongue, and tiny, smooth scales set in serpentine patterns atop their skin. Even so, most onlookers assume these features to be an indicator of tiefling heritage or draconic magic, never suspecting how truly unusual the subject of their speculation is.</p>\n<p>Among outsiders, little is known of the vishkanya ancestry other than that a vishkanya carries a potent venom within their blood and saliva, knowledge which has led to widespread fear and distrust. To avoid persecution, vishkanyas entrench themselves deep into their chosen societies and train in the arts of subtlety. Drawn to work that allows them to put their skills to good use, vishkanyas often take the roles of spy, mercenary, bodyguard, and even assassin. Some of the best-known guilds in the world employ vishkanyas, including the paired Assassins' Guild and Poisoners' Guild of Daggermark in the River Kingdoms, the implacable Red Mantis Assassins, and the famed Grand Sarret academy for courtiers in the Impossible Kingdom of Jalmeray. In most cases, these employers know their employee's true identity, but not always.</p>\n<p>Due to the measures they must take to ensure their survival, vishkanyas don't congregate openly. Instead, they meet in secret, creating support networks and advisory bodies. Leading these gatherings are the most respected of vishkanya women, who work diligently to keep their ancestry and traditions alive. These underground communities are slow to spread, and leaving them means abandoning what little social and cultural support a vishkanya has. As a result, very few vishkanyas have emigrated from their Vudran homelands into the Inner Sea region or other lands.</p>",
-  "recallKnowledge": "Society, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Vishkanya Infiltrator",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Rare",
-      "Medium",
-      "Humanoid",
-      "Vishkanya"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 10,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Vishkanyan"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Kukri",
-        "quantity": 1,
-        "description": "<p>The blade of this foot-long knife curves inward and lacks a cross guard at the hilt.</p>",
-        "level": 0,
-        "price": "6 sp ",
-        "traits": [
-          "uncommon",
-          "agile",
-          "finesse",
-          "trip"
-        ]
-      },
-      {
-        "name": "Shuriken",
-        "quantity": 10,
-        "description": "<p>This \"throwing star\" is a small piece of flat metal with sharp edges, designed to be flung with a flick of the wrist.</p>",
-        "level": 0,
-        "price": "1 cp",
-        "traits": [
-          "uncommon",
-          "agile",
-          "monk",
-          "thrown"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Disguise Kit",
-        "quantity": 1,
-        "description": "<p>This small wooden box contains cosmetics, false facial hair, spirit gum, and a few simple wigs. You usually need a disguise kit to set up a disguise in order to Impersonate someone using the Deception skill. If you've crafted a large number of disguises, you can replenish your cosmetics supply with replacement cosmetics suitable for the type of your disguise kit.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Thieves' Tools",
-        "quantity": 1,
-        "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with Replacement Picks appropriate to your tools; this doesn't require using the Repair action.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 6,
-      "note": "(+8 vs. poisons)",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+2 to all saves vs. poison",
-    "hp": {
-      "value": 45,
-      "max": 45,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Kukri",
-        "bonus": 11,
-        "traits": [
-          "agile",
-          "finesse",
-          "trip"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Shuriken",
-        "bonus": 11,
-        "traits": [
-          "agile",
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Envenom",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Using either saliva or blood, the vishkanya applies vishkanyan venom to one weapon they're holding. To use their blood, they must be injured, or they can deal themselves 1 slashing damage as part of the action.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Flexible",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The vishkanya infiltrator is adept at dealing with tight situations. They have a +1 circumstance bonus to checks to Escape.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Proficient Poisoner",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The vishkanya infiltrator doesn't lose the poison on a weapon due to a critically failed Strike.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The vishkanya deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Vishkanyan Venom",
-        "actions": null,
-        "traits": [
-          "injury",
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude save</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage and Off-Guard (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">1d4</span> poison damage, off-guard, and a -5-foot penalty to Speed (1 round)</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>From a distance, vishkanyas share more than a passing resemblance to humans. However, a closer inspection reveals ophidian eyes with gold or white coloring, a forked tongue, and tiny, smooth scales set in serpentine patterns atop their skin. Even so, most onlookers assume these features to be an indicator of tiefling heritage or draconic magic, never suspecting how truly unusual the subject of their speculation is.</p>\n<p>Among outsiders, little is known of the vishkanya ancestry other than that a vishkanya carries a potent venom within their blood and saliva, knowledge which has led to widespread fear and distrust. To avoid persecution, vishkanyas entrench themselves deep into their chosen societies and train in the arts of subtlety. Drawn to work that allows them to put their skills to good use, vishkanyas often take the roles of spy, mercenary, bodyguard, and even assassin. Some of the best-known guilds in the world employ vishkanyas, including the paired Assassins' Guild and Poisoners' Guild of Daggermark in the River Kingdoms, the implacable Red Mantis Assassins, and the famed Grand Sarret academy for courtiers in the Impossible Kingdom of Jalmeray. In most cases, these employers know their employee's true identity, but not always.</p>\n<p>Due to the measures they must take to ensure their survival, vishkanyas don't congregate openly. Instead, they meet in secret, creating support networks and advisory bodies. Leading these gatherings are the most respected of vishkanya women, who work diligently to keep their ancestry and traditions alive. These underground communities are slow to spread, and leaving them means abandoning what little social and cultural support a vishkanya has. As a result, very few vishkanyas have emigrated from their Vudran homelands into the Inner Sea region or other lands.</p>",
-    "recallKnowledge": "Society, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 18"
 }

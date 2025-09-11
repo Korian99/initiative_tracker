@@ -9,19 +9,20 @@
   "type": "Creature",
   "level": 7,
   "traits": [
+    "Common",
     "Medium",
     "Amphibious",
     "Azarketi",
     "Humanoid"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [],
   "perception": {
     "value": 15,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common",
     "Alghollthu"
@@ -31,7 +32,7 @@
       "name": "athletics",
       "modifier": 15,
       "note": [
-        "to Swim <span class=\"roll\" onclick=\"roll(this)\">17</span>"
+        "to Swim 17"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -54,7 +55,7 @@
       "name": "stealth",
       "modifier": 15,
       "note": [
-        "underwater <span class=\"roll\" onclick=\"roll(this)\">17</span>"
+        "underwater 17"
       ],
       "usedAttribute": "dexterity",
       "modifications": []
@@ -98,7 +99,7 @@
       "quantity": 1,
       "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "thrown-20"
       ]
@@ -108,7 +109,7 @@
       "quantity": 1,
       "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
     },
     {
@@ -116,15 +117,7 @@
       "quantity": 1,
       "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
       "level": 0,
-      "price": "3 gp ",
-      "traits": []
-    },
-    {
-      "name": "Bolts",
-      "quantity": 20,
-      "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-      "level": 0,
-      "price": "1 sp ",
+      "price": "3 gp",
       "traits": []
     }
   ],
@@ -179,8 +172,31 @@
       "collapsed": false
     }
   ],
-  "speed": "25 ft,\nswim 25 ft,\n",
+  "speed": "25 ft, swim 25ft",
   "strikes": [
+    {
+      "type": "melee",
+      "name": "Trident",
+      "bonus": 18,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
     {
       "type": "melee",
       "name": "Trident",
@@ -208,31 +224,6 @@
     },
     {
       "type": "ranged",
-      "name": "Trident",
-      "bonus": 18,
-      "traits": [
-        "thrown-20"
-      ],
-      "damageRolls": [
-        {
-          "roll": "1d8+7",
-          "type": "piercing"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(1d8+7)*2",
-          "type": "piercing"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
-    },
-    {
-      "type": "ranged",
       "name": "Hand Crossbow",
       "bonus": 17,
       "traits": [
@@ -253,7 +244,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -263,285 +254,10 @@
       "name": "Aquatic Predator",
       "actions": null,
       "traits": [],
-      "description": "<p>An azarketi deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> additional damage on a successful weapon Strike while they are underwater.</p>",
+      "description": "<p>An azarketi deals 2d8 additional damage on a successful weapon Strike while they are underwater.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>The most ambitious and capable azarketis become tide tamers, learning how to speak with and train aquatic animals.</p>\n<hr />\n<p>Azarketis, also known as gillmen, can be found all over Golarion, with a particularly high concentration around Absalom and the Inner Sea. Descendants of the ancient Azlanti, the azarketis survived the cataclysm of Earthfall by fleeing into the ocean, where they were warped into amphibious forms by the alghollthu.</p>",
-  "recallKnowledge": "Society, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 15,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Azarketi Tide Tamer",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Medium",
-      "Amphibious",
-      "Azarketi",
-      "Humanoid"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common",
-      "Alghollthu"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 15,
-        "note": [
-          "to Swim <span class=\"roll\" onclick=\"roll(this)\">17</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 15,
-        "note": [
-          "underwater <span class=\"roll\" onclick=\"roll(this)\">17</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Underwater Lore",
-        "modifier": 11,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Trident",
-        "quantity": 1,
-        "description": "<p>This three-pronged, spear-like weapon typically has a 4-foot shaft. Like a spear, it can be wielded with one hand or thrown.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Hand Crossbow",
-        "quantity": 1,
-        "description": "<p>Sometimes referred to as an alley bow by rogues or ruffians, this small crossbow fires small bolts that are sometimes used to deliver poison to the target. It's small enough to be shot one-handed, but it still requires two hands to load.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Studded Leather Armor",
-        "quantity": 1,
-        "description": "<p>This leather armor is reinforced with metal studs and sometimes small metal plates, providing most of the flexibility of leather armor with more robust protection.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Bolts",
-        "quantity": 20,
-        "description": "<p>Shorter than traditional arrows but similar in construction, bolts are the ammunition used by crossbows.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 115,
-      "max": 115,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Hydration",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Azarketi must regularly submerge themselves in water to rehydrate their water-acclimated skin. After the first 24 hours outside of water, they gain a –1 status penalty to Fortitude saves as their skin cracks and their gills become painful. After 48 hours, they begin to suffocate until returned to water.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Speaker of the Oceans",
-        "actions": null,
-        "traits": [],
-        "description": "<p>An azarketi tide tamer can speak with animals that have the aquatic or amphibious trait.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "25 ft,\nswim 25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Trident",
-        "bonus": 18,
-        "traits": [
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Trident",
-        "bonus": 18,
-        "traits": [
-          "thrown-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Hand Crossbow",
-        "bonus": 17,
-        "traits": [
-          "range-increment-60",
-          "reload-1"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Aquatic Predator",
-        "actions": null,
-        "traits": [],
-        "description": "<p>An azarketi deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> additional damage on a successful weapon Strike while they are underwater.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>The most ambitious and capable azarketis become tide tamers, learning how to speak with and train aquatic animals.</p>\n<hr />\n<p>Azarketis, also known as gillmen, can be found all over Golarion, with a particularly high concentration around Absalom and the Inner Sea. Descendants of the ancient Azlanti, the azarketis survived the cataclysm of Earthfall by fleeing into the ocean, where they were warped into amphibious forms by the alghollthu.</p>",
-    "recallKnowledge": "Society, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 23"
 }

@@ -9,20 +9,22 @@
   "type": "Creature",
   "level": 9,
   "traits": [
-    "Huge",
+    "Common",
+    "huge",
     "Elemental",
     "Fire"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision",
+    "smoke vision"
+  ],
   "perception": {
     "value": 16,
-    "note": "darkvision",
+    "note": "Darkvision, smoke vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Pyric"
   ],
@@ -121,7 +123,7 @@
       "traits": [
         "fire"
       ],
-      "description": "<p>When the firewyrm dies, it explodes, dealing <span class=\"roll\" onclick=\"roll(this)\">6d6</span> fire damage to each creature in a 10 foot emanation (DC 28 basic Reflex save).</p>",
+      "description": "<p>When the firewyrm dies, it explodes, dealing 6d6 Fire Damage damage to each creature in a 10ft Emanation (Basic DC 28 Reflex Saving Throw save).</p>",
       "collapsed": false
     },
     {
@@ -131,11 +133,11 @@
         "aura",
         "fire"
       ],
-      "description": "<p>10 feet. <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage DC 25 basic Reflex save</p>",
+      "description": "<p>10 feet. 4d6 Fire Damage damage Basic DC 25 Reflex Saving Throw</p>",
       "collapsed": false
     }
   ],
-  "speed": "60 ft,\n",
+  "speed": "60 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -191,7 +193,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -204,226 +206,10 @@
         "fire",
         "primal"
       ],
-      "description": "<p>The firewyrm breathes a 30 foot cone of fire dealing <span class=\"roll\" onclick=\"roll(this)\">7d6</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">2d8</span> persistent plus fire damage to every creature within the cone (DC 28 basic Reflex save).</p>\n<p>The firewyrm can't Breathe Fire again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The firewyrm breathes a 30ft Cone of fire dealing 7d6 Fire Damage|options:area-damage] damage to every creature within the cone (Basic DC 28 Reflex Saving Throw save).</p>\n<p>The firewyrm can't Breathe Fire again for 1d4 rounds.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Firewyrms live in tubes of molten lava found throughout the Plane of Fire. These strange environments often connect to volcanoes on mortal worlds, giving firewyrms access to a wide variety of prey.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire. Although most fire elementals revel in the chance to experience new kinds of fires away from their home plane, even the most considerate fire elemental can be a danger to humanoids and their property.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 26",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 16,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Firewyrm",
-    "type": "Creature",
-    "level": 9,
-    "traits": [
-      "Huge",
-      "Elemental",
-      "Fire"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 16,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Pyric"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 20,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Smoke Vision",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The firewyrm ignores the Concealed condition from smoke.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 165,
-      "max": 165,
-      "note": "explosion",
-      "modifications": []
-    },
-    "immunities": [
-      "bleed",
-      "fire",
-      "paralyzed",
-      "poison",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "cold",
-        "value": 10
-      },
-      {
-        "exceptions": [],
-        "type": "water",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Explosion",
-        "actions": null,
-        "traits": [
-          "fire"
-        ],
-        "description": "<p>When the firewyrm dies, it explodes, dealing <span class=\"roll\" onclick=\"roll(this)\">6d6</span> fire damage to each creature in a 10 foot emanation (DC 28 basic Reflex save).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Intense Heat",
-        "actions": null,
-        "traits": [
-          "aura",
-          "fire"
-        ],
-        "description": "<p>10 feet. <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage DC 25 basic Reflex save</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "60 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 20,
-        "traits": [
-          "reach-15"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+11",
-            "type": "fire"
-          },
-          {
-            "roll": "2d8",
-            "type": "persistent fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+11)*2",
-            "type": "fire"
-          },
-          {
-            "roll": "(2d8)*2",
-            "type": "persistent fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Fire Mote",
-        "bonus": 20,
-        "traits": [
-          "range-increment-60"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+6",
-            "type": "fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+6)*2",
-            "type": "fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Breath Fire",
-        "actions": 2,
-        "traits": [
-          "fire",
-          "primal"
-        ],
-        "description": "<p>The firewyrm breathes a 30 foot cone of fire dealing <span class=\"roll\" onclick=\"roll(this)\">7d6</span> fire plus <span class=\"roll\" onclick=\"roll(this)\">2d8</span> persistent plus fire damage to every creature within the cone (DC 28 basic Reflex save).</p>\n<p>The firewyrm can't Breathe Fire again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Firewyrms live in tubes of molten lava found throughout the Plane of Fire. These strange environments often connect to volcanoes on mortal worlds, giving firewyrms access to a wide variety of prey.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire. Although most fire elementals revel in the chance to experience new kinds of fires away from their home plane, even the most considerate fire elemental can be a danger to humanoids and their property.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 26",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 26"
 }

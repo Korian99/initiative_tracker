@@ -16,13 +16,15 @@
     "Humanoid"
   ],
   "source": "Pathfinder Society Scenario #4-07: A Most Wondrous Exchange!",
+  "senses": [
+    "(+12 to find traps)"
+  ],
   "perception": {
     "value": 11,
-    "note": "",
+    "note": "(+12 to find traps)",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -101,7 +103,7 @@
       "quantity": 1,
       "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
       "level": 0,
-      "price": "14 gp ",
+      "price": "14 gp",
       "traits": [
         "deadly-d10",
         "propulsive"
@@ -112,7 +114,7 @@
       "quantity": 1,
       "description": "<p>A sap has a soft wrapping around a dense core, typically a leather sheath around a lead rod. Its head is wider than its grip to disperse the force of a blow, as the weapon's purpose is to knock out its victim rather than to draw blood.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "agile",
         "nonlethal"
@@ -123,7 +125,7 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -135,36 +137,16 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
       "name": "Thieves' Tools",
       "quantity": 1,
-      "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with Replacement Picks appropriate to your tools; this doesn't require using the Repair action.</p>",
+      "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @UUID[Compendium.pf2e.equipment-srd.Item.Thieves' Toolkit (Replacement Picks)]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>",
       "level": 0,
-      "price": "3 gp ",
+      "price": "3 gp",
       "traits": []
-    },
-    {
-      "name": "Arrows",
-      "quantity": 20,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
-      "traits": []
-    },
-    {
-      "name": "Darkvision Elixir (Lesser)",
-      "quantity": 1,
-      "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 10 minutes.</p>\n",
-      "level": 2,
-      "price": "6 gp ",
-      "traits": [
-        "alchemical",
-        "consumable",
-        "elixir"
-      ]
     }
   ],
   "generalAbilities": [],
@@ -204,6 +186,13 @@
   "weaknesses": [],
   "defensiveAbilities": [
     {
+      "name": "+1 Circumstance to All Saves vs. Traps",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    },
+    {
       "name": "Deny Advantage",
       "actions": null,
       "traits": [],
@@ -218,7 +207,7 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -291,7 +280,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d6+4)*2+1d10",
+          "roll": "(1d6+4)*2",
           "type": "piercing"
         }
       ],
@@ -314,7 +303,7 @@
       "name": "Sneak Attack",
       "actions": null,
       "traits": [],
-      "description": "<p>The thief deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
+      "description": "<p>The thief deals 1d6 extra precision damage to Off-Guard creatures.</p>",
       "collapsed": false
     },
     {
@@ -326,338 +315,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Burglars specialize in breaking and entering to rob homes and businesses. These criminals focus on gaining access to secure buildings and bypassing traps and other security measures while remaining undetected all the while.</p>\n<hr />\n<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
-  "recallKnowledge": "Society, DC: 22",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Bloody Barber Thief",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Evil",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder Society Scenario #4-07: A Most Wondrous Exchange!",
-    "perception": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "thievery",
-        "modifier": 13,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "Underworld Lore",
-        "modifier": 10,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Composite Shortbow",
-        "quantity": 1,
-        "description": "<p>This shortbow is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Its compact size and power make it a favorite of mounted archers. Any time an ability is specifically restricted to a shortbow, it also applies to composite shortbows unless otherwise stated.</p>",
-        "level": 0,
-        "price": "14 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive"
-        ]
-      },
-      {
-        "name": "Sap",
-        "quantity": 1,
-        "description": "<p>A sap has a soft wrapping around a dense core, typically a leather sheath around a lead rod. Its head is wider than its grip to disperse the force of a blow, as the weapon's purpose is to knock out its victim rather than to draw blood.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "agile",
-          "nonlethal"
-        ]
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Thieves' Tools",
-        "quantity": 1,
-        "description": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with Replacement Picks appropriate to your tools; this doesn't require using the Repair action.</p>",
-        "level": 0,
-        "price": "3 gp ",
-        "traits": []
-      },
-      {
-        "name": "Arrows",
-        "quantity": 20,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      },
-      {
-        "name": "Darkvision Elixir (Lesser)",
-        "quantity": 1,
-        "description": "<p><strong>Activate</strong> <img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> Interact</p>\n<p>After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for 10 minutes.</p>\n",
-        "level": 2,
-        "price": "6 gp ",
-        "traits": [
-          "alchemical",
-          "consumable",
-          "elixir"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "note": "23 vs. traps",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+1 circumstance to all saves vs. traps",
-    "hp": {
-      "value": 75,
-      "max": 75,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Deny Advantage",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The thief isn't off-guard to creatures of 5th level or lower that are Hidden, Undetected, flanking, or using Surprise Attack.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Nimble Dodge",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The thief is targeted with a melee or ranged attack by an attacker it can see.</p>\n<hr />\n<p><strong>Effect</strong> The thief gains a +2 circumstance bonus to AC against the triggering attack.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 14,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Sap",
-        "bonus": 11,
-        "traits": [
-          "agile",
-          "nonlethal"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Composite Shortbow",
-        "bonus": 14,
-        "traits": [
-          "deadly-d10",
-          "propulsive",
-          "range-increment-60",
-          "reload-0"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+4)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Mobility",
-        "actions": null,
-        "traits": [],
-        "description": "<p>When the thief Strides half their speed or less, that movement does not trigger reactions.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sneak Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The thief deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> extra precision damage to Off-Guard creatures.</p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Surprise Attack",
-        "actions": null,
-        "traits": [],
-        "description": "<p>On the first round of combat, if the thief rolls Deception or Stealth for initiative, creatures that haven't acted are Off-Guard to them.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Burglars specialize in breaking and entering to rob homes and businesses. These criminals focus on gaining access to secure buildings and bypassing traps and other security measures while remaining undetected all the while.</p>\n<hr />\n<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
-    "recallKnowledge": "Society, DC: 22",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 20"
 }

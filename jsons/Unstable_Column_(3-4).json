@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Unstable Column (3-4)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 2,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,39 +17,54 @@
   "source": "Pathfinder Society Special #3-98: Expedition Into Pallid Peril",
   "stealth": {
     "value": 10,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>Plaster crumbles from this column moments before it collapses.</p>",
-  "disable": "<p>DC 18 Crafting check (trained) to stabilize the column, DC 21 Athletics check to push the column back into place</p>",
+  "disable": "<p>DC 18 Crafting  (trained) to stabilize the column, DC 21 Athletics  to push the column back into place</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Collapse",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature steps on the tiles adjacent to the column</p>\n<hr />\n<p><strong>Effect</strong> The column collapses. The triggering creature must attempt a Basic DC 18 Reflex Saving Throw save as debris falls on them, which deals (2d10+7) Bludgeoning Damage damage. The area adjacent to the collapsed column becomes difficult terrain.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 18,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 7
   },
   "fortitude": {
     "value": 12,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 5,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 30,
     "max": 30,
-    "note": "<b>Hardness</b> 7 <b>BT</b> 15. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
@@ -58,90 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Collapse",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature steps on the tiles adjacent to the column</p>\n<hr />\n<p><strong>Effect</strong> The column collapses. The triggering creature must attempt a DC 18 basic Reflex save as debris falls on them, which deals <span class=\"roll\" onclick=\"roll(this)\">2d10+7</span> bludgeoning damage. The area adjacent to the collapsed column becomes difficult terrain.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Unstable Column (3-4)",
-    "type": "hazard",
-    "level": 2,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Special #3-98: Expedition Into Pallid Peril",
-    "stealth": {
-      "value": 10,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>Plaster crumbles from this column moments before it collapses.</p>",
-    "disable": "<p>DC 18 Crafting check (trained) to stabilize the column, DC 21 Athletics check to push the column back into place</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 5,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 30,
-      "max": 30,
-      "note": "<b>Hardness</b> 7 <b>BT</b> 15. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Collapse",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature steps on the tiles adjacent to the column</p>\n<hr />\n<p><strong>Effect</strong> The column collapses. The triggering creature must attempt a DC 18 basic Reflex save as debris falls on them, which deals <span class=\"roll\" onclick=\"roll(this)\">2d10+7</span> bludgeoning damage. The area adjacent to the collapsed column becomes difficult terrain.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 16"
-  },
-  "recallKnowledge": ", DC: 16"
+  "recallKnowledge": ", DC 16"
 }

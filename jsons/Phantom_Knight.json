@@ -17,15 +17,15 @@
     "Spirit"
   ],
   "source": "Pathfinder Monster Core",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 13,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common"
   ],
@@ -128,7 +128,7 @@
       "collapsed": false
     }
   ],
-  "speed": "0 ft,\nfly 25 ft,\n",
+  "speed": "0 ft, fly 25ft",
   "strikes": [
     {
       "type": "melee",
@@ -175,13 +175,13 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d8+5)*2+1d10",
+          "roll": "(1d8+5)*2",
           "type": "piercing"
         }
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -198,210 +198,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Cavaliers and knights who died for their cause make for particularly strongwilled phantoms. Though their motives vary, these phantoms often seek to continue their lifelong missions even in their purgatorial states, and their strong forces of will make them formidable fighters in spite of their incorporeality. A phantom knight might strive to find living followers of their church or order, or seek out other mortals they knew in life as a way of staying grounded and avoiding the corruption of undeath.</p>\n<hr />\n<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest—Heaven, Hell, Abaddon, and so forth—where it becomes a shade.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like daemons or hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath—at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves—one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must find a way back into the River of Souls. Such a quest is no easy feat, however—the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
-  "recallKnowledge": "Occultism, DC: 21",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Phantom Knight",
-    "type": "Creature",
-    "level": 4,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Ethereal",
-      "Incorporeal",
-      "Phantom",
-      "Spirit"
-    ],
-    "source": "Pathfinder Monster Core",
-    "perception": {
-      "value": 13,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "intimidation",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": -5
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 0
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Walk the Ethereal Line",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The phantom walks the thin line between the Ethereal Plane and the Universe in order to exist on both planes simultaneously.</p>\n<p>They can shift back to solely the Ethereal Plane by using this ability again.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "-1 status to all saves vs. death effects",
-    "hp": {
-      "value": 45,
-      "max": 45,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "disease",
-      "paralyzed",
-      "poison",
-      "precision",
-      "bleed"
-    ],
-    "resistances": [
-      {
-        "doubleVs": [
-          "non-magical"
-        ],
-        "exceptions": [
-          "force",
-          "ghost-touch",
-          "spirit"
-        ],
-        "type": "all-damage",
-        "value": 3
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Susceptible to Death",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Though phantoms aren't alive, neither are they undead, and they are uniquely vulnerable to the effects of death.</p>\n<p>A phantom whose Hit Points are reduced to 0 as a result of a death effect (such as from a spell like Execute) is immediately whisked away to the River of Souls, where their soul resumes the usual path to the afterlife.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "0 ft,\nfly 25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Phantom Sword",
-        "bonus": 14,
-        "traits": [
-          "finesse",
-          "magical",
-          "versatile-p"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+7",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+7)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Phantom Bow",
-        "bonus": 14,
-        "traits": [
-          "deadly-d10",
-          "magical",
-          "range-increment-120",
-          "volley-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+5",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+5)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Phantom Touch",
-        "actions": null,
-        "traits": [
-          "spirit"
-        ],
-        "description": "<p>Each time they make a Strike, a phantom can choose to deal spirit damage instead of the normal physical damage type.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Cavaliers and knights who died for their cause make for particularly strongwilled phantoms. Though their motives vary, these phantoms often seek to continue their lifelong missions even in their purgatorial states, and their strong forces of will make them formidable fighters in spite of their incorporeality. A phantom knight might strive to find living followers of their church or order, or seek out other mortals they knew in life as a way of staying grounded and avoiding the corruption of undeath.</p>\n<hr />\n<p>The typical trajectory for souls passing to the afterlife is fairly straightforward, according to most theologians. When a mortal dies, their soul enters the River of Souls and eventually reaches the Boneyard, where it is judged by Pharasma. The judged soul moves onto its appropriate domain of final rest—Heaven, Hell, Abaddon, and so forth—where it becomes a shade.</p>\n<p>Complications arise, however, when a soul in queue for judgment prematurely departs from the River of Souls and is shunted into the Ethereal Plane. Whether as a result of nefarious interlopers like daemons or hags, malignant planar magic, or even fate, these souls become dislodged from the natural order of life and death and linger in a sort of purgatory. Unlike petitioners, these ethereal phantoms retain memories of their life before death, and unlike spirits such as ghosts, phantoms aren't tinged with the foul influences of undeath—at least, not at first, though the threat of corruption hangs heavy over a phantom's existence. Some eventually succumb to that fate, while others eventually rejoin the River of Souls. Until then, these wandering souls are a kind unto themselves—one without a true home, agenda, or purpose.</p>\n<p>Many phantoms have no desire to remain in their strange state of purgatory, either because they seek to continue their journey through the River of Souls or because they fear the corruption of undeath. In order to complete the natural spiritual cycle and become judged so they can continue to the afterlife, a phantom must find a way back into the River of Souls. Such a quest is no easy feat, however—the hazy mists of the Ethereal Plane can befuddle even the most experienced traveler, and numerous predators prowl the realm in search of stray souls to bind or devour.</p>",
-    "recallKnowledge": "Occultism, DC: 21",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Occultism or Occultism, DC 19"
 }

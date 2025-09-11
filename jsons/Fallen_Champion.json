@@ -13,19 +13,18 @@
     "Medium",
     "Evil",
     "Undead",
-    "Unholy",
-    "(caster)"
+    "Unholy"
   ],
   "source": "Pathfinder Book of the Dead",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 17,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril"
@@ -91,7 +90,7 @@
       "quantity": 1,
       "description": "<p>This medium-length sword has a wide blade and long grip. Though it is typically used to hack through heavy foliage, the machete can also be used as a deadly weapon.</p>",
       "level": 0,
-      "price": "7 sp ",
+      "price": "7 sp",
       "traits": [
         "deadly-d8",
         "sweep"
@@ -102,7 +101,7 @@
       "quantity": 1,
       "description": "<p>Scale mail consists of many metal scales sewn onto a reinforced leather backing, often in the form of a long shirt that protects the torso, arms, and legs.</p>",
       "level": 0,
-      "price": "4 gp ",
+      "price": "4 gp",
       "traits": []
     },
     {
@@ -110,7 +109,7 @@
       "quantity": 1,
       "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": []
     }
   ],
@@ -173,8 +172,8 @@
       "name": "Attack of Opportunity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Final Blasphemy",
@@ -183,18 +182,25 @@
         "divine",
         "void"
       ],
-      "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 4th-rank, 3-action Harm spell (DC 26 basic Fortitude save). The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>",
+      "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 4th-rank, 3-action Harm spell (Basic DC 26 Fortitude Saving Throw). The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>",
       "collapsed": false
     },
     {
       "name": "Shield Block",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -213,12 +219,12 @@
       ],
       "critRolls": [
         {
-          "roll": "(2d6+11)*2+1d8",
+          "roll": "(2d6+11)*2",
           "type": "slashing"
         }
       ],
       "effects": [
-        "Heretics-smite"
+        "heretics-smite"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -242,7 +248,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p>While wielding the favored weapon of its former deity (such as a machete for an ex-Kazutal herexen), the herexen's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> spirit damage against creatures that can cast divine spells. This damages divine spellcasters who follow the herexen's former faith regardless of their alignment.</p>",
+      "description": "<p>While wielding the favored weapon of its former deity (such as a machete for an ex-Kazutal herexen), the herexen's Strikes deal an additional 2d6 Spirit Damage damage against creatures that can cast divine spells. This damages divine spellcasters who follow the herexen's former faith regardless of their alignment.</p>",
       "collapsed": false
     },
     {
@@ -251,7 +257,7 @@
       "traits": [
         "divine"
       ],
-      "description": "<p><strong>Requirements</strong> The fallen champion's last action was a Strike that dealt damage to a living creature</p>\n<hr />\n<p><strong>Effect</strong> The fallen champion saps the hope and faith from that creature. It takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage with a DC 25 basic Will save. Regardless of the result of the save, the creature becomes Frightened 1 or increases the value of its frightened condition by 1.</p>",
+      "description": "<p><strong>Requirements</strong> The fallen champion's last action was a Strike that dealt damage to a living creature</p>\n<hr />\n<p><strong>Effect</strong> The fallen champion saps the hope and faith from that creature. It takes 3d6 Void Damage damage with a Basic DC 25 Will Saving Throw. Regardless of the result of the save, the creature becomes Frightened 1 or increases the value of its frightened condition by 1.</p>",
       "collapsed": false
     }
   ],
@@ -267,11 +273,6 @@
       },
       "autoHeightenLevel": 4,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "t31wSSg27UyZRToz",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -280,16 +281,19 @@
           "name": "Harm",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 2,
           "traits": [
-            "manipulate"
+            "manipulate",
+            "void"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -301,16 +305,19 @@
           "name": "Harm",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 4,
+          "timesPrepared": 2,
           "traits": [
-            "manipulate"
+            "manipulate",
+            "void"
           ],
           "castingTime": "1 to 3",
           "duration": "",
           "range": "varies",
           "area": "",
           "targets": "1 living creature or 1 willing undead creature",
-          "save": "basic fortitude",
-          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
+          "save": "Basic fortitude",
+          "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -325,6 +332,7 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -372,29 +380,23 @@
       "bonus": 17,
       "dc": 25,
       "focusPoints": {
-        "current": 2,
-        "max": 2
+        "current": 0,
+        "max": 0
       },
-      "autoHeightenLevel": 4,
+      "autoHeightenLevel": 1,
       "cantrips": [],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "JLuKV6PpCsAJSsQD",
-      "modifications": [],
-      "lv1spells": [],
-      "lv2spells": [],
-      "lv3spells": [],
-      "lv4spells": [
+      "lv1spells": [
         {
           "name": "Touch of Corruption",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "champion",
             "focus",
-            "manipulate"
+            "manipulate",
+            "void"
           ],
           "castingTime": "1",
           "duration": "",
@@ -402,7 +404,7 @@
           "area": "",
           "targets": "1 willing undead creature or 1 living creature",
           "save": "",
-          "description": "<p>You infuse the target with void energy. If the target is living, this deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (basic Fortitude save); on a failed save, the target also takes a –2 status penalty to AC for 1 round.</p>\n\n<p>If the target is a willing undead creature, the target instead regains 6 Hit Points, and if you are the undead target, you also gain a +2 status bonus to damage rolls for 1 round.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage dealt to a living creature by <span class=\"roll\" onclick=\"roll(this)\">1d6</span> or increase the Hit Points regained by undead by 6.</p>",
+          "description": "<p>You infuse the target with void energy. If the target is living, this deals 1d6 void damage (basic Fortitude save); on a failed save, the target also takes a –2 status penalty to AC for 1 round.</p>\n<p>{Spell Effect: Touch of Corruption}</p>\n<p>If the target is a willing undead creature, the target instead regains 6 Hit Points, and if you are the undead target, you also gain a +2 status bonus to damage rolls for 1 round.</p>\n<p>{Spell Effect: Touch of Corruption (Healing)}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage dealt to a living creature by 1d6 or increase the Hit Points regained by undead by 6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -414,10 +416,12 @@
           "name": "Unimpeded Stride",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
             "cleric",
-            "focus"
+            "focus",
+            "manipulate"
           ],
           "castingTime": "1",
           "duration": "",
@@ -434,12 +438,16 @@
           "id": "x0PfKsvU1a1nfX5q"
         }
       ],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
       "lv5spells": [],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -482,494 +490,5 @@
       }
     }
   ],
-  "description": "<p>While most herexens were clerics or clergy in life, fallen champions were holy crusaders that upheld the ideals of their deity while fighting enemies of the church and defending its congregants. Fallen champions are direct in their actions and wage their divine war on a grand scale. This fallen champion once worshiped the Arcadian goddess @UUID[Compendium.pf2e.deities.Item.Kazutal], also called Mother Jaguar.</p>\n<hr />\n<p>A herexen is an undead heretic, driven by hate to destroy the deity they once served. Herexens choose their faith willingly in life, rising to become respected religious figures within their church. Shortly before or during their death, they lose faith in their chosen deity so completely they become a full heretic, blaspheming, committing atrocities, and cursing their god. These anathemic acts bind their soul to their flesh, causing them to rise as cursed beings. To a herexen, faith is the ultimate lie.</p>\n<p>Although the circumstances that drive a pious worshipper to break with their faith are varied, herexens are unified in purpose. Herexens spend their existence fighting their former god in every manner they can, destroying iconography and temples, slaying worshippers, banding together with other herexens who oppose the same deity, conscripting lesser undead, and hiring living proxies to wreak havoc or spread misinformation. A particularly motivated herexen may even plot to kill or unseat the deity they once revered. Curiously, herexens maintain a corrupted form of their divine powers after death, wielding the weapons and magic of their past faith to tear it down.</p>",
-  "recallKnowledge": "Religion, DC: 26",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 17,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Fallen Champion",
-    "type": "Creature",
-    "level": 8,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Evil",
-      "Undead",
-      "Unholy",
-      "(caster)"
-    ],
-    "source": "Pathfinder Book of the Dead",
-    "perception": {
-      "value": 17,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 19,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Kazutal Lore",
-        "modifier": 16,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": 2
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 5
-    },
-    "items": [
-      {
-        "name": "Machete",
-        "quantity": 1,
-        "description": "<p>This medium-length sword has a wide blade and long grip. Though it is typically used to hack through heavy foliage, the machete can also be used as a deadly weapon.</p>",
-        "level": 0,
-        "price": "7 sp ",
-        "traits": [
-          "deadly-d8",
-          "sweep"
-        ]
-      },
-      {
-        "name": "Scale Mail",
-        "quantity": 1,
-        "description": "<p>Scale mail consists of many metal scales sewn onto a reinforced leather backing, often in the form of a long shirt that protects the torso, arms, and legs.</p>",
-        "level": 0,
-        "price": "4 gp ",
-        "traits": []
-      },
-      {
-        "name": "Defiled Religious Symbol of Kazutal",
-        "quantity": 1,
-        "description": "<p>This piece of wood or silver is emblazoned with an image representing a deity. Some divine spellcasters, such as clerics, can use a religious symbol of their deity as a divine focus to use certain abilities and cast some spells. A religious symbol must be held in one hand to use it.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 28,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 130,
-      "max": 130,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "unconscious"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Agent of Despair",
-        "actions": null,
-        "traits": [
-          "aura",
-          "divine",
-          "emotion",
-          "fear",
-          "mental"
-        ],
-        "description": "<p>15 feet. A fallen champion emanates an aura of utter despair. Living creatures are Frightened 1 while in a fallen champion's aura. They can't naturally recover from this fear while in the area but recover instantly once they leave the aura.</p>\n<p>Effect: Despair</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Final Blasphemy",
-        "actions": null,
-        "traits": [
-          "divine",
-          "void"
-        ],
-        "description": "<p>When the herexen is destroyed, it explodes in a wave of void energy with the effects of a 4th-rank, 3-action Harm spell (DC 26 basic Fortitude save). The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Shield Block",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> The monster has its shield raised and takes damage from a physical attack.</p>\n<hr />\n<p><strong>Effect</strong> The monster snaps its shield into place to deflect a blow. The shield prevents the monster from taking an amount of damage up to the shield's Hardness. The monster and the shield each take any remaining damage, possibly breaking or destroying the shield.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Machete",
-        "bonus": 20,
-        "traits": [
-          "deadly-d8",
-          "magical",
-          "sweep"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+11",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+11)*2+1d8",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Heretics-smite"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Heretic's Armaments",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>While the fallen champion wields the favored weapon of its former deity, that weapon gains the effect of a <em>Fearsome</em> property rune.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Heretic's Smite",
-        "actions": null,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p>While wielding the favored weapon of its former deity (such as a machete for an ex-Kazutal herexen), the herexen's Strikes deal an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> spirit damage against creatures that can cast divine spells. This damages divine spellcasters who follow the herexen's former faith regardless of their alignment.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Reap Faith",
-        "actions": 1,
-        "traits": [
-          "divine"
-        ],
-        "description": "<p><strong>Requirements</strong> The fallen champion's last action was a Strike that dealt damage to a living creature</p>\n<hr />\n<p><strong>Effect</strong> The fallen champion saps the hope and faith from that creature. It takes <span class=\"roll\" onclick=\"roll(this)\">3d6</span> void damage with a DC 25 basic Will save. Regardless of the result of the save, the creature becomes Frightened 1 or increases the value of its frightened condition by 1.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Innate Spells",
-        "type": "innate",
-        "bonus": 17,
-        "dc": 25,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "t31wSSg27UyZRToz",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "3b6xE6XqWVOif2Dr"
-          },
-          {
-            "name": "Harm",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 living creature or 1 willing undead creature",
-            "save": "basic fortitude",
-            "description": "<p>You channel void energy to harm the living or heal the undead. If the target is a living creature, you deal <span class=\"roll\" onclick=\"roll(this)\">1d8</span> void damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(material, verbal, somatic)</strong> You disperse void energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "3b6xE6XqWVOif2Dr"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      },
-      {
-        "name": "Champion Devotion Spells",
-        "type": "focus",
-        "bonus": 17,
-        "dc": 25,
-        "focusPoints": {
-          "current": 2,
-          "max": 2
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "JLuKV6PpCsAJSsQD",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Touch of Corruption",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "champion",
-              "focus",
-              "manipulate"
-            ],
-            "castingTime": "1",
-            "duration": "",
-            "range": "touch",
-            "area": "",
-            "targets": "1 willing undead creature or 1 living creature",
-            "save": "",
-            "description": "<p>You infuse the target with void energy. If the target is living, this deals <span class=\"roll\" onclick=\"roll(this)\">1d6</span> void damage (basic Fortitude save); on a failed save, the target also takes a –2 status penalty to AC for 1 round.</p>\n\n<p>If the target is a willing undead creature, the target instead regains 6 Hit Points, and if you are the undead target, you also gain a +2 status bonus to damage rolls for 1 round.</p>\n\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage dealt to a living creature by <span class=\"roll\" onclick=\"roll(this)\">1d6</span> or increase the Hit Points regained by undead by 6.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "3oEOytO9vcY39XaY"
-          },
-          {
-            "name": "Unimpeded Stride",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "uncommon",
-              "cleric",
-              "focus"
-            ],
-            "castingTime": "1",
-            "duration": "",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Nothing can hold you in place. You immediately escape from every magical effect that has you Immobilized or Grabbed unless the effect is of a higher rank than your <em>unimpeded stride</em> spell. You then Stride. During this movement, you ignore difficult terrain and any circumstance or status penalties to your Speed.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "x0PfKsvU1a1nfX5q"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>While most herexens were clerics or clergy in life, fallen champions were holy crusaders that upheld the ideals of their deity while fighting enemies of the church and defending its congregants. Fallen champions are direct in their actions and wage their divine war on a grand scale. This fallen champion once worshiped the Arcadian goddess @UUID[Compendium.pf2e.deities.Item.Kazutal], also called Mother Jaguar.</p>\n<hr />\n<p>A herexen is an undead heretic, driven by hate to destroy the deity they once served. Herexens choose their faith willingly in life, rising to become respected religious figures within their church. Shortly before or during their death, they lose faith in their chosen deity so completely they become a full heretic, blaspheming, committing atrocities, and cursing their god. These anathemic acts bind their soul to their flesh, causing them to rise as cursed beings. To a herexen, faith is the ultimate lie.</p>\n<p>Although the circumstances that drive a pious worshipper to break with their faith are varied, herexens are unified in purpose. Herexens spend their existence fighting their former god in every manner they can, destroying iconography and temples, slaying worshippers, banding together with other herexens who oppose the same deity, conscripting lesser undead, and hiring living proxies to wreak havoc or spread misinformation. A particularly motivated herexen may even plot to kill or unseat the deity they once revered. Curiously, herexens maintain a corrupted form of their divine powers after death, wielding the weapons and magic of their past faith to tear it down.</p>",
-    "recallKnowledge": "Religion, DC: 26",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 24"
 }

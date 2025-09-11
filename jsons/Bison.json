@@ -9,19 +9,20 @@
   "type": "Creature",
   "level": 4,
   "traits": [
+    "Common",
     "Large",
     "Animal"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Scent 60ft imprecise"
+  ],
   "perception": {
     "value": 8,
-    "note": "scent 60 ft imprecise",
+    "note": "Scent 60ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "scent 60 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -102,7 +103,7 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -147,7 +148,7 @@
         }
       ],
       "effects": [
-        "Knockdown"
+        "knockdown"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -167,189 +168,17 @@
       "name": "Rolling Thunder",
       "actions": 3,
       "traits": [],
-      "description": "<p>The bison kicks up dust and shakes the ground as it charges.</p>\n<p>The stampeding bison Strides up to twice its Speed in a straight line, dealing <span class=\"roll\" onclick=\"roll(this)\">4d6+6</span> bludgeoning damage (DC 21 basic Reflex save) to any Medium or smaller creature in its path.</p>\n<p>Multiple bison can participate in Rolling Thunder by spending this ability's actions and waiting to charge until the herd is ready. Before the beginning of their next turn, they can then charge as a reaction triggered by an adjacent bison beginning its Rolling Thunder charge. All bison in the combined charge must charge in parallel lines, so the areas can't overlap. The combined charge deals an additional <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage to creatures in the area, and a creature that fails the Reflex saving throw is also knocked Prone.</p>",
+      "description": "<p>The bison kicks up dust and shakes the ground as it charges.</p>\n<p>The stampeding bison Strides up to twice its Speed in a straight line, dealing (4d6+6) Bludgeoning Damage damage (Basic DC 21 Reflex Saving Throw save) to any Medium or smaller creature in its path.</p>\n<p>Multiple bison can participate in Rolling Thunder by spending this ability's actions and waiting to charge until the herd is ready. Before the beginning of their next turn, they can then charge as a reaction triggered by an adjacent bison beginning its Rolling Thunder charge. All bison in the combined charge must charge in parallel lines, so the areas can't overlap. The combined charge deals an additional 3d6 Bludgeoning Damage damage to creatures in the area, and a creature that fails the Reflex saving throw is also knocked Prone.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Bison are large bovines with short faces and two horns; they weigh an upwards1 of 2,000 pounds and stand up to 6 feet at the withers. Bison herds thunder across the grassy plains of Golarion, shaking the earth. They're a common sight along the Whistling Plains east of Taldor and the wide grasslands of the nation of Karazh in Casmaron; they also frequently appear in the cooler northeastern reaches of Avistan, the River Kingdoms through Numeria, and the Realm of the Mammoth Lords and western Sarkoris.</p>\n<p>Communal by nature, bison gather in large numbers for the summer mating season before the bulls split off to wander the prairie grasses. Bison have adapted well to harsh prairie winters, as their shaggy fur, which grows thicker in winter, insulates them; in the face of blizzards, they survive by facing steadfastly into the howling winds and hunkering down to reduce their exposure.</p>\n<p>The way that bison wallow in dirt or rub against large stones might make it easy to mistake their docile nature for passivity. However, this presumption has been the ruin of many hunting parties. Their plentiful meat and thick furs make bison an appealing bounty, but with the ground thundering beneath them, bison can quickly overpower inexperienced hunters unprepared for a stampeding herd. These hunting parties sometimes hire particularly daring adventures, who can add their spells, steel, and expertise to ensure a successful hunt.</p>\n<p>While the bison of the plains are the best known and most numerous, they have cousins both in thick boreal forests and along wide, open steppes. These bison variants stand taller but can't match the speed and aggression of their smaller plains relatives.</p>",
-  "recallKnowledge": "Nature, DC: 19",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Bison",
-    "type": "Creature",
-    "level": 4,
-    "traits": [
-      "Large",
-      "Animal"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 8,
-      "note": "scent 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "scent 60 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 5
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 70,
-      "max": 70,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Cold Adaptation",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The bison reduces the effects it suffers from cold environments by one step.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Hoof",
-        "bonus": 12,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "2d6+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Horn",
-        "bonus": 12,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+6",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+6)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Pointed Charge",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The bison surges forward at its foe, horns lowered. It Strides twice. If the bison ends its movement within melee range of an enemy, it makes a horn Strike against that enemy. This Strike gains the fatal d12 trait.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Rolling Thunder",
-        "actions": 3,
-        "traits": [],
-        "description": "<p>The bison kicks up dust and shakes the ground as it charges.</p>\n<p>The stampeding bison Strides up to twice its Speed in a straight line, dealing <span class=\"roll\" onclick=\"roll(this)\">4d6+6</span> bludgeoning damage (DC 21 basic Reflex save) to any Medium or smaller creature in its path.</p>\n<p>Multiple bison can participate in Rolling Thunder by spending this ability's actions and waiting to charge until the herd is ready. Before the beginning of their next turn, they can then charge as a reaction triggered by an adjacent bison beginning its Rolling Thunder charge. All bison in the combined charge must charge in parallel lines, so the areas can't overlap. The combined charge deals an additional <span class=\"roll\" onclick=\"roll(this)\">3d6</span> bludgeoning damage to creatures in the area, and a creature that fails the Reflex saving throw is also knocked Prone.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Bison are large bovines with short faces and two horns; they weigh an upwards1 of 2,000 pounds and stand up to 6 feet at the withers. Bison herds thunder across the grassy plains of Golarion, shaking the earth. They're a common sight along the Whistling Plains east of Taldor and the wide grasslands of the nation of Karazh in Casmaron; they also frequently appear in the cooler northeastern reaches of Avistan, the River Kingdoms through Numeria, and the Realm of the Mammoth Lords and western Sarkoris.</p>\n<p>Communal by nature, bison gather in large numbers for the summer mating season before the bulls split off to wander the prairie grasses. Bison have adapted well to harsh prairie winters, as their shaggy fur, which grows thicker in winter, insulates them; in the face of blizzards, they survive by facing steadfastly into the howling winds and hunkering down to reduce their exposure.</p>\n<p>The way that bison wallow in dirt or rub against large stones might make it easy to mistake their docile nature for passivity. However, this presumption has been the ruin of many hunting parties. Their plentiful meat and thick furs make bison an appealing bounty, but with the ground thundering beneath them, bison can quickly overpower inexperienced hunters unprepared for a stampeding herd. These hunting parties sometimes hire particularly daring adventures, who can add their spells, steel, and expertise to ensure a successful hunt.</p>\n<p>While the bison of the plains are the best known and most numerous, they have cousins both in thick boreal forests and along wide, open steppes. These bison variants stand taller but can't match the speed and aggression of their smaller plains relatives.</p>",
-    "recallKnowledge": "Nature, DC: 19",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 19"
 }

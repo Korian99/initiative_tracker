@@ -9,21 +9,22 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Small",
     "Beast",
     "Evil"
   ],
   "source": "Pathfinder #166: Despair on Danger Island",
+  "senses": [
+    "Darkvision",
+    "Scent 30ft imprecise"
+  ],
   "perception": {
     "value": 12,
-    "note": "darkvisionscent 30 ft imprecise",
+    "note": "Darkvision, Scent 30ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 30 ft imprecise"
-  ],
   "languages": [
     "Common",
     "(can't speak any language)"
@@ -78,7 +79,7 @@
         "aura",
         "olfactory"
       ],
-      "description": "<p>30 feet. A creature that enters the emanation must attempt a DC 19 Fortitude save. On a failure, the creature is Sickened 1, or Sickened 2 on a critical failure. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is immune to all sigbins' stenches for 1 minute.</p>",
+      "description": "<p>30 feet. A creature that enters the emanation must attempt a DC 19 Fortitude Saving Throw save. On a failure, the creature is Sickened 1, or Sickened 2 on a critical failure. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is immune to all sigbins' stenches for 1 minute.</p>",
       "collapsed": false
     },
     {
@@ -124,7 +125,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -199,7 +200,7 @@
         }
       ],
       "effects": [
-        "Knockdown"
+        "knockdown"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -214,232 +215,15 @@
       "traits": [],
       "description": "<p><strong>Requirements</strong> The sigbin is Unnoticed by its target.</p>\n<hr />\n<p><strong>Effect</strong> The sigbin makes a fangs Strike (unlike other Strikes, this does not end its invisibility if the sigbin is invisible). On a hit, the target takes nonlethal damage from the Strike and becomes Drained 1 (Drained 2 on a critical hit). The sigbin gains 15 temporary Hit Points that remain for 1 hour.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Resembling hornless goats with extremely long tails, sigbins live in forests and prey on inhabitants of nearby humanoid villages. Sigbins drink the blood of their victims by biting into their shadows, rather than their flesh. This process typically leaves the victim so fatigued that they must lie down to rest, at which point the sigbin finishes the job by sinking their jaws into the person's chest and consuming their heart.</p>\n<p>Due to their nauseating smell, many sigbins hide among livestock and in other overwhelmingly odorous places. Sigbins have the ability to hide in plain sight simply by standing stock still, but this power works only against adults and elders; for whatever reason, children and young animals can see the invisible sigbins. Many believe this is because children are unsullied by the cruel ways of the world, and so their eyes are still innocent enough to spot the devious beasts. Unfortunately, most adults tend to ignore children's cries about the monsters, chalking up such claims to overactive imaginations or attention-seeking behavior, inadvertently allowing sigbins to continue their hunts uninterrupted.</p>",
-  "recallKnowledge": "Arcana, Nature, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 12,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Sigbin",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Small",
-      "Beast",
-      "Evil"
-    ],
-    "source": "Pathfinder #166: Despair on Danger Island",
-    "perception": {
-      "value": 12,
-      "note": "darkvisionscent 30 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 30 ft imprecise"
-    ],
-    "languages": [
-      "Common",
-      "(can't speak any language)"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Stench",
-        "actions": null,
-        "traits": [
-          "aura",
-          "olfactory"
-        ],
-        "description": "<p>30 feet. A creature that enters the emanation must attempt a DC 19 Fortitude save. On a failure, the creature is Sickened 1, or Sickened 2 on a critical failure. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is immune to all sigbins' stenches for 1 minute.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Unassuming Cloak",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A sigbin becomes almost imperceptible if it stands completely still. If the sigbin does not move or attack during its turn, it becomes Invisible. It remains invisible until it moves or takes a hostile action. Children and young creatures, like animal cubs, can see the sigbin normally, even while it's invisible.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 21,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 75,
-      "max": 75,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Claws",
-        "bonus": 14,
-        "traits": [
-          "agile",
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+5",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+5)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fangs",
-        "bonus": 14,
-        "traits": [
-          "finesse"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+5",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+5)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 12,
-        "traits": [
-          "agile",
-          "finesse",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+5",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+5)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Shadow Drain",
-        "actions": 2,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> The sigbin is Unnoticed by its target.</p>\n<hr />\n<p><strong>Effect</strong> The sigbin makes a fangs Strike (unlike other Strikes, this does not end its invisibility if the sigbin is invisible). On a hit, the target takes nonlethal damage from the Strike and becomes Drained 1 (Drained 2 on a critical hit). The sigbin gains 15 temporary Hit Points that remain for 1 hour.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Resembling hornless goats with extremely long tails, sigbins live in forests and prey on inhabitants of nearby humanoid villages. Sigbins drink the blood of their victims by biting into their shadows, rather than their flesh. This process typically leaves the victim so fatigued that they must lie down to rest, at which point the sigbin finishes the job by sinking their jaws into the person's chest and consuming their heart.</p>\n<p>Due to their nauseating smell, many sigbins hide among livestock and in other overwhelmingly odorous places. Sigbins have the ability to hide in plain sight simply by standing stock still, but this power works only against adults and elders; for whatever reason, children and young animals can see the invisible sigbins. Many believe this is because children are unsullied by the cruel ways of the world, and so their eyes are still innocent enough to spot the devious beasts. Unfortunately, most adults tend to ignore children's cries about the monsters, chalking up such claims to overactive imaginations or attention-seeking behavior, inadvertently allowing sigbins to continue their hunts uninterrupted.</p>",
-    "recallKnowledge": "Arcana, Nature, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Nature, DC 20"
 }

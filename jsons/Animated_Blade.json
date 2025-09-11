@@ -10,20 +10,20 @@
   "level": -1,
   "traits": [
     "Uncommon",
-    "Tiny",
+    "tiny",
     "Construct",
     "Mindless"
   ],
   "source": "Pathfinder #175: Broken Tusk Moon",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 3,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -60,6 +60,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 4
+    }
+  },
   "fortitude": {
     "value": 3,
     "note": "",
@@ -82,14 +87,22 @@
   "hp": {
     "value": 4,
     "max": 4,
-    "note": "<b>Hardness</b> 4 <b>BT</b> 2. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "0 ft,\nfly 15 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 4)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated blade has Hardness. This Hardness reduces any damage the blade takes by an amount equal to the Hardness. Once an animated blade is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, and its Armor Class is reduced to 14.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 15ft",
   "strikes": [
     {
       "type": "melee",
@@ -111,7 +124,7 @@
         }
       ],
       "effects": [
-        "Tetanus"
+        "tetanus"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -126,148 +139,10 @@
       "traits": [
         "disease"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 15 Fortitude save</p>\n<p><strong>Onset</strong> 1 week</p>\n<p><strong>Stage 1</strong> Clumsy 1 (1 week)</p>\n<p><strong>Stage 2</strong> Clumsy 2 and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> Paralyzed (1 day)</p>\n<p><strong>Stage 4</strong> death</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 15 Fortitude Saving Throw</p>\n<p><strong>Onset</strong> 1 week</p>\n<p><strong>Stage 1</strong> Clumsy 1 (1 week)</p>\n<p><strong>Stage 2</strong> Clumsy 2 and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> Paralyzed (1 day)</p>\n<p><strong>Stage 4</strong> death</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Crafting, DC: 15",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 3,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Animated Blade",
-    "type": "Creature",
-    "level": -1,
-    "traits": [
-      "Uncommon",
-      "Tiny",
-      "Construct",
-      "Mindless"
-    ],
-    "source": "Pathfinder #175: Broken Tusk Moon",
-    "perception": {
-      "value": 3,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 1
-    },
-    "constitution": {
-      "value": 0
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 16,
-      "note": "(14 when broken); construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 4,
-      "max": 4,
-      "note": "<b>Hardness</b> 4 <b>BT</b> 2. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "0 ft,\nfly 15 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Rusty Blade",
-        "bonus": 6,
-        "traits": [
-          "sweep"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+1",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+1)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Tetanus"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Tetanus",
-        "actions": null,
-        "traits": [
-          "disease"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 15 Fortitude save</p>\n<p><strong>Onset</strong> 1 week</p>\n<p><strong>Stage 1</strong> Clumsy 1 (1 week)</p>\n<p><strong>Stage 2</strong> Clumsy 2 and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> Paralyzed (1 day)</p>\n<p><strong>Stage 4</strong> death</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Crafting, DC: 15",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 13"
 }

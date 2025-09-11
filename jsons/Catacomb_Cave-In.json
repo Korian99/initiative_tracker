@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Catacomb Cave-In",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 4,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Environmental",
     "Trap"
@@ -17,39 +17,54 @@
   "source": "Pathfinder #151: The Show Must Go On",
   "stealth": {
     "value": 13,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>The ceiling is unstable, and any Medium or larger creature that approaches within 5 feet of the collapsed tunnel triggers a cave-in.</p>",
-  "disable": "<p>DC 21 Thievery check (trained) to prop up the ceiling in key locations prior to the cave-in.</p>",
+  "disable": "<p>DC 21 Thievery  (trained) to prop up the ceiling in key locations prior to the cave-in.</p>",
   "reset": "",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Falling Stones",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A Medium or larger creature approaches within 5 feet of the collapsed tunnel</p>\n<hr />\n<p><strong>Effect</strong> Massive stones in the ceiling fall, dealing 4d6 Bludgeoning Damage damage to the triggering creature and all creatures within 10 feet (Basic DC 18 Reflex Saving Throw save).</p>\n<p>Creatures that fail the saving throw are also buried and begin to suffocate. A buried creature can attempt a Basic DC 20 Athletics  check every round, breaking free on a success. Other characters who are not buried can Aid on this check.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 21,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 11
   },
   "fortitude": {
     "value": 12,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 8,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 44,
     "max": 44,
-    "note": "<b>Hardness</b> 11 <b>BT</b> 22. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -66,98 +81,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Falling Stones",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A Medium or larger creature approaches within 5 feet of the collapsed tunnel</p>\n<hr />\n<p><strong>Effect</strong> Massive stones in the ceiling fall, dealing <span class=\"roll\" onclick=\"roll(this)\">4d6</span> bludgeoning damage to the triggering creature and all creatures within 10 feet (DC 18 basic Reflex save).</p>\n<p>Creatures that fail the saving throw are also buried and begin to suffocate. A buried creature can attempt a DC 20 Athletics check every round, breaking free on a success. Other characters who are not buried can Aid on this check.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Catacomb Cave-In",
-    "type": "hazard",
-    "level": 4,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Environmental",
-      "Trap"
-    ],
-    "source": "Pathfinder #151: The Show Must Go On",
-    "stealth": {
-      "value": 13,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>The ceiling is unstable, and any Medium or larger creature that approaches within 5 feet of the collapsed tunnel triggers a cave-in.</p>",
-    "disable": "<p>DC 21 Thievery check (trained) to prop up the ceiling in key locations prior to the cave-in.</p>",
-    "reset": "",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 21,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 44,
-      "max": 44,
-      "note": "<b>Hardness</b> 11 <b>BT</b> 22. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "sonic",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Falling Stones",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A Medium or larger creature approaches within 5 feet of the collapsed tunnel</p>\n<hr />\n<p><strong>Effect</strong> Massive stones in the ceiling fall, dealing <span class=\"roll\" onclick=\"roll(this)\">4d6</span> bludgeoning damage to the triggering creature and all creatures within 10 feet (DC 18 basic Reflex save).</p>\n<p>Creatures that fail the saving throw are also buried and begin to suffocate. A buried creature can attempt a DC 20 Athletics check every round, breaking free on a success. Other characters who are not buried can Aid on this check.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 19"
-  },
-  "recallKnowledge": ", DC: 19"
+  "recallKnowledge": ", DC 19"
 }

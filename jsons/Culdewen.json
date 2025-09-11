@@ -17,15 +17,15 @@
     "Fey"
   ],
   "source": "Pathfinder Bestiary 2",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 15,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Common",
     "Fey",
@@ -106,7 +106,7 @@
       "quantity": 1,
       "description": "<p>With a stout haft and a heavy metal head, a mace is sturdy and allows its wielder to deliver powerful blows and dent armor.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
         "shove"
       ]
@@ -116,9 +116,8 @@
       "quantity": 1,
       "description": "",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": [
-        "uncommon",
         "thrown-30",
         "trip"
       ]
@@ -175,8 +174,16 @@
       "value": 5
     }
   ],
-  "defensiveAbilities": [],
-  "speed": "40 ft,\nswim 40 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "-2 Status Bonus on Saves vs. Curses",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, swim 40ft",
   "strikes": [
     {
       "type": "melee",
@@ -198,7 +205,7 @@
         }
       ],
       "effects": [
-        "Hooked"
+        "hooked"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -250,7 +257,7 @@
         }
       ],
       "effects": [
-        "Hooked"
+        "hooked"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -263,14 +270,14 @@
       "name": "Hooked",
       "actions": null,
       "traits": [],
-      "description": "<p>A creature struck by the culdewen's fish hook is skewered, taking <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bleed as long as the hook remains stuck in it. The fish hook can be removed if a creature Escapes (DC 25 Athletics check), pulling it free.</p>",
+      "description": "<p>A creature struck by the culdewen's fish hook is skewered, taking 1d4 Bleed Damage as long as the hook remains stuck in it. The fish hook can be removed if a creature Escapes (DC 25 Athletics ), pulling it free.</p>",
       "collapsed": false
     },
     {
       "name": "Land the Fish",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> A creature is hooked by the culdewen's fish hook and adjacent to the culdewen</p>\n<hr />\n<p><strong>Effect</strong> The culdewen hoists the creature over their shoulder, as though it weighs no more than a fish. Unless the creature is unable to act, the culdewen must attempt an Athletics check against the creature's Fortitude DC. On a success, the creature is Restrained by the culdewen. Escaping from the restrained condition (DC 25) also allows a creature to remove the hook.</p>\n<p>While hoisting a creature, the culdewen gains a +20-foot status bonus to their Speeds and is compelled to escape with it (see culdewen's curse above).</p>",
+      "description": "<p><strong>Requirements</strong> A creature is hooked by the culdewen's fish hook and adjacent to the culdewen</p>\n<hr />\n<p><strong>Effect</strong> The culdewen hoists the creature over their shoulder, as though it weighs no more than a fish. Unless the creature is unable to act, the culdewen must attempt an athletics|defense:fortitude check against the creature's Fortitude DC. On a success, the creature is Restrained by the culdewen. Escaping from the restrained condition (DC 25) also allows a creature to remove the hook.</p>\n<p>While hoisting a creature, the culdewen gains a +20-foot status bonus to their Speeds and is compelled to escape with it (see culdewen's curse above).</p>",
       "collapsed": false
     },
     {
@@ -279,7 +286,7 @@
       "traits": [
         "manipulate"
       ],
-      "description": "<p>The culdewen pulls the rope attached to their hook. If they have no creature hooked, the fish hook returns to the culdewen's hand. If a creature is hooked, the culdewen attempts an Athletics check against the creature's Fortitude DC, pulling it up to 30 feet closer on a success (60 feet on a critical success).</p>",
+      "description": "<p>The culdewen pulls the rope attached to their hook. If they have no creature hooked, the fish hook returns to the culdewen's hand. If a creature is hooked, the culdewen attempts an athletics|defense:fortitude check against the creature's Fortitude DC, pulling it up to 30 feet closer on a success (60 feet on a critical success).</p>",
       "collapsed": false
     },
     {
@@ -290,312 +297,10 @@
         "curse",
         "primal"
       ],
-      "description": "<p>The culdewen unleashes a string of invectives. Each creature that hears them must attempt a DC 25 Will save, with the effects of Mariner's Curse and is then temporarily immune for 24 hours. Even on a failed save, the curse ends automatically after 1 day.</p>",
+      "description": "<p>The culdewen unleashes a string of invectives. Each creature that hears them must attempt a DC 25 Will Saving Throw save, with the effects of Mariner's Curse and is then temporarily immune for 24 hours. Even on a failed save, the curse ends automatically after 1 day.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Perpetually cursed to hunger and failure, a culdewen plies waterways in search of appealing fish to catch-the bigger the better. Of course, this diminutive, emaciated fey calls every living creature a \"fish.\" Only other fey are exempt, and they tend to consider culdewens lost causes. A culdewen can never find satisfaction. Each time they catch a fish, a magical curse forces them to hunt for an appealing spot to dine-an island, cove, or abandoned dock or shack where they can eat in peace. By the time they arrive, their catch will be gone. Every time. Forever.</p>\n<p>A foul mood hovers over a culdewen, causing them to swear colorfully, smack things with their oar, and shake their tiny fists at the sky. Conversation with a culdewen is fruitless, as they talk in circles, speaking only of fishing and the weather. Capturing a \"fish\" gives a culdewen a rare moment of happiness; the culdewen capers and ululates, pleased with their catch, and rushes off to their boat.</p>",
-  "recallKnowledge": "Nature, DC: 25",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 15,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Culdewen",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Uncommon",
-      "Small",
-      "Amphibious",
-      "Chaotic",
-      "Evil",
-      "Fey"
-    ],
-    "source": "Pathfinder Bestiary 2",
-    "perception": {
-      "value": 15,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Fey",
-      "Thalassic"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Sailing Lore",
-        "modifier": 14,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [
-      {
-        "name": "Oar (Functions as Mace)",
-        "quantity": 1,
-        "description": "<p>With a stout haft and a heavy metal head, a mace is sturdy and allows its wielder to deliver powerful blows and dent armor.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "shove"
-        ]
-      },
-      {
-        "name": "Fish Hook",
-        "quantity": 1,
-        "description": "",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": [
-          "uncommon",
-          "thrown-30",
-          "trip"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Culdewen's Curse",
-        "actions": null,
-        "traits": [
-          "curse",
-          "primal"
-        ],
-        "description": "<p>A culdewen that captures a creature is compelled to immediately retreat to a secluded place to eat, typically journeying by boat. The travel to the secluded place always takes at least 1 day. Their captive is cursed to vanish on the journey-typically being lost in the water or consumed by aquatic creatures-and can be recovered only by a Wish spell or similarly powerful magic.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 13,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "-2 status to all saves vs. curses",
-    "hp": {
-      "value": 105,
-      "max": 105,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "cold-iron",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "40 ft,\nswim 40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fish Hook",
-        "bonus": 17,
-        "traits": [
-          "trip"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Hooked"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Oar",
-        "bonus": 17,
-        "traits": [
-          "shove"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+7",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+7)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Fish Hook",
-        "bonus": 18,
-        "traits": [
-          "thrown-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Hooked"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Hooked",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A creature struck by the culdewen's fish hook is skewered, taking <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bleed as long as the hook remains stuck in it. The fish hook can be removed if a creature Escapes (DC 25 Athletics check), pulling it free.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Land the Fish",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Requirements</strong> A creature is hooked by the culdewen's fish hook and adjacent to the culdewen</p>\n<hr />\n<p><strong>Effect</strong> The culdewen hoists the creature over their shoulder, as though it weighs no more than a fish. Unless the creature is unable to act, the culdewen must attempt an Athletics check against the creature's Fortitude DC. On a success, the creature is Restrained by the culdewen. Escaping from the restrained condition (DC 25) also allows a creature to remove the hook.</p>\n<p>While hoisting a creature, the culdewen gains a +20-foot status bonus to their Speeds and is compelled to escape with it (see culdewen's curse above).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Reel In",
-        "actions": 1,
-        "traits": [
-          "manipulate"
-        ],
-        "description": "<p>The culdewen pulls the rope attached to their hook. If they have no creature hooked, the fish hook returns to the culdewen's hand. If a creature is hooked, the culdewen attempts an Athletics check against the creature's Fortitude DC, pulling it up to 30 feet closer on a success (60 feet on a critical success).</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Swear",
-        "actions": 1,
-        "traits": [
-          "auditory",
-          "curse",
-          "primal"
-        ],
-        "description": "<p>The culdewen unleashes a string of invectives. Each creature that hears them must attempt a DC 25 Will save, with the effects of Mariner's Curse and is then temporarily immune for 24 hours. Even on a failed save, the curse ends automatically after 1 day.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Perpetually cursed to hunger and failure, a culdewen plies waterways in search of appealing fish to catch-the bigger the better. Of course, this diminutive, emaciated fey calls every living creature a \"fish.\" Only other fey are exempt, and they tend to consider culdewens lost causes. A culdewen can never find satisfaction. Each time they catch a fish, a magical curse forces them to hunt for an appealing spot to dine-an island, cove, or abandoned dock or shack where they can eat in peace. By the time they arrive, their catch will be gone. Every time. Forever.</p>\n<p>A foul mood hovers over a culdewen, causing them to swear colorfully, smack things with their oar, and shake their tiny fists at the sky. Conversation with a culdewen is fruitless, as they talk in circles, speaking only of fishing and the weather. Capturing a \"fish\" gives a culdewen a rare moment of happiness; the culdewen capers and ululates, pleased with their catch, and rushes off to their boat.</p>",
-    "recallKnowledge": "Nature, DC: 25",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 23"
 }

@@ -4,12 +4,11 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Angry Vegetation",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 20,
   "traits": [
-    "Hazard",
-    "Complex",
     "Unique",
     "Medium",
     "Environmental"
@@ -17,32 +16,44 @@
   "source": "Pathfinder #156: The Apocalypse Prophet",
   "stealth": {
     "value": 32,
-    "note": "DC 42 Perception check (master) to notice massive buds beneath the other foliage before they open",
-    "modifications": []
+    "note": "@Check[perception|dc:42|traits:action:seek] (master) to notice massive buds beneath the other foliage before they open"
   },
   "description": "<p>Five large flowers in the weed-choked field unfurl, each dusting pollen onto vines that animate into Wemmuths.</p>",
-  "disable": "<p>DC 48 Nature check (master) or DC 48 Performance check (legendary) to calm a flower, closing it</p>",
+  "disable": "<p>DC 48 Nature  (master) or DC 48 Performance  (legendary) to calm a flower, closing it</p>",
   "reset": "<p>Wemmuths collapse into ordinary vines and the trap resets if the area is left alone for 1 minute.</p>",
-  "routine": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> If there are fewer wemmuths than open flowers, the flowers create more wemmuths (so there as many wemmuths as open flowers) as their first action.</p>\n<p>For their second action, the flowers produce a mind-addling pollen. Each non-plant creature within 30 feet of a flower must succeed at a DC 41 Fortitude save or become Slowed 1 for 1 round (or Confused for 1 round, on a critical failure). The pollen is an emotion, mental, and olfactory effect.</p>",
+  "routine": "<p><span class=\"action-glyph\">2</span> If there are fewer wemmuths than open flowers, the flowers create more wemmuths (so there as many wemmuths as open flowers) as their first action.</p>\n<p>For their second action, the flowers produce a mind-addling pollen. Each non-plant creature within 30 feet of a flower must succeed at a DC 41 Fortitude Saving Throw save or become Slowed 1 for 1 round (or Confused for 1 round, on a critical failure). The pollen is an emotion, mental, and olfactory effect.</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Bloom",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A non-plant creature enters the garden</p>\n<hr />\n<p><strong>Effect</strong> The blooms open, spawning a single Wemmuth that acts on the hazard's initiative, and the hazard rolls for initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 37,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 33,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 30,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 30,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -66,98 +77,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Bloom",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A non-plant creature enters the garden</p>\n<hr />\n<p><strong>Effect</strong> The blooms open, spawning a single Wemmuth that acts on the hazard's initiative, and the hazard rolls for initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 32,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Angry Vegetation",
-    "type": "hazard",
-    "level": 20,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Unique",
-      "Medium",
-      "Environmental"
-    ],
-    "source": "Pathfinder #156: The Apocalypse Prophet",
-    "stealth": {
-      "value": 32,
-      "note": "DC 42 Perception check (master) to notice massive buds beneath the other foliage before they open",
-      "modifications": []
-    },
-    "description": "<p>Five large flowers in the weed-choked field unfurl, each dusting pollen onto vines that animate into Wemmuths.</p>",
-    "disable": "<p>DC 48 Nature check (master) or DC 48 Performance check (legendary) to calm a flower, closing it</p>",
-    "reset": "<p>Wemmuths collapse into ordinary vines and the trap resets if the area is left alone for 1 minute.</p>",
-    "routine": "<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> If there are fewer wemmuths than open flowers, the flowers create more wemmuths (so there as many wemmuths as open flowers) as their first action.</p>\n<p>For their second action, the flowers produce a mind-addling pollen. Each non-plant creature within 30 feet of a flower must succeed at a DC 41 Fortitude save or become Slowed 1 for 1 round (or Confused for 1 round, on a critical failure). The pollen is an emotion, mental, and olfactory effect.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 37,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 33,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 30,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 30,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 120,
-      "max": 120,
-      "note": "per flower",
-      "modifications": []
-    },
-    "immunities": [
-      "mental"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "fire",
-        "value": 20
-      }
-    ],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Bloom",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A non-plant creature enters the garden</p>\n<hr />\n<p><strong>Effect</strong> The blooms open, spawning a single Wemmuth that acts on the hazard's initiative, and the hazard rolls for initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 40"
-  },
-  "recallKnowledge": ", DC: 40"
+  "recallKnowledge": ", DC 40"
 }

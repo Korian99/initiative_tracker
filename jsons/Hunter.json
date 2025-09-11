@@ -9,18 +9,19 @@
   "type": "Creature",
   "level": 7,
   "traits": [
+    "Common",
     "Medium",
     "Human",
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [],
   "perception": {
     "value": 17,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -85,7 +86,7 @@
       "quantity": 1,
       "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
       "level": 1,
-      "price": "20 gp ",
+      "price": "20 gp",
       "traits": [
         "deadly-d10",
         "propulsive",
@@ -97,7 +98,7 @@
       "quantity": 1,
       "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
       "level": 0,
-      "price": "2 sp ",
+      "price": "2 sp",
       "traits": [
         "agile",
         "finesse",
@@ -110,7 +111,7 @@
       "quantity": 1,
       "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
       "level": 0,
-      "price": "9 sp ",
+      "price": "9 sp",
       "traits": [
         "agile",
         "finesse",
@@ -122,15 +123,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
-      "traits": []
-    },
-    {
-      "name": "Arrows",
-      "quantity": 60,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
+      "price": "2 gp",
       "traits": []
     }
   ],
@@ -139,7 +132,7 @@
       "name": "Expert Subsistence",
       "actions": null,
       "traits": [],
-      "description": "<p>While using Survival to Subsist, if the hunter rolls any result worse than a success, they get a success. On a success, they can provide subsistence living for themselves and 16 additional creatures, and on a critical success, they can take care of twice as many creatures as on a success.</p>",
+      "description": "<p>While using Survival to [[/act subsist statistic=survival]], if the hunter rolls any result worse than a success, they get a success. On a success, they can provide subsistence living for themselves and 16 additional creatures, and on a critical success, they can take care of twice as many creatures as on a success.</p>",
       "collapsed": false
     },
     {
@@ -185,7 +178,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -288,7 +281,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d8+8)*2+1d10",
+          "roll": "(1d8+8)*2",
           "type": "piercing"
         }
       ],
@@ -306,328 +299,10 @@
       "traits": [
         "concentrate"
       ],
-      "description": "<p>The hunter designates one creature they're observing or tracking as their prey.</p>\n<p>The hunter gains a +2 circumstance bonus to Perception checks to Seek the prey and to Survival checks to Track the prey.</p>\n<p>The first time the hunter hits the designated prey in a round, they deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d4</span> precision damage. These effects last until the poacher uses On the Hunt again.</p>",
+      "description": "<p>The hunter designates one creature they're observing or tracking as their prey.</p>\n<p>The hunter gains a +2 circumstance bonus to Perception checks to [[/act seek]] the prey and to Survival checks to [[/act track]] the prey.</p>\n<p>The first time the hunter hits the designated prey in a round, they deal an additional 1d4 precision damage. These effects last until the poacher uses On the Hunt again.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>As is reflected in the many depictions of the elk-headed Erastil, god of the hunt, the hunter is very much a creature of the forest, known by the forest and familiar with every aspect of it. After all, the final determination of who is the hunter and who is prey often depends on who can make an ally of the terrain.</p><hr /><p>Explorers are often well-equipped and well-trained for any type of hazard and are eager to lead others into the wild.</p>",
-  "recallKnowledge": "Society, DC: 23",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 17,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Hunter",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Medium",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "medicine",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Forest Lore",
-        "modifier": 13,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Composite Longbow",
-        "quantity": 1,
-        "description": "<p>This projectile weapon is made from horn, wood, and sinew laminated together to increase the power of its pull and the force of its projectile. Like all longbows, its great size also increases the bow's range and power. You must use two hands to fire it, and it cannot be used while mounted. Any time an ability is specifically restricted to a longbow, such as Erastil's favored weapon, it also applies to composite longbows unless otherwise stated.</p>",
-        "level": 1,
-        "price": "20 gp ",
-        "traits": [
-          "deadly-d10",
-          "propulsive",
-          "volley-30"
-        ]
-      },
-      {
-        "name": "Dagger",
-        "quantity": 1,
-        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
-        "level": 0,
-        "price": "2 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "thrown-10",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Shortsword",
-        "quantity": 1,
-        "description": "<p>These blades come in a variety of shapes and styles, but they are typically 2 feet long.</p>",
-        "level": 0,
-        "price": "9 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Arrows",
-        "quantity": 60,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Expert Subsistence",
-        "actions": null,
-        "traits": [],
-        "description": "<p>While using Survival to Subsist, if the hunter rolls any result worse than a success, they get a success. On a success, they can provide subsistence living for themselves and 16 additional creatures, and on a critical success, they can take care of twice as many creatures as on a success.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Forest Walker",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The hunter ignores the effects of difficult terrain in a forest environment.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 25,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 115,
-      "max": 115,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Shortsword",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+10",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+10)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "nonlethal",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+10",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+10)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Dagger",
-        "bonus": 17,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+10",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+10)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Composite Longbow",
-        "bonus": 18,
-        "traits": [
-          "deadly-d10",
-          "magical",
-          "propulsive",
-          "range-increment-100",
-          "reload-0",
-          "volley-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+8)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "On the Hunt",
-        "actions": 1,
-        "traits": [
-          "concentrate"
-        ],
-        "description": "<p>The hunter designates one creature they're observing or tracking as their prey.</p>\n<p>The hunter gains a +2 circumstance bonus to Perception checks to Seek the prey and to Survival checks to Track the prey.</p>\n<p>The first time the hunter hits the designated prey in a round, they deal an additional <span class=\"roll\" onclick=\"roll(this)\">1d4</span> precision damage. These effects last until the poacher uses On the Hunt again.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>As is reflected in the many depictions of the elk-headed Erastil, god of the hunt, the hunter is very much a creature of the forest, known by the forest and familiar with every aspect of it. After all, the final determination of who is the hunter and who is prey often depends on who can make an ally of the terrain.</p><hr /><p>Explorers are often well-equipped and well-trained for any type of hazard and are eager to lead others into the wild.</p>",
-    "recallKnowledge": "Society, DC: 23",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 23"
 }

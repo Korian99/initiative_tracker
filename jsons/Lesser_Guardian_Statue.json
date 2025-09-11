@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": -1,
   "traits": [
+    "Common",
     "Small",
     "Construct",
     "Mindless"
   ],
   "source": "Pathfinder Society Scenario #1-06: Lost on the Spirit Road",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 3,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -59,6 +60,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 2
+    }
+  },
   "fortitude": {
     "value": 3,
     "note": "",
@@ -81,13 +87,20 @@
   "hp": {
     "value": 6,
     "max": 6,
-    "note": "<b>Hardness</b> 2 <b>BT</b> 3. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 2)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects,a lesser guardian statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p>\n<p>Once the statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 14.</p>",
+      "collapsed": false
+    },
     {
       "name": "Follow Trespasser",
       "actions": -1,
@@ -98,7 +111,7 @@
       "collapsed": false
     }
   ],
-  "speed": "15 ft,\n",
+  "speed": "15 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -129,141 +142,5 @@
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Crafting, DC: 13",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 3,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Lesser Guardian Statue",
-    "type": "Creature",
-    "level": -1,
-    "traits": [
-      "Small",
-      "Construct",
-      "Mindless"
-    ],
-    "source": "Pathfinder Society Scenario #1-06: Lost on the Spirit Road",
-    "perception": {
-      "value": 3,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 1
-    },
-    "dexterity": {
-      "value": 1
-    },
-    "constitution": {
-      "value": 0
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 16,
-      "note": "(14 when broken); construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 6,
-      "max": 6,
-      "note": "<b>Hardness</b> 2 <b>BT</b> 3. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Follow Trespasser",
-        "actions": -1,
-        "traits": [
-          "move"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature moves through the lesser guardian statue's reach.</p>\n<hr />\n<p><strong>Effect</strong> The statue moves up to 15 feet in pursuit of the creature.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "15 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Slam",
-        "bonus": 6,
-        "traits": [
-          "magical",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+1",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+1)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Crafting, DC: 13",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 13"
 }

@@ -17,15 +17,15 @@
     "Xulgath"
   ],
   "source": "Pathfinder #193: Mantle of Gold",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 8,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Draconic",
     "Sakvroth"
@@ -84,24 +84,11 @@
       "quantity": 1,
       "description": "<p>This +1 striking clan dagger bears the face of a stern dwarven god, his beard and features forming part of the blade.</p>",
       "level": 4,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
-        "unique",
         "agile",
         "dwarf",
         "parry"
-      ]
-    },
-    {
-      "name": "Scroll of Create Food (2nd-level)",
-      "quantity": 1,
-      "description": "<p>Create Food</p>\n<hr />\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
-      "level": 3,
-      "price": "12 gp ",
-      "traits": [
-        "consumable",
-        "magical",
-        "scroll"
       ]
     }
   ],
@@ -113,7 +100,7 @@
         "aura",
         "olfactory"
       ],
-      "description": "<p>30 feet. A creature that enters the area must attempt a DC 21 Fortitude save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a –5 status penalty to its Speeds for 1 round. While within the aura, the creature takes a –2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths stenches for 1 minute.</p>\n<p>Effect: Xulgath Stench</p>",
+      "description": "<p>30 feet. A creature that enters the area must attempt a DC 21 Fortitude Saving Throw save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a –5 status penalty to its Speeds for 1 round. While within the aura, the creature takes a –2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths stenches for 1 minute.</p>\n<p>Effect: Xulgath Stench</p>",
       "collapsed": false
     }
   ],
@@ -151,8 +138,16 @@
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "+2 Status To Saves Vs. Petrifying Gaze",
+      "actions": null,
+      "traits": [],
+      "description": "",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -255,7 +250,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -276,7 +271,7 @@
         "emotion",
         "mental"
       ],
-      "description": "<p><strong>Requirements</strong> Hhrulkaz is within 60 feet of a frightened creature or a creature she successfully hit with a shattering chant this turn</p>\n<hr />\n<p><strong>Effect</strong> Hhrulkaz condemns the creature to be eaten. The creature must make a DC 20 Will save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target gains weakness 2 to all damage for 3 rounds. At the end of each of its turns, the target can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>\n<p><strong>Critical Failure</strong> As failure, but the target gains weakness 4 to all damage.</p>",
+      "description": "<p><strong>Requirements</strong> Hhrulkaz is within 60 feet of a frightened creature or a creature she successfully hit with a shattering chant this turn</p>\n<hr />\n<p><strong>Effect</strong> Hhrulkaz condemns the creature to be eaten. The creature must make a DC 20 Will Saving Throw save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target gains weakness 2 to all damage for 3 rounds. At the end of each of its turns, the target can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>\n<p><strong>Critical Failure</strong> As failure, but the target gains weakness 4 to all damage.</p>",
       "collapsed": false
     },
     {
@@ -288,300 +283,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Society, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Hhrulkaz",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Unique",
-      "Medium",
-      "Chaotic",
-      "Evil",
-      "Humanoid",
-      "Xulgath"
-    ],
-    "source": "Pathfinder #193: Mantle of Gold",
-    "perception": {
-      "value": 8,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Draconic",
-      "Sakvroth"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "performance",
-        "modifier": 7,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 0
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 4
-    },
-    "items": [
-      {
-        "name": "Skysunder",
-        "quantity": 1,
-        "description": "<p>This +1 striking clan dagger bears the face of a stern dwarven god, his beard and features forming part of the blade.</p>",
-        "level": 4,
-        "price": "2 gp ",
-        "traits": [
-          "unique",
-          "agile",
-          "dwarf",
-          "parry"
-        ]
-      },
-      {
-        "name": "Scroll of Create Food (2nd-level)",
-        "quantity": 1,
-        "description": "<p>Create Food</p>\n<hr />\n<p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>To Cast a Spell from a scroll, the spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack roll and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical material components and costs are provided when a scroll is created, so you don't need to provide them when Casting a Spell from a scroll. You must replace any required material component for that spell with a somatic component. If the spell requires a focus, you must have that focus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>",
-        "level": 3,
-        "price": "12 gp ",
-        "traits": [
-          "consumable",
-          "magical",
-          "scroll"
-        ]
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Stench",
-        "actions": null,
-        "traits": [
-          "aura",
-          "olfactory"
-        ],
-        "description": "<p>30 feet. A creature that enters the area must attempt a DC 21 Fortitude save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a –5 status penalty to its Speeds for 1 round. While within the aura, the creature takes a –2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all xulgaths stenches for 1 minute.</p>\n<p>Effect: Xulgath Stench</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+2 status to saves vs. petrifying gaze",
-    "hp": {
-      "value": 50,
-      "max": 50,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Clan Dagger",
-        "bonus": 11,
-        "traits": [
-          "agile",
-          "dwarf",
-          "parry",
-          "versatile-b"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+3",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+3)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 10,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+3",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+3)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 10,
-        "traits": [
-          "agile",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+3",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+3)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Shattering Chant",
-        "bonus": 12,
-        "traits": [
-          "range-increment-30",
-          "sonic"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+4",
-            "type": "sonic"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+4)*2",
-            "type": "sonic"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Far-Reaching Fear",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The range at which Hhrulkaz can Demoralize creatures increases to 60 feet, and she doesn't take a penalty if the creature doesn't understand her language.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Predator's Decree",
-        "actions": 1,
-        "traits": [
-          "divine",
-          "emotion",
-          "mental"
-        ],
-        "description": "<p><strong>Requirements</strong> Hhrulkaz is within 60 feet of a frightened creature or a creature she successfully hit with a shattering chant this turn</p>\n<hr />\n<p><strong>Effect</strong> Hhrulkaz condemns the creature to be eaten. The creature must make a DC 20 Will save.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target gains weakness 2 to all damage for 3 rounds. At the end of each of its turns, the target can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>\n<p><strong>Critical Failure</strong> As failure, but the target gains weakness 4 to all damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Sacrificial Takedown",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>Hhrulkaz attempts an Athletics check to Trip a creature. If she succeeds, she then makes a melee Strike against the target, granting her weapon the fatal d10 trait until the end of her turn. Both attacks count toward her multiple attack penalty, but the penalty doesn't increase until after she makes both attacks.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Society, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 18"
 }

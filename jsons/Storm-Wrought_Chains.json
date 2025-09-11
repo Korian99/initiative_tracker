@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Storm-Wrought Chains",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 5,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,39 +17,58 @@
   "source": "Pathfinder Society Scenario #4-14: Shattering Golden Chains",
   "stealth": {
     "value": 10,
-    "note": "",
-    "modifications": []
+    "note": ""
   },
   "description": "<p>Brightly polished copper chains rumble with distant thunder and statically charge the air.</p>",
-  "disable": "<p>DC 25 Thievery check (expert) to release the lock, or DC 25 Arcana check or DC 25 Nature check (expert) to harmlessly release the storm's energy</p>",
+  "disable": "<p>DC 25 Thievery  (expert) to release the lock, or DC 25 Arcana  or DC 25 Nature  (expert) to harmlessly release the storm's energy</p>",
   "reset": "<p>The trap resets after 1 hour.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Storm's Rage",
+      "actions": -1,
+      "traits": [
+        "air",
+        "electricity",
+        "primal"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature attempts to break or escape the chains</p>\n<hr />\n<p><strong>Effect</strong> The chains release a devastating blast of lightning that deals (4d8+14) Electricity Damage damage to all creatures in the room. Affected creatures must each attempt a DC 24 Fortitude Saving Throw save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and becomes Deafened for 1 minute.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes deafened for 1 hour.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage. It also becomes deafened for 8 hours.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 20,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 14
   },
   "fortitude": {
     "value": 15,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 14,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 54,
     "max": 54,
-    "note": "<b>Hardness</b> 14 <b>BT</b> 27. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -60,100 +79,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Storm's Rage",
-      "actions": -1,
-      "traits": [
-        "air",
-        "electricity",
-        "primal"
-      ],
-      "description": "<p><strong>Trigger</strong> A creature attempts to break or escape the chains</p>\n<hr />\n<p><strong>Effect</strong> The chains release a devastating blast of lightning that deals <span class=\"roll\" onclick=\"roll(this)\">4d8+14</span> electricity damage to all creatures in the room. Affected creatures must each attempt a DC 24 Fortitude save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and becomes Deafened for 1 minute.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes deafened for 1 hour.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage. It also becomes deafened for 8 hours.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Storm-Wrought Chains",
-    "type": "hazard",
-    "level": 5,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Scenario #4-14: Shattering Golden Chains",
-    "stealth": {
-      "value": 10,
-      "note": "",
-      "modifications": []
-    },
-    "description": "<p>Brightly polished copper chains rumble with distant thunder and statically charge the air.</p>",
-    "disable": "<p>DC 25 Thievery check (expert) to release the lock, or DC 25 Arcana check or DC 25 Nature check (expert) to harmlessly release the storm's energy</p>",
-    "reset": "<p>The trap resets after 1 hour.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 15,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 14,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 54,
-      "max": 54,
-      "note": "<b>Hardness</b> 14 <b>BT</b> 27. ",
-      "modifications": []
-    },
-    "immunities": [
-      "electricity"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Storm's Rage",
-        "actions": -1,
-        "traits": [
-          "air",
-          "electricity",
-          "primal"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature attempts to break or escape the chains</p>\n<hr />\n<p><strong>Effect</strong> The chains release a devastating blast of lightning that deals <span class=\"roll\" onclick=\"roll(this)\">4d8+14</span> electricity damage to all creatures in the room. Affected creatures must each attempt a DC 24 Fortitude save.</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and becomes Deafened for 1 minute.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes deafened for 1 hour.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage. It also becomes deafened for 8 hours.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 20"
-  },
-  "recallKnowledge": ", DC: 20"
+  "recallKnowledge": ", DC 20"
 }

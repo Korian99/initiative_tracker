@@ -13,17 +13,16 @@
     "Medium",
     "Human",
     "Humanoid",
-    "Lawful",
-    "(caster)"
+    "Lawful"
   ],
   "source": "Pathfinder #198: No Breath to Cry",
+  "senses": [],
   "perception": {
     "value": 16,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -88,7 +87,7 @@
       "quantity": 1,
       "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
       "level": 0,
-      "price": "1 sp ",
+      "price": "1 sp",
       "traits": [
         "monk",
         "thrown-20"
@@ -99,13 +98,13 @@
       "quantity": 1,
       "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": []
     },
     {
       "name": "Torch",
       "quantity": 1,
-      "description": "<p>A torch sheds bright light in a 20-foot radius (and dim light to the next 20 feet) for 1 hour. It can be used as an improvised weapon that deals <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning damage plus 1 fire damage.</p>",
+      "description": "<p>A torch sheds bright light in a 20-foot radius (and dim light to the next 20 feet) for 1 hour. It can be used as an improvised weapon that deals 1d4 bludgeoning damage plus 1 fire damage.</p>",
       "level": 0,
       "price": "1 cp",
       "traits": []
@@ -155,7 +154,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -227,14 +226,14 @@
         "divine",
         "fire"
       ],
-      "description": "<p>The exorcist attempts to Strike a creature with their torch, attacking with great precision and causing the torch's fires to flare up. This Strike gains a +2 status bonus to its attack roll and inflicts an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage on a hit instead of just <span class=\"roll\" onclick=\"roll(this)\">1d6</span> fire damage. An undead, spirit, or transmigrated creature hit by this attack must also attempt a DC 26 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by this additional effect, and some of the fire flares back onto the exorcist, inflicting <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage to the exorcist (DC 26 basic Reflex save).</p>\n<p><strong>Success</strong> The creature is unaffected by this additional effect.</p>\n<p><strong>Failure</strong> The purifying flames cause the creature to become Clumsy 1 and Stupefied 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2 and Stupefied 2 for 1 minute.</p>",
+      "description": "<p>The exorcist attempts to Strike a creature with their torch, attacking with great precision and causing the torch's fires to flare up. This Strike gains a +2 status bonus to its attack roll and inflicts an additional 2d6 fire damage on a hit instead of just 1d6 fire damage. An undead, spirit, or transmigrated creature hit by this attack must also attempt a Basic DC 26 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by this additional effect, and some of the fire flares back onto the exorcist, inflicting 2d6 Fire Damage damage to the exorcist (Basic DC 26 Reflex Saving Throw save).</p>\n<p><strong>Success</strong> The creature is unaffected by this additional effect.</p>\n<p><strong>Failure</strong> The purifying flames cause the creature to become Clumsy 1 and Stupefied 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2 and Stupefied 2 for 1 minute.</p>",
       "collapsed": false
     },
     {
       "name": "Torch Wielder",
       "actions": null,
       "traits": [],
-      "description": "<p>The exorcist treats a torch as a light mace that deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> fire damage on a hit.</p>",
+      "description": "<p>The exorcist treats a torch as a light mace that deals an additional 1d6 fire damage on a hit.</p>",
       "collapsed": false
     }
   ],
@@ -254,6 +253,8 @@
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -262,7 +263,7 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "30 ft emanation",
+          "area": "30ft emanation",
           "targets": "",
           "save": "",
           "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
@@ -277,6 +278,8 @@
           "name": "Divine Lance",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
@@ -289,7 +292,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -301,6 +304,8 @@
           "name": "Produce Flame",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
@@ -313,7 +318,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal <span class=\"roll\" onclick=\"roll(this)\">2d4</span> fire damage. On a critical success, the target takes double damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the persistent damage on a critical hit by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and (@item.level)d4 Persistent,fire Damage damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -325,6 +330,8 @@
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -348,6 +355,8 @@
           "name": "Sigil",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate"
@@ -367,95 +376,26 @@
           "id": "ZiZU0BryCpNMPIiY"
         }
       ],
-      "rituals": [
-        {
-          "name": "Consecrate",
-          "type": "ritual",
-          "level": 2,
-          "traits": [
-            "uncommon"
-          ],
-          "castingTime": "3 days",
-          "duration": "1 year",
-          "range": "40 feet",
-          "area": "40 ft burst",
-          "targets": "",
-          "save": "",
-          "description": "<p><strong>Area</strong> 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity</p>\n<hr />\n<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification <span class=\"fontstyle2\">must </span>be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the Planar Seal spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>",
-          "cast": false,
-          "cost": "rare incense and offerings worth a total value of 20 gp × the spell rank",
-          "primaryCheck": "Religion",
-          "secondaryCasters": 0,
-          "secondaryChecks": "Crafting, Performance",
-          "id": "sqBcfPbpNCLxgdt8"
-        }
-      ],
-      "spellLocations": [
-        {
-          "id": "FucYMtSl4oxrMBHh",
-          "rank": 1
-        },
-        {
-          "id": "DpIlbwS9xJWs8mJe",
-          "rank": 1
-        },
-        {
-          "id": "DFxb0boXaWgRlBaU",
-          "rank": 1
-        },
-        {
-          "id": "U77YELzhHg9lMHly",
-          "rank": 2
-        },
-        {
-          "id": "BpqHO1RnLlncOsvY",
-          "rank": 2
-        },
-        {
-          "id": "gcGlhzSYX6nBMqvg",
-          "rank": 2
-        },
-        {
-          "id": "AZz5YGRzZmMJgVph",
-          "rank": 3
-        },
-        {
-          "id": "BpqHO1RnLlncOsvY",
-          "rank": 3
-        },
-        {
-          "id": "hxyTek3klqFVIkxu",
-          "rank": 3
-        },
-        {
-          "id": "MfgeNiBIvnBhPKcf",
-          "rank": 4
-        },
-        {
-          "id": "0XsvGNmM7uhqa2VC",
-          "rank": 4
-        }
-      ],
-      "usedAttribute": "wisdom",
-      "_id": "GuzuP3z04L4TjoRM",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Bane",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "aura",
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "1 minute",
           "range": "",
-          "area": "10 ft emanation",
+          "area": "10ft emanation",
           "targets": "enemies in the area",
           "save": "will",
-          "description": "<p>You fill the minds of your enemies with doubt. Enemies in the area must succeed at a Will save or take a –1 status penalty to attack rolls as long as they are in the area. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract Bless.</p>\n",
+          "description": "<p>You fill the minds of your enemies with doubt. Enemies in the area must succeed at a Will save or take a –1 status penalty to attack rolls as long as they are in the area. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract Bless.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -467,11 +407,14 @@
           "name": "Command",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "auditory",
             "concentrate",
             "linguistic",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "until the end of the target's next turn",
@@ -488,11 +431,39 @@
           "id": "DpIlbwS9xJWs8mJe"
         },
         {
+          "name": "Heal",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "1 willing living creature or 1 undead",
+          "save": "Basic fortitude",
+          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse vital energy in a 30ft Emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "BpqHO1RnLlncOsvY"
+        },
+        {
           "name": "Sanctuary",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -509,14 +480,40 @@
           "id": "DFxb0boXaWgRlBaU"
         }
       ],
-      "lv1slots": {},
       "lv2spells": [
+        {
+          "name": "Dispel Magic",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 spell effect or unattended magic item",
+          "save": "",
+          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "AZz5YGRzZmMJgVph"
+        },
         {
           "name": "Peaceful Rest",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "until the next time you make your daily preparations",
@@ -536,60 +533,43 @@
           "name": "Spiritual Weapon",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
-            "force"
+            "force",
+            "manipulate"
           ],
           "castingTime": "2",
-          "duration": "1 minute",
+          "duration": "Sustained up to 1 minute",
           "range": "120 feet",
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>A weapon made of pure magical force materializes and attacks foes you designate within range. This weapon has a ghostly appearance and manifests as a club, a dagger, or your deity's favored weapon.</p>\n<p>When you cast the spell, the weapon appears next to a foe you choose within range and makes a Strike against it. Each time you Sustain the Spell, you can move the weapon to a new target within range (if needed) and Strike with it. The spiritual weapon uses and contributes to your multiple attack penalty.</p>\n<p>The weapon's Strikes are melee spell attacks. Regardless of its appearance, the weapon deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> force damage. You can deal damage of the type normally dealt by the weapon instead of force damage (or any of the available damage types for a versatile weapon). No other statistics or traits of the weapon apply, and even a ranged weapon attacks adjacent creatures only. Despite making a spell attack, the spiritual weapon is a weapon for purposes of triggers, resistances, and so forth.</p>\n<p>The weapon doesn't take up space, grant flanking, or have any other attributes a creature would. The weapon can't make any attack other than its Strike, and feats or spells that affect weapons do not apply to it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The weapon's damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>.</p>",
+          "description": "<p>A weapon made of pure magical force materializes and attacks foes you designate within range. This weapon has a ghostly appearance and manifests as a club, a dagger, or your deity's favored weapon.</p>\n<p>When you cast the spell, the weapon appears next to a foe you choose within range and makes a Strike against it. Each time you Sustain the Spell, you can move the weapon to a new target within range (if needed) and Strike with it. The spiritual weapon uses and contributes to your multiple attack penalty.</p>\n<p>The weapon's Strikes are melee spell attacks. Regardless of its appearance, the weapon deals 2d8 force damage. You can deal damage of the type normally dealt by the weapon instead of force damage (or any of the available damage types for a versatile weapon). No other statistics or traits of the weapon apply, and even a ranged weapon attacks adjacent creatures only. Despite making a spell attack, the spiritual weapon is a weapon for purposes of triggers, resistances, and so forth.</p>\n<p>The weapon doesn't take up space, grant flanking, or have any other attributes a creature would. The weapon can't make any attack other than its Strike, and feats or spells that affect weapons do not apply to it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The weapon's damage increases by 1d8.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "gcGlhzSYX6nBMqvg"
-        },
-        {
-          "name": "Heal",
-          "type": "spell",
-          "level": 1,
-          "traits": [
-            "healing",
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "BpqHO1RnLlncOsvY"
         }
       ],
-      "lv2slots": {},
       "lv3spells": [
         {
           "name": "Holy Light",
           "type": "spell",
           "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
             "fire",
             "holy",
-            "light"
+            "light",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -597,76 +577,35 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals <span class=\"roll\" onclick=\"roll(this)\">5d6</span> fire damage. If the target has the unholy trait, you deal an extra <span class=\"roll\" onclick=\"roll(this)\">5d6</span> spirit damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, holy light attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>, and the spirit damage against unholy creatures increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
+          "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target has the unholy trait, you deal an extra 5d6 spirit damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, holy light attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the spirit damage against unholy creatures increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
           "id": "hxyTek3klqFVIkxu"
-        },
-        {
-          "name": "Dispel Magic",
-          "type": "spell",
-          "level": 2,
-          "traits": [
-            "concentrate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "120 feet",
-          "area": "",
-          "targets": "1 spell effect or unattended magic item",
-          "save": "",
-          "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "AZz5YGRzZmMJgVph"
-        },
-        {
-          "name": "Heal",
-          "type": "spell",
-          "level": 1,
-          "traits": [
-            "healing",
-            "manipulate"
-          ],
-          "castingTime": "1 to 3",
-          "duration": "",
-          "range": "varies",
-          "area": "",
-          "targets": "1 willing living creature or 1 undead",
-          "save": "basic fortitude",
-          "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "BpqHO1RnLlncOsvY"
         }
       ],
-      "lv3slots": {},
       "lv4spells": [
         {
           "name": "Divine Wrath",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "manipulate",
-            "sanctified"
+            "sanctified",
+            "spirit"
           ],
           "castingTime": "2",
           "duration": "",
           "range": "120 feet",
-          "area": "20 ft burst",
+          "area": "20ft burst",
           "targets": "",
           "save": "fortitude",
-          "description": "<p>You channel the fury of divinity against your foes. You deal <span class=\"roll\" onclick=\"roll(this)\">4d10</span> spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Sickened 2; while it's sickened, it's also Slowed 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
+          "description": "<p>You channel the fury of divinity against your foes. You deal 4d10 spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Sickened 2; while it's sickened, it's also Slowed 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -678,9 +617,11 @@
           "name": "Talking Corpse",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
-            "uncommon",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "10 minutes",
           "duration": "10 minutes",
@@ -697,13 +638,53 @@
           "id": "0XsvGNmM7uhqa2VC"
         }
       ],
-      "lv4slots": {},
       "lv5spells": [],
       "lv6spells": [],
       "lv7spells": [],
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [
+        {
+          "name": "Consecrate",
+          "type": "ritual",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "consecration"
+          ],
+          "castingTime": "3 days",
+          "duration": "1 year",
+          "range": "40 feet",
+          "area": "40ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p><strong>Area</strong> 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity</p>\n<hr />\n<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification <span class=\"fontstyle2\">must </span>be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the Planar Seal spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>",
+          "cast": false,
+          "cost": "rare incense and offerings worth a total value of 20 gp × the spell rank",
+          "primaryCheck": "Religion",
+          "secondaryCasters": 0,
+          "secondaryChecks": "Crafting, Performance",
+          "id": "sqBcfPbpNCLxgdt8"
+        }
+      ],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv3slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv4slots": {
+        "current": 2,
+        "max": 2
+      },
       "lv5slots": {
         "current": 0,
         "max": 0
@@ -730,742 +711,5 @@
       }
     }
   ],
-  "description": "",
-  "recallKnowledge": "Society, DC: 29",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 16,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Exorcist",
-    "type": "Creature",
-    "level": 8,
-    "traits": [
-      "Rare",
-      "Medium",
-      "Human",
-      "Humanoid",
-      "Lawful",
-      "(caster)"
-    ],
-    "source": "Pathfinder #198: No Breath to Cry",
-    "perception": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "diplomacy",
-        "modifier": 14,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 16,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "medicine",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "occultism",
-        "modifier": 15,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 18,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": 1
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 2
-    },
-    "items": [
-      {
-        "name": "Spear",
-        "quantity": 1,
-        "description": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": [
-          "monk",
-          "thrown-20"
-        ]
-      },
-      {
-        "name": "Hide Armor",
-        "quantity": 1,
-        "description": "<p>A mix of furs, sturdy hide, and sometimes molded boiled leather, this armor provides protection due to its layers of leather, though its bulkiness slows the wearer down and decreases mobility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Torch",
-        "quantity": 1,
-        "description": "<p>A torch sheds bright light in a 20-foot radius (and dim light to the next 20 feet) for 1 hour. It can be used as an improvised weapon that deals <span class=\"roll\" onclick=\"roll(this)\">1d4</span> bludgeoning damage plus 1 fire damage.</p>",
-        "level": 0,
-        "price": "1 cp",
-        "traits": []
-      },
-      {
-        "name": "Key",
-        "quantity": 1,
-        "description": "",
-        "level": 0,
-        "price": "",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 24,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 14,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 135,
-      "max": 135,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Spear",
-        "bonus": 17,
-        "traits": [
-          "magical",
-          "reach"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d6+5",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d6+5)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Torch",
-        "bonus": 16,
-        "traits": [
-          "agile",
-          "finesse",
-          "shove"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6",
-            "type": "fire"
-          },
-          {
-            "roll": "1d4+5",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6)*2",
-            "type": "fire"
-          },
-          {
-            "roll": "(1d4+5)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Purifying Flames",
-        "actions": 2,
-        "traits": [
-          "divine",
-          "fire"
-        ],
-        "description": "<p>The exorcist attempts to Strike a creature with their torch, attacking with great precision and causing the torch's fires to flare up. This Strike gains a +2 status bonus to its attack roll and inflicts an additional <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage on a hit instead of just <span class=\"roll\" onclick=\"roll(this)\">1d6</span> fire damage. An undead, spirit, or transmigrated creature hit by this attack must also attempt a DC 26 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by this additional effect, and some of the fire flares back onto the exorcist, inflicting <span class=\"roll\" onclick=\"roll(this)\">2d6</span> fire damage to the exorcist (DC 26 basic Reflex save).</p>\n<p><strong>Success</strong> The creature is unaffected by this additional effect.</p>\n<p><strong>Failure</strong> The purifying flames cause the creature to become Clumsy 1 and Stupefied 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but Clumsy 2 and Stupefied 2 for 1 minute.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Torch Wielder",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The exorcist treats a torch as a light mace that deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> fire damage on a hit.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Divine Prepared Spells",
-        "type": "prepared",
-        "bonus": 18,
-        "dc": 26,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 4,
-        "cantrips": [
-          {
-            "name": "Detect Magic",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "30 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "oMBcU3qSynMKh06S"
-          },
-          {
-            "name": "Divine Lance",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "manipulate",
-              "sanctified"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "60 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes <span class=\"roll\" onclick=\"roll(this)\">2d4</span> spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "0Uqwo6vp3oihTunl"
-          },
-          {
-            "name": "Produce Flame",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "fire",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal <span class=\"roll\" onclick=\"roll(this)\">2d4</span> fire damage. On a critical success, the target takes double damage and <span class=\"roll\" onclick=\"roll(this)\">1d4</span> persistent plus fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by <span class=\"roll\" onclick=\"roll(this)\">1d4</span> and the persistent damage on a critical hit by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "U0h5hYJHD8DxZZB8"
-          },
-          {
-            "name": "Read Aura",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "1 minute",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 object",
-            "save": "",
-            "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to Identify Magic on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "5VDQUUtbaz8KdDlB"
-          },
-          {
-            "name": "Sigil",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "unlimited",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature or object",
-            "save": "",
-            "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened level.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "ZiZU0BryCpNMPIiY"
-          }
-        ],
-        "rituals": [
-          {
-            "name": "Consecrate",
-            "type": "ritual",
-            "level": 2,
-            "traits": [
-              "uncommon"
-            ],
-            "castingTime": "3 days",
-            "duration": "1 year",
-            "range": "40 feet",
-            "area": "40 ft burst",
-            "targets": "",
-            "save": "",
-            "description": "<p><strong>Area</strong> 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity</p>\n<hr />\n<p>You consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification <span class=\"fontstyle2\">must </span>be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.</p>\n<hr />\n<p><strong>Critical Success</strong> The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.</p>\n<p><strong>Success</strong> The consecration succeeds.</p>\n<p><strong>Failure</strong> The consecration fails.</p>\n<p><strong>Critical Failure</strong> The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The consecrated area also gains the effects of the Planar Seal spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.</p>",
-            "cast": false,
-            "cost": "rare incense and offerings worth a total value of 20 gp × the spell rank",
-            "primaryCheck": "Religion",
-            "secondaryCasters": 0,
-            "secondaryChecks": "Crafting, Performance",
-            "id": "sqBcfPbpNCLxgdt8"
-          }
-        ],
-        "spellLocations": [
-          {
-            "id": "FucYMtSl4oxrMBHh",
-            "rank": 1
-          },
-          {
-            "id": "DpIlbwS9xJWs8mJe",
-            "rank": 1
-          },
-          {
-            "id": "DFxb0boXaWgRlBaU",
-            "rank": 1
-          },
-          {
-            "id": "U77YELzhHg9lMHly",
-            "rank": 2
-          },
-          {
-            "id": "BpqHO1RnLlncOsvY",
-            "rank": 2
-          },
-          {
-            "id": "gcGlhzSYX6nBMqvg",
-            "rank": 2
-          },
-          {
-            "id": "AZz5YGRzZmMJgVph",
-            "rank": 3
-          },
-          {
-            "id": "BpqHO1RnLlncOsvY",
-            "rank": 3
-          },
-          {
-            "id": "hxyTek3klqFVIkxu",
-            "rank": 3
-          },
-          {
-            "id": "MfgeNiBIvnBhPKcf",
-            "rank": 4
-          },
-          {
-            "id": "0XsvGNmM7uhqa2VC",
-            "rank": 4
-          }
-        ],
-        "usedAttribute": "wisdom",
-        "_id": "GuzuP3z04L4TjoRM",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Bane",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "aura",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "",
-            "area": "10 ft emanation",
-            "targets": "enemies in the area",
-            "save": "will",
-            "description": "<p>You fill the minds of your enemies with doubt. Enemies in the area must succeed at a Will save or take a –1 status penalty to attack rolls as long as they are in the area. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet and force enemies in the area that weren't yet affected to attempt another saving throw.</p>\n<p>Bane can counteract Bless.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "FucYMtSl4oxrMBHh"
-          },
-          {
-            "name": "Command",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "auditory",
-              "concentrate",
-              "linguistic",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "until the end of the target's next turn",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the Fleeing condition), release what it's holding, drop Prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> For the first action on its next turn, the creature must use a single action to do as you command.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to obey your command.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> You can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "DpIlbwS9xJWs8mJe"
-          },
-          {
-            "name": "Sanctuary",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "touch",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You ward a creature with protective energy that deters attacks. Creatures attempting to attack the target must attempt a Will save each time. If the target uses a hostile action, the spell ends.</p>\n<hr />\n<p><strong>Critical Success</strong> <em>Sanctuary</em> ends.</p>\n<p><strong>Success</strong> The creature can attempt its attack and any other attacks against the target this turn.</p>\n<p><strong>Failure</strong> The creature can't attack the target and wastes the action. It can't attempt further attacks against the target this turn.</p>\n<p><strong>Critical Failure</strong> The creature wastes the action and can't attempt to attack the target for the rest of <em>sanctuary</em>'s duration.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "DFxb0boXaWgRlBaU"
-          }
-        ],
-        "lv1slots": {},
-        "lv2spells": [
-          {
-            "name": "Peaceful Rest",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "until the next time you make your daily preparations",
-            "range": "touch",
-            "area": "",
-            "targets": "1 corpse",
-            "save": "",
-            "description": "<p>The targeted corpse doesn't decay, nor can it be transformed into an undead. If the corpse is subject to a spell that requires the corpse to have died within a certain amount of time (for example, Raise Dead), do not count the duration of <em>peaceful rest</em> against that time. This spell also prevents ordinary bugs and pests (such as maggots) from consuming the body.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The spell's duration is unlimited, but the spell takes one more action to cast and requires a cost (embalming fluid worth 6 gp).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "U77YELzhHg9lMHly"
-          },
-          {
-            "name": "Spiritual Weapon",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "attack",
-              "concentrate",
-              "force"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>A weapon made of pure magical force materializes and attacks foes you designate within range. This weapon has a ghostly appearance and manifests as a club, a dagger, or your deity's favored weapon.</p>\n<p>When you cast the spell, the weapon appears next to a foe you choose within range and makes a Strike against it. Each time you Sustain the Spell, you can move the weapon to a new target within range (if needed) and Strike with it. The spiritual weapon uses and contributes to your multiple attack penalty.</p>\n<p>The weapon's Strikes are melee spell attacks. Regardless of its appearance, the weapon deals <span class=\"roll\" onclick=\"roll(this)\">2d8</span> force damage. You can deal damage of the type normally dealt by the weapon instead of force damage (or any of the available damage types for a versatile weapon). No other statistics or traits of the weapon apply, and even a ranged weapon attacks adjacent creatures only. Despite making a spell attack, the spiritual weapon is a weapon for purposes of triggers, resistances, and so forth.</p>\n<p>The weapon doesn't take up space, grant flanking, or have any other attributes a creature would. The weapon can't make any attack other than its Strike, and feats or spells that affect weapons do not apply to it.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The weapon's damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "gcGlhzSYX6nBMqvg"
-          },
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "BpqHO1RnLlncOsvY"
-          }
-        ],
-        "lv2slots": {},
-        "lv3spells": [
-          {
-            "name": "Holy Light",
-            "type": "spell",
-            "level": 3,
-            "traits": [
-              "attack",
-              "concentrate",
-              "fire",
-              "holy",
-              "light"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You shine a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals <span class=\"roll\" onclick=\"roll(this)\">5d6</span> fire damage. If the target has the unholy trait, you deal an extra <span class=\"roll\" onclick=\"roll(this)\">5d6</span> spirit damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, holy light attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>, and the spirit damage against unholy creatures increases by <span class=\"roll\" onclick=\"roll(this)\">2d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "hxyTek3klqFVIkxu"
-          },
-          {
-            "name": "Dispel Magic",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 spell effect or unattended magic item",
-            "save": "",
-            "description": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "AZz5YGRzZmMJgVph"
-          },
-          {
-            "name": "Heal",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "healing",
-              "manipulate"
-            ],
-            "castingTime": "1 to 3",
-            "duration": "",
-            "range": "varies",
-            "area": "",
-            "targets": "1 willing living creature or 1 undead",
-            "save": "basic fortitude",
-            "description": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore <span class=\"roll\" onclick=\"roll(this)\">1d8</span> Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><img src=\"assets/images/actions/1.png\" title=\"1 action\" alt=\"1 action\"> The spell has a range of touch.</p>\n<p><img src=\"assets/images/actions/2.png\" title=\"2 actions\" alt=\"2 actions\"> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><img src=\"assets/images/actions/3.png\" title=\"3 actions\" alt=\"3 actions\"> <strong>(concentrate)</strong> You disperse vital energy in a 30 foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d8</span>, and the extra healing for the 2-action version increases by 8.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "BpqHO1RnLlncOsvY"
-          }
-        ],
-        "lv3slots": {},
-        "lv4spells": [
-          {
-            "name": "Divine Wrath",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "manipulate",
-              "sanctified"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "20 ft burst",
-            "targets": "",
-            "save": "fortitude",
-            "description": "<p>You channel the fury of divinity against your foes. You deal <span class=\"roll\" onclick=\"roll(this)\">4d10</span> spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Sickened 2; while it's sickened, it's also Slowed 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d10</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "MfgeNiBIvnBhPKcf"
-          },
-          {
-            "name": "Talking Corpse",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "uncommon",
-              "concentrate"
-            ],
-            "castingTime": "10 minutes",
-            "duration": "10 minutes",
-            "range": "touch",
-            "area": "",
-            "targets": "1 corpse",
-            "save": "will",
-            "description": "<p>You grant the target corpse a semblance of life, which it uses to speak the answers to three questions posed to it. This spell calls on the physical body's latent memories rather than summoning back the deceased's spirit, so the corpse must be mostly intact for the spell to function. The more damage the corpse has taken, the more inaccurate or patchwork its answers are, and it must have a throat and mouth to speak at all. If anyone has previously cast this spell on the corpse in the last week, the spell automatically fails. The corpse can attempt a Will save to resist answering the questions using the statistics of the original creature at its time of death, with the following effects.</p>\n<hr /><p><strong>Critical Success</strong> The target can lie or refuse to answer your questions, and the target's spirit haunts you for 24 hours, bothering you and causing you to be unable to gain any rest for that time.</p>\n<p><strong>Success</strong> The target can provide false information or refuse to answer your questions.</p>\n<p><strong>Failure</strong> The target must answer truthfully, but its answers can be brief, cryptic, and repetitive. It can still mislead you or attempt to stall so that the spell's duration runs out before you can ask all your questions.</p>\n<p><strong>Critical Failure</strong> As failure, but the target's answers are more direct and less repetitive, though still cryptic. It takes a -2 status penalty to Deception checks to deceive or mislead you.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "0XsvGNmM7uhqa2VC"
-          }
-        ],
-        "lv4slots": {},
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "",
-    "recallKnowledge": "Society, DC: 29",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 24"
 }

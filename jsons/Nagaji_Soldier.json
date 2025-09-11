@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Humanoid",
     "Nagaji"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 8,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Common",
     "Draconic"
@@ -46,7 +47,7 @@
       "name": "nature",
       "modifier": 6,
       "note": [
-        "to Command an Animal that is a reptile <span class=\"roll\" onclick=\"roll(this)\">8</span>"
+        "to Command an Animal that is a reptile 8"
       ],
       "usedAttribute": "wisdom",
       "modifications": []
@@ -76,7 +77,7 @@
       "quantity": 1,
       "description": "<p>This 5-foot-tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>",
       "level": 0,
-      "price": "6 gp ",
+      "price": "6 gp",
       "traits": [
         "deadly-d10",
         "volley-30"
@@ -87,7 +88,7 @@
       "quantity": 1,
       "description": "<p>This polearm is a long trident with a central prong that's longer than the other two.</p>",
       "level": 0,
-      "price": "2 gp ",
+      "price": "2 gp",
       "traits": [
         "disarm",
         "reach"
@@ -98,15 +99,7 @@
       "quantity": 1,
       "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
       "level": 0,
-      "price": "2 gp ",
-      "traits": []
-    },
-    {
-      "name": "Arrows",
-      "quantity": 20,
-      "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-      "level": 0,
-      "price": "1 sp ",
+      "price": "2 gp",
       "traits": []
     }
   ],
@@ -155,11 +148,11 @@
       "name": "Attack of Opportunity",
       "actions": -1,
       "traits": [],
-      "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     }
   ],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -204,13 +197,13 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d8)*2+1d10",
+          "roll": "(1d8)*2",
           "type": "piercing"
         }
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -225,237 +218,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Nagaji are brawny bipeds with humanoid figures and serpentine heads. Their bodies are covered in tightly layered scales that range in color from green to brown, and almost all nagaji have a colorful ridge along their head and back. Ophidian eyes lend nagaji an imperious visage, with irises that span every color of the rainbow.</p>\n<p>Nagaji physiology varies somewhat. Some possess vestigial tails, while others have sharp claws, and some even sport impressive fangs that can inject a simple venom. Like snakes, nagaji are cold-blooded and reproduce by laying eggs; as a result, nagaji territories rarely overlap with those of mammalian humanoids, since their environmental needs diverge so widely. They're a hardy and strong people, but their close ties to nagas mean many have the potential for powerful magic, as well.</p>\n<p>Long ago, the naga goddess Nalinivati created the first nagaji as the backbone of a society that respected nagas. But the nagaji were never mindless vassals, and the goddess gifted them with free will. Many nagaji willingly serve nagas to this day, honoring some as outright divinities. While outsiders might regard nagaji initially as brainwashed servants, nagaji dispute this claim. Of course there are evil and unfair naga overlords, but there are just as many fair and just naga rulers, and nagaji history remembers various rebellions and revolutions when a matriarch overstepped her bounds to support a new naga's claims of rulership. Nagaji accurately note that their long history with nagas is no simple matter and claim that the partnership goes both ways: nagas rely as much on nagaji for the running of their empires as nagaji rely on nagas to lead their people to prosperity.</p>\n<p>Although nagaji might be encountered in diverse cities and urban centers, their communities are concentrated in environments that suit their biology, namely jungles and tropical forests. Where many species would languish in the heat and humidity, nagaji bask in the warmth and thrive.</p>",
-  "recallKnowledge": "Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Nagaji Soldier",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Humanoid",
-      "Nagaji"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 8,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Common",
-      "Draconic"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 5,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 6,
-        "note": [
-          "to Command an Animal that is a reptile <span class=\"roll\" onclick=\"roll(this)\">8</span>"
-        ],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 1
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [
-      {
-        "name": "Longbow",
-        "quantity": 1,
-        "description": "<p>This 5-foot-tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>",
-        "level": 0,
-        "price": "6 gp ",
-        "traits": [
-          "deadly-d10",
-          "volley-30"
-        ]
-      },
-      {
-        "name": "Ranseur",
-        "quantity": 1,
-        "description": "<p>This polearm is a long trident with a central prong that's longer than the other two.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": [
-          "disarm",
-          "reach"
-        ]
-      },
-      {
-        "name": "Leather Armor",
-        "quantity": 1,
-        "description": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>",
-        "level": 0,
-        "price": "2 gp ",
-        "traits": []
-      },
-      {
-        "name": "Arrows",
-        "quantity": 20,
-        "description": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>",
-        "level": 0,
-        "price": "1 sp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 28,
-      "max": 28,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "poison",
-        "value": 2
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      }
-    ],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Ranseur",
-        "bonus": 10,
-        "traits": [
-          "disarm",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Longbow",
-        "bonus": 7,
-        "traits": [
-          "deadly-d10",
-          "range-increment-100",
-          "volley-30"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8)*2+1d10",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Slough Toxins",
-        "actions": 1,
-        "traits": [],
-        "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The nagaji is afflicted with a poison</p>\n<hr />\n<p><strong>Effect</strong> The nagaji accelerates their metabolism. They roll a saving throw against the affliction with a +2 circumstance bonus. If they must attempt an ongoing save against the same poison at the end of their turn, they also get a +2 circumstance bonus to that save.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Nagaji are brawny bipeds with humanoid figures and serpentine heads. Their bodies are covered in tightly layered scales that range in color from green to brown, and almost all nagaji have a colorful ridge along their head and back. Ophidian eyes lend nagaji an imperious visage, with irises that span every color of the rainbow.</p>\n<p>Nagaji physiology varies somewhat. Some possess vestigial tails, while others have sharp claws, and some even sport impressive fangs that can inject a simple venom. Like snakes, nagaji are cold-blooded and reproduce by laying eggs; as a result, nagaji territories rarely overlap with those of mammalian humanoids, since their environmental needs diverge so widely. They're a hardy and strong people, but their close ties to nagas mean many have the potential for powerful magic, as well.</p>\n<p>Long ago, the naga goddess Nalinivati created the first nagaji as the backbone of a society that respected nagas. But the nagaji were never mindless vassals, and the goddess gifted them with free will. Many nagaji willingly serve nagas to this day, honoring some as outright divinities. While outsiders might regard nagaji initially as brainwashed servants, nagaji dispute this claim. Of course there are evil and unfair naga overlords, but there are just as many fair and just naga rulers, and nagaji history remembers various rebellions and revolutions when a matriarch overstepped her bounds to support a new naga's claims of rulership. Nagaji accurately note that their long history with nagas is no simple matter and claim that the partnership goes both ways: nagas rely as much on nagaji for the running of their empires as nagaji rely on nagas to lead their people to prosperity.</p>\n<p>Although nagaji might be encountered in diverse cities and urban centers, their communities are concentrated in environments that suit their biology, namely jungles and tropical forests. Where many species would languish in the heat and humidity, nagaji bask in the warmth and thrive.</p>",
-    "recallKnowledge": "Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 16"
 }

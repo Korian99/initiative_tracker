@@ -9,19 +9,20 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Large",
     "Animal"
   ],
   "source": "Pathfinder #178: Punks in a Powder Keg",
+  "senses": [
+    "Low light vision"
+  ],
   "perception": {
     "value": 10,
-    "note": "low light-vision",
+    "note": "Low light vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -35,7 +36,7 @@
       "name": "stealth",
       "modifier": 10,
       "note": [
-        "to Hide <span class=\"roll\" onclick=\"roll(this)\">13</span>"
+        "to Hide 13"
       ],
       "usedAttribute": "dexterity",
       "modifications": []
@@ -103,8 +104,16 @@
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "30 ft,\nclimb 20 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 20ft",
   "strikes": [
     {
       "type": "melee",
@@ -143,7 +152,7 @@
       "damageRolls": [],
       "critRolls": [],
       "effects": [
-        "Tongue-grab"
+        "tongue-grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -186,198 +195,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Giant chameleons are legendary for their ability to change their skin color in response to their surroundings. Their eyes are capable of peering in different directions independently, making them almost as difficult to sneak up on as they are to notice in the first place.</p>",
-  "recallKnowledge": "Nature, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 10,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Slick",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Large",
-      "Animal"
-    ],
-    "source": "Pathfinder #178: Punks in a Powder Keg",
-    "perception": {
-      "value": 10,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 10,
-        "note": [
-          "to Hide <span class=\"roll\" onclick=\"roll(this)\">13</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 3
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": -2
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Camouflage",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The giant chameleon can change its coloration to match its surroundings. It doesn't need cover to attempt to Hide with a Stealth check.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 18,
-      "note": "all-around vision",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 12,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 60,
-      "max": 60,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\nclimb 20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 12,
-        "traits": [
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d10+7",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d10+7)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tongue",
-        "bonus": 12,
-        "traits": [
-          "agile",
-          "reach-15"
-        ],
-        "damageRolls": [],
-        "critRolls": [],
-        "effects": [
-          "Tongue-grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 12,
-        "traits": [
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+5",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+5)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Tongue Grab",
-        "actions": null,
-        "traits": [],
-        "description": "<p>If the giant chameleon hits a creature with a tongue Strike, that creature becomes Grabbed by the giant chameleon. The target isn't Immobilized, but it can't move beyond the reach of the giant chameleon's tongue. A creature can sever the tongue with an attack that hits AC 15 and deals at least 4 slashing damage. Though this doesn't deal any damage to the giant chameleon, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Giant chameleons are legendary for their ability to change their skin color in response to their surroundings. Their eyes are capable of peering in different directions independently, making them almost as difficult to sneak up on as they are to notice in the first place.</p>",
-    "recallKnowledge": "Nature, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 18"
 }

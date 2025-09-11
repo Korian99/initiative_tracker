@@ -9,19 +9,20 @@
   "type": "Creature",
   "level": 0,
   "traits": [
+    "Common",
     "Medium",
     "Animal"
   ],
   "source": "Pathfinder Bestiary 3",
+  "senses": [
+    "Scent 60ft imprecise"
+  ],
   "perception": {
     "value": 7,
-    "note": "scent 60 ft imprecise",
+    "note": "Scent 60ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "scent 60 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -35,7 +36,7 @@
       "name": "athletics",
       "modifier": 7,
       "note": [
-        "to Long Jump <span class=\"roll\" onclick=\"roll(this)\">9</span>"
+        "to Long Jump 9"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -119,7 +120,7 @@
       "collapsed": false
     }
   ],
-  "speed": "35 ft,\n",
+  "speed": "35 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -166,7 +167,7 @@
         }
       ],
       "effects": [
-        "Push"
+        "push"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -174,190 +175,15 @@
       "damageModifications": []
     }
   ],
-  "offensiveAbilities": [],
+  "offensiveAbilities": [
+    {
+      "name": "Push",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
   "spellcastingEntries": [],
-  "description": "<p>Kangaroos are marsupials distinguished by long faces, large ears, powerful back legs and tails, and a distinctive hopping gait. These generally placid herbivores are shy of other creatures, preferring to live in open grasslands where their keen ears and eyes can spot danger approaching from a distance.</p>\n<p>Male kangaroos develop powerful front limbs and exhibit a dominance behavior commonly known as \"boxing.\" When two male kangaroos confront each other, they draw close; they then swat at their opponent with their front claws while also pulling their own heads back out of range. Kangaroos also occasionally rock back on their tails before delivering a blow with their heavily muscled hind legs. The claws on their back legs make these blows particularly deadly, and a kangaroo can disembowel an attacker with a single strike using this tactic.</p>\n<p>Like other marsupials, female kangaroos carry their young-called joeys-in a pouch on their bellies. They have only one such offspring at a time, although many females have several joeys in quick succession. These social animals largely gather for protection, but their social structures are similar to those found in herds of camels, horses, or pigs.</p>\n<p>Kangaroos don't make particularly good mounts, but this hasn't stopped the occasional adventurous gnome or halfling from trying. Such an attempt usually results in a seasick and dizzy rider being dumped unceremoniously from the animal's back or pouch, but some druids have found them to be loyal companions.</p>\n<p>In places where kangaroos are common, the animals are sometimes hunted for meat and can even provide a primary food supply to migratory communities due to their quick reproduction and ability to flee predators. People in other regions consider kangaroos a delicacy and often import their meat as a show of status in wealthy households.</p>\n<p>Several types of kangaroos have evolved, each living in a slightly different environment. Gray kangaroos are smaller than other varieties and dwell in open woodlands, most commonly on the southern reaches of the continent of Garund. Giant kangaroos, found primarily on the dry steppes of northern Casmaron, grow to twice the size of standard kangaroos, and the thunderous noise of their passing can be heard and felt from miles away. The kangaroo family also has several smaller relatives, including wallabies and pademelons. Some kangaroos exist in captivity in other parts of the world, but attempts to introduce them into other regions have-so far-largely failed.</p>\n<p>A large kangaroo can reach over 6 feet in height and weighs up to 200 pounds.</p>",
-  "recallKnowledge": "Nature, DC: 14",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 7,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Kangaroo",
-    "type": "Creature",
-    "level": 0,
-    "traits": [
-      "Medium",
-      "Animal"
-    ],
-    "source": "Pathfinder Bestiary 3",
-    "perception": {
-      "value": 7,
-      "note": "scent 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "scent 60 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 4,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 7,
-        "note": [
-          "to Long Jump <span class=\"roll\" onclick=\"roll(this)\">9</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 3,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": 1
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Powerful Leaper",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The kangaroo doesn't need to Stride while attempting a Long Jump, nor does it automatically fail if it doesn't.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 15,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 18,
-      "max": 18,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Defensive Shove",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The kangaroo takes damage from an adjacent creature</p>\n<hr />\n<p><strong>Effect</strong> The kangaroo attempts to Shove the creature that damaged it.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "35 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 7,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+3",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+3)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Foot",
-        "bonus": 7,
-        "traits": [
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6+3",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+3)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Push"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [],
-    "description": "<p>Kangaroos are marsupials distinguished by long faces, large ears, powerful back legs and tails, and a distinctive hopping gait. These generally placid herbivores are shy of other creatures, preferring to live in open grasslands where their keen ears and eyes can spot danger approaching from a distance.</p>\n<p>Male kangaroos develop powerful front limbs and exhibit a dominance behavior commonly known as \"boxing.\" When two male kangaroos confront each other, they draw close; they then swat at their opponent with their front claws while also pulling their own heads back out of range. Kangaroos also occasionally rock back on their tails before delivering a blow with their heavily muscled hind legs. The claws on their back legs make these blows particularly deadly, and a kangaroo can disembowel an attacker with a single strike using this tactic.</p>\n<p>Like other marsupials, female kangaroos carry their young-called joeys-in a pouch on their bellies. They have only one such offspring at a time, although many females have several joeys in quick succession. These social animals largely gather for protection, but their social structures are similar to those found in herds of camels, horses, or pigs.</p>\n<p>Kangaroos don't make particularly good mounts, but this hasn't stopped the occasional adventurous gnome or halfling from trying. Such an attempt usually results in a seasick and dizzy rider being dumped unceremoniously from the animal's back or pouch, but some druids have found them to be loyal companions.</p>\n<p>In places where kangaroos are common, the animals are sometimes hunted for meat and can even provide a primary food supply to migratory communities due to their quick reproduction and ability to flee predators. People in other regions consider kangaroos a delicacy and often import their meat as a show of status in wealthy households.</p>\n<p>Several types of kangaroos have evolved, each living in a slightly different environment. Gray kangaroos are smaller than other varieties and dwell in open woodlands, most commonly on the southern reaches of the continent of Garund. Giant kangaroos, found primarily on the dry steppes of northern Casmaron, grow to twice the size of standard kangaroos, and the thunderous noise of their passing can be heard and felt from miles away. The kangaroo family also has several smaller relatives, including wallabies and pademelons. Some kangaroos exist in captivity in other parts of the world, but attempts to introduce them into other regions have-so far-largely failed.</p>\n<p>A large kangaroo can reach over 6 feet in height and weighs up to 200 pounds.</p>",
-    "recallKnowledge": "Nature, DC: 14",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 14"
 }

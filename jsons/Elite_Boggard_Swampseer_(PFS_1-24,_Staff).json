@@ -9,24 +9,24 @@
   "type": "Creature",
   "level": 3,
   "traits": [
+    "Common",
     "Medium",
     "Amphibious",
     "Boggard",
     "Chaotic",
     "Evil",
-    "Humanoid",
-    "(caster)"
+    "Humanoid"
   ],
   "source": "Pathfinder Society Scenario #1-20: The Lost Legend",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 11,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Boggard",
     "Chthonian",
@@ -133,7 +133,7 @@
   },
   "savenote": "",
   "hp": {
-    "value": 50,
+    "value": 65,
     "max": 50,
     "note": "",
     "modifications": []
@@ -142,7 +142,7 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "20 ft,\nswim 25 ft,\n",
+  "speed": "20 ft, swim 25ft",
   "strikes": [
     {
       "type": "melee",
@@ -179,7 +179,7 @@
       "damageRolls": [],
       "critRolls": [],
       "effects": [
-        "Tongue-grab"
+        "tongue-grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -194,7 +194,7 @@
       "traits": [
         "sonic"
       ],
-      "description": "<p>The swampseer utters a powerful croak that deals <span class=\"roll\" onclick=\"roll(this)\">4d6+4</span> sonic damage to any non-boggard within a 15 foot emanation (DC 17 basic Fortitude save).</p>\n<p>Any creature with the Frightened condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds</p>",
+      "description": "<p>The swampseer utters a powerful croak that deals (4d6+4) Sonic Damage damage to any non-boggard within a 15ft Emanation (Basic DC 17 Fortitude Saving Throw save).</p>\n<p>Any creature with the Frightened condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for 1d4 rounds</p>",
       "collapsed": false
     },
     {
@@ -205,7 +205,7 @@
         "mental",
         "sonic"
       ],
-      "description": "<p><strong>Trigger</strong> The boggard swampseer or one of its allies within 60 feet attempts a saving throw against an auditory or sonic effect.</p>\n<hr />\n<p><strong>Effect</strong> The swampseer releases a croak that drowns out other sound. It rolls a Performance check. It and boggard allies in the area can use the higher result of the swampseer's Performance check or their saves to resolve the effects against the auditory or sonic effect.</p>",
+      "description": "<p><strong>Trigger</strong> The boggard swampseer or one of its allies within 60 feet attempts a saving throw against an auditory or sonic effect.</p>\n<hr />\n<p><strong>Effect</strong> The swampseer releases a croak that drowns out other sound. It rolls a performance check. It and boggard allies in the area can use the higher result of the swampseer's Performance check or their saves to resolve the effects against the auditory or sonic effect.</p>",
       "collapsed": false
     },
     {
@@ -224,7 +224,7 @@
         "fear",
         "mental"
       ],
-      "description": "<p>The boggard swampseer unleashes a terrifying croak. Any non-boggard within 30 foot emanation becomes Frightened 1 unless they succeed at a DC 19 Will save.</p>\n<p>Those who critically succeed are temporarily immune for 1 minute.</p>",
+      "description": "<p>The boggard swampseer unleashes a terrifying croak. Any non-boggard within 30ft Emanation becomes Frightened 1 unless they succeed at a DC 19 Will Saving Throw save.</p>\n<p>Those who critically succeed are temporarily immune for 1 minute.</p>",
       "collapsed": false
     },
     {
@@ -251,6 +251,8 @@
           "name": "Acid Splash",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "acid",
             "attack",
@@ -263,7 +265,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal <span class=\"roll\" onclick=\"roll(this)\">1d6</span> acid damage plus 1 splash acid damage. On a critical success, the target also takes ceil1 persistent plus acid damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">2d6</span>, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">3d6</span>, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">4d6</span>, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">5d6</span>, the persistent damage increases to 5, and the splash damage increases to 4.</p>",
+          "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal 1d6 acid damage plus 1 splash acid damage. On a critical success, the target also takes (ceil(@item.level/2)) Persistent,acid Damage damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to 2d6, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to 3d6, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to 4d6, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to 5d6, the persistent damage increases to 5, and the splash damage increases to 4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -275,13 +277,15 @@
           "name": "Dancing Lights",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "light",
             "manipulate"
           ],
           "castingTime": "2",
-          "duration": "",
+          "duration": "Sustained up to ",
           "range": "120 feet",
           "area": "",
           "targets": "",
@@ -298,6 +302,8 @@
           "name": "Ray of Frost",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "cold",
@@ -310,7 +316,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
+          "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals 2d4 cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p></p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -322,6 +328,8 @@
           "name": "Tanglefoot",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "attack",
             "concentrate",
@@ -334,7 +342,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the Immobilized condition.</p>\n<p><strong>Success</strong> The target takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
+          "description": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the Immobilized condition.</p>\n<p><strong>Success</strong> The target takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n<p></p>\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -343,42 +351,19 @@
           "id": "cgrEU62MxEgjhoX3"
         }
       ],
-      "rituals": [],
-      "spellLocations": [
-        {
-          "id": "LToGsgFrhhD1hil9",
-          "rank": 1
-        },
-        {
-          "id": "KFwDGc58goUeKhth",
-          "rank": 1
-        },
-        {
-          "id": "Tj3ClqJJlDsvpI5G",
-          "rank": 1
-        },
-        {
-          "id": "X5dRlJaq2Zl76EB2",
-          "rank": 2
-        },
-        {
-          "id": "sMWl6cpcIkMbDu0S",
-          "rank": 2
-        }
-      ],
-      "usedAttribute": "wisdom",
-      "_id": "pFruogrBBB4pvImp",
-      "modifications": [],
       "lv1spells": [
         {
           "name": "Fear",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "emotion",
             "fear",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -398,8 +383,11 @@
           "name": "Jump",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
-            "manipulate"
+            "manipulate",
+            "move"
           ],
           "castingTime": "1",
           "duration": "",
@@ -419,9 +407,12 @@
           "name": "Shillelagh",
           "type": "spell",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "plant"
           ],
           "castingTime": "2",
           "duration": "1 minute",
@@ -429,7 +420,7 @@
           "area": "",
           "targets": "1 non-magical club or staff you hold",
           "save": "",
-          "description": "<p>The target grows vines and leaves, brimming with primal energy. The target becomes a <em>+1 striking weapon</em> while in your hands, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two. Additionally, as long as you are on your home plane, attacks you make with the target against aberrations, extraplanar creatures, and undead increase the number of weapon damage dice to three.</p>\n",
+          "description": "<p>The target grows vines and leaves, brimming with primal energy. The target becomes a <em>+1 striking weapon</em> while in your hands, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two. Additionally, as long as you are on your home plane, attacks you make with the target against aberrations, extraplanar creatures, and undead increase the number of weapon damage dice to three.</p>\n<p></p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -438,16 +429,18 @@
           "id": "Tj3ClqJJlDsvpI5G"
         }
       ],
-      "lv1slots": {},
       "lv2spells": [
         {
           "name": "Acid Arrow",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "acid",
             "attack",
-            "concentrate"
+            "concentrate",
+            "manipulate"
           ],
           "castingTime": "2",
           "duration": "",
@@ -455,7 +448,7 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal <span class=\"roll\" onclick=\"roll(this)\">3d8</span> acid damage plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus acid damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d8</span>, and the persistent acid damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus (floor(@item.rank/2))d6 Persistent,acid Damage damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the persistent acid damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -467,14 +460,17 @@
           "name": "Obscuring Mist",
           "type": "spell",
           "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "manipulate"
+            "manipulate",
+            "water"
           ],
           "castingTime": "3",
           "duration": "1 minute",
           "range": "120 feet",
-          "area": "20 ft burst",
+          "area": "20ft burst",
           "targets": "",
           "save": "",
           "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
@@ -486,7 +482,6 @@
           "id": "sMWl6cpcIkMbDu0S"
         }
       ],
-      "lv2slots": {},
       "lv3spells": [],
       "lv4spells": [],
       "lv5spells": [],
@@ -495,6 +490,15 @@
       "lv8spells": [],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv2slots": {
+        "current": 2,
+        "max": 2
+      },
       "lv3slots": {
         "current": 0,
         "max": 0
@@ -529,541 +533,5 @@
       }
     }
   ],
-  "description": "<p>The boggard swampseer has been gifted with magic through its worship of the demon lord Gogunta, and uses its power to rule a boggard village, keeping the rest of the village in line and planning raids on nearby communities.</p>\n<hr />\n<p>Boggards are aggressive humanoid amphibians that thrive in swamps, marshes, and even some rain forests. Boggards hatch from eggs into tadpoles, fiercely competing for food and even consuming their siblings in that struggle. Over 3 years, the surviving boggards develops arms, legs, and lungs while learning the rudiments of hunting, crafts, and warfare-everything needed to survive in their might-makes-right society. At the top of most boggard hierarchies lords a hulking swampseer imbued with sinister divine magic.</p>",
-  "recallKnowledge": "Society, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Elite Boggard Swampseer (PFS 1-24, Staff)",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Medium",
-      "Amphibious",
-      "Boggard",
-      "Chaotic",
-      "Evil",
-      "Humanoid",
-      "(caster)"
-    ],
-    "source": "Pathfinder Society Scenario #1-20: The Lost Legend",
-    "perception": {
-      "value": 11,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Boggard",
-      "Chthonian",
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "medicine",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "performance",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "religion",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": 0
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": 0
-    },
-    "wisdom": {
-      "value": 4
-    },
-    "charisma": {
-      "value": 3
-    },
-    "items": [
-      {
-        "name": "Staff",
-        "quantity": 1,
-        "description": "<p>This long piece of wood can aid in walking and deliver a mighty blow.</p>",
-        "level": 0,
-        "price": "",
-        "traits": [
-          "two-hand-d8"
-        ]
-      }
-    ],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 50,
-      "max": 50,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "20 ft,\nswim 25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Staff",
-        "bonus": 10,
-        "traits": [
-          "two-hand-d8"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tongue",
-        "bonus": 10,
-        "traits": [
-          "reach-10"
-        ],
-        "damageRolls": [],
-        "critRolls": [],
-        "effects": [
-          "Tongue-grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Destructive Croak",
-        "actions": 2,
-        "traits": [
-          "sonic"
-        ],
-        "description": "<p>The swampseer utters a powerful croak that deals <span class=\"roll\" onclick=\"roll(this)\">4d6+4</span> sonic damage to any non-boggard within a 15 foot emanation (DC 17 basic Fortitude save).</p>\n<p>Any creature with the Frightened condition takes additional sonic damage equal to twice the value of their frightened condition.</p>\n<p>The boggard can't use Destructive Croak again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Drowning Drone",
-        "actions": -1,
-        "traits": [
-          "auditory",
-          "mental",
-          "sonic"
-        ],
-        "description": "<p><strong>Trigger</strong> The boggard swampseer or one of its allies within 60 feet attempts a saving throw against an auditory or sonic effect.</p>\n<hr />\n<p><strong>Effect</strong> The swampseer releases a croak that drowns out other sound. It rolls a Performance check. It and boggard allies in the area can use the higher result of the swampseer's Performance check or their saves to resolve the effects against the auditory or sonic effect.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Swamp Stride",
-        "actions": null,
-        "traits": [],
-        "description": "<p>A boggard swampseer ignores difficult terrain caused by swamp terrain features.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Terrifying Croak",
-        "actions": 1,
-        "traits": [
-          "auditory",
-          "emotion",
-          "fear",
-          "mental"
-        ],
-        "description": "<p>The boggard swampseer unleashes a terrifying croak. Any non-boggard within 30 foot emanation becomes Frightened 1 unless they succeed at a DC 19 Will save.</p>\n<p>Those who critically succeed are temporarily immune for 1 minute.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Tongue Grab",
-        "actions": null,
-        "traits": [],
-        "description": "<p>If the boggard swampseer hits a creature with its tongue, that creature becomes Grabbed by the boggard. Unlike with a normal grab, the creature isn't Immobilized, but it can't move beyond the reach of the boggard's tongue.</p>\n<p>A creature can sever the tongue by hitting AC 17 and dealing at least 4 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Primal Prepared Spells",
-        "type": "prepared",
-        "bonus": 11,
-        "dc": 21,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 2,
-        "cantrips": [
-          {
-            "name": "Acid Splash",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "acid",
-              "attack",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You splash a glob of acid that splatters your target and nearby creatures. Make a spell attack. If you hit, you deal <span class=\"roll\" onclick=\"roll(this)\">1d6</span> acid damage plus 1 splash acid damage. On a critical success, the target also takes ceil1 persistent plus acid damage.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">2d6</span>, and the persistent damage increases to 2.</p>\n<p><strong>Heightened (5th)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">3d6</span>, the persistent damage increases to 3, and the splash damage increases to 2.</p>\n<p><strong>Heightened (7th)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">4d6</span>, the persistent damage increases to 4, and the splash damage increases to 3.</p>\n<p><strong>Heightened (9th)</strong> The initial damage increases to <span class=\"roll\" onclick=\"roll(this)\">5d6</span>, the persistent damage increases to 5, and the splash damage increases to 4.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "PMv0ScBncLEWfm5A"
-          },
-          {
-            "name": "Dancing Lights",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "light",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You create up to four floating lights, no two of which are more than 10 feet apart. Each sheds light like a torch. When you Sustain the Spell, you can move any number of lights up to 60 feet. Each light must remain within 120 feet of you and within 10 feet of all others, or it winks out.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "EBMJYwTl0ZSvLHiQ"
-          },
-          {
-            "name": "Ray of Frost",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "cold",
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You blast an icy ray. Make a spell attack roll. The ray deals <span class=\"roll\" onclick=\"roll(this)\">2d4</span> cold damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d4</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "g3kH2uuQtfYUM1ZY"
-          },
-          {
-            "name": "Tanglefoot",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "attack",
-              "concentrate",
-              "manipulate",
-              "plant"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>A vine covered in sticky sap appears from thin air, flicking from your hand and lashing itself to the target. Attempt a spell attack against the target.</p>\n<hr />\n<p><strong>Critical Success</strong> The target gains the Immobilized condition and takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty and the Immobilized condition.</p>\n<p><strong>Success</strong> The target takes a -10-foot circumstance penalty to its Speeds for 1 round. It can attempt to Escape against your spell DC to remove the penalty.</p>\n\n<p><strong>Failure</strong> The target is unaffected.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The effects last for 2 rounds.</p>\n<p><strong>Heightened (4th)</strong> The effects last for 1 minute.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "cgrEU62MxEgjhoX3"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [
-          {
-            "id": "LToGsgFrhhD1hil9",
-            "rank": 1
-          },
-          {
-            "id": "KFwDGc58goUeKhth",
-            "rank": 1
-          },
-          {
-            "id": "Tj3ClqJJlDsvpI5G",
-            "rank": 1
-          },
-          {
-            "id": "X5dRlJaq2Zl76EB2",
-            "rank": 2
-          },
-          {
-            "id": "sMWl6cpcIkMbDu0S",
-            "rank": 2
-          }
-        ],
-        "usedAttribute": "wisdom",
-        "_id": "pFruogrBBB4pvImp",
-        "modifications": [],
-        "lv1spells": [
-          {
-            "name": "Fear",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "emotion",
-              "fear",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>You plant fear in the target; it must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Frightened 1.</p>\n<p><strong>Failure</strong> The target is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The target is Frightened 3 and Fleeing for 1 round.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to five creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "LToGsgFrhhD1hil9"
-          },
-          {
-            "name": "Jump",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "manipulate"
-            ],
-            "castingTime": "1",
-            "duration": "",
-            "range": "",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>Your legs surge with strength, ready to leap high and far. You jump 30 feet in any direction without touching the ground. You must land on a space of solid ground within 30 feet of you, or else you fall after using your next action.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range becomes touch, the target changes to one touched creature, and the duration becomes 1 minute, allowing the target to jump as described whenever it takes the Leap action.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "KFwDGc58goUeKhth"
-          },
-          {
-            "name": "Shillelagh",
-            "type": "spell",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "1 minute",
-            "range": "touch",
-            "area": "",
-            "targets": "1 non-magical club or staff you hold",
-            "save": "",
-            "description": "<p>The target grows vines and leaves, brimming with primal energy. The target becomes a <em>+1 striking weapon</em> while in your hands, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two. Additionally, as long as you are on your home plane, attacks you make with the target against aberrations, extraplanar creatures, and undead increase the number of weapon damage dice to three.</p>\n",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "Tj3ClqJJlDsvpI5G"
-          }
-        ],
-        "lv1slots": {},
-        "lv2spells": [
-          {
-            "name": "Acid Arrow",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "acid",
-              "attack",
-              "concentrate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "120 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "",
-            "description": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal <span class=\"roll\" onclick=\"roll(this)\">3d8</span> acid damage plus <span class=\"roll\" onclick=\"roll(this)\">1d6</span> persistent plus acid damage. On a critical hit, double the initial damage, but not the persistent damage.</p><hr /><p><strong>Heightened (+2)</strong> The initial damage increases by <span class=\"roll\" onclick=\"roll(this)\">2d8</span>, and the persistent acid damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "X5dRlJaq2Zl76EB2"
-          },
-          {
-            "name": "Obscuring Mist",
-            "type": "spell",
-            "level": 2,
-            "traits": [
-              "concentrate",
-              "manipulate"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "20 ft burst",
-            "targets": "",
-            "save": "",
-            "description": "<p>You call forth a cloud of mist. All creatures within the mist become Concealed, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "sMWl6cpcIkMbDu0S"
-          }
-        ],
-        "lv2slots": {},
-        "lv3spells": [],
-        "lv4spells": [],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The boggard swampseer has been gifted with magic through its worship of the demon lord Gogunta, and uses its power to rule a boggard village, keeping the rest of the village in line and planning raids on nearby communities.</p>\n<hr />\n<p>Boggards are aggressive humanoid amphibians that thrive in swamps, marshes, and even some rain forests. Boggards hatch from eggs into tadpoles, fiercely competing for food and even consuming their siblings in that struggle. Over 3 years, the surviving boggards develops arms, legs, and lungs while learning the rudiments of hunting, crafts, and warfare-everything needed to survive in their might-makes-right society. At the top of most boggard hierarchies lords a hulking swampseer imbued with sinister divine magic.</p>",
-    "recallKnowledge": "Society, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 18"
 }

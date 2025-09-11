@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Iron Maiden Trap",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 8,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,39 +17,54 @@
   "source": "Pathfinder #158: Sixty Feet Under",
   "stealth": {
     "value": 20,
-    "note": "(expert)",
-    "modifications": []
+    "note": "(expert)"
   },
   "description": "<p>A pressure plate hidden on the floor before an iron maiden causes the torture device to snap shut and trap the triggering creature inside.</p>",
-  "disable": "<p>DC 28 Thievery check to disable the pressure plate</p>",
+  "disable": "<p>DC 28 Thievery  to disable the pressure plate</p>",
   "reset": "<p>The pressure plate must be reset manually.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Slam Shut",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature steps onto the trap's pressure plate (indicated on the map)</p>\n<hr />\n<p><strong>Effect</strong> The front of the iron maiden slams shut with incredible force and locks itself. The triggering creature takes (4d10+10) Piercing Damage damage and 2d6 Bleed Damage (Basic DC 26 Reflex Saving Throw save; if the creature critically succeeds, they avoid the trap completely). The triggering creature is also immobilized. The victim can end their immobilization only once a creature outside the iron maiden unlocks the device (requiring two successful DC 28 Thievery checks to Disable a Device) or breaks the iron maiden, after which the trapped creature must succeed at a DC 25 check to Escape the trap's spike-lined interior.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 25,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 6
   },
   "fortitude": {
     "value": 0,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 0,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 24,
     "max": 24,
-    "note": "<b>Hardness</b> 6 <b>BT</b> 12. <strong>Iron Maiden Hardness</strong> 12; <strong>Iron Maiden HP</strong> 46 (BT 23)",
+    "note": "<strong>Iron Maiden Hardness</strong> 12; <strong>Iron Maiden HP</strong> 46 (BT 23)",
     "modifications": []
   },
   "immunities": [
@@ -61,93 +76,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Slam Shut",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature steps onto the trap's pressure plate (indicated on the map)</p>\n<hr />\n<p><strong>Effect</strong> The front of the iron maiden slams shut with incredible force and locks itself. The triggering creature takes <span class=\"roll\" onclick=\"roll(this)\">4d10+10</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bleed (DC 26 basic Reflex save; if the creature critically succeeds, they avoid the trap completely). The triggering creature is also immobilized. The victim can end their immobilization only once a creature outside the iron maiden unlocks the device (requiring two successful DC 28 Thievery checks to Disable a Device) or breaks the iron maiden, after which the trapped creature must succeed at a DC 25 check to Escape the trap's spike-lined interior.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 20,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Iron Maiden Trap",
-    "type": "hazard",
-    "level": 8,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder #158: Sixty Feet Under",
-    "stealth": {
-      "value": 20,
-      "note": "(expert)",
-      "modifications": []
-    },
-    "description": "<p>A pressure plate hidden on the floor before an iron maiden causes the torture device to snap shut and trap the triggering creature inside.</p>",
-    "disable": "<p>DC 28 Thievery check to disable the pressure plate</p>",
-    "reset": "<p>The pressure plate must be reset manually.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 25,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 24,
-      "max": 24,
-      "note": "<b>Hardness</b> 6 <b>BT</b> 12. <strong>Iron Maiden Hardness</strong> 12; <strong>Iron Maiden HP</strong> 46 (BT 23)",
-      "modifications": []
-    },
-    "immunities": [
-      "precision",
-      "critical-hits"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Slam Shut",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature steps onto the trap's pressure plate (indicated on the map)</p>\n<hr />\n<p><strong>Effect</strong> The front of the iron maiden slams shut with incredible force and locks itself. The triggering creature takes <span class=\"roll\" onclick=\"roll(this)\">4d10+10</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">2d6</span> bleed (DC 26 basic Reflex save; if the creature critically succeeds, they avoid the trap completely). The triggering creature is also immobilized. The victim can end their immobilization only once a creature outside the iron maiden unlocks the device (requiring two successful DC 28 Thievery checks to Disable a Device) or breaks the iron maiden, after which the trapped creature must succeed at a DC 25 check to Escape the trap's spike-lined interior.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 24"
-  },
-  "recallKnowledge": ", DC: 24"
+  "recallKnowledge": ", DC 24"
 }

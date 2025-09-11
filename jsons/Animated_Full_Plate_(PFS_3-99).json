@@ -15,15 +15,15 @@
     "Mindless"
   ],
   "source": "Pathfinder Society Special #3-99: Fate in the Future",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 6,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -60,6 +60,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 9
+    }
+  },
   "fortitude": {
     "value": 10,
     "note": "",
@@ -82,14 +87,22 @@
   "hp": {
     "value": 20,
     "max": 20,
-    "note": "<b>Hardness</b> 9 <b>BT</b> 10. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "20 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 9)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated full plate has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an animated full plate is reduced to fewer than half its Hit Points, or immediately upon being damaged by critical hit, its construct armor breaks, removing the Hardness and reducing its Armor Class to 13.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -109,7 +122,7 @@
       ],
       "critRolls": [
         {
-          "roll": "(1d8 + 4)*2+1d8",
+          "roll": "(1d8 + 4)*2",
           "type": "slashing"
         }
       ],
@@ -149,161 +162,5 @@
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "description": "",
-  "recallKnowledge": "Arcana, Crafting, DC: 18",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 6,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Animated Full Plate (PFS 3-99)",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Uncommon",
-      "Medium",
-      "Construct",
-      "Mindless"
-    ],
-    "source": "Pathfinder Society Special #3-99: Fate in the Future",
-    "perception": {
-      "value": 6,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 3
-    },
-    "dexterity": {
-      "value": -3
-    },
-    "constitution": {
-      "value": 4
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 17,
-      "note": "13 when broken",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 20,
-      "max": 20,
-      "note": "<b>Hardness</b> 9 <b>BT</b> 10. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Glaive",
-        "bonus": 10,
-        "traits": [
-          "deadly-d8",
-          "forceful",
-          "magical",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8 + 4",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8 + 4)*2+1d8",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Gauntlet",
-        "bonus": 10,
-        "traits": [
-          "agile",
-          "free-hand",
-          "magical"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d6 + 4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6 + 4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [],
-    "spellcastingEntries": [],
-    "description": "",
-    "recallKnowledge": "Arcana, Crafting, DC: 18",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 16"
 }

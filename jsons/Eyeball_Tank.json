@@ -4,44 +4,66 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Eyeball Tank",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 15,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Magical"
   ],
   "source": "Pathfinder #161: Belly of the Black Whale",
   "stealth": {
     "value": 31,
-    "note": "(master)",
-    "modifications": []
+    "note": "(master)"
   },
   "description": "<p>A vat of thick glass stands 10 feet high and is filled with green slime and fist-sized eyeballs.</p>",
-  "disable": "<p>DC 38 Thievery check (master) or DC 34 Crafting check (expert) to acidify the slime inside the tank, destroying the eyeballs</p>",
+  "disable": "<p>DC 38 Thievery  (master) or DC 34 Crafting  (expert) to acidify the slime inside the tank, destroying the eyeballs</p>",
   "reset": "",
   "routine": "<p>(3 actions) Each round, the vat uses all three of its actions to shoot random eye rays at any living creatures (except Ixusoth) in range.</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Eye-Opener",
+      "actions": -1,
+      "traits": [
+        "emotion",
+        "mental"
+      ],
+      "description": "<p><strong>Trigger</strong> Three or more living creatures remain within 20 feet of the trap for 1 round</p>\n<hr />\n<p><strong>Effect</strong> The trap rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spill Eyeballs",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The tank reaches its Broken Threshold</p>\n<hr />\n<p><strong>Effect</strong> The glass shatters, spilling eyeballs onto the floor in a 15-foot radius and casting <em>grease</em> (DC 33) on the affected area. The eyeball tank is permanently destroyed and can't be reset.<strong>Reset</strong> The trap can be reset by adding 100 new eyeballs to the tank and allowing them to grow in the slime for 1 week.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 33,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 29,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 26,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -70,7 +92,10 @@
         "range-increment-100"
       ],
       "damageRolls": [],
+      "critRolls": [],
       "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
@@ -80,7 +105,10 @@
       "bonus": 28,
       "traits": [],
       "damageRolls": [],
+      "critRolls": [],
       "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
@@ -92,154 +120,15 @@
         "range-increment-100"
       ],
       "damageRolls": [],
+      "critRolls": [],
       "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
   ],
-  "offensiveAbilities": [
-    {
-      "name": "Eye-Opener",
-      "actions": -1,
-      "traits": [
-        "emotion",
-        "mental"
-      ],
-      "description": "<p><strong>Trigger</strong> Three or more living creatures remain within 20 feet of the trap for 1 round</p>\n<hr />\n<p><strong>Effect</strong> The trap rolls initiative.</p>",
-      "collapsed": false
-    },
-    {
-      "name": "Spill Eyeballs",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> The tank reaches its Broken Threshold</p>\n<hr />\n<p><strong>Effect</strong> The glass shatters, spilling eyeballs onto the floor in a 15-foot radius and casting <em>grease</em>(DC 33) on the affected area. The eyeball tank is permanently destroyed and can't be reset.<strong>Reset</strong> The trap can be reset by adding 100 new eyeballs to the tank and allowing them to grow in the slime for 1 week.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 31,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Eyeball Tank",
-    "type": "hazard",
-    "level": 15,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Magical"
-    ],
-    "source": "Pathfinder #161: Belly of the Black Whale",
-    "stealth": {
-      "value": 31,
-      "note": "(master)",
-      "modifications": []
-    },
-    "description": "<p>A vat of thick glass stands 10 feet high and is filled with green slime and fist-sized eyeballs.</p>",
-    "disable": "<p>DC 38 Thievery check (master) or DC 34 Crafting check (expert) to acidify the slime inside the tank, destroying the eyeballs</p>",
-    "reset": "",
-    "routine": "<p>(3 actions) Each round, the vat uses all three of its actions to shoot random eye rays at any living creatures (except Ixusoth) in range.</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 33,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 29,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 26,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 180,
-      "max": 180,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits",
-      "precision"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "ranged",
-        "name": "Despair Ray",
-        "bonus": 28,
-        "traits": [
-          "emotion",
-          "mental",
-          "range-increment-100"
-        ],
-        "damageRolls": [],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Feeblemind Ray",
-        "bonus": 28,
-        "traits": [],
-        "damageRolls": [],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Spirit Blast Ray",
-        "bonus": 28,
-        "traits": [
-          "range-increment-100"
-        ],
-        "damageRolls": [],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Eye-Opener",
-        "actions": -1,
-        "traits": [
-          "emotion",
-          "mental"
-        ],
-        "description": "<p><strong>Trigger</strong> Three or more living creatures remain within 20 feet of the trap for 1 round</p>\n<hr />\n<p><strong>Effect</strong> The trap rolls initiative.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Spill Eyeballs",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> The tank reaches its Broken Threshold</p>\n<hr />\n<p><strong>Effect</strong> The glass shatters, spilling eyeballs onto the floor in a 15-foot radius and casting <em>grease</em>(DC 33) on the affected area. The eyeball tank is permanently destroyed and can't be reset.<strong>Reset</strong> The trap can be reset by adding 100 new eyeballs to the tank and allowing them to grow in the slime for 1 week.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 34"
-  },
-  "recallKnowledge": ", DC: 34"
+  "recallKnowledge": ", DC 34"
 }

@@ -10,24 +10,25 @@
   "level": -1,
   "traits": [
     "Unique",
-    "Tiny",
+    "tiny",
     "Chaotic",
     "Undead"
   ],
   "source": "Pathfinder Bounty #21: Against the Unliving",
+  "senses": [
+    "Darkvision",
+    "sense companion"
+  ],
   "perception": {
     "value": 5,
-    "note": "darkvision",
+    "note": "Darkvision, sense companion",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [
     "Common",
     "Necril",
-    "Can't speak any language"
+    "can't speak any language"
   ],
   "skills": [
     {
@@ -41,7 +42,7 @@
       "name": "athletics",
       "modifier": 2,
       "note": [
-        "when jumping <span class=\"roll\" onclick=\"roll(this)\">4</span>"
+        "when jumping 4"
       ],
       "usedAttribute": "strength",
       "modifications": []
@@ -142,11 +143,18 @@
         "aura",
         "olfactory"
       ],
-      "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a DC 13 Fortitude save or become Sickened 1 (plus Slowed 1 for as long as it's sickened on a critical failure). While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>",
+      "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a DC 13 Fortitude Saving Throw save or become Sickened 1 (plus Slowed 1 for as long as it's sickened on a critical failure). While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
       "collapsed": false
     }
   ],
-  "speed": "40 ft,\n",
+  "speed": "40 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -188,200 +196,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Bonds of loyalty that endure beyond death reanimate pets to crawl from their graves within days of dying, returning to the side of their past owners, family, or pack. Unfortunately, death irrevocably changes a risen pet. They return as aggressive, predatory beasts, difficult to control and easy to anger. Even the most friendly and docile of pets becomes sadistic and violent in undeath—fixating first on those it views as competition for the attention of its owners. When a risen pet is jilted, rebuffed, or offended by its owner, it turns on them.</p>",
-  "recallKnowledge": "Religion, DC: 13",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 5,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Denufair",
-    "type": "Creature",
-    "level": -1,
-    "traits": [
-      "Unique",
-      "Tiny",
-      "Chaotic",
-      "Undead"
-    ],
-    "source": "Pathfinder Bounty #21: Against the Unliving",
-    "perception": {
-      "value": 5,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [
-      "Common",
-      "Necril",
-      "Can't speak any language"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 2,
-        "note": [
-          "when jumping <span class=\"roll\" onclick=\"roll(this)\">4</span>"
-        ],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 2
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 1
-    },
-    "charisma": {
-      "value": -1
-    },
-    "items": [
-      {
-        "name": "Ribbon Collar",
-        "quantity": 1,
-        "description": "",
-        "level": 0,
-        "price": "",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Sense Companion",
-        "actions": null,
-        "traits": [
-          "detection",
-          "occult"
-        ],
-        "description": "<p>Denufair knows the direction of its past owner or family (as long as they're both on the same plane), but not the distance.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 16,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 4,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 3,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 6,
-      "max": 6,
-      "note": "void healing",
-      "modifications": []
-    },
-    "immunities": [
-      "death-effects",
-      "disease",
-      "paralyzed",
-      "poison",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Stench",
-        "actions": null,
-        "traits": [
-          "aura",
-          "olfactory"
-        ],
-        "description": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a DC 13 Fortitude save or become Sickened 1 (plus Slowed 1 for as long as it's sickened on a critical failure). While within the aura, affected creatures take a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "40 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 8,
-        "traits": [
-          "finesse",
-          "reach-0",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Feral Leap",
-        "actions": 2,
-        "traits": [
-          "move"
-        ],
-        "description": "<p>Denufair jumps with a maximum height and distance each equal to half its Speed. This movement doesn't trigger reactions. At any point, the predatory rabbit attempts a jaws Strike.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Bonds of loyalty that endure beyond death reanimate pets to crawl from their graves within days of dying, returning to the side of their past owners, family, or pack. Unfortunately, death irrevocably changes a risen pet. They return as aggressive, predatory beasts, difficult to control and easy to anger. Even the most friendly and docile of pets becomes sadistic and violent in undeath—fixating first on those it views as competition for the attention of its owners. When a risen pet is jilted, rebuffed, or offended by its owner, it turns on them.</p>",
-    "recallKnowledge": "Religion, DC: 13",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Religion, DC 13"
 }

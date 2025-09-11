@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Collapsing Porch",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 1,
   "traits": [
-    "Hazard",
-    "Simple",
+    "Common",
     "Medium",
     "Mechanical",
     "Trap"
@@ -17,39 +17,54 @@
   "source": "Pathfinder Adventure: Troubles in Otari",
   "stealth": {
     "value": 9,
-    "note": "(or 0 after the hazard is triggered)",
-    "modifications": []
+    "note": "(or 0 after the hazard is triggered)"
   },
   "description": "<p>A section of splintery and rotten floorboards drop a creature 6 feet onto uneven rocks and piercing shards of wood.</p>",
-  "disable": "<p>DC 15 Crafting check (trained) to replace or cover the weak sections of flooring, or DC 15 Survival check (trained) to crumble the rotten floorboards from a safe distance</p>",
+  "disable": "<p>DC 15 Crafting  (trained) to replace or cover the weak sections of flooring, or DC 15 Survival  (trained) to crumble the rotten floorboards from a safe distance</p>",
   "reset": "<p>Once this section of the porch has collapsed, creatures can still fall through the hole until the porch is Repaired.</p>",
   "routine": "",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Collapse",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>If a creature walks on the area marked on the map, it falls through the weakened floorboards onto uneven rocks and sharp shards of wood, taking 1d4 Piercing Damage]{1d4 piercing damage and 1d6 bludgeoning damage}. The creature can use the Grab an Edge reaction to avoid the fall and the damage.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 10,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 3
   },
   "fortitude": {
     "value": 1,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 1,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 12,
     "max": 12,
-    "note": "<b>Hardness</b> 3 <b>BT</b> 6. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [
@@ -60,92 +75,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Collapse",
-      "actions": -1,
-      "traits": [],
-      "description": "<p>If a creature walks on the area marked on the map, it falls through the weakened floorboards onto uneven rocks and sharp shards of wood, taking <span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage. The creature can use the Grab an Edge reaction to avoid the fall and the damage.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": true,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Collapsing Porch",
-    "type": "hazard",
-    "level": 1,
-    "traits": [
-      "Hazard",
-      "Simple",
-      "Medium",
-      "Mechanical",
-      "Trap"
-    ],
-    "source": "Pathfinder Adventure: Troubles in Otari",
-    "stealth": {
-      "value": 9,
-      "note": "(or 0 after the hazard is triggered)",
-      "modifications": []
-    },
-    "description": "<p>A section of splintery and rotten floorboards drop a creature 6 feet onto uneven rocks and piercing shards of wood.</p>",
-    "disable": "<p>DC 15 Crafting check (trained) to replace or cover the weak sections of flooring, or DC 15 Survival check (trained) to crumble the rotten floorboards from a safe distance</p>",
-    "reset": "<p>Once this section of the porch has collapsed, creatures can still fall through the hole until the porch is Repaired.</p>",
-    "routine": "",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 10,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 1,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 1,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 12,
-      "max": 12,
-      "note": "<b>Hardness</b> 3 <b>BT</b> 6. ",
-      "modifications": []
-    },
-    "immunities": [
-      "critical-hits"
-    ],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Collapse",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>If a creature walks on the area marked on the map, it falls through the weakened floorboards onto uneven rocks and sharp shards of wood, taking <span class=\"roll\" onclick=\"roll(this)\">1d4</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">1d6</span> bludgeoning damage. The creature can use the Grab an Edge reaction to avoid the fall and the damage.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": true,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 15"
-  },
-  "recallKnowledge": ", DC: 15"
+  "recallKnowledge": ", DC 15"
 }

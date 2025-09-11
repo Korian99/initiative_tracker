@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Construct",
     "Mindless"
   ],
   "source": "Pathfinder Lost Omens Tian Xia World Guide",
-  "perception": {
-    "value": 8,
-    "note": "darkvision",
-    "usedAttribute": "wisdom",
-    "modifications": []
-  },
   "senses": [
     "Darkvision"
   ],
+  "perception": {
+    "value": 8,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
   "languages": [],
   "skills": [
     {
@@ -66,6 +67,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 3
+    }
+  },
   "fortitude": {
     "value": 9,
     "note": "",
@@ -88,14 +94,22 @@
   "hp": {
     "value": 30,
     "max": 30,
-    "note": "<b>Hardness</b> 3 <b>BT</b> 15. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "30 ft,\nclimb 15 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 3)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, an animated bamboo figuring has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once an animated bamboo figuring is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 16.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 15ft",
   "strikes": [
     {
       "type": "melee",
@@ -119,7 +133,7 @@
         }
       ],
       "effects": [
-        "Knockdown"
+        "knockdown"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -134,152 +148,15 @@
       "traits": [],
       "description": "<p>The animated bamboo figure jumps up to 30 feet and makes two fist Strikes against different targets. It can use Knockdown following this activity, attempting to Trip each creature struck.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Knockdown",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p></p></details></p>",
+      "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Supple but strong bamboo strips woven into intricate patterns form the base of the animated bamboo figure. These materials are plentiful and easy to come by, though they require great care and patience to prepare, making them ideal guardians for isolated communities. These hollow and pliable handcrafts can stretch or compress, jumping and springing farther than most humanoids.</p>",
-  "recallKnowledge": "Arcana, Crafting, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Animated Bamboo Figurine",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Construct",
-      "Mindless"
-    ],
-    "source": "Pathfinder Lost Omens Tian Xia World Guide",
-    "perception": {
-      "value": 8,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "Darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 10,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 4
-    },
-    "dexterity": {
-      "value": 4
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 18,
-      "note": "16 when broken; construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 30,
-      "max": 30,
-      "note": "<b>Hardness</b> 3 <b>BT</b> 15. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\nclimb 15 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Fist",
-        "bonus": 10,
-        "traits": [
-          "magical",
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d8+4",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d8+4)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Knockdown"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Spring Forward",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The animated bamboo figure jumps up to 30 feet and makes two fist Strikes against different targets. It can use Knockdown following this activity, attempting to Trip each creature struck.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Supple but strong bamboo strips woven into intricate patterns form the base of the animated bamboo figure. These materials are plentiful and easy to come by, though they require great care and patience to prepare, making them ideal guardians for isolated communities. These hollow and pliable handcrafts can stretch or compress, jumping and springing farther than most humanoids.</p>",
-    "recallKnowledge": "Arcana, Crafting, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 16"
 }

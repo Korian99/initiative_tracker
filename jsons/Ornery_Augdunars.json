@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Ornery Augdunars",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 1,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Animal",
     "Environmental"
@@ -17,11 +17,10 @@
   "source": "Pathfinder #193: Mantle of Gold",
   "stealth": {
     "value": 8,
-    "note": "(trained)",
-    "modifications": []
+    "note": "(trained)"
   },
   "description": "<p>Spooked augdunars gallop wildly about the paddock, biting and kicking as they run.</p>",
-  "disable": "<p>Succeed at four of the following checks in any combination: DC 14 Nature check (trained) to calm the animals, DC 16 Intimidation check (untrained) to scare the augdunars away, DC 18 Will save (trained) to avoid flinching and project confidence, causing the augdunars to veer away. For each success, the hazard takes a cumulative -1 penalty to attack rolls.</p>",
+  "disable": "<p>Succeed at four of the following checks in any combination: DC 14 Nature  (trained) to calm the animals, DC 16 Intimidation  (untrained) to scare the augdunars away, DC 18 Will Saving Throw (trained) to avoid flinching and project confidence, causing the augdunars to veer away. For each success, the hazard takes a cumulative -1 penalty to attack rolls.</p>",
   "reset": "",
   "routine": "<p>(2 actions) The augdunars use an action to Strike one target with their jaws, and they use another action to Trip a different target (Athletics +9). If the augdunars have taken damage since their last turn, they instead use Lashing Hooves with their first action and then make either a jaws Strike or Trip attempt with their second action.</p>",
   "items": [],
@@ -36,21 +35,26 @@
   ],
   "ac": {
     "value": 16,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
     "value": 10,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 8,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 5,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
@@ -84,6 +88,8 @@
         }
       ],
       "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     },
@@ -105,6 +111,8 @@
         }
       ],
       "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -119,131 +127,5 @@
     }
   ],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Ornery Augdunars",
-    "type": "hazard",
-    "level": 1,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Animal",
-      "Environmental"
-    ],
-    "source": "Pathfinder #193: Mantle of Gold",
-    "stealth": {
-      "value": 8,
-      "note": "(trained)",
-      "modifications": []
-    },
-    "description": "<p>Spooked augdunars gallop wildly about the paddock, biting and kicking as they run.</p>",
-    "disable": "<p>Succeed at four of the following checks in any combination: DC 14 Nature check (trained) to calm the animals, DC 16 Intimidation check (untrained) to scare the augdunars away, DC 18 Will save (trained) to avoid flinching and project confidence, causing the augdunars to veer away. For each success, the hazard takes a cumulative -1 penalty to attack rolls.</p>",
-    "reset": "",
-    "routine": "<p>(2 actions) The augdunars use an action to Strike one target with their jaws, and they use another action to Trip a different target (Athletics +9). If the augdunars have taken damage since their last turn, they instead use Lashing Hooves with their first action and then make either a jaws Strike or Trip attempt with their second action.</p>",
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Rile",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> Algerschmick rolls initiative</p>\n<hr />\n<p><strong>Effect</strong> The augdunars roll initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 16,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 10,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 5,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 30,
-      "max": 30,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Hoof",
-        "bonus": 11,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "1d6+3",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d6+3)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 11,
-        "traits": [],
-        "damageRolls": [
-          {
-            "roll": "1d4+3",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+3)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Lashing Hooves",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>An augdunar makes a hoof Strike and compares the attack roll result to the AC of up to two foes who are adjacent to each other.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": "Nature, DC: 15"
-  },
-  "recallKnowledge": "Nature, DC: 15"
+  "recallKnowledge": "Nature, DC 15"
 }

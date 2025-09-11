@@ -9,6 +9,7 @@
   "type": "Creature",
   "level": 5,
   "traits": [
+    "Common",
     "Large",
     "Giant",
     "Humanoid",
@@ -16,15 +17,15 @@
     "Wood"
   ],
   "source": "Pathfinder Beginner Box",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 11,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -109,6 +110,13 @@
   ],
   "defensiveAbilities": [
     {
+      "name": "Regeneration 20 (Deactivated by Electricity or Fire)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The troll regains 20 Hit Points at the start of their turn unless they've taken electricity or fire damage since their last turn. The troll can't die unless their regeneration is deactivated when they're reduced to 0 HP.</p>",
+      "collapsed": false
+    },
+    {
       "name": "Easily Misled",
       "actions": null,
       "traits": [],
@@ -116,7 +124,7 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\n",
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -177,199 +185,10 @@
       "name": "Rend",
       "actions": 1,
       "traits": [],
-      "description": "<p>If the troll succeeds at two claw Strikes against the same creature in the same turn, they can use this ability to automatically deal claw Strike damage to that creature.</p></details>",
+      "description": "<p>If the troll succeeds at two claw Strikes against the same creature in the same turn, they can use this ability to automatically deal claw Strike damage to that creature.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>Forest trolls are dim-witted, gangly giants who stalk the fringes of civilization. They rely on their incredible strength to overpower foes with their vicious claws. A troll's endless hunger drives them to consume a variety of living creatures. Trolls stand anywhere from 12 to 16 feet tall, though they prefer to hunch to lull foes into a false sense of security.</p>",
-  "recallKnowledge": "Society, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 11,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Forest Troll (BB)",
-    "type": "Creature",
-    "level": 5,
-    "traits": [
-      "Large",
-      "Giant",
-      "Humanoid",
-      "Troll",
-      "Wood"
-    ],
-    "source": "Pathfinder Beginner Box",
-    "perception": {
-      "value": 11,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 12,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 5
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 6
-    },
-    "intelligence": {
-      "value": -2
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -2
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 20,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 125,
-      "max": 125,
-      "note": "regeneration 20 (deactivated by electricity or fire)",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "exceptions": [],
-        "type": "fire",
-        "value": 10
-      },
-      {
-        "exceptions": [],
-        "type": "electricity",
-        "value": 10
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Easily Misled",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The forest troll gets a -4 circumstance penalty to their Perception DC against deception checks.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 14,
-        "traits": [
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d10+5",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d10+5)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 14,
-        "traits": [
-          "agile",
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+5",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+5)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Rend",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>If the troll succeeds at two claw Strikes against the same creature in the same turn, they can use this ability to automatically deal claw Strike damage to that creature.</p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>Forest trolls are dim-witted, gangly giants who stalk the fringes of civilization. They rely on their incredible strength to overpower foes with their vicious claws. A troll's endless hunger drives them to consume a variety of living creatures. Trolls stand anywhere from 12 to 16 feet tall, though they prefer to hunch to lull foes into a false sense of security.</p>",
-    "recallKnowledge": "Society, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 20"
 }

@@ -17,15 +17,15 @@
     "Shadow"
   ],
   "source": "Pathfinder #183: Field of Maidens",
+  "senses": [
+    "Darkvision"
+  ],
   "perception": {
     "value": 13,
-    "note": "darkvision",
+    "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision"
-  ],
   "languages": [],
   "skills": [
     {
@@ -62,6 +62,11 @@
     "usedAttribute": "dexterity",
     "modifications": []
   },
+  "hardness": {
+    "value": {
+      "value": 10
+    }
+  },
   "fortitude": {
     "value": 17,
     "note": "",
@@ -82,16 +87,24 @@
   },
   "savenote": "",
   "hp": {
-    "value": 100,
+    "value": 120,
     "max": 100,
-    "note": "<b>Hardness</b> 10 <b>BT</b> 50. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
   "resistances": [],
   "weaknesses": [],
-  "defensiveAbilities": [],
-  "speed": "30 ft,\n",
+  "defensiveAbilities": [
+    {
+      "name": "Construct Armor (Hardness 10)",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Like normal objects, the statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once the statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 24.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -114,7 +127,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -143,7 +156,7 @@
       ],
       "effects": [],
       "usedAttributeToHit": "dexterity",
-      "usedAttributeDamage": "none",
+      "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
     }
@@ -153,189 +166,24 @@
       "name": "Clinging Gloom",
       "actions": 1,
       "traits": [],
-      "description": "<p>The statue pulls a creature it has Grabbed into its grasping shadows. The target takes <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage and <span class=\"roll\" onclick=\"roll(this)\">1d8</span> persistent plus void damage.</p>",
+      "description": "<p>The statue pulls a creature it has Grabbed into its grasping shadows. The target takes 3d8 Void Damage damage and 1d8 Persistent,void Damage damage.</p>",
       "collapsed": false
     },
     {
       "name": "Cowl of Shadow",
       "actions": null,
       "traits": [],
-      "description": "<p>Shifting shadows cover the statue. If the statue is dealt at least 15 vitality damage or brought within an area of magical light, the shadows recede, and the statue can't make darkness mote attacks or use Clinging Gloom.</p>",
+      "description": "<p>Shifting shadows cover the statue. If the statue is dealt at least 15 Vitality Damage damage or brought within an area of magical light, the shadows recede, and the statue can't make darkness mote attacks or use Clinging Gloom.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>As with any humanoid animated statues of Medium size, giant animated statues are used to guard locations of importance, but their increased size and power make them most useful in large vaults, spacious chambers, or outdoor locations. Animated objects of this strength and size are ideal for tasks and responsibilities usually performed by golems, and more powerful animated objects are thus all but unheard of.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
-  "recallKnowledge": "Arcana, Crafting, DC: 28",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 13,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Shadowbound Monk Statue",
-    "type": "Creature",
-    "level": 7,
-    "traits": [
-      "Rare",
-      "Large",
-      "Construct",
-      "Earth",
-      "Mindless",
-      "Shadow"
-    ],
-    "source": "Pathfinder #183: Field of Maidens",
-    "perception": {
-      "value": 13,
-      "note": "darkvision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 17,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 6
-    },
-    "dexterity": {
-      "value": -1
-    },
-    "constitution": {
-      "value": 6
-    },
-    "intelligence": {
-      "value": -5
-    },
-    "wisdom": {
-      "value": 0
-    },
-    "charisma": {
-      "value": -5
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 26,
-      "note": "(24 when broken); construct armor",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 17,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 10,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 100,
-      "max": 100,
-      "note": "<b>Hardness</b> 10 <b>BT</b> 50. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Stone Fist",
-        "bonus": 19,
-        "traits": [
-          "magical",
-          "reach-10"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d12+6",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d12+6)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "ranged",
-        "name": "Darkness Mote",
-        "bonus": 12,
-        "traits": [
-          "magical",
-          "range-increment-80"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4d8-2",
-            "type": "void"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d8-2)*2",
-            "type": "void"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "none",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Clinging Gloom",
-        "actions": 1,
-        "traits": [],
-        "description": "<p>The statue pulls a creature it has Grabbed into its grasping shadows. The target takes <span class=\"roll\" onclick=\"roll(this)\">3d8</span> void damage and <span class=\"roll\" onclick=\"roll(this)\">1d8</span> persistent plus void damage.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Cowl of Shadow",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Shifting shadows cover the statue. If the statue is dealt at least 15 vitality damage or brought within an area of magical light, the shadows recede, and the statue can't make darkness mote attacks or use Clinging Gloom.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>As with any humanoid animated statues of Medium size, giant animated statues are used to guard locations of importance, but their increased size and power make them most useful in large vaults, spacious chambers, or outdoor locations. Animated objects of this strength and size are ideal for tasks and responsibilities usually performed by golems, and more powerful animated objects are thus all but unheard of.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
-    "recallKnowledge": "Arcana, Crafting, DC: 28",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana or Crafting, DC 23"
 }

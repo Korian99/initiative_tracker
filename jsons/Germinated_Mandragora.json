@@ -10,21 +10,22 @@
   "level": 3,
   "traits": [
     "Uncommon",
-    "Tiny",
+    "tiny",
     "Chaotic",
     "Evil",
     "Plant"
   ],
   "source": "Pathfinder Society Scenario #5-05: The Island of the Vibrant Dead",
+  "senses": [
+    "Low light vision",
+    "blood scent"
+  ],
   "perception": {
     "value": 9,
-    "note": "low light-vision",
+    "note": "Low light vision, blood scent",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision"
-  ],
   "languages": [
     "Chthonian",
     "Common"
@@ -48,7 +49,7 @@
       "name": "stealth",
       "modifier": 10,
       "note": [
-        "in vegetation <span class=\"roll\" onclick=\"roll(this)\">18</span>"
+        "in vegetation 18"
       ],
       "usedAttribute": "dexterity",
       "modifications": []
@@ -141,7 +142,7 @@
       "collapsed": false
     }
   ],
-  "speed": "30 ft,\nburrow 10 ft,\nclimb 30 ft,\n",
+  "speed": "30 ft, burrow 10ft, climb 30ft",
   "strikes": [
     {
       "type": "melee",
@@ -164,7 +165,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -193,7 +194,7 @@
         }
       ],
       "effects": [
-        "Mandragora-venom"
+        "mandragora-venom"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -208,7 +209,7 @@
       "traits": [
         "fey"
       ],
-      "description": "<p><strong>Requirements</strong> The germinated mandragora has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The germinated mandragora drains blood from the creature it has grabbed, dealing <span class=\"roll\" onclick=\"roll(this)\">1d6</span> untyped damage. If the creature is a demon, fey, or sorcerer, the germinated mandragora gains temporary Hit Points equal to the damage dealt. A creature that has its blood drained by a germinated mandragora is Drained 1 until it receives healing of any kind or amount.</p>",
+      "description": "<p><strong>Requirements</strong> The germinated mandragora has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The germinated mandragora drains blood from the creature it has grabbed, dealing 1d6 Untyped Damage damage. If the creature is a demon, fey, or sorcerer, the germinated mandragora gains temporary Hit Points equal to the damage dealt. A creature that has its blood drained by a germinated mandragora is Drained 1 until it receives healing of any kind or amount.</p>",
       "collapsed": false
     },
     {
@@ -217,7 +218,7 @@
       "traits": [
         "poison"
       ],
-      "description": "<p><strong>Saving Throw</strong> DC 19 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage, Confused, and Stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Confused, and Stupefied 1 (1 round)</p>",
+      "description": "<p><strong>Saving Throw</strong> DC 19 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d6 Poison Damage damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage, Confused, and Stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> 2d6 Poison Damage damage, Confused, and Stupefied 1 (1 round)</p>",
       "collapsed": false
     },
     {
@@ -228,250 +229,17 @@
         "mental",
         "primal"
       ],
-      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The germinated mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a DC 23 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 2.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 2 and Slowed 1. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>",
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The germinated mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a DC 23 Will Saving Throw save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 2.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 2 and Slowed 1. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
-  "recallKnowledge": "Nature, DC: 20",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Germinated Mandragora",
-    "type": "Creature",
-    "level": 3,
-    "traits": [
-      "Uncommon",
-      "Tiny",
-      "Chaotic",
-      "Evil",
-      "Plant"
-    ],
-    "source": "Pathfinder Society Scenario #5-05: The Island of the Vibrant Dead",
-    "perception": {
-      "value": 9,
-      "note": "low light-vision",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision"
-    ],
-    "languages": [
-      "Chthonian",
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 10,
-        "note": [
-          "in vegetation <span class=\"roll\" onclick=\"roll(this)\">18</span>"
-        ],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 2
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 3
-    },
-    "intelligence": {
-      "value": -1
-    },
-    "wisdom": {
-      "value": 2
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Blood Scent",
-        "actions": null,
-        "traits": [
-          "fey"
-        ],
-        "description": "<p>A germinated mandragora can smell creatures with blood as an imprecise scent at a range of 30 feet, and it can smell demons, fey, and sorcerers with blood as a precise sense at a range of 30 feet.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 19,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 11,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 6,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 45,
-      "max": 45,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "bludgeoning",
-        "value": 5
-      },
-      {
-        "type": "electricity",
-        "value": 5
-      }
-    ],
-    "weaknesses": [
-      {
-        "type": "fire",
-        "value": 5
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Vulnerability to Supernatural Darkness",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Whenever a germinated mandragora begins its turn in an area of magical darkness, it is Slowed 1 on that turn.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "30 ft,\nburrow 10 ft,\nclimb 30 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 12,
-        "traits": [
-          "finesse",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d8+2",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d8+2)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Thorny Vine",
-        "bonus": 12,
-        "traits": [
-          "agile",
-          "finesse",
-          "reach"
-        ],
-        "damageRolls": [
-          {
-            "roll": "2d4+2",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(2d4+2)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [
-          "Mandragora-venom"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Blood Drain",
-        "actions": 1,
-        "traits": [
-          "fey"
-        ],
-        "description": "<p><strong>Requirements</strong> The germinated mandragora has a creature Grabbed</p>\n<hr />\n<p><strong>Effect</strong> The germinated mandragora drains blood from the creature it has grabbed, dealing <span class=\"roll\" onclick=\"roll(this)\">1d6</span> untyped damage. If the creature is a demon, fey, or sorcerer, the germinated mandragora gains temporary Hit Points equal to the damage dealt. A creature that has its blood drained by a germinated mandragora is Drained 1 until it receives healing of any kind or amount.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Mandragora Venom",
-        "actions": null,
-        "traits": [
-          "poison"
-        ],
-        "description": "<p><strong>Saving Throw</strong> DC 19 Fortitude save</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage and Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> <span class=\"roll\" onclick=\"roll(this)\">1d6</span> poison damage, Confused, and Stupefied 1 (1 round)</p>\n<p><strong>Stage 3</strong> <span class=\"roll\" onclick=\"roll(this)\">2d6</span> poison damage, Confused, and Stupefied 1 (1 round)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Piercing Shriek",
-        "actions": 1,
-        "traits": [
-          "auditory",
-          "mental",
-          "primal"
-        ],
-        "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The germinated mandragora emits an unsettling shriek. Each non-mandragora creature within 30 feet must attempt a DC 23 Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Sickened 2.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 2 and Slowed 1. As long as the creature remains sickened, this slowed condition value can't be reduced below 1.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>A mandragora looks like a freshly pulled tuber that has grown into the malformed shape of a child with a grotesque face and hideously bloated body. These insidious little plants typically form when a mandrake root is watered with a demon's blood. Upon absorbing the otherworldly properties of the demon's blood, the root animates and is forced to seek out blood to feast from, lest it die of thirst.</p>\n<p>Always famished and in search for sustenance, mandragoras live haunted, pained lives and perform vile and desperate acts to acquire the blood they crave. While they prefer magically infused blood such as that of unicorns, fey, or sorcerers, and they can also feed off of potions, alchemical bombs, and other magical elixirs, a mandragora can subsist on the blood of non-magical creatures. They find the flavor of mundane blood to be bland and bitter, and they do not blanch at voicing these complaints to the creatures from which they drink.</p>\n<p>While the typical mandragora is the size of a human child, some of these evil plants continue to grow and grow, reaching sizes more comparable to those of giants. Sometimes as they grow, they form additional limbs or rudimentary faces, eventually transforming into truly hideous mockeries of the human form.</p>",
-    "recallKnowledge": "Nature, DC: 20",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 18"
 }

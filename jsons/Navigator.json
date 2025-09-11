@@ -9,18 +9,19 @@
   "type": "Creature",
   "level": 2,
   "traits": [
+    "Common",
     "Medium",
     "Human",
     "Humanoid"
   ],
   "source": "Pathfinder NPC Core",
+  "senses": [],
   "perception": {
     "value": 9,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [],
   "languages": [
     "Common"
   ],
@@ -85,7 +86,7 @@
       "quantity": 1,
       "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
       "level": 0,
-      "price": "2 sp ",
+      "price": "2 sp",
       "traits": [
         "agile",
         "finesse",
@@ -106,7 +107,7 @@
       "quantity": 1,
       "description": "<p>Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you've written a large amount, you can refill your kit with extra ink and paper.</p>",
       "level": 0,
-      "price": "1 gp ",
+      "price": "1 gp",
       "traits": []
     }
   ],
@@ -119,10 +120,17 @@
       ],
       "description": "<p>By spending 10 minutes of work and succeeding at a Sailing Lore check, the navigator plots an optimal course.</p>\n<p>The severity of environmental conditions other than temperature are reduced by one step for 24 hours (two steps on a critical success). This changes moderate damage to minor damage, winds that create greater difficult terrain cause only difficult terrain, and so on.</p>",
       "collapsed": false
+    },
+    {
+      "name": "Sailing Specialist",
+      "actions": null,
+      "traits": [],
+      "description": "<p>For encounters involving navigation or sailing, the navigator is a 4th-level challenge.</p>",
+      "collapsed": false
     }
   ],
   "ac": {
-    "value": 18,
+    "value": 17,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
@@ -147,8 +155,8 @@
   },
   "savenote": "",
   "hp": {
-    "value": 28,
-    "max": 28,
+    "value": 30,
+    "max": 30,
     "note": "",
     "modifications": []
   },
@@ -156,12 +164,12 @@
   "resistances": [],
   "weaknesses": [],
   "defensiveAbilities": [],
-  "speed": "25 ft,\n",
+  "speed": "25 ft, ",
   "strikes": [
     {
       "type": "melee",
       "name": "Dagger",
-      "bonus": 8,
+      "bonus": 9,
       "traits": [
         "agile",
         "finesse",
@@ -180,7 +188,7 @@
         }
       ],
       "effects": [
-        "Navigators-edge"
+        "navigators-edge"
       ],
       "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
@@ -190,7 +198,7 @@
     {
       "type": "melee",
       "name": "Dagger",
-      "bonus": 8,
+      "bonus": 9,
       "traits": [
         "agile",
         "thrown-10",
@@ -209,9 +217,37 @@
         }
       ],
       "effects": [
-        "Navigators-edge"
+        "navigators-edge"
       ],
       "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "nonlethal",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -222,244 +258,10 @@
       "name": "Navigator's Edge",
       "actions": null,
       "traits": [],
-      "description": "<p>The navigator deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> weapon damage when on a ship.</p>",
+      "description": "<p>The navigator's Strikes deal an additional 1d6 damage when on a ship.</p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>A navigator uses celestial bodies and shipping lanes to determine routes.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
-  "recallKnowledge": "Society, DC: 16",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 9,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Navigator",
-    "type": "Creature",
-    "level": 2,
-    "traits": [
-      "Medium",
-      "Human",
-      "Humanoid"
-    ],
-    "source": "Pathfinder NPC Core",
-    "perception": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [],
-    "languages": [
-      "Common"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 6,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "nature",
-        "modifier": 11,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "society",
-        "modifier": 8,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "survival",
-        "modifier": 9,
-        "note": [],
-        "usedAttribute": "wisdom",
-        "modifications": []
-      },
-      {
-        "name": "Sailing Lore",
-        "modifier": 14,
-        "note": "",
-        "usedAttribute": "intelligence",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 0
-    },
-    "dexterity": {
-      "value": 2
-    },
-    "constitution": {
-      "value": 1
-    },
-    "intelligence": {
-      "value": 4
-    },
-    "wisdom": {
-      "value": 3
-    },
-    "charisma": {
-      "value": 0
-    },
-    "items": [
-      {
-        "name": "Dagger",
-        "quantity": 1,
-        "description": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>",
-        "level": 0,
-        "price": "2 sp ",
-        "traits": [
-          "agile",
-          "finesse",
-          "thrown-10",
-          "versatile-s"
-        ]
-      },
-      {
-        "name": "Scroll Case with Ship's Charts",
-        "quantity": 1,
-        "description": "",
-        "level": 0,
-        "price": "",
-        "traits": []
-      },
-      {
-        "name": "Writing Set",
-        "quantity": 1,
-        "description": "<p>Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you've written a large amount, you can refill your kit with extra ink and paper.</p>",
-        "level": 0,
-        "price": "1 gp ",
-        "traits": []
-      }
-    ],
-    "generalAbilities": [
-      {
-        "name": "Chart a Course",
-        "actions": null,
-        "traits": [
-          "concentrate"
-        ],
-        "description": "<p>By spending 10 minutes of work and succeeding at a Sailing Lore check, the navigator plots an optimal course.</p>\n<p>The severity of environmental conditions other than temperature are reduced by one step for 24 hours (two steps on a critical success). This changes moderate damage to minor damage, winds that create greater difficult terrain cause only difficult terrain, and so on.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 18,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 7,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 9,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 28,
-      "max": 28,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "25 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Dagger",
-        "bonus": 8,
-        "traits": [
-          "agile",
-          "finesse",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Navigators-edge"
-        ],
-        "usedAttributeToHit": "dexterity",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Dagger",
-        "bonus": 8,
-        "traits": [
-          "agile",
-          "thrown-10",
-          "versatile-s"
-        ],
-        "damageRolls": [
-          {
-            "roll": "1d4+4",
-            "type": "piercing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(1d4+4)*2",
-            "type": "piercing"
-          }
-        ],
-        "effects": [
-          "Navigators-edge"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Navigator's Edge",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The navigator deals an additional <span class=\"roll\" onclick=\"roll(this)\">1d6</span> weapon damage when on a ship.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>A navigator uses celestial bodies and shipping lanes to determine routes.</p><hr /><p>Adventurers may need passage on a swift vessel, or they might face danger from raiders at sea or in coastal settlements.</p>",
-    "recallKnowledge": "Society, DC: 16",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Society, DC 16"
 }

@@ -10,24 +10,24 @@
   "level": 19,
   "traits": [
     "Uncommon",
-    "Huge",
+    "huge",
     "Chaotic",
     "Dragon",
     "Evil",
-    "Fire",
-    "(caster)"
+    "Fire"
   ],
   "source": "Pathfinder Bestiary",
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise",
+    "smoke vision"
+  ],
   "perception": {
     "value": 35,
-    "note": "darkvisionscent 60 ft imprecise",
+    "note": "Darkvision, Scent 60ft imprecise, smoke vision",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "darkvision",
-    "scent 60 ft imprecise"
-  ],
   "languages": [
     "Chthonian",
     "Common",
@@ -163,8 +163,8 @@
       "name": "Attack of Opportunity (Jaws Only)",
       "actions": -1,
       "traits": [],
-      "description": "<p>Jaws only</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-      "collapsed": true
+      "description": "<p>Jaws only</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
     },
     {
       "name": "Dragon Heat",
@@ -174,7 +174,7 @@
         "aura",
         "fire"
       ],
-      "description": "<p>10 feet. <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage (DC 39 basic Reflex save)</p>",
+      "description": "<p>10 feet. 4d6 Fire Damage damage (Basic DC 39 Reflex Saving Throw save)</p>",
       "collapsed": false
     },
     {
@@ -186,7 +186,7 @@
         "fear",
         "mental"
       ],
-      "description": "<p>90 feet. DC 40 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
+      "description": "<p>90 feet. DC 40 Will Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details></p>",
       "collapsed": false
     },
     {
@@ -199,7 +199,7 @@
       "collapsed": false
     }
   ],
-  "speed": "60 ft,\nfly 180 ft,\n",
+  "speed": "60 ft, fly 180ft",
   "strikes": [
     {
       "type": "melee",
@@ -327,7 +327,7 @@
         "arcane",
         "fire"
       ],
-      "description": "<p>The dragon breathes a blast of flame that deals <span class=\"roll\" onclick=\"roll(this)\">20d6</span> fire damage in a 60 foot cone (DC 42 basic Reflex save).</p>\n<p>It can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>The dragon breathes a blast of flame that deals 20d6 Fire Damage damage in a 60ft Cone (Basic DC 42 Reflex Saving Throw save).</p>\n<p>It can't use Breath Weapon again for 1d4 rounds.</p>",
       "collapsed": false
     },
     {
@@ -365,12 +365,14 @@
         "current": 0,
         "max": 0
       },
-      "autoHeightenLevel": 10,
+      "autoHeightenLevel": 8,
       "cantrips": [
         {
           "name": "Detect Magic",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -379,7 +381,7 @@
           "castingTime": "2",
           "duration": "",
           "range": "",
-          "area": "30 ft emanation",
+          "area": "30ft emanation",
           "targets": "",
           "save": "",
           "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
@@ -394,6 +396,8 @@
           "name": "Read Aura",
           "type": "cantrip",
           "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "detection",
@@ -414,11 +418,6 @@
           "id": "dhFWsJ2sfUnIAzVu"
         }
       ],
-      "rituals": [],
-      "spellLocations": [],
-      "usedAttribute": "charisma",
-      "_id": "qaEGHfAlvrP6CGwS",
-      "modifications": [],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
@@ -427,11 +426,14 @@
           "name": "Suggestion (At Will)",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
             "incapacitation",
             "linguistic",
-            "manipulate"
+            "manipulate",
+            "mental"
           ],
           "castingTime": "2",
           "duration": "varies",
@@ -456,9 +458,12 @@
           "name": "Wall of Fire (At Will)",
           "type": "spell",
           "level": 4,
+          "heightenedLevel": 8,
+          "timesPrepared": 1,
           "traits": [
             "concentrate",
-            "fire"
+            "fire",
+            "manipulate"
           ],
           "castingTime": "3",
           "duration": "1 minute",
@@ -466,7 +471,7 @@
           "area": "",
           "targets": "",
           "save": "",
-          "description": "<p>You raise a blazing wall that burns creatures passing through it. You create either a 5-foot-thick wall of flame in a straight line up to 60 feet long and 10 feet high, or a 5-foot-thick, 10-foot-radius ring of flame with the same height. The wall stands vertically in either form; if you wish, the wall can be of a shorter length or height. Everything on each side of the wall is Concealed from creatures on the opposite side. Any creature that crosses the wall or is occupying the wall's area at the start of its turn takes <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
+          "description": "<p>You raise a blazing wall that burns creatures passing through it. You create either a 5-foot-thick wall of flame in a straight line up to 60 feet long and 10 feet high, or a 5-foot-thick, 10-foot-radius ring of flame with the same height. The wall stands vertically in either form; if you wish, the wall can be of a shorter length or height. Everything on each side of the wall is Concealed from creatures on the opposite side. Any creature that crosses the wall or is occupying the wall's area at the start of its turn takes 4d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 1d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
@@ -477,6 +482,7 @@
       ],
       "lv9spells": [],
       "lv10spells": [],
+      "rituals": [],
       "lv1slots": {
         "current": 0,
         "max": 0
@@ -519,531 +525,5 @@
       }
     }
   ],
-  "description": "<p>The largest and most powerful of the chromatic dragons, red dragons are a menace to civilizations everywhere, and their strength is rivaled only by their arrogance. Red dragons see themselves as regents and overlords of all dragonkind. With their crowns of crimson spikes and their command of blistering frame, this is no haughty boast in their eyes-only unquestioned fact.</p>\n<p>Red dragons don't deign to speak with lesser creatures; they simply dominate and burn, enslaving weaker creatures to act as servants and to look after their lairs while the dragons slumber away. They take pleasure in dominating these creatures, and they demand tribute from their supplicants. Those who anger or disappoint end up eaten or reduced to ash. They command their enslaved minions to constantly build onto their lairs, carving out new tunnels and designing cunning traps that ensure the dragon's security.</p>\n<p>Driven by their arrogance, red dragons are the most likely of the chromatic dragons to ravage settlements. They want the world to see them in their rightful place as powerful tyrants, and they delight in threatening all other creatures. They have no qualms about bullying, manipulating, or killing to complete their goals-or simply intimidating others through a public display of brutality and dominance.</p>\n<p>As legendary as the brutishness of red dragons is the magnificence of their hoards of gold. Their lairs are often situated in dangerous places, with volcanoes being a favorite spot, as they find them foreboding and the constant warmth is comfortable. No matter the locale, red dragons sleep on a litter of coins and other treasures, which they zealously guard. Sometimes, the dragon's internal heat causes these precious metals to fuse together.</p>\n<hr />\n<p>While there are many types of dragons, from the powerful planar dragons to the strange esoteric dragons, few dragon varieties are as well-known and as rightly feared as the chromatic dragons. Differentiated by the hue of their scales, each color of dragon unleashes its own flavor of murderous cruelty-be it by claw, tooth, or breath-and unlike most creatures, dragons only become more powerful as they age. Their lust for treasure, food, bloodshed, and control are legendary. Physically powerful with egos to match, these dragons are often morally depraved and act as criminal masterminds, vicious tyrants, or voracious raiders.</p>",
-  "recallKnowledge": "Arcana, DC: 41",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 35,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Red Dragon (Ancient)",
-    "type": "Creature",
-    "level": 19,
-    "traits": [
-      "Uncommon",
-      "Huge",
-      "Chaotic",
-      "Dragon",
-      "Evil",
-      "Fire",
-      "(caster)"
-    ],
-    "source": "Pathfinder Bestiary",
-    "perception": {
-      "value": 35,
-      "note": "darkvisionscent 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "darkvision",
-      "scent 60 ft imprecise"
-    ],
-    "languages": [
-      "Chthonian",
-      "Common",
-      "Draconic",
-      "Dwarven",
-      "Jotun",
-      "Orcish"
-    ],
-    "skills": [
-      {
-        "name": "acrobatics",
-        "modifier": 30,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      },
-      {
-        "name": "arcana",
-        "modifier": 35,
-        "note": [],
-        "usedAttribute": "intelligence",
-        "modifications": []
-      },
-      {
-        "name": "athletics",
-        "modifier": 37,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "deception",
-        "modifier": 35,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "diplomacy",
-        "modifier": 35,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "intimidation",
-        "modifier": 37,
-        "note": [],
-        "usedAttribute": "charisma",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 33,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 9
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 8
-    },
-    "intelligence": {
-      "value": 5
-    },
-    "wisdom": {
-      "value": 6
-    },
-    "charisma": {
-      "value": 7
-    },
-    "items": [],
-    "generalAbilities": [
-      {
-        "name": "Smoke Vision",
-        "actions": null,
-        "traits": [],
-        "description": "<p>Smoke doesn't impair a red dragon's vision; it ignores the Concealed condition from smoke.</p>",
-        "collapsed": false
-      }
-    ],
-    "ac": {
-      "value": 45,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 35,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 32,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 35,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "+1 status to all saves vs. magic",
-    "hp": {
-      "value": 425,
-      "max": 425,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [
-      "fire",
-      "paralyzed",
-      "sleep"
-    ],
-    "resistances": [],
-    "weaknesses": [
-      {
-        "type": "cold",
-        "value": 20
-      }
-    ],
-    "defensiveAbilities": [
-      {
-        "name": "Attack of Opportunity (Jaws Only)",
-        "actions": -1,
-        "traits": [],
-        "description": "<p>Jaws only</p>\n<hr />\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p>",
-        "collapsed": true
-      },
-      {
-        "name": "Dragon Heat",
-        "actions": null,
-        "traits": [
-          "arcane",
-          "aura",
-          "fire"
-        ],
-        "description": "<p>10 feet. <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage (DC 39 basic Reflex save)</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Frightful Presence",
-        "actions": null,
-        "traits": [
-          "aura",
-          "emotion",
-          "fear",
-          "mental"
-        ],
-        "description": "<p>90 feet. DC 40 Will save</p>\n<details><summary>See rules...</summary>\n<p><p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 4.</p></p></details>",
-        "collapsed": false
-      },
-      {
-        "name": "Redirect Fire",
-        "actions": -1,
-        "traits": [
-          "arcane"
-        ],
-        "description": "<p><strong>Trigger</strong> A creature within 100 feet casts a fire spell, or a fire spell otherwise comes into effect from a source within 100 feet.</p>\n<hr />\n<p><strong>Effect</strong> The dragon makes all the choices to determine the targets, destination, or other effects of the spell, as though it were the caster.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "60 ft,\nfly 180 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 37,
-        "traits": [
-          "fire",
-          "magical",
-          "reach-20",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4d10+17",
-            "type": "piercing"
-          },
-          {
-            "roll": "3d6",
-            "type": "fire"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d10+17)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "fire"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Claw",
-        "bonus": 37,
-        "traits": [
-          "agile",
-          "magical",
-          "reach-15",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4d8+17",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d8+17)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Tail",
-        "bonus": 35,
-        "traits": [
-          "magical",
-          "reach-25"
-        ],
-        "damageRolls": [
-          {
-            "roll": "4d10+15",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(4d10+15)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Wing",
-        "bonus": 35,
-        "traits": [
-          "agile",
-          "magical",
-          "reach-20"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d8+15",
-            "type": "slashing"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d8+15)*2",
-            "type": "slashing"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Breath Weapon",
-        "actions": 2,
-        "traits": [
-          "arcane",
-          "fire"
-        ],
-        "description": "<p>The dragon breathes a blast of flame that deals <span class=\"roll\" onclick=\"roll(this)\">20d6</span> fire damage in a 60 foot cone (DC 42 basic Reflex save).</p>\n<p>It can't use Breath Weapon again for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Draconic Frenzy",
-        "actions": 2,
-        "traits": [],
-        "description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Draconic Momentum",
-        "actions": null,
-        "traits": [],
-        "description": "<p>The dragon recharges its Breath Weapon whenever it scores a critical hit with a Strike.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Manipulate Flames",
-        "actions": 1,
-        "traits": [
-          "arcane",
-          "concentrate"
-        ],
-        "description": "<p>The red dragon attempts to take control of a magical fire or a fire spell within 100 feet.</p>\n<p>If it succeeds at a counteract check (counteract rank 10, counteract modifier +32), the original caster loses control of the spell or magic fire, control is transferred to the dragon, and the dragon counts as having Sustained the Spell with this action (if applicable). The dragon can choose to end the spell instead of taking control, if it chooses.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [
-      {
-        "name": "Arcane Innate Spells",
-        "type": "innate",
-        "bonus": 34,
-        "dc": 42,
-        "focusPoints": {
-          "current": 0,
-          "max": 0
-        },
-        "autoHeightenLevel": 10,
-        "cantrips": [
-          {
-            "name": "Detect Magic",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "",
-            "range": "",
-            "area": "30 ft emanation",
-            "targets": "",
-            "save": "",
-            "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the rank of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "LOK7NfaxSYvS9eyQ"
-          },
-          {
-            "name": "Read Aura",
-            "type": "cantrip",
-            "level": 1,
-            "traits": [
-              "concentrate",
-              "detection",
-              "manipulate"
-            ],
-            "castingTime": "1 minute",
-            "duration": "",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 object",
-            "save": "",
-            "description": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical, and if it is, you learn the school of magic.</p>\n<p>If the object is illusory, you detect this only if the effect's level is lower than the rank of your read aura spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "dhFWsJ2sfUnIAzVu"
-          }
-        ],
-        "rituals": [],
-        "spellLocations": [],
-        "usedAttribute": "charisma",
-        "_id": "qaEGHfAlvrP6CGwS",
-        "modifications": [],
-        "lv1spells": [],
-        "lv2spells": [],
-        "lv3spells": [],
-        "lv4spells": [
-          {
-            "name": "Suggestion (At Will)",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "incapacitation",
-              "linguistic",
-              "manipulate"
-            ],
-            "castingTime": "2",
-            "duration": "varies",
-            "range": "30 feet",
-            "area": "",
-            "targets": "1 creature",
-            "save": "will",
-            "description": "<p>Your honeyed words are difficult for creatures to resist. You suggest a course of action to the target, which must be phrased in such a way as to seem like a logical course of action to the target and can't be self-destructive or obviously against the target's self-interest. The target must attempt a Will save.</p>\n<hr /><p><strong>Critical Success</strong> The target is unaffected and knows you tried to control it.</p>\n<p><strong>Success</strong> The target is unaffected and thinks you were talking to them normally, not casting a spell on them.</p>\n<p><strong>Failure</strong> The target immediately follows your suggestion. The spell has a duration of 1 minute, or until the target has completed a finite suggestion or the suggestion becomes self-destructive or has other obvious negative effects.</p>\n<p><strong>Critical Failure</strong> As failure, but the base duration is 1 hour.</p>\n<hr /><p><strong>Heightened (8th)</strong> You can target up to 10 creatures.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "y3WGfwZSPUcdAfcZ"
-          }
-        ],
-        "lv5spells": [],
-        "lv6spells": [],
-        "lv7spells": [],
-        "lv8spells": [
-          {
-            "name": "Wall of Fire (At Will)",
-            "type": "spell",
-            "level": 4,
-            "traits": [
-              "concentrate",
-              "fire"
-            ],
-            "castingTime": "3",
-            "duration": "1 minute",
-            "range": "120 feet",
-            "area": "",
-            "targets": "",
-            "save": "",
-            "description": "<p>You raise a blazing wall that burns creatures passing through it. You create either a 5-foot-thick wall of flame in a straight line up to 60 feet long and 10 feet high, or a 5-foot-thick, 10-foot-radius ring of flame with the same height. The wall stands vertically in either form; if you wish, the wall can be of a shorter length or height. Everything on each side of the wall is Concealed from creatures on the opposite side. Any creature that crosses the wall or is occupying the wall's area at the start of its turn takes <span class=\"roll\" onclick=\"roll(this)\">4d6</span> fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by <span class=\"roll\" onclick=\"roll(this)\">1d6</span>.</p>",
-            "cast": false,
-            "cost": "",
-            "primaryCheck": "",
-            "secondaryCasters": "",
-            "secondaryChecks": "",
-            "id": "rrgWq5ZjlViY9gU0"
-          }
-        ],
-        "lv9spells": [],
-        "lv10spells": [],
-        "lv1slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv2slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv3slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv4slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv5slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv6slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv7slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv8slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv9slots": {
-          "current": 0,
-          "max": 0
-        },
-        "lv10slots": {
-          "current": 0,
-          "max": 0
-        }
-      }
-    ],
-    "description": "<p>The largest and most powerful of the chromatic dragons, red dragons are a menace to civilizations everywhere, and their strength is rivaled only by their arrogance. Red dragons see themselves as regents and overlords of all dragonkind. With their crowns of crimson spikes and their command of blistering frame, this is no haughty boast in their eyes-only unquestioned fact.</p>\n<p>Red dragons don't deign to speak with lesser creatures; they simply dominate and burn, enslaving weaker creatures to act as servants and to look after their lairs while the dragons slumber away. They take pleasure in dominating these creatures, and they demand tribute from their supplicants. Those who anger or disappoint end up eaten or reduced to ash. They command their enslaved minions to constantly build onto their lairs, carving out new tunnels and designing cunning traps that ensure the dragon's security.</p>\n<p>Driven by their arrogance, red dragons are the most likely of the chromatic dragons to ravage settlements. They want the world to see them in their rightful place as powerful tyrants, and they delight in threatening all other creatures. They have no qualms about bullying, manipulating, or killing to complete their goals-or simply intimidating others through a public display of brutality and dominance.</p>\n<p>As legendary as the brutishness of red dragons is the magnificence of their hoards of gold. Their lairs are often situated in dangerous places, with volcanoes being a favorite spot, as they find them foreboding and the constant warmth is comfortable. No matter the locale, red dragons sleep on a litter of coins and other treasures, which they zealously guard. Sometimes, the dragon's internal heat causes these precious metals to fuse together.</p>\n<hr />\n<p>While there are many types of dragons, from the powerful planar dragons to the strange esoteric dragons, few dragon varieties are as well-known and as rightly feared as the chromatic dragons. Differentiated by the hue of their scales, each color of dragon unleashes its own flavor of murderous cruelty-be it by claw, tooth, or breath-and unlike most creatures, dragons only become more powerful as they age. Their lust for treasure, food, bloodshed, and control are legendary. Physically powerful with egos to match, these dragons are often morally depraved and act as criminal masterminds, vicious tyrants, or voracious raiders.</p>",
-    "recallKnowledge": "Arcana, DC: 41",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Arcana, DC 39"
 }

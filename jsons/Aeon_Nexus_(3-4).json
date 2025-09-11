@@ -4,12 +4,12 @@
   "comments": "",
   "conditions": [],
   "color": "#fff",
+  "duplicateIndex": 0,
   "name": "Aeon Nexus (3-4)",
-  "type": "hazard",
+  "type": "Hazard",
   "level": 3,
   "traits": [
-    "Hazard",
-    "Complex",
+    "Common",
     "Medium",
     "Magical",
     "Trap"
@@ -17,39 +17,54 @@
   "source": "Pathfinder Society Quest #9: Wayfinder Origins",
   "stealth": {
     "value": 8,
-    "note": "(DC 20 to find the cluster of aeon stones at the center of the nexus in the fog)",
-    "modifications": []
+    "note": "(DC 20 to find the cluster of aeon stones at the center of the nexus in the fog)"
   },
   "description": "<p>A small cluster of aeon stones floats two feet off the ground, orbiting by shards of shattered aeon stones that crackle with electricity.</p>",
-  "disable": "<p>DC 23 Thievery check (trained) to remove one nexus aeon stone from the center</p>",
+  "disable": "<p>DC 23 Thievery  (trained) to remove one nexus aeon stone from the center</p>",
   "reset": "",
-  "routine": "<p>(3 actions) The trap loses one action each turn for each nexus aeon stone removed from its center. On each action, it shoots a jet of electrified, razor-sharp aeon stone shards at a different creature within 30 feet, dealing <span class=\"roll\" onclick=\"roll(this)\">1d8</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">1d8</span> electricity damage (DC 21 basic Reflex save).</p>",
+  "routine": "<p>(3 actions) The trap loses one action each turn for each nexus aeon stone removed from its center. On each action, it shoots a jet of electrified, razor-sharp aeon stone shards at a different creature within 30 feet, dealing 1d8 Piercing Damage damage and 1d8 Electricity Damage damage (Basic DC 21 Reflex Saving Throw).</p>",
   "items": [],
-  "generalAbilities": [],
+  "generalAbilities": [
+    {
+      "name": "Static",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature who is not carrying a wayfinder with an aeon stone from the nexus slotted into it approaches within 15 feet of the aeon nexus</p>\n<hr />\n<p><strong>Effect</strong> The trap shocks the target, dealing 2d8 Electricity Damage damage to the triggering creature (Basic DC 21 Reflex Saving Throw), then rolls initiative.</p>",
+      "collapsed": false
+    }
+  ],
   "ac": {
     "value": 22,
+    "note": null,
+    "usedAttribute": "dexterity",
     "modifications": []
+  },
+  "hardness": {
+    "value": 10
   },
   "fortitude": {
     "value": 14,
     "note": "",
+    "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
     "value": 8,
     "note": "",
+    "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
     "value": 0,
     "note": "",
+    "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
     "value": 42,
     "max": 42,
-    "note": "<b>Hardness</b> 10 <b>BT</b> 21. ",
+    "note": "",
     "modifications": []
   },
   "immunities": [],
@@ -58,90 +73,7 @@
   "defensiveAbilities": [],
   "speed": "",
   "strikes": [],
-  "offensiveAbilities": [
-    {
-      "name": "Static",
-      "actions": -1,
-      "traits": [],
-      "description": "<p><strong>Trigger</strong> A creature who is not carrying a wayfinder with an aeon stone from the nexus slotted into it approaches within 15 feet of the aeon nexus</p>\n<hr />\n<p><strong>Effect</strong> The trap shocks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d8</span> electricity damage to the triggering creature (DC 21 basic Reflex save), then rolls initiative.</p>",
-      "collapsed": false
-    }
-  ],
+  "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "simpleHazardXP": false,
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 8,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "name": "Aeon Nexus (3-4)",
-    "type": "hazard",
-    "level": 3,
-    "traits": [
-      "Hazard",
-      "Complex",
-      "Medium",
-      "Magical",
-      "Trap"
-    ],
-    "source": "Pathfinder Society Quest #9: Wayfinder Origins",
-    "stealth": {
-      "value": 8,
-      "note": "(DC 20 to find the cluster of aeon stones at the center of the nexus in the fog)",
-      "modifications": []
-    },
-    "description": "<p>A small cluster of aeon stones floats two feet off the ground, orbiting by shards of shattered aeon stones that crackle with electricity.</p>",
-    "disable": "<p>DC 23 Thievery check (trained) to remove one nexus aeon stone from the center</p>",
-    "reset": "",
-    "routine": "<p>(3 actions) The trap loses one action each turn for each nexus aeon stone removed from its center. On each action, it shoots a jet of electrified, razor-sharp aeon stone shards at a different creature within 30 feet, dealing <span class=\"roll\" onclick=\"roll(this)\">1d8</span> piercing damage and <span class=\"roll\" onclick=\"roll(this)\">1d8</span> electricity damage (DC 21 basic Reflex save).</p>",
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 22,
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 14,
-      "note": "",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 8,
-      "note": "",
-      "modifications": []
-    },
-    "will": {
-      "value": 0,
-      "note": "",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 42,
-      "max": 42,
-      "note": "<b>Hardness</b> 10 <b>BT</b> 21. ",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [],
-    "weaknesses": [],
-    "defensiveAbilities": [],
-    "speed": "",
-    "strikes": [],
-    "offensiveAbilities": [
-      {
-        "name": "Static",
-        "actions": -1,
-        "traits": [],
-        "description": "<p><strong>Trigger</strong> A creature who is not carrying a wayfinder with an aeon stone from the nexus slotted into it approaches within 15 feet of the aeon nexus</p>\n<hr />\n<p><strong>Effect</strong> The trap shocks the target, dealing <span class=\"roll\" onclick=\"roll(this)\">2d8</span> electricity damage to the triggering creature (DC 21 basic Reflex save), then rolls initiative.</p>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "simpleHazardXP": false,
-    "originalCreature": {},
-    "recallKnowledge": ", DC: 18"
-  },
-  "recallKnowledge": ", DC: 18"
+  "recallKnowledge": ", DC 18"
 }

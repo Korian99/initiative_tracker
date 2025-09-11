@@ -9,20 +9,21 @@
   "type": "Creature",
   "level": 13,
   "traits": [
+    "Common",
     "Large",
     "Plant"
   ],
   "source": "Pathfinder Bestiary 2",
+  "senses": [
+    "Low light vision",
+    "Tremorsense 60ft imprecise"
+  ],
   "perception": {
     "value": 22,
-    "note": "low light-visiontremorsense 60 ft imprecise",
+    "note": "Low light vision, Tremorsense 60ft imprecise",
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "senses": [
-    "low light-vision",
-    "tremorsense 60 ft imprecise"
-  ],
   "languages": [],
   "skills": [
     {
@@ -106,11 +107,11 @@
       "traits": [
         "cold"
       ],
-      "description": "<p>When exposed to a cold effect, the viper vine is overwhelmed by lethargy, becoming Slowed 1 for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
+      "description": "<p>When exposed to a cold effect, the viper vine is overwhelmed by lethargy, becoming Slowed 1 for 1d4 rounds.</p>",
       "collapsed": false
     }
   ],
-  "speed": "20 ft,\n",
+  "speed": "20 ft, ",
   "strikes": [
     {
       "type": "melee",
@@ -167,7 +168,7 @@
         }
       ],
       "effects": [
-        "Grab"
+        "grab"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
@@ -184,220 +185,24 @@
         "mental",
         "poison"
       ],
-      "description": "<p>The viper vine releases a 60 foot emanation of invisible pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger wind. Each creature that enters or starts its turn in the area must attempt a DC 33 Will save or be captivated.</p>\n<p>The viper vine can't use Captivating Pollen for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Captivating Pollen for 24 hours.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Fascinated, and it must spend each of its actions to move closer to the viper vine as expediently as possible while avoiding obvious dangers. If a captivated creature is adjacent to the viper vine, it stays still and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura at the end of its turn.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature is Stupefied 2 for 24 hours.</p>",
+      "description": "<p>The viper vine releases a 60ft Emanation of invisible pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger wind. Each creature that enters or starts its turn in the area must attempt a DC 33 Will Saving Throw save or be captivated.</p>\n<p>The viper vine can't use Captivating Pollen for 1d4 rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Captivating Pollen for 24 hours.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Fascinated, and it must spend each of its actions to move closer to the viper vine as expediently as possible while avoiding obvious dangers. If a captivated creature is adjacent to the viper vine, it stays still and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura at the end of its turn.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature is Stupefied 2 for 24 hours.</p>",
       "collapsed": false
     },
     {
       "name": "Constrict",
       "actions": 1,
       "traits": [],
-      "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d8+8</span> bludgeoning damage, DC 33 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
+      "description": "<p>(3d8+8) Bludgeoning Damage damage, Basic DC 33 Fortitude Saving Throw</p>\n<hr />\n<p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "spellcastingEntries": [],
-  "description": "<p>A voracious, flesh-eating carnivore, the viper vine has a single enormous blossom arising from a thick, leafy tangle of snake-like vines. When the plant senses the approach of suitable prey through its sensitive, shallowly buried root system, it rises up like an agitated snake and unfurls its brightly colored bloom, an act that releases a cloud of mind-numbing pollen. Persistent stories claim the viper vine can lure prey into its clutches by swaying with a hypnotic motion, but this effect is in fact created by this invisible, odorless pollen cloud.</p>\n<p>Since a viper vine gains nourishment by consuming creatures rather than through ingesting moisture and soil, it has developed rudimentary locomotion and can drag itself along the ground with its tentacle-like roots. It even has a form of rudimentary sentience, allowing it to not only discern differences in prey and make limited tactical decisions, but also to avoid creatures that are particularly large or dangerous-looking.</p>\n<p>The area around viper vine hunting grounds is often strewn with the partially devoured remains of victims. It's not unusual to find the rotting corpses of wild animals, ill-fated adventurers, and even giants in the plant's immediate vicinity, along with a scattering of incidental treasure left behind on the corpses. A viper vine rarely returns to the carcass of a creature it killed earlier, preferring to hunt fresh meat.</p>",
-  "recallKnowledge": "Nature, DC: 31",
-  "originalCreature": {
-    "initiative": 0,
-    "initiativebonus": 22,
-    "comments": "",
-    "conditions": [],
-    "color": "#fff",
-    "duplicateIndex": 0,
-    "name": "Viper Vine",
-    "type": "Creature",
-    "level": 13,
-    "traits": [
-      "Large",
-      "Plant"
-    ],
-    "source": "Pathfinder Bestiary 2",
-    "perception": {
-      "value": 22,
-      "note": "low light-visiontremorsense 60 ft imprecise",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "senses": [
-      "low light-vision",
-      "tremorsense 60 ft imprecise"
-    ],
-    "languages": [],
-    "skills": [
-      {
-        "name": "athletics",
-        "modifier": 27,
-        "note": [],
-        "usedAttribute": "strength",
-        "modifications": []
-      },
-      {
-        "name": "stealth",
-        "modifier": 24,
-        "note": [],
-        "usedAttribute": "dexterity",
-        "modifications": []
-      }
-    ],
-    "strength": {
-      "value": 8
-    },
-    "dexterity": {
-      "value": 5
-    },
-    "constitution": {
-      "value": 7
-    },
-    "intelligence": {
-      "value": -4
-    },
-    "wisdom": {
-      "value": 5
-    },
-    "charisma": {
-      "value": -3
-    },
-    "items": [],
-    "generalAbilities": [],
-    "ac": {
-      "value": 33,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "fortitude": {
-      "value": 26,
-      "note": "",
-      "usedAttribute": "constitution",
-      "modifications": []
-    },
-    "reflex": {
-      "value": 24,
-      "note": "",
-      "usedAttribute": "dexterity",
-      "modifications": []
-    },
-    "will": {
-      "value": 22,
-      "note": "",
-      "usedAttribute": "wisdom",
-      "modifications": []
-    },
-    "savenote": "",
-    "hp": {
-      "value": 270,
-      "max": 270,
-      "note": "",
-      "modifications": []
-    },
-    "immunities": [],
-    "resistances": [
-      {
-        "type": "poison",
-        "value": 15
-      }
-    ],
-    "weaknesses": [],
-    "defensiveAbilities": [
-      {
-        "name": "Cold Vulnerability",
-        "actions": null,
-        "traits": [
-          "cold"
-        ],
-        "description": "<p>When exposed to a cold effect, the viper vine is overwhelmed by lethargy, becoming Slowed 1 for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>",
-        "collapsed": false
-      }
-    ],
-    "speed": "20 ft,\n",
-    "strikes": [
-      {
-        "type": "melee",
-        "name": "Jaws",
-        "bonus": 27,
-        "traits": [
-          "reach-10",
-          "unarmed"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d6+11",
-            "type": "piercing"
-          },
-          {
-            "roll": "3d6",
-            "type": "poison"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d6+11)*2",
-            "type": "piercing"
-          },
-          {
-            "roll": "(3d6)*2",
-            "type": "poison"
-          }
-        ],
-        "effects": [],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      },
-      {
-        "type": "melee",
-        "name": "Vine",
-        "bonus": 27,
-        "traits": [
-          "agile",
-          "reach-15"
-        ],
-        "damageRolls": [
-          {
-            "roll": "3d10+11",
-            "type": "bludgeoning"
-          }
-        ],
-        "critRolls": [
-          {
-            "roll": "(3d10+11)*2",
-            "type": "bludgeoning"
-          }
-        ],
-        "effects": [
-          "Grab"
-        ],
-        "usedAttributeToHit": "strength",
-        "usedAttributeDamage": "strength",
-        "toHitModifications": [],
-        "damageModifications": []
-      }
-    ],
-    "offensiveAbilities": [
-      {
-        "name": "Captivating Pollen",
-        "actions": 1,
-        "traits": [
-          "incapacitation",
-          "mental",
-          "poison"
-        ],
-        "description": "<p>The viper vine releases a 60 foot emanation of invisible pollen that stays in the air for 5 rounds unless dispersed by a moderate or stronger wind. Each creature that enters or starts its turn in the area must attempt a DC 33 Will save or be captivated.</p>\n<p>The viper vine can't use Captivating Pollen for <span class=\"roll\" onclick=\"roll(this)\">1d4</span> rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Captivating Pollen for 24 hours.</p>\n<p><strong>Success</strong> The creature is Sickened 1.</p>\n<p><strong>Failure</strong> The creature is Fascinated, and it must spend each of its actions to move closer to the viper vine as expediently as possible while avoiding obvious dangers. If a captivated creature is adjacent to the viper vine, it stays still and doesn't act. It ceases to be fascinated if it's no longer in the pollen aura at the end of its turn.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature is Stupefied 2 for 24 hours.</p>",
-        "collapsed": false
-      },
-      {
-        "name": "Constrict",
-        "actions": 1,
-        "traits": [],
-        "description": "<p> <span class=\"roll\" onclick=\"roll(this)\">3d8+8</span> bludgeoning damage, DC 33 basic Fortitude save</p>\n<details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details>",
-        "collapsed": false
-      }
-    ],
-    "spellcastingEntries": [],
-    "description": "<p>A voracious, flesh-eating carnivore, the viper vine has a single enormous blossom arising from a thick, leafy tangle of snake-like vines. When the plant senses the approach of suitable prey through its sensitive, shallowly buried root system, it rises up like an agitated snake and unfurls its brightly colored bloom, an act that releases a cloud of mind-numbing pollen. Persistent stories claim the viper vine can lure prey into its clutches by swaying with a hypnotic motion, but this effect is in fact created by this invisible, odorless pollen cloud.</p>\n<p>Since a viper vine gains nourishment by consuming creatures rather than through ingesting moisture and soil, it has developed rudimentary locomotion and can drag itself along the ground with its tentacle-like roots. It even has a form of rudimentary sentience, allowing it to not only discern differences in prey and make limited tactical decisions, but also to avoid creatures that are particularly large or dangerous-looking.</p>\n<p>The area around viper vine hunting grounds is often strewn with the partially devoured remains of victims. It's not unusual to find the rotting corpses of wild animals, ill-fated adventurers, and even giants in the plant's immediate vicinity, along with a scattering of incidental treasure left behind on the corpses. A viper vine rarely returns to the carcass of a creature it killed earlier, preferring to hunt fresh meat.</p>",
-    "recallKnowledge": "Nature, DC: 31",
-    "originalCreature": {}
-  }
+  "recallKnowledge": "Nature, DC 31"
 }
