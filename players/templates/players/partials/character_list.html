@@ -37,34 +37,6 @@
   </form>
 {% endif %}
 </div>
-<style>
-  .danger {
-    --bs-btn-color: #dc3545;
-    --bs-btn-border-color: #dc3545;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #dc3545;
-    --bs-btn-hover-border-color: #dc3545;
-    --bs-btn-focus-shadow-rgb: 220, 53, 69;
-
-    --bs-gradient: none;
-    color: var(--bs-btn-hover-color);
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color);
-  }
-
-  .danger:hover {
-    color: var(--bs-btn-hover-color);
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color);
-  }
-
-  .current_turn{
-    background-color:limegreen;
-  }
-  .next_turn{
-    background-color:lightblue;
-  }
-</style>
 <ul id="characters" class="list-group">
   {% for character in characters %}
     <li class="list-group-item 
