@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,69 +9,6 @@
         My Lobby App
       {% endblock title %}
     </title>
-    <style>
-    html, body {
-      height: 100%;
-    }
-    .full-height {
-      height: 100%;
-    }
-    ::-webkit-scrollbar {
-      width: 5px;
-      height: 5px;
-    }
-    .a-button {background:none;
-                   border:none;
-                   padding:0;
-                   color:#0d6efd;
-                   text-decoration:underline;
-                   cursor:pointer}
-    
-    /* Track */
-    ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
-        -webkit-border-radius: 2px;
-        border-radius: 10px;
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-        background: lightgray; 
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    }
-    ::-webkit-scrollbar-thumb:window-inactive {
-        background: gray; 
-    }
-    .scrollable-list {
-      overflow-y: auto;
-      overscroll-behavior: contain;  /* important piece */
-      -webkit-overflow-scrolling: touch;
-    }
-    .scrollable-list .list-group, .scrollable-list .list-group .list-group-item{
-      pointer-events:none!important;
-    }
-     .scrollable-list .list-group .list-group-item summary, .scrollable-list .list-group .list-group-item button{
-      pointer-events:all!important;
-    }
-    .select2-container--default .select2-selection--single {
-      border: 1px solid #ced4da!important;
-    }
-    .select2-dropdown {
-      z-index: 2000 !important;
-    }
-    .weak-coloring{
-        color:red;
-    }
-    .elite-coloring{
-        color:green;
-    }
-    .trait{
-        background-color:#610903!important;
-    }
-
-    </style>
     <!-- HTMX library -->
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
     <!-- Bootstrap JS Bundle (optional) -->
@@ -85,8 +22,10 @@
           href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
   </head>
-  <body>
+  <body data-bs-theme="dark" class="dark">
     <div class="container full-height d-flex justify-content-center align-items-center flex-column">
       <div>
         {% block navbar %}
@@ -99,7 +38,8 @@
           {% endblock player %}
         </div>
         <div class="row m-3">
-          <div id="#mainContent" class="col d-flex flex-column justify-content-center align-items-center text-center">
+          <div id="#mainContent"
+               class="col d-flex flex-column justify-content-center align-items-center text-center">
             {% block content %}
             {% endblock content %}
           </div>
@@ -115,6 +55,7 @@
           }
       }
       function initCreatureSelect(ctx=document, id) {
+        const theme = document.body.getAttribute('data-bs-theme');
         const $el = $(ctx).find(id);
         let dropdownParent = null;
         if (id === '#stat_block_edit'){
@@ -125,7 +66,7 @@
             width: '100%',
             placeholder: 'Search for a Stat Block',
             allowClear: true,
-            dropdownParent:dropdownParent
+            dropdownParent:dropdownParent,
           });
         }
       }
