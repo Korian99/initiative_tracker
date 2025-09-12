@@ -1,0 +1,193 @@
+{% load static %}
+
+<!-- PETTING WIDGET -->
+<div class="pet-wrap">
+  <button id="pet-button" class="pet-button" aria-label="Pet the dog">
+    <img id="pet-dog" src="{% static 'images/dog.png' %}" alt="A friendly dog">
+  </button>
+
+  <div id="pet-hearts" class="pet-hearts" aria-hidden="true"></div>
+  <div id="pet-count" class="pet-count" aria-live="polite">Pets: <span id="pet-num">0</span></div>
+</div>
+
+<!-- Optional: sound -->
+<audio id="pet-sound" preload="auto" src="{% static 'sounds/pet.mp3' %}"></audio>
+
+<style>
+/* container */
+.pet-wrap {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+}
+
+/* button reset so it looks like an image (keeps keyboard + a11y) */
+.pet-button {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* image styling */
+.pet-button img {
+  width: 160px;               /* adjust to taste */
+  height: auto;
+  display: block;
+  transition: transform 180ms ease, filter 180ms ease;
+  will-change: transform;
+  transform-origin: 50% 80%;  /* tilt around paws */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* hover/active tiny bounce */
+.pet-button:hover img,
+.pet-button:focus img {
+  transform: translateY(-6px) scale(1.02);
+  filter: saturate(1.05);
+}
+
+/* "pet" animation class */
+.petting {
+  animation: pet-wag 420ms ease;
+}
+@keyframes pet-wag {
+  0%   { transform: translateY(0) rotate(0deg) scale(1); }
+  30%  { transform: translateY(-8px) rotate(-2deg) scale(1.03); }
+  60%  { transform: translateY(-4px) rotate(2deg) scale(1.02); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); }
+}
+
+/* floating hearts container */
+.pet-hearts {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -12px;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* heart bubble */
+.pet-heart {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(0) scale(0.6);
+  animation: heart-rise 900ms ease forwards;
+  will-change: transform, opacity;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+@keyframes heart-rise {
+  0%   { opacity: 0; transform: translateY(0) scale(0.6); }
+  10%  { opacity: 1; transform: translateY(-6px) scale(1); }
+  70%  { opacity: 1; transform: translateY(-36px) scale(1); }
+  100% { opacity: 0; transform: translateY(-58px) scale(0.8); }
+}
+
+/* counter */
+.pet-count {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--bs-body-color, #222);
+}
+</style>
+
+<script>
+(function () {
+  const btn = document.getElementById('pet-button');
+  const img = document.getElementById('pet-dog');
+  const hearts = document.getElementById('pet-hearts');
+  const petNumEl = document.getElementById('pet-num');
+  const sound = document.getElementById('pet-sound'); // may be null if no audio provided
+
+  // load saved counter
+  let pets = Number(localStorage.getItem('pet_count') || 0);
+  petNumEl.textContent = pets;
+
+  // utility: create a heart at slight random X offset
+  function spawnHeart() {
+    const h = document.createElement('div');
+    h.className = 'pet-heart';
+    h.style.left = (Math.random() * 40 - 20) + 'px'; // spread horizontally
+    h.style.color = ['#ff6b81', '#ff9aa2', '#ff7b7b'][Math.floor(Math.random()*3)];
+    h.innerHTML = '❤️';
+    hearts.appendChild(h);
+    // remove after animation ends
+    setTimeout(() => h.remove(), 1100);
+  }
+
+  // do the pet animation + sound + heart + counter
+  function doPet() {
+    // animation
+    img.classList.remove('petting');
+    // force reflow to restart animation
+    void img.offsetWidth;
+    img.classList.add('petting');
+
+    // sound (try/catch - mobile autoplay might block until interaction)
+    try {
+      if (sound && typeof sound.play === 'function') {
+        sound.currentTime = 0;
+        const p = sound.play();
+        if (p && p.catch) p.catch(() => {}); // ignore autoplay rejections
+      }
+    } catch (e) {}
+
+    // hearts
+    for (let i = 0; i < 1 + Math.floor(Math.random()*2); i++) {
+      setTimeout(spawnHeart, i * 80);
+    }
+
+    // increment counter and persist
+    pets += 1;
+    petNumEl.textContent = pets;
+    localStorage.setItem('pet_count', pets);
+  }
+
+  // handle hover (optional small feedback). On touch devices, hover is less useful.
+  let hoverTimeout = null;
+  btn.addEventListener('mouseenter', () => {
+    // gentle scale on enter
+    img.style.transform = 'translateY(-4px) scale(1.01)';
+    clearTimeout(hoverTimeout);
+  });
+  btn.addEventListener('mouseleave', () => {
+    img.style.transform = '';
+    // reset transform after a short delay to avoid jump with animation
+    hoverTimeout = setTimeout(() => { img.style.transform = ''; }, 100);
+  });
+
+  // clicking or touching pets
+  btn.addEventListener('click', (e) => {
+    e.preventDefault(); // it's a button used like a link; keep it accessible
+    doPet();
+  });
+
+  // support keyboard (Enter/Space)
+  btn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      doPet();
+    }
+  });
+
+  // optional: double-tap / rapid-pet detection to trigger a "super wag"
+  let lastPet = 0;
+  btn.addEventListener('click', () => {
+    const now = Date.now();
+    if (now - lastPet < 300) {
+      // quick second click -> give an extra heart
+      spawnHeart(); spawnHeart();
+    }
+    lastPet = now;
+  });
+
+})();
+</script>
