@@ -1,3 +1,4 @@
+{% load creature_template_filter %}
 {% if creature.strikes %}
   <div class="accordion mb-3" id="accordion-strikes">
     <div class="accordion-item">
@@ -27,7 +28,7 @@
                     {% if not forloop.last %},{% endif %}
                     {% if strike.effects %}and{% endif %}
                   {% endfor %}
-                  {% if strike.effects %}{{ strike.effects|join:", " }}{% endif %}
+                  {% if strike.effects %}{{ strike.effects|join:", "|clean_text }}{% endif %}
                 </div>
               {% endfor %}
             </ul>

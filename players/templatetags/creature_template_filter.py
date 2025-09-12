@@ -49,8 +49,15 @@ def skill_offset(template_type, level):
     elif template_type == "elite":
         return +2
     return 0
-@register.filter
 
+@register.filter
+def clean_text(text: str) -> str:
+    """
+    Replace numeric action markers in a string with PF2e symbols.
+    """
+    return text.replace("-", " ").title()
+
+@register.filter
 def replace_actions(actions: str) -> str:
     """
     Replace numeric action markers in a string with PF2e symbols.
@@ -63,9 +70,8 @@ def replace_actions(actions: str) -> str:
         "0": "◇",
     }
     actions_str = str(actions)
-    print("IN:"+ actions_str)
-    if actions and not ("round" in actions_str or "minute" in actions_str):
+    if actions is not None and not ("round" in actions_str or "minute" in actions_str):
         for key, symbol in mapping.items():
             actions_str = actions_str.replace(key, symbol)
         return actions_str
-    return actions or "Passive or ◇"
+    return actions or "Passive"
