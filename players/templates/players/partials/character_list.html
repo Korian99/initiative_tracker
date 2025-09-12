@@ -39,14 +39,14 @@
 </div>
 <ul id="characters" class="list-group">
   {% for character in characters %}
-    <li class="list-group-item 
-    {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} 
-     justify-content-center align-items-center gap-3 w-100 
-    {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
+    <li class="list-group-item {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
         data-id="{{ character.id }}"
-        {% if character.invisible  %}style="background-color:#e6e6e6;" {% endif %}>
-      <div class="flex-grow-1 drag-handle d-flex flex-column">
-        <span style="pointer-events: auto;" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }} {% if character.invisible  %} (Invisible) {% endif %}</span>
+        {% if character.invisible %}style="background-color:#e6e6e6;"{% endif %}>
+      <div class="flex-grow-1 drag-handle d-flex flex-column character-handle"
+           {% if player.role == "DM" or player.role == "PA" %} hx-get="{% url 'character_list_partial' player.id %}" hx-trigger="dblclick" hx-vals='{"character_id": {{ character.id }} }' hx-target="#character-list" hx-swap="innerHTML" {% endif %}>
+        <span style="pointer-events: auto;" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}
+          {% if character.invisible %}(Invisible){% endif %}
+        </span>
         {% if character.debuff %}
           <span style="pointer-events: auto;
                        color:red;
@@ -122,7 +122,7 @@
                       animation: 150,
                       ghostClass: 'bg-secondary',
                       handle: '.drag-handle',
-                      filter: '.btn',
+                      filter: '.btn, .current_turn',
                       preventOnFilter: false,
                       forceFallback: true,  // Important for mobile
                       fallbackTolerance: 3,  // Pixel tolerance for drag start
@@ -209,6 +209,23 @@
       });
   })();
   </script>
+  {% if player.role == "DM" or player.role == "PA" %}
+  <script>
+    document.querySelectorAll('.character-handle').forEach(el => {
+      function onLongPress(el){
+        htmx.ajax('GET',
+          el.getAttribute("hx-get"),
+          {
+            target: el.getAttribute("hx-target"),
+            values: JSON.parse(el.getAttribute("hx-vals")), // ✅ use values
+            swap: el.getAttribute("hx-swap")
+          }
+        )
+      }
+      longPress(el, onLongPress, 'This will change the current turn')
+    });
+  </script>
+  {% endif %}
   <style>
   /* Improved drag handle styling for mobile */
   .drag-handle {

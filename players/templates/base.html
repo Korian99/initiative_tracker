@@ -27,28 +27,21 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
   </head>
   <body data-bs-theme="dark" class="dark">
-    <div class="container full-height d-flex justify-content-center align-items-center flex-column">
-      <div>
-        {% block navbar %}
-        {% endblock navbar %}
-      </div>
-      {% comment %} TODO CHANGE OVERFLOW BARRA {% endcomment %}
-      <div class="d-flex card p-2 overflow-auto">
-        <div class="row text-center">
-          {% block player %}
-          {% endblock player %}
-        </div>
-        <div class="row m-3">
-          <div id="#mainContent"
-               class="col d-flex flex-column justify-content-center align-items-center text-center">
-            {% block content %}
-            {% endblock content %}
-          </div>
-        </div>
-      </div>
-    </div>
-    {% include 'spinner.html' %}
     <script>
+      function longPress(el, callback, message){
+        let pressTimer;
+      
+        el.addEventListener("touchstart", () => {
+          pressTimer = setTimeout(() => {
+            if(confirm(message)) {
+              callback(el)
+            }
+          }, 1000);
+        });
+        
+        el.addEventListener("touchend", () => clearTimeout(pressTimer));
+        el.addEventListener("touchmove", () => clearTimeout(pressTimer));
+      }
       function confirmClick(e)
       {
           if(!confirm('Are you sure?')) {
@@ -71,7 +64,29 @@
           });
         }
       }
-  
+    </script>
+    <div class="container full-height d-flex justify-content-center align-items-center flex-column">
+      <div>
+        {% block navbar %}
+        {% endblock navbar %}
+      </div>
+      {% comment %} TODO CHANGE OVERFLOW BARRA {% endcomment %}
+      <div class="d-flex card p-2 overflow-auto">
+        <div class="row text-center">
+          {% block player %}
+          {% endblock player %}
+        </div>
+        <div class="row m-3">
+          <div id="#mainContent"
+               class="col d-flex flex-column justify-content-center align-items-center text-center">
+            {% block content %}
+            {% endblock content %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'spinner.html' %}
+    <script>
       document.addEventListener('DOMContentLoaded', () => initCreatureSelect());
       document.body.addEventListener('htmx:afterSwap', (e) => {
         if (e.target && e.target.id === 'select_creature') {

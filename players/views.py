@@ -28,6 +28,24 @@ def reorder_characters(characters, change_turn=True):
 def custom_404_view(request, exception):
     return redirect(reverse('login'))
 
+def set_turn(character_id):
+    if character_id:
+        character = Character.objects.get(
+            id=character_id)
+        characters = Character.objects.filter(
+            player__lobby=character.player.lobby)
+        characters.filter(current_turn=True).update(current_turn=False)
+        character.current_turn = True
+        character.invisible = False
+        character.save()
+
+def pass_turn(lobby):
+    characters = Character.objects.filter(
+        player__lobby=lobby)
+    next_char = characters.first().next_turn()
+    set_turn(next_char.id)
+
+
 
 class LoginView(TemplateView):
     # login
@@ -193,6 +211,7 @@ class CharacterView(TemplateView):
     def get(self, request, player_lobby_id):
         player = PlayerInLobby.objects.get(id=player_lobby_id)
         characters = Character.objects.filter(player__lobby=player.lobby)
+        set_turn(request.GET.get("character_id", None))
         return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
 
     # add_character border style for ced4da
@@ -268,6 +287,8 @@ class EditCharacterView(TemplateView):
     def delete(self, request, player_lobby_id, character_id):
         character = get_object_or_404(Character, id=character_id)
         lobby = character.player.lobby
+        if character.current_turn:
+            pass_turn(lobby)
         character.delete()
         characters = Character.objects.filter(player__lobby=lobby)
         player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
@@ -291,12 +312,7 @@ class TurnView(TemplateView):
         player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
         characters = Character.objects.filter(
             player__lobby=player_in_lobby.lobby)
-
-        next_char = characters.first().next_turn()
-        characters.filter(current_turn=True).update(current_turn=False)
-        next_char.current_turn = True
-        next_char.invisible = False
-        next_char.save()
+        pass_turn(player_in_lobby.lobby)
 
         return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
 
