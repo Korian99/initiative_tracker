@@ -22,7 +22,7 @@
                   —
                   {% for dmg in strike.damageRolls %}
                     {{ dmg.roll }}
-                    {% if skill_offset != 0 %}<span class="{{ template }}-coloring">{{ skill_offset }}</span>{% endif %}
+                    {% if skill_offset != 0 %}<span class="{{ template }}-coloring">+{{ skill_offset }}</span>{% endif %}
                     {{ dmg.type }}
                     {% if not forloop.last %},{% endif %}
                     {% if strike.effects %}and{% endif %}
