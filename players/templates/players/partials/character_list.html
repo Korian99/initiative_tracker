@@ -30,12 +30,11 @@
              name="player_lobby_id"
              id="player_lobby_id"
              value="{{ player.id }}">
-    </input>
-    <button type="submit" class="btn btn-info edit-character">
-      <i class="bi bi-check-lg"></i>
-    </button>
-  </form>
-{% endif %}
+      <button type="submit" class="btn btn-info edit-character">
+        <i class="bi bi-check-lg"></i>
+      </button>
+    </form>
+  {% endif %}
 </div>
 <ul id="characters" class="list-group">
   {% for character in characters %}
@@ -110,14 +109,20 @@
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <script>
   (function() { 
-      window.sortableManager = {
-          init: function() {
-              const container = document.getElementById('characters');
-              if (container) {
-                  if (window.sortableManager.instance) {
-                      window.sortableManager.instance.destroy();
-                  }
-                  
+    
+    window.sortableManager = {
+      init: function() {
+        const container = document.getElementById('characters');
+        if (container) {
+          if (window.sortableManager.instance) {
+            window.sortableManager.instance.destroy();
+          }
+          let dragInProgress = false;
+                  document.body.addEventListener("htmx:beforeSwap", function (evt) {
+  if (dragInProgress && evt.target.id === "character-list") {
+    evt.preventDefault(); // block update if dragging
+  }
+});
                   window.sortableManager.instance = new Sortable(container, {
                       animation: 150,
                       ghostClass: 'bg-secondary',
@@ -127,11 +132,11 @@
                       forceFallback: true,  // Important for mobile
                       fallbackTolerance: 3,  // Pixel tolerance for drag start
                       onStart: function() {
-                          // Add temporary class during drag
+                          dragInProgress = true;
                           document.body.classList.add('dragging-active');
-                      },
+                        },
                       onEnd: function(evt) {
-                          // Remove temporary class
+                          dragInProgress = false;
                           document.body.classList.remove('dragging-active');
                           if(!confirm('Are you sure?')) {
                               htmx.ajax('GET', '{% url "character_list_partial" player.id %}', {
@@ -208,24 +213,20 @@
           }
       });
   })();
-  </script>
-  {% if player.role == "DM" or player.role == "PA" %}
-  <script>
-    document.querySelectorAll('.character-handle').forEach(el => {
-      function onLongPress(el){
-        htmx.ajax('GET',
-          el.getAttribute("hx-get"),
-          {
-            target: el.getAttribute("hx-target"),
-            values: JSON.parse(el.getAttribute("hx-vals")), // ✅ use values
-            swap: el.getAttribute("hx-swap")
-          }
-        )
+  function onLongPress(el){
+    htmx.ajax('GET',
+      el.getAttribute("hx-get"),
+      {
+        target: el.getAttribute("hx-target"),
+        values: JSON.parse(el.getAttribute("hx-vals")), // ✅ use values
+        swap: el.getAttribute("hx-swap")
       }
+    )
+  }
+    document.querySelectorAll('.character-handle').forEach(el => {
       longPress(el, onLongPress, 'This will change the current turn')
     });
   </script>
-  {% endif %}
   <style>
   /* Improved drag handle styling for mobile */
   .drag-handle {
