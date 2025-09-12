@@ -24,11 +24,11 @@
                   {% for dmg in strike.damageRolls %}
                     {{ dmg.roll }}
                     {% if skill_offset != 0 %}<span class="{{ template }}-coloring">+{{ skill_offset }}</span>{% endif %}
-                    {{ dmg.type }}
+                    {{ dmg.type|title }}
                     {% if not forloop.last %},{% endif %}
                     {% if strike.effects %}and{% endif %}
                   {% endfor %}
-                  {% if strike.effects %}{{ strike.effects|join:", "|clean_text }}{% endif %}
+                  {% if strike.effects %}   {{ strike.effects|join:", "|replace_dash|title}} {% endif %}
                 </div>
               {% endfor %}
             </ul>

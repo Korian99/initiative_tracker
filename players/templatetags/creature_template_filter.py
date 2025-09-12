@@ -50,12 +50,10 @@ def skill_offset(template_type, level):
         return +2
     return 0
 
-@register.filter
-def clean_text(text: str) -> str:
-    """
-    Replace numeric action markers in a string with PF2e symbols.
-    """
-    return text.replace("-", " ").title()
+@register.filter(name="replace_dash")
+def replace_dash(value: str) -> str:
+    """Replace - with ' '."""
+    return value.replace("-", " ")
 
 @register.filter
 def replace_actions(actions: str) -> str:

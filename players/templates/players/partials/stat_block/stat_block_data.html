@@ -19,7 +19,7 @@
                             <b>CHA</b>: {{ creature.charisma.value }}
                         </p>
                         <p>
-                            <strong>Speed:</strong> {{ creature.speed|clean_text }}
+                            <strong>Speed:</strong> {{ creature.speed|title }}
                         </p>
                         <p>
                             <strong>Initiative:</strong> +{{ creature.initiativebonus }}
@@ -45,14 +45,14 @@
                         {% if creature.immunities %}
                             <p>
                                 <strong>Immunities:</strong>
-                                {{ creature.immunities|join:", "|clean_text }}
+                                {{ creature.immunities|join:", "|title }}
                             </p>
                         {% endif %}
                         {% if creature.weaknesses %}
                             <p>
                                 <strong>Weaknesses:</strong>
                                 {% for w in creature.weaknesses %}
-                                    {{ w.type|clean_text }} {{ w.value }}
+                                    {{ w.type|title }} {{ w.value }}
                                     {% if w.exceptions %}(except: {{ w.exceptions|join:", " }}){% endif %}
                                     {% if not forloop.last %};{% endif %}
                                 {% endfor %}
@@ -62,7 +62,7 @@
                             <p>
                                 <strong>Resistances:</strong>
                                 {% for r in creature.resistances %}
-                                    {{ r.type|clean_text }} {{ r.value }}
+                                    {{ r.type|title }} {{ r.value }}
                                     {% if r.exceptions %}(except: {{ r.exceptions|join:", " }}){% endif %}
                                     {% if not forloop.last %};{% endif %}
                                 {% endfor %}
@@ -73,7 +73,7 @@
                 {% if creature.type|lower == "creature" %}
                     <p>
                         <strong>Perception:</strong> <span class="{{ template }}-coloring">+{{ creature.perception.value|add:skill_offset }}</span> |
-                        <strong>Senses:</strong> {{ creature.senses|join:", "|clean_text }}
+                        <strong>Senses:</strong> {{ creature.senses|join:", "|title }}
                     </p>
                     <p>
                         <strong>Languages:</strong> {{ creature.languages|join:", " }}
@@ -82,7 +82,7 @@
                         <strong>Skills:</strong>
                         {% for skill in creature.skills %}
                             <span class="{{ template }}-coloring">
-                                {{ skill.name|clean_text }} +{{ skill.modifier|add:skill_offset }}
+                                {{ skill.name|title }} +{{ skill.modifier|add:skill_offset }}
                                 {% for note in skill.note %}({{ note|safe }}){% endfor %}
                                 {% if not forloop.last %},{% endif %}
                             </span>
@@ -108,7 +108,7 @@
                 {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.defensiveAbilities title="Defensive Abilities" show=True %}
                 {% include "players/partials/stat_block/strikes_accordion.html" %}
                 {% include "players/partials/stat_block/abilities_accordion.html" with abilities=creature.offensiveAbilities title="Offensive Abilities"  show=False %}
-                {% include "players/partials/stat_block/spellcasting_accordion.html" with spellcastingEntries=creature.spellcastingEntries title="Offensive Abilities"  show=False %}
+                {% include "players/partials/stat_block/spellcasting_accordion.html" with spellcastingEntries=creature.spellcastingEntries show=False %}
             {% endwith %}
         {% endwith %}
     {% endwith %}
