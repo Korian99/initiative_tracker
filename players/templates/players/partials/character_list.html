@@ -36,6 +36,21 @@
     </form>
   {% endif %}
 </div>
+<script>
+      function changeReactions(character_id, player_id) {
+      if(confirm("Use a reaction?")){
+        htmx.ajax('GET',
+        "{% url 'character_list_partial' 0 %}".replace("0", player_id),
+        {
+          target: '#character-list',
+          values: { character_id: character_id }, // ✅ correct key is "vals"
+          swap: "innerHTML"
+        }
+        )
+      }
+    }
+
+</script>
 <ul id="characters" class="list-group">
   {% for character in characters %}
     <li class="list-group-item {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
@@ -212,18 +227,6 @@
           }
       });
   })();
-    function changeReactions(character_id, player_id) {
-      if(confirm("Use a reaction?")){
-        htmx.ajax('GET',
-        "{% url 'character_list_partial' 0 %}".replace("0", player_id),
-        {
-          target: '#character-list',
-          values: { character_id: character_id }, // ✅ correct key is "vals"
-          swap: "innerHTML"
-        }
-        )
-      }
-    }
 
   </script>
   <style>
