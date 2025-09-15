@@ -50,11 +50,11 @@
               {% if character.invisible %}(Invisible){% endif %}
             </span>
             -
-            <span class="longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}"
-                {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} hx-get="{% url 'character_list_partial' player.id %}" hx-trigger="dblclick" hx-vals='{"character_id": {{ character.id }} }' hx-target="#character-list" hx-swap="innerHTML" {% endif %}>
+            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.id }}, {{ player.id }})"{% else %} style="pointer-events:none"{% endif %}
+                    class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}">
               <i class="bi bi-arrow-counterclockwise"></i>
               <span class="number">{{ character.current_reactions }}</span>
-            </span>
+            </button>
           </div>
         </span>
         {% if character.debuff %}
@@ -212,19 +212,19 @@
           }
       });
   })();
-  function onLongPress(el){
-    htmx.ajax('GET',
-      el.getAttribute("hx-get"),
-      {
-        target: el.getAttribute("hx-target"),
-        values: JSON.parse(el.getAttribute("hx-vals")), // ✅ use values
-        swap: el.getAttribute("hx-swap")
+    function changeReactions(character_id, player_id) {
+      if(confirm("Use a reaction?")){
+        htmx.ajax('GET',
+        "{% url 'character_list_partial' 0 %}".replace("0", player_id),
+        {
+          target: '#character-list',
+          values: { character_id: character_id }, // ✅ correct key is "vals"
+          swap: "innerHTML"
+        }
+        )
       }
-    )
-  }
-    document.querySelectorAll('.longpress-handle').forEach(el => {
-      longPress(el, onLongPress, 'This will change this character reactions')
-    });
+    }
+
   </script>
   <style>
   /* Improved drag handle styling for mobile */
