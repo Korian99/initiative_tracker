@@ -37,8 +37,9 @@
   {% endif %}
 </div>
 <script>
-      function changeReactions(character_id, player_id) {
-      if(confirm("Use a reaction?")){
+      function changeReactions(reactions, character_id, player_id) {
+        console.log(reactions)
+      if(reactions>0 && confirm("Use a reaction?")){
         htmx.ajax('GET',
         "{% url 'character_list_partial' 0 %}".replace("0", player_id),
         {
@@ -65,7 +66,7 @@
               {% if character.invisible %}(Invisible){% endif %}
             </span>
             -
-            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.id }}, {{ player.id }})"{% else %} style="pointer-events:none"{% endif %}
+            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }},{{ character.id }}, {{ player.id }})"{% else %} style="pointer-events:none"{% endif %}
                     class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}">
               <i class="bi bi-arrow-counterclockwise"></i>
               <span class="number">{{ character.current_reactions }}</span>
