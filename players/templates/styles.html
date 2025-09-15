@@ -112,10 +112,10 @@ body {
     border-color: var(--bs-btn-hover-border-color)!important;
   }
 
-  .current_turn{
+  body[data-bs-theme="light"] .current_turn{
     background-color:limegreen;
   }
-  .next_turn{
+  body[data-bs-theme="light"] .next_turn{
     background-color:lightblue;
   }
   body[data-bs-theme="dark"] .current_turn{
@@ -123,5 +123,42 @@ body {
   }
   body[data-bs-theme="dark"] .next_turn{
     background-color:#2572cf;
+  }
+
+  .icon-with-number {
+    position: relative;
+    display: inline-block;
+    vertical-align: sub;
+  }
+
+  .icon-with-number .bi {
+    font-size: 2rem; /* adjust as needed */
+  }
+
+  .icon-with-number .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7rem; /* smaller than icon */
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  
+  body[data-bs-theme="light"] .reactions-max{
+    color:#134002;
+  }
+  body[data-bs-theme="dark"] .reactions-max{
+    color:limegreen;
+  }
+  body[data-bs-theme="light"] .reactions-used{
+    color: #2572cf;
+  }
+  body[data-bs-theme="dark"] .reactions-used{
+    color: lightblue;
+  }
+  .reactions-empty{
+    color:red;
   }
 </style>

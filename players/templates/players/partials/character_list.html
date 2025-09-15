@@ -41,10 +41,14 @@
     <li class="list-group-item {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
         data-id="{{ character.id }}"
         {% if character.invisible %}style="background-color:#e6e6e6;"{% endif %}>
-      <div class="flex-grow-1 drag-handle d-flex flex-column character-handle"
-           {% if player.role == "DM" or player.role == "PA" %} hx-get="{% url 'character_list_partial' player.id %}" hx-trigger="dblclick" hx-vals='{"character_id": {{ character.id }} }' hx-target="#character-list" hx-swap="innerHTML" {% endif %}>
+      <div class="flex-grow-1 drag-handle d-flex flex-column">
         <span style="pointer-events: auto;" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}
           {% if character.invisible %}(Invisible){% endif %}
+          <span class="longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}"
+                {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} hx-get="{% url 'character_list_partial' player.id %}" hx-trigger="dblclick" hx-vals='{"character_id": {{ character.id }} }' hx-target="#character-list" hx-swap="innerHTML" {% endif %}>
+            <i class="bi bi-arrow-counterclockwise"></i>
+            <span class="number">{{ character.current_reactions }}</span>
+          </span>
         </span>
         {% if character.debuff %}
           <span style="pointer-events: auto;
@@ -57,21 +61,21 @@
              name="reminder"
              id="reminder"
              value="{{ character.reminder|default:"" }}">
-        <form class="debuff-character"
-              hx-get="{% url 'load_debuff_modal' player.id character.id %}"
-              hx-target="#char-modal-container"
-              hx-swap="innerHTML">
-          {% csrf_token %}
-          {% if character.debuff %}
-            <button type="submit" class="btn danger">
-              <i class="bi bi-droplet"></i>
-            </button>
-          {% else %}
-            <button type="submit" class="btn btn-success">
-              <i class="bi bi-droplet-fill"></i>
-            </button>
-          {% endif %}
-        </form>
+      <form class="debuff-character"
+            hx-get="{% url 'load_debuff_modal' player.id character.id %}"
+            hx-target="#char-modal-container"
+            hx-swap="innerHTML">
+        {% csrf_token %}
+        {% if character.debuff %}
+          <button type="submit" class="btn danger">
+            <i class="bi bi-droplet"></i>
+          </button>
+        {% else %}
+          <button type="submit" class="btn btn-success">
+            <i class="bi bi-droplet-fill"></i>
+          </button>
+        {% endif %}
+      </form>
       {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
         <button class="btn btn-sm btn-info edit-character"
                 hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
@@ -211,8 +215,8 @@
       }
     )
   }
-    document.querySelectorAll('.character-handle').forEach(el => {
-      longPress(el, onLongPress, 'This will change the current turn')
+    document.querySelectorAll('.longpress-handle').forEach(el => {
+      longPress(el, onLongPress, 'This will change this character reactions')
     });
   </script>
   <style>

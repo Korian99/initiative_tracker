@@ -15,50 +15,65 @@
             <form hx-post="{% url 'edit_character' %}"
                   hx-target="#character-list"
                   hx-swap="innerHTML">
-                  {% csrf_token %}
-
+                {% csrf_token %}
                 <div class="modal-body">
                     <!-- Hidden input for character id -->
                     <input type="hidden" name="player_lobby_id" value="{{ player_lobby.id }}">
                     <input type="hidden" name="character_id" value="{{ character.id }}">
-                    <div class="mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
-                        <label for="initiative" class="form-label">Initiative</label>
-                        <input type="number"
-                               class="form-control"
-                               id="initiative"
-                               name="initiative"
-                               value="{{ character.initiative }}"
-                               >
-                    </div>
-                    <div class="mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text"
-                               class="form-control"
-                               id="name"
-                               name="name"
-                               value="{{ character.name }}"
-                               >
+                    <div class="row mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
+                        <div class="col">
+                            <label for="initiative" class="form-label">Initiative</label>
+                            <input type="number"
+                                   class="form-control"
+                                   id="initiative"
+                                   name="initiative"
+                                   value="{{ character.initiative }}">
+                        </div>
+                        <div class="col">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="name"
+                                   name="name"
+                                   value="{{ character.name }}">
+                        </div>
                     </div>
                     {% if player_lobby.role == 'DM' or player_lobby.role == 'PA' %}
-                    <div class="mb-3 show-spinner"
-                        id="edit_creature"
-                        hx-get="{% url 'select_creature'%}"
-                        hx-trigger="load"
-                        hx-target="#edit_creature"
-                        hx-vals='{"character_id": {{character.id}} }'
-                        hx-swap="innerHTML">
-                    </div>
+                        <div class="mb-3 show-spinner"
+                             id="edit_creature"
+                             hx-get="{% url 'select_creature' %}"
+                             hx-trigger="load"
+                             hx-target="#edit_creature"
+                             hx-vals='{"character_id": {{ character.id }} }'
+                             hx-swap="innerHTML"></div>
                     {% endif %}
+                    <div class="row mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
+                        <div class="col">
+                            <label for="max_reactions" class="form-label">Max Reactions</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="max_reactions"
+                                   name="max_reactions"
+                                   value="{{ character.max_reactions|default:0 }}">
+                        </div>
+                        <div class="col">
+                            <label for="current_reactions" class="form-label">Current Reactions</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="current_reactions"
+                                   name="current_reactions"
+                                   value="{{ character.current_reactions|default:0 }}">
+                        </div>
+                    </div>
                     <div class="mb-3 {% if not character.player.id == player_lobby.id and not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
                         <label for="reminder" class="form-label">Reminder</label>
                         <input type="text"
                                class="form-control"
                                id="reminder"
                                name="reminder"
-                               value="{{ character.reminder|default:"" }}"
-                               >
+                               value="{{ character.reminder|default:"" }}">
                     </div>
-                    <div class="mb-3 {% if not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %} d-none {% endif %}">
+                    <div class="mb-3 {% if not player_lobby.role == 'DM' and not player_lobby.role == 'PA' %}d-none{% endif %}">
                         <label for="new_player" class="form-label">Assign to Player</label>
                         <select name="new_player" id="new_player" class="form-select">
                             {% for p in playersInLobby %}

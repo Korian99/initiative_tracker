@@ -36,6 +36,7 @@ def set_turn(character_id):
             player__lobby=character.player.lobby)
         characters.filter(current_turn=True).update(current_turn=False)
         character.current_turn = True
+        character.current_reactions = character.max_reactions
         character.invisible = False
         character.save()
 
@@ -211,7 +212,11 @@ class CharacterView(TemplateView):
     def get(self, request, player_lobby_id):
         player = PlayerInLobby.objects.get(id=player_lobby_id)
         characters = Character.objects.filter(player__lobby=player.lobby)
-        set_turn(request.GET.get("character_id", None))
+        character_id =  request.GET.get("character_id", None)
+        if character_id:
+            character = Character.objects.get(id=character_id)
+            character.current_reactions -= 1
+            character.save()
         return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
 
     # add_character border style for ced4da
@@ -261,17 +266,17 @@ class EditCharacterView(TemplateView):
     def post(self, request):
         char_id = request.POST.get("character_id")
         new_player_id = request.POST.get("new_player")
-        new_initiative = request.POST.get("initiative")
-        new_name = request.POST.get("name")
-        new_reminder = request.POST.get("reminder")
-        new_stat_block = request.POST.get("stat_block")
         character = get_object_or_404(Character, id=char_id)
         new_player = get_object_or_404(PlayerInLobby, id=new_player_id)
         character.player = new_player
-        character.initiative = new_initiative
-        character.name = new_name
-        character.reminder = new_reminder
-        character.stat_block = new_stat_block
+        character.initiative = request.POST.get("initiative")
+
+        character.name = request.POST.get("name")
+        character.max_reactions = request.POST.get("max_reactions")
+        character.current_reactions = request.POST.get("current_reactions")
+        character.reminder = request.POST.get("reminder")
+        character.stat_block = request.POST.get("stat_block")
+        
         character.save()
 
         lobby = character.player.lobby

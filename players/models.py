@@ -67,6 +67,8 @@ class Character(models.Model):
     current_turn = models.BooleanField(default=False)
     stat_block = models.CharField(max_length=100, null= True, blank=True, default= None)
     template = models.CharField(max_length=6, choices=TEMPLATE_CHOICES, default='normal')
+    max_reactions = models.IntegerField(default=1)
+    current_reactions = models.IntegerField(default=1)
 
     def __str__(self):
         return self.name + " - " + str(self.player.player)
