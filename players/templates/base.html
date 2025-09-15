@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,7 +10,16 @@
         My Lobby App
       {% endblock title %}
     </title>
-    {% include 'styles.html' %}
+    <link rel="manifest" href="{% static 'manifest.json' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/base.js' %}"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("{% static 'js/sw.js' %}")
+          .then(reg => console.log("SW registered", reg))
+          .catch(err => console.error("SW failed", err));
+      }
+    </script>
     <!-- HTMX library -->
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
     <!-- Bootstrap JS Bundle (optional) -->
@@ -27,44 +37,6 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
   </head>
   <body data-bs-theme="dark" class="dark">
-    <script>
-      function longPress(el, callback, message){
-        let pressTimer;
-      
-        el.addEventListener("touchstart", () => {
-          pressTimer = setTimeout(() => {
-            if(confirm(message)) {
-              callback(el)
-            }
-          }, 1000);
-        });
-        
-        el.addEventListener("touchend", () => clearTimeout(pressTimer));
-        el.addEventListener("touchmove", () => clearTimeout(pressTimer));
-      }
-      function confirmClick(e)
-      {
-          if(!confirm('Are you sure?')) {
-              e.preventDefault();
-          }
-      }
-      function initCreatureSelect(ctx=document, id) {
-        const theme = document.body.getAttribute('data-bs-theme');
-        const $el = $(ctx).find(id);
-        let dropdownParent = null;
-        if (id === '#stat_block_edit'){
-          dropdownParent = $('#editCharacterModal')
-        }
-        if ($el.length && !$el.data('select2')) {
-          $el.select2({
-            width: '100%',
-            placeholder: 'Search for a Stat Block',
-            allowClear: true,
-            dropdownParent:dropdownParent,
-          });
-        }
-      }
-    </script>
     <div class="container full-height d-flex justify-content-center align-items-center flex-column">
       <div>
         {% block navbar %}
