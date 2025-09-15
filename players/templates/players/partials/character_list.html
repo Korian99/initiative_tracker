@@ -42,13 +42,20 @@
         data-id="{{ character.id }}"
         {% if character.invisible %}style="background-color:#e6e6e6;"{% endif %}>
       <div class="flex-grow-1 drag-handle d-flex flex-column">
-        <span style="pointer-events: auto;" class="flex-grow-1">{{ character }} - Initiative: {{ character.initiative }}
-          {% if character.invisible %}(Invisible){% endif %}
-          <span class="longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}"
+        <span style="pointer-events: auto;" class="flex-grow-1">
+          <div>{{ character }}</div>
+          <div>
+            <span>
+              Initiative: {{ character.initiative }}
+              {% if character.invisible %}(Invisible){% endif %}
+            </span>
+            -
+            <span class="longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}"
                 {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} hx-get="{% url 'character_list_partial' player.id %}" hx-trigger="dblclick" hx-vals='{"character_id": {{ character.id }} }' hx-target="#character-list" hx-swap="innerHTML" {% endif %}>
-            <i class="bi bi-arrow-counterclockwise"></i>
-            <span class="number">{{ character.current_reactions }}</span>
-          </span>
+              <i class="bi bi-arrow-counterclockwise"></i>
+              <span class="number">{{ character.current_reactions }}</span>
+            </span>
+          </div>
         </span>
         {% if character.debuff %}
           <span style="pointer-events: auto;
