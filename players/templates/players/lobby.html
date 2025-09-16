@@ -33,7 +33,7 @@
   </div>
 {% endblock navbar %}
 {% block content %}
-  {% include "floating_buttons.html" with player=player.player role=player.role %}
+  {% include "floating_buttons.html" with player=player.player role=player.role position='lobby'%}
   <div class="container mt-4">
     {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->

@@ -1,3 +1,50 @@
+{% if position == "lobby" %}
+    {% if role == "DM" or role == "PA" %}
+        <!-- Pass Turn -->
+        <form class="position-fixed"
+              style="top: 20px;
+                     right: 20px;
+                     z-index: 1050"
+              hx-post="{% url 'pass_turn' %}"
+              hx-target="#character-list"
+              hx-swap="innerHTML"
+              onclick="confirmClick(event)">
+            {% csrf_token %}
+            <input type="hidden" name="player_lobby_id" value="{{ player.id }}">
+            <button type="submit" class="btn btn-info rounded-circle shadow">
+                <i class="bi bi-check-lg"></i>
+            </button>
+        </form>
+    {% endif %}
+    {% if role == "DM" %}
+        <!-- Reload Turn -->
+        <form class="position-fixed"
+              style="top: 80px;
+                     right: 20px;
+                     z-index: 1050"
+              hx-get="{% url 'reload_current_turn' player.id %}"
+              hx-target="#character-list"
+              hx-swap="innerHTML"
+              onclick="confirmClick(event)">
+            <button type="submit" class="btn btn-info rounded-circle shadow">
+                <i class="bi bi-arrow-clockwise"></i>
+            </button>
+        </form>
+        <!-- Edit Lobby -->
+        <form class="position-fixed edit-character open-modal"
+              style="top: 140px;
+                     right: 20px;
+                     z-index: 1050"
+              hx-get="{% url 'load_lobby_edit_modal' player.id %}"
+              hx-target="#lobby-modal-container"
+              data-modal-id="editLobbyModal"
+              hx-swap="innerHTML">
+            <button type="submit" class="btn btn-info rounded-circle shadow">
+                <i class="bi bi-pencil"></i>
+            </button>
+        </form>
+    {% endif %}
+{% endif %}
 {% comment %} CHANGE TAB {% endcomment %}
 {% if role == "DM" or role == "PA" %}
     <button class="btn btn-success rounded-circle position-fixed"
@@ -8,30 +55,6 @@
             id="switch-tab-btn">
         <i class="bi bi-arrow-repeat"></i>
     </button>
-    <script>
-document.getElementById('switch-tab-btn').addEventListener('click', function() {
-    // Find whichever tab nav is visible
-    let activeTab = document.querySelector('.nav-link.active');
-
-    if (!activeTab) return; // no tab active, bail
-
-    let targetId = activeTab.getAttribute('id');
-
-    // Logic for Characters/Add Characters
-    if (targetId === 'characters-tab') {
-        new bootstrap.Tab(document.getElementById('add-characters-tab')).show();
-    } else if (targetId === 'add-characters-tab') {
-        new bootstrap.Tab(document.getElementById('characters-tab')).show();
-    }
-
-    // Logic for Lobbies
-    else if (targetId === 'my-lobbies-tab') {
-        new bootstrap.Tab(document.getElementById('other-lobbies-tab')).show();
-    } else if (targetId === 'other-lobbies-tab') {
-        new bootstrap.Tab(document.getElementById('my-lobbies-tab')).show();
-    }
-});
-    </script>
 {% endif %}
 {% comment %} SIDE MENU {% endcomment %}
 <button class="btn btn-primary rounded-circle position-fixed"
