@@ -16,9 +16,11 @@ save_dir = BASE_DIR / "downloaded_jsons"
 def reorder_characters(characters, change_turn=True):
     i = len(characters)
     for c in characters:
+        c.current_reactions = 0
         c.current_turn = False
         if i == len(characters) and change_turn:
             c.current_turn = True
+            c.current_reactions = c.max_reactions
         c.order = i
         i -= 1
         c.save()
