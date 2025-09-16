@@ -7,7 +7,7 @@
   <div id="player-container">{% include "players/partials/player_container.html" %}</div>
 {% endblock player %}
 {% block navbar %}
-  <div class="container">
+  <div class="container d-none">
     <ul class="nav nav-tabs" id="tabs" role="tablist">
       <li class="nav-item" role="presentation">
         <a class="nav-link {% if characters|length > 0 %}active{% endif %}"
@@ -33,6 +33,7 @@
   </div>
 {% endblock navbar %}
 {% block content %}
+  {% include "floating_buttons.html" with player=player.player role=player.role %}
   <div class="container mt-4">
     {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->
