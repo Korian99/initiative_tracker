@@ -46,12 +46,12 @@
 <script src="{% static 'js/reactions.js' %}"></script>
 <ul id="characters" class="list-group">
   {% for character in characters %}
-    <li class="list-group-item {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}  {% if character.invisible %}is-invisible{% endif %}"
+    <li class="list-group-item character-row {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}  {% if character.invisible %}is-invisible{% endif %}"
         data-id="{{ character.id }}">
-      <div class="flex-grow-1 drag-handle d-flex flex-column">
-        <span style="pointer-events: auto;" class="flex-grow-1">
-          <div>{{ character }}</div>
-          <div>
+      <div class="drag-handle d-flex align-items-center justify-content-center col-8">
+        <span style="pointer-events: auto;">
+          <div class="d-flex align-items-center justify-content-center gap-1">{{ character }}</div>
+          <div class="d-flex align-items-center justify-content-center gap-1">
             <span>
               Initiative: {{ character.initiative }}
               {% if character.invisible %}(Invisible){% endif %}
@@ -63,54 +63,57 @@
               <span class="number">{{ character.current_reactions }}</span>
             </button>
           </div>
+          {% if character.debuff %}
+            <div style="pointer-events: auto;
+                         color:red;
+                         font-weight:bold"
+                  class="d-flex align-items-center justify-content-center gap-1">{{ character.debuff }}</div>
+          {% endif %}
         </span>
-        {% if character.debuff %}
-          <span style="pointer-events: auto;
-                       color:red;
-                       font-weight:bold"
-                class="flex-grow-1">{{ character.debuff }}</span>
+      </div>
+      <div id="buttons"
+           class="col-4 d-flex align-items-center justify-content-center gap-3">
+        <input type="hidden"
+               name="reminder"
+               id="reminder"
+               value="{{ character.reminder|default:"" }}">
+        <form class="debuff-character open-modal"
+              data-modal-id="debuffCharacterModal"
+              hx-get="{% url 'load_debuff_modal' player.id character.id %}"
+              hx-target="#char-modal-container"
+              hx-swap="innerHTML">
+          {% csrf_token %}
+          {% if character.debuff %}
+            <button type="submit" class="btn danger">
+              <i class="bi bi-droplet"></i>
+            </button>
+          {% else %}
+            <button type="submit" class="btn btn-success">
+              <i class="bi bi-droplet-fill"></i>
+            </button>
+          {% endif %}
+        </form>
+        {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
+          <button class="btn btn-sm btn-info edit-character  open-modal"
+                  data-modal-id="editCharacterModal"
+                  hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
+                  hx-target="#char-modal-container"
+                  hx-swap="innerHTML">
+            <i class="bi bi-pencil"></i>
+          </button>
+        {% endif %}
+        {% if character.stat_block %}
+          {% if player.role == "DM" or player.id == character.player.id %}
+            <button class="btn btn-sm btn-info stat-block show-spinner   open-modal"
+                    data-modal-id="creatureModal"
+                    hx-get="{% url 'load_stat_block_modal' character.id %}"
+                    hx-target="#statblock-modal-container"
+                    hx-swap="innerHTML">
+              <i class="bi bi-info-circle"></i>
+            </button>
+          {% endif %}
         {% endif %}
       </div>
-      <input type="hidden"
-             name="reminder"
-             id="reminder"
-             value="{{ character.reminder|default:"" }}">
-      <form class="debuff-character open-modal"
-            data-modal-id="debuffCharacterModal"
-            hx-get="{% url 'load_debuff_modal' player.id character.id %}"
-            hx-target="#char-modal-container"
-            hx-swap="innerHTML">
-        {% csrf_token %}
-        {% if character.debuff %}
-          <button type="submit" class="btn danger">
-            <i class="bi bi-droplet"></i>
-          </button>
-        {% else %}
-          <button type="submit" class="btn btn-success">
-            <i class="bi bi-droplet-fill"></i>
-          </button>
-        {% endif %}
-      </form>
-      {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
-        <button class="btn btn-sm btn-info edit-character  open-modal"
-                data-modal-id="editCharacterModal"
-                hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
-                hx-target="#char-modal-container"
-                hx-swap="innerHTML">
-          <i class="bi bi-pencil"></i>
-        </button>
-      {% endif %}
-      {% if character.stat_block %}
-        {% if player.role == "DM" or player.id == character.player.id %}
-          <button class="btn btn-sm btn-info stat-block show-spinner   open-modal"
-                  data-modal-id="creatureModal"
-                  hx-get="{% url 'load_stat_block_modal' character.id %}"
-                  hx-target="#statblock-modal-container"
-                  hx-swap="innerHTML">
-            <i class="bi bi-info-circle"></i>
-          </button>
-        {% endif %}
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
