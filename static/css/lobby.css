@@ -1,0 +1,75 @@
+.danger {
+  --bs-btn-color: #dc3545;
+  --bs-btn-border-color: #dc3545;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #dc3545;
+  --bs-btn-hover-border-color: #dc3545;
+  --bs-btn-focus-shadow-rgb: 220, 53, 69;
+  --bs-gradient: none;
+  color: var(--bs-btn-hover-color) !important;
+  background-color: var(--bs-btn-hover-bg) !important;
+  border-color: var(--bs-btn-hover-border-color) !important;
+}
+
+.danger:hover {
+  --bs-btn-hover-bg: #991c28;
+  color: var(--bs-btn-hover-color) !important;
+  background-color: var(--bs-btn-hover-bg) !important;
+  border-color: var(--bs-btn-hover-border-color) !important;
+}
+
+body[data-bs-theme="light"] .current_turn {
+  background-color: limegreen;
+}
+body[data-bs-theme="light"] .next_turn {
+  background-color: lightblue;
+}
+body[data-bs-theme="dark"] .current_turn {
+  background-color: #134002;
+}
+body[data-bs-theme="dark"] .next_turn {
+  background-color: #2572cf;
+}
+
+.icon-with-number {
+  position: relative;
+  display: inline-block;
+  vertical-align: sub;
+  padding: 0 !important;
+}
+
+.icon-with-number .bi {
+  font-size: 2rem; /* adjust as needed */
+}
+
+.icon-with-number .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem; /* smaller than icon */
+  font-weight: bold;
+  pointer-events: none;
+}
+
+body[data-bs-theme="light"] .reactions-max {
+  color: #134002 !important;
+}
+body[data-bs-theme="dark"] .reactions-max {
+  color: limegreen !important;
+}
+body[data-bs-theme="light"] .reactions-used {
+  color: #2572cf !important;
+}
+body[data-bs-theme="dark"] .reactions-used {
+  color: lightblue !important;
+}
+.reactions-empty {
+  color: red !important;
+}
+body[data-bs-theme="light"] .is-invisible {
+  background-color: #e6e6e6 !important;
+}
+body[data-bs-theme="dark"] .is-invisible {
+  background-color: #a39f9e !important;
+}
