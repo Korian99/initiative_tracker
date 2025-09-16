@@ -1,9 +1,16 @@
-<div class="mb-3 gap-3">
+{% load static %}
+<div class="mb-3 gap-3"
+     id="lobby-container"
+     data-player-id="{{ player.id }}"
+     data-character-list-url="{% url 'character_list_partial' player.id %}"
+     data-move-character-url="{% url 'move_character' %}"
+     data-csrf-token="{{ csrf_token }}">
   <h2>Characters in Lobby: {{ player.lobby }}</h2>
   {% if player.role == "DM" %}
-    <form class="btn btn-info edit-character"
+    <form class="btn btn-info edit-character open-modal"
           hx-get="{% url 'load_lobby_edit_modal' player.id %}"
           hx-target="#lobby-modal-container"
+          data-modal-id="editLobbyModal"
           hx-swap="innerHTML">
       <button type="submit" class="btn btn-info edit-character">
         <i class="bi bi-pencil"></i>
@@ -36,27 +43,11 @@
     </form>
   {% endif %}
 </div>
-<script>
-      function changeReactions(reactions, character_id, player_id) {
-        console.log(reactions)
-      if(reactions>0 && confirm("Use a reaction?")){
-        htmx.ajax('GET',
-        "{% url 'character_list_partial' 0 %}".replace("0", player_id),
-        {
-          target: '#character-list',
-          values: { character_id: character_id }, // ✅ correct key is "vals"
-          swap: "innerHTML"
-        }
-        )
-      }
-    }
-
-</script>
+<script src="{% static 'js/reactions.js' %}"></script>
 <ul id="characters" class="list-group">
   {% for character in characters %}
-    <li class="list-group-item {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}"
-        data-id="{{ character.id }}"
-        {% if character.invisible %}style="background-color:#e6e6e6;"{% endif %}>
+    <li class="list-group-item {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}  {% if character.invisible %}is-invisible{% endif %}"
+        data-id="{{ character.id }}">
       <div class="flex-grow-1 drag-handle d-flex flex-column">
         <span style="pointer-events: auto;" class="flex-grow-1">
           <div>{{ character }}</div>
@@ -66,7 +57,7 @@
               {% if character.invisible %}(Invisible){% endif %}
             </span>
             -
-            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }},{{ character.id }}, {{ player.id }})"{% else %} style="pointer-events:none"{% endif %}
+            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }},{{ character.id }})"{% else %} style="pointer-events:none"{% endif %}
                     class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}">
               <i class="bi bi-arrow-counterclockwise"></i>
               <span class="number">{{ character.current_reactions }}</span>
@@ -84,7 +75,8 @@
              name="reminder"
              id="reminder"
              value="{{ character.reminder|default:"" }}">
-      <form class="debuff-character"
+      <form class="debuff-character open-modal"
+      data-modal-id="debuffCharacterModal"
             hx-get="{% url 'load_debuff_modal' player.id character.id %}"
             hx-target="#char-modal-container"
             hx-swap="innerHTML">
@@ -100,7 +92,8 @@
         {% endif %}
       </form>
       {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
-        <button class="btn btn-sm btn-info edit-character"
+        <button class="btn btn-sm btn-info edit-character  open-modal"
+      data-modal-id="editCharacterModal"
                 hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
                 hx-target="#char-modal-container"
                 hx-swap="innerHTML">
@@ -109,7 +102,8 @@
       {% endif %}
       {% if character.stat_block %}
         {% if player.role == "DM" or player.id == character.player.id %}
-          <button class="btn btn-sm btn-info stat-block show-spinner"
+          <button class="btn btn-sm btn-info stat-block show-spinner   open-modal"
+      data-modal-id="creatureModal"
                   hx-get="{% url 'load_stat_block_modal' character.id %}"
                   hx-target="#statblock-modal-container"
                   hx-swap="innerHTML">
@@ -122,151 +116,6 @@
 </ul>
 {% if player.role == "DM" or player.role == "PA" %}
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
-  <script>
-  (function() { 
-    
-    window.sortableManager = {
-      init: function() {
-        const container = document.getElementById('characters');
-        if (container) {
-          if (window.sortableManager.instance) {
-            window.sortableManager.instance.destroy();
-          }
-          let dragInProgress = false;
-                  document.body.addEventListener("htmx:beforeSwap", function (evt) {
-  if (dragInProgress && evt.target.id === "character-list") {
-    evt.preventDefault(); // block update if dragging
-  }
-});
-                  window.sortableManager.instance = new Sortable(container, {
-                      animation: 150,
-                      ghostClass: 'bg-secondary',
-                      handle: '.drag-handle',
-                      filter: '.btn, .current_turn',
-                      preventOnFilter: false,
-                      forceFallback: true,  // Important for mobile
-                      fallbackTolerance: 3,  // Pixel tolerance for drag start
-                      onStart: function() {
-                          dragInProgress = true;
-                          document.body.classList.add('dragging-active');
-                        },
-                      onEnd: function(evt) {
-                          dragInProgress = false;
-                          document.body.classList.remove('dragging-active');
-                          if(!confirm('Are you sure?')) {
-                              htmx.ajax('GET', '{% url "character_list_partial" player.id %}', {
-                                  values: {
-                                      player_id: {{ player.id }},
-                                      csrfmiddlewaretoken: '{{ csrf_token }}'
-                                  },
-                                  swap: "innerHTML",
-                                  target: "#character-list"
-                              });
-                          }else{
-                            const characterIds = Array.from(container.children).map(li => li.dataset.id);
-                            htmx.ajax('POST', '{% url "move_character" %}', {
-                                values: {
-                                    player_lobby_id: {{ player.id }},
-                                    order: characterIds,
-                                    csrfmiddlewaretoken: '{{ csrf_token }}'
-                                },
-                                swap: "innerHTML",
-                                target: "#character-list"
-                            });
-                          }
-                      }
-                  });
-              }
-          }
-      };
-
-      function showToast(){
-        const reminderChar = document.querySelector('li.current_turn');
-        if (reminderChar) {
-          const reminder = reminderChar.querySelector('input[name="reminder"]'); // 3rd span is reminder
-          if (reminder && reminder.value.trim()) {
-            const toast = document.createElement('div');
-            toast.innerText = reminder.value.trim();
-            toast.style.position = 'fixed';
-            toast.style.width = '50%';
-            toast.style.textAlign = 'center';
-            toast.style.top = '100px';
-            toast.style.left = '50%';
-            toast.style.transform = 'translateX(-50%)';
-            toast.style.backgroundColor = '#343a40';
-            toast.style.color = '#fff';
-            toast.style.padding = '10px 20px';
-            toast.style.borderRadius = '8px';
-            toast.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-            toast.style.zIndex = 1054;
-            toast.style.opacity = '0';
-            toast.style.transition = 'opacity 0.5s';
-  
-            document.body.appendChild(toast);
-  
-            setTimeout(() => toast.style.opacity = '1', 100);
-            setTimeout(() => {
-              toast.style.opacity = '0';
-              setTimeout(() => toast.remove(), 500);
-            }, 5000);
-          }
-        }
-      };
-      
-  
-      // Initial initialization
-      document.addEventListener('DOMContentLoaded', function() {
-          window.sortableManager.init();
-          showToast()
-      });
-  
-      // Reinitialize after HTMX updates
-      document.addEventListener('htmx:afterSwap', function(event) {
-          if (event.detail.target.id === 'character-list') {
-              window.sortableManager.init();
-              showToast()
-          }
-      });
-  })();
-
-  </script>
-  <style>
-  /* Improved drag handle styling for mobile */
-  .drag-handle {
-      cursor: move;
-      -webkit-tap-highlight-color: transparent;
-      padding: 12px 0; /* Larger touch target */
-      flex-grow: 1;
-  }
-  
-  /* Visual feedback during drag */
-  .dragging-active {
-      overflow: hidden; /* Prevent page scrolling during drag */
-  }
-  .dragging-active .list-group-item {
-      transition: transform 0.1s;
-  }
-  
-  /* Better ghost element visibility */
-  .sortable-ghost {
-      opacity: 0.8;
-      background: #f8f9fa !important;
-  }
-  
-  /* Prevent text selection during drag */
-  .list-group-item {
-      user-select: none;
-      -webkit-user-select: none;
-  }
-  
-  /* Mobile-specific optimizations */
-  @media (max-width: 768px) {
-      .drag-handle {
-          padding: 15px 0; /* Even larger touch target on mobile */
-      }
-      .list-group-item {
-          touch-action: none;
-      }
-  }
-  </style>
+  <script src="{% static 'js/draggable.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'css/draggable.css' %}">
 {% endif %}

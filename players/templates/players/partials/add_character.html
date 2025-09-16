@@ -8,7 +8,12 @@
       {% csrf_token %}
       <div class="mb-3">
         <label for="reminder" class="form-label">Hidden?</label>
-        <input type="checkbox" class="form-check-input"  id="invisible" name="invisible" indeterminate = "false" value=1> 
+        <input type="checkbox"
+               class="form-check-input"
+               id="invisible"
+               name="invisible"
+               indeterminate="false"
+               value="1">
       </div>
       <input type="hidden" name="player" value="{{ player.id }}">
       <div class="mb-3">
@@ -37,18 +42,11 @@
         <label for="reminder" class="form-label">Reminder (Optional)</label>
         <input type="text" class="form-control" id="reminder" name="reminder">
       </div>
-      
       <button type="submit"
               class="btn btn-success w-100"
               onclick="activateTab('characters-tab');">Add Character</button>
     </form>
   </div>
-  <script>
-      // Function to activate a tab
-      function activateTab(tabId) {
-        var tabElement = document.getElementById(tabId);
-        var tab = new bootstrap.Tab(tabElement);
-        tab.show();
-      }
-  </script>
+  {% load static %}
+  <script src="{% static 'js/tabs.js' %}"></script>
 {% endif %}

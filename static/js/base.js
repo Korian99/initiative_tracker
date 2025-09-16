@@ -1,3 +1,5 @@
+var myModal=null;
+
 function longPress(el, callback, message) {
   let pressTimer;
 
@@ -35,3 +37,40 @@ function initCreatureSelect(ctx = document, id) {
     });
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  initCreatureSelect();
+  document.body.addEventListener("htmx:afterSwap", (e) => {
+    if (e.target && e.target.id === "select_creature") {
+      initCreatureSelect(e.target, "#stat_block_add");
+    } else if (e.target && e.target.id === "edit_creature") {
+      initCreatureSelect(e.target, "#stat_block_edit");
+    }
+  });
+
+  document.body.addEventListener("htmx:configRequest", (event) => {
+    var token = document
+      .querySelector("meta[name='csrf-token']")
+      .getAttribute("content");
+    event.detail.headers["X-CSRFToken"] = token;
+  });
+  document.addEventListener("htmx:afterSwap", (evt) => {
+    if (
+      evt.detail.target &&
+      evt.detail.target.classList.contains("modal-container")
+    ) {
+      const triggeringEl = evt.detail.requestConfig.elt;
+
+      if (triggeringEl && triggeringEl.classList.contains("open-modal")) {
+        const modalId = triggeringEl.dataset.modalId;
+        if (modalId) {
+          const modalEl = document.getElementById(modalId);
+          if (modalEl) {
+            myModal = new bootstrap.Modal(modalEl);
+            myModal.show();
+          }
+        }
+      }
+    }
+  });
+});

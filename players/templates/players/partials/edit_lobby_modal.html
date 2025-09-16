@@ -50,11 +50,3 @@
         </div>
     </div>
 </div>
-<script>
-    var myModal = new bootstrap.Modal(document.getElementById('editLobbyModal'));
-    myModal.show();
-    document.body.addEventListener("htmx:configRequest", (event) => {
-        var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
-        event.detail.headers["X-CSRFToken"] = token;
-    });
-</script>

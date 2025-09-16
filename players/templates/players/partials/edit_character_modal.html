@@ -98,18 +98,5 @@
         </div>
     </div>
 </div>
-<script>
-    var myModal = new bootstrap.Modal(document.getElementById('editCharacterModal'));
-    myModal.show();
-    document.body.addEventListener("htmx:configRequest", (event) => {
-        var token = document.querySelector("meta[name='csrf-token']").getAttribute("content");
-        event.detail.headers["X-CSRFToken"] = token;
-    });
-    function deleteChar(e){
-        if(!confirm('Are you sure?')) {
-            e.preventDefault();
-        }else{
-            myModal.hide();
-        }
-    }
-</script>
+  {% load static %}
+  <script src="{% static 'js/edit_character_modal.js' %}"></script>

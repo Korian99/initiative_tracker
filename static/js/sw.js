@@ -3,6 +3,5 @@ self.addEventListener("install", e => {
 });
 
 self.addEventListener("fetch", e => {
-  // For now just pass everything through
   e.respondWith(fetch(e.request));
 });

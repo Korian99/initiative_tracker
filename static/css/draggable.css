@@ -1,0 +1,37 @@
+/* Improved drag handle styling for mobile */
+.drag-handle {
+  cursor: move;
+  -webkit-tap-highlight-color: transparent;
+  padding: 12px 0; /* Larger touch target */
+  flex-grow: 1;
+}
+
+/* Visual feedback during drag */
+.dragging-active {
+  overflow: hidden; /* Prevent page scrolling during drag */
+}
+.dragging-active .list-group-item {
+  transition: transform 0.1s;
+}
+
+/* Better ghost element visibility */
+.sortable-ghost {
+  opacity: 0.8;
+  background: #f8f9fa !important;
+}
+
+/* Prevent text selection during drag */
+.list-group-item {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  .drag-handle {
+    padding: 15px 0; /* Even larger touch target on mobile */
+  }
+  .list-group-item {
+    touch-action: none;
+  }
+}

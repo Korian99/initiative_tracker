@@ -58,14 +58,7 @@
     </div>
     {% include 'spinner.html' %}
     <script>
-      document.addEventListener('DOMContentLoaded', () => initCreatureSelect());
-      document.body.addEventListener('htmx:afterSwap', (e) => {
-        if (e.target && e.target.id === 'select_creature') {
-          initCreatureSelect(e.target, "#stat_block_add");
-        } else if (e.target && e.target.id === 'edit_creature'){
-          initCreatureSelect(e.target, "#stat_block_edit");
-        }
-      });
+
     </script>
   </body>
 </html>

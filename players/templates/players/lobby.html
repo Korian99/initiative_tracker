@@ -41,7 +41,7 @@
            role="tabpanel"
            aria-labelledby="characters-tab"
            hx-get="{% url 'character_list_partial' player.id %}"
-           hx-trigger="none"
+           hx-trigger="every 10s"
            hx-swap="innerHTML">{% include "players/partials/character_list.html" %}</div>
       <div class="tab-pane fade {% if characters|length == 0 %}show active{% endif %}"
            id="add-characters"
@@ -49,9 +49,9 @@
            aria-labelledby="add-characters-tab">{% include "players/partials/add_character.html" %}</div>
     </div>
   </div>
-  <div id="char-modal-container"></div>
-  <div id="statblock-modal-container"></div>
-  <div id="player-modal-container"></div>
-  <div id="lobby-modal-container"></div>
-  <div id="debuff-modal-container"></div>
+  <div id="char-modal-container" class="modal-container"></div>
+  <div id="statblock-modal-container" class="modal-container"></div>
+  <div id="player-modal-container" class="modal-container"></div>
+  <div id="lobby-modal-container" class="modal-container"></div>
+  <div id="debuff-modal-container" class="modal-container"></div>
 {% endblock content %}
