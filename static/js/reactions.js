@@ -1,8 +1,7 @@
-function changeReactions(reactions, character_id) {
+function changeReactions(reactions, character_id, role="P") {
   const lobby = document.getElementById('lobby-container');
   const characterListUrl = lobby.dataset.characterListUrl;
-
-  if (reactions > 0 && confirm("Use a reaction?")) {
+  if ((role=='DM' || reactions > 0) && confirm("Use a reaction?")) {
     htmx.ajax(
       "GET",
      characterListUrl,

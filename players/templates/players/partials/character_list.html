@@ -57,7 +57,7 @@
               {% if character.invisible %}(Invisible){% endif %}
             </span>
             -
-            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }},{{ character.id }})"{% else %} style="pointer-events:none"{% endif %}
+            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }},{{ character.id }}, '{{ player.role }}')"{% else %} style="pointer-events:none"{% endif %}
                     class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}">
               <i class="bi bi-arrow-counterclockwise"></i>
               <span class="number">{{ character.current_reactions }}</span>
