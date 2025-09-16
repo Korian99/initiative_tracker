@@ -2,9 +2,9 @@
     {% if role == "DM" or role == "PA" %}
         <!-- Pass Turn -->
         <form class="position-fixed"
-              style="top: 20px;
+              style="top: 140px;
                      right: 20px;
-                     z-index: 1050"
+                     z-index: 1030"
               hx-post="{% url 'pass_turn' %}"
               hx-target="#character-list"
               hx-swap="innerHTML"
@@ -21,7 +21,7 @@
         <form class="position-fixed"
               style="top: 80px;
                      right: 20px;
-                     z-index: 1050"
+                     z-index: 1030"
               hx-get="{% url 'reload_current_turn' player.id %}"
               hx-target="#character-list"
               hx-swap="innerHTML"
@@ -32,9 +32,9 @@
         </form>
         <!-- Edit Lobby -->
         <form class="position-fixed edit-character open-modal"
-              style="top: 140px;
+              style="top: 20px;
                      right: 20px;
-                     z-index: 1050"
+                     z-index: 1030"
               hx-get="{% url 'load_lobby_edit_modal' player.id %}"
               hx-target="#lobby-modal-container"
               data-modal-id="editLobbyModal"
@@ -50,17 +50,17 @@
     <button class="btn btn-success rounded-circle position-fixed"
             style="bottom: 80px;
                    right: 20px;
-                   z-index: 1050"
+                   z-index: 1030"
             type="button"
             id="switch-tab-btn">
         <i class="bi bi-arrow-repeat"></i>
     </button>
 {% endif %}
 {% comment %} SIDE MENU {% endcomment %}
-<button class="btn btn-primary rounded-circle position-fixed"
+<button class="btn btn-success rounded-circle position-fixed"
         style="bottom: 20px;
                right: 20px;
-               z-index: 1050"
+               z-index: 1030"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#sideMenu"
