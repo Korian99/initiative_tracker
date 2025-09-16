@@ -1,22 +1,23 @@
-  {% if player.lobby %}
-    <h2>
-      {{ player.player }}
-      <button class="btn btn-sm btn-info edit-character"
-              hx-get="{% url 'load_player_edit_modal' player.player.id player.lobby.id %}"
-              hx-target="#player-modal-container"
-              hx-swap="innerHTML">
-        <i class="bi bi-pencil"></i>
-      </button>
-    </h2>
-    
-    {% else %}
-    <h2>
-      {{ player }}
-      <button class="btn btn-sm btn-info edit-character"
-      hx-get="{% url 'load_player_edit_modal' player.id 0 %}"
-      hx-target="#player-modal-container"
-      hx-swap="innerHTML">
+{% if player.lobby %}
+  <h2>
+    {{ player.player }}
+    <button class="btn btn-sm btn-info edit-character open-modal"
+            data-modal-id="editPlayerModal"
+            hx-get="{% url 'load_player_edit_modal' player.player.id player.lobby.id %}"
+            hx-target="#player-modal-container"
+            hx-swap="innerHTML">
       <i class="bi bi-pencil"></i>
     </button>
   </h2>
-  {% endif %}
+{% else %}
+  <h2>
+    {{ player }}
+    <button class="btn btn-sm btn-info edit-character open-modal"
+            data-modal-id="editPlayerModal"
+            hx-get="{% url 'load_player_edit_modal' player.id 0 %}"
+            hx-target="#player-modal-container"
+            hx-swap="innerHTML">
+      <i class="bi bi-pencil"></i>
+    </button>
+  </h2>
+{% endif %}
