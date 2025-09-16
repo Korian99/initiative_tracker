@@ -13,6 +13,7 @@
     <link rel="manifest" href="{% static 'manifest.json' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <script src="{% static 'js/base.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/lobby.css' %}">
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("{% static 'js/sw.js' %}")
@@ -22,7 +23,6 @@
     </script>
     {% block scripts %}
     {% endblock scripts %}
-
     <!-- HTMX library -->
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
     <!-- Bootstrap JS Bundle (optional) -->
@@ -59,8 +59,6 @@
       </div>
     </div>
     {% include 'spinner.html' %}
-    <script>
-
-    </script>
+    <script></script>
   </body>
 </html>
