@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/lobby.css' %}">
     <script src="{% static 'js/base.js' %}"></script>
+    <script src="{% static 'js/tabs.js' %}"></script>
+
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("{% static 'js/sw.js' %}")
@@ -44,12 +46,12 @@
         {% endblock navbar %}
       </div>
       {% comment %} TODO CHANGE OVERFLOW BARRA {% endcomment %}
-      <div class="d-flex card p-2 overflow-auto m-3">
+      <div class="d-flex card overflow-auto py-2">
         <div class="row text-center">
           {% block player %}
           {% endblock player %}
         </div>
-        <div class="row m-3">
+        <div class="row m-2">
           <div id="#mainContent"
                class="col d-flex flex-column justify-content-center align-items-center text-center">
             {% block content %}

@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% load static %}
-<script src="{% static 'js/tabs.js' %}"></script>
 
 {% block title %}
   Lobby Page
@@ -9,7 +7,7 @@
   <div id="player-container">{% include "players/partials/player_container.html" %}</div>
 {% endblock player %}
 {% block navbar %}
-{% include "floating_buttons.html" with role='DM' %}
+{% include "floating_buttons.html" with role='DM' position='lobbies' %}
 
   <div class="container d-none">
     <!-- Navigation Pills -->

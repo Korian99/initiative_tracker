@@ -1,3 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+/* .container{
+  padding-right: calc(var(--bs-gutter-x) * .3)!important;
+  padding-left: calc(var(--bs-gutter-x) * .3)!important;
+} */
+.full-height {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: lightgray;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: gray;
+}
+
 .select2-container .select2-selection--single {
   background-color: var(--bs-body-bg) !important;
   border: var(--bs-border-width) solid var(--bs-border-color) !important;
@@ -26,17 +52,6 @@
   background-color: var(--bs-body-bg);
 }
 
-html,
-body {
-  height: 100%;
-}
-.full-height {
-  height: 100%;
-}
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
 .a-button {
   background: none;
   border: none;
@@ -53,16 +68,6 @@ body {
   border-radius: 10px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: lightgray;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
-::-webkit-scrollbar-thumb:window-inactive {
-  background: gray;
-}
 .scrollable-list {
   overflow-y: auto;
   overscroll-behavior: contain; /* important piece */
@@ -95,4 +100,18 @@ body[data-bs-theme="dark"] .btn-info {
   border-color: #0d6efd !important;
   background-color: #0d6efd !important;
   color: #fff !important; /* optional, keeps borders consistent */
+}
+
+.fab-form {
+  position: fixed;
+  right: 20px;
+  z-index: 1030;
+}
+
+.fab-btn{
+  position: fixed;
+  right: 20px;
+  z-index: 1030;
+  border-radius: 50% !important;
+  /* padding:1.3rem!important; */
 }
