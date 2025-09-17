@@ -1,39 +1,39 @@
 {% if position == "lobby" %}
     {% if role == "DM" or role == "PA" %}
         <!-- Pass Turn -->
-        <form class="fab-form"
-              style="top: 190px"
+        <form class="fab-btn bot"
+              style="--bot-position: 3"
               hx-post="{% url 'pass_turn' %}"
               hx-target="#character-list"
               hx-swap="innerHTML"
               onclick="confirmClick(event)">
             {% csrf_token %}
             <input type="hidden" name="player_lobby_id" value="{{ player.id }}">
-            <button type="submit" class="btn btn-info fab-btn shadow">
+            <button type="submit" class="btn btn-info shadow">
                 <i class="bi bi-check-lg"></i>
             </button>
         </form>
     {% endif %}
     {% if role == "DM" %}
         <!-- Reload Turn -->
-        <form class="fab-form"
-              style="top: 100px"
+        <form class="fab-btn bot"
+              style="--bot-position: 2"
               hx-get="{% url 'reload_current_turn' player.id %}"
               hx-target="#character-list"
               hx-swap="innerHTML"
               onclick="confirmClick(event)">
-            <button type="submit" class="btn btn-info fab-btn shadow">
+            <button type="submit" class="btn btn-info shadow">
                 <i class="bi bi-arrow-clockwise"></i>
             </button>
         </form>
         <!-- Edit Lobby -->
-        <form class="fab-form edit-character open-modal"
-              style="top: 10px"
+        <form class="fab-btn edit-character open-modal bot"
+              style="--bot-position: 1"
               hx-get="{% url 'load_lobby_edit_modal' player.id %}"
               hx-target="#lobby-modal-container"
               data-modal-id="editLobbyModal"
               hx-swap="innerHTML">
-            <button type="submit" class="btn btn-info fab-btn shadow">
+            <button type="submit" class="btn btn-info shadow">
                 <i class="bi bi-pencil"></i>
             </button>
         </form>
@@ -41,16 +41,16 @@
 {% endif %}
 {% comment %} CHANGE TAB {% endcomment %}
 {% if role == "DM" or role == "PA" %}
-    <button class="btn btn-success fab-btn"
-            style="bottom: 100px"
+    <button class="btn btn-success fab-btn top"
+            style="--top-position: 2"
             type="button"
             id="switch-tab-btn">
         <i class="bi bi-arrow-repeat"></i>
     </button>
 {% endif %}
 {% comment %} SIDE MENU {% endcomment %}
-<button class="btn btn-success fab-btn"
-        style="bottom: 10px"
+<button class="btn btn-success fab-btn top"
+        style="--top-position: 1"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#sideMenu"
