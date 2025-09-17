@@ -6,6 +6,7 @@
                 <p>
                     <em>Source: {{ creature.source }} - <small class="text-muted {{ template }}-coloring">Level {{ creature.level|add:lvl_offset }}</small></em>
                 </p>
+                {{ creature.level|add:lvl_offset|level_interactions|safe }}
                 <div class="d-flex">
                     <div class="col-md-6">
                         <p>

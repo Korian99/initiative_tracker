@@ -2,6 +2,13 @@
 from django import template
 
 register = template.Library()
+PARTY_LEVEL = 5
+level_msgs = {
+    "lte" : "This creature can't off-guard Valyas via flanking, hidden, undetected or using Surprise Attack"
+}
+traits_msgs = {
+    "fear" : "Bors gets a critical success on a success if it's a Will ST, and reduces the initial Frightened condition by 1"
+}
 
 @register.filter
 def level_offset(template_type, level):
@@ -73,3 +80,19 @@ def replace_actions(actions: str) -> str:
             actions_str = actions_str.replace(key, symbol)
         return actions_str
     return actions or "Passive"
+
+@register.filter
+def level_interactions(level):
+    level = int(level)
+    msg = ''
+    if level <= PARTY_LEVEL:
+        msg+= "<p class='warning'>"+level_msgs["lte"]+"</p>"
+    return msg
+
+@register.filter
+def trait_interactions(traits):
+    msg = ''
+    for trait in traits:
+        if trait in traits_msgs:
+            msg+= "<p class='warning'>"+traits_msgs[trait]+"</p>"
+    return msg

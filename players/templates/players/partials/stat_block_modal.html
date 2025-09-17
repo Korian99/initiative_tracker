@@ -1,3 +1,4 @@
+{% load creature_template_filter %}
 <div class="modal fade show"
      id="creatureModal"
      tabindex="-1"
@@ -14,6 +15,7 @@
           </h5>
         {% endif %}
         <span class="traits">{% for trait in creature.traits %}<span class="ms-2 badge trait">{{ trait }}</span>{% endfor %} </span>
+        {{creature.traits|trait_interactions|safe}}
         <button type="button"
                 class="btn-close btn-close-white"
                 data-bs-dismiss="modal"></button>

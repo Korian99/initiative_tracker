@@ -25,16 +25,17 @@
                   </div>
                   <div class="col">
                     <button class="btn btn-sm btn-outline-secondary"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#spell-{{ spell.id }}"
-                            aria-expanded="false"
-                            aria-controls="spell-{{ spell.id }}">Show Description</button>
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#spell-{{ spell.id }}"
+                    aria-expanded="false"
+                    aria-controls="spell-{{ spell.id }}">Show Description {% if spell.traits|trait_interactions %}<span class="warning"> (Special Interaction) </span>{% endif %} </button>
                   </div>
                 </div>
                 <div class="collapse mt-2" id="spell-{{ spell.id }}">
                   <div class="card card-body p-2">
                     <div class="row mb-2 text-muted small">
+                      {{spell.traits|trait_interactions|safe}}
                       {% if spell.castingTime %}
                         <div class="col-auto">
                           <strong>Cast:</strong> {{ spell.castingTime|replace_actions }}

@@ -30,6 +30,7 @@
                   {% endfor %}
                   {% if strike.effects %}   {{ strike.effects|join:", "|replace_dash|title}} {% endif %}
                 </div>
+                {{strike.traits|trait_interactions|safe}}
               {% endfor %}
             </ul>
           </div>

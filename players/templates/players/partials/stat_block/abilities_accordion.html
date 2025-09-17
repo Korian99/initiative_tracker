@@ -1,3 +1,4 @@
+{% load creature_template_filter %}
 {% if abilities %}
   <div class="accordion mb-3" id="accordion-{{ title|slugify }}">
     <div class="accordion-item">
@@ -20,6 +21,8 @@
                 <li class="list-group-item">
                   {% load creature_template_filter %}
                   <strong>{{ ability.name }} - {{ ability.actions|replace_actions }}</strong>
+                  <span class="traits">{% for trait in ability.traits %}<span class="ms-2 badge trait">{{ trait }}</span>{% endfor %}</span>
+                  {{ability.traits|trait_interactions|safe}}
                   <div>{{ ability.description|safe }}</div>
                   {% if skill_offset > 0 %}
                     <span class="{{ template }}-coloring">Increase the damage by +2 or +4 if it has a limited use</span>
