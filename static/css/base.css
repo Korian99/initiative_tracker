@@ -2,9 +2,9 @@ html,
 body {
   height: 100%;
 }
-.container{
-  padding-right: calc(var(--bs-gutter-x) * .7)!important;
-  padding-left: calc(var(--bs-gutter-x) * .7)!important;
+.container {
+  padding-right: calc(var(--bs-gutter-x) * 0.7) !important;
+  padding-left: calc(var(--bs-gutter-x) * 0.7) !important;
 }
 .full-height {
   height: 100%;
@@ -104,11 +104,12 @@ body[data-bs-theme="dark"] .btn-info {
 
 .fab-btn {
   position: fixed;
-  right: 20px;
+  right: 60px;
   z-index: 1030;
 }
 
-button.fab-btn, .fab-btn button{
+button.fab-btn,
+.fab-btn button {
   border-radius: 50% !important;
   padding: 1.3rem;
 }
@@ -122,17 +123,20 @@ button.fab-btn, .fab-btn button{
 }
 
 @media (max-width: 768px) {
-  button.fab-btn, .fab-btn button{
+  .fab-btn {
+    right: 30px;
+  }
+  button.fab-btn,
+  .fab-btn button {
     border-radius: 50% !important;
     padding: 0.7rem;
   }
-  
+
   .fab-btn.top {
     top: calc((var(--top-position, 1) - 1) * 70px + 10px);
   }
-  
+
   .fab-btn.bot {
     bottom: calc((var(--bot-position, 1) - 1) * 70px + 20px);
   }
-  
 }

@@ -1,80 +1,82 @@
-{% if position == "lobby" %}
+<div id="floating-buttons">
+    {% if position == "lobby" %}
+        {% if role == "DM" or role == "PA" %}
+            <!-- Pass Turn -->
+            <form class="fab-btn bot"
+                  style="--bot-position: 3"
+                  hx-post="{% url 'pass_turn' %}"
+                  hx-target="#character-list"
+                  hx-swap="innerHTML"
+                  onclick="confirmClick(event)">
+                {% csrf_token %}
+                <input type="hidden" name="player_lobby_id" value="{{ player.id }}">
+                <button type="submit" class="btn btn-info shadow">
+                    <i class="bi bi-check-lg"></i>
+                </button>
+            </form>
+        {% endif %}
+        {% if role == "DM" %}
+            <!-- Reload Turn -->
+            <form class="fab-btn bot"
+                  style="--bot-position: 2"
+                  hx-get="{% url 'reload_current_turn' player.id %}"
+                  hx-target="#character-list"
+                  hx-swap="innerHTML"
+                  onclick="confirmClick(event)">
+                <button type="submit" class="btn btn-info shadow">
+                    <i class="bi bi-arrow-clockwise"></i>
+                </button>
+            </form>
+            <!-- Edit Lobby -->
+            <form class="fab-btn edit-character open-modal bot"
+                  style="--bot-position: 1"
+                  hx-get="{% url 'load_lobby_edit_modal' player.id %}"
+                  hx-target="#lobby-modal-container"
+                  data-modal-id="editLobbyModal"
+                  hx-swap="innerHTML">
+                <button type="submit" class="btn btn-info shadow">
+                    <i class="bi bi-pencil"></i>
+                </button>
+            </form>
+        {% endif %}
+    {% endif %}
+    {% comment %} CHANGE TAB {% endcomment %}
     {% if role == "DM" or role == "PA" %}
-        <!-- Pass Turn -->
-        <form class="fab-btn bot"
-              style="--bot-position: 3"
-              hx-post="{% url 'pass_turn' %}"
-              hx-target="#character-list"
-              hx-swap="innerHTML"
-              onclick="confirmClick(event)">
-            {% csrf_token %}
-            <input type="hidden" name="player_lobby_id" value="{{ player.id }}">
-            <button type="submit" class="btn btn-info shadow">
-                <i class="bi bi-check-lg"></i>
-            </button>
-        </form>
+        <button class="btn btn-success fab-btn top"
+                style="--top-position: 2"
+                type="button"
+                id="switch-tab-btn">
+            <i class="bi bi-arrow-repeat"></i>
+        </button>
     {% endif %}
-    {% if role == "DM" %}
-        <!-- Reload Turn -->
-        <form class="fab-btn bot"
-              style="--bot-position: 2"
-              hx-get="{% url 'reload_current_turn' player.id %}"
-              hx-target="#character-list"
-              hx-swap="innerHTML"
-              onclick="confirmClick(event)">
-            <button type="submit" class="btn btn-info shadow">
-                <i class="bi bi-arrow-clockwise"></i>
-            </button>
-        </form>
-        <!-- Edit Lobby -->
-        <form class="fab-btn edit-character open-modal bot"
-              style="--bot-position: 1"
-              hx-get="{% url 'load_lobby_edit_modal' player.id %}"
-              hx-target="#lobby-modal-container"
-              data-modal-id="editLobbyModal"
-              hx-swap="innerHTML">
-            <button type="submit" class="btn btn-info shadow">
-                <i class="bi bi-pencil"></i>
-            </button>
-        </form>
-    {% endif %}
-{% endif %}
-{% comment %} CHANGE TAB {% endcomment %}
-{% if role == "DM" or role == "PA" %}
+    {% comment %} SIDE MENU {% endcomment %}
     <button class="btn btn-success fab-btn top"
-            style="--top-position: 2"
+            style="--top-position: 1"
             type="button"
-            id="switch-tab-btn">
-        <i class="bi bi-arrow-repeat"></i>
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sideMenu"
+            aria-controls="sideMenu">
+        <i class="bi bi-list"></i>
     </button>
-{% endif %}
-{% comment %} SIDE MENU {% endcomment %}
-<button class="btn btn-success fab-btn top"
-        style="--top-position: 1"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#sideMenu"
-        aria-controls="sideMenu">
-    <i class="bi bi-list"></i>
-</button>
-<div class="offcanvas offcanvas-end"
-     tabindex="-1"
-     id="sideMenu"
-     aria-labelledby="sideMenuLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="sideMenuLabel">Options</h5>
-        <button type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <ul class="list-group">
-            <li class="list-group-item">{% include "players/partials/side_menu/dark_mode_toggle.html" %}</li>
-            {% if position == "lobby" %}
-                <li class="list-group-item">{% include "players/partials/side_menu/to_lobbies.html" %}</li>
-            {% endif %}
-            <li class="list-group-item">{% include "players/partials/side_menu/logout.html" %}</li>
-        </ul>
+    <div class="offcanvas offcanvas-end"
+         tabindex="-1"
+         id="sideMenu"
+         aria-labelledby="sideMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sideMenuLabel">Options</h5>
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item">{% include "players/partials/side_menu/dark_mode_toggle.html" %}</li>
+                {% if position == "lobby" %}
+                    <li class="list-group-item">{% include "players/partials/side_menu/to_lobbies.html" %}</li>
+                {% endif %}
+                <li class="list-group-item">{% include "players/partials/side_menu/logout.html" %}</li>
+            </ul>
+        </div>
     </div>
 </div>
