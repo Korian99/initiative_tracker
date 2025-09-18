@@ -20,12 +20,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-=)rsh@eia^ep9z+3*#gwcd4_ubocp_ny0yw1q62o7jc2)=e4-u'
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://initiative-tracker-gksz.onrender.com",
+]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.environ.get('PRODUCTION_ENV') else True 
 REDIS_URL = os.getenv("REDIS_URL", "redis://127.0.0.1:6379")
-ALLOWED_HOSTS = ['127.0.0.1', 'initiative-tracker-gksz.onrender.com']
-
+ALLOWED_HOSTS = [
+    "initiative-tracker-gksz.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 # Application definition
 
