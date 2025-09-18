@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-=)rsh@eia^ep9z+3*#gwcd4_ubocp_ny0yw1q62o7jc2)=e4-u
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.environ.get('PRODUCTION_ENV') else True 
-
+REDIS_URL = os.getenv("REDIS_URL", "redis://127.0.0.1:6379")
 ALLOWED_HOSTS = ['127.0.0.1', 'initiative-tracker-gksz.onrender.com']
 
 
@@ -37,13 +37,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'players',
+    'channels',
 ]
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels.layers.InMemoryChannelLayer",
-#     },
-# }
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [REDIS_URL],
+        },
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -74,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION  = 'tracker.wsgi.application'
+ASGI_APPLICATION = "tracker.asgi.application"
 
 import dj_database_url
 
