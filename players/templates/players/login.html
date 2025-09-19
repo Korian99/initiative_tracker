@@ -3,25 +3,30 @@
   Lobby Page
 {% endblock title %}
 {% block content %}
-  <form id="player_connect"
-        class="mb-4 w-100"
-        style="max-width: 400px"
-        action="{% url 'player_connect' %}"
-        method="post">
-    {% csrf_token %}
-    <div class="mb-3">
-      <label for="player" class="form-label">Player's Name</label>
-      <input type="text"
-             class="form-control"
-             id="player"
-             name="player"
-             placeholder="Enter your name"
-             required>
+  {% load static %}
+  <div class="d-flex justify-content-center align-items-center min-vh-50">
+    <div class="login-container shadow-lg p-3 text-center">
+      <!-- Title -->
+      <h4 class="mb-4 text-light">Initiative Tracker</h4>
+      <!-- Icon -->
+      <img src="{% static 'icons/image-bless.png' %}"
+           alt="Bless Icon"
+           class="login-icon mx-auto mb-3">
+      <!-- Login Form -->
+      <form id="player_connect" action="{% url 'player_connect' %}" method="post">
+        {% csrf_token %}
+        <div class="mb-3 text-start">
+          <label for="player" class="form-label text-light">Player's Name</label>
+          <input type="text"
+                 class="form-control"
+                 id="player"
+                 name="player"
+                 placeholder="Enter your name"
+                 required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
     </div>
-    <button type="submit" class="btn btn-primary w-100">Login</button>
-  </form>
-
-{% load static %}
-<script src="{% static 'js/login.js' %}"></script>
-
+  </div>
+  <script src="{% static 'js/login.js' %}"></script>
 {% endblock content %}
