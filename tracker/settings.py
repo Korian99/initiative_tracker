@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+import whitenoise
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -90,8 +92,19 @@ import dj_database_url
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-if os.environ.get('DATABASE_URL'):
+print(os.environ.get('SUPABASE_URL'))
+if os.getenv('SUPABASE_URL'):
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.getenv('SUPABASE_NAME'),
+            "USER": "postgres",
+            "PASSWORD": os.getenv('SUPABASE_PASS'),
+            "HOST": os.getenv('SUPABASE_URL')+".supabase.co",
+            "PORT": "5432",
+        }
+    }
+elif os.environ.get('DATABASE_URL'):
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
@@ -102,6 +115,7 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+   
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
