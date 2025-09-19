@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="{% static 'css/lobby.css' %}">
     <script src="{% static 'js/base.js' %}"></script>
     <script src="{% static 'js/tabs.js' %}"></script>
-
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("{% static 'js/sw.js' %}")
@@ -40,24 +39,29 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </head>
   <body data-bs-theme="dark" class="dark">
-    <div class="full-height d-flex justify-content-center align-items-center flex-column">
-      <div>
-        {% block navbar %}
-        {% endblock navbar %}
-      </div>
-      {% comment %} TODO CHANGE OVERFLOW BARRA {% endcomment %}
-      <div class="d-flex card overflow-auto py-5">
+    <div class="d-flex full-height">
+      <div class="col-1 text-center left"></div>
+      <div class=" col-10 flex-grow-1 d-flex justify-content-center align-items-center flex-column">
         <div class="row text-center">
-          {% block player %}
-          {% endblock player %}
+          {% block navbar %}
+          {% endblock navbar %}
         </div>
-        <div class="row m-2">
+        <div class="d-flex card overflow-auto py-5 center">
+          <div class="row text-center navbar"></div>
+          <div class="row text-center player">
+            {% block player %}
+            {% endblock player %}
+          </div>
           <div id="#mainContent"
-               class="col d-flex flex-column justify-content-center align-items-center text-center">
+               class="row d-flex flex-column justify-content-center align-items-center text-center">
             {% block content %}
             {% endblock content %}
           </div>
         </div>
+      </div>
+      <div class="col-1 text-center right d-flex justify-content-center flex-column">
+        {% block right_side %}
+        {% endblock right_side %}
       </div>
     </div>
     {% include 'spinner.html' %}
