@@ -15,6 +15,7 @@ import os
 from dotenv import load_dotenv
 import whitenoise
 import daphne
+import psycopg2
 import channels_redis
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
