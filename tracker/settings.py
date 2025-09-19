@@ -15,6 +15,7 @@ import os
 from dotenv import load_dotenv
 import whitenoise
 import daphne
+import channels_redis
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -88,26 +89,18 @@ TEMPLATES = [
 ]
 
 ASGI_APPLICATION = "tracker.asgi.application"
+load_dotenv()
 
-import dj_database_url
-
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-print(os.environ.get('SUPABASE_URL'))
-if os.getenv('SUPABASE_URL'):
+if os.getenv('SUPABASE_HOST'):
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
             "NAME": os.getenv('SUPABASE_NAME'),
             "USER": "postgres",
             "PASSWORD": os.getenv('SUPABASE_PASS'),
-            "HOST": os.getenv('SUPABASE_URL')+".supabase.co",
+            "HOST": os.getenv('SUPABASE_HOST')+".supabase.co",
             "PORT": "5432",
         }
-    }
-elif os.environ.get('DATABASE_URL'):
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
