@@ -68,17 +68,17 @@
                     <i class="bi bi-arrow-clockwise"></i>
                 </button>
             </form>
-            <!-- Edit Lobby -->
-            <form class="edit-character open-modal bot"
-                  style="--bot-position: 1"
-                  hx-get="{% url 'load_lobby_edit_modal' player.id %}"
-                  hx-target="#lobby-modal-container"
-                  data-modal-id="editLobbyModal"
-                  hx-swap="innerHTML">
-                <button type="submit" class="btn btn-info shadow fab-btn ">
-                    <i class="bi bi-pencil"></i>
-                </button>
-            </form>
         {% endif %}
+        <!-- Edit Lobby -->
+        <form class="edit-character open-modal bot"
+              style="--bot-position: 1"
+              hx-get="{% url 'load_lobby_edit_modal' player.id %}"
+              hx-target="#lobby-modal-container"
+              data-modal-id="editLobbyModal"
+              hx-swap="innerHTML">
+            <button type="submit" class="btn btn-info shadow fab-btn ">
+                <i class="bi bi-pencil"></i>
+            </button>
+        </form>
     {% endif %}
 </div>
