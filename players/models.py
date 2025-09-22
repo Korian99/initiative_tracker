@@ -1,8 +1,11 @@
 from django.db import models
+from django.db.models.signals import post_save, post_delete
 import json
 from pathlib import Path
 from django.conf import settings
-from django.db import models
+from django.dispatch import receiver
+from asgiref.sync import async_to_sync
+from channels.layers import get_channel_layer
 
 
 class Lobby(models.Model):
@@ -97,3 +100,17 @@ class Character(models.Model):
     
     class Meta:
         ordering = ['-order']
+
+
+@receiver([post_save, post_delete], sender=Character)
+def character_changed(sender, instance, **kwargs):
+    lobby_id = str(instance.player.lobby.id)
+    channel_layer = get_channel_layer()
+    # Trigger the consumer to broadcast
+    async_to_sync(channel_layer.group_send)(
+        lobby_id,
+        {
+            "type": "send_update",
+            "message": {}  # We'll fill in html inside the consumer
+        }
+    )

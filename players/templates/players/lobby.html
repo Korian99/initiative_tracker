@@ -6,7 +6,6 @@
   <div id="player-container">{% include "players/partials/player_container.html" %}</div>
 {% endblock player %}
 {% block navbar %}
-
   <div class="container d-none">
     <ul class="nav nav-tabs" id="tabs" role="tablist">
       <li class="nav-item" role="presentation">
@@ -32,9 +31,11 @@
     </ul>
   </div>
 {% endblock navbar %}
+{% block right_side %}
+{% include "floating_buttons.html" with player=player.player role=player.role position='lobby' %}
+{% endblock right_side %}
 {% block content %}
-  {% include "floating_buttons.html" with player=player.player role=player.role position='lobby'%}
-  <div class="container mt-4 px-5 tab-container">
+  <div class="container-fluid mt-4 px-5 tab-container">
     {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->
     <div class="tab-content" id="tabs-content">
@@ -43,7 +44,7 @@
            role="tabpanel"
            aria-labelledby="characters-tab"
            hx-get="{% url 'character_list_partial' player.id %}"
-           hx-trigger="every 10s"
+           hx-trigger="refresh from:body"
            hx-swap="innerHTML">{% include "players/partials/character_list.html" %}</div>
       <div class="tab-pane fade {% if characters|length == 0 %}show active{% endif %}"
            id="add-characters"
@@ -56,4 +57,16 @@
   <div id="player-modal-container" class="modal-container"></div>
   <div id="lobby-modal-container" class="modal-container"></div>
   <div id="debuff-modal-container" class="modal-container"></div>
+ 
+  <script>
+  const protocol = window.location.protocol === "https:" ? "wss" : "ws";
+  const socket = new WebSocket(`${protocol}://${window.location.host}/ws/lobby/{{ player.lobby.id }}/`);
+  
+  socket.onmessage = function(e) {
+      const data = JSON.parse(e.data);
+      if (data.action === "refresh") {
+          htmx.trigger("#character-list", "refresh");
+      }
+  };
+  </script>
 {% endblock content %}

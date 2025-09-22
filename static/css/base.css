@@ -9,6 +9,10 @@ body {
 .full-height {
   height: 100%;
 }
+.row.navbar, .row.player, .row.main-content {
+  margin-right:0px!important;
+  margin-left:0px!important;
+}
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -85,7 +89,9 @@ body {
 .select2-dropdown {
   z-index: 2000 !important;
 }
-
+.login-icon{
+  width:300px;
+}
 .weak-coloring {
   color: red;
 }
@@ -102,45 +108,54 @@ body[data-bs-theme="dark"] .btn-info {
   color: #fff !important; /* optional, keeps borders consistent */
 }
 
-.fab-btn {
+
+#top-buttons, #bot-buttons {
   position: fixed;
-  right: 60px;
+  right: 1rem;
+  gap: 1.5rem;
   z-index: 1030;
 }
 
-button.fab-btn,
-.fab-btn button {
+#top-buttons {
+  top: 1rem;
+  flex-direction: column;
+}
+#bot-buttons {
+  bottom: 1rem;
+  flex-direction: column-reverse;
+}
+.fab-btn {
+  z-index: 1030;
   border-radius: 50% !important;
-  padding: 1.3rem;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.fab-btn.top {
-  top: calc((var(--top-position, 1) - 1) * 90px + 10px);
+.fab-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+.fab-btn i {
+  font-size: 1.4rem;
 }
 
-.fab-btn.bot {
-  bottom: calc((var(--bot-position, 1) - 1) * 90px + 20px);
-}
-
+/* Smaller screens → smaller FABs */
 @media (max-width: 768px) {
   .fab-btn {
-    right: 20px;
-  }
-  button.fab-btn,
-  .fab-btn button {
-    border-radius: 50% !important;
-    padding: 0.7rem;
+    width: 48px;
+    height: 48px;
   }
 
-  .fab-btn.top {
-    top: calc((var(--top-position, 1) - 1) * 70px + 10px);
-  }
-
-  .fab-btn.bot {
-    bottom: calc((var(--bot-position, 1) - 1) * 70px + 20px);
+  .fab-btn i {
+    font-size: 1.2rem;
   }
 }
 
 .warning {
-  color:#ba680b;
+  color: #ba680b;
 }

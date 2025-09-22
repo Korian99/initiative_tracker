@@ -10,8 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import dj_database_url
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,12 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-=)rsh@eia^ep9z+3*#gwcd4_ubocp_ny0yw1q62o7jc2)=e4-u'
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://initiative-tracker-gksz.onrender.com",
+]
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False if os.environ.get('PRODUCTION_ENV') else True 
-
-ALLOWED_HOSTS = ['127.0.0.1', 'initiative-tracker-gksz.onrender.com']
-
+DEBUG = False if os.environ.get('PRODUCTION_ENV') else True
+REDIS_URL = os.getenv("REDIS_URL", "redis://127.0.0.1:6379")
+ALLOWED_HOSTS = [
+    "initiative-tracker-gksz.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 # Application definition
 
@@ -35,15 +43,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'daphne',
     'django.contrib.staticfiles',
     'players',
+    'channels',
 ]
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels.layers.InMemoryChannelLayer",
-#     },
-# }
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [REDIS_URL],
+        },
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -74,16 +87,13 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION  = 'tracker.wsgi.application'
+ASGI_APPLICATION = "tracker.asgi.application"
+load_dotenv()
 
-import dj_database_url
-
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-if os.environ.get('DATABASE_URL'):
+if os.getenv('DATABASE_URL'):
+    db_url = os.getenv('DATABASE_URL')
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(db_url)
     }
 else:
     DATABASES = {

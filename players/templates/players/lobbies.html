@@ -6,8 +6,10 @@
 {% block player %}
   <div id="player-container">{% include "players/partials/player_container.html" %}</div>
 {% endblock player %}
-{% block navbar %}
+{% block right_side %}
 {% include "floating_buttons.html" with role='DM' position='lobbies' %}
+{% endblock right_side %}
+{% block navbar %}
 
   <div class="container d-none">
     <!-- Navigation Pills -->
@@ -36,7 +38,7 @@
   </div>
 {% endblock navbar %}
 {% block content %}
-  <div class="container mt-4 px-5 tab-container">
+  <div class="mt-4 px-5 tab-container">
     <!-- Tab Content -->
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade {% if lobbies|length > 0 %} show active{% endif %}"
