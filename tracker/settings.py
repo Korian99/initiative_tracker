@@ -10,13 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import dj_database_url
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-import whitenoise
-import daphne
-import psycopg2
-import channels_redis
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,7 +27,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://initiative-tracker-gksz.onrender.com",
 ]
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False if os.environ.get('PRODUCTION_ENV') else True 
+DEBUG = False if os.environ.get('PRODUCTION_ENV') else True
 REDIS_URL = os.getenv("REDIS_URL", "redis://127.0.0.1:6379")
 ALLOWED_HOSTS = [
     "initiative-tracker-gksz.onrender.com",
@@ -92,16 +90,10 @@ TEMPLATES = [
 ASGI_APPLICATION = "tracker.asgi.application"
 load_dotenv()
 
-if os.getenv('SUPABASE_HOST'):
+if os.getenv('DATABASE_URL'):
+    db_url = os.getenv('DATABASE_URL')
     DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.getenv('SUPABASE_NAME'),
-            "USER": "postgres",
-            "PASSWORD": os.getenv('SUPABASE_PASS'),
-            "HOST": os.getenv('SUPABASE_HOST')+".supabase.co",
-            "PORT": "5432",
-        }
+        'default': dj_database_url.parse(db_url)
     }
 else:
     DATABASES = {
@@ -110,7 +102,6 @@ else:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-   
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
