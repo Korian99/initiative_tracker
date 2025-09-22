@@ -118,13 +118,13 @@ class EditLobbyView(TemplateView):
     def post(self, request):
 
         player_in_lobby_id = request.POST.get("player_lobby_id")
-        new_name = request.POST.get("name")
         new_pas = request.POST.getlist("players")
 
         player_in_lobby = PlayerInLobby.objects.get(id=player_in_lobby_id)
 
         lobby = player_in_lobby.lobby
-        lobby.name = new_name
+        lobby.name = request.POST.get("name", "")
+        lobby.notes = request.POST.get("notes", None)
         lobby.save()
 
         notDMPlayers = PlayerInLobby.objects.filter(

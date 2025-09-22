@@ -20,7 +20,7 @@ class LobbyConsumer(AsyncWebsocketConsumer):
         """
         Receives messages from the group layer and tells HTMX to refresh
         """
-        await self.send(text_data=json.dumps({"action": "refresh"}))
+        await self.send(text_data=json.dumps({"action": event["message"]}))
 
     async def broadcast_refresh_signal(self):
         """

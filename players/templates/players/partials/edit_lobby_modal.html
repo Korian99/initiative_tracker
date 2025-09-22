@@ -16,7 +16,6 @@
                   hx-swap="innerHTML"
                   hx-target="#character-list">
                 <div class="modal-body">
-                    <!-- Hidden input for players_in_lobby id -->
                     {% csrf_token %}
                     <input type="hidden" name="player_lobby_id" value="{{ player_lobby.id }}">
                     <div class="mb-3 {% if not player_lobby.role == 'DM' %}d-none{% endif %}">
@@ -41,6 +40,14 @@
                                 </option>
                             {% endfor %}
                         </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="notes" class="form-label">Notes</label>
+                        <input type="text"
+                               class="form-control"
+                               id="notes"
+                               name="notes"
+                               value="{{ lobby.notes|default:"" }}">
                     </div>
                 </div>
                 <div class="modal-footer">

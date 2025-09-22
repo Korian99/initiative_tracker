@@ -10,6 +10,7 @@ from channels.layers import get_channel_layer
 
 class Lobby(models.Model):
     code = models.CharField(max_length=6, unique=True)
+    notes = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=100, blank=True, null=True)
 
@@ -111,6 +112,18 @@ def character_changed(sender, instance, **kwargs):
         lobby_id,
         {
             "type": "send_update",
-            "message": {}  # We'll fill in html inside the consumer
+            "message": "list"
+        }
+    )
+
+@receiver([post_save, post_delete], sender=Lobby)
+def lobby_changed(sender, instance, **kwargs):
+    lobby_id = str(instance.id)
+    channel_layer = get_channel_layer()
+    async_to_sync(channel_layer.group_send)(
+        lobby_id,
+        {
+            "type": "send_update",
+            "message": "lobby"
         }
     )
