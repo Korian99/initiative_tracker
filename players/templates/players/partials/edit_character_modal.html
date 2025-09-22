@@ -38,7 +38,7 @@
                                    value="{{ character.name }}">
                         </div>
                     </div>
-                    {% if player_lobby.role == 'DM' or player_lobby.role == 'PA' %}
+                    {% if player_lobby.role == 'DM' or character.player == player_lobby  %}
                         <div class="mb-3 show-spinner"
                              id="edit_creature"
                              hx-get="{% url 'select_creature' %}"
