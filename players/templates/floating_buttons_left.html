@@ -1,17 +1,25 @@
-    <div id="left-top-buttons" class="row-6">
-        {% if position == "lobby" %}
-            {% if role == "DM" %}
-                <!-- Reload Turn -->
-                <form class="bot"
-                      style="--bot-position: 2"
-                      hx-get="{% url 'reload_current_turn' player.id %}"
-                      hx-target="#character-list"
-                      hx-swap="innerHTML"
-                      onclick="confirmClick(event, 'Reload initiative order?')">
-                    <button type="submit" class="btn btn-info shadow fab-btn ">
-                        <i class="bi bi-arrow-clockwise"></i>
-                    </button>
-                </form>
-            {% endif %}
+<div id="left-top-buttons" class="row-6">
+    {% if position == "lobby" %}
+        {% if role == "DM" %}
+            <!-- Reload Turn -->
+            <form hx-get="{% url 'reload_current_turn' player.id %}"
+                  hx-target="#character-list"
+                  hx-swap="innerHTML"
+                  onclick="confirmClick(event, 'Reload initiative order?')">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-info shadow fab-btn ">
+                    <i class="bi bi-arrow-repeat"></i>
+                </button>
+            </form>
+            <form hx-get="{% url 'reload_current_turn' player.id %}?previous_order=1"
+                  hx-target="#character-list"
+                  hx-swap="innerHTML"
+                  onclick="confirmClick(event, 'Go to previous initiative order?')">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-info shadow fab-btn ">
+                    <i class="bi bi-arrow-counterclockwise"></i>
+                </button>
+            </form>
         {% endif %}
-    </div>
+    {% endif %}
+</div>

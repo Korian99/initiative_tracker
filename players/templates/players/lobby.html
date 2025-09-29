@@ -11,6 +11,7 @@
         action="{% url 'join_lobby' %}"
         class="d-none"
         method="get">
+    {% csrf_token %}
     <input type="hidden"
            id="player-hidden"
            name="player"

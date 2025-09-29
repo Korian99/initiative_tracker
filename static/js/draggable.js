@@ -1,5 +1,5 @@
 (function () {
-  const lobby = document.getElementById("lobby-container");
+  const lobby = document.getElementById("character-list-container");
 
   const playerId = lobby.dataset.playerId;
   const csrfToken = lobby.dataset.csrfToken;

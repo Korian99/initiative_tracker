@@ -1,6 +1,6 @@
 {% load static %}
 <div class="mb-3 gap-3"
-     id="lobby-container"
+     id="character-list-container"
      data-player-id="{{ player.id }}"
      data-character-list-url="{% url 'character_list_partial' player.id %}"
      data-move-character-url="{% url 'move_character' %}"
@@ -12,7 +12,7 @@
   {% for character in characters %}
     <li class="list-group-item character-row {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}  {% if character.invisible %}is-invisible{% endif %}"
         data-id="{{ character.id }}">
-      <div class="drag-handle d-flex align-items-center justify-content-center col-7">
+      <div class="drag-handle d-flex align-items-center justify-content-center col-6">
         <span style="pointer-events: auto;">
           <div class="d-flex align-items-center justify-content-center gap-1">{{ character }}</div>
           <div class="d-flex align-items-center justify-content-center gap-1">
@@ -29,14 +29,14 @@
           </div>
           {% if character.debuff %}
             <div style="pointer-events: auto;
-                         color:red;
-                         font-weight:bold"
-                  class="d-flex align-items-center justify-content-center gap-1">{{ character.debuff }}</div>
+                        color:red;
+                        font-weight:bold"
+                 class="d-flex align-items-center justify-content-center gap-1">{{ character.debuff }}</div>
           {% endif %}
         </span>
       </div>
       <div id="buttons"
-           class="col-5 d-flex align-items-center justify-content-center gap-5">
+           class="col-6 d-flex align-items-center justify-content-center gap-5">
         <input type="hidden"
                name="reminder"
                id="reminder"
@@ -58,7 +58,7 @@
           {% endif %}
         </form>
         {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
-          <button class="btn btn-sm btn-info edit-character  open-modal"
+          <button class="btn btn-info edit-character  open-modal"
                   data-modal-id="editCharacterModal"
                   hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
                   hx-target="#char-modal-container"
@@ -68,7 +68,7 @@
         {% endif %}
         {% if character.stat_block %}
           {% if player.role == "DM" or player.id == character.player.id %}
-            <button class="btn btn-sm btn-info stat-block show-spinner   open-modal"
+            <button class="btn btn-info stat-block show-spinner   open-modal"
                     data-modal-id="creatureModal"
                     hx-get="{% url 'load_stat_block_modal' character.id %}"
                     hx-target="#statblock-modal-container"

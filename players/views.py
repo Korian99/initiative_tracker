@@ -21,8 +21,17 @@ def reorder_characters(characters, change_turn=True):
         if i == len(characters) and change_turn:
             c.current_turn = True
             c.current_reactions = c.max_reactions
+        c.previous_order = c.order
         c.order = i
         i -= 1
+        c.save()
+    return characters.order_by("-order")
+
+def previous_ordering(characters, change_turn=True):
+    for c in characters:
+        previous = c.previous_order
+        c.previous_order = c.order
+        c.order = previous
         c.save()
     return characters.order_by("-order")
 
@@ -305,11 +314,13 @@ class EditCharacterView(TemplateView):
 class TurnView(TemplateView):
     # reload_current_turn
     def get(self, request, player_lobby_id):
-
         player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
         characters = Character.objects.filter(
             player__lobby=player_lobby.lobby).order_by("-initiative")
-        characters = reorder_characters(characters)
+        if request.GET.get("previous_order", 0) == '1':
+            characters = previous_ordering(characters)
+        else:
+            characters = reorder_characters(characters)
 
         return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_lobby})
 
@@ -335,8 +346,10 @@ def move_character(request):
         order = request.POST.getlist('order')
         for index, character_id in enumerate(order):
             character = Character.objects.get(id=character_id)
+            character.previous_order = character.order
             character.order = round_len - index  # Ensures descending order
             character.save()
+
     except Exception as e:
         print(e)
     characters = Character.objects.filter(

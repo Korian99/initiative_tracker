@@ -65,6 +65,7 @@ class Character(models.Model):
     name = models.CharField(max_length=100)
     initiative = models.IntegerField()
     order = models.PositiveIntegerField(default=0)
+    previous_order = models.PositiveIntegerField(default=0)
     debuff = models.CharField(max_length=100, null= True, blank=False)
     reminder = models.CharField(max_length=100, default=None, null= True, blank=True)
     invisible = models.BooleanField(default=False)
