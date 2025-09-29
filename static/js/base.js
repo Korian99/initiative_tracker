@@ -1,4 +1,4 @@
-var myModal=null;
+var myModal = null;
 
 function longPress(el, callback, message) {
   let pressTimer;
@@ -15,7 +15,7 @@ function longPress(el, callback, message) {
   el.addEventListener("touchmove", () => clearTimeout(pressTimer));
 }
 
-function confirmClick(e, msg="Are you sure?") {
+function confirmClick(e, msg = "Are you sure?") {
   if (!confirm(msg)) {
     e.preventDefault();
   }
@@ -71,6 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       }
+    }
+  });
+
+  window.addEventListener("load", () => {
+    const card = document.querySelector(".center.card");
+    if (card) {
+      card.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 });
