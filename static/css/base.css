@@ -1,7 +1,32 @@
-html,
-body {
+html, body {
   height: 100%;
+  margin: 0;
 }
+
+#main-container {
+  min-height: 100vh;          /* full screen height */
+  display: flex;
+}
+
+#main-container > .col-10 {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-container .card.center {
+  flex: 1;                     /* fill vertical space */
+  display: flex;
+  flex-direction: column;
+}
+
+#block-content {
+  flex: 1;                     /* make the main content stretch */
+}
+
+#footer {
+  margin-top: auto;            /* push footer to bottom */
+}
+
 .container {
   padding-right: calc(var(--bs-gutter-x) * 0.7) !important;
   padding-left: calc(var(--bs-gutter-x) * 0.7) !important;
@@ -118,20 +143,29 @@ body[data-bs-theme="dark"] .btn-info {
   background-color: #0d6efd !important;
   color: #fff !important; /* optional, keeps borders consistent */
 }
+.side-container{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+}
 
-
-#top-buttons, #bot-buttons {
+#left-top-buttons, #left-bot-buttons,
+#right-top-buttons, #right-bot-buttons {
+  display: flex;
   position: fixed;
-  right: 1rem;
   gap: 1.5rem;
   z-index: 1030;
 }
 
-#top-buttons {
+#left-top-buttons, 
+#right-top-buttons {
   top: 1rem;
   flex-direction: column;
 }
-#bot-buttons {
+#left-bot-buttons,
+#right-bot-buttons {
   bottom: 1rem;
   flex-direction: column-reverse;
 }

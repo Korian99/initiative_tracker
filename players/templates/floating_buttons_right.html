@@ -1,4 +1,4 @@
-<div id="top-buttons" class="d-flex flex-column row-6">
+<div id="right-top-buttons" class="row-6">
     {% comment %} SIDE MENU {% endcomment %}
     <button class="btn btn-success fab-btn top"
             style="--top-position: 1"
@@ -39,7 +39,7 @@
         </button>
     {% endif %}
 </div>
-<div id="bot-buttons" class="d-flex flex-column row-6">
+<div id="right-bot-buttons" class="row-6">
     {% if position == "lobby" %}
         {% if role == "DM" or role == "PA" %}
             <!-- Pass Turn -->
@@ -48,24 +48,11 @@
                   hx-post="{% url 'pass_turn' %}"
                   hx-target="#character-list"
                   hx-swap="innerHTML"
-                  onclick="confirmClick(event)">
+                  onclick="confirmClick(event, 'Go to next turn?')">
                 {% csrf_token %}
                 <input type="hidden" name="player_lobby_id" value="{{ player.id }}">
                 <button type="submit" class="btn btn-info shadow  fab-btn ">
                     <i class="bi bi-check-lg"></i>
-                </button>
-            </form>
-        {% endif %}
-        {% if role == "DM" %}
-            <!-- Reload Turn -->
-            <form class="bot"
-                  style="--bot-position: 2"
-                  hx-get="{% url 'reload_current_turn' player.id %}"
-                  hx-target="#character-list"
-                  hx-swap="innerHTML"
-                  onclick="confirmClick(event)">
-                <button type="submit" class="btn btn-info shadow fab-btn ">
-                    <i class="bi bi-arrow-clockwise"></i>
                 </button>
             </form>
         {% endif %}

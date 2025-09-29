@@ -90,18 +90,14 @@ TEMPLATES = [
 ASGI_APPLICATION = "tracker.asgi.application"
 load_dotenv()
 
-if os.getenv('DATABASE_URL'):
-    db_url = os.getenv('DATABASE_URL')
-    DATABASES = {
-        'default': dj_database_url.parse(db_url)
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 

@@ -15,8 +15,8 @@ function longPress(el, callback, message) {
   el.addEventListener("touchmove", () => clearTimeout(pressTimer));
 }
 
-function confirmClick(e) {
-  if (!confirm("Are you sure?")) {
+function confirmClick(e, msg="Are you sure?") {
+  if (!confirm(msg)) {
     e.preventDefault();
   }
 }

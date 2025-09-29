@@ -39,9 +39,12 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </head>
   <body data-bs-theme="dark" class="dark">
-    <div class="d-flex full-height">
-      <div class="col-1 text-center left"></div>
-      <div class=" col-10 flex-grow-1 d-flex justify-content-center align-items-center flex-column">
+    <div id="main-container" class="d-flex">
+      <div class="col-1 side-container">
+        {% block left_side %}
+        {% endblock left_side %}
+      </div>
+      <div class="col-10">
         <div class="row text-center">
           {% block navbar %}
           {% endblock navbar %}
@@ -52,24 +55,23 @@
             {% block player %}
             {% endblock player %}
           </div>
-          <div id="mainContent"
-               class="row d-flex flex-column justify-content-center align-items-center text-center main-content">
+          <div id="block-content"
+               class="row d-flex flex-column justify-content-start align-items-center text-center content">
             {% block content %}
             {% endblock content %}
           </div>
-            <div id="footer"
-                class="row d-flex  flex-column justify-content-center align-items-center text-center">
-              {% block footer %}
-              {% endblock footer %}
-            </div>
+          <div id="footer"
+               class="row d-flex flex-column justify-content-center align-items-center text-center">
+            {% block footer %}
+            {% endblock footer %}
+          </div>
         </div>
       </div>
-      <div class="col-1 text-center right d-flex justify-content-center flex-column">
+      <div class="col-1 side-container">
         {% block right_side %}
         {% endblock right_side %}
       </div>
     </div>
-
     {% include 'spinner.html' %}
   </body>
 </html>
