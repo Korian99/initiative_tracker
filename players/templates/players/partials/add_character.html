@@ -1,5 +1,5 @@
 {% if player.role == "DM" or player.role == "PA" %}
-  <div class="mt-2 w-100" style="max-width: 400px;">
+  <div class="mt-2 h-100 w-100 d-flex justify-content-center align-items-center flex-column ">
     <h2>Lobby: {{ player.lobby }}</h2>
     <form hx-post="{% url 'add_character' %}"
           hx-target="#character-list"

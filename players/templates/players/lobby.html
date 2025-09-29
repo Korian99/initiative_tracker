@@ -55,18 +55,18 @@
 {% block content %}
   <div  id="lobby-container"
      data-lobby-id="{{ player.lobby.id }}"
-     data-lobby-code="{{ player.lobby.code }}" class="container-fluid mt-4 px-5 tab-container">
+     data-lobby-code="{{ player.lobby.code }}" class="container-fluid mt-4 mb-3 px-5 tab-container">
     {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->
-    <div class="tab-content" id="tabs-content">
-      <div class="tab-pane fade {% if characters|length > 0 %}show active{% endif %}"
+    <div class="tab-content w-100 h-100" id="tabs-content">
+      <div class="tab-pane fade w-100 h-100 {% if characters|length > 0 %}show active{% endif %}"
            id="character-list"
            role="tabpanel"
            aria-labelledby="characters-tab"
            hx-get="{% url 'character_list_partial' player.id %}"
            hx-trigger="refresh from:body"
            hx-swap="innerHTML">{% include "players/partials/character_list.html" %}</div>
-      <div class="tab-pane fade {% if characters|length == 0 %}show active{% endif %}"
+      <div class="tab-pane fade  w-100 h-100 {% if characters|length == 0 %}show active{% endif %}"
            id="add-characters"
            role="tabpanel"
            aria-labelledby="add-characters-tab">{% include "players/partials/add_character.html" %}</div>
