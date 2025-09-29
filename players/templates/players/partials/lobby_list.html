@@ -1,11 +1,13 @@
 <div class="d-flex justify-content-center align-items-center flex-column">
   {% if player.get_my_lobbies|length > 0 %}
-    <h4 class="mb-3">As a DM:</h4>
-    <ul class="list-group list-group-flush w-100">
+    <h3 class="mb-3">
+      As a DM:
+    </h4>
+    <ul class="list-group list-group-flush w-100 fs-4">
       {% for lobby in player.get_my_lobbies %}
-        <li class="list-group-item justify-content-between align-items-center d-flex"
+        <li class="list-group-item justify-content-start align-items-center d-flex col-10 gap-3"
             data-id="{{ lobby.id }}">
-          <div class="flex-grow-1">Lobby: {{ lobby }}</div>
+          <div class="flex-grow-1 text-start">Lobby: {{ lobby }}</div>
           <form id="join-lobby-{{ lobby.code }}-form"
                 action="{% url 'join_lobby' %}"
                 method="get">
