@@ -1,10 +1,11 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
 
 #main-container {
-  min-height: 100vh;          /* full screen height */
+  min-height: 100vh; /* full screen height */
   display: flex;
 }
 
@@ -14,17 +15,17 @@ html, body {
 }
 
 #main-container .card.center {
-  flex: 1;                     /* fill vertical space */
+  flex: 1; /* fill vertical space */
   display: flex;
   flex-direction: column;
 }
 
 #block-content {
-  flex: 1;                     /* make the main content stretch */
+  flex: 1; /* make the main content stretch */
 }
 
 #footer {
-  margin-top: auto;            /* push footer to bottom */
+  margin-top: auto; /* push footer to bottom */
 }
 
 .container {
@@ -39,15 +40,17 @@ html, body {
   border: var(--bs-border-width) solid var(--bs-border-color) !important;
   background-color: var(--bs-body-bg) !important;
   width: 100%;
-  z-index: 1030;       /* keep it on top */
+  z-index: 1030; /* keep it on top */
 }
 
 .full-height {
   height: 100%;
 }
-.row.navbar, .row.player, .row.main-content {
-  margin-right:0px!important;
-  margin-left:0px!important;
+.row.navbar,
+.row.player,
+.row.main-content {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -125,8 +128,8 @@ html, body {
 .select2-dropdown {
   z-index: 2000 !important;
 }
-.login-icon{
-  width:300px;
+.login-icon {
+  width: 300px;
 }
 .weak-coloring {
   color: red;
@@ -143,23 +146,25 @@ body[data-bs-theme="dark"] .btn-info {
   background-color: #0d6efd !important;
   color: #fff !important; /* optional, keeps borders consistent */
 }
-.side-container{
-   display:flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   flex-direction: column;
+.side-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-#left-top-buttons, #left-bot-buttons,
-#right-top-buttons, #right-bot-buttons {
+#left-top-buttons,
+#left-bot-buttons,
+#right-top-buttons,
+#right-bot-buttons {
   display: flex;
   position: fixed;
   gap: 1.5rem;
   z-index: 1030;
 }
 
-#left-top-buttons, 
+#left-top-buttons,
 #right-top-buttons {
   top: 1rem;
   flex-direction: column;
@@ -191,13 +196,27 @@ body[data-bs-theme="dark"] .btn-info {
 
 /* Smaller screens → smaller FABs */
 @media (max-width: 768px) {
+  /* reduce padding inside card */
+  #main-container .col-10 {
+    width: 76%;
+  }
+  #main-container .col-1 {
+    width: 12%;
+  }
+  #main-container .card.center {
+    padding: 0.5rem !important;
+  }
+
+  #characters .gap-5 {
+    gap: 1rem !important;
+  }
   .fab-btn {
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
   }
 
   .fab-btn i {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
