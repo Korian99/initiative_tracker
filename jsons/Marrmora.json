@@ -11,11 +11,11 @@
   "traits": [
     "Common",
     "Medium",
-    "Evil",
     "Fey",
     "Fire"
   ],
-  "source": "Pathfinder Bestiary 2",
+  "source": "Pathfinder Monster Core 2",
+  "remaster": true,
   "senses": [
     "Low light vision"
   ],
@@ -215,12 +215,11 @@
       "damageModifications": []
     },
     {
-      "type": "ranged",
+      "type": "melee",
       "name": "Flame Jet",
       "bonus": 29,
       "traits": [
-        "fire",
-        "range-increment-40"
+        "fire"
       ],
       "damageRolls": [
         {
@@ -243,7 +242,7 @@
         }
       ],
       "effects": [],
-      "usedAttributeToHit": "dexterity",
+      "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
@@ -254,7 +253,7 @@
       "name": "Igniting Assault",
       "actions": 1,
       "traits": [],
-      "description": "<p><strong>Requirements</strong> The marrmora is not under the effect of fire shield</p>\n<hr />\n<p><strong>Effect</strong> The marrmora makes a claw Strike. If it hits, it can immediately cast one of its available fire shield innate spells as a free action.</p>",
+      "description": "<p><strong>Requirements</strong> The marrmora is not under the effect of Fire Shield</p><hr /><p><strong>Effect</strong> The marrmora makes a claw Strike. If it hits, it can immediately cast one of its available fire shield innate spells as a free action.</p>",
       "collapsed": false
     }
   ],
@@ -271,7 +270,7 @@
       "autoHeightenLevel": 8,
       "cantrips": [
         {
-          "name": "Produce Flame",
+          "name": "Ignition",
           "type": "cantrip",
           "level": 1,
           "heightenedLevel": 1,
@@ -288,25 +287,230 @@
           "area": "",
           "targets": "1 creature",
           "save": "",
-          "description": "<p>A small ball of flame appears in the palm of your hand, and you lash out with it either in melee or at range. Make a spell attack roll against your target's AC. This is normally a ranged attack, but you can also make a melee attack against a creature in your unarmed reach.</p>\n<p>On a success, you deal 2d4 fire damage. On a critical success, the target takes double damage and (@item.level)d4 Persistent,fire Damage damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1d4 and the persistent damage on a critical hit by 1d4.</p>",
+          "description": "<p>You snap your fingers and point at a target, which begins to smolder. Make a spell attack roll against the target's AC, dealing 2d4 fire damage on a hit. If the target is within your melee reach, you can choose to make a melee spell attack with the flame instead of a ranged spell attack, which increases all the spell's damage dice to d6s.</p><hr /><p><strong>Critical Success</strong> The target takes double damage and 1d4 persistent fire damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p><hr /><p><strong>Heightened (+1)</strong> The initial damage increases by 1d4 and the persistent fire damage on a critical hit increases by 1d4.</p>\n<p>(@item.rank)d4 Persistent,fire Damage{Scaling Persistent Fire Damage}</p>\n<p>(@item.rank)d6 Persistent,fire Damage{Scaling Persistent Fire Damage (Melee)}</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "LfUMUMr2STyaPdSE"
+          "id": "dtdBFIEoGg6dm5n8"
         }
       ],
       "lv1spells": [],
       "lv2spells": [],
       "lv3spells": [],
       "lv4spells": [],
-      "lv5spells": [
+      "lv5spells": [],
+      "lv6spells": [
         {
-          "name": "Elemental Form (Fire Only)",
+          "name": "One with Plants (at will; appears as a burnt, dead tree)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "polymorph",
+            "wood"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes or 8 hours",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You can either transform into a plant or merge with plant matter. While transformed, you can't move or affect anything outside the plant, but you can cast spells as long as they don't require line of effect beyond the plant. You can Dismiss this spell.</p>\n<ul>\n<li><strong>Merge with Plants</strong> The spell's duration is 10 minutes. While casting the spell, you must touch a plant with enough volume to fit you and your possessions or the spell is disrupted. While merged, you can hear, but not see, what's going on outside the plant. If the plant takes damage while you're inside it, you're expelled from the plant and take 10d6 damage. <em>Magic passage</em> expels you without dealing damage. The spell ends if you're ever outside the plant.</li>\n<li><strong>Turn into a Plant</strong> The spell's duration is 8 hours. You become a Large plant—typically a tree. Perception checks don't reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a plant that is strangely new to the area. While in this form, you can observe everything around you, using your normal senses. As a plant, your AC is 20, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures\n</li>\n</ul>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "QlumVmbCd9MIKvpV"
+        },
+        {
+          "name": "Fireball",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 6,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>A roaring blast of fire detonates at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "9CQFMTKYUvlMVWPC"
+        },
+        {
+          "name": "Fireball",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 6,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>A roaring blast of fire detonates at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "9CQFMTKYUvlMVWPC"
+        },
+        {
+          "name": "Fireball",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 6,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "500 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>A roaring blast of fire detonates at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "9CQFMTKYUvlMVWPC"
+        },
+        {
+          "name": "Fire Shield",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 6,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a hovering shield made of fire. As long as the shield persists, its heat grants you cold resistance 5 and makes you immune to mild and severe environmental cold. You can Raise a Shield with the <em>fire shield</em> as a normal shield to gain a +1 circumstance bonus to AC. You can use the Shield Block reaction with the <em>fire shield</em>, which has Hardness 10, is immune to fire, and has 40 HP (with no Broken Threshold), and its Hardness is halved against effects that have the water trait. If you Shield Block a melee attack that is either an unarmed attack or made by an adjacent attacker, the attacker takes 2d6 fire damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, the HP increase by 10, and the fire damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XSv2hPFHmN0PJobU"
+        },
+        {
+          "name": "Fire Shield",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 6,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a hovering shield made of fire. As long as the shield persists, its heat grants you cold resistance 5 and makes you immune to mild and severe environmental cold. You can Raise a Shield with the <em>fire shield</em> as a normal shield to gain a +1 circumstance bonus to AC. You can use the Shield Block reaction with the <em>fire shield</em>, which has Hardness 10, is immune to fire, and has 40 HP (with no Broken Threshold), and its Hardness is halved against effects that have the water trait. If you Shield Block a melee attack that is either an unarmed attack or made by an adjacent attacker, the attacker takes 2d6 fire damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, the HP increase by 10, and the fire damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XSv2hPFHmN0PJobU"
+        },
+        {
+          "name": "Fire Shield",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 6,
+          "timesPrepared": 3,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create a hovering shield made of fire. As long as the shield persists, its heat grants you cold resistance 5 and makes you immune to mild and severe environmental cold. You can Raise a Shield with the <em>fire shield</em> as a normal shield to gain a +1 circumstance bonus to AC. You can use the Shield Block reaction with the <em>fire shield</em>, which has Hardness 10, is immune to fire, and has 40 HP (with no Broken Threshold), and its Hardness is halved against effects that have the water trait. If you Shield Block a melee attack that is either an unarmed attack or made by an adjacent attacker, the attacker takes 2d6 fire damage.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, the HP increase by 10, and the fire damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "XSv2hPFHmN0PJobU"
+        }
+      ],
+      "lv7spells": [
+        {
+          "name": "Wall of Fire",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 7,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You raise a blazing wall that burns creatures passing through it. You create either a 5-foot-thick wall of flame in a straight line up to 60 feet long and 10 feet high, or a 5-foot-thick, 10-foot-radius ring of flame with the same height. The wall stands vertically in either form; if you wish, the wall can be of a shorter length or height. Everything on each side of the wall is Concealed from creatures on the opposite side. Any creature that crosses the wall or is occupying the wall's area at the start of its turn takes 4d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "0wo9iJ6hrRzp3mIr"
+        },
+        {
+          "name": "Elemental Form (fire elemental only)",
           "type": "spell",
           "level": 5,
-          "heightenedLevel": 5,
+          "heightenedLevel": 7,
           "timesPrepared": 1,
           "traits": [
             "concentrate",
@@ -325,188 +529,8 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "ftyJjjKcXegKOZO6"
-        }
-      ],
-      "lv6spells": [
-        {
-          "name": "Fireball",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 6,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "500 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "ySM9oRdfNqAcjTY3"
+          "id": "uuCxv76DCQ2YKPrG"
         },
-        {
-          "name": "Fireball",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 6,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "500 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "ySM9oRdfNqAcjTY3"
-        },
-        {
-          "name": "Fireball",
-          "type": "spell",
-          "level": 3,
-          "heightenedLevel": 6,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "",
-          "range": "500 feet",
-          "area": "20ft burst",
-          "targets": "",
-          "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "ySM9oRdfNqAcjTY3"
-        },
-        {
-          "name": "Fire Shield",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 6,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You wreathe yourself in ghostly flames, gaining cold resistance 5. Additionally, adjacent creatures that hit you with a melee attack, as well as creatures that touch you or hit you with an unarmed attack, take 2d6 fire damage each time they do.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, and the fire damage increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "XlHuRJgLBntHLPht"
-        },
-        {
-          "name": "Fire Shield",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 6,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You wreathe yourself in ghostly flames, gaining cold resistance 5. Additionally, adjacent creatures that hit you with a melee attack, as well as creatures that touch you or hit you with an unarmed attack, take 2d6 fire damage each time they do.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, and the fire damage increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "XlHuRJgLBntHLPht"
-        },
-        {
-          "name": "Fire Shield",
-          "type": "spell",
-          "level": 4,
-          "heightenedLevel": 6,
-          "timesPrepared": 3,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You wreathe yourself in ghostly flames, gaining cold resistance 5. Additionally, adjacent creatures that hit you with a melee attack, as well as creatures that touch you or hit you with an unarmed attack, take 2d6 fire damage each time they do.</p>\n<p></p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, and the fire damage increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "XlHuRJgLBntHLPht"
-        },
-        {
-          "name": "Tree Shape (At will) (Appears as a burnt, dead tree)",
-          "type": "spell",
-          "level": 6,
-          "heightenedLevel": 6,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "manipulate",
-            "plant",
-            "polymorph"
-          ],
-          "castingTime": "2",
-          "duration": "8 hours",
-          "range": "",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You transform into a Large tree. Perception checks don't reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that you appear to be a tree that is strangely new to the area. While in tree form, you can observe everything around you, but you can't act other than to end the spell, and your turn, by using a single action, which has the concentrate trait. As a tree, your AC is 20, and only status bonuses, status penalties, circumstance bonuses, and circumstance penalties affect you. Any successes and critical successes you roll on Reflex saves are failures.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "1JQ0EDkjIezvUDEb"
-        }
-      ],
-      "lv7spells": [
         {
           "name": "Volcanic Eruption",
           "type": "spell",
@@ -530,64 +554,40 @@
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "2RWRcxUlChKfe9s9"
-        },
-        {
-          "name": "Wall of Fire",
-          "type": "spell",
-          "level": 7,
-          "heightenedLevel": 7,
-          "timesPrepared": 1,
-          "traits": [
-            "concentrate",
-            "fire",
-            "manipulate"
-          ],
-          "castingTime": "3",
-          "duration": "1 minute",
-          "range": "120 feet",
-          "area": "",
-          "targets": "",
-          "save": "",
-          "description": "<p>You raise a blazing wall that burns creatures passing through it. You create either a 5-foot-thick wall of flame in a straight line up to 60 feet long and 10 feet high, or a 5-foot-thick, 10-foot-radius ring of flame with the same height. The wall stands vertically in either form; if you wish, the wall can be of a shorter length or height. Everything on each side of the wall is Concealed from creatures on the opposite side. Any creature that crosses the wall or is occupying the wall's area at the start of its turn takes 4d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 1d6.</p>",
-          "cast": false,
-          "cost": "",
-          "primaryCheck": "",
-          "secondaryCasters": "",
-          "secondaryChecks": "",
-          "id": "4aeQKMFCFxKPPDpL"
+          "id": "QUjCMu0dK3ccCi2l"
         }
       ],
       "lv8spells": [
         {
-          "name": "Fire Shield",
+          "name": "Blazing Bolt",
           "type": "spell",
-          "level": 8,
+          "level": 2,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
+            "attack",
             "concentrate",
             "fire",
             "manipulate"
           ],
-          "castingTime": "2",
-          "duration": "1 minute",
-          "range": "",
+          "castingTime": "1 to 3",
+          "duration": "",
+          "range": "60 feet",
           "area": "",
-          "targets": "",
+          "targets": "1 or more creatures",
           "save": "",
-          "description": "<p>You wreathe yourself in ghostly flames, gaining cold resistance 5. Additionally, adjacent creatures that hit you with a melee attack, as well as creatures that touch you or hit you with an unarmed attack, take 2d6 fire damage each time they do.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cold resistance increases by 5, and the fire damage increases by 1d6.</p>",
+          "description": "<p>You fire a ray of heat and flame. Make a spell attack roll against a single creature. On a hit, the target takes 2d6 fire damage, and on a critical hit, the target takes double damage.</p>\n<p>For each additional action you use when Casting the Spell, you can fire an additional ray at a different target, to a maximum of three rays targeting three different targets for 3 actions. These attacks each increase your multiple attack penalty, but you don't increase your multiple attack penalty until after you make all the spell attack rolls for <em>blazing bolt</em>. If you spend 2 or more actions Casting the Spell, the damage increases to 4d6 fire damage on a hit, and it still deals double damage on a critical hit.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage to each target increases by 1d6 for the 1-action version, or by 2d6 for the 2-action and 3-action versions.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "mIOq0PXOl5SbojXf"
+          "id": "Q06DblY6JZ4TlkdN"
         },
         {
           "name": "Fireball",
           "type": "spell",
-          "level": 8,
+          "level": 3,
           "heightenedLevel": 8,
           "timesPrepared": 1,
           "traits": [
@@ -601,13 +601,13 @@
           "area": "20ft burst",
           "targets": "",
           "save": "Basic reflex",
-          "description": "<p>A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "description": "<p>A roaring blast of fire detonates at a spot you designate, dealing 6d6 fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
           "cast": false,
           "cost": "",
           "primaryCheck": "",
           "secondaryCasters": "",
           "secondaryChecks": "",
-          "id": "OrBDDf8Yt8tATPsV"
+          "id": "7ZHrPwXoT5JyTCJC"
         }
       ],
       "lv9spells": [],
@@ -634,16 +634,16 @@
         "max": 0
       },
       "lv6slots": {
-        "current": 7,
-        "max": 7
+        "current": 0,
+        "max": 0
       },
       "lv7slots": {
-        "current": 3,
-        "max": 3
+        "current": 0,
+        "max": 0
       },
       "lv8slots": {
-        "current": 2,
-        "max": 2
+        "current": 0,
+        "max": 0
       },
       "lv9slots": {
         "current": 0,
