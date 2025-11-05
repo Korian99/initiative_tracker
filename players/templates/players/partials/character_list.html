@@ -12,31 +12,31 @@
   {% for character in characters %}
     <li class="list-group-item character-row {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}  {% if character.invisible %}is-invisible{% endif %}"
         data-id="{{ character.id }}">
-      <div class="drag-handle d-flex align-items-center justify-content-center col-6">
+      <div class="drag-handle d-flex flex-wrap align-items-center justify-content-center col-6 text-center gap-1">
         <span style="pointer-events: auto;">
-          <div class="d-flex align-items-center justify-content-center gap-1">{{ character }}</div>
-          <div class="d-flex align-items-center justify-content-center gap-1">
+          <div class="d-flex flex-wrap align-items-center justify-content-center gap-1">{{ character }}</div>
+          <div class="d-flex flex-wrap align-items-center justify-content-center gap-1">
             <span>
               Initiative: {{ character.initiative }}
               {% if character.invisible %}(Invisible){% endif %}
             </span>
             -
-            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }},{{ character.id }}, '{{ player.role }}')"{% else %} style="pointer-events:none"{% endif %}
-                    class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max {% elif character.current_reactions == 0 %}empty {% else %}used{% endif %}">
+            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }}, {{ character.id }}, '{{ player.role }}')" {% else %} style="pointer-events:none" {% endif %}
+                    class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max{% elif character.current_reactions == 0 %}empty{% else %}used{% endif %}">
               <i class="bi bi-arrow-counterclockwise"></i>
               <span class="number">{{ character.current_reactions }}</span>
             </button>
           </div>
           {% if character.debuff %}
-            <div style="pointer-events: auto;
+            <div style="pointer-events:auto;
                         color:red;
                         font-weight:bold"
-                 class="d-flex align-items-center justify-content-center gap-1">{{ character.debuff }}</div>
+                 class="d-flex flex-wrap align-items-center justify-content-center gap-1">{{ character.debuff }}</div>
           {% endif %}
         </span>
       </div>
       <div id="buttons"
-           class="col-6 d-flex align-items-center justify-content-center gap-5">
+           class="col-6 d-flex flex-wrap align-items-center justify-content-center gap-3 gap-md-5">
         <input type="hidden"
                name="reminder"
                id="reminder"
