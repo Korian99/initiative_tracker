@@ -1,8 +1,6 @@
 <div class="d-flex justify-content-center align-items-center w-100 h-100 flex-column">
   <div class="h-50 w-100 justify-content-center">
-    <h3 class="mb-3">
-      As a DM:
-    </h3>
+    <h3 class="mb-3">As a DM:</h3>
     {% if player.get_my_lobbies|length > 0 %}
       <ul class="list-group list-group-flush w-100 fs-4">
         {% for lobby in player.get_my_lobbies %}
@@ -19,6 +17,7 @@
               <input type="hidden" id="code-hidden" name="code" value={{ lobby.code }}>
               <button type="submit" class="btn btn-success mx-3">
                 <i class="bi bi-box-arrow-in-right"></i>
+                <span class="tooltip-text">Enter</span>
               </button>
             </form>
             <form id="join-lobby-{{ lobby.code }}-form"
@@ -34,6 +33,7 @@
               <input type="hidden" id="code-hidden" name="code" value={{ lobby.code }}>
               <button type="submit" class="btn btn-danger" onclick="confirmClick(event)">
                 <i class="bi bi-trash"></i>
+                <span class="tooltip-text">Delete</span>
               </button>
             </form>
           </li>
@@ -59,6 +59,7 @@
               <input type="hidden" id="code-hidden" name="code" value={{ lobby.code }}>
               <button type="submit" class="btn btn-success mx-3">
                 <i class="bi bi-box-arrow-in-right"></i>
+                <span class="tooltip-text">Enter</span>
               </button>
             </form>
             <form id="join-lobby-{{ lobby.code }}-form"
@@ -74,6 +75,7 @@
               <input type="hidden" id="code-hidden" name="code" value={{ lobby.code }}>
               <button type="submit" class="btn btn-danger" onclick="confirmClick(event)">
                 <i class="bi bi-trash"></i>
+                <span class="tooltip-text">Get Out</span>
               </button>
             </form>
           </li>

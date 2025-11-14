@@ -9,6 +9,7 @@
                 {% csrf_token %}
                 <button type="submit" class="btn btn-info shadow fab-btn ">
                     <i class="bi bi-arrow-repeat"></i>
+                    <span class="tooltip-text tooltip-right">Reload initiative</span>
                 </button>
             </form>
             <form hx-get="{% url 'reload_current_turn' player.id %}?previous_order=1"
@@ -18,6 +19,7 @@
                 {% csrf_token %}
                 <button type="submit" class="btn btn-info shadow fab-btn ">
                     <i class="bi bi-arrow-counterclockwise"></i>
+                    <span class="tooltip-text tooltip-right">Go to previous order</span>
                 </button>
             </form>
         {% endif %}

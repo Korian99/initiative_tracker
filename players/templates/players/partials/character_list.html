@@ -24,6 +24,7 @@
             <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }}, {{ character.id }}, '{{ player.role }}')" {% else %} style="pointer-events:none" {% endif %}
                     class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max{% elif character.current_reactions == 0 %}empty{% else %}used{% endif %}">
               <i class="bi bi-arrow-counterclockwise"></i>
+              <span class="tooltip-text">Use Reaction</span>
               <span class="number">{{ character.current_reactions }}</span>
             </button>
           </div>
@@ -49,11 +50,11 @@
           {% csrf_token %}
           {% if character.debuff %}
             <button type="submit" class="btn danger">
-              <i class="bi bi-droplet"></i>
+              <i class="bi bi-droplet"></i>                    <span class="tooltip-text">Debuff</span>
             </button>
           {% else %}
             <button type="submit" class="btn btn-success">
-              <i class="bi bi-droplet-fill"></i>
+              <i class="bi bi-droplet-fill"></i>                    <span class="tooltip-text">Debuff</span>
             </button>
           {% endif %}
         </form>
@@ -64,6 +65,7 @@
                   hx-target="#char-modal-container"
                   hx-swap="innerHTML">
             <i class="bi bi-pencil"></i>
+            <span class="tooltip-text">Edit Character</span>
           </button>
         {% endif %}
         {% if character.stat_block %}
@@ -74,6 +76,7 @@
                     hx-target="#statblock-modal-container"
                     hx-swap="innerHTML">
               <i class="bi bi-info-circle"></i>
+              <span class="tooltip-text">See Stat Block</span>
             </button>
           {% endif %}
         {% endif %}

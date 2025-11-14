@@ -223,3 +223,46 @@ body[data-bs-theme="dark"] .btn-info {
 .warning {
   color: #ba680b;
 }
+
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 24px;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+.tooltip-right {
+    right: 0;
+    top: 50%;
+    transform: translateX(100%) translateY(-50%) translateX(6px);
+}
+.tooltip-left {
+    left: 0;
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%) translateX(-6px);
+}
+.tooltip-top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+}
+.tooltip-bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+}
+
+.btn:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2500;
+}

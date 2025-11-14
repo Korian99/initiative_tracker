@@ -7,6 +7,7 @@
             data-bs-target="#sideMenu"
             aria-controls="sideMenu">
         <i class="bi bi-list"></i>
+        <span class="tooltip-text tooltip-left">Open Side MENU</span>
     </button>
     <div class="offcanvas offcanvas-end"
          tabindex="-1"
@@ -36,6 +37,7 @@
                 type="button"
                 id="switch-tab-btn">
             <i class="bi bi-arrow-left-right"></i>
+            <span class="tooltip-text tooltip-left">Change Tab</span>
         </button>
     {% endif %}
 </div>
@@ -53,6 +55,7 @@
                 <input type="hidden" name="player_lobby_id" value="{{ player.id }}">
                 <button type="submit" class="btn btn-info shadow  fab-btn ">
                     <i class="bi bi-check-lg"></i>
+                    <span class="tooltip-text tooltip-left">Next Turn</span>
                 </button>
             </form>
         {% endif %}
@@ -65,6 +68,7 @@
               hx-swap="innerHTML">
             <button type="submit" class="btn btn-info shadow fab-btn ">
                 <i class="bi bi-pencil"></i>
+                <span class="tooltip-text tooltip-left">Edit Lobby</span>
             </button>
         </form>
     {% endif %}
