@@ -1,5 +1,6 @@
 # myapp/templatetags/dict_filters.py
 from django import template
+import re
 
 register = template.Library()
 PARTY_LEVEL = 5
@@ -96,3 +97,27 @@ def trait_interactions(traits):
         if trait in traits_msgs:
             msg+= "<p class='warning'>"+traits_msgs[trait]+"</p>"
     return msg
+
+@register.filter
+def calculate_damage(damage_roll, offset):
+    if damage_roll is None:
+        return ""
+    try:
+        offset = int(offset)
+    except (TypeError, ValueError):
+        return damage_roll 
+    damage_roll = damage_roll.replace(" ","")
+    match = re.match(r'^(\d+d\d+)([+-]\d+)?$', damage_roll.strip())
+    if not match:
+        return f"{damage_roll} {offset:+d}"
+    dice = match.group(1)
+    modifier_str = match.group(2)
+    if modifier_str:
+        current_mod = int(modifier_str)
+    else:
+        current_mod = 0
+
+    new_mod = current_mod + offset
+    if new_mod == 0:
+        return dice
+    return f"{dice}{new_mod:+d}"

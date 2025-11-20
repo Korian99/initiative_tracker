@@ -19,6 +19,8 @@ class Lobby(models.Model):
             return "N°"+self.code + " - "+self.name
         return "N°"+self.code
 
+    def next_turn(self):
+        return Character.objects.filter(player__lobby=self).first().next_turn()      
 
 class Player(models.Model):
     name = models.CharField(max_length=100)

@@ -52,9 +52,7 @@ def set_turn(character_id):
         character.save()
 
 def pass_turn(lobby):
-    characters = Character.objects.filter(
-        player__lobby=lobby)
-    next_char = characters.first().next_turn()
+    next_char = lobby.next_turn()
     set_turn(next_char.id)
 
 
