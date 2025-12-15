@@ -54,7 +54,7 @@ class PlayerInLobby(models.Model):
         Lobby, on_delete=models.CASCADE, related_name='lobby')
 
     def __str__(self):
-        return "Player: "+str(self.player) + "in Lobby " + str(self.lobby)
+        return "Player: "+str(self.player) + " in Lobby " + str(self.lobby)
 
 
 class Character(models.Model):

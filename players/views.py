@@ -83,7 +83,6 @@ class LobbyView(TemplateView):
         lobby = get_object_or_404(Lobby, code=request.GET.get("code"))
         player_name = request.GET.get("player")
         player = get_object_or_404(Player, name=player_name)
-
         # Retrieve or create the PlayerInLobby
         player_in_lobby = get_object_or_404(PlayerInLobby,
                                             player=player,
@@ -111,8 +110,11 @@ class LobbyView(TemplateView):
 
 class EditLobbyView(TemplateView):
     # load_lobby_edit_modal
-    def get(self, request, player_lobby_id):
-        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+    def get(self, request, player_id):
+        print(player_id)
+        player_lobby = get_object_or_404(PlayerInLobby, player_id=player_id)
+        print(PlayerInLobby.objects.filter(
+            lobby=player_lobby.lobby))
         players_in_lobby = PlayerInLobby.objects.filter(
             lobby=player_lobby.lobby).exclude(role="DM")
         admin_players_ids = players_in_lobby.filter(
@@ -311,8 +313,8 @@ class EditCharacterView(TemplateView):
 
 class TurnView(TemplateView):
     # reload_current_turn
-    def get(self, request, player_lobby_id):
-        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+    def get(self, request, player_id):
+        player_lobby = get_object_or_404(PlayerInLobby, player_id=player_id)
         characters = Character.objects.filter(
             player__lobby=player_lobby.lobby).order_by("-initiative")
         if request.GET.get("previous_order", 0) == '1':
@@ -324,8 +326,8 @@ class TurnView(TemplateView):
 
     # pass_turn
     def post(self, request):
-        player_lobby_id = request.POST.get("player_lobby_id")
-        player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+        player_id = request.POST.get("player_id")
+        player_in_lobby = get_object_or_404(PlayerInLobby, player_id=player_id)
         characters = Character.objects.filter(
             player__lobby=player_in_lobby.lobby)
         pass_turn(player_in_lobby.lobby)
