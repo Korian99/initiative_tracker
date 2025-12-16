@@ -7,7 +7,7 @@
   <div id="player-container">{% include "players/partials/player_container.html" %}</div>
 {% endblock player %}
 {% block navbar %}
-  <form id="join-lobby-{{ player.lobby.code }}-form"
+  <form id="join-lobby-{{ player_lobby.lobby.code }}-form"
         action="{% url 'join_lobby' %}"
         class="d-none"
         method="get">
@@ -15,11 +15,11 @@
     <input type="hidden"
            id="player-hidden"
            name="player"
-           value="{{ player.player.name }}">
+           value="{{ player_lobby.player.name }}">
     <input type="hidden"
            id="code-hidden"
            name="code"
-           value="{{ player.lobby.code }}">
+           value="{{ player_lobby.lobby.code }}">
   </form>
   <div class="container d-none">
     <ul class="nav nav-tabs" id="tabs" role="tablist">
@@ -32,7 +32,7 @@
            aria-controls="character-list"
            aria-selected="true">Characters</a>
       </li>
-      {% if player.role == "DM" or player.role == "PA" %}
+      {% if player_lobby.role == "DM" or player_lobby.role == "PA" %}
         <li class="nav-item" role="presentation">
           <a class="nav-link {% if characters|length == 0 %}active{% endif %}"
              id="add-characters-tab"
@@ -47,24 +47,24 @@
   </div>
 {% endblock navbar %}
 {% block left_side %}
-  {% include "floating_buttons_left.html" with player=player.player role=player.role position='lobby' %}
+  {% include "floating_buttons_left.html" with player=player_lobby.player role=player_lobby.role position='lobby' %}
 {% endblock left_side %}
 {% block right_side %}
-  {% include "floating_buttons_right.html" with player=player.player role=player.role position='lobby' %}
+  {% include "floating_buttons_right.html" with player=player_lobby.player role=player_lobby.role position='lobby' %}
 {% endblock right_side %}
 {% block content %}
   <div id="lobby-container"
-       data-lobby-id="{{ player.lobby.id }}"
-       data-lobby-code="{{ player.lobby.code }}"
+       data-lobby-id="{{ player_lobby.lobby.id }}"
+       data-lobby-code="{{ player_lobby.lobby.code }}"
        class="container-fluid mt-4 mb-3 px-5 tab-container">
-    {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player.lobby.code }}/"></div> {% endcomment %}
+    {% comment %} <div id="sse-connection" hx-ws="connect:/ws/lobby/{{ player_lobby.lobby.code }}/"></div> {% endcomment %}
     <!-- Tab Content -->
     <div class="tab-content w-100 h-100" id="tabs-content">
       <div class="tab-pane fade w-100 h-100 {% if characters|length > 0 %}show active{% endif %}"
            id="character-list"
            role="tabpanel"
            aria-labelledby="characters-tab"
-           hx-get="{% url 'character_list_partial' player.id %}"
+           hx-get="{% url 'character_list_partial' player_lobby.id %}"
            hx-trigger="refresh from:body"
            hx-swap="innerHTML">{% include "players/partials/character_list.html" %}</div>
       <div class="tab-pane fade  w-100 h-100 {% if characters|length == 0 %}show active{% endif %}"
@@ -81,10 +81,10 @@
   <script src="{% static 'js/socket.js' %}"></script>
 {% endblock content %}
 {% block footer %}
-  {% if player.lobby.notes %}
+  {% if player_lobby.lobby.notes %}
     <div id="footer"
          class="row d-flex flex-column justify-content-center align-items-center text-center">
-      <div id="lobby_notes" class="footer">{{ player.lobby.notes|default:"" }}</div>
+      <div id="lobby_notes" class="footer">{{ player_lobby.lobby.notes|default:"" }}</div>
     </div>
   {% endif %}
 {% endblock footer %}

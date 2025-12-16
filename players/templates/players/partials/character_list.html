@@ -1,16 +1,16 @@
 {% load static %}
 <div class="mb-3 gap-3"
      id="character-list-container"
-     data-player-id="{{ player.id }}"
-     data-character-list-url="{% url 'character_list_partial' player.id %}"
+     data-player-id="{{ player_lobby.id }}"
+     data-character-list-url="{% url 'character_list_partial' player_lobby.id %}"
      data-move-character-url="{% url 'move_character' %}"
      data-csrf-token="{{ csrf_token }}">
-  <h2>Characters in Lobby: {{ player.lobby }}</h2>
+  <h2>Characters in Lobby: {{ player_lobby.lobby }}</h2>
 </div>
 <script src="{% static 'js/reactions.js' %}"></script>
 <ul id="characters" class="list-group">
   {% for character in characters %}
-    <li class="list-group-item character-row {% if character.invisible and player.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}  {% if character.invisible %}is-invisible{% endif %}"
+    <li class="list-group-item character-row {% if character.invisible and player_lobby.role != "DM" %} d-none {% else %} d-flex {% endif %} justify-content-center align-items-center gap-3 w-100 {% if character.current_turn == True %}current_turn{% endif %} {% if character.next_turn.id == character.id %}next_turn{% endif %}  {% if character.invisible %}is-invisible{% endif %}"
         data-id="{{ character.id }}">
       <div class="drag-handle d-flex flex-wrap align-items-center justify-content-center col-6 text-center gap-1">
         <span style="pointer-events: auto;">
@@ -21,7 +21,7 @@
               {% if character.invisible %}(Invisible){% endif %}
             </span>
             -
-            <button {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %} onclick="changeReactions({{ character.current_reactions }}, {{ character.id }}, '{{ player.role }}')" {% else %} style="pointer-events:none" {% endif %}
+            <button {% if player_lobby.role == "DM" or player_lobby.role == "PA" or player_lobby.id == character.player_lobby.id %} onclick="changeReactions({{ character.current_reactions }}, {{ character.id }}, '{{ player_lobby.role }}')" {% else %} style="pointer-events:none" {% endif %}
                     class="btn btn-sm longpress-handle icon-with-number reactions-{% if character.current_reactions == character.max_reactions %}max{% elif character.current_reactions == 0 %}empty{% else %}used{% endif %}">
               <i class="bi bi-arrow-counterclockwise"></i>
               <span class="tooltip-text">Use Reaction</span>
@@ -44,7 +44,7 @@
                value="{{ character.reminder|default:"" }}">
         <form class="debuff-character open-modal"
               data-modal-id="debuffCharacterModal"
-              hx-get="{% url 'load_debuff_modal' player.id character.id %}"
+              hx-get="{% url 'load_debuff_modal' player_lobby.id character.id %}"
               hx-target="#char-modal-container"
               hx-swap="innerHTML">
           {% csrf_token %}
@@ -58,10 +58,10 @@
             </button>
           {% endif %}
         </form>
-        {% if player.role == "DM" or player.role == "PA" or player.id == character.player.id %}
+        {% if player_lobby.role == "DM" or player_lobby.role == "PA" or player_lobby.id == character.player_lobby.id %}
           <button class="btn btn-info edit-character  open-modal"
                   data-modal-id="editCharacterModal"
-                  hx-get="{% url 'load_char_edit_modal' player.id character.id %}"
+                  hx-get="{% url 'load_char_edit_modal' player_lobby.id character.id %}"
                   hx-target="#char-modal-container"
                   hx-swap="innerHTML">
             <i class="bi bi-pencil"></i>
@@ -69,7 +69,7 @@
           </button>
         {% endif %}
         {% if character.stat_block %}
-          {% if player.role == "DM" or player.id == character.player.id %}
+          {% if player_lobby.role == "DM" or player_lobby.id == character.player_lobby.id %}
             <button class="btn btn-info stat-block show-spinner   open-modal"
                     data-modal-id="creatureModal"
                     hx-get="{% url 'load_stat_block_modal' character.id %}"
@@ -84,7 +84,7 @@
     </li>
   {% endfor %}
 </ul>
-{% if player.role == "DM" or player.role == "PA" %}
+{% if player_lobby.role == "DM" or player_lobby.role == "PA" %}
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <script src="{% static 'js/draggable.js' %}"></script>
   <link rel="stylesheet" href="{% static 'css/draggable.css' %}">

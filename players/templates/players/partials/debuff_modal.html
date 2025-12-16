@@ -19,7 +19,7 @@
               hx-target="#character-list">
           <div class="modal-body">
             {% csrf_token %}
-            <input type="hidden" name="player_lobby_id" value="{{ player.id }}">
+            <input type="hidden" name="player_lobby_id" value="{{ player_lobby.id }}">
             <input type="hidden" name="character_id" value="{{ character.id }}">
             <input type="hidden" name="action" id="action" value="">
             <input type="text"

@@ -1,6 +1,6 @@
-{% if player.role == "DM" or player.role == "PA" %}
+{% if player_lobby.role == "DM" or player_lobby.role == "PA" %}
   <div class="mt-2 h-100 w-100 d-flex justify-content-center align-items-center flex-column ">
-    <h2>Lobby: {{ player.lobby }}</h2>
+    <h2>Lobby: {{ player_lobby.lobby }}</h2>
     <form hx-post="{% url 'add_character' %}"
           hx-target="#character-list"
           hx-swap="innerHTML"
@@ -15,7 +15,7 @@
                indeterminate="false"
                value="1">
       </div>
-      <input type="hidden" name="player" value="{{ player.id }}">
+      <input type="hidden" name="player_lobby" value="{{ player_lobby.id }}">
       <div class="mb-3">
         <label for="initiative" class="form-label">Initiative</label>
         <input type="number"

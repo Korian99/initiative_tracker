@@ -44,7 +44,7 @@ def set_turn(character_id):
         character = Character.objects.get(
             id=character_id)
         characters = Character.objects.filter(
-            player__lobby=character.player.lobby)
+            player_lobby__lobby=character.player_lobby.lobby)
         characters.filter(current_turn=True).update(current_turn=False)
         character.current_turn = True
         character.current_reactions = character.max_reactions
@@ -84,14 +84,14 @@ class LobbyView(TemplateView):
         player_name = request.GET.get("player")
         player = get_object_or_404(Player, name=player_name)
         # Retrieve or create the PlayerInLobby
-        player_in_lobby = get_object_or_404(PlayerInLobby,
+        player_lobby = get_object_or_404(PlayerInLobby,
                                             player=player,
                                             lobby=lobby,
                                             )
 
-        characters = Character.objects.filter(player__lobby=lobby)
+        characters = Character.objects.filter(player_lobby__lobby=lobby)
 
-        return render(request, "players/lobby.html", {'player': player_in_lobby, 'characters': characters})
+        return render(request, "players/lobby.html", {'player_lobby': player_lobby, 'characters': characters})
 
     # create_lobby
     def post(self, request):
@@ -111,27 +111,24 @@ class LobbyView(TemplateView):
 class EditLobbyView(TemplateView):
     # load_lobby_edit_modal
     def get(self, request, player_id):
-        print(player_id)
         player_lobby = get_object_or_404(PlayerInLobby, player_id=player_id)
-        print(PlayerInLobby.objects.filter(
-            lobby=player_lobby.lobby))
-        players_in_lobby = PlayerInLobby.objects.filter(
+        players_lobby = PlayerInLobby.objects.filter(
             lobby=player_lobby.lobby).exclude(role="DM")
-        admin_players_ids = players_in_lobby.filter(
+        admin_players_ids = players_lobby.filter(
             role='PA').values_list("id", flat=True)
         return render(request, "players/partials/edit_lobby_modal.html", {
-            'player_lobby': player_lobby, "players_in_lobby": players_in_lobby, "admin_players_ids": admin_players_ids, "lobby": player_lobby.lobby
+            'player_lobby': player_lobby, "players_lobby": players_lobby, "admin_players_ids": admin_players_ids, "lobby": player_lobby.lobby
         })
 
     # edit_lobby
     def post(self, request):
 
-        player_in_lobby_id = request.POST.get("player_lobby_id")
+        player_lobby_id = request.POST.get("player_lobby_id")
         new_pas = request.POST.getlist("players")
 
-        player_in_lobby = PlayerInLobby.objects.get(id=player_in_lobby_id)
+        player_lobby = PlayerInLobby.objects.get(id=player_lobby_id)
 
-        lobby = player_in_lobby.lobby
+        lobby = player_lobby.lobby
         lobby.name = request.POST.get("name", "")
         lobby.notes = request.POST.get("notes", None)
         lobby.save()
@@ -142,9 +139,9 @@ class EditLobbyView(TemplateView):
         notDMPlayers.filter(id__in=new_pas).update(role="PA")
 
         characters = Character.objects.filter(
-            player__lobby=player_in_lobby.lobby)
+            player_lobby__lobby=player_lobby.lobby)
 
-        return render(request, "players/partials/character_list.html", {'player': player_in_lobby, 'characters': characters})
+        return render(request, "players/partials/character_list.html", {'player_lobby': player_lobby, 'characters': characters})
 
 
 def join_lobby_first_time(request):
@@ -154,15 +151,15 @@ def join_lobby_first_time(request):
     player = get_object_or_404(Player, name=player_name)
 
     if PlayerInLobby.objects.filter(player=player, lobby=lobby).exists():
-        player_in_lobby = PlayerInLobby.objects.get(player=player, lobby=lobby)
+        player_lobby = PlayerInLobby.objects.get(player=player, lobby=lobby)
     else:
-        player_in_lobby = PlayerInLobby.objects.create(
+        player_lobby = PlayerInLobby.objects.create(
             player=player, lobby=lobby, role='P')
     character_name = request.GET.get("character")
     initiative = request.GET.get("initiative")
 
     Character.objects.update_or_create(
-        player=player_in_lobby,
+        player_lobby=player_lobby,
         name=character_name,
         defaults={'initiative': initiative}
     )
@@ -177,11 +174,11 @@ class PlayerLobbyView(TemplateView):
         player_name = request.POST.get("player")
         code = request.POST.get("code")
         player = Player.objects.get(name=player_name)
-        pil = PlayerInLobby.objects.get(
+        player_lobby = PlayerInLobby.objects.get(
             player=player, lobby__code=code)
-        if pil.role == 'DM':
-            pil.lobby.delete()
-        pil.delete()
+        if player_lobby.role == 'DM':
+            player_lobby.lobby.delete()
+        player_lobby.delete()
         if request.headers.get("HX-Request"):
             return render(request, "players/partials/lobby_list.html", {'player': player})
         lobbies_id = PlayerInLobby.objects.filter(
@@ -208,10 +205,10 @@ class PlayerView(TemplateView):
         Player.objects.filter(id=player_id).update(name=new_name)
         lobby_id = request.POST.get("lobby_id")
         if lobby_id:
-            player = PlayerInLobby.objects.get(
+            player_lobby = PlayerInLobby.objects.get(
                 player=player, lobby__id=lobby_id)
             url = reverse('join_lobby')
-            query_string = f"?code={player.lobby.code}&player={player.player.name}"
+            query_string = f"?code={player_lobby.lobby.code}&player={player_lobby.player.name}"
             return redirect(url + query_string)
         else:
             return render(request, "players/partials/player_container.html", {'player': player})
@@ -221,20 +218,20 @@ class CharacterView(TemplateView):
 
     # character_list_partial
     def get(self, request, player_lobby_id):
-        player = PlayerInLobby.objects.get(id=player_lobby_id)
-        characters = Character.objects.filter(player__lobby=player.lobby)
+        player_lobby = PlayerInLobby.objects.get(id=player_lobby_id)
+        characters = Character.objects.filter(player_lobby__lobby=player_lobby.lobby)
         character_id =  request.GET.get("character_id", None)
         if character_id:
             character = Character.objects.get(id=character_id)
             character.current_reactions -= 1
             character.save()
-        return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+        return render(request, "players/partials/character_list.html", {'player_lobby': player_lobby, 'characters': characters})
 
     # add_character border style for ced4da
     def post(self, request):
-        player_in_lobby = get_object_or_404(
-            PlayerInLobby, id=request.POST.get("player"))
-        lobby = player_in_lobby.lobby
+        player_lobby = get_object_or_404(
+            PlayerInLobby, id=request.POST.get("player_lobby"))
+        lobby = player_lobby.lobby
 
         invisible = request.POST.get("invisible", 0)
         character_name = request.POST.get("character")
@@ -243,19 +240,19 @@ class CharacterView(TemplateView):
         stat_block = request.POST.get("stat_block")
         template = request.POST.get("template", 'normal')
         max_order = Character.objects.filter(
-            player__lobby=player_in_lobby.lobby).order_by("-order").first().order + 1
-        if Character.objects.filter(name=character_name, player=player_in_lobby).exists():
+            player_lobby__lobby=player_lobby.lobby).order_by("-order").first().order + 1
+        if Character.objects.filter(name=character_name, player_lobby=player_lobby).exists():
             existing_characters = Character.objects.filter(
-                name__icontains=character_name, player=player_in_lobby)
+                name__icontains=character_name, player_lobby=player_lobby)
             character_name = f"{character_name} ({len(existing_characters) + 1})"
         Character.objects.create(
-            player=player_in_lobby, name=character_name, initiative=initiative, reminder=reminder, order=max_order, stat_block=stat_block,
+            player_lobby=player_lobby, name=character_name, initiative=initiative, reminder=reminder, order=max_order, stat_block=stat_block,
             template=template, invisible=invisible)
         characters = Character.objects.filter(
-            player__lobby=lobby).order_by("-order")
+            player_lobby__lobby=lobby).order_by("-order")
         if request.headers.get("HX-Request"):
-            return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
-        return render(request, "players/lobby.html", {'characters': characters, 'player': player_in_lobby})
+            return render(request, "players/partials/character_list.html", {'characters': characters, 'player_lobby': player_lobby})
+        return render(request, "players/lobby.html", {'characters': characters, 'player_lobby': player_lobby})
 
 
 class EditCharacterView(TemplateView):
@@ -264,13 +261,13 @@ class EditCharacterView(TemplateView):
 
         character = get_object_or_404(Character, id=character_id)
         player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
-        playersInLobby = PlayerInLobby.objects.filter(
-            lobby=character.player.lobby)
+        players_lobby = PlayerInLobby.objects.filter(
+            lobby=character.player_lobby.lobby)
 
         return render(request, "players/partials/edit_character_modal.html", {
             'character': character,
             'player_lobby': player_lobby,
-            'playersInLobby': playersInLobby
+            'players_lobby': players_lobby
         })
 
     # edit_character
@@ -278,8 +275,8 @@ class EditCharacterView(TemplateView):
         char_id = request.POST.get("character_id")
         new_player_id = request.POST.get("new_player")
         character = get_object_or_404(Character, id=char_id)
-        new_player = get_object_or_404(PlayerInLobby, id=new_player_id)
-        character.player = new_player
+        new_player_lobby = get_object_or_404(PlayerInLobby, id=new_player_id)
+        character.player_lobby = new_player_lobby
         character.initiative = request.POST.get("initiative")
 
         character.name = request.POST.get("name")
@@ -290,25 +287,25 @@ class EditCharacterView(TemplateView):
         
         character.save()
 
-        lobby = character.player.lobby
+        lobby = character.player_lobby.lobby
 
-        characters = Character.objects.filter(player__lobby=lobby)
+        characters = Character.objects.filter(player_lobby__lobby=lobby)
 
         player_lobby_id = request.POST.get("player_lobby_id")
-        player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
 
-        return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
+        return render(request, "players/partials/character_list.html", {'characters': characters, 'player_lobby': player_lobby})
 
     # delete_character
     def delete(self, request, player_lobby_id, character_id):
         character = get_object_or_404(Character, id=character_id)
-        lobby = character.player.lobby
+        lobby = character.player_lobby.lobby
         if character.current_turn:
             pass_turn(lobby)
         character.delete()
-        characters = Character.objects.filter(player__lobby=lobby)
-        player_in_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
-        return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
+        characters = Character.objects.filter(player_lobby__lobby=lobby)
+        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
+        return render(request, "players/partials/character_list.html", {'characters': characters, 'player_lobby': player_lobby})
 
 
 class TurnView(TemplateView):
@@ -316,31 +313,31 @@ class TurnView(TemplateView):
     def get(self, request, player_id):
         player_lobby = get_object_or_404(PlayerInLobby, player_id=player_id)
         characters = Character.objects.filter(
-            player__lobby=player_lobby.lobby).order_by("-initiative")
+            player_lobby__lobby=player_lobby.lobby).order_by("-initiative")
         if request.GET.get("previous_order", 0) == '1':
             characters = previous_ordering(characters)
         else:
             characters = reorder_characters(characters)
 
-        return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_lobby})
+        return render(request, "players/partials/character_list.html", {'characters': characters, 'player_lobby': player_lobby})
 
     # pass_turn
     def post(self, request):
         player_id = request.POST.get("player_id")
-        player_in_lobby = get_object_or_404(PlayerInLobby, player_id=player_id)
+        player_lobby = get_object_or_404(PlayerInLobby, player_id=player_id)
         characters = Character.objects.filter(
-            player__lobby=player_in_lobby.lobby)
-        pass_turn(player_in_lobby.lobby)
+            player_lobby__lobby=player_lobby.lobby)
+        pass_turn(player_lobby.lobby)
 
-        return render(request, "players/partials/character_list.html", {'characters': characters, 'player': player_in_lobby})
+        return render(request, "players/partials/character_list.html", {'characters': characters, 'player_lobby': player_lobby})
 
 
 # move_character
 def move_character(request):
-    player_id = request.POST.get("player_lobby_id")
-    player = get_object_or_404(PlayerInLobby, id=player_id)
+    player_lobby_id = request.POST.get("player_lobby_id")
+    player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
     characters = Character.objects.filter(
-        player__lobby=player.lobby).order_by("-order")
+        player_lobby__lobby=player_lobby.lobby).order_by("-order")
     try:
         round_len = len(characters)
         order = request.POST.getlist('order')
@@ -353,8 +350,8 @@ def move_character(request):
     except Exception as e:
         print(e)
     characters = Character.objects.filter(
-        player__lobby=player.lobby).order_by("-order")
-    return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+        player_lobby__lobby=player_lobby.lobby).order_by("-order")
+    return render(request, "players/partials/character_list.html", {'player_lobby': player_lobby, 'characters': characters})
 
 
 class DebuffView(TemplateView):
@@ -365,17 +362,17 @@ class DebuffView(TemplateView):
         character = Character.objects.get(
             id=character_id)
 
-        return render(request, "players/partials/debuff_modal.html", {'character': character, 'player': player_lobby})
+        return render(request, "players/partials/debuff_modal.html", {'character': character, 'player_lobby': player_lobby})
 
     # debuff
     def post(self, request):
         char_id = request.POST.get("character_id")
-        player_id = request.POST.get("player_lobby_id")
+        player_lobby_id = request.POST.get("player_lobby_id")
         debuff = request.POST.get("debuff")
         action = request.POST.get("action")
 
         character = get_object_or_404(Character, id=char_id)
-        player = get_object_or_404(PlayerInLobby, id=player_id)
+        player_lobby = get_object_or_404(PlayerInLobby, id=player_lobby_id)
 
         if action == 'delete':
             character.debuff = None
@@ -384,8 +381,8 @@ class DebuffView(TemplateView):
         character.save()
 
         characters = Character.objects.filter(
-            player__lobby=character.player.lobby).order_by("-order")
-        return render(request, "players/partials/character_list.html", {'player': player, 'characters': characters})
+            player_lobby__lobby=player_lobby.lobby).order_by("-order")
+        return render(request, "players/partials/character_list.html", {'player_lobby': player_lobby, 'characters': characters})
 
 
 class StatBlocksView(TemplateView):

@@ -20,7 +20,7 @@ class Lobby(models.Model):
         return "N°"+self.code
 
     def next_turn(self):
-        return Character.objects.filter(player__lobby=self).first().next_turn()      
+        return Character.objects.filter(player_lobby__lobby=self).first().next_turn()      
 
 class Player(models.Model):
     name = models.CharField(max_length=100)
@@ -63,7 +63,7 @@ class Character(models.Model):
         ('normal', 'Normal'),
         ('elite', 'Elite'),
     )
-    player = models.ForeignKey(PlayerInLobby, on_delete=models.CASCADE)
+    player_lobby = models.ForeignKey(PlayerInLobby, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     initiative = models.IntegerField()
     order = models.PositiveIntegerField(default=0)
@@ -78,10 +78,10 @@ class Character(models.Model):
     current_reactions = models.IntegerField(default=1)
 
     def __str__(self):
-        return self.name + " - " + str(self.player.player)
+        return self.name + " - " + str(self.player_lobby.player)
 
     def next_turn(self):
-        characters = Character.objects.filter(player__lobby=self.player.lobby).order_by("-order")
+        characters = Character.objects.filter(player_lobby__lobby=self.player_lobby.lobby).order_by("-order")
         current_char = characters.get(current_turn=True)
         next_chars = characters.filter(order__lt=current_char.order)
         if next_chars.exists():
@@ -108,7 +108,7 @@ class Character(models.Model):
 
 @receiver([post_save, post_delete], sender=Character)
 def character_changed(sender, instance, **kwargs):
-    lobby_id = str(instance.player.lobby.id)
+    lobby_id = str(instance.player_lobby.lobby.id)
     channel_layer = get_channel_layer()
     # Trigger the consumer to broadcast
     async_to_sync(channel_layer.group_send)(

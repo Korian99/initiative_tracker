@@ -33,10 +33,10 @@
                                 class="form-select"
                                 multiple
                                 aria-label="multiple select example">
-                            {% for p in players_in_lobby %}
-                                <option value="{{ p.id }}"
-                                        {% if p.id in admin_players_ids %}selected{% endif %}>
-                                    {{ p.player.name }} ({{ p.role }})
+                            {% for p_l in players_lobby %}
+                                <option value="{{ p_l.id }}"
+                                        {% if p_l.id in admin_players_ids %}selected{% endif %}>
+                                    {{ p_l.player.name }} ({{ p_l.role }})
                                 </option>
                             {% endfor %}
                         </select>
