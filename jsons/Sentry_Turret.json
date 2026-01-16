@@ -1,0 +1,116 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sentry Turret",
+  "type": "Hazard",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Large",
+    "Mechanical",
+    "Trap"
+  ],
+  "source": "Starfinder GM Core",
+  "remaster": true,
+  "stealth": {
+    "value": 13,
+    "note": "(trained)"
+  },
+  "description": "<p>A mechanized turret attacks intruders.</p>",
+  "disable": "<p>DC 20 Computers  (trained) to reprogram the turret, or DC 19 Crafting  (trained) to cut power to the turret, or DC 18 Thievery  (trained) to disable the turret</p>",
+  "reset": "<p>The trap resets after 1 minute.</p>",
+  "routine": "<p>(3 actions) The trap makes three oversized machine gun Strikes against a creature in range, or the trap makes an Auto-Fire attack followed by one Strike against a creature in range.</p>",
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 19,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 12
+  },
+  "fortitude": {
+    "value": 15,
+    "note": null,
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": null,
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 54,
+    "max": 54,
+    "note": "(BT 26)",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Oversized Machine Gun",
+      "bonus": 15,
+      "traits": [
+        "analog",
+        "automatic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Open Fire",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature moves within 30 feet of the turret or attacks the turret</p><hr /><p><strong>Effect</strong> The turret makes a ranged Strike against the triggering creature; the trap then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Auto-Fire",
+      "actions": 2,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Oversized machine gun (Basic DC 25 Reflex Saving Throw save) (analog, 45ft Type:cone), Damage (2d8+7) Piercing Damage</p>\n<p>You attempt to hit each creature in a cone with a range equal to half the weapon's range increment without making an attack roll. Any creature in the area takes weapon damage (Basic DC 25 reflex save). This damage is area damage. Creatures that critically fail this save are subject to effects that occur on a critical hit with this weapon, including the weapon's critical specialization effect. Auto-Fire has an expend equal to the number of targets in the area × 2.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 20"
+}

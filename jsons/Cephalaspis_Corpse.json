@@ -1,0 +1,233 @@
+{
+  "initiative": 0,
+  "initiativebonus": 5,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Cephalaspis Corpse",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Mindless",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Starfinder Society Scenario #1-01: Invasion's Edge",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 5,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 35,
+    "max": 35,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "vitality",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Armored Deflection",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The cephalaspis corpse is the target of a physical ranged attack</p><hr /><p><strong>Effect</strong> The cephalaspis corpse deflects the attack with the armored plates covering its head, gaining a +2 circumstance bonus to AC against the triggering attack.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "5 ft, burrow 30ft, fly 30ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Armored Crest",
+      "bonus": 10,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8+4",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+4)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 10,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Rust Breath",
+      "bonus": 9,
+      "traits": [
+        "magical"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4",
+          "type": "void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4)*2",
+          "type": "void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Cephalaspis Charge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The cephalaspis corpse Strides twice, then makes an armored crest Strike. A Medium or smaller creature struck by this attack must succeed at a DC 15 Reflex Saving Throw save or be automatically Shoved back 5 feet and knocked Prone by the force of the blow.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pummeling Loop",
+      "actions": 1,
+      "traits": [
+        "move"
+      ],
+      "description": "<p><strong>Requirements</strong> The cephalaspis corpse has a Medium or smaller creature Grabbed</p><hr /><p><strong>Effect</strong> The cephalaspis corpse attempts an Athletics check to Reposition the grabbed creature, with the following results.</p><hr /><p><strong>Critical Success</strong> The cephalaspis corpse Flies 30 feet straight up and then drops the creature, causing it to fall.</p>\n<p><strong>Success</strong> As critical success, but only 20 feet.</p>\n<p><strong>Failure</strong> No effect.</p>\n<p><strong>Critical Failure</strong> The creature is no longer grabbed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 16"
+}

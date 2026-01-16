@@ -1,0 +1,115 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Disintegration Chamber",
+  "type": "Hazard",
+  "level": 8,
+  "traits": [
+    "Common",
+    "Large",
+    "Tech",
+    "Trap",
+    "Mechanical"
+  ],
+  "source": "Starfinder GM Core",
+  "remaster": true,
+  "stealth": {
+    "value": 16,
+    "note": "(expert) or DC 31 (expert) to notice the control panel"
+  },
+  "description": "<p>When sensors detect movement in the trapped room, the doors seal shut, and four wall apertures open, releasing disintegrating nanites into the room.</p>",
+  "disable": "<p>DC 22 Crafting  (trained) or Thievery (trained) on the control panel to deactivate the trap, or DC 24 Computers  (trained) to reprogram the control panel</p>",
+  "reset": "<p>The trap deactivates and resets after 1 minute.</p>",
+  "routine": "<p>(1 action) The trap launches nanites against every creature in the room as 1 action. Because it launches nanites continuously, the trap can also use the Nanite Swarm free action (see below) to launch nanites at each creature during that creature's turn.</p>",
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "hardness": {
+    "value": 15
+  },
+  "fortitude": {
+    "value": 19,
+    "note": null,
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": null,
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": null,
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "(BT 30)",
+    "modifications": []
+  },
+  "immunities": [
+    "critical-hits",
+    "precision"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Nanite",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d10+5",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+5)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Nanite Release",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature enters the room or ends its turn in the room</p><hr /><p><strong>Effect</strong> The trap makes a nanite Strike against the triggering creature, then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nanite Swarm",
+      "actions": 0,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the room ends its turn</p><hr /><p><strong>Effect</strong> The trap makes a nanite Strike against the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 24"
+}

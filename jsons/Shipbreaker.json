@@ -1,0 +1,228 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Shipbreaker",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Common",
+    "huge",
+    "Cosmic",
+    "Elemental",
+    "Metal",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "electroreception, techsense (imprecise) 100 feet"
+  ],
+  "perception": {
+    "value": 13,
+    "note": "Darkvision, electroreception, techsense (imprecise) 100 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "piloting",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Electroreception",
+      "actions": null,
+      "traits": [],
+      "description": "<p>While in space, the shipbreaker can sense electronic signals from starships in the same star system. While it can't necessarily interpret starship signals, it has a vague sense of the intent or purpose of any given starship signal, such as \"to scan,\" \"to communicate,\" or \"to warn of danger.\"</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Techsense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A shipbreaker can detect creatures and items with the tech trait as an imprecise sense at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 173,
+    "max": 173,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fire",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "piercing",
+      "value": 8
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "slashing",
+      "value": 8
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "electricity",
+      "value": 8
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Plasma Shield",
+      "actions": -1,
+      "traits": [
+        "electricity",
+        "fire"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature hits the shipbreaker with a melee Strike</p><hr /><p><strong>Effect</strong> The shipbreaker discharges a field of plasma, dealing 2d6 Fire Damage damage and 1 Persistent,electricity Damage damage plus the effects of plasmashock to the triggering creature.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d12+6",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+6)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        "plasmashock"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Atmospheric Breach",
+      "actions": 2,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>The shipbreaker Flies, then Leaps vertically up to 25 feet, plus a cumulative 25 feet for each consecutive round the shipbreaker uses this ability, and makes a jaws Strike against a creature at any point during the jump. In low gravity, the shipbreaker Leaps 100 feet high the first round it jumps, cumulatively multiplied by 4 each consecutive round if trying to reach escape velocity to leave the surface of a planet (which requires 5 consecutive rounds of using Atmospheric Breach in a low-gravity environment).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Plasmashock",
+      "actions": null,
+      "traits": [
+        "electricity"
+      ],
+      "description": "<p>A creature damaged by a shipbreaker's Plasma Shield or jaws Strike must attempt a DC 26 Fortitude Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune to plasmashock for 1 hour.</p>\n<p><strong>Success</strong> The creature becomes Off-Guard and loses its reactions until the start of its next turn. If the creature has the tech trait or the shipbreaker was attacked by a tech weapon, the creature or weapon becomes glitching 1.</p>\n<p><strong>Failure</strong> The creature is Stunned 1. If the creature has the tech trait or the shipbreaker was attacked by a tech weapon, the creature or weapon becomes glitching 2.</p>\n<p><strong>Critical Failure</strong> As failure, but Stunned 2 and glitching 3.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Large, (2d10+4) Bludgeoning Damage, Rupture 17</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 24"
+}

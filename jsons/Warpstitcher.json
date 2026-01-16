@@ -1,0 +1,277 @@
+{
+  "initiative": 0,
+  "initiativebonus": 26,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Warpstitcher",
+  "type": "Creature",
+  "level": 14,
+  "traits": [
+    "Common",
+    "Large",
+    "Aberration"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 26,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Telepathy 100 feet, Truespeech"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 25,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 28,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": 3
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 35,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 280,
+    "max": 280,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Resist Reality",
+      "actions": -1,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p><strong>Trigger</strong> The warpstitcher would take damage</p><hr /><p><strong>Effect</strong> The warpstitcher gains resistance 12 to the triggering damage type until the start of their next turn. The resistance applies to the triggering damage.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, climb 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 29,
+      "traits": [
+        "agile",
+        "deadly-d12",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+14",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+14)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "threads-of-quintessence"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fold Reality",
+      "actions": 2,
+      "traits": [
+        "concentrate",
+        "occult"
+      ],
+      "description": "<p>The warpstitcher collapses the space between themself and another location. They choose a 10-foot square within 120 feet. The warpstitcher then Strides, treating the chosen area as adjacent to them.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Threads of Quintessence",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The warpstitcher's claws are laced with strands of quintessence they force into victims' wounds. This functions as Grab, or Improved Grab on a critical hit.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Warp Suture",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The warpstitcher has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> The warpstitcher sews the creature into themself. The creature is pulled into the warpstitcher's space and moves with the warpstitcher. It becomes restrained and takes 3d12 Force Damage damage at the end of each of its turns until freed. Additionally, it takes 1d12 Force Damage damage whenever the warpstitcher uses Resist Reality (Basic DC 34 Will Saving Throw save). The Escape DC is 34 (Escape dc=34), or the sutures can be severed (AC 25, Hardness 8, HP 30, weakness to slashing 5), freeing the creature. The warpstitcher can have up to 12 Bulk of creatures sewn into their body. The body of a creature that dies while sutured is absorbed into the warpstitcher's body and destroyed 1d4 rounds later.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 0,
+      "dc": 34,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 5,
+      "cantrips": [],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [
+        {
+          "name": "Truespeech (constant)",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target can understand all words regardless of language and also speak the languages of other creatures. When in a mixed group of creatures, each time the target speaks, it can choose a creature and speak in a language that creature understands, even if the target doesn't know what language that is.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> The duration is 8 hours.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "TMTA9QLyhICRuspQ"
+        }
+      ],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Occultism, DC 32"
+}

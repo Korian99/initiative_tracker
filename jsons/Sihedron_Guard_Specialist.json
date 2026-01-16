@@ -1,0 +1,720 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Sihedron Guard Specialist",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Common",
+    "Medium",
+    "Human",
+    "Humanoid"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Azlanti",
+    "Common",
+    "Vesk"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "computers",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Lissala Lore",
+      "modifier": 19,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Aeon Rifle",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 0</p><hr /><p>A mainstay of the Azlanti Star Empire, this sleek laser rifle includes a slot for <em>aeon stones</em> to enhance and focus the intensity of its beams.</p>",
+      "level": 0,
+      "price": "30 sp",
+      "traits": [
+        "aeon",
+        "caster",
+        "tech"
+      ]
+    },
+    {
+      "name": "Battleglove",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These durable gloves fit over a wielder's hands (or other appendages) and feature weighted plates or spikes over the knuckles.</p>",
+      "level": 0,
+      "price": "3 sp",
+      "traits": [
+        "agile",
+        "analog",
+        "free-hand"
+      ]
+    },
+    {
+      "name": "Electromag Grenade (Advanced)",
+      "quantity": 3,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> @UUID[Compendium.sf2e.conditions.Item.Glitching]{Glitching 1}</p><hr /><p>These grenades discharge a shocking field that deals 3d8 electricity damage in a @Template[burst|distance:10] with a @Check[reflex|against:class|basic] save. If you have access to the critical specialization effect of grenades, tech creatures and unattended tech items that critically fail their saving throw against electromag grenades become glitching.</p>",
+      "level": 4,
+      "price": "120 sp",
+      "traits": [
+        "consumable",
+        "electricity",
+        "grenade",
+        "tech"
+      ]
+    },
+    {
+      "name": "Advanced Sihedron Guard Armor",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 0</p><hr /><p>These decorative suits of medium armor feature exaggerated shoulder guards, stylized dragon wings, and draconic emblems across the breastplate's back and chest. Skyfire armor is often plated with gold or other attractive metals, sacrificing upgrade space for style.</p>",
+      "level": 0,
+      "price": "60 sp",
+      "traits": [
+        "flexible",
+        "tech"
+      ]
+    },
+    {
+      "name": "Shock Module (Commercial)",
+      "quantity": 1,
+      "description": "<p>This circuit safely courses electricity through your weapon. It deals an extra @Damage[1d6[electricity]] damage. On a critical hit, electricity arcs out to deal an equal amount of electricity damage to up to two other creatures of your choice within 10 feet of the target.</p>",
+      "level": 8,
+      "price": "5000 sp",
+      "traits": [
+        "electricity",
+        "magical",
+        "tech"
+      ]
+    },
+    {
+      "name": "Aeon Stone (Uplifting)",
+      "quantity": 1,
+      "description": "<p>Staple items within the Azlanti Star Empire, these gemstones are popular status symbols for adventurers and wealthy collectors. Despite their myriad forms and functions, these stones are purportedly all fragments of crystal tools used by otherworldly entities to build the Universe in ancient times.</p>\n<p>When you invest one of these precisely shaped crystals, the stone orbits your head (or another visible part of your anatomy if you don't have a head) instead of being worn on your body. You can stow an <em>aeon stone</em> with an Interact action, and an orbiting stone can be snatched out of the air with a successful @UUID[Compendium.sf2e.actions.Item.Disarm] action against you. A stowed or removed stone remains invested, but its effects are @UUID[Compendium.sf2e.conditions.Item.Suppressed] until you return it to orbit your head again.</p>\n<p>There are various types of <em>aeon stones</em>, each with a different appearance and magical effect. Each <em>aeon stone</em> also gains a resonant power when slotted into specific items, such as weapons with the aeon trait or antique magical devices called <em>wayfinders</em>.</p><hr /><p>This deep-blue prism with cloudy inclusions is light as a feather. Its resonant power gives you a +1 item bonus to Acrobatics checks.</p>\n<p><strong>Activate—Fly Free</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You gain a fly Speed for 1 minute equal to your Speed or 20 feet, whichever is greater.</p>\n<p>@UUID[Compendium.sf2e.equipment-effects.Item.Effect: Aeon Stone (Uplifting)]</p>",
+      "level": 5,
+      "price": "1600 sp",
+      "traits": [
+        "invested",
+        "magical"
+      ]
+    },
+    {
+      "name": "Darkvision Visor",
+      "quantity": 1,
+      "description": "<p>This visor wraps around your visual organs, enhancing your natural senses. You gain darkvision.</p>",
+      "level": 1,
+      "price": "150 sp",
+      "traits": [
+        "tech"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 180,
+    "max": 180,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Punishment For Failure",
+      "actions": -1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Trigger</strong> The Sihedron Guard specialist is reduced to 0 Hit Points and has used their Reward of Obedience reaction in the last year. A Sihedron Guard must use this ability when the trigger is met</p><hr /><p><strong>Effect</strong> The Sihedron Guard specialist is utterly destroyed, leaving behind only equipment. Their soul can't be restored, and no magical means can contact their soul.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reward of Obedience",
+      "actions": -1,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p><strong>Frequency</strong> once per year</p>\n<p><strong>Trigger</strong> The Sihedron Guard specialist is reduced to 0 Hit Points, but not from an effect that leaves no remains (like the promession spell)</p><hr /><p><strong>Effect</strong> The Sihedron Guard specialist regains 5d8 Healing Damage Hit Points and doesn't fall Prone or drop their equipment.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battleglove",
+      "bonus": 20,
+      "traits": [
+        "agile",
+        "analog",
+        "free-hand",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+9)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Aeon Rifle",
+      "bonus": 21,
+      "traits": [
+        "reload-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+4",
+          "type": "fire"
+        },
+        {
+          "roll": "1d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+4)*2",
+          "type": "fire"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Electromag Grenade",
+      "bonus": 20,
+      "traits": [
+        "consumable",
+        "electricity",
+        "tech",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Battle Casting",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The Sihedron Guard specialist makes a ranged Strike with their aeon rifle or a melee strike with their battleglove, then Casts a Spell requiring 2 actions or fewer against the same target. If the spell requires an attack roll, don't count the ranged or melee Strike toward the multiple attack penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Virtue in Service",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A Sihedron Guard specialist who makes a Strike while adjacent to another member of the Sihedron Guard gains a +4 circumstance bonus to damage rolls for that attack.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Divine Prepared Spells",
+      "type": "prepared",
+      "bonus": 22,
+      "dc": 30,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 6,
+      "cantrips": [
+        {
+          "name": "Analyze Target",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You focus on the target, gathering data as magical holograms display information. When the casting is complete, you learn biometric information about the target, including its fingerprints, medical conditions, and other basic physiological information. You or anyone you advise about the analysis gains a +1 status bonus to checks to Impersonate the creature, to Treat Wounds on the creature, and to Recall Knowledge about it. If the target is illusory or under the effects of illusion magic, you detect this only if the effect's rank is lower than the rank of your analyze target spell.</p>\n<p>Spell Effect: Analyze Target</p><hr /><p><strong>Heightened (3rd)</strong> The circumstance bonus increases to +2, and you can target up to 10 creatures.</p>\n<p><strong>Heightened (6th)</strong> The circumstance bonus increases to +3, and you can target any number of creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "66kbvpuBDEr0Nl8h"
+        },
+        {
+          "name": "Detect Magic",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "",
+          "area": "30ft emanation",
+          "targets": "",
+          "save": "",
+          "description": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an Invisibility Potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "AoiKFHWgwVqcpHuQ"
+        },
+        {
+          "name": "Divine Lance",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You unleash a beam of divine energy. Make a ranged spell attack against the target's AC. On a hit, the target takes 2d4 spirit damage (double damage on a critical hit).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DLqwOOnUFo6tgfig"
+        },
+        {
+          "name": "Recharge Weapon",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "1",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 weapon with capacity",
+          "save": "",
+          "description": "<p>You touch a weapon with no remaining ammunition and recharge it with magical energy. The target gains ammunition or charges equal to its expend until the end of your next turn, allowing anyone holding the target to make one Strike with the weapon. This spell only recharges weapons that use ammunition with a cost of 10 credits or less.</p><hr /><p><strong>Heightened (3rd)</strong> The target gains ammunition or charges equal to double its expend.</p>\n<p><strong>Heightened (6th)</strong> The target gains ammunition or charges equal to triple its expend.</p>\n<p><strong>Heightened (9th)</strong> The target gains ammunition or charges equal to quadruple its expend.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "LokExv58arhN7skY"
+        },
+        {
+          "name": "Sigil",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 0,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "unlimited",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature or object",
+          "save": "",
+          "description": "<p>You harmlessly place your unique magical sigil, which is about 1 square inch in size, on the targeted creature or object. The mark can be visible or invisible, and you can change it from one state to another by using an Interact action to touch the target. The mark can be scrubbed or scraped off with 5 minutes of work. If it's on a creature, it fades naturally over the course of a week. The time before the mark fades increases depending on your heightened rank.</p><hr /><p><strong>Heightened (3rd)</strong> The sigil instead fades after 1 month.</p>\n<p><strong>Heightened (5th)</strong> The sigil instead fades after 1 year.</p>\n<p><strong>Heightened (7th)</strong> The sigil never fades.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "rhFKOroNdkYEfTtv"
+        }
+      ],
+      "lv1spells": [],
+      "lv2spells": [],
+      "lv3spells": [],
+      "lv4spells": [
+        {
+          "name": "Dispelling Globe",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "10 minutes",
+          "range": "",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "",
+          "description": "<p>You create an immobile globe around yourself that attempts to counteract any spell from outside the globe whose area or targets enter into the globe, as if the globe were a Dispel Magic spell 1 rank lower than its actual spell rank.</p>\n<p>If the counteract attempt succeeds, it prevents only the portion of the spell that would have entered the globe (so if the spell also has targets outside the globe, or part of its area is beyond the globe, those targets or that area is affected normally).</p>\n<p>You must form the sphere in an unbroken open space, so its edges don't pass through any creatures or objects, or the spell is lost (though creatures can enter the globe after the spell is cast).</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "8YFLwlgcD3qaBauI"
+        },
+        {
+          "name": "Divine Wrath",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sanctified",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "fortitude",
+          "description": "<p>You channel the fury of divinity against your foes. You deal 4d10 spirit damage to enemies in the area, depending on their Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Sickened 2; while it's sickened, it's also Slowed 1.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d10.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "xsN9MY6OvK2YEfPi"
+        },
+        {
+          "name": "Weight of Ages",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You burden a creature's body and mind with the pains and sorrows of a lifetime. The target takes 3d8 bludgeoning damage and 3d8 mental damage and must attempt a Will saving throw.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is Encumbered for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is encumbered for 1 minute.</p><hr /><p><strong>Heightened (+1)</strong> The mental damage increases by 2d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "v78ElgH0BnzWWP5W"
+        }
+      ],
+      "lv5spells": [
+        {
+          "name": "Shadow Blast",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "shadow"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "varies",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You shape the shadow substance of the Netherworld into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, sonic, or spirit damage, and choose a 30ft Cone, a 15ft Burst within 120 feet, or a 50ft Line. The blast deals 6d8 damage of the type you chose to each creature in the area ((@item.rank+1)d8 Acid Damage, (@item.rank+1)d8 Bludgeoning Damage, (@item.rank+1)d8 Cold Damage, (@item.rank+1)d8 Electricity Damage, (@item.rank+1)d8 Fire Damage, (@item.rank+1)d8 Force Damage, (@item.rank+1)d8 Piercing Damage, (@item.rank+1)d8 Slashing Damage, (@item.rank+1)d8 Sonic Damage, or (@item.rank+1)d8 Spirit Damage).</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fvz66jDVLc2ye9OB"
+        },
+        {
+          "name": "Wave of Warning",
+          "type": "spell",
+          "level": 5,
+          "heightenedLevel": 5,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental",
+            "nonlethal"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "",
+          "targets": "1 creature, plus any number of additional creatures",
+          "save": "will",
+          "description": "<p>You deter enemies with a wave of hostile intent. The target takes 7d8 nonlethal mental damage, and the target must attempt a Will save. The psychic energy then arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the wave at any point. You can't target the same creature more than once, and you must have line of effect to all targets. Roll the damage only once, and apply it to each target (halving or doubling as appropriate for its saving throw outcome).</p><hr /><p><strong>Critical Success</strong> The target creature is unaffected, and the wave ends with that target.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is Frightened 1.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is Frightened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fe5CzEsZBZWuoJTL"
+        }
+      ],
+      "lv6spells": [
+        {
+          "name": "Slice Reality",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "void"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "120 feet",
+          "area": "",
+          "targets": "",
+          "save": "Basic reflex",
+          "description": "<p>You slice through reality, forming a chasm of life-draining entropy in a straight line 20 feet high, 120 feet long, and 2 inches thick. The chasm provides cover. The chasm deals 7d8 void damage to each creature that's in the chasm's space when it's created, that attempts to pass through the chasm, or that ends its turn inside the chasm, with a basic Reflex save. A creature that succeeds at this save when the chasm is created is pushed to the nearest space on the side of its choice. Creatures trying to move through the chasm fail to do so if they critically fail the save, ending their movement next to the chasm.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "fWwM3AgnmOo74Xfw"
+        },
+        {
+          "name": "Spirit Blast",
+          "type": "spell",
+          "level": 6,
+          "heightenedLevel": 6,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "spirit"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic fortitude",
+          "description": "<p>You concentrate ethereal energy and attack a creature's spirit, dealing 16d6 spirit damage with a basic Fortitude save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "KDuX4u61tTHdt3TK"
+        }
+      ],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 3,
+        "max": 3
+      },
+      "lv5slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv6slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Society, DC 28"
+}

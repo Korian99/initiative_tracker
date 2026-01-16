@@ -1,0 +1,217 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Hardlight Havoc",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Large",
+    "Construct",
+    "Tech"
+  ],
+  "source": "Starfinder Guilt of the Grave World",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 12,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 76,
+    "max": 76,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [
+        "ghost-touch"
+      ],
+      "type": "physical",
+      "value": 4
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "electricity",
+      "value": 4
+    },
+    {
+      "exceptions": [],
+      "type": "force",
+      "value": 4
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Error State",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Before the hardlight havoc begins its turn in combat, it gains one of the following error states at random, losing any previous error state.</p>\n<p><strong>Change Character</strong> The hardlight havoc regains 2d8 Healing Damage Hit Points.</p>\n<p><strong>Pixelation</strong> The hardlight havoc is Concealed from all creatures.</p>\n<p><strong>Power Leak</strong> The hardlight havoc is Stunned 1. At the end of its turn, it deals 4d6 Electricity Damage damage to creatures in a 10ft Type:emanation (Basic DC 22 Reflex Saving Throw save).</p>\n<p><strong>Surge</strong> The hardlight havoc is Quickened until the end of its turn and can use the extra action to Stride or Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tethered",
+      "actions": null,
+      "traits": [],
+      "description": "<p>120 feet. A hardlight life-form can't travel more than the indicated number of feet from its projector. A hardlight life-form reduced to 0 HP vanishes, though its projector reconstructs it in 1d4 hours. The only way to permanently destroy a hardlight life-form is to find its projector and either repair or destroy it.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Hardlight Punch",
+      "bonus": 14,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+5",
+          "type": "force"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+5)*2",
+          "type": "force"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Hardlight Beam",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d6+5",
+          "type": "force"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d6+5)*2",
+          "type": "force"
+        }
+      ],
+      "effects": [
+        "push"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Flicker",
+      "actions": 2,
+      "traits": [
+        "teleportation"
+      ],
+      "description": "<p>The hardlight havoc teleports up to 40 feet. If the destination is within melee reach of an enemy, it can make a melee Strike against that enemy. If it teleports to a square without a surface to stand on, it falls after attempting a Strike and takes no damage from falling.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Push",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 20"
+}

@@ -1,0 +1,231 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Blight Drake",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Large",
+    "Dragon"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Scent 60ft imprecise"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "Darkvision, Scent 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 165,
+    "max": 165,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire",
+    "poison"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "acid",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Wing Deflection",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The blight drake is targeted with an attack from a creature they can see</p><hr /><p><strong>Effect</strong> The blight drake raises their wing, gaining a +2 circumstance bonus to AC against the triggering attack. If the blight drake is flying, they descend 10 feet after the attack is complete.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "poison"
+        },
+        {
+          "roll": "2d12+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "poison"
+        },
+        {
+          "roll": "(2d12+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Draconic Frenzy",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The drake makes two jaws Strikes and one tail Strike in any order.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Smokestack",
+      "actions": 1,
+      "traits": [
+        "poison",
+        "primal"
+      ],
+      "description": "<p>The blight drake blasts a thick, fetid smog from slits around their neck, creating a cloud of smoke in a 20ft Type:burst within 120 feet and that remains for 1d4 rounds. All creatures within the cloud become Concealed, and all creatures outside the cloud become concealed to creatures in it.</p>\n<p>Each creature that begins its turn inside the cloud takes 5d6 Poison Damage damage (Basic DC 28 Fortitude Saving Throw save). A creature that fails the save is also Sickened 1 (Sickened 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Toxic Breath",
+      "actions": 2,
+      "traits": [
+        "acid",
+        "poison",
+        "primal"
+      ],
+      "description": "<p>The blight drake spews a fetid ball of polluted putrescence up to a range of 60 feet that explodes in a 15ft Type:burst. Creatures within the burst take 4d8 Acid Damage damage and 4d8 Poison Damage damage (Basic DC 28 Reflex Saving Throw save). The blight drake can't use Toxic Breath again for 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana, DC 26"
+}

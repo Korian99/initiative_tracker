@@ -1,0 +1,208 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Boneflayer",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Large",
+    "Robot",
+    "Tech",
+    "Unholy"
+  ],
+  "source": "Starfinder Guilt of the Grave World",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Necril",
+    "can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Integrated Advanced Machine Gun",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>These proven and reliable automatic weapons are capable of firing in short bursts or completely emptying their magazines to clear a battlefield.</p>",
+      "level": 0,
+      "price": "80 sp",
+      "traits": [
+        "analog",
+        "automatic"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 77,
+    "max": 77,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "slashing",
+      "value": 4
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Counter-fire",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An enemy target attempts a ranged Strike against the boneflayer</p>\n<p><strong>Requirements</strong> The boneflayer is currently outside the melee reach of the enemy target</p><hr /><p><strong>Effect</strong> The boneflayer attempts a ranged Strike. If the result of this Strike is equal to or greater than the result of the triggering Strike, the triggering Strike is treated as though it were a critical miss.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Slam",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Integrated Advanced Machine Gun",
+      "bonus": 14,
+      "traits": [
+        "analog",
+        "automatic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Hypersonic Burst",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per minute</p><hr /><p><strong>Effect</strong> The boneflayer Steps or Strides twice.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rampage Strikes",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The boneflayer Steps or Strides, then makes two Strikes against the same target. Both Strikes count toward its multiple attack penalty, but its multiple attack penalty does not increase until after it makes both Strikes.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": ", DC 20"
+}

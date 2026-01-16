@@ -1,0 +1,234 @@
+{
+  "initiative": 0,
+  "initiativebonus": 14,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Warp Troll",
+  "type": "Creature",
+  "level": 6,
+  "traits": [
+    "Common",
+    "Large",
+    "Cosmic",
+    "Giant",
+    "Humanoid",
+    "Troll"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 14,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Jotun",
+    "Telepathy 10 feet"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    },
+    {
+      "name": "Dark Tapestry Lore",
+      "modifier": 9,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 110,
+    "max": 110,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "sonic",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 15 (Deactivated by Sonic)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Defensive Phase",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> An enemy scores a critical hit against the warp troll, or the warp troll critically fails a saving throw against a damaging spell</p>\n<p><strong>Requirements</strong> The warp troll's regeneration hasn't been deactivated</p><hr /><p><strong>Effect</strong> The warp troll's body phases partially out of reality. They become incorporeal until the end of their next turn, gaining resistance 5 to all damage except force and Strikes with the ghost killer weapon property. This resistance is doubled against non-magical damage. The triggering damage is calculated using this resistance.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 17,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 17,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Phasic Spike",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d6+8",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+8)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fold Reality",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The warp troll disappears into a pocket dimension until the start of their next turn. They can reappear in any unoccupied space within 60 feet of their previous location. The warp troll can't Fold Reality again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spike Shift",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A warp troll's phasic spikes shift out of reality until they reach their target, ignoring circumstance bonuses to the target's AC granted by cover.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 22"
+}

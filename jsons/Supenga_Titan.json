@@ -1,0 +1,207 @@
+{
+  "initiative": 0,
+  "initiativebonus": 26,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Supenga Titan",
+  "type": "Creature",
+  "level": 15,
+  "traits": [
+    "Common",
+    "huge",
+    "Plant"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Low light vision",
+    "Tremorsense 30ft imprecise"
+  ],
+  "perception": {
+    "value": 26,
+    "note": "Low light vision, Tremorsense 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 29,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 8
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 37,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 29,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 210,
+    "max": 210,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 29,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d12+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d12+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "improved-grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spine",
+      "bonus": 28,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "3d8+6",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "4d6",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+6)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(4d6)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "slowing-enzyme"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Siphon Blood",
+      "actions": 1,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p><strong>Requirements</strong> A Grabbed, Paralyzed, Restrained, or Unconscious living creature is within the supenga titan's reach</p><hr /><p><strong>Effect</strong> The supenga titan absorbs the creature's blood with its spines. This requires an athletics|against:fortitude check against the creature's Fortitude DC if the creature is grabbed but is otherwise automatic. The creature becomes Drained 1, and the supenga titan regains 21 Healing Damage Hit Points.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Slowing Enzyme",
+      "actions": null,
+      "traits": [
+        "incapacitation",
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 36 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> –10-foot status penalty to all Speeds (1 round)</p>\n<p><strong>Stage 2</strong> –10-foot status penalty to all Speeds and Slowed 1 (2 rounds)</p>\n<p><strong>Stage 3</strong> –20-foot status penalty to all Speeds and Slowed 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spine Volley",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The supenga titan makes up to four spine Strikes, each against a different target. The supenga titan's multiple attack penalty doesn't increase until after it makes all the attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Large, (3d6+9) Bludgeoning Damage] plus slowing enzyme, Rupture 35</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 34"
+}

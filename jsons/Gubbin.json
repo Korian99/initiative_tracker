@@ -1,0 +1,358 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Gubbin",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "tiny",
+    "Fey",
+    "Gremlin",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "darkvision"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "computers",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "crafting –2",
+      "modifier": null,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery –2",
+      "modifier": null,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -1
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 21,
+    "max": 21,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold-iron",
+      "value": 2
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Unsettling Appearance",
+      "actions": null,
+      "traits": [
+        "aura",
+        "primal",
+        "visual"
+      ],
+      "description": "<p>20 feet. A non-gremlin creature that enters the aura must succeed at a DC 17 Will Saving Throw save or become Frightened 1 (or Frightened 2 on a critical failure) and is then temporarily immune to unsettling appearance for 1 minute. If the gubbin used any action with the manipulate trait, an Interact action, or a claw Strike since the start of their last turn, creatures take a –4 status penalty to their saves against this effect.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 9,
+      "traits": [
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6–1",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6–1)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "scramble"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Glitchy Beam",
+      "bonus": 7,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4+2",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+2)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [
+        "scramble"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Not Really There",
+      "actions": -1,
+      "traits": [
+        "teleportation"
+      ],
+      "description": "<p><strong>Trigger</strong> A creature targets the gubbin with an attack or area effect, and the gubbin is aware of the attacker</p><hr /><p><strong>Effect</strong> The gubbin teleports 10 feet. If this puts the gubbin out of the range or area of the attack, the attack misses. If not, the gubbin gains a +2 circumstance bonus to AC and Reflex saves against the attack.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Scramble",
+      "actions": null,
+      "traits": [
+        "primal"
+      ],
+      "description": "<p>Gubbins can spread their glitchiness to others. Creatures damaged by the gubbin's claw or glitchy beam Strikes must succeed at a DC 17 Fortitude Saving Throw save or become Sickened 1 (Sickened 2 on a critical hit). If the target has the tech trait, it becomes glitching instead of sickened.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Innate Spells",
+      "type": "innate",
+      "bonus": 0,
+      "dc": 0,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 2,
+      "cantrips": [
+        {
+          "name": "Implant Data",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 day",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 computer",
+          "save": "",
+          "description": "<p>You reprogram a computer or device to display a chosen piece of data when accessed. You can implant up to one piece of data per spell rank. A piece of data can be a simple fact, such as a creature or object's location or physical description; an image of a creature or object; or a simple statement of no more than 300 characters. When the target computer or device is accessed, this implanted data is the first data the accessing creature gains, regardless of what data the creature is looking for. Implanted data doesn't prevent a creature from accessing other information stored on a device, change how the device functions, or otherwise inhibit the device from functioning. If this spell's duration ends before a creature accesses the implanted data, the information vanishes.</p><hr /><p><strong>Heightened (3rd)</strong> The duration is one year.</p>\n<p><strong>Heightened (6th)</strong> The duration is unlimited.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "DzHYXc5RB8RyVKFD"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Delete (at will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 dataset or tech item with the tracking trait",
+          "save": "",
+          "description": "<p>You delete data from a device or object with a flamboyant magical gesture. This data might be handwritten, printed, or digital. You delete up to 1,500 words' worth of text, one page of content, or one display screen worth of text or other visual information. Non-magical writing in or on an unattended or held object is automatically deleted. Attempt a counteract check to delete digital or magical writing. If you fail to delete writing that's part of a hazard, you trigger the hazard. This can't be used to delete the contents of a spellbook or similar means of storing magical formulas or spells.</p>\n<p>If you target an attended tech item with the tracking trait, attempt a counteract check. On a success, the item becomes glitching 1. A creature holding the item can Interact to restart the software, reducing the glitching value by 1.</p><hr /><p><strong>Heightened (7th)</strong> You can delete all the data stored locally on a single device or book, or all the data on a device or book related to a specific name, topic, or category.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "J3OsW8fLW5IATM8F"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Instant Virus",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature with the tech trait",
+          "save": "fortitude",
+          "description": "<p>Your touch installs a dangerous self-replicating virus that disrupts a technological creature's programming. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Glitching 1.</p>\n<p><strong>Failure</strong> The target is glitching 1 and Stunned 1.</p>\n<p><strong>Critical Failure</strong> The target is Glitching 2 and Stunned 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MWpPfKygOCcakjIn"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Nature, DC 15"
+}

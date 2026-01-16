@@ -1,0 +1,254 @@
+{
+  "initiative": 0,
+  "initiativebonus": 22,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Deprimogon",
+  "type": "Creature",
+  "level": 11,
+  "traits": [
+    "Common",
+    "Medium",
+    "Devil",
+    "Fiend",
+    "Unholy"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Greater darkvision"
+  ],
+  "perception": {
+    "value": 22,
+    "note": "Greater darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Diabolic",
+    "Empyrean",
+    "Embri, Can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 26,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 7
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Dueling Sword",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>Coming in a variety of styles, these traditional and time-tested weapons have been honed with advanced smithing techniques and modern materials.</p>",
+      "level": 0,
+      "price": "10 sp",
+      "traits": [
+        "analog",
+        "versatile-p"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 31,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 190,
+    "max": 190,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "fire"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [
+        "silver"
+      ],
+      "type": "physical",
+      "value": 10
+    },
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "poison",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "holy",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Masked Emotions",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The deprimogon loses their immunity to emotion and mental effects if they aren't wearing a mask. In addition, an unmasked silencer devil uses the outcome one degree of success worse than they roll on saving throws against mental effects. A deprimogon's mask can be Disarmed as if it were a held item.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, burrow 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Dueling Sword",
+      "bonus": 22,
+      "traits": [
+        "analog",
+        "tracking-1",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+13",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+13)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [
+        "evoke-paranoia"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Injector",
+      "bonus": 24,
+      "traits": [
+        "analog"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+8",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+8)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "evoke-paranoia"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Evoke Paranoia",
+      "actions": null,
+      "traits": [
+        "emotion",
+        "illusion",
+        "mental"
+      ],
+      "description": "<p>The deprimogon infuses their weapons with paranoia and mistrust, instilling doubt in their victims with every attack. A creature damaged by a deprimogon's Strikes must attempt a DC 27 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected and temporarily immune to the deprimogon's evoke paranoia for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected and temporarily immune to the deprimogon's evoke paranoia for 1 round.</p>\n<p><strong>Failure</strong> Until the beginning of the deprimogon's next turn, the creature believes everyone it sees is a potential threat. It becomes unfriendly to all creatures to which it wasn't already hostile, even those who were previously allies. It treats no one as an ally.</p>\n<p><strong>Critical Failure</strong> As failure, except the target believes that everyone it sees is a mortal enemy. It uses its reactions and free actions against everyone, regardless of whether they were previously its allies, as determined by the GM. It otherwise acts as rationally as it normally does and likely prefers to attack creatures that are actively attacking or hindering it over those leaving it alone.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Infernal Disgrace",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The deprimogon's Strikes count as magical and unholy.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Silent Prison",
+      "actions": 3,
+      "traits": [
+        "concentrate",
+        "divine"
+      ],
+      "description": "<p>The deprimogon casts a 6th-rank Wall of Force that dampens sound. Any creature that moves and begins its turn adjacent to the wall must attempt a DC 27 Will Saving Throw save. On a failure, the creature can't speak and can't use any actions and effects with the sonic or auditory traits while adjacent to the wall; this also prevents the creature from casting spells, with the exception of subtle spells.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 28"
+}

@@ -1,0 +1,229 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Phantom Gef",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Ghost",
+    "Incorporeal",
+    "Spirit",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Starfinder Guilt of the Grave World",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 4
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 33,
+    "max": 33,
+    "note": "void healing",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ghostly Form",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A phantom gef is always Concealed. When a phantom gef takes area damage, it's no longer concealed until the beginning of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 10,
+      "traits": [
+        "magical",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Yip",
+      "bonus": 8,
+      "traits": [
+        "magical",
+        "sonic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Tug-of-War",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The phantom gef attempts to Disarm the target with the following critical success.</p><hr /><p><strong>Critical Success</strong> The phantom gef knocks the item out of the creature's hand and into its mouth. While holding the item in this way, the phantom gef can't take any actions except to move, and it can drop the item at any time as a free action.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Grab",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or Restrained</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism or Religion, DC 18"
+}

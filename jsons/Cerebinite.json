@@ -1,0 +1,269 @@
+{
+  "initiative": 0,
+  "initiativebonus": 9,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Cerebinite",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Small",
+    "Aberration",
+    "Earth"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Thoughtsense 200ft precise"
+  ],
+  "perception": {
+    "value": 9,
+    "note": "Thoughtsense 200ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Thoughtsense",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>Thoughtsense allows a monster to sense all non-mindless creatures at the listed range.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 75,
+    "max": 75,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid",
+    "bleed",
+    "critical-hits",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [
+    {
+      "type": "slashing",
+      "value": 5
+    },
+    {
+      "type": "piercing",
+      "value": 5
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "bludgeoning",
+      "value": 5
+    },
+    {
+      "type": "mental",
+      "value": 5
+    },
+    {
+      "type": "sonic",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Crystalline Ambush",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A non-mindless creature enters a space adjacent to a cerebinite</p>\n<p><strong>Requirements</strong> Initiative hasn't yet been rolled</p><hr /><p><strong>Effect</strong> The cerebinite automatically notices the creature, makes a crystalline growth Strike against one creature adjacent to itself, then rolls initiative.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mind-Shattering Demise",
+      "actions": null,
+      "traits": [
+        "mental"
+      ],
+      "description": "<p>When the cerebinite dies, it explodes in a blast fueled by the memories stored in its crystalline body, affecting all creatures in a 30ft Emanation. Each creature in the area (including other cerebinites) must succeed at a DC 22 Will Saving Throw save or take 2d8 Mental Damage damage and become Stunned 1 (or double damage and Stunned 2 on a critical failure).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, climb 10ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Crystalline Growth",
+      "bonus": 15,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+5",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "1d6",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+5)*2",
+          "type": "bludgeoning"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Cerebinium Spike",
+      "bonus": 13,
+      "traits": [
+        "propulsive"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "mental"
+        },
+        {
+          "roll": "1d6+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "mental"
+        },
+        {
+          "roll": "(1d6+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Blast of Cerebinium Shards",
+      "bonus": 12,
+      "traits": [
+        "mental"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6",
+          "type": "mental"
+        },
+        {
+          "roll": "1d6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6)*2",
+          "type": "mental"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(1d8) Bludgeoning Damage], Basic DC 22 Fortitude Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 20"
+}

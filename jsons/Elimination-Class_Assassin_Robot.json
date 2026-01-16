@@ -1,0 +1,316 @@
+{
+  "initiative": 0,
+  "initiativebonus": 21,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Elimination-Class Assassin Robot",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Medium",
+    "Construct",
+    "Robot",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 21,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": -3
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Integrated Advanced Nano-edge Rapier",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>The edge of this precision-crafted foil is sharpened to the thickness of a single atom, using regenerating nanites to maintain itself after countless strikes.</p>",
+      "level": 0,
+      "price": "25 sp",
+      "traits": [
+        "analog",
+        "deadly-d8",
+        "disarm",
+        "finesse"
+      ]
+    },
+    {
+      "name": "Integrated Advanced Semi-Auto Pistol",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This pistol automatically ejects used cartridges and loads new ammunition after every shot fired.</p>",
+      "level": 0,
+      "price": "30 sp",
+      "traits": [
+        "analog"
+      ]
+    },
+    {
+      "name": "Shirren-eye Rifle",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This sniper rifle comes with a compound technological scope that allows snipers to adjust focus and magnification with natural eye movements instead of using moving parts that might disrupt their aim.</p>",
+      "level": 0,
+      "price": "80 sp",
+      "traits": [
+        "analog",
+        "deadly-d12",
+        "kickback",
+        "unwieldy",
+        "volley-30"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 190,
+    "max": 190,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "void",
+    "vitality"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Accelerated Response",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The target of the elimination-class assassin robot's Target Tracking attempts a Strike against the robot</p><hr /><p><strong>Effect</strong> The robot reads its target's movements, gaining a +2 circumstance bonus to AC against the triggering Strike.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Burn Protocol",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The circuitry of an assassin robot self-destructs upon the robot's destruction, making tracing its owner extremely difficult. Add 10 to the DC of a Computers check to recover data from a destroyed assassin robot.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, climb 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Nano-edge Rapier",
+      "bonus": 21,
+      "traits": [
+        "analog",
+        "deadly-d8",
+        "disarm",
+        "finesse",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+7",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+7)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Semi-Auto Pistol",
+      "bonus": 21,
+      "traits": [
+        "analog",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Shirren-eye Rifle",
+      "bonus": 21,
+      "traits": [
+        "analog",
+        "deadly-d12",
+        "fatal-d12",
+        "kickback",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Holographic Camouflage",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> The elimination-class assassin robot becomes invisible for 10 minutes. If the robot uses a hostile action or moves more than half its Speed in a single action, the robot becomes visible again after it completes that action.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Nanite Surge",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The elimination-class assassin robot restores 45 Healing Damage Hit Points to one technological creature or item.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Retractable Weapons",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The elimination-class assassin robot can Interact to draw or retract any of its integrated weapons as a free action. An observer must succeed at a DC 40 Perception  check to notice a retracted weapon.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The elimination-class assassin robot's Strikes deal an additional 3d6 precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Target Tracking",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The elimination-class assassin robot establishes a target lock on a creature it can see within 120 feet. The creature can't become Concealed against the robot or Create a diversion against the robot. This ability lasts until the robot loses line of sight with the target or the target otherwise becomes hidden.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 26"
+}

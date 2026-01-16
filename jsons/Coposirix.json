@@ -1,0 +1,188 @@
+{
+  "initiative": 0,
+  "initiativebonus": 13,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Coposirix",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Common",
+    "huge",
+    "Aberration"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 13,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Copaxi, Can't speak any language"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -5
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 163,
+    "max": 163,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison",
+    "polymorph"
+  ],
+  "resistances": [
+    {
+      "type": "acid",
+      "value": 8
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Seep In",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The coposirix takes damage</p><hr /><p><strong>Effect</strong> The coposirix's body absorbs some of what damaged it until the end of its next turn, the material seeping into its constituent copi and changing its composition. The effects of this change depends on the nature of the damage.</p><ul><li><p><strong>Energy Damage</strong> The coposirix's attacks deal an additional 2d6 damage of the same type as the energy damage dealt to it.</p></li><li><p><strong>Physical Damage</strong> The coposirix gains resistance 6 to physical damage. If the damage was dealt by a weapon made of a special material, such as silver, the coposirix's battering sludge Strike counts as that same material for the duration of the effect.</p></li></ul>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battering Sludge",
+      "bonus": 18,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+8",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+8)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Caustic Jet",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Falling Rush",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The coposirix bends gravity around itself, causing it to fall toward its target. The coposirix Strides up to twice its Speed in a straight line in any direction. If it ends this movement within melee reach of at least one enemy, it can make a battering sludge Strike against that target. After this attack, the coposirix falls if it isn't on a solid surface, taking half the normal amount of damage for the distance fallen and not falling Prone. If the coposirix passes within 10 feet of another creature at any point during this movement, that creature is affected by the fluctuating gravity and must attempt a DC 25 Reflex Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The creature can use the fluctuating gravity to its advantage to reposition itself. It can Step as a free action.</p>\n<p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature is pulled 5 feet in the direction of the coposirix's travel. This follows the rules for forced movement. If at the end of this movement the creature is unsupported, it falls and lands prone, taking fall damage as normal.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is pulled 10 feet and falls prone even if supported.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 24"
+}

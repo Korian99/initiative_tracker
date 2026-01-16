@@ -1,0 +1,561 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Jinsul Pontiff",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Jinsul"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision, darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Jinsul"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "religion",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": 5
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [
+    {
+      "name": "Laser Pistol",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This compact pistol is the most popular sidearm in the Pact Worlds thanks to its reliability, durability, and affordability. Most common laser pistols have a lightweight polycarbon body ending in a long, slim barrel.</p>",
+      "level": 0,
+      "price": "30 sp",
+      "traits": [
+        "tech"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 58,
+    "max": 58,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "All-Around Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster can see in all directions simultaneously and therefore can't be flanked.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Vitality Network",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A jinsul pontiff can channel vitality to up to four bonded allies as though they were a mystic. This network stores up to 20 Healing Damage Hit Points and begins combat full.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Laser Pistol",
+      "bonus": 12,
+      "traits": [
+        "tech",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+6",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+6)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Leg Blade",
+      "bonus": 11,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "2d4+6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(2d4+6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Fill Vitality",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The jinsul pontiff restores 6 Healing Damage Hit Points to their vitality network, up to its maximum.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Strider Leap",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The jinsul Strides and then performs a Long jump. They can Stride less than 10 feet and not automatically fail their check to Long Jump.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Transfer Vitality",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The jinsul pontiff transfers any number of Hit Points from their vitality network to a visible bonded target.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Spontaneous Spells",
+      "type": "spontaneous",
+      "bonus": 14,
+      "dc": 22,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 3,
+      "cantrips": [],
+      "lv1spells": [
+        {
+          "name": "Bless",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "aura",
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "",
+          "area": "15ft emanation",
+          "targets": "you and allies in the area",
+          "save": "",
+          "description": "<p>Blessings from beyond help your companions strike true. You and your allies gain a +1 status bonus to attack rolls while within the emanation. Once per round on subsequent turns, you can Sustain the spell to increase the emanation's radius by 10 feet.</p>\n<p>Bless can counteract Bane.</p>\n<p>Aura: Bless</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iEmuYRLJ0Vbu9gqf"
+        },
+        {
+          "name": "Overheat",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "fire",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic reflex",
+          "description": "<p>You vent heat toward a nearby target. You deal 2d6 fire damage to the target. On a failed save, the target's held equipment becomes hot to the touch for the next round. Unless the target drops its currently held equipment at the start of its turn, it takes (3*@item.rank) Fire Damage damage.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6. Increase the damage of touching affected objects by 3.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "RJBoaKacpLA3n9fN"
+        },
+        {
+          "name": "Shifting Surge",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute or until discharged",
+          "range": "30 feet",
+          "area": "",
+          "targets": "one weapon held by you or a willing ally that deals acid, cold, electricity, fire, or sonic damage",
+          "save": "",
+          "description": "<p>You release a surge of magical energy that temporarily changes the type of damage dealt by a weapon. The next Strike the weapon makes deals your choice of acid, cold, electricity, fire, or sonic damage and deals an additional 1d6 extra damage of the same type as the weapon's normal damage.</p><hr /><p><strong>Heightened (+2)</strong> The extra damage increases by 1d6.</p>\n<p>Spell Effect: Shifting Surge</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "01nJMXRx903xNt7E"
+        },
+        {
+          "name": "Soothe",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "healing",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p>Spell Effect: Soothe</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kJl1kfTPzZIpxYot"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Mind Skewer",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You overload a creature's mind with a glut of psychic information or divine judgments. The mental onslaught deals 2d6 mental damage. On a critical failure, the target is also Stupefied 2 for 1 round.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "1N4lDkBAq0zCY0aN"
+        },
+        {
+          "name": "Soothe",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "emotion",
+            "healing",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 willing creature",
+          "save": "",
+          "description": "<p>You grace the target's mind, boosting its mental defenses and healing its wounds. The target regains 1d10+4 Hit Points when you Cast the Spell and gains a +2 status bonus to saves against mental effects for the duration.</p>\n<p>Spell Effect: Soothe</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10+4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "o17Kl8BGD7cor8Fb"
+        },
+        {
+          "name": "Blur",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>The target's form appears blurry. It becomes Concealed. As the nature of this effect still leaves the target's location obvious, the target can't use this concealment to Hide or Sneak.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "vhczMhYfpmcMWxMk"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Selective Invisibility",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute",
+          "range": "500 feet",
+          "area": "",
+          "targets": "1 willing creature touched and one within range",
+          "save": "",
+          "description": "<p>A willing creature you touch becomes Invisible to everyone except a second target within the spell's range. If the invisible creature uses a hostile action against anyone who isn't the target that can see them, the spell ends after that hostile action is completed.</p><hr /><p><strong>Heightened (5th)</strong> You can make up to 6 willing creatures within 30 feet invisible, but they all must have the same target.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "iz1Mlx3uOoqICvjw"
+        },
+        {
+          "name": "Share Pain",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>You telepathically share the sensation of agonizing pain with a creature. The target takes 3d12 mental damage and attempts a Will save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Clumsy 1 for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is Clumsy 2 for 1 minute.</p><hr /><p><strong>Heightened (6th)</strong> The spell targets up to four creatures and deals 6d12 mental damage.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "4kqeRMgFQWVAEHSe"
+        },
+        {
+          "name": "Void Whispers",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "incapacitation",
+            "linguistic",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>The target hears ominous sounds containing unspeakable mysteries from beyond the stars that disorient its mind. The target attempts a Will save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target hears the strange whispers, becoming Stupefied 1 for 1 round.</p>\n<p><strong>Failure</strong> The target begins to wander aimlessly, using each action to Step in a random direction. When it moves, the target takes the safest route and doesn't enter hazardous terrain. The spell has a duration of 1 minute or until a creature uses a hostile action against the target.</p>\n<p><strong>Critical Failure</strong> As failure, except the target babbles incoherently. Any creature that begins its turn within 20 feet of the target must attempt a Will saving throw. On a failure, it must use its first action on its next turn to Step in a random direction and becomes immune to this spell for 24 hours. This is an incapacitation effect.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3tOSW3pmE5vP0OTU"
+        }
+      ],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv2slots": {
+        "current": 4,
+        "max": 4
+      },
+      "lv3slots": {
+        "current": 2,
+        "max": 2
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": ", DC 20"
+}

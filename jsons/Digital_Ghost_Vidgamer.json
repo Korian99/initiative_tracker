@@ -1,0 +1,229 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Digital Ghost Vidgamer",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Medium",
+    "Construct",
+    "Incorporeal",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "techsense (imprecise) 30 feet"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Darkvision, techsense (imprecise) 30 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "computers",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Infosphere Lore",
+      "modifier": 12,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Vidgame Lore",
+      "modifier": 12,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 5
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Techsense (Imprecise) 30 feet",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A digital ghost senses creatures and items with the tech trait at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 45,
+    "max": 45,
+    "note": "backup",
+    "modifications": []
+  },
+  "immunities": [
+    "precision"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "mental"
+      ],
+      "type": "all-damage",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Backup",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An offline copy of the digital ghost is stored in a device. When an active digital ghost is destroyed, it reforms after 2d4 days within the device that the copy is stored in, fully healed, but with no memory of what destroyed them. A digital ghost can be permanently removed from that device by attempting a DC 24 Computers  check against the digital ghost's Will DC.</p>\n<p>On a success, the copy of the digital ghost is purged from the device, and no new copies will be generated. On a critical success, any active copies are also purged.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Device Bound",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A digital ghost can stray only a short distance from the device where they're stored. A typical limit is 120 feet.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "0 ft, fly 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Vidgame Glove",
+      "bonus": 9,
+      "traits": [
+        "agile",
+        "finesse",
+        "tech"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+4",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+4)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Light Gun",
+      "bonus": 14,
+      "traits": [
+        "tech"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+4",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+4)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Malware Infection",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The digital ghost attempts to infect an item with the tech trait being held or used by a creature within 30 feet. The bearer can attempt a DC 21 Will Saving Throw save.</p><hr /><p><strong>Critical Success</strong> The item is unaffected, and the digital ghost can't use Malware Infection for 1 week.</p>\n<p><strong>Success</strong> The item is unaffected.</p>\n<p><strong>Failure</strong> The item becomes glitching 2.</p>\n<p><strong>Critical Failure</strong> The item becomes glitching 2, and an offline digital ghost based on the bearer is created on the device in 2d4 days.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Virtual Arms",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A digital ghost's weapons deal mental damage, have the ghost killer upgrade, and disappear if dropped.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 19"
+}

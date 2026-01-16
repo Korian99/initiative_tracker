@@ -1,0 +1,220 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Zitteroc",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "Medium",
+    "Animal"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "poison sense (imprecise) 60 feet"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision, poison sense (imprecise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 4,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Poison Sense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A zitteroc can detect poison as an imprecise sense at the listed range, including poisonous substances, poisoned creatures, and creatures with attacks that inflict poison.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 32,
+    "max": 32,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Sickening Death",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The zitteroc takes damage</p><hr /><p><strong>Effect</strong> The zitteroc releases a spray of acid in a 15ft Type:emanation, dealing 4d4 Acid Damage damage to each creature in the area (Basic DC 18 Reflex Saving Throw save), then uses Still as a Corpse.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, climb 25ft, swim 40ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Mandibles",
+      "bonus": 9,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "acid"
+        },
+        {
+          "roll": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(1d6+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Acid Spit",
+      "bonus": 8,
+      "traits": [
+        "acid"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+2",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+2)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Shimmer Hide",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The zitteroc focuses on shifting its hide pattern to match its surroundings. The zitteroc becomes Concealed to creatures more than 15 feet away from it until the start of its next turn.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Siphon Poison",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The zitteroc's last action was a successful mandibles Strike</p><hr /><p><strong>Effect</strong> The zitteroc siphons poison from the struck target's bloodstream. If the target is afflicted by a poison or possesses a natural poison, the zitteroc consumes that poison to empower its own abilities. The poison effect is suppressed on the target for 1 round, or the target can't use its natural poison until the end of its next turn. Until the end of the zitteroc's next turn, the zitteroc increases its acid damage die size for its mandibles and acid spit Strikes, and Sickening Death, by one step (typically to d6s).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Still as a Corpse",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>Until the next time it acts, the zitteroc appears to be dead. It has an automatic result of 21 on deception checks and DCs to pass as a dead zitteroc.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 16"
+}

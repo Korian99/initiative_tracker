@@ -1,0 +1,243 @@
+{
+  "initiative": 0,
+  "initiativebonus": 11,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ksarik",
+  "type": "Creature",
+  "level": 4,
+  "traits": [
+    "Common",
+    "Large",
+    "Plant"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Low light vision",
+    "Scent 30ft imprecise"
+  ],
+  "perception": {
+    "value": 11,
+    "note": "Low light vision, Scent 30ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Elven",
+    "Lashunta",
+    "Can't speak, Adapted languages"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Adapted Languages",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A ksarik understands up to 3 languages from among the prevalent languages spoken by those it has most recently attacked.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 20,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 60,
+    "max": 60,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "poison"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Fast Healing 5",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A monster with this ability regains the given number of Hit Points each round at the beginning of its turn.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 14,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+5",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+5)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "ingested-adaptation"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Acid Spit",
+      "bonus": 12,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d4",
+          "type": "acid"
+        },
+        {
+          "roll": "1d4",
+          "type": "persistent acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Thorn Dart",
+      "bonus": 12,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "carrion-spores"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Carrion Spores",
+      "actions": null,
+      "traits": [
+        "disease"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 18 Fortitude Saving Throw</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1d6 hours),</p>\n<p><strong>Stage 2</strong> Stupefied 1 (1 day),</p>\n<p><strong>Stage 3</strong> Stupefied 2 and Clumsy 2 (1 day),</p>\n<p><strong>Stage 4</strong> Unconscious (1 day),</p>\n<p><strong>Stage 5</strong> 1d10+10 ksarik seedlings erupt from the victim's body, dealing 1 Piercing Damage damage per seedling and ending the disease</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Ingested Adaptation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A ksarik's tentacle Strike siphons the target's genetic code and psychic resonance. On a successful Strike, the ksarik gains one of the target's abilities, chosen from the following.</p><ul><li>The amphibious or aquatic trait</li><li>A new precise or imprecise sense</li><li>A resistance to one damage type (up to resistance 7)</li><li>A burrow, fly, or swim Speed (up to 30 feet)</li><li>The ability to wield a category of melee weapons (simple, martial, or advanced) in its tentacles that the target is trained in (using its tentacle Strike bonus)</li><li>Altering the type of damage dealt by its acid spit to a type (cold, electricity, fire, poison, or sonic) dealt by one of the target's Strikes or other abilities</li></ul><p>The ksarik can't duplicate abilities from equipment. It can maintain one adaptation at a time, which it retains for 24 hours or until it uses ingested adaptation again.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 19"
+}

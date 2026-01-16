@@ -1,0 +1,214 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Trawler",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "huge",
+    "Aberration"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Castrovelian",
+    "Can't speak, Telepathy 60 feet"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 5
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 80,
+    "max": 80,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Transparency",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Unless they've fed recently, the trawler is naturally fully transparent, allowing them to Hide without concealment or cover and granting them a +4 circumstance bonus to Stealth checks to Hide. A trawler loses this transparency if they take a hostile action of any kind.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, fly 50ft, swim 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Beak",
+      "bonus": 15,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "trawler-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 11,
+      "traits": [
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Lasso Filament",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "sticky-filaments"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Reel In",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The trawler has a Medium or smaller creature Grabbed with its lasso filament</p><hr /><p><strong>Effect</strong> The trawler pulls the creature toward themself. They attempt an Athletics check against the target's Fortitude DC. A trawler can lift a creature off the ground in this way.</p><hr /><p><strong>Critical Success</strong> The target is moved 20 feet closer to the trawler.</p>\n<p><strong>Success</strong> The target is moved 10 feet closer to the trawler.</p>\n<p><strong>Critical Failure</strong> The trawler releases the target.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sticky Filaments",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature hit by the trawler's lasso filament becomes Grabbed by the trawler. The creature isn't Immobilized, but it can't move beyond the range of the lasso filament. A creature is Clumsy 1 for as long as it's grabbed by a lasso filament. A creature can sever the filament with a Strike against AC 19 that deals at least 6 fire or slashing damage. This deals no damage to the trawler but destroys the filament. A trawler has three lasso filaments, and they can't use their lasso filament Strike if all three are destroyed. It takes a week for the trawler to regrow all three of their filaments.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Trawler Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 20 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage and Enfeebled 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage and Enfeebled 2 (1 round)</p>\n<p><strong>Stage 3</strong> 2d4 Poison Damage damage, enfeebled 2, and Sickened 1 (1 round)</p>\n<p><strong>Stage 4</strong> 2d6 Poison Damage damage, enfeebled 2, and Sickened 2 (1 round)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 20"
+}

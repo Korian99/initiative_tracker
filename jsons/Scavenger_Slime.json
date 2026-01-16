@@ -1,0 +1,254 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Scavenger Slime",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Large",
+    "Mindless",
+    "Ooze",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Tremorsense 10ft imprecise",
+    "techsense (precise) 100 feet"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Tremorsense 10ft imprecise, techsense (precise) 100 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "computers",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 23,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 20,
+      "note": [
+        "in garbage or tech settings 22"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [
+    {
+      "name": "Arc Rifle",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This rifle's oversized body contains a larger version of an arc pistol capacitor, with a short barrel and polycarbon stock designed to insulate the wielder from high voltage. The arc rifle's larger capacitor allows it to produce a charge with enough power to subdue a rampaging renkroda.</p>",
+      "level": 0,
+      "price": "50 sp",
+      "traits": [
+        "arc",
+        "tech"
+      ]
+    },
+    {
+      "name": "Plasma Cannon",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This long-barreled weapon shoots charges of ionized gas that explode in a blast of superheated plasma.</p>",
+      "level": 0,
+      "price": "80 sp",
+      "traits": [
+        "area-burst-10",
+        "tech",
+        "unwieldy"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Techsense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An assembly ooze can detect creatures and objects with the tech trait as a precise sense within the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 26,
+    "note": "(22 when broken)",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 240,
+    "max": 240,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Scavenger Shell",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A scavenger slime builds a shell for itself from discarded pieces of technology and a secretion of natural resin. This grants the ooze Hardness. This Hardness reduces any damage it takes by an amount equal to its Hardness but temporarily removes its immunity to critical hits. Once the scavenger slime is reduced to half its Hit Points or immediately after being damaged by a critical hit, the scavenger shell breaks, removing its Hardness and reducing its Armor Class to 22.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 19,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Arc Rifle",
+      "bonus": 21,
+      "traits": [
+        "tech",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+10",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+10)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Plasma Cannon",
+      "bonus": 17,
+      "traits": [
+        "tech",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+10",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+10)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Kitbash",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Scavenger slimes can repair any item with the tech trait without tools.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Salvaged Armaments",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A scavenger slime can incorporate up to three weapons into its protoplasmic body, gaining proficiency with each. These weapons are treated as integrated weapons and are powered by the scavenger slime's own technomagical nature without needing to reload.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 26"
+}

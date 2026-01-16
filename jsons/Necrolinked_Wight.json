@@ -1,0 +1,224 @@
+{
+  "initiative": 0,
+  "initiativebonus": -3,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Necrolinked Wight",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Medium",
+    "Undead"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": -3,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "computers",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": -3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Comm Unit",
+      "quantity": 1,
+      "description": "<p>A personal comm unit is a pocket-sized device that combines a minor portable computer and a cellular communications device, allowing instantaneous wireless communication with other comm units in both audio- and text-based formats at planetary range. A personal comm unit also includes a calculator, a flashlight (emits bright light in a 5-foot radius around you and dim light in the next 5 feet), a browser that accesses any local infospheres, and several entertainment options (including games).</p>\n<p>Personal comm units integrated into armor have some voice-activated capabilities; you can communicate with other comm units in audio-based formats and receive responses without needing a free hand, but typing a message, browsing the infosphere, or using an app requires the use of at least one hand.</p>\n<p>Comm units that function at longer ranges aren't as portable; they include built-in generators that provide the necessary amount of power and rely on active Drift beacons to communicate. Short-term use of these units can be purchased in most major settlements.</p>",
+      "level": 1,
+      "price": "7 sp",
+      "traits": [
+        "tech"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 15,
+    "note": "special",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "slashing",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Aligned Comm Unit",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The comm unit of a necrolinked wight can be disabled for 1 hour with a successful DC 15 check to Disable a Device or Disable a System. A necrolinked wight with a disabled comm unit is Slowed 1, gains a +6 bonus to Perception, and can't Check its Feed.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Social Media Addiction",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>The necrolinked wight is driven by a desire to continue their cycles of spiteful hatred and media consumption on the infosphere. They spend their first action of each round to Check Feed. Eternally obsessed, a necrolinked wight will always try to stay within range of an active infosphere signal. A necrolinked wight with no infosphere access or perceived threats functions as if their aligned comm unit was disabled and does whatever it can to regain infosphere access.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Shriek",
+      "bonus": 5,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [
+        "necrotic-transmission"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 7,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Check Feed",
+      "actions": 1,
+      "traits": [
+        "concentrate"
+      ],
+      "description": "<p>The necrolinked wight looks up information on their aligned comm unit about a specific creature using Computers instead of any other skill. On a success, the creature takes a –2 status penalty to its next Will save against necrotic transmission for 1 minute ( –3 status penalty on a critical success).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Necrotic Transmission",
+      "actions": null,
+      "traits": [
+        "mental",
+        "occult",
+        "visual"
+      ],
+      "description": "<p>A creature that takes damage from a necrolinked wight's Shriek must succeed at a DC 15 Will Saving Throw save, or its subconscious is scanned and used to infect its non-augmentation tech items with a virus. Infected tech items display algorithmically generated content catering specifically to the creature's deepest desires, causing the creature to become Off-Guard as long as they're holding or wearing the tech item. On a critical failure, the creature is also Fascinated, and all creatures and objects other than the tech item are Concealed from the creature. The creature or its allies can end the effect on any specific tech item by Interacting to reboot the affected item and succeeding at a DC 15 Computers  check; on a failure, the item becomes glitching 1 (glitching 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Spawn Registration",
+      "actions": null,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>A living creature that dies while Fascinated by necrotic transmission rises as a necrolinked wight after 1d4 rounds.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 15"
+}

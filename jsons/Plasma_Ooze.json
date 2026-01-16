@@ -1,0 +1,234 @@
+{
+  "initiative": 0,
+  "initiativebonus": 28,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Plasma Ooze",
+  "type": "Creature",
+  "level": 16,
+  "traits": [
+    "Common",
+    "Gargantuan",
+    "Cosmic",
+    "Mindless",
+    "Ooze"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Thoughtsense 60ft precise"
+  ],
+  "perception": {
+    "value": 28,
+    "note": "Thoughtsense 60ft precise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 35,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "piloting",
+      "modifier": 30,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 9
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 9
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Thoughtsense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The plasma ooze can sense all non-mindless creatures within the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 33,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 25,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 600,
+    "max": 600,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "critical-hits",
+    "electricity",
+    "fire",
+    "precision",
+    "unconscious",
+    "visual"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "sonic",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Electromagnetic Field",
+      "actions": null,
+      "traits": [
+        "aura"
+      ],
+      "description": "<p>100 feet. When an item with the tech trait is activated inside the aura, it must succeed at a DC 36 Reflex Saving Throw save or become Glitching 1 (Glitching 2 on a critical failure).</p>\n<p>A tech creature that starts its turn within the aura must attempt a DC 35 Will Saving Throw save. If it fails, it becomes Glitching 1 (Glitching 2 on a critical failure).</p>\n<p>An item or creature that succeeds at this save becomes immune to this aura for 1 hour.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 50ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Pseudopod",
+      "bonus": 32,
+      "traits": [
+        "reach-20"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d12+13",
+          "type": "electricity"
+        },
+        {
+          "roll": "1d12",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d12+13)*2",
+          "type": "electricity"
+        },
+        {
+          "roll": "(1d12)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [
+        "plasma-slag"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Plasma Pulse",
+      "bonus": 32,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+13",
+          "type": "electricity"
+        },
+        {
+          "roll": "1d10",
+          "type": "fire"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+13)*2",
+          "type": "electricity"
+        },
+        {
+          "roll": "(1d10)*2",
+          "type": "fire"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Magnetic Draw",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Large and smaller creatures and all unattended objects within 100 feet must succeed at a DC 36 Reflex Saving Throw save or be pulled 15 feet toward the plasma ooze (30 feet on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Plasma Drain",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> each creature and wielded object with the tech trait within 100 feet of the plasma ooze must attempt a DC 36 Fortitude Saving Throw save. For each target that fails this save, the ooze regains 15 Healing Damage Hit Points and the object loses half of its remaining charges (if battery-powered).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Plasma Slag",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A creature damaged by the ooze's pseudopod must succeed at a DC 36 Fortitude Saving Throw save or be Slowed 1 (Slowed 2 on a critical failure). A creature with the tech trait uses the outcome one degree of success worse than the result of its roll.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Occultism, DC 35"
+}

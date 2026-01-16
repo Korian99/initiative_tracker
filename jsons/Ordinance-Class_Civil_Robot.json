@@ -1,0 +1,257 @@
+{
+  "initiative": 0,
+  "initiativebonus": 6,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Ordinance-Class Civil Robot",
+  "type": "Creature",
+  "level": 0,
+  "traits": [
+    "Common",
+    "Medium",
+    "Construct",
+    "Robot",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 6,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "diplomacy",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "Legal Lore",
+      "modifier": 6,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "Settlement Lore",
+      "modifier": 6,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Integrated Commercial Pulsecaster Pistol",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This imposing pistol fires a jolt of paralyzing electricity from its barrel. Its remaining charges are visible as glowing lines of energy radiating down its body. Pulsecaster pistols are often used by bounty hunters and law enforcement who need to keep their targets alive.</p>",
+      "level": 0,
+      "price": "30 sp",
+      "traits": [
+        "nonlethal",
+        "tech"
+      ]
+    },
+    {
+      "name": "Flashlight (Commercial)",
+      "quantity": 1,
+      "description": "<p>A flashlight sheds bright light. A commercial flashlight emits light in a 30-foot emanation (and dim light in the next 30 feet).</p>",
+      "level": 0,
+      "price": "1 sp",
+      "traits": [
+        "tech"
+      ]
+    },
+    {
+      "name": "Medkit (Commercial)",
+      "quantity": 1,
+      "description": "<p>These contain analgesics, bandages, sterile gauze, and suturing tools necessary for Medicine checks to @UUID[Compendium.sf2e.actions.Item.Administer First Aid], @UUID[Compendium.sf2e.actions.Item.Treat Disease], @UUID[Compendium.sf2e.actions.Item.Treat Poison], or @UUID[Compendium.sf2e.actions.Item.Treat Wounds].</p>",
+      "level": 1,
+      "price": "50 sp",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 3,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 18,
+    "max": 18,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "void",
+    "vitality"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 2
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Exigency",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once every 10 minutes</p>\n<p><strong>Trigger</strong> A creature targets the robot with an attack</p><hr /><p><strong>Effect</strong> The robot overclocks its processing power to dodge, gaining a +2 circumstance bonus to its AC against the triggering attack.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Pulsecaster Pistol",
+      "bonus": 7,
+      "traits": [
+        "reload-1",
+        "tech"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Slam",
+      "bonus": 6,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+2)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Photographic Recall",
+      "actions": null,
+      "traits": [
+        "concentrate",
+        "exploration"
+      ],
+      "description": "<p>After receiving a request for information about a named location or a local law from a non-hostile creature, the ordinance-class robot spends 5 minutes to consult its database, automatically succeeding at a Recall Knowledge check to answer the question. At the GM's discretion, the information might not be available to the robot.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Scrutinize",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The ordinance-class civil robot scans all creatures in a 15ft Type:cone, attempting a single Legal Lore check and comparing the result to the Deception DC of each creature in the area. If the robot succeeds and the creature is known to have broken local laws, the robot gains a +1 circumstance bonus to Strikes and Athletics checks to Grapple the creature for 24 hours.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 14"
+}

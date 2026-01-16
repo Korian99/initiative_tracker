@@ -1,0 +1,238 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tregalxi",
+  "type": "Creature",
+  "level": 3,
+  "traits": [
+    "Common",
+    "Medium",
+    "Elemental",
+    "Metal"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "wire sense (imprecise) 30 feet"
+  ],
+  "perception": {
+    "value": 8,
+    "note": "wire sense (imprecise) 30 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Talican"
+  ],
+  "skills": [
+    {
+      "name": "computers",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Wire Sense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A tregalxi can sense the presence of electrical wires within 30 feet as an imprecise sense.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 54,
+    "max": 54,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "paralyzed",
+    "poison",
+    "sleep"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "electricity",
+      "value": 5
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Insulated Shell",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a tregalxi is reduced to less than half their Hit Points, their insulated wire shell breaks, freeing their contained radiation. All electricity damage dealt by the tregalxi instead becomes poison damage. When a creature takes poison damage from a tregalxi, it becomes Sickened 1 for 1 minute with no way to reduce the condition.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, burrow 15ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Volt Burst",
+      "bonus": 10,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d12",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d4",
+          "type": "persistent electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent electricity"
+        }
+      ],
+      "effects": [
+        "short-circuit"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Live Wire",
+      "bonus": 10,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Wire Extension",
+      "bonus": 12,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+1",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+1)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "short-circuit"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Circuit Splice",
+      "actions": 2,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p>The tregalxi extends their wire frame to all enemies within 30 feet. Each creature takes 2d6 Piercing Damage and 2d6 Electricity Damage damage (Basic DC 20 Reflex Saving Throw save). The tregalxi can't use Circuit Splice again for 1d4 rounds.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Short Circuit",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When a creature makes direct contact with a tregalxi's wires, the creature takes 1d6 Electricity Damage damage with a Basic DC 20 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 18"
+}

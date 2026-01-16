@@ -1,0 +1,243 @@
+{
+  "initiative": 0,
+  "initiativebonus": 17,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Arabuk",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Common",
+    "Large",
+    "Animal"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "darkvision 60 feet, snow vision"
+  ],
+  "perception": {
+    "value": 17,
+    "note": "darkvision 60 feet, snow vision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 14,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Snow Vision",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Snow doesn’t impair an arabuk’s vision; it ignores concealment from snowfall.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 27,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 13,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 125,
+    "max": 125,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "cold"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "sonic",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "40 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaws",
+      "bonus": 20,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d8+6",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8+6)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Antlers",
+      "bonus": 20,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "sonic"
+        },
+        {
+          "roll": "1d8+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "sonic"
+        },
+        {
+          "roll": "(1d8+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Antler Reverberation",
+      "bonus": 16,
+      "traits": [
+        "sonic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d8",
+          "type": "sonic"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d8)*2",
+          "type": "sonic"
+        }
+      ],
+      "effects": [
+        "avalanche"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Avalanche",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A non-arabuk creature standing on snow that fails its Reflex save against an arabuk's antler reverberation is knocked Prone. Up to a 20ft Cube of snow in the area of an antler reverberation collapses, dealing 5d6 Bludgeoning Damage damage to adjacent creatures (Basic DC 24 Reflex Saving Throw save). On a slope, this causes the snow and any creatures that fail its save to move downhill 30 feet per round. At the start of its turn, each creature caught in the avalanche takes 3d6 Bludgeoning Damage damage (Basic DC 24 Reflex Saving Throw save) and, on a failure, is still caught in the avalanche.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Clatter",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The arabuk clatters its antlers together by shaking its head. Until the end of its turn, any creature hit by its antlers must succeed at a DC 22 Fortitude Saving Throw save or become Stunned 1 (Stunned 2 on a critical failure).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Glacial Stride",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The arabuk Strides twice with a +10-foot circumstance bonus to Speed, ignoring difficult terrain caused by ice, snow, or other arctic conditions.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 24"
+}

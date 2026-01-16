@@ -1,0 +1,197 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Electrovore",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "Small",
+    "Beast"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    " electricsense (imprecise) 60 feet"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision,  electricsense (imprecise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 1
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Electricsense",
+      "actions": null,
+      "traits": [],
+      "description": "<p>An electrovore can sense electricity, including the electrical impulses found in most living creatures' nervous systems, as an imprecise sense at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 17,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 30,
+    "max": 30,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "electricity"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "20 ft, fly 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 8,
+      "traits": [
+        "agile"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d4+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "siphon"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Zap",
+      "bonus": 10,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d12+1",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d12+1)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Electrical Discharge",
+      "actions": 2,
+      "traits": [
+        "electricity"
+      ],
+      "description": "<p><strong>Effect</strong> The electrovore unleashes a shock wave that deals 2d6 Electricity Damage damage to creatures in a 10ft Type:emanation (DC 15 Reflex Saving Throw). It can't use Electrical Discharge again for 1d4 rounds.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. Items in its possession with the tech trait becomes glitching 1. If the target has the tech trait, it becomes Glitching 1.</p>\n<p><strong>Failure</strong> As success, but full damage and Glitching 2.</p>\n<p><strong>Critical Failure</strong> As success, but double damage and Glitching 3.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Siphon",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When an electrovore scores a critical hit with a tail Strike against a living creature wielding or wearing tech gear or a creature with the tech trait, it siphons off a portion of the target's electrical energy. This restores 5 Healing Damage Hit Points to the electrovore immediately, plus 1 Hit Point per minute for the next 10 minutes; the additional healing doesn't increase if the electrovore siphons multiple times.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 16"
+}

@@ -1,0 +1,222 @@
+{
+  "initiative": 0,
+  "initiativebonus": 8,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Psychic Fungus Harvester",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Small",
+    "Fungus",
+    "Mindless"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "mycelium network"
+  ],
+  "perception": {
+    "value": 8,
+    "note": "Darkvision, mycelium network",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 3,
+      "note": [
+        "amid decaying plant matter or fungi 7"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 2
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Mycelium Network",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Psychic fungi are connected to a network of psychic filaments bonding all psychic fungi from the same colony. This network grants the harvester the ability to detect creatures capable of thought within 30 feet of a bonded psychic fungus up to 1,000 feet away as an imprecise sense.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 14,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 24,
+    "max": 24,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "fatigued",
+    "mental",
+    "poison",
+    "sleep",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "cold",
+      "value": 2
+    },
+    {
+      "type": "fire",
+      "value": 2
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Release Spores",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> The harvester is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The harvester releases a cloud of spores in a 10ft Type:burst centered on a corner of its own space that lasts for 1 round. Each creature that's in the cloud or enters it is exposed to befuddling spores. If this reaction was triggered by damage from a melee attack, the triggering creature uses the outcome one degree of success worse than the result of its roll for its Fortitude save (two degrees worse if it was a jaws Strike or other Strike with the creature's mouth).</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "20 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Lash",
+      "bonus": 7,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "sporocapture"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spores",
+      "bonus": 7,
+      "traits": [
+        "brutal"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+2",
+          "type": "poison"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+2)*2",
+          "type": "poison"
+        }
+      ],
+      "effects": [
+        "befuddling-spores"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Befuddling Spores",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p>Plants and fungi are immune</p>\n<p><strong>Saving Throw</strong> DC 18 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> Stupefied 1 (1 round)</p>\n<p><strong>Stage 2</strong> Stupefied 2 (1 round)</p>\n<p><strong>Stage 3</strong> Slowed 1 and Stupefied 3 (1 round)</p>\n<p><strong>Stage 4</strong> Paralyzed and Stupefied 4 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sporocapture",
+      "actions": null,
+      "traits": [
+        "incapacitation",
+        "mental"
+      ],
+      "description": "<p>An intelligent creature hit by a harvester's lash must attempt a DC 18 Will Saving Throw save. The effect lasts until the end of the harvester's next turn, but the harvester can Sustain it, keeping the lash unusable on the target's forehead. A creature that succeeds at its save is temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is Fascinated with the harvester.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated with the harvester and must spend each of its actions on its turn to move closer to the harvester as expediently as possible while avoiding obvious dangers. If a fascinated creature is adjacent to the harvester, it stays still and doesn't act. If the creature is attacked, the fascination ends.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 15"
+}

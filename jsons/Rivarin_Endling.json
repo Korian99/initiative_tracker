@@ -1,0 +1,209 @@
+{
+  "initiative": 0,
+  "initiativebonus": 19,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Rivarin Endling",
+  "type": "Creature",
+  "level": 10,
+  "traits": [
+    "Common",
+    "huge",
+    "Incorporeal",
+    "Undead",
+    "Unholy"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "warsight (precise) 60 feet"
+  ],
+  "perception": {
+    "value": 19,
+    "note": "Darkvision, warsight (precise) 60 feet",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 22,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": -5
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": -3
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 7
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Warsight",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A rivarin endling can sense the presence of bleeding, frightened, or wounded creatures as a precise sense at the listed range.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 28,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 22,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 138,
+    "max": 138,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "paralyzed",
+    "poison",
+    "precision",
+    "unconscious"
+  ],
+  "resistances": [
+    {
+      "doubleVs": [
+        "non-magical"
+      ],
+      "exceptions": [
+        "force",
+        "ghost-touch",
+        "spirit",
+        "vitality"
+      ],
+      "type": "all-damage",
+      "value": 10
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Reactive Strike",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rejuvenation",
+      "actions": null,
+      "traits": [
+        "divine"
+      ],
+      "description": "<p>When an endling is destroyed, it reforms after 2d4 days within the area where it first emerged, fully healed. An endling can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting, such as an act of decolonization, ecological restoration, or curing the disease responsible for its extinction.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "35 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 21,
+      "traits": [
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "bloodthirsty"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Bloodthirsty",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Creatures hit by a rivarin endling's Strikes must succeed at a DC 29 Fortitude Saving Throw save or take 1d10 Persistent,bleed Damage damage.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Buck",
+      "actions": 2,
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The rivarin endling Flies, then rears up in a terrifying display. Creatures within 30 feet must attempt a DC 29 Will Saving Throw save.</p>\n<p><strong>Success</strong> The creature is Frightened 1.</p>\n<p><strong>Failure</strong> The creature is Frightened 2 and must spend the first action of its next turn Fleeing.</p>\n<p><strong>Critical Failure</strong> The creature is Frightened 3 and fleeing for 1 round.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 27"
+}

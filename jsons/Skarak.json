@@ -1,0 +1,268 @@
+{
+  "initiative": 0,
+  "initiativebonus": 23,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Skarak",
+  "type": "Creature",
+  "level": 13,
+  "traits": [
+    "Common",
+    "huge",
+    "Beast"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Tremorsense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 23,
+    "note": "Darkvision, Tremorsense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 27,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 24,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 8
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 5
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 4
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 32,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 23,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 300,
+    "max": 300,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "acid"
+  ],
+  "resistances": [
+    {
+      "type": "cold",
+      "value": 10
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "fire",
+      "value": 10
+    }
+  ],
+  "defensiveAbilities": [],
+  "speed": "25 ft, burrow 15ft, climb 25ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Bite",
+      "bonus": 27,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d8+12",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d8+12)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Horn",
+      "bonus": 27,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "3d10+12",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(3d10+12)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "knockdown"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Caustic Web",
+      "bonus": 25,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "3d8+4",
+          "type": "acid"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8)*2",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "(3d8+4)*2",
+          "type": "acid"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Etheric Web",
+      "bonus": 25,
+      "traits": [],
+      "damageRolls": [],
+      "critRolls": [],
+      "effects": [
+        "etheric-tether"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Destructive",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A skarak's horn Strike bypasses the Hardness of structures made primarily of wood, stone, and metal.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Etheric Tether",
+      "actions": null,
+      "traits": [
+        "occult"
+      ],
+      "description": "<p>A creature hit by a skarak's etheric web is Grabbed by the skarak. The creature isn't Immobilized, but it can't move beyond the maximum range of the skarak's etheric web. A creature can sever the etheric web with a Strike against AC 30 that deals at least 18 fire or force damage. This deals no damage to the skarak.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rampage",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The skarak makes a horn Strike against each creature within reach. These attacks count toward the skarak's multiple attack penalty, but the multiple attack penalty doesn't increase until after the skarak makes all these attacks.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swallow Whole",
+      "actions": 1,
+      "traits": [
+        "attack"
+      ],
+      "description": "<p>Large, (3d8+6) Bludgeoning Damage, Rupture 24</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an athletics|defense:reflex check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is Grabbed, is Slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim Escapes this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is Off-Guard against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>Effect: Engulf and Swallow Whole</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Tether Pull",
+      "actions": 1,
+      "traits": [
+        "occult",
+        "teleportation"
+      ],
+      "description": "<p><strong>Requirements</strong> A creature is Grabbed by the skarak's etheric tether</p><hr /><p><strong>Effect</strong> The creature must succeed at a DC 33 Will Saving Throw save or be teleported to a space adjacent to the skarak of the skarak's choosing. This ends the grabbed condition from etheric tether unless the creature critically fails the save.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 31"
+}

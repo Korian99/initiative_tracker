@@ -1,0 +1,234 @@
+{
+  "initiative": 0,
+  "initiativebonus": 6,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Kaylix",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Uncommon",
+    "Large",
+    "Animal"
+  ],
+  "source": "Starfinder Society Scenario #1-02: Mystery of the Frozen Moon",
+  "remaster": true,
+  "senses": [],
+  "perception": {
+    "value": 6,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 9,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 8,
+      "note": [
+        "in its natural environment of snowy forests 10"
+      ],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -2
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Arctic Adaptation",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The kaylix treats environmental cold effects as if they were two steps less severe, and it isn't impeded by difficult terrain caused by snow, permafrost, ice, or other arctic terrain.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 5,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 22,
+    "max": 22,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Defensive Fling",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The kaylix has a creature Grabbed</p>\n<p><strong>Trigger</strong> A creature other than the one the kaylix has grabbed makes a melee or ranged attack against the kaylix from within the range of the kaylix's quill Strike</p><hr /><p><strong>Effect</strong> The kaylix makes a quill Strike against the attacking creature. This Strike doesn't count toward the kaylix's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "30 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 6,
+      "traits": [
+        "agile",
+        "reach-10",
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fangs",
+      "bonus": 6,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Quill",
+      "bonus": 5,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4+4",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+4)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Concealing Condensation",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The kaylix opens gill-like vents on the side of its neck and releases hot, moist air that forms a concealing cloud of white mist in a 20ft Type:emanation centered on its location. This mist lingers until the end of the kaylix's next turn. All creatures within the mist become Concealed, and all creatures outside the mist become concealed to creatures within it.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Pounce",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The kaylix Strides and makes a Strike at the end of that movement. If the kaylix began this action Hidden, it remains hidden until after the attack.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The kaylix deals 1d6 extra precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 15"
+}

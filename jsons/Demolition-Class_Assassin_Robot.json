@@ -1,0 +1,257 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Demolition-Class Assassin Robot",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Medium",
+    "Construct",
+    "Robot",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 2
+  },
+  "wisdom": {
+    "value": -3
+  },
+  "charisma": {
+    "value": 1
+  },
+  "items": [
+    {
+      "name": "Integrated Breaching Gun",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This snub-nosed scattergun is commonly used to blast through doors and walls. Smaller than a reaction breacher, this scattergun is infamous for its mighty recoil.</p>",
+      "level": 0,
+      "price": "30 sp",
+      "traits": [
+        "analog",
+        "concussive",
+        "kickback",
+        "ranged-shove",
+        "razing"
+      ]
+    },
+    {
+      "name": "Integrated tools appropriate for disguise shell",
+      "quantity": 1,
+      "description": "",
+      "level": 0,
+      "price": "",
+      "traits": []
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 95,
+    "max": 95,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "bleed",
+    "death-effects",
+    "disease",
+    "doomed",
+    "drained",
+    "fatigued",
+    "healing",
+    "mental",
+    "nonlethal-attacks",
+    "paralyzed",
+    "poison",
+    "sickened",
+    "spirit",
+    "unconscious",
+    "void",
+    "vitality"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "electricity",
+      "value": 6
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Burn Protocol",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The circuitry of an assassin robot self-destructs upon the robot's destruction, making tracing its owner extremely difficult. Add 10 to the DC of a Computers check to recover data from a destroyed assassin robot.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "40 ft, ",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Breaching Gun",
+      "bonus": 13,
+      "traits": [
+        "analog",
+        "concussive",
+        "kickback",
+        "razing"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d10+2",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d10+2)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Blade Arm",
+      "bonus": 15,
+      "traits": [
+        "analog",
+        "versatile-p"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8+7",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+7)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Breaching Rush",
+      "actions": 3,
+      "traits": [],
+      "description": "<p>The demolition-class assassin robot attempts to close the distance between it and its target, removing all obstacles in its way. The robot makes a ranged Strike with its breaching gun against the Force open DC of a door or other obstacle. If successful, the obstacle gains the broken condition. The robot then Strides twice toward (and even through) the obstacle, but if the obstacle still bars the robot's movement, it stops adjacent to the obstacle and attempts an Athletics check to Force Open the obstacle with a +4 circumstance bonus.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Disguise Shell",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The demolition-class assassin robot enters or leaves its disguised form. While in its disguised form, it loses the ability to make Strikes or use its Breaching Rush ability, but it becomes indistinguishable from a noncombatant robot or drone model that it's based on; it gets an automatic result of 33 on Deception checks and DCs to pass as a robot of that model. Damage to the robot can prevent this disguise from being effective at the GM's discretion.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Sneak Attack",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The demolition-class assassin robot's Strikes deal an additional 2d6 precision damage to Off-Guard creatures.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Target Tracking",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The demolition-class assassin robot establishes a target lock on a creature it can see within 120 feet. The creature can't become Concealed against the robot or Create a diversion against the robot. This ability lasts until the robot loses line of sight with the target or the target otherwise becomes hidden.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 20"
+}

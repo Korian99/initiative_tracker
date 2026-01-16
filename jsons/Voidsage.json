@@ -1,0 +1,641 @@
+{
+  "initiative": 0,
+  "initiativebonus": 16,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Voidsage",
+  "type": "Creature",
+  "level": 8,
+  "traits": [
+    "Uncommon",
+    "huge",
+    "Aberration",
+    "Cosmic",
+    "Void"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 16,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Aklo",
+    "Alghollthu",
+    "Common"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "deception",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "occultism",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "piloting",
+      "modifier": 20,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "society",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 18,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "Lore (any one subcategory)",
+      "modifier": 19,
+      "note": "",
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 6
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 7
+  },
+  "wisdom": {
+    "value": 2
+  },
+  "charisma": {
+    "value": 5
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Nanite Projection",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A voidsage can share the senses and read the surface thoughts of creatures affected by their quantum nanites. A voidsage can project its mind into just one creature at a time, and choose which affected creature is the focus of its nanite projection as a single action, which has the concentrate trait. The creature also takes a –1 circumstance penalty to Will saves against any of the voidsage's spells as long as it's the focus of the voidsage's nanite projection.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 18,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 117,
+    "max": 117,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Nanite Network",
+      "actions": null,
+      "traits": [
+        "aura",
+        "disease"
+      ],
+      "description": "<p>5 feet. A voidsage exudes a cloud of nanites. A creature entering the aura or starting its turn in the aura is exposed to quantum nanites.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Revert",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> The voidsage takes damage while projecting</p><hr /><p><strong>Effect</strong> The voidsage stops projecting and gains 50 temporary Hit Points that last for 10 minutes.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "10 ft, fly 60ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Tentacle",
+      "bonus": 19,
+      "traits": [
+        "agile",
+        "finesse",
+        "magical",
+        "reach-15"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "quantum-nanites"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Thought Ray",
+      "bonus": 19,
+      "traits": [
+        "mental"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+7",
+          "type": "mental"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+7)*2",
+          "type": "mental"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Quantum Nanites",
+      "actions": null,
+      "traits": [
+        "disease",
+        "occult"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 24 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 1 day</p>\n<p><strong>Stage 1</strong> Sickened 2 (1 day)</p>\n<p><strong>Stage 2</strong> Sickened 3 (1 day)</p>\n<p><strong>Stage 3</strong> Sickened 4 and Paralyzed (1 day)</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Occult Innate Spells",
+      "type": "innate",
+      "bonus": 18,
+      "dc": 26,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 4,
+      "cantrips": [
+        {
+          "name": "Analyze Target",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 hour",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You focus on the target, gathering data as magical holograms display information. When the casting is complete, you learn biometric information about the target, including its fingerprints, medical conditions, and other basic physiological information. You or anyone you advise about the analysis gains a +1 status bonus to checks to Impersonate the creature, to Treat Wounds on the creature, and to Recall Knowledge about it. If the target is illusory or under the effects of illusion magic, you detect this only if the effect's rank is lower than the rank of your analyze target spell.</p>\n<p>Spell Effect: Analyze Target</p><hr /><p><strong>Heightened (3rd)</strong> The circumstance bonus increases to +2, and you can target up to 10 creatures.</p>\n<p><strong>Heightened (6th)</strong> The circumstance bonus increases to +3, and you can target any number of creatures.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "FW59e5XgPl57Z0fz"
+        },
+        {
+          "name": "Eldritch Lance",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "attack",
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You condense a beam of mind-assaulting eldritch energy from the dark spaces between the stars and fire it at a target. Make a ranged spell attack roll against the target's AC. If you hit, you deal 2d6 mental damage. On a critical success, you deal double damage.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "HSOYrdjx2RUgyvFV"
+        },
+        {
+          "name": "Implant Data",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 day",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 computer",
+          "save": "",
+          "description": "<p>You reprogram a computer or device to display a chosen piece of data when accessed. You can implant up to one piece of data per spell rank. A piece of data can be a simple fact, such as a creature or object's location or physical description; an image of a creature or object; or a simple statement of no more than 300 characters. When the target computer or device is accessed, this implanted data is the first data the accessing creature gains, regardless of what data the creature is looking for. Implanted data doesn't prevent a creature from accessing other information stored on a device, change how the device functions, or otherwise inhibit the device from functioning. If this spell's duration ends before a creature accesses the implanted data, the information vanishes.</p><hr /><p><strong>Heightened (3rd)</strong> The duration is one year.</p>\n<p><strong>Heightened (6th)</strong> The duration is unlimited.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "UwShheY2aiX5eBip"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Akashic Download",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "3",
+          "duration": "1 day",
+          "range": "",
+          "area": "",
+          "targets": "",
+          "save": "",
+          "description": "<p>You execute a psychic search of the Akashic Record for information about a specific topic and magically transfer this data to your comm unit or computer. When you Cast this Spell, choose any skill in which you're trained that has the Recall Knowledge action.</p>\n<p>Any time during the duration, you can consult your comm unit while attempting a Recall Knowledge check using your chosen skill. This check gains a +1 status bonus. Checking your comm unit is part of the action to Recall Knowledge. You must be holding the comm unit to do so. The comm unit instantly compiles and displays snippets and selections from various media relevant to the topic, which grants you the bonus. If you roll a critical failure on this check, you get a failure instead. If the check is successful and the subject is a creature, you gain additional information or context about the creature. Once you reference the comm unit, the spell ends. When the spell ends, your access to the Akashic Record ends, and all the information you downloaded returns to the Akashic Record.</p>\n<p>Spell Effect: Akashic Download</p><hr /><p><strong>Heightened (3rd)</strong> You can reference your comm unit three times before the spell ends.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "kkSTMF2lR62hPzFk"
+        },
+        {
+          "name": "Delete (at will)",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 dataset or tech item with the tracking trait",
+          "save": "",
+          "description": "<p>You delete data from a device or object with a flamboyant magical gesture. This data might be handwritten, printed, or digital. You delete up to 1,500 words' worth of text, one page of content, or one display screen worth of text or other visual information. Non-magical writing in or on an unattended or held object is automatically deleted. Attempt a counteract check to delete digital or magical writing. If you fail to delete writing that's part of a hazard, you trigger the hazard. This can't be used to delete the contents of a spellbook or similar means of storing magical formulas or spells.</p>\n<p>If you target an attended tech item with the tracking trait, attempt a counteract check. On a success, the item becomes glitching 1. A creature holding the item can Interact to restart the software, reducing the glitching value by 1.</p><hr /><p><strong>Heightened (7th)</strong> You can delete all the data stored locally on a single device or book, or all the data on a device or book related to a specific name, topic, or category.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "9r46DBnDXe0ObjnC"
+        },
+        {
+          "name": "Mind Skewer",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "60 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "Basic will",
+          "description": "<p>You overload a creature's mind with a glut of psychic information or divine judgments. The mental onslaught deals 2d6 mental damage. On a critical failure, the target is also Stupefied 2 for 1 round.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "yvSZOjAbkrmuxAb2"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Logic Bomb",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "until the next time you make your daily preparations",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 computer or item with the tech trait",
+          "save": "Basic will",
+          "description": "<p>You implant a hazard containing a mind-blowing amount of information into the target. The hazard has a Stealth and Disable DC equal to your spell DC and requires one successful computers check to disable. The first time a creature unsuccessfully attempts to access, destroy, or otherwise manipulate the target (such as using the Computers skill, failing to hit with a Strike, or otherwise), logic bomb detonates, and the creature takes 6d6 mental damage with a basic Will save. The spell ends when it's triggered or the duration ends, whichever comes first.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3aAs0YfCgrwHtbMa"
+        },
+        {
+          "name": "Logic Bomb",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 2,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "until the next time you make your daily preparations",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 computer or item with the tech trait",
+          "save": "Basic will",
+          "description": "<p>You implant a hazard containing a mind-blowing amount of information into the target. The hazard has a Stealth and Disable DC equal to your spell DC and requires one successful computers check to disable. The first time a creature unsuccessfully attempts to access, destroy, or otherwise manipulate the target (such as using the Computers skill, failing to hit with a Strike, or otherwise), logic bomb detonates, and the creature takes 6d6 mental damage with a basic Will save. The spell ends when it's triggered or the duration ends, whichever comes first.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3aAs0YfCgrwHtbMa"
+        },
+        {
+          "name": "Skim Data (at will)",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "one dataset contained within a touched object",
+          "save": "",
+          "description": "<p>You touch one object and concentrate on a dataset contained within it, such as a story, message, file, infosphere site, audio recording, or video. You understand the gist of the dataset and can quickly locate the most relevant pages or sections to your search. If the dataset is written or otherwise communicated in a language you don't know, or you attempt to gain information from a computer you don't have access to (such as one with a password you don't know), the spell fails.</p>\n<p>If you Cast this Spell as part of a Research activity, you treat a critical failure as a failure instead.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "5rLvPp8waV0gEssL"
+        }
+      ],
+      "lv3spells": [
+        {
+          "name": "Hypnotize (at will)",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "illusion",
+            "manipulate",
+            "subtle",
+            "visual"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 minute",
+          "range": "120 feet",
+          "area": "10ft burst",
+          "targets": "",
+          "save": "will",
+          "description": "<p>You create a cloud of mesmerizing patterns and colors that hovers in the air. Creatures are Dazzled while inside the cloud. In addition, a creature must attempt a Will saving throw if it is inside the cloud when you cast it, when it enters the cloud, when it ends its turn within the cloud, or if it uses a Seek or Interact action on the cloud. A creature currently Fascinated by hypnotize doesn't attempt new saves.</p>\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is fascinated by the cloud.</p>\n<p><strong>Critical Failure</strong> The target is fascinated by the cloud. While it remains fascinated, it can't use reactions.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "MUBRN9bskvPSckaN"
+        },
+        {
+          "name": "Mind Reading (at will)",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "detection",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "Sustained up to 1 round or sustained up to 1 minute",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your mind reading for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target perceives vague surface thoughts from you when you Cast the Spell.</p>\n<p><strong>Success</strong> You find out whether the target's Intelligence modifier is higher than, equal to, or lower than yours.</p>\n<p><strong>Failure</strong> You perceive vague surface thoughts from the target when you Cast the Spell, and you find out whether its Intelligence is higher than, equal to, or lower than yours.</p>\n<p><strong>Critical Failure</strong> As failure, and for the duration of the spell, you can Sustain the spell to detect the target's surface thoughts again. The target doesn't receive any additional saves.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ekEl4bsmb7hfqmxL"
+        },
+        {
+          "name": "Void Whispers",
+          "type": "spell",
+          "level": 3,
+          "heightenedLevel": 3,
+          "timesPrepared": 1,
+          "traits": [
+            "auditory",
+            "concentrate",
+            "incapacitation",
+            "linguistic",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "varies",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "will",
+          "description": "<p>The target hears ominous sounds containing unspeakable mysteries from beyond the stars that disorient its mind. The target attempts a Will save.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target hears the strange whispers, becoming Stupefied 1 for 1 round.</p>\n<p><strong>Failure</strong> The target begins to wander aimlessly, using each action to Step in a random direction. When it moves, the target takes the safest route and doesn't enter hazardous terrain. The spell has a duration of 1 minute or until a creature uses a hostile action against the target.</p>\n<p><strong>Critical Failure</strong> As failure, except the target babbles incoherently. Any creature that begins its turn within 20 feet of the target must attempt a Will saving throw. On a failure, it must use its first action on its next turn to Step in a random direction and becomes immune to this spell for 24 hours. This is an incapacitation effect.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "82PbnwwVvoedS68V"
+        }
+      ],
+      "lv4spells": [
+        {
+          "name": "Eldritch Wrath",
+          "type": "spell",
+          "level": 4,
+          "heightenedLevel": 4,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "mental"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "120 feet",
+          "area": "20ft burst",
+          "targets": "",
+          "save": "will",
+          "description": "<p>You channel the bizarre powers that exist beyond the outer reaches of the universe, dealing 3d12 mental damage to each creature in the area as phantasmal claws, jaws, and tentacles lash out at each target. Each creature in the area must attempt a Will save. The area is difficult terrain for any creature sickened by the effects of this spell.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is Sickened 2.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d12.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "qNjqbfVBcyD3CaSa"
+        }
+      ],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Occultism, DC 24"
+}

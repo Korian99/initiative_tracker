@@ -98,7 +98,7 @@
         "linguistic",
         "mental"
       ],
-      "description": "<p>The dragon forges a bond with a willing creature over an hour-long ceremony, making them a bonded companion. The dragon can always sense their distance from the companion and if they're moving closer or farther away. A bonded companion automatically critically succeeds on basic saving throws against the oath dragon's abilities and spells. This link is permanent and neither can form a new link until one member dies. If the dragon or the bonded companion dies, the survivor learns the identity of the killer, but the shock leaves the survivor Stupefied 2 for 24 hours and prevents forming a new link for 1 month.</p>",
+      "description": "<p>The dragon forges a bond with a willing creature over an hour-long ceremony, making them a bonded companion. The dragon can always sense their distance from the companion and if they're moving closer or farther away. A bonded companion automatically critically succeeds on basic saving throws against the oath dragon's abilities and spells. This link is permanent and neither can form a new link until one member dies. If the dragon or the bonded companion dies, the survivor learns the identity of the killer, but the shock leaves the survivor Stupefied 2 for 24 hours and prevents forming a new link for 1 month.</p>\n<p>Effect: Binding Oath</p>",
       "collapsed": false
     }
   ],
@@ -126,7 +126,7 @@
     "usedAttribute": "wisdom",
     "modifications": []
   },
-  "savenote": "",
+  "savenote": "+2 status to all saves vs. emotion",
   "hp": {
     "value": 255,
     "max": 255,
@@ -155,7 +155,7 @@
       "name": "Shielding Wing",
       "actions": -1,
       "traits": [],
-      "description": "<p><strong>Trigger</strong> The oath dragon or a bonded companion within 15 feet is targeted with an attack</p><hr /><p><strong>Effect</strong> The dragon raises its wing to protect itself or the bonded companion, providing a +2 circumstance bonus to AC against the triggering attack. If the dragon is flying, it descends 10 feet after the attack is complete.</p>",
+      "description": "<p><strong>Trigger</strong> The oath dragon or a bonded companion within 15 feet is targeted with an attack</p><hr /><p><strong>Effect</strong> The dragon raises its wing to protect itself or the bonded companion, providing a +2 circumstance bonus to AC against the triggering attack. If the dragon is flying, it descends 10 feet after the attack is complete.</p>\n<p>Effect: Shielding Wing</p>",
       "collapsed": false
     }
   ],
@@ -171,27 +171,25 @@
       ],
       "damageRolls": [
         {
-          "roll": "1d6",
-          "type": "spirit"
-        },
-        {
           "roll": "3d12+14",
           "type": "piercing"
+        },
+        {
+          "roll": "1d6",
+          "type": "spirit"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d6)*2",
-          "type": "spirit"
-        },
-        {
           "roll": "(3d12+14)*2",
           "type": "piercing"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "spirit"
         }
       ],
-      "effects": [
-        "pull"
-      ],
+      "effects": [],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
@@ -208,25 +206,27 @@
       ],
       "damageRolls": [
         {
-          "roll": "1d6",
-          "type": "spirit"
+          "roll": "3d8+14",
+          "type": "slashing"
         },
         {
-          "roll": "2d8+11",
-          "type": "slashing"
+          "roll": "1d6",
+          "type": "spirit"
         }
       ],
       "critRolls": [
         {
-          "roll": "(1d6)*2",
-          "type": "spirit"
+          "roll": "(3d8+14)*2",
+          "type": "slashing"
         },
         {
-          "roll": "(2d8+11)*2",
-          "type": "slashing"
+          "roll": "(1d6)*2",
+          "type": "spirit"
         }
       ],
-      "effects": [],
+      "effects": [
+        "pull"
+      ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
@@ -261,7 +261,7 @@
         }
       ],
       "effects": [
-        "push"
+        "push-15-feet"
       ],
       "usedAttributeToHit": "strength",
       "usedAttributeDamage": "strength",

@@ -1,0 +1,223 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Apari",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "Large",
+    "Animal"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 11,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "survival",
+      "modifier": 15,
+      "note": [],
+      "usedAttribute": "wisdom",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 4
+  },
+  "dexterity": {
+    "value": 2
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -4
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "(20 with broken carapace); carapace",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 11,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 140,
+    "max": 140,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "swarm-mind",
+    "paralyzed",
+    "sickened",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Carapace",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The apari's carapace has Hardness 10, reducing any damage the apari takes by that amount. Once the apari is reduced to fewer than half its Hit Points, or immediately upon taking damage from a critical hit, the carapace breaks, removing the Hardness and reducing its AC to 20. An apari with a broken carapace gains resistance 5 to precision damage and weakness 5 to both area damage and splash damage. It also gains the Swarming Bites aura.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Swarming Bites",
+      "actions": null,
+      "traits": [
+        "aura"
+      ],
+      "description": "<p>10 feet. The constituents of an apari with a broken carapace angrily swarm around its body. A creature that begins its turn in this aura takes 4d6 Piercing Damage damage with a Basic DC 21 Fortitude Saving Throw save. A creature that fails this save is also Sickened 1 (or Sickened 2 on a critical failure).</p>\n<p>Can alternatively switch to 4d6 Bludgeoning Damage or 4d6 Slashing Damage with the Fungible ability.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, burrow 10ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 18,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+7",
+          "type": "slashing"
+        },
+        {
+          "roll": "1d10",
+          "type": "persistent slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+7)*2",
+          "type": "slashing"
+        },
+        {
+          "roll": "(1d10)*2",
+          "type": "persistent slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Spike",
+      "bonus": 16,
+      "traits": [
+        "propulsive"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d10+5",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+5)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constituent Sortie",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The apari's carapace isn't broken</p><hr /><p><strong>Effect</strong> The apari releases a bevy of tiny, flying constituents in a 15ft Type:cone that sting all within. Each creature in the area takes 4d6 Piercing Damage damage with a Basic DC 21 Reflex Saving Throw save.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Foraging Constituents",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The apari Seeks by dispersing constituents to scan a wide area, attempting to find hidden or undetected creatures within 90 feet.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Fungible",
+      "actions": 1,
+      "traits": [
+        "morph"
+      ],
+      "description": "<p>The apari's constituents can change their physiology, taking advantage of an opponent's weakness. The apari alters the type of damage it deals with its claw attack (which also affects the type of persistent damage), its Constituent Sortie ability, or its swarming bites aura, choosing from the following: bludgeoning, piercing, or slashing.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Nature, DC 23"
+}

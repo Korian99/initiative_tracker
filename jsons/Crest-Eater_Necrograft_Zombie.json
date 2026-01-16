@@ -1,0 +1,266 @@
+{
+  "initiative": 0,
+  "initiativebonus": 12,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Crest-Eater Necrograft Zombie",
+  "type": "Creature",
+  "level": 7,
+  "traits": [
+    "Common",
+    "Large",
+    "Mindless",
+    "Tech",
+    "Undead",
+    "Zombie"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision",
+    "Lifesense 60ft imprecise"
+  ],
+  "perception": {
+    "value": 12,
+    "note": "Darkvision, Lifesense 60ft imprecise",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 17,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 6
+  },
+  "intelligence": {
+    "value": -5
+  },
+  "wisdom": {
+    "value": 1
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 24,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 19,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 170,
+    "max": 170,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [
+    "death-effects",
+    "disease",
+    "mental",
+    "paralyzed",
+    "poison",
+    "unconscious"
+  ],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "type": "holy",
+      "value": 15
+    },
+    {
+      "type": "slashing",
+      "value": 15
+    },
+    {
+      "type": "vitality",
+      "value": 15
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Necrograft",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A necrograft zombie's necrografts can be disabled for 1 hour by a creature that succeeds at a DC 22 Religion  check. Attempting to do so can typically be done only while within reach of the zombie, and is a 2-action activity that has the manipulate trait. A necrograft zombie with disabled necrografts is Slowed 1 and can't use any reactions.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Rapid Decomposition",
+      "actions": -1,
+      "traits": [],
+      "description": "<p>A necrograft zombie must use this reaction unless its necrograft is disabled</p>\n<p><strong>Trigger</strong> The zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie rapidly decomposes into a heap of rotting biomass, dealing 2d8 Poison Damage|options:area-damage] damage in a 15ft Type:emanation (Basic DC 22 Reflex Saving Throw save) and making that area hazardous terrain for 1 minute (1d4 Void Damage damage). This ability destroys any organic items on the zombie (including necrografts).</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stench",
+      "actions": null,
+      "traits": [
+        "aura",
+        "olfactory"
+      ],
+      "description": "<p>10 feet, DC 22 Fortitude Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>A creature entering the aura or starting its turn in the area must succeed at a Fortitude save or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure). A creature that succeeds at its save or recovers from being sickened is temporarily immune to all stench auras for 1 minute.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "45 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Necrotic Bite",
+      "bonus": 18,
+      "traits": [
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d8",
+          "type": "void"
+        },
+        {
+          "roll": "2d8+9",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8)*2",
+          "type": "void"
+        },
+        {
+          "roll": "(2d8+9)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Squirming Entrails",
+      "bonus": 16,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d8+9",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d8+9)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "grab"
+      ],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Corrupted Spit",
+      "bonus": 16,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d4+3",
+          "type": "acid"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "1d6",
+          "type": "persistent void"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d4+3)*2",
+          "type": "acid"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent acid"
+        },
+        {
+          "roll": "(1d6)*2",
+          "type": "persistent void"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Constrict",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>(1d8+9) Bludgeoning Damage, Basic DC 22 Fortitude Saving Throw</p><hr /><p><details><summary>See rules...</summary>\n<p><p>The monster deals the listed amount of damage to any number of creatures Grabbed or Restrained by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p></p></details></p>",
+      "collapsed": false
+    },
+    {
+      "name": "Scree Strider",
+      "actions": null,
+      "traits": [],
+      "description": "<p>The crest-eater necrograft zombie ignores difficult terrain caused by rubble, sand, and uneven ground made of earth and stone.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Religion, DC 23"
+}

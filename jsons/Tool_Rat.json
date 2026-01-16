@@ -1,0 +1,406 @@
+{
+  "initiative": 0,
+  "initiativebonus": 0,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Tool Rat",
+  "type": "Creature",
+  "level": 2,
+  "traits": [
+    "Common",
+    "tiny",
+    "Beast"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [],
+  "perception": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [],
+  "strength": {
+    "value": 0
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 0
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Arc Rifle",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This rifle's oversized body contains a larger version of an arc pistol capacitor, with a short barrel and polycarbon stock designed to insulate the wielder from high voltage. The arc rifle's larger capacitor allows it to produce a charge with enough power to subdue a rampaging renkroda.</p>",
+      "level": 0,
+      "price": "50 sp",
+      "traits": [
+        "arc",
+        "tech"
+      ]
+    }
+  ],
+  "generalAbilities": [],
+  "ac": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 0,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 10,
+    "max": 10,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, climb 10ft",
+  "strikes": [
+    {
+      "type": "ranged",
+      "name": "Arc Rifle",
+      "bonus": 9,
+      "traits": [
+        "reload-1",
+        "tech",
+        "tracking-1"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "electricity"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "electricity"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Tail",
+      "bonus": 8,
+      "traits": [
+        "agile",
+        "finesse"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Scoring",
+      "actions": null,
+      "traits": [],
+      "description": "<p>When the tool rat's tail Strike deals damage to an object or creature with the tech trait, the tail also gains the following traits until the beginning of the scrap rat's next turn: deadly d4, hampering, and razing.</p>\n<p>Effect: Scoring</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Upscaled Recycling",
+      "actions": null,
+      "traits": [],
+      "description": "<p>Over the course of 1 hour of uninterrupted work, a tool rat can assemble a simple tactical weapon of any type, up to 2nd level, including a single commercial battery or a full magazine of projectile ammunition. using nothing but junk. It falls apart and becomes unusable junk after 10 minutes.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [
+    {
+      "name": "Arcane Innate Spells",
+      "type": "innate",
+      "bonus": 10,
+      "dc": 18,
+      "focusPoints": {
+        "current": 0,
+        "max": 0
+      },
+      "autoHeightenLevel": 2,
+      "cantrips": [
+        {
+          "name": "Electric Arc",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "electricity",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 or 2 creatures",
+          "save": "Basic reflex",
+          "description": "<p>An arc of lightning leaps from one target to another. Each target takes 2d4 electricity damage with a basic Reflex save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "uwOvgBoBhOc2V9Pl"
+        },
+        {
+          "name": "Recharge Weapon",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "1",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 weapon with capacity",
+          "save": "",
+          "description": "<p>You touch a weapon with no remaining ammunition and recharge it with magical energy. The target gains ammunition or charges equal to its expend until the end of your next turn, allowing anyone holding the target to make one Strike with the weapon. This spell only recharges weapons that use ammunition with a cost of 10 credits or less.</p><hr /><p><strong>Heightened (3rd)</strong> The target gains ammunition or charges equal to double its expend.</p>\n<p><strong>Heightened (6th)</strong> The target gains ammunition or charges equal to triple its expend.</p>\n<p><strong>Heightened (9th)</strong> The target gains ammunition or charges equal to quadruple its expend.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "ia2Oc4Pi2YWIyrGo"
+        },
+        {
+          "name": "Stumble",
+          "type": "cantrip",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "100 feet",
+          "area": "",
+          "targets": "1 creature",
+          "save": "reflex",
+          "description": "<p>A burst of microgravity causes a tremor around the target, pulling it toward the ground. The target must attempt a Reflex save.</p><hr /><p><strong>Failure</strong> The target becomes Off-Guard for 1 round. If the target was flying, swimming, or floating, it falls 10 feet downward.</p>\n<p><strong>Critical Failure</strong> The target falls Prone. If the target was flying, swimming, or floating, it falls 20 feet downward.</p><hr /><p><strong>Heightened (+1)</strong> If the target falls, it falls an additional 5 feet on a failure and 10 feet on a critical failure.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "Xz3R3Ciw6v9xju1i"
+        }
+      ],
+      "lv1spells": [
+        {
+          "name": "Mending",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "10 minutes",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "non-magical object of light Bulk or less",
+          "save": "",
+          "description": "<p>You repair the target item. You restore 5 Hit Points per spell rank to the target, potentially removing the Broken condition if this repairs it past the item's Broken Threshold. You can't replace lost pieces or repair an object that's been completely destroyed.</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> You can target a non-magical object of 1 Bulk or less.</p>\n<p><strong>Heightened (3rd)</strong> You can target a non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "WaI6Mk6qebrvN3H6"
+        },
+        {
+          "name": "Supercharge Weapon",
+          "type": "spell",
+          "level": 1,
+          "heightenedLevel": 1,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "1 minute or until discharged",
+          "range": "30 feet",
+          "area": "",
+          "targets": "1 weapon held by you or a willing ally",
+          "save": "",
+          "description": "<p>You draw in and condense ambient magical energy from around you to power up a weapon. The next Strike made using that weapon is supercharged. That Strike deals an additional 1d6 damage of the same type as the weapon's normal damage.</p>\n<p>Spell Effect: Supercharge Weapon</p><hr /><p><strong>Heightened (+2)</strong> The extra damage increases by 1d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "sx2lQc6EiatbAFeE"
+        }
+      ],
+      "lv2spells": [
+        {
+          "name": "Inject Nanobots",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "acid",
+            "attack",
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature",
+          "save": "",
+          "description": "<p>You inject magical nanobots into a creature. Make a melee spell attack roll. On a hit, the target takes 4d6 acid damage. On a critical hit, the target takes double damage and becomes Confused for 1 round as nanobots swarm through the target's biological or mechanical systems.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "3nCga39nOpHfRhxx"
+        },
+        {
+          "name": "Instant Virus",
+          "type": "spell",
+          "level": 2,
+          "heightenedLevel": 2,
+          "timesPrepared": 1,
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "castingTime": "2",
+          "duration": "",
+          "range": "touch",
+          "area": "",
+          "targets": "1 creature with the tech trait",
+          "save": "fortitude",
+          "description": "<p>Your touch installs a dangerous self-replicating virus that disrupts a technological creature's programming. The target must attempt a Fortitude save.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is Glitching 1.</p>\n<p><strong>Failure</strong> The target is glitching 1 and Stunned 1.</p>\n<p><strong>Critical Failure</strong> The target is Glitching 2 and Stunned 2.</p>",
+          "cast": false,
+          "cost": "",
+          "primaryCheck": "",
+          "secondaryCasters": "",
+          "secondaryChecks": "",
+          "id": "VBngL7xt8CpyVScp"
+        }
+      ],
+      "lv3spells": [],
+      "lv4spells": [],
+      "lv5spells": [],
+      "lv6spells": [],
+      "lv7spells": [],
+      "lv8spells": [],
+      "lv9spells": [],
+      "lv10spells": [],
+      "rituals": [],
+      "lv1slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv2slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv3slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv4slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv5slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv6slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv7slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv8slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv9slots": {
+        "current": 0,
+        "max": 0
+      },
+      "lv10slots": {
+        "current": 0,
+        "max": 0
+      }
+    }
+  ],
+  "recallKnowledge": "Arcana or Nature, DC 16"
+}

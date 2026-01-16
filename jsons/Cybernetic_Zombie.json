@@ -1,28 +1,28 @@
 {
   "initiative": 0,
-  "initiativebonus": 5,
+  "initiativebonus": 3,
   "comments": "",
   "conditions": [],
   "color": "#fff",
   "duplicateIndex": 0,
   "name": "Cybernetic Zombie",
   "type": "Creature",
-  "level": 3,
+  "level": -1,
   "traits": [
-    "Rare",
+    "Common",
     "Medium",
     "Mindless",
     "Tech",
     "Undead",
     "Zombie"
   ],
-  "source": "Pathfinder Society Scenario #6-10: Once in Whispers",
+  "source": "Starfinder Alien Core",
   "remaster": true,
   "senses": [
     "Darkvision"
   ],
   "perception": {
-    "value": 5,
+    "value": 3,
     "note": "Darkvision",
     "usedAttribute": "wisdom",
     "modifications": []
@@ -31,7 +31,7 @@
   "skills": [
     {
       "name": "athletics",
-      "modifier": 8,
+      "modifier": 5,
       "note": [],
       "usedAttribute": "strength",
       "modifications": []
@@ -55,43 +55,54 @@
   "charisma": {
     "value": -2
   },
-  "items": [],
+  "items": [
+    {
+      "name": "Integrated Commercial Laser Pistol",
+      "quantity": 1,
+      "description": "<p><strong>Upgrades:</strong> 1</p><hr /><p>This compact pistol is the most popular sidearm in the Pact Worlds thanks to its reliability, durability, and affordability. Most common laser pistols have a lightweight polycarbon body ending in a long, slim barrel.</p>",
+      "level": 0,
+      "price": "30 sp",
+      "traits": [
+        "tech"
+      ]
+    }
+  ],
   "generalAbilities": [],
   "ac": {
-    "value": 18,
+    "value": 15,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "fortitude": {
-    "value": 8,
+    "value": 5,
     "note": "",
     "usedAttribute": "constitution",
     "modifications": []
   },
   "reflex": {
-    "value": 9,
+    "value": 6,
     "note": "",
     "usedAttribute": "dexterity",
     "modifications": []
   },
   "will": {
-    "value": 5,
+    "value": 2,
     "note": "",
     "usedAttribute": "wisdom",
     "modifications": []
   },
   "savenote": "",
   "hp": {
-    "value": 46,
-    "max": 46,
-    "note": "void healing",
+    "value": 40,
+    "max": 40,
+    "note": "",
     "modifications": []
   },
   "immunities": [
-    "bleed",
     "death-effects",
     "disease",
+    "mental",
     "paralyzed",
     "poison",
     "unconscious"
@@ -99,14 +110,12 @@
   "resistances": [],
   "weaknesses": [
     {
-      "exceptions": [],
       "type": "electricity",
-      "value": 6
+      "value": 10
     },
     {
-      "exceptions": [],
       "type": "slashing",
-      "value": 6
+      "value": 10
     }
   ],
   "defensiveAbilities": [
@@ -114,60 +123,42 @@
       "name": "Cybernetics",
       "actions": null,
       "traits": [],
-      "description": "<p>The cybernetics of a cybernetic zombie can be disabled for 1 hour with a successful Disable device dc=15 check. A zombie's cybernetics are disabled for 1 hour if it takes any electricity damage. A cybernetic zombie with disabled cybernetics is Slowed 1 and can't use reactions (including self-destruct).</p>",
+      "description": "<p>A cybernetic zombie's cybernetics can be disabled for 1 hour by a creature that succeeds at a DC 15 check to Disable device dc=15 or Disable a System. Attempting to do so can typically be done only while within reach of the zombie and is a 2-action activity that has the manipulate trait. The cybernetics are also disabled for 1 hour if the zombie takes any electricity damage. A cybernetic zombie with disabled cybernetics is Slowed 1 and can't use any reactions.</p>",
       "collapsed": false
     },
     {
-      "name": "Self Destruct",
+      "name": "Self-Destruct",
       "actions": -1,
       "traits": [],
-      "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing (2d8+2) Electricity Damage damage in a 10-foot radius (Basic DC 15 Reflex Saving Throw save). This ability destroys any technological items on the zombie.</p>",
+      "description": "<p>A cybernetic zombie must use this reaction unless its cybernetics are disabled</p>\n<p><strong>Trigger</strong> The cybernetic zombie is reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The zombie's damaged cybernetics explode, dealing 1d8 Electricity Damage damage in a 10ft Type:emanation (Basic DC 15 Reflex Saving Throw save). This ability destroys the zombie's integrated items and any tech items on the zombie of 1st level or lower.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Void Healing",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.</p></p></details></p>",
       "collapsed": false
     }
   ],
   "speed": "20 ft, ",
   "strikes": [
     {
-      "type": "melee",
-      "name": "Fist",
-      "bonus": 10,
-      "traits": [
-        "unarmed"
-      ],
-      "damageRolls": [
-        {
-          "roll": "2d6+2",
-          "type": "bludgeoning"
-        }
-      ],
-      "critRolls": [
-        {
-          "roll": "(2d6+2)*2",
-          "type": "bludgeoning"
-        }
-      ],
-      "effects": [],
-      "usedAttributeToHit": "strength",
-      "usedAttributeDamage": "strength",
-      "toHitModifications": [],
-      "damageModifications": []
-    },
-    {
       "type": "ranged",
-      "name": "Integrated Commercial Laser Pistol",
-      "bonus": 12,
+      "name": "Laser Pistol",
+      "bonus": 6,
       "traits": [
-        "fire"
+        "tech"
       ],
       "damageRolls": [
         {
-          "roll": "2d6+2",
+          "roll": "1d6",
           "type": "fire"
         }
       ],
       "critRolls": [
         {
-          "roll": "(2d6+2)*2",
+          "roll": "(1d6)*2",
           "type": "fire"
         }
       ],
@@ -176,9 +167,32 @@
       "usedAttributeDamage": "strength",
       "toHitModifications": [],
       "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Fist",
+      "bonus": 4,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
     }
   ],
   "offensiveAbilities": [],
   "spellcastingEntries": [],
-  "recallKnowledge": "Religion, DC 18"
+  "recallKnowledge": "Religion, DC 13"
 }

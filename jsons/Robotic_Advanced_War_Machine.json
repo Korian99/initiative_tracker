@@ -1,0 +1,247 @@
+{
+  "initiative": 0,
+  "initiativebonus": 15,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Robotic Advanced War Machine",
+  "type": "Creature",
+  "level": 5,
+  "traits": [
+    "Common",
+    "Large",
+    "Construct",
+    "Tech"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 15,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Interstellar comms"
+  ],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 12,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 10,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "thievery",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 5
+  },
+  "dexterity": {
+    "value": 3
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 0
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [],
+  "generalAbilities": [
+    {
+      "name": "Interstellar Comms",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A remote war machine maintains a constant data link with its pilot, using its pilot's languages and skill modifiers for any unlisted skill. In addition, the pilot can speak through the data link using the remote war machine as a mouthpiece.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 12,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 77,
+    "max": 77,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "doubleVs": [],
+      "exceptions": [],
+      "type": "bludgeoning",
+      "value": 4
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Ballistic Defense Matrix",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature attempts a ranged Strike against the remote war machine</p>\n<p><strong>Requirements</strong> The war machine is currently outside the creature's reach</p><hr /><p><strong>Effect</strong> The remote war machine makes a ranged Strike against the triggering creature. If the result of this Strike is equal to or greater than the result of the triggering Strike, the triggering Strike is treated as though it were a critical miss.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, climb 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Hammerfist",
+      "bonus": 15,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+6",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+6)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Flak Thrower",
+      "bonus": 13,
+      "traits": [
+        "automatic"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d4",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "2d10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent bleed"
+        },
+        {
+          "roll": "(2d10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Flak Thrower",
+      "bonus": 9,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10",
+          "type": "piercing"
+        },
+        {
+          "roll": "1d4",
+          "type": "persistent bleed"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10)*2",
+          "type": "piercing"
+        },
+        {
+          "roll": "(1d4)*2",
+          "type": "persistent bleed"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Attack Pattern Alpha",
+      "actions": 2,
+      "traits": [],
+      "description": "<p>The remote war machine Steps or Strides, then makes two Strikes against the same target. Both Strikes count toward its multiple attack penalty, but its multiple attack penalty doesn't increase until after it makes both Strikes.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Hypersonic Burst",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>The war machine Steps or Strides twice. The war machine gains a +10-foot circumstance bonus to its Speed during these moves.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 20"
+}

@@ -1,0 +1,208 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Kaukariki",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Common",
+    "Small",
+    "Beast"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 5,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "stealth",
+      "modifier": 7,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 1
+  },
+  "dexterity": {
+    "value": 4
+  },
+  "constitution": {
+    "value": 3
+  },
+  "intelligence": {
+    "value": -2
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 2
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 8,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 9,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 20,
+    "max": 20,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [
+    {
+      "type": "poison",
+      "value": 3
+    }
+  ],
+  "weaknesses": [],
+  "defensiveAbilities": [],
+  "speed": "25 ft, climb 25ft, fly 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Stinger",
+      "bonus": 7,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d4+3",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d4+3)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [
+        "kaukariki-venom"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "ranged",
+      "name": "Rock",
+      "bonus": 8,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "1d6+2",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+2)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "dexterity",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Kaukariki Venom",
+      "actions": null,
+      "traits": [
+        "poison"
+      ],
+      "description": "<p><strong>Saving Throw</strong> DC 15 Fortitude Saving Throw</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> 1d4 Poison Damage damage and Clumsy 1 (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 Poison Damage damage and Clumsy 2 (1 round)</p>\n<p><strong>Stage 3</strong> 2d4 Poison Damage damage and clumsy 2 (1 round)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Screaming Frenzy",
+      "actions": 2,
+      "traits": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "description": "<p>The kaukariki starts a frenzy of screaming, involving other nearby kaukarikis. The kaukariki attempts a single Intimidation check to Demoralize all enemies within 30 feet. Any other kaukariki within 30 feet can use its reaction to add a cumulative +1 circumstance bonus to this Demoralize attempt (to a maximum of +4). The kaukariki can't use this ability again for 1d4 rounds, and kaukarikis that used their reactions to grant a bonus count as having used their Screaming Frenzy ability.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Stone Barrage",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> the kaukariki used Screaming Frenzy within the last round</p><hr /><p><strong>Effect</strong> The kaukariki Throws Rocks four times, applying its multiple attack penalty normally.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Throw Rock",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>The monster picks up a rock within reach or retrieves a stowed rock and throws it, making a ranged Strike.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Nature, DC 15"
+}

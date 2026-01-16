@@ -1,0 +1,214 @@
+{
+  "initiative": 0,
+  "initiativebonus": 18,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Mutant Troll",
+  "type": "Creature",
+  "level": 9,
+  "traits": [
+    "Common",
+    "Large",
+    "Cosmic",
+    "Giant",
+    "Humanoid",
+    "Mutant",
+    "Troll"
+  ],
+  "source": "Starfinder Alien Core",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 18,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [
+    "Common",
+    "Jotun"
+  ],
+  "skills": [
+    {
+      "name": "athletics",
+      "modifier": 21,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "crafting",
+      "modifier": 16,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    },
+    {
+      "name": "intimidation",
+      "modifier": 19,
+      "note": [],
+      "usedAttribute": "charisma",
+      "modifications": []
+    },
+    {
+      "name": "piloting",
+      "modifier": 13,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 6
+  },
+  "dexterity": {
+    "value": 0
+  },
+  "constitution": {
+    "value": 4
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 3
+  },
+  "charisma": {
+    "value": -1
+  },
+  "items": [],
+  "generalAbilities": [],
+  "ac": {
+    "value": 26,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 21,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 16,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 178,
+    "max": 178,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [],
+  "defensiveAbilities": [
+    {
+      "name": "Regeneration 20 (deactivated by cold or electricity)",
+      "actions": null,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its Dying condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, ",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Jaw",
+      "bonus": 21,
+      "traits": [],
+      "damageRolls": [
+        {
+          "roll": "2d10+10",
+          "type": "piercing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d10+10)*2",
+          "type": "piercing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    },
+    {
+      "type": "melee",
+      "name": "Claw",
+      "bonus": 21,
+      "traits": [
+        "agile",
+        "reach-10"
+      ],
+      "damageRolls": [
+        {
+          "roll": "2d6+10",
+          "type": "slashing"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(2d6+10)*2",
+          "type": "slashing"
+        }
+      ],
+      "effects": [],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Mauling Flurry",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per round</p><hr /><p><strong>Effect</strong> The mutant troll makes two claw Strikes against one target without increasing their multiple attack penalty. If both Strikes deal damage, the troll can attempt a jaw Strike against that target with the normal multiple attack penalty.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Mutated Split",
+      "actions": 3,
+      "traits": [],
+      "description": "<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The mutant troll rips themself apart into two separate Large-sized entities, sharing one fractured sentience between them. While in this form, the mutant troll halves share a communal Hit Point pool and have 4 actions to share between them on their turn. If both halves are included in an area of effect, they must both attempt saving throws, taking the worse result, but only taking damage once.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Reforming Merge",
+      "actions": 1,
+      "traits": [
+        "manipulate"
+      ],
+      "description": "<p><strong>Requirements</strong> The mutant troll halves are adjacent to each other</p><hr /><p><strong>Effect</strong> The mutant troll halves re-form into a single entity.</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Splurting Slime",
+      "actions": 2,
+      "traits": [],
+      "description": "<p><strong>Requirements</strong> The mutant troll is in its Mutated Split form, and both halves are within 30 feet of each other</p><hr /><p><strong>Effect</strong> The duplicated beings spray mutated flesh and organs toward each other, absorbing most of the pieces but raining down acidic viscera on any creatures caught in the 10-foot-wide line between them. These creatures take 8d8 Acid Damage damage with a DC 27 Reflex Saving Throw save. The troll can't use Splurting Slime again for 1d4 rounds.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is Sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is Sickened 2.</p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Society, DC 26"
+}

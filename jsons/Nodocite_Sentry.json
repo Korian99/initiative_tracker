@@ -1,0 +1,192 @@
+{
+  "initiative": 0,
+  "initiativebonus": 7,
+  "comments": "",
+  "conditions": [],
+  "color": "#fff",
+  "duplicateIndex": 0,
+  "name": "Nodocite Sentry",
+  "type": "Creature",
+  "level": 1,
+  "traits": [
+    "Uncommon",
+    "Small",
+    "Construct",
+    "Robot",
+    "Tech"
+  ],
+  "source": "Starfinder Society Scenario #1-00: Collision's Wake",
+  "remaster": true,
+  "senses": [
+    "Darkvision"
+  ],
+  "perception": {
+    "value": 7,
+    "note": "Darkvision",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "languages": [],
+  "skills": [
+    {
+      "name": "acrobatics",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "dexterity",
+      "modifications": []
+    },
+    {
+      "name": "athletics",
+      "modifier": 8,
+      "note": [],
+      "usedAttribute": "strength",
+      "modifications": []
+    },
+    {
+      "name": "computers",
+      "modifier": 6,
+      "note": [],
+      "usedAttribute": "intelligence",
+      "modifications": []
+    }
+  ],
+  "strength": {
+    "value": 3
+  },
+  "dexterity": {
+    "value": 1
+  },
+  "constitution": {
+    "value": 2
+  },
+  "intelligence": {
+    "value": 1
+  },
+  "wisdom": {
+    "value": 0
+  },
+  "charisma": {
+    "value": 0
+  },
+  "items": [
+    {
+      "name": "Incendiary Grenade (Commercial)",
+      "quantity": 2,
+      "description": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Area Fire</p>\n<p><strong>Critical</strong> 5 feet</p><hr /><p>These grenades use an ignited chemical to explode in a blast of intense heat and deal 1d8 fire damage with a @Check[reflex|against:class|basic] save (@Template[burst|distance:5]). If you have access to the critical specialization effect of grenades, creatures who critically fail their saving throw against incendiary grenades are knocked away from the grenade.</p>",
+      "level": 0,
+      "price": "10 sp",
+      "traits": [
+        "consumable",
+        "fire",
+        "grenade",
+        "tech"
+      ]
+    }
+  ],
+  "generalAbilities": [
+    {
+      "name": "Networked Nodocite",
+      "actions": null,
+      "traits": [],
+      "description": "<p>A nodocite can communicate wirelessly with other nodocites within 200 feet.</p>",
+      "collapsed": false
+    }
+  ],
+  "ac": {
+    "value": 15,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "fortitude": {
+    "value": 10,
+    "note": "",
+    "usedAttribute": "constitution",
+    "modifications": []
+  },
+  "reflex": {
+    "value": 7,
+    "note": "",
+    "usedAttribute": "dexterity",
+    "modifications": []
+  },
+  "will": {
+    "value": 4,
+    "note": "",
+    "usedAttribute": "wisdom",
+    "modifications": []
+  },
+  "savenote": "",
+  "hp": {
+    "value": 24,
+    "max": 24,
+    "note": "",
+    "modifications": []
+  },
+  "immunities": [],
+  "resistances": [],
+  "weaknesses": [
+    {
+      "exceptions": [],
+      "type": "electricity",
+      "value": 5
+    }
+  ],
+  "defensiveAbilities": [
+    {
+      "name": "Block Path",
+      "actions": -1,
+      "traits": [],
+      "description": "<p><strong>Trigger</strong> A creature within the nodocite's reach uses a move action or leaves a square during a move action it's using</p><hr /><p><strong>Effect</strong> The nodocite sentry makes a melee Strike against the triggering creature. On a hit, the target's movement is additionally disrupted.</p>",
+      "collapsed": false
+    }
+  ],
+  "speed": "25 ft, fly 20ft",
+  "strikes": [
+    {
+      "type": "melee",
+      "name": "Battering Fist",
+      "bonus": 8,
+      "traits": [
+        "unarmed"
+      ],
+      "damageRolls": [
+        {
+          "roll": "1d6+3",
+          "type": "bludgeoning"
+        }
+      ],
+      "critRolls": [
+        {
+          "roll": "(1d6+3)*2",
+          "type": "bludgeoning"
+        }
+      ],
+      "effects": [
+        "push"
+      ],
+      "usedAttributeToHit": "strength",
+      "usedAttributeDamage": "strength",
+      "toHitModifications": [],
+      "damageModifications": []
+    }
+  ],
+  "offensiveAbilities": [
+    {
+      "name": "Area Fire",
+      "actions": 1,
+      "traits": [],
+      "description": "<p>Incendiary Grenade (5ft Type:burst, range 70 feet)</p>\n<p><strong>Damage</strong> 1d8 Fire Damage (Basic DC 17 Reflex Saving Throw)</p>",
+      "collapsed": false
+    },
+    {
+      "name": "Push",
+      "actions": 1,
+      "traits": [],
+      "description": "<p><details><summary>See rules...</summary>\n<p><p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to Shove the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p></p></details></p>",
+      "collapsed": false
+    }
+  ],
+  "spellcastingEntries": [],
+  "recallKnowledge": "Arcana or Crafting, DC 15"
+}
