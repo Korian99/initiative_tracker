@@ -1,0 +1,57 @@
+{% block content %}
+  <div class="modal fade"
+       id="uploadHomebrewModal"
+       tabindex="-1"
+       aria-labelledby="uploadModal"
+       aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editLobbyModalLabel">Debuff {{ character }}</h5>
+          <button type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+        </div>
+        <form hx-post="{% url 'debuff_character' %}"
+              hx-swap="innerHTML"
+              id="debuffCharacterForm"
+              hx-target="#character-list">
+          <div class="modal-body">
+            {% csrf_token %}
+            <input type="hidden" name="player_lobby_id" value="{{ player_lobby.id }}">
+            <input type="hidden" name="character_id" value="{{ character.id }}">
+            <input type="hidden" name="action" id="action" value="">
+            <input type="text"
+                   id="debuff"
+                   name="debuff"
+                   class="form-control"
+                   value="{{ character.debuff|default:'' }}"
+                   placeholder="Enter debuff (optional)" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            {% if character.debuff %}
+              <button type="button"
+                      class="btn btn-danger"
+                      onclick="setDebuffAction(event, 'remove')">Remove</button>
+            {% endif %}
+            <button type="button"
+                    class="btn btn-primary"
+                    onclick="setDebuffAction(event, 'add_edit')">
+              {% if character.debuff %}
+                Edit
+              {% else %}
+                Add
+              {% endif %}
+            </button>
+            <button type="submit" hidden id="submitBtn"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  {% load static %}
+  <script src="{% static 'js/debuff.js' %}"></script>
+
+{% endblock content %}

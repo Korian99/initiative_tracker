@@ -25,3 +25,21 @@
         {% endif %}
     {% endif %}
 </div>
+<div id="left-bot-buttons" class="row-6">
+    {% if position == "lobby" %}
+        {% if role == "DM" %}
+            <!-- Upload Homebrew -->
+            <form class="edit-character open-modal bot"
+                  style="--bot-position: 1"
+                  hx-get="{% url 'upload_homebrew' player_id=player.id %}"
+                  hx-target="#upload-modal-container"
+                  data-modal-id="uploadHomebrewModal"
+                  hx-swap="innerHTML">
+                <button type="submit" class="btn btn-info shadow fab-btn ">
+                    <i class="bi bi-upload"></i>
+                    <span class="tooltip-text tooltip-right">Upload Homebrew Stat Block</span>
+                </button>
+            </form>
+        {% endif %}
+    {% endif %}
+</div>

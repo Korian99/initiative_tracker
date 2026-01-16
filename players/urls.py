@@ -25,4 +25,5 @@ urlpatterns = [
     path('pass_turn', views.TurnView.as_view(), name='pass_turn'),
     path('select_creature', views.StatBlocksView.as_view(), name='select_creature'),
     path('load_stat_block_modal/<int:character_id>', views.StatBlockView.as_view(), name='load_stat_block_modal'),
+    path('upload_stat_block_modal/<int:player_id>', views.UploadStatBlockView.as_view(), name='upload_homebrew'),
 ]

@@ -413,3 +413,10 @@ class StatBlockView(TemplateView):
                 "template": template, "character": character
             })
         return render(request, "players/partials/stat_block_modal.html", {"creature": creature_data, "template": character.template, "character": character})
+
+class UploadStatBlockView(TemplateView):
+    # load_stat_block_modal
+    def get(self, request, player_id):
+        return render(request, "players/partials/upload_modal.html", {})
+    def post(self, request, player_id):
+        return None
